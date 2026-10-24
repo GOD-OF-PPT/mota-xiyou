@@ -1,5 +1,7 @@
 # 沉浸式 PC 交互重做与验收
 
+画风与角色后续：见 [v30 画境解锁及主角重设计](v30-theme-hero-review.md)；另提供独立的新项目 [肉鸽开发提示词](xiyou-roguelite-development-prompt.md)。
+
 人物交互后续：见 [v29 交谈入口简化](v29-conversation-review.md)，去除人物重复详察、误推演与目标牌叠压。
 
 出生点后续修正：见 [v28 出生点复核](v28-spawn-review.md)，采用灯前空地出生并保留旧档坐标。

@@ -14,6 +14,9 @@
 !/audits/v28-material-spawn-629.png
 !/audits/v29-material-npc-command-629.png
 !/audits/v29-material-speech-629.png
+!/audits/v30-new-hero-629.png
+!/audits/v30-new-hero-character.png
+!/audits/v30-locked-style-release.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

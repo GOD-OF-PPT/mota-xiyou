@@ -1,0 +1,5905 @@
+{
+  "revision": 21,
+  "style": "玄金神怪 · 三维古寺",
+  "pipeline": "Authored native pixel isolation, physical contacts and reviewed HD landmarks; final DPR rendering",
+  "assets": {
+    "actor_wukong_down": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        120,
+        151,
+        335,
+        352
+      ],
+      "frameBounds": [
+        [
+          120,
+          162,
+          268,
+          352
+        ],
+        [
+          155,
+          151,
+          305,
+          352
+        ],
+        [
+          125,
+          152,
+          266,
+          352
+        ],
+        [
+          132,
+          162,
+          335,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_right": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        78,
+        158,
+        356,
+        352
+      ],
+      "frameBounds": [
+        [
+          113,
+          158,
+          238,
+          352
+        ],
+        [
+          78,
+          160,
+          228,
+          352
+        ],
+        [
+          133,
+          160,
+          280,
+          352
+        ],
+        [
+          134,
+          162,
+          356,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_up": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        85,
+        152,
+        336,
+        352
+      ],
+      "frameBounds": [
+        [
+          85,
+          160,
+          224,
+          352
+        ],
+        [
+          90,
+          152,
+          230,
+          352
+        ],
+        [
+          105,
+          152,
+          247,
+          352
+        ],
+        [
+          123,
+          167,
+          336,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_left": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 1152,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        146,
+        139,
+        368,
+        352
+      ],
+      "frameBounds": [
+        [
+          155,
+          139,
+          291,
+          352
+        ],
+        [
+          172,
+          148,
+          343,
+          352
+        ],
+        [
+          176,
+          146,
+          314,
+          352
+        ],
+        [
+          146,
+          153,
+          368,
+          352
+        ]
+      ]
+    },
+    "enemy_imp": {
+      "src": "assets/material/props/imp-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1230,
+      "sourceH": 1278,
+      "frames": 1,
+      "contentBounds": [
+        3,
+        8,
+        1173,
+        1260
+      ],
+      "nativeContentSize": [
+        1170,
+        1252
+      ],
+      "logicalScale": 0.0371405750798722,
+      "groundContact": {
+        "x": 705.0,
+        "y": 1147.32
+      },
+      "sceneScale": 1,
+      "sceneGroundX": 9,
+      "registrationVersion": 18,
+      "hd": true,
+      "anchor": {
+        "x": 705.0,
+        "y": 1147.32
+      },
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 0
+      }
+    },
+    "enemy_monk": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 1538,
+      "sourceW": 215,
+      "sourceH": 299,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        215,
+        299
+      ],
+      "nativeContentSize": [
+        215,
+        299
+      ],
+      "anchor": {
+        "x": 97,
+        "y": 290
+      },
+      "groundContact": {
+        "x": 97,
+        "y": 290
+      },
+      "logicalScale": 0.21070234113712374,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 1
+      }
+    },
+    "enemy_ghost": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 1538,
+      "sourceW": 303,
+      "sourceH": 304,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        303,
+        304
+      ],
+      "nativeContentSize": [
+        303,
+        304
+      ],
+      "anchor": {
+        "x": 153,
+        "y": 291
+      },
+      "groundContact": {
+        "x": 153,
+        "y": 291
+      },
+      "logicalScale": 0.1782178217821782,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 2
+      }
+    },
+    "enemy_guard": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1538,
+      "sourceW": 293,
+      "sourceH": 310,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        293,
+        310
+      ],
+      "nativeContentSize": [
+        293,
+        310
+      ],
+      "anchor": {
+        "x": 170,
+        "y": 301
+      },
+      "groundContact": {
+        "x": 170,
+        "y": 301
+      },
+      "logicalScale": 0.18430034129692832,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 3
+      }
+    },
+    "enemy_spider": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 1538,
+      "sourceW": 322,
+      "sourceH": 297,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        322,
+        297
+      ],
+      "nativeContentSize": [
+        322,
+        297
+      ],
+      "anchor": {
+        "x": 161,
+        "y": 279
+      },
+      "groundContact": {
+        "x": 161,
+        "y": 279
+      },
+      "logicalScale": 0.1717171717171717,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 4
+      }
+    },
+    "enemy_yaksha": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 1922,
+      "sourceW": 257,
+      "sourceH": 327,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        257,
+        327
+      ],
+      "nativeContentSize": [
+        257,
+        327
+      ],
+      "anchor": {
+        "x": 148,
+        "y": 317
+      },
+      "groundContact": {
+        "x": 148,
+        "y": 317
+      },
+      "logicalScale": 0.2018348623853211,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 5
+      }
+    },
+    "enemy_dragon": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 1922,
+      "sourceW": 280,
+      "sourceH": 318,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        280,
+        318
+      ],
+      "nativeContentSize": [
+        280,
+        318
+      ],
+      "anchor": {
+        "x": 137,
+        "y": 306
+      },
+      "groundContact": {
+        "x": 137,
+        "y": 306
+      },
+      "logicalScale": 0.19285714285714287,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 6
+      }
+    },
+    "enemy_boss": {
+      "src": "assets/material/finale/heart-three-forms-v21.png",
+      "sx": 15,
+      "sy": 10,
+      "sourceW": 777,
+      "sourceH": 708,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        775,
+        706
+      ],
+      "nativeContentSize": [
+        773,
+        704
+      ],
+      "anchor": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "groundContact": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "logicalScale": 0.09702457956015524,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 7
+      }
+    },
+    "npc_lantern": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 1922,
+      "sourceW": 216,
+      "sourceH": 293,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        216,
+        293
+      ],
+      "nativeContentSize": [
+        216,
+        293
+      ],
+      "anchor": {
+        "x": 132,
+        "y": 283
+      },
+      "groundContact": {
+        "x": 132,
+        "y": 283
+      },
+      "logicalScale": 0.1945392491467577,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 8
+      }
+    },
+    "npc_bajie": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 1922,
+      "sourceW": 277,
+      "sourceH": 278,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        277,
+        278
+      ],
+      "nativeContentSize": [
+        277,
+        278
+      ],
+      "anchor": {
+        "x": 104,
+        "y": 266
+      },
+      "groundContact": {
+        "x": 104,
+        "y": 266
+      },
+      "logicalScale": 0.18411552346570398,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 9
+      }
+    },
+    "npc_tangseng": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 1922,
+      "sourceW": 272,
+      "sourceH": 298,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        272,
+        298
+      ],
+      "nativeContentSize": [
+        272,
+        298
+      ],
+      "anchor": {
+        "x": 128,
+        "y": 281
+      },
+      "groundContact": {
+        "x": 128,
+        "y": 281
+      },
+      "logicalScale": 0.1875,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 10
+      }
+    },
+    "npc_whitewutian": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1922,
+      "sourceW": 282,
+      "sourceH": 292,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        282,
+        292
+      ],
+      "nativeContentSize": [
+        282,
+        292
+      ],
+      "anchor": {
+        "x": 144,
+        "y": 277
+      },
+      "groundContact": {
+        "x": 144,
+        "y": 277
+      },
+      "logicalScale": 0.19148936170212766,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 11
+      }
+    },
+    "npc_qiao": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 1922,
+      "sourceW": 249,
+      "sourceH": 285,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        249,
+        285
+      ],
+      "nativeContentSize": [
+        249,
+        285
+      ],
+      "anchor": {
+        "x": 125,
+        "y": 277
+      },
+      "groundContact": {
+        "x": 125,
+        "y": 277
+      },
+      "logicalScale": 0.20481927710843373,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 12
+      }
+    },
+    "npc_nezha": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 2306,
+      "sourceW": 263,
+      "sourceH": 284,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        263,
+        284
+      ],
+      "nativeContentSize": [
+        263,
+        284
+      ],
+      "anchor": {
+        "x": 116,
+        "y": 279
+      },
+      "groundContact": {
+        "x": 116,
+        "y": 279
+      },
+      "logicalScale": 0.2007042253521127,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 13
+      }
+    },
+    "enemy_boss_1": {
+      "src": "assets/material/finale/heart-three-forms-v21.png",
+      "sx": 792,
+      "sy": 6,
+      "sourceW": 658,
+      "sourceH": 708,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        3,
+        656,
+        706
+      ],
+      "nativeContentSize": [
+        654,
+        703
+      ],
+      "anchor": {
+        "x": 329.0,
+        "y": 663.82
+      },
+      "groundContact": {
+        "x": 329.0,
+        "y": 663.82
+      },
+      "logicalScale": 0.09702457956015524,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 1,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 14
+      }
+    },
+    "enemy_boss_2": {
+      "src": "assets/material/finale/heart-three-forms-v21.png",
+      "sx": 1466,
+      "sy": 14,
+      "sourceW": 695,
+      "sourceH": 704,
+      "frames": 1,
+      "contentBounds": [
+        3,
+        2,
+        692,
+        701
+      ],
+      "nativeContentSize": [
+        689,
+        699
+      ],
+      "anchor": {
+        "x": 347.5,
+        "y": 659.06
+      },
+      "groundContact": {
+        "x": 347.5,
+        "y": 659.06
+      },
+      "logicalScale": 0.09702457956015524,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 2,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 15
+      }
+    },
+    "enemy_bat": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 2306,
+      "sourceW": 259,
+      "sourceH": 264,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        259,
+        264
+      ],
+      "nativeContentSize": [
+        259,
+        264
+      ],
+      "anchor": {
+        "x": 135,
+        "y": 253
+      },
+      "groundContact": {
+        "x": 135,
+        "y": 253
+      },
+      "logicalScale": 0.2159090909090909,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 0
+      }
+    },
+    "enemy_stone": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2306,
+      "sourceW": 287,
+      "sourceH": 310,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        287,
+        310
+      ],
+      "nativeContentSize": [
+        287,
+        310
+      ],
+      "anchor": {
+        "x": 140,
+        "y": 300
+      },
+      "groundContact": {
+        "x": 140,
+        "y": 300
+      },
+      "logicalScale": 0.1986062717770035,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 1
+      }
+    },
+    "enemy_thorn": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 2306,
+      "sourceW": 255,
+      "sourceH": 321,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        255,
+        321
+      ],
+      "nativeContentSize": [
+        255,
+        321
+      ],
+      "anchor": {
+        "x": 124,
+        "y": 308
+      },
+      "groundContact": {
+        "x": 124,
+        "y": 308
+      },
+      "logicalScale": 0.19626168224299065,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 2
+      }
+    },
+    "enemy_viper": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 2306,
+      "sourceW": 290,
+      "sourceH": 311,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        290,
+        311
+      ],
+      "nativeContentSize": [
+        290,
+        311
+      ],
+      "anchor": {
+        "x": 154,
+        "y": 300
+      },
+      "groundContact": {
+        "x": 154,
+        "y": 300
+      },
+      "logicalScale": 0.19655172413793104,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 3
+      }
+    },
+    "enemy_bone": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 2306,
+      "sourceW": 276,
+      "sourceH": 315,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        276,
+        315
+      ],
+      "nativeContentSize": [
+        276,
+        315
+      ],
+      "anchor": {
+        "x": 136,
+        "y": 303
+      },
+      "groundContact": {
+        "x": 136,
+        "y": 303
+      },
+      "logicalScale": 0.1956521739130435,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 4
+      }
+    },
+    "enemy_water": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 2690,
+      "sourceW": 279,
+      "sourceH": 310,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        279,
+        310
+      ],
+      "nativeContentSize": [
+        279,
+        310
+      ],
+      "anchor": {
+        "x": 135,
+        "y": 299
+      },
+      "groundContact": {
+        "x": 135,
+        "y": 299
+      },
+      "logicalScale": 0.2032258064516129,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 5
+      }
+    },
+    "enemy_crab": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 2690,
+      "sourceW": 296,
+      "sourceH": 271,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        296,
+        271
+      ],
+      "nativeContentSize": [
+        296,
+        271
+      ],
+      "anchor": {
+        "x": 149,
+        "y": 260
+      },
+      "groundContact": {
+        "x": 149,
+        "y": 260
+      },
+      "logicalScale": 0.20270270270270271,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 6
+      }
+    },
+    "enemy_flame": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 2690,
+      "sourceW": 270,
+      "sourceH": 302,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        270,
+        302
+      ],
+      "nativeContentSize": [
+        270,
+        302
+      ],
+      "anchor": {
+        "x": 142,
+        "y": 291
+      },
+      "groundContact": {
+        "x": 142,
+        "y": 291
+      },
+      "logicalScale": 0.2,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 7
+      }
+    },
+    "enemy_alchemist": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 2690,
+      "sourceW": 257,
+      "sourceH": 299,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        257,
+        299
+      ],
+      "nativeContentSize": [
+        257,
+        299
+      ],
+      "anchor": {
+        "x": 130,
+        "y": 287
+      },
+      "groundContact": {
+        "x": 130,
+        "y": 287
+      },
+      "logicalScale": 0.21011673151750973,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 8
+      }
+    },
+    "enemy_furnace": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2690,
+      "sourceW": 325,
+      "sourceH": 288,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        325,
+        288
+      ],
+      "nativeContentSize": [
+        325,
+        288
+      ],
+      "anchor": {
+        "x": 162,
+        "y": 278
+      },
+      "groundContact": {
+        "x": 162,
+        "y": 278
+      },
+      "logicalScale": 0.18461538461538463,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 9
+      }
+    },
+    "enemy_mirror": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 2690,
+      "sourceW": 296,
+      "sourceH": 298,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        296,
+        298
+      ],
+      "nativeContentSize": [
+        296,
+        298
+      ],
+      "anchor": {
+        "x": 154,
+        "y": 287
+      },
+      "groundContact": {
+        "x": 154,
+        "y": 287
+      },
+      "logicalScale": 0.18243243243243243,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 10
+      }
+    },
+    "enemy_ink": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 2690,
+      "sourceW": 284,
+      "sourceH": 295,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        284,
+        295
+      ],
+      "nativeContentSize": [
+        284,
+        295
+      ],
+      "anchor": {
+        "x": 139,
+        "y": 283
+      },
+      "groundContact": {
+        "x": 139,
+        "y": 283
+      },
+      "logicalScale": 0.2007042253521127,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 11
+      }
+    },
+    "enemy_sentinel": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 2690,
+      "sourceW": 267,
+      "sourceH": 341,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        267,
+        341
+      ],
+      "nativeContentSize": [
+        267,
+        341
+      ],
+      "anchor": {
+        "x": 151,
+        "y": 330
+      },
+      "groundContact": {
+        "x": 151,
+        "y": 330
+      },
+      "logicalScale": 0.1935483870967742,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 12
+      }
+    },
+    "enemy_archivist": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 3074,
+      "sourceW": 278,
+      "sourceH": 330,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        278,
+        330
+      ],
+      "nativeContentSize": [
+        278,
+        330
+      ],
+      "anchor": {
+        "x": 134,
+        "y": 319
+      },
+      "groundContact": {
+        "x": 134,
+        "y": 319
+      },
+      "logicalScale": 0.19424460431654678,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 13
+      }
+    },
+    "enemy_shade": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 3074,
+      "sourceW": 331,
+      "sourceH": 332,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        331,
+        332
+      ],
+      "nativeContentSize": [
+        331,
+        332
+      ],
+      "anchor": {
+        "x": 169,
+        "y": 320
+      },
+      "groundContact": {
+        "x": 169,
+        "y": 320
+      },
+      "logicalScale": 0.1903323262839879,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 14
+      }
+    },
+    "enemy_wrath": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 3074,
+      "sourceW": 310,
+      "sourceH": 343,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        310,
+        343
+      ],
+      "nativeContentSize": [
+        310,
+        343
+      ],
+      "anchor": {
+        "x": 169,
+        "y": 335
+      },
+      "groundContact": {
+        "x": 169,
+        "y": 335
+      },
+      "logicalScale": 0.1935483870967742,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 15
+      }
+    },
+    "enemy_acolyte": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 1538,
+      "sourceW": 215,
+      "sourceH": 299,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        215,
+        299
+      ],
+      "nativeContentSize": [
+        215,
+        299
+      ],
+      "anchor": {
+        "x": 97,
+        "y": 290
+      },
+      "groundContact": {
+        "x": 97,
+        "y": 290
+      },
+      "logicalScale": 0.21070234113712374,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 1
+      }
+    },
+    "enemy_bell": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 1538,
+      "sourceW": 303,
+      "sourceH": 304,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        303,
+        304
+      ],
+      "nativeContentSize": [
+        303,
+        304
+      ],
+      "anchor": {
+        "x": 153,
+        "y": 291
+      },
+      "groundContact": {
+        "x": 153,
+        "y": 291
+      },
+      "logicalScale": 0.1782178217821782,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 2
+      }
+    },
+    "enemy_brass": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1538,
+      "sourceW": 293,
+      "sourceH": 310,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        293,
+        310
+      ],
+      "nativeContentSize": [
+        293,
+        310
+      ],
+      "anchor": {
+        "x": 170,
+        "y": 301
+      },
+      "groundContact": {
+        "x": 170,
+        "y": 301
+      },
+      "logicalScale": 0.18430034129692832,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 3
+      }
+    },
+    "enemy_puppet": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 1538,
+      "sourceW": 322,
+      "sourceH": 297,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        322,
+        297
+      ],
+      "nativeContentSize": [
+        322,
+        297
+      ],
+      "anchor": {
+        "x": 161,
+        "y": 279
+      },
+      "groundContact": {
+        "x": 161,
+        "y": 279
+      },
+      "logicalScale": 0.1717171717171717,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 4
+      }
+    },
+    "enemy_judge": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 1922,
+      "sourceW": 257,
+      "sourceH": 327,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        257,
+        327
+      ],
+      "nativeContentSize": [
+        257,
+        327
+      ],
+      "anchor": {
+        "x": 148,
+        "y": 317
+      },
+      "groundContact": {
+        "x": 148,
+        "y": 317
+      },
+      "logicalScale": 0.2018348623853211,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 5
+      }
+    },
+    "enemy_flood": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 1922,
+      "sourceW": 280,
+      "sourceH": 318,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        280,
+        318
+      ],
+      "nativeContentSize": [
+        280,
+        318
+      ],
+      "anchor": {
+        "x": 137,
+        "y": 306
+      },
+      "groundContact": {
+        "x": 137,
+        "y": 306
+      },
+      "logicalScale": 0.19285714285714287,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 6
+      }
+    },
+    "enemy_heart": {
+      "src": "assets/material/finale/heart-three-forms-v21.png",
+      "sx": 15,
+      "sy": 10,
+      "sourceW": 777,
+      "sourceH": 708,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        775,
+        706
+      ],
+      "nativeContentSize": [
+        773,
+        704
+      ],
+      "anchor": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "groundContact": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "logicalScale": 0.09702457956015524,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 7
+      }
+    },
+    "enemy_thresholdImp": {
+      "src": "assets/material/props/imp-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1230,
+      "sourceH": 1278,
+      "frames": 1,
+      "contentBounds": [
+        3,
+        8,
+        1173,
+        1260
+      ],
+      "nativeContentSize": [
+        1170,
+        1252
+      ],
+      "logicalScale": 0.0371405750798722,
+      "groundContact": {
+        "x": 705.0,
+        "y": 1147.32
+      },
+      "sceneScale": 1,
+      "sceneGroundX": 9,
+      "registrationVersion": 18,
+      "hd": true,
+      "anchor": {
+        "x": 705.0,
+        "y": 1147.32
+      },
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 0
+      }
+    },
+    "enemy_boss_0": {
+      "src": "assets/material/finale/heart-three-forms-v21.png",
+      "sx": 15,
+      "sy": 10,
+      "sourceW": 777,
+      "sourceH": 708,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        775,
+        706
+      ],
+      "nativeContentSize": [
+        773,
+        704
+      ],
+      "anchor": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "groundContact": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "logicalScale": 0.09702457956015524,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 7
+      }
+    },
+    "enemy_reliquary0": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1538,
+      "sourceW": 293,
+      "sourceH": 310,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        293,
+        310
+      ],
+      "nativeContentSize": [
+        293,
+        310
+      ],
+      "anchor": {
+        "x": 170,
+        "y": 301
+      },
+      "groundContact": {
+        "x": 170,
+        "y": 301
+      },
+      "logicalScale": 0.18430034129692832,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 3
+      }
+    },
+    "enemy_reliquary1": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 1922,
+      "sourceW": 257,
+      "sourceH": 327,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        257,
+        327
+      ],
+      "nativeContentSize": [
+        257,
+        327
+      ],
+      "anchor": {
+        "x": 148,
+        "y": 317
+      },
+      "groundContact": {
+        "x": 148,
+        "y": 317
+      },
+      "logicalScale": 0.2018348623853211,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 5
+      }
+    },
+    "enemy_reliquary2": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 1922,
+      "sourceW": 280,
+      "sourceH": 318,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        280,
+        318
+      ],
+      "nativeContentSize": [
+        280,
+        318
+      ],
+      "anchor": {
+        "x": 137,
+        "y": 306
+      },
+      "groundContact": {
+        "x": 137,
+        "y": 306
+      },
+      "logicalScale": 0.19285714285714287,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 6
+      }
+    },
+    "enemy_reliquary3": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2690,
+      "sourceW": 325,
+      "sourceH": 288,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        325,
+        288
+      ],
+      "nativeContentSize": [
+        325,
+        288
+      ],
+      "anchor": {
+        "x": 162,
+        "y": 278
+      },
+      "groundContact": {
+        "x": 162,
+        "y": 278
+      },
+      "logicalScale": 0.18461538461538463,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 9
+      }
+    },
+    "enemy_reliquary4": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 2690,
+      "sourceW": 296,
+      "sourceH": 298,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        296,
+        298
+      ],
+      "nativeContentSize": [
+        296,
+        298
+      ],
+      "anchor": {
+        "x": 154,
+        "y": 287
+      },
+      "groundContact": {
+        "x": 154,
+        "y": 287
+      },
+      "logicalScale": 0.18243243243243243,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "enemies",
+        "index": 10
+      }
+    },
+    "enemy_reliquary5": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 2306,
+      "sourceW": 331,
+      "sourceH": 299,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        331,
+        299
+      ],
+      "nativeContentSize": [
+        331,
+        299
+      ],
+      "anchor": {
+        "x": 170,
+        "y": 292
+      },
+      "groundContact": {
+        "x": 170,
+        "y": 292
+      },
+      "logicalScale": 0.1903323262839879,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 14
+      }
+    },
+    "npc_whiteWutian": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1922,
+      "sourceW": 282,
+      "sourceH": 292,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        282,
+        292
+      ],
+      "nativeContentSize": [
+        282,
+        292
+      ],
+      "anchor": {
+        "x": 144,
+        "y": 277
+      },
+      "groundContact": {
+        "x": 144,
+        "y": 277
+      },
+      "logicalScale": 0.19148936170212766,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeActorOrigin": {
+        "family": "creatures",
+        "index": 11
+      }
+    },
+    "item_key_yellow": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 2,
+      "sourceW": 157,
+      "sourceH": 161,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        157,
+        161
+      ],
+      "nativeContentSize": [
+        157,
+        161
+      ],
+      "anchor": {
+        "x": 78.5,
+        "y": 159
+      },
+      "groundContact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "logicalScale": 0.2236024844720497,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 0,
+        "scale": 0.224,
+        "offset": [
+          26,
+          22
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            26,
+            22,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_key_blue": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 2,
+      "sourceW": 143,
+      "sourceH": 164,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        143,
+        164
+      ],
+      "nativeContentSize": [
+        143,
+        164
+      ],
+      "anchor": {
+        "x": 71.5,
+        "y": 162
+      },
+      "groundContact": {
+        "x": 71.5,
+        "y": 162
+      },
+      "logicalScale": 0.21951219512195122,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 1,
+        "scale": 0.3068181818181818,
+        "offset": [
+          8,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            4,
+            51,
+            58
+          ]
+        }
+      }
+    },
+    "item_key_red": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 2,
+      "sourceW": 157,
+      "sourceH": 161,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        157,
+        161
+      ],
+      "nativeContentSize": [
+        157,
+        161
+      ],
+      "anchor": {
+        "x": 78.5,
+        "y": 159
+      },
+      "groundContact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "logicalScale": 0.2236024844720497,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 2,
+        "scale": 0.3068181818181818,
+        "offset": [
+          8,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "item_atk": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 176,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        176
+      ],
+      "nativeContentSize": [
+        148,
+        176
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 174
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 174
+      },
+      "logicalScale": 0.20454545454545456,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 3,
+        "scale": 0.313953488372093,
+        "offset": [
+          9,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "item_def": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 178,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        178
+      ],
+      "nativeContentSize": [
+        148,
+        178
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 176
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 176
+      },
+      "logicalScale": 0.20224719101123595,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 4,
+        "scale": 0.22764227642276422,
+        "offset": [
+          4,
+          15
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            15,
+            37,
+            58
+          ]
+        }
+      }
+    },
+    "item_coin": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 2,
+      "sourceW": 159,
+      "sourceH": 144,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        159,
+        144
+      ],
+      "nativeContentSize": [
+        159,
+        144
+      ],
+      "anchor": {
+        "x": 79.5,
+        "y": 142
+      },
+      "groundContact": {
+        "x": 79.5,
+        "y": 142
+      },
+      "logicalScale": 0.22641509433962265,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 5,
+        "scale": 0.3146067415730337,
+        "offset": [
+          4,
+          7
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            7,
+            53,
+            58
+          ]
+        }
+      }
+    },
+    "item_orb": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 2,
+      "sourceW": 157,
+      "sourceH": 160,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        157,
+        160
+      ],
+      "nativeContentSize": [
+        157,
+        160
+      ],
+      "anchor": {
+        "x": 78.5,
+        "y": 158
+      },
+      "groundContact": {
+        "x": 78.5,
+        "y": 158
+      },
+      "logicalScale": 0.225,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 6,
+        "scale": 0.2978723404255319,
+        "offset": [
+          14,
+          12
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            14,
+            12,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_mana": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 2,
+      "sourceW": 143,
+      "sourceH": 193,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        143,
+        193
+      ],
+      "nativeContentSize": [
+        143,
+        193
+      ],
+      "anchor": {
+        "x": 71.5,
+        "y": 191
+      },
+      "groundContact": {
+        "x": 71.5,
+        "y": 191
+      },
+      "logicalScale": 0.18652849740932642,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 7,
+        "scale": 0.3016759776536313,
+        "offset": [
+          14,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            14,
+            4,
+            57,
+            58
+          ]
+        }
+      }
+    },
+    "item_elixir": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 386,
+      "sourceW": 150,
+      "sourceH": 183,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        150,
+        183
+      ],
+      "nativeContentSize": [
+        150,
+        183
+      ],
+      "anchor": {
+        "x": 75.0,
+        "y": 181
+      },
+      "groundContact": {
+        "x": 75.0,
+        "y": 181
+      },
+      "logicalScale": 0.19672131147540983,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 8,
+        "scale": 0.23931623931623933,
+        "offset": [
+          15,
+          12
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            15,
+            12,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_hp": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 386,
+      "sourceW": 209,
+      "sourceH": 159,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        209,
+        159
+      ],
+      "nativeContentSize": [
+        209,
+        159
+      ],
+      "anchor": {
+        "x": 104.5,
+        "y": 157
+      },
+      "groundContact": {
+        "x": 104.5,
+        "y": 157
+      },
+      "logicalScale": 0.1722488038277512,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 9,
+        "scale": 0.26291079812206575,
+        "offset": [
+          12,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            12,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_iron": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 386,
+      "sourceW": 174,
+      "sourceH": 192,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        174,
+        192
+      ],
+      "nativeContentSize": [
+        174,
+        192
+      ],
+      "anchor": {
+        "x": 87.0,
+        "y": 190
+      },
+      "groundContact": {
+        "x": 87.0,
+        "y": 190
+      },
+      "logicalScale": 0.203125,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 10,
+        "scale": 0.2222222222222222,
+        "offset": [
+          4,
+          16
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            16,
+            42,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_lotus": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 386,
+      "sourceW": 171,
+      "sourceH": 184,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        171,
+        184
+      ],
+      "nativeContentSize": [
+        171,
+        184
+      ],
+      "anchor": {
+        "x": 85.5,
+        "y": 182
+      },
+      "groundContact": {
+        "x": 85.5,
+        "y": 182
+      },
+      "logicalScale": 0.21195652173913043,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 11,
+        "scale": 0.21455938697318008,
+        "offset": [
+          4,
+          17
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            17,
+            40,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_thorn": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 386,
+      "sourceW": 179,
+      "sourceH": 176,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        179,
+        176
+      ],
+      "nativeContentSize": [
+        179,
+        176
+      ],
+      "anchor": {
+        "x": 89.5,
+        "y": 174
+      },
+      "groundContact": {
+        "x": 89.5,
+        "y": 174
+      },
+      "logicalScale": 0.21787709497206703,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 12,
+        "scale": 0.28125,
+        "offset": [
+          9,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            4,
+            58,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_tide": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 386,
+      "sourceW": 152,
+      "sourceH": 163,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        152,
+        163
+      ],
+      "nativeContentSize": [
+        152,
+        163
+      ],
+      "anchor": {
+        "x": 76.0,
+        "y": 161
+      },
+      "groundContact": {
+        "x": 76.0,
+        "y": 161
+      },
+      "logicalScale": 0.2392638036809816,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 13,
+        "scale": 0.24034334763948498,
+        "offset": [
+          4,
+          14
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            14,
+            47,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_ember": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 386,
+      "sourceW": 171,
+      "sourceH": 192,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        171,
+        192
+      ],
+      "nativeContentSize": [
+        171,
+        192
+      ],
+      "anchor": {
+        "x": 85.5,
+        "y": 190
+      },
+      "groundContact": {
+        "x": 85.5,
+        "y": 190
+      },
+      "logicalScale": 0.203125,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 14,
+        "scale": 0.27860696517412936,
+        "offset": [
+          6,
+          5
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            6,
+            5,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "treasure_mirror": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 386,
+      "sourceW": 168,
+      "sourceH": 189,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        168,
+        189
+      ],
+      "nativeContentSize": [
+        168,
+        189
+      ],
+      "anchor": {
+        "x": 84.0,
+        "y": 187
+      },
+      "groundContact": {
+        "x": 84.0,
+        "y": 187
+      },
+      "logicalScale": 0.20634920634920634,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 15,
+        "scale": 0.23529411764705882,
+        "offset": [
+          4,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            13,
+            50,
+            58
+          ]
+        }
+      }
+    },
+    "prop_door_yellow": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 770,
+      "sourceW": 182,
+      "sourceH": 186,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        182,
+        186
+      ],
+      "nativeContentSize": [
+        182,
+        186
+      ],
+      "anchor": {
+        "x": 91.0,
+        "y": 179
+      },
+      "groundContact": {
+        "x": 91.0,
+        "y": 179
+      },
+      "logicalScale": 0.24395604395604398,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 16,
+        "scale": 0.22764227642276422,
+        "offset": [
+          15,
+          14
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            15,
+            14,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_door_blue": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 770,
+      "sourceW": 190,
+      "sourceH": 188,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        190,
+        188
+      ],
+      "nativeContentSize": [
+        190,
+        188
+      ],
+      "anchor": {
+        "x": 95.0,
+        "y": 181
+      },
+      "groundContact": {
+        "x": 95.0,
+        "y": 181
+      },
+      "logicalScale": 0.23368421052631583,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 17,
+        "scale": 0.1917808219178082,
+        "offset": [
+          4,
+          24
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 128,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            24,
+            39,
+            58
+          ]
+        }
+      }
+    },
+    "prop_door_red": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 770,
+      "sourceW": 174,
+      "sourceH": 182,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        174,
+        182
+      ],
+      "nativeContentSize": [
+        174,
+        182
+      ],
+      "anchor": {
+        "x": 87.0,
+        "y": 175
+      },
+      "groundContact": {
+        "x": 87.0,
+        "y": 175
+      },
+      "logicalScale": 0.25517241379310346,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 18,
+        "scale": 0.18064516129032257,
+        "offset": [
+          4,
+          23
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            23,
+            37,
+            58
+          ]
+        }
+      }
+    },
+    "prop_gate": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 770,
+      "sourceW": 198,
+      "sourceH": 183,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        198,
+        183
+      ],
+      "nativeContentSize": [
+        198,
+        183
+      ],
+      "anchor": {
+        "x": 99.0,
+        "y": 176
+      },
+      "groundContact": {
+        "x": 99.0,
+        "y": 176
+      },
+      "logicalScale": 0.22424242424242427,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 19,
+        "scale": 0.18791946308724833,
+        "offset": [
+          4,
+          26
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            26,
+            40,
+            58
+          ]
+        }
+      }
+    },
+    "prop_altar": {
+      "src": "assets/material/props/altar-hd-v14.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1145,
+      "sourceH": 1374,
+      "frames": 1,
+      "anchor": {
+        "x": 590.0,
+        "y": 1231.2
+      },
+      "groundContact": {
+        "x": 590.0,
+        "y": 1231.2
+      },
+      "contentBounds": [
+        76,
+        26,
+        1104,
+        1336
+      ],
+      "logicalScale": 0.04122137404580153,
+      "hd": true,
+      "nativeContentSize": [
+        1028,
+        1310
+      ],
+      "nativeHDOrigin": {
+        "index": 20,
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            10,
+            4,
+            58,
+            58
+          ]
+        }
+      }
+    },
+    "prop_relic": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 770,
+      "sourceW": 170,
+      "sourceH": 193,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        170,
+        193
+      ],
+      "nativeContentSize": [
+        170,
+        193
+      ],
+      "anchor": {
+        "x": 85.0,
+        "y": 191
+      },
+      "groundContact": {
+        "x": 85.0,
+        "y": 191
+      },
+      "logicalScale": 0.24870466321243523,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 21,
+        "scale": 0.23628691983122363,
+        "offset": [
+          21,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            21,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_monument": {
+      "src": "assets/material/props/monument-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1172,
+      "sourceH": 1342,
+      "frames": 1,
+      "contentBounds": [
+        177,
+        33,
+        996,
+        1307
+      ],
+      "nativeContentSize": [
+        819,
+        1274
+      ],
+      "logicalScale": 0.03885400313971742,
+      "groundContact": {
+        "x": 586.5,
+        "y": 1249.6699999999998
+      },
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "hd": true,
+      "anchor": {
+        "x": 586.5,
+        "y": 1249.6699999999998
+      },
+      "nativeRegistration": {
+        "index": 22,
+        "scale": 0.18064516129032257,
+        "offset": [
+          26,
+          23
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            26,
+            23,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_chest": {
+      "src": "assets/material/props/chest-v13.png",
+      "sx": 0,
+      "sy": 0,
+      "frames": 1,
+      "sourceW": 1374,
+      "sourceH": 1145,
+      "contentBounds": [
+        120,
+        83,
+        1264,
+        1080
+      ],
+      "anchor": {
+        "x": 692.0,
+        "y": 1000
+      },
+      "logicalScale": 0.038461538461538464
+    },
+    "prop_switch": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 770,
+      "sourceW": 184,
+      "sourceH": 204,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        184,
+        204
+      ],
+      "nativeContentSize": [
+        184,
+        204
+      ],
+      "anchor": {
+        "x": 92.0,
+        "y": 202
+      },
+      "groundContact": {
+        "x": 92.0,
+        "y": 202
+      },
+      "logicalScale": 0.23529411764705882,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 24,
+        "scale": 0.28125,
+        "offset": [
+          4,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "prop_plate": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 770,
+      "sourceW": 212,
+      "sourceH": 159,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        212,
+        159
+      ],
+      "nativeContentSize": [
+        212,
+        159
+      ],
+      "anchor": {
+        "x": 106.0,
+        "y": 114.47999999999999
+      },
+      "groundContact": {
+        "x": 106.0,
+        "y": 114.47999999999999
+      },
+      "logicalScale": 0.1509433962264151,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 25,
+        "scale": 0.22950819672131148,
+        "offset": [
+          16,
+          17
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            16,
+            17,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_lamp": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 770,
+      "sourceW": 98,
+      "sourceH": 189,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        98,
+        189
+      ],
+      "nativeContentSize": [
+        98,
+        189
+      ],
+      "anchor": {
+        "x": 49.0,
+        "y": 187
+      },
+      "groundContact": {
+        "x": 49.0,
+        "y": 187
+      },
+      "logicalScale": 0.23809523809523808,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 26,
+        "scale": 0.26666666666666666,
+        "offset": [
+          4,
+          7
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            7,
+            56,
+            58
+          ]
+        }
+      }
+    },
+    "prop_stairs_up": {
+      "src": "assets/material/props/stairs-up-hd-v14.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1402,
+      "sourceH": 1122,
+      "frames": 1,
+      "anchor": {
+        "x": 717.5,
+        "y": 999.48
+      },
+      "groundContact": {
+        "x": 717.5,
+        "y": 999.48
+      },
+      "contentBounds": [
+        178,
+        39,
+        1257,
+        1083
+      ],
+      "logicalScale": 0.04448563484708063,
+      "hd": true,
+      "nativeContentSize": [
+        1079,
+        1044
+      ],
+      "nativeHDOrigin": {
+        "index": 27,
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            12,
+            11,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_stairs_down": {
+      "src": "assets/material/props/stairs-down-hd-v14.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1374,
+      "sourceH": 1145,
+      "frames": 1,
+      "anchor": {
+        "x": 695.5,
+        "y": 1042.28
+      },
+      "groundContact": {
+        "x": 695.5,
+        "y": 1042.28
+      },
+      "contentBounds": [
+        92,
+        22,
+        1299,
+        1131
+      ],
+      "logicalScale": 0.03976801988400994,
+      "hd": true,
+      "nativeContentSize": [
+        1207,
+        1109
+      ],
+      "nativeHDOrigin": {
+        "index": 28,
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            6,
+            52,
+            58
+          ]
+        }
+      }
+    },
+    "prop_seal": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 1154,
+      "sourceW": 174,
+      "sourceH": 171,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        174,
+        171
+      ],
+      "nativeContentSize": [
+        174,
+        171
+      ],
+      "anchor": {
+        "x": 87.0,
+        "y": 123.11999999999999
+      },
+      "groundContact": {
+        "x": 87.0,
+        "y": 123.11999999999999
+      },
+      "logicalScale": 0.14035087719298245,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 29,
+        "scale": 0.28125,
+        "offset": [
+          9,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 256,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            4,
+            57,
+            58
+          ]
+        }
+      }
+    },
+    "prop_finale": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 1154,
+      "sourceW": 192,
+      "sourceH": 179,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        179
+      ],
+      "nativeContentSize": [
+        192,
+        179
+      ],
+      "anchor": {
+        "x": 96.0,
+        "y": 177
+      },
+      "groundContact": {
+        "x": 96.0,
+        "y": 177
+      },
+      "logicalScale": 0.234375,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 30,
+        "scale": 0.28272251308900526,
+        "offset": [
+          5,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            5,
+            4,
+            58,
+            58
+          ]
+        }
+      }
+    },
+    "prop_resonator": {
+      "src": "assets/material/props/resonator-hd-v14.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1312,
+      "sourceH": 1199,
+      "frames": 1,
+      "anchor": {
+        "x": 657.5,
+        "y": 1102.56
+      },
+      "groundContact": {
+        "x": 657.5,
+        "y": 1102.56
+      },
+      "contentBounds": [
+        13,
+        5,
+        1302,
+        1198
+      ],
+      "logicalScale": 0.04034134988363072,
+      "hd": true,
+      "nativeContentSize": [
+        1289,
+        1193
+      ],
+      "nativeHDOrigin": {
+        "index": 31,
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            8,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_rescue": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 1154,
+      "sourceW": 156,
+      "sourceH": 186,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        156,
+        186
+      ],
+      "nativeContentSize": [
+        156,
+        186
+      ],
+      "anchor": {
+        "x": 78.0,
+        "y": 184
+      },
+      "groundContact": {
+        "x": 78.0,
+        "y": 184
+      },
+      "logicalScale": 0.25806451612903225,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 32,
+        "scale": 0.20588235294117646,
+        "offset": [
+          4,
+          19
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            19,
+            44,
+            58
+          ]
+        }
+      }
+    },
+    "prop_tide": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 1154,
+      "sourceW": 189,
+      "sourceH": 176,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        189,
+        176
+      ],
+      "nativeContentSize": [
+        189,
+        176
+      ],
+      "anchor": {
+        "x": 94.5,
+        "y": 174
+      },
+      "groundContact": {
+        "x": 94.5,
+        "y": 174
+      },
+      "logicalScale": 0.23809523809523808,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 33,
+        "scale": 0.27722772277227725,
+        "offset": [
+          6,
+          5
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            6,
+            5,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_portal": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 1154,
+      "sourceW": 204,
+      "sourceH": 194,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        204,
+        194
+      ],
+      "nativeContentSize": [
+        204,
+        194
+      ],
+      "anchor": {
+        "x": 102.0,
+        "y": 192
+      },
+      "groundContact": {
+        "x": 102.0,
+        "y": 192
+      },
+      "logicalScale": 0.22058823529411764,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 34,
+        "scale": 0.2679425837320574,
+        "offset": [
+          8,
+          7
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            7,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_illusion": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 1154,
+      "sourceW": 183,
+      "sourceH": 192,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        183,
+        192
+      ],
+      "nativeContentSize": [
+        183,
+        192
+      ],
+      "anchor": {
+        "x": 91.5,
+        "y": 190
+      },
+      "groundContact": {
+        "x": 91.5,
+        "y": 190
+      },
+      "logicalScale": 0.2459016393442623,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 35,
+        "scale": 0.27450980392156865,
+        "offset": [
+          11,
+          6
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            11,
+            6,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_eye": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2306,
+      "sy": 1154,
+      "sourceW": 187,
+      "sourceH": 204,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        187,
+        204
+      ],
+      "nativeContentSize": [
+        187,
+        204
+      ],
+      "anchor": {
+        "x": 93.5,
+        "y": 202
+      },
+      "groundContact": {
+        "x": 93.5,
+        "y": 202
+      },
+      "logicalScale": 0.23529411764705882,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 36,
+        "scale": 0.27722772277227725,
+        "offset": [
+          9,
+          7
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            7,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_staff": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2690,
+      "sy": 1154,
+      "sourceW": 256,
+      "sourceH": 155,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        256,
+        155
+      ],
+      "nativeContentSize": [
+        256,
+        155
+      ],
+      "anchor": {
+        "x": 128.0,
+        "y": 153
+      },
+      "groundContact": {
+        "x": 128.0,
+        "y": 153
+      },
+      "logicalScale": 0.17578125,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 37,
+        "scale": 0.19858156028368795,
+        "offset": [
+          22,
+          32
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            22,
+            32,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_cicada": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 1538,
+      "sourceW": 138,
+      "sourceH": 195,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        138,
+        195
+      ],
+      "nativeContentSize": [
+        138,
+        195
+      ],
+      "anchor": {
+        "x": 69.0,
+        "y": 193
+      },
+      "groundContact": {
+        "x": 69.0,
+        "y": 193
+      },
+      "logicalScale": 0.24615384615384617,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 38,
+        "scale": 0.21052631578947367,
+        "offset": [
+          4,
+          20
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            20,
+            45,
+            58
+          ]
+        }
+      }
+    },
+    "prop_clone": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 1538,
+      "sourceW": 165,
+      "sourceH": 208,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        165,
+        208
+      ],
+      "nativeContentSize": [
+        165,
+        208
+      ],
+      "anchor": {
+        "x": 82.5,
+        "y": 206
+      },
+      "groundContact": {
+        "x": 82.5,
+        "y": 206
+      },
+      "logicalScale": 0.23076923076923078,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 39,
+        "scale": 0.2731707317073171,
+        "offset": [
+          7,
+          6
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            7,
+            6,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_gate_open": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 1538,
+      "sourceW": 193,
+      "sourceH": 198,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        193,
+        198
+      ],
+      "nativeContentSize": [
+        193,
+        198
+      ],
+      "anchor": {
+        "x": 96.5,
+        "y": 196
+      },
+      "groundContact": {
+        "x": 96.5,
+        "y": 196
+      },
+      "logicalScale": 0.23316062176165803,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 40,
+        "scale": 0.2679425837320574,
+        "offset": [
+          4,
+          11
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            11,
+            57,
+            58
+          ]
+        }
+      }
+    },
+    "prop_door_open": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 1538,
+      "sourceW": 197,
+      "sourceH": 195,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        197,
+        195
+      ],
+      "nativeContentSize": [
+        197,
+        195
+      ],
+      "anchor": {
+        "x": 98.5,
+        "y": 188
+      },
+      "groundContact": {
+        "x": 98.5,
+        "y": 188
+      },
+      "logicalScale": 0.2253807106598985,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 41,
+        "scale": 0.26291079812206575,
+        "offset": [
+          9,
+          12
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 384,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            12,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_bars": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 770,
+      "sourceW": 198,
+      "sourceH": 183,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        198,
+        183
+      ],
+      "nativeContentSize": [
+        198,
+        183
+      ],
+      "anchor": {
+        "x": 99.0,
+        "y": 176
+      },
+      "groundContact": {
+        "x": 99.0,
+        "y": 176
+      },
+      "logicalScale": 0.22424242424242427,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 19,
+        "scale": 0.18791946308724833,
+        "offset": [
+          4,
+          26
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            26,
+            40,
+            58
+          ]
+        }
+      }
+    },
+    "prop_choice": {
+      "src": "assets/material/props/resonator-hd-v14.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1312,
+      "sourceH": 1199,
+      "frames": 1,
+      "anchor": {
+        "x": 657.5,
+        "y": 1102.56
+      },
+      "groundContact": {
+        "x": 657.5,
+        "y": 1102.56
+      },
+      "contentBounds": [
+        13,
+        5,
+        1302,
+        1198
+      ],
+      "logicalScale": 0.04034134988363072,
+      "hd": true,
+      "nativeContentSize": [
+        1289,
+        1193
+      ],
+      "nativeHDOrigin": {
+        "index": 31,
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 320,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            8,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "prop_fragment": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 770,
+      "sourceW": 170,
+      "sourceH": 193,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        170,
+        193
+      ],
+      "nativeContentSize": [
+        170,
+        193
+      ],
+      "anchor": {
+        "x": 85.0,
+        "y": 191
+      },
+      "groundContact": {
+        "x": 85.0,
+        "y": 191
+      },
+      "logicalScale": 0.24870466321243523,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 21,
+        "scale": 0.23628691983122363,
+        "offset": [
+          21,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 192,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            21,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_yellowKey": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 2,
+      "sy": 2,
+      "sourceW": 157,
+      "sourceH": 161,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        157,
+        161
+      ],
+      "nativeContentSize": [
+        157,
+        161
+      ],
+      "anchor": {
+        "x": 78.5,
+        "y": 159
+      },
+      "groundContact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "logicalScale": 0.2236024844720497,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 0,
+        "scale": 0.224,
+        "offset": [
+          26,
+          22
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 0,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            26,
+            22,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_blueKey": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 2,
+      "sourceW": 143,
+      "sourceH": 164,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        143,
+        164
+      ],
+      "nativeContentSize": [
+        143,
+        164
+      ],
+      "anchor": {
+        "x": 71.5,
+        "y": 162
+      },
+      "groundContact": {
+        "x": 71.5,
+        "y": 162
+      },
+      "logicalScale": 0.21951219512195122,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 1,
+        "scale": 0.3068181818181818,
+        "offset": [
+          8,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 64,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            4,
+            51,
+            58
+          ]
+        }
+      }
+    },
+    "item_redKey": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 770,
+      "sy": 2,
+      "sourceW": 157,
+      "sourceH": 161,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        157,
+        161
+      ],
+      "nativeContentSize": [
+        157,
+        161
+      ],
+      "anchor": {
+        "x": 78.5,
+        "y": 159
+      },
+      "groundContact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "logicalScale": 0.2236024844720497,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 2,
+        "scale": 0.3068181818181818,
+        "offset": [
+          8,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 128,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            8,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "item_amber": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 176,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        176
+      ],
+      "nativeContentSize": [
+        148,
+        176
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 174
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 174
+      },
+      "logicalScale": 0.20454545454545456,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 3,
+        "scale": 0.313953488372093,
+        "offset": [
+          9,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "item_ruby": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1154,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 176,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        176
+      ],
+      "nativeContentSize": [
+        148,
+        176
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 174
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 174
+      },
+      "logicalScale": 0.20454545454545456,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 3,
+        "scale": 0.313953488372093,
+        "offset": [
+          9,
+          4
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            9,
+            4,
+            55,
+            58
+          ]
+        }
+      }
+    },
+    "item_jade": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 178,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        178
+      ],
+      "nativeContentSize": [
+        148,
+        178
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 176
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 176
+      },
+      "logicalScale": 0.20224719101123595,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 4,
+        "scale": 0.22764227642276422,
+        "offset": [
+          4,
+          15
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            15,
+            37,
+            58
+          ]
+        }
+      }
+    },
+    "item_emerald": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1538,
+      "sy": 2,
+      "sourceW": 148,
+      "sourceH": 178,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        148,
+        178
+      ],
+      "nativeContentSize": [
+        148,
+        178
+      ],
+      "anchor": {
+        "x": 74.0,
+        "y": 176
+      },
+      "groundContact": {
+        "x": 74.0,
+        "y": 176
+      },
+      "logicalScale": 0.20224719101123595,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 4,
+        "scale": 0.22764227642276422,
+        "offset": [
+          4,
+          15
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 256,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            15,
+            37,
+            58
+          ]
+        }
+      }
+    },
+    "item_coins": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 1922,
+      "sy": 2,
+      "sourceW": 159,
+      "sourceH": 144,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        159,
+        144
+      ],
+      "nativeContentSize": [
+        159,
+        144
+      ],
+      "anchor": {
+        "x": 79.5,
+        "y": 142
+      },
+      "groundContact": {
+        "x": 79.5,
+        "y": 142
+      },
+      "logicalScale": 0.22641509433962265,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 5,
+        "scale": 0.3146067415730337,
+        "offset": [
+          4,
+          7
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 320,
+          "sy": 0,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            4,
+            7,
+            53,
+            58
+          ]
+        }
+      }
+    },
+    "item_peach": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 386,
+      "sourceW": 209,
+      "sourceH": 159,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        209,
+        159
+      ],
+      "nativeContentSize": [
+        209,
+        159
+      ],
+      "anchor": {
+        "x": 104.5,
+        "y": 157
+      },
+      "groundContact": {
+        "x": 104.5,
+        "y": 157
+      },
+      "logicalScale": 0.1722488038277512,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 9,
+        "scale": 0.26291079812206575,
+        "offset": [
+          12,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            12,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_bigPeach": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 386,
+      "sourceW": 209,
+      "sourceH": 159,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        209,
+        159
+      ],
+      "nativeContentSize": [
+        209,
+        159
+      ],
+      "anchor": {
+        "x": 104.5,
+        "y": 157
+      },
+      "groundContact": {
+        "x": 104.5,
+        "y": 157
+      },
+      "logicalScale": 0.1722488038277512,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 9,
+        "scale": 0.26291079812206575,
+        "offset": [
+          12,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            12,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "item_feast": {
+      "src": "assets/material/native-v18/sprites.png",
+      "sx": 386,
+      "sy": 386,
+      "sourceW": 209,
+      "sourceH": 159,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        0,
+        209,
+        159
+      ],
+      "nativeContentSize": [
+        209,
+        159
+      ],
+      "anchor": {
+        "x": 104.5,
+        "y": 157
+      },
+      "groundContact": {
+        "x": 104.5,
+        "y": 157
+      },
+      "logicalScale": 0.1722488038277512,
+      "sceneScale": 1,
+      "sceneGroundX": 8,
+      "registrationVersion": 18,
+      "nativeRegistration": {
+        "index": 9,
+        "scale": 0.26291079812206575,
+        "offset": [
+          12,
+          13
+        ],
+        "legacyFrame": {
+          "src": "assets/material/atlases/objects.png",
+          "sx": 192,
+          "sy": 64,
+          "sourceW": 64,
+          "sourceH": 64,
+          "frames": 1,
+          "anchor": {
+            "x": 32,
+            "y": 58
+          },
+          "contentBounds": [
+            12,
+            13,
+            60,
+            58
+          ]
+        }
+      }
+    },
+    "floor_jade": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_amber": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_blue": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_crimson": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_violet": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_gold": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_jade": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_amber": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_blue": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_crimson": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_violet": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_gold": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_cloud": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_gap": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_water": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "landmark_jade": {
+      "src": "assets/material/landmarks/landmark-buddha-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        31,
+        6,
+        1063,
+        1434
+      ],
+      "nativeContentSize": [
+        1032,
+        1428
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1434
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_amber": {
+      "src": "assets/material/landmarks/landmark-pagoda-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        61,
+        14,
+        1027,
+        1418
+      ],
+      "nativeContentSize": [
+        966,
+        1404
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1418
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_blue": {
+      "src": "assets/material/landmarks/landmark-dragon-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        12,
+        65,
+        1081,
+        1352
+      ],
+      "nativeContentSize": [
+        1069,
+        1287
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1352
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_crimson": {
+      "src": "assets/material/landmarks/landmark-furnace-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        49,
+        1086,
+        1330
+      ],
+      "nativeContentSize": [
+        1086,
+        1281
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1330
+      },
+      "registrationVersion": 18,
+      "hd": true,
+      "statePoints": [
+        [
+          228.06,
+          825.3599999999999
+        ],
+        [
+          543.0,
+          724.0
+        ],
+        [
+          868.8000000000001,
+          897.76
+        ]
+      ]
+    },
+    "landmark_violet": {
+      "src": "assets/material/landmarks/landmark-scripture-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        18,
+        59,
+        1070,
+        1396
+      ],
+      "nativeContentSize": [
+        1052,
+        1337
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1396
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_gold": {
+      "src": "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        11,
+        49,
+        1085,
+        1421
+      ],
+      "nativeContentSize": [
+        1074,
+        1372
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1421
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_buddha": {
+      "src": "assets/material/landmarks/landmark-buddha-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        31,
+        6,
+        1063,
+        1434
+      ],
+      "nativeContentSize": [
+        1032,
+        1428
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1434
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_pagoda": {
+      "src": "assets/material/landmarks/landmark-pagoda-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        61,
+        14,
+        1027,
+        1418
+      ],
+      "nativeContentSize": [
+        966,
+        1404
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1418
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_dragon": {
+      "src": "assets/material/landmarks/landmark-dragon-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        12,
+        65,
+        1081,
+        1352
+      ],
+      "nativeContentSize": [
+        1069,
+        1287
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1352
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_furnace": {
+      "src": "assets/material/landmarks/landmark-furnace-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        49,
+        1086,
+        1330
+      ],
+      "nativeContentSize": [
+        1086,
+        1281
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1330
+      },
+      "registrationVersion": 18,
+      "hd": true,
+      "statePoints": [
+        [
+          228.06,
+          825.3599999999999
+        ],
+        [
+          543.0,
+          724.0
+        ],
+        [
+          868.8000000000001,
+          897.76
+        ]
+      ]
+    },
+    "landmark_scripture": {
+      "src": "assets/material/landmarks/landmark-scripture-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        18,
+        59,
+        1070,
+        1396
+      ],
+      "nativeContentSize": [
+        1052,
+        1337
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1396
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "landmark_blacklotus": {
+      "src": "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1086,
+      "sourceH": 1448,
+      "frames": 1,
+      "contentBounds": [
+        11,
+        49,
+        1085,
+        1421
+      ],
+      "nativeContentSize": [
+        1074,
+        1372
+      ],
+      "anchor": {
+        "x": 543.0,
+        "y": 1421
+      },
+      "registrationVersion": 18,
+      "hd": true
+    },
+    "fx_staff": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_morph": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 256,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_clone": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 512,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_door": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_pickup": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 1024,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_relic": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 1280,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_hit": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "portrait_wukong": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_lantern": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        2,
+        128,
+        128
+      ]
+    },
+    "portrait_bajie": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_tangseng": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_whitewutian": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_qiao": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 640,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        11,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_nezha": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "ui_backdrop": {
+      "src": "assets/material/ui_backdrop.png",
+      "sourceW": 1619,
+      "sourceH": 971,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ui_motif": {
+      "src": "assets/material/ui_backdrop.png",
+      "sourceW": 1619,
+      "sourceH": 971,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cinematic_wukong": {
+      "src": "assets/material/finale/wukong-cinematic-v21.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1199,
+      "sourceH": 1312,
+      "frames": 1,
+      "contentBounds": [
+        21,
+        15,
+        1187,
+        1282
+      ],
+      "nativeContentSize": [
+        1166,
+        1267
+      ],
+      "anchor": {
+        "x": 604.0,
+        "y": 1282
+      },
+      "groundContact": {
+        "x": 604.0,
+        "y": 1282
+      },
+      "logicalScale": 0.056827150749802685,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "cinematicOnly": true
+    }
+  },
+  "sources": [
+    {
+      "file": "assets/material/source/wukong.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/material/source/creatures-corrected.png",
+      "width": 1312,
+      "height": 1199
+    },
+    {
+      "file": "assets/material/source/enemies-extra.png",
+      "width": 1244,
+      "height": 1265
+    },
+    {
+      "file": "assets/material/source/objects.png",
+      "width": 1172,
+      "height": 1342
+    },
+    {
+      "file": "assets/material/source/terrain.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "assets/material/source/landmarks.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "assets/material/source/fx.png",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "actorRegistration": {
+    "sourceRows": [
+      0,
+      302,
+      600,
+      898,
+      1254
+    ],
+    "sourceColumns": [
+      0,
+      307,
+      614,
+      916,
+      1254
+    ],
+    "noise": "isolated components removed before registration",
+    "scale": "shared across sixteen poses"
+  },
+  "portraitRegistration": [
+    {
+      "id": "portrait_wukong",
+      "crop": [
+        86,
+        80,
+        184,
+        178
+      ],
+      "source": "wukong.png"
+    },
+    {
+      "id": "portrait_lantern",
+      "crop": [
+        102,
+        28,
+        224,
+        150
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_bajie",
+      "crop": [
+        90,
+        20,
+        222,
+        152
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_tangseng",
+      "crop": [
+        112,
+        4,
+        224,
+        116
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_whitewutian",
+      "crop": [
+        106,
+        20,
+        222,
+        136
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_qiao",
+      "crop": [
+        70,
+        17,
+        186,
+        133
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_nezha",
+      "crop": [
+        82,
+        33,
+        206,
+        157
+      ],
+      "source": "creatures-corrected.png"
+    }
+  ],
+  "runtimeFiles": [
+    "assets/material/atlases/wukong.png",
+    "assets/material/props/imp-hd-v18.png",
+    "assets/material/native-v18/sprites.png",
+    "assets/material/finale/heart-three-forms-v21.png",
+    "assets/material/props/altar-hd-v14.png",
+    "assets/material/props/monument-hd-v18.png",
+    "assets/material/props/chest-v13.png",
+    "assets/material/props/stairs-up-hd-v14.png",
+    "assets/material/props/stairs-down-hd-v14.png",
+    "assets/material/props/resonator-hd-v14.png",
+    "assets/material/atlases/terrain.png",
+    "assets/material/landmarks/landmark-buddha-hd-v18.png",
+    "assets/material/landmarks/landmark-pagoda-hd-v18.png",
+    "assets/material/landmarks/landmark-dragon-hd-v18.png",
+    "assets/material/landmarks/landmark-furnace-hd-v18.png",
+    "assets/material/landmarks/landmark-scripture-hd-v18.png",
+    "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
+    "assets/material/atlases/fx.png",
+    "assets/material/atlases/portraits.png",
+    "assets/material/ui_backdrop.png",
+    "assets/material/finale/wukong-cinematic-v21.png"
+  ],
+  "runtimeBytes": 52757467
+}

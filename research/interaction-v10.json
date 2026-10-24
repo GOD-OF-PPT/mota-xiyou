@@ -177,5 +177,6 @@
   "world_cohesion_followup": "research/world-cohesion-v16.json",
   "player_journey_followup": "research/player-journey-v17.json",
   "spawn_followup": "docs/v28-spawn-review.md",
-  "conversation_followup": "docs/v29-conversation-review.md"
+  "conversation_followup": "docs/v29-conversation-review.md",
+  "theme_hero_followup": "docs/v30-theme-hero-review.md"
 }

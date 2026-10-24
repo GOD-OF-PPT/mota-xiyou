@@ -21,6 +21,16 @@
 - [出生点](docs/v28-spawn-review.md)：新开局站在莲灯前的空地，向上一步可按 F 修心；既有存档保留原位置。
 - [人物交互](docs/v29-conversation-review.md)：普通人物只保留交谈、石碑只保留读碑；完整背景在手记。移除重复详察、误推演入口及目标牌叠压。
 
+## v30 画境奖励与主角重设计
+
+默认玄金古寺；未通关前仅提供这一画境，旧偏好、入境参数和切换 API 均不能提前开启青绿壁画。完成任一完整主线结局后解锁青绿壁画，奖励跨刷新和新冒险保留；已有合法通关存档可自动承续，独立试炼不授予该奖励。
+
+玄金古寺主角已用内置 ImageGen 重新设计为炭黑旧甲、磨损古铜与暗朱披帛。地图四方向 16 帧、头像、人物 / 行囊和剧情大像使用同一角色设计；原始 RGBA 与逐字提示保留在 `assets/material/hero-v30/`、`research/hero-v30/`。
+
+[实施与验收](docs/v30-theme-hero-review.md) · [同剧情肉鸽游戏开发提示词](docs/xiyou-roguelite-development-prompt.md)
+
+肉鸽提示词用于新建项目；当前十八层魔塔的战斗与资源规则未改成随机肉鸽玩法。
+
 ## GitHub 版本管理
 
 仓库：<https://github.com/GOD-OF-PPT/mota-xiyou>。默认分支为 `main`。

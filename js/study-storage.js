@@ -31,6 +31,6 @@
   // Fail closed: even an invalid entry cannot see or overwrite production keys.
   Object.defineProperty(window,'localStorage',{value:storage,configurable:false});
   const art=['material','mural'].includes(params.get('art'))?params.get('art'):'material';
-  if(valid&&!failure)try{storage.setItem('dasheng-art-style-v6',art);}catch{failure='本轮试玩无法保存，请检查浏览器本地存储空间。';}
+  if(valid&&!failure)try{if(variant==='baseline'||storage.getItem('dasheng-art-style-v6')===null)storage.setItem('dasheng-art-style-v6',art);}catch{failure='本轮试玩无法保存，请检查浏览器本地存储空间。';}
   window.TowerStudy = {participant,task,round,objective,variant,prefix,valid,failure,art};
 })();

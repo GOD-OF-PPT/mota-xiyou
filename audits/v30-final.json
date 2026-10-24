@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-25",
+  "passed": true,
+  "deliverables": {
+    "roguelitePrompt": "docs/xiyou-roguelite-development-prompt.md",
+    "currentGame": "Current eighteen-floor deterministic campaign retained",
+    "theme": "Material default; mural unlocks after either full campaign ending",
+    "hero": "Two ImageGen RGBA originals; sixteen directional poses, matching portrait and cinematic"
+  },
+  "reports": [
+    "audits/v30-theme-hero-browser.json",
+    "audits/v30-regression-campaign-regression.json",
+    "audits/v30-study-browser.json"
+  ],
+  "checks": {
+    "theme-hero-browser": 8,
+    "regression-campaign-regression": 21,
+    "study-browser": 6
+  },
+  "source": {
+    "index.html": "eba87c11ac032a70628a8fc0772ad86a0ee025f5741913707c1f44ed8db0dbec",
+    "js/ui.js": "ff0380e1e861a87851a7db3d97fbe9a023dc1bad842c7bf4b03ece1785dce1c8",
+    "js/style-progress.js": "3c4deb6537c613c29eb65e969ec825f387aaf88318e21c55566081093d2efd20",
+    "js/art-style.js": "9d0d98ecc25e178987e0cef7c5cff76d8453b1938e27c190b941aa3d189dfa75",
+    "js/renderer.js": "3918e5c29ea87e9d590240c49c2a84afe7b44fd1054a0779c3bbb76b0f2029bc",
+    "js/material-assets.js": "2aee4f8aeed8d3bbd7550bf99dea2e43346d440f8a5dec9a64a0fa6d30439105",
+    "assets/material/manifest.json": "7d498b09078519fc37a87765776b4f241480cb5c8fcb6c4d484cd1ab4d4cfe1c",
+    "js/study-storage.js": "0550458a0c316ac7e2840ba22027ec217cd274bebb4809aabbf04fba09439d95",
+    "js/study-foyer.js": "4116a3d978244ac0b782bba4451ca2791c2fcdd16336063a8cb81613b2460ad2",
+    "css/ui-layout.css": "be898c86b2fa5e0afce589b7b35950290d8618846e4c1bfda3ffe654917802b3",
+    "docs/xiyou-roguelite-development-prompt.md": "66fb43fc5067aade2cf7dee2d580617e96386fb02951f5bb4c24223dc1acf8bb",
+    "docs/v30-theme-hero-review.md": "ef29797f51e405d93f88515ba9a75e56ef543e945c7ecac1a141155a405921fb",
+    "scripts/prepare_hero_v30.py": "7ea123c147cb7d7e1bea65113543348940cfabae459b9c7d8b01c9c7187112c5",
+    "research/hero-v30/prompts.json": "494cf671d1d9e738aebf1e739cc834f9a0c5ebbb256d4a4b7a094fd2b3de7229",
+    "research/hero-v30/registration.json": "c0b7f452c65c877f37fd4d2a457ec56bb78f6f13f88fc4ac73878c2e79c08e6f"
+  },
+  "generatedAssets": {
+    "assets/material/hero-v30/wukong-atlas-raw.png": {
+      "sha256": "3fe98e2f81b90d04c2364e81bcd3af0794a82518d86c28d3da4e7bcb6e1096d0",
+      "bytes": 1833566
+    },
+    "assets/material/hero-v30/wukong-atlas.png": {
+      "sha256": "d6f7a7cfeed404009f8de4877623a7ed9da9b0058d991e86b3ef505dde9ab2f3",
+      "bytes": 1708828
+    },
+    "assets/material/hero-v30/wukong-portrait.png": {
+      "sha256": "9223121864402f11a982a6e8273e935418ad246d7bc34e4b121bde7a61110675",
+      "bytes": 248476
+    },
+    "assets/material/hero-v30/wukong-seed.png": {
+      "sha256": "b76b6357a877ac207441c523e6306fcf73622347c5dc5d41e182aa1c62f29ffe",
+      "bytes": 1266077
+    }
+  },
+  "heroSourceScale": 1,
+  "inspectedAtOriginalSize": [
+    "audits/v30-material-hero-first.png",
+    "audits/v30-hero-facing-ArrowDown.png",
+    "audits/v30-new-hero-character.png",
+    "audits/v30-locked-style-release.png",
+    "audits/v30-unlocked-style-release.png"
+  ],
+  "preview": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI30&round=1&task=first-three&objective=explore&art=material",
+  "nativePreviewConfirmed": true,
+  "campaignRulesUnchanged": true,
+  "baselineUnchanged": true,
+  "humanParticipants": 0,
+  "backup": ".backups/theme-hero-v30-20261024/"
+}

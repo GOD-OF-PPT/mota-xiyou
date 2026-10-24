@@ -565,9 +565,9 @@
     },
     bootContacts(ctx,id,frame,footX,footY){
       if(!this.material||this.card)return;
-      const facing=id.split('_').at(-1),contacts=HERO_CONTACTS[facing]?.[frame],meta=window.TowerAssets?.get?.(id);if(!contacts||!meta)return;
+      const facing=id.split('_').at(-1),meta=window.TowerAssets?.get?.(id),contacts=meta?.bootContacts?.[frame]||HERO_CONTACTS[facing]?.[frame];if(!contacts||!meta)return;
       const p=this.renderProfile(this.currentEntity,id),scale=this.spriteScale(id)*(meta.logicalScale??1)*p.scale/NATIVE,anchor=p.sourceContact||meta.anchor,ax=anchor.x,ay=anchor.y,baseY=meta.frameBounds?.[frame]?.[3]||352,points=[];
-      for(const [sourceX,width]of contacts){const x=footX+p.groundX-8+(sourceX-ax)*scale,y=footY+p.groundY-16+(baseY-ay)*scale,rx=Math.max(.48,width*scale*.6);ctx.save();ctx.translate(x,y+.1);ctx.scale(1,.28/rx);const g=ctx.createRadialGradient(0,0,0,0,0,rx);g.addColorStop(0,'rgba(10,15,16,.88)');g.addColorStop(.55,'rgba(10,15,16,.6)');g.addColorStop(1,'rgba(10,15,16,0)');ctx.fillStyle=g;ctx.fillRect(-rx,-rx,rx*2,rx*2);ctx.restore();points.push({x,y,width:rx*2});}
+      for(const [sourceX,width,sourceY=baseY]of contacts){const x=footX+p.groundX-8+(sourceX-ax)*scale,y=footY+p.groundY-16+(sourceY-ay)*scale,rx=Math.max(.48,width*scale*.6);ctx.save();ctx.translate(x,y+.1);ctx.scale(1,.28/rx);const g=ctx.createRadialGradient(0,0,0,0,0,rx);g.addColorStop(0,'rgba(10,15,16,.88)');g.addColorStop(.55,'rgba(10,15,16,.6)');g.addColorStop(1,'rgba(10,15,16,0)');ctx.fillStyle=g;ctx.fillRect(-rx,-rx,rx*2,rx*2);ctx.restore();points.push({x,y,width:rx*2});}
       this.groundingAudit.push({id,frame,contacts:points});
     },
     stairwell(ctx,x,y){

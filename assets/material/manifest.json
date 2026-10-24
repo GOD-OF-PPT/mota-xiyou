@@ -1,187 +1,391 @@
 {
-  "revision": 21,
+  "revision": 30,
   "style": "玄金神怪 · 三维古寺",
-  "pipeline": "Authored native pixel isolation, physical contacts and reviewed HD landmarks; final DPR rendering",
+  "pipeline": "ImageGen coherent temple-material hero; 16 native poses, shared scale and registered sole contacts",
   "assets": {
     "actor_wukong_down": {
-      "src": "assets/material/atlases/wukong.png",
+      "src": "assets/material/hero-v30/wukong-atlas.png",
       "sx": 0,
       "sy": 0,
-      "sourceW": 384,
-      "sourceH": 384,
+      "sourceW": 512,
+      "sourceH": 512,
       "frames": 4,
       "anchor": {
-        "x": 192,
-        "y": 352
+        "x": 256,
+        "y": 464
       },
-      "logicalScale": 0.25,
+      "groundContact": {
+        "x": 256,
+        "y": 464
+      },
+      "logicalScale": 0.2363013698630137,
+      "sceneScale": 1,
       "contentBounds": [
-        120,
-        151,
-        335,
-        352
+        92,
+        170,
+        388,
+        465
       ],
       "frameBounds": [
         [
-          120,
-          162,
-          268,
-          352
+          197,
+          180,
+          388,
+          465
         ],
         [
-          155,
-          151,
-          305,
-          352
+          159,
+          170,
+          366,
+          465
         ],
         [
-          125,
-          152,
-          266,
-          352
+          190,
+          173,
+          384,
+          465
         ],
         [
-          132,
-          162,
-          335,
-          352
+          92,
+          187,
+          339,
+          465
         ]
-      ]
+      ],
+      "bootContacts": [
+        [
+          [
+            237.0,
+            35,
+            464
+          ]
+        ],
+        [
+          [
+            256.0,
+            29,
+            464
+          ]
+        ],
+        [
+          [
+            256.0,
+            31,
+            464
+          ]
+        ],
+        [
+          [
+            268.0,
+            35,
+            464
+          ]
+        ]
+      ],
+      "registrationVersion": 30,
+      "nativeContentSize": [
+        247,
+        295
+      ],
+      "sharedSourceScale": 1
     },
     "actor_wukong_right": {
-      "src": "assets/material/atlases/wukong.png",
+      "src": "assets/material/hero-v30/wukong-atlas.png",
       "sx": 0,
-      "sy": 384,
-      "sourceW": 384,
-      "sourceH": 384,
+      "sy": 512,
+      "sourceW": 512,
+      "sourceH": 512,
       "frames": 4,
       "anchor": {
-        "x": 192,
-        "y": 352
+        "x": 256,
+        "y": 464
       },
-      "logicalScale": 0.25,
+      "groundContact": {
+        "x": 256,
+        "y": 464
+      },
+      "logicalScale": 0.2363013698630137,
+      "sceneScale": 1,
       "contentBounds": [
-        78,
-        158,
-        356,
-        352
+        92,
+        173,
+        428,
+        465
       ],
       "frameBounds": [
         [
-          113,
-          158,
-          238,
-          352
+          169,
+          173,
+          337,
+          465
         ],
         [
-          78,
           160,
-          228,
-          352
+          180,
+          363,
+          465
         ],
         [
-          133,
-          160,
-          280,
-          352
+          161,
+          177,
+          367,
+          465
         ],
         [
-          134,
-          162,
-          356,
-          352
+          92,
+          212,
+          428,
+          465
         ]
-      ]
+      ],
+      "bootContacts": [
+        [
+          [
+            255.0,
+            49,
+            464
+          ]
+        ],
+        [
+          [
+            227.0,
+            47,
+            464
+          ],
+          [
+            328.0,
+            35,
+            458
+          ]
+        ],
+        [
+          [
+            221.5,
+            50,
+            464
+          ],
+          [
+            334.0,
+            41,
+            459
+          ]
+        ],
+        [
+          [
+            138.5,
+            38,
+            461
+          ],
+          [
+            322.5,
+            52,
+            464
+          ]
+        ]
+      ],
+      "registrationVersion": 30,
+      "nativeContentSize": [
+        336,
+        292
+      ],
+      "sharedSourceScale": 1
     },
     "actor_wukong_up": {
-      "src": "assets/material/atlases/wukong.png",
+      "src": "assets/material/hero-v30/wukong-atlas.png",
       "sx": 0,
-      "sy": 768,
-      "sourceW": 384,
-      "sourceH": 384,
+      "sy": 1024,
+      "sourceW": 512,
+      "sourceH": 512,
       "frames": 4,
       "anchor": {
-        "x": 192,
-        "y": 352
+        "x": 256,
+        "y": 464
       },
-      "logicalScale": 0.25,
+      "groundContact": {
+        "x": 256,
+        "y": 464
+      },
+      "logicalScale": 0.2363013698630137,
+      "sceneScale": 1,
       "contentBounds": [
-        85,
-        152,
-        336,
-        352
+        116,
+        177,
+        387,
+        465
       ],
       "frameBounds": [
         [
-          85,
-          160,
-          224,
-          352
-        ],
-        [
-          90,
-          152,
-          230,
-          352
-        ],
-        [
-          105,
-          152,
-          247,
-          352
+          135,
+          182,
+          326,
+          465
         ],
         [
           123,
-          167,
-          336,
-          352
+          177,
+          325,
+          465
+        ],
+        [
+          141,
+          182,
+          341,
+          465
+        ],
+        [
+          116,
+          197,
+          387,
+          465
         ]
-      ]
+      ],
+      "bootContacts": [
+        [
+          [
+            212.5,
+            32,
+            458
+          ],
+          [
+            279.5,
+            36,
+            464
+          ]
+        ],
+        [
+          [
+            256.0,
+            33,
+            464
+          ]
+        ],
+        [
+          [
+            255.5,
+            30,
+            464
+          ]
+        ],
+        [
+          [
+            132.0,
+            33,
+            464
+          ],
+          [
+            343.5,
+            50,
+            462
+          ]
+        ]
+      ],
+      "registrationVersion": 30,
+      "nativeContentSize": [
+        271,
+        288
+      ],
+      "sharedSourceScale": 1
     },
     "actor_wukong_left": {
-      "src": "assets/material/atlases/wukong.png",
+      "src": "assets/material/hero-v30/wukong-atlas.png",
       "sx": 0,
-      "sy": 1152,
-      "sourceW": 384,
-      "sourceH": 384,
+      "sy": 1536,
+      "sourceW": 512,
+      "sourceH": 512,
       "frames": 4,
       "anchor": {
-        "x": 192,
-        "y": 352
+        "x": 256,
+        "y": 464
       },
-      "logicalScale": 0.25,
+      "groundContact": {
+        "x": 256,
+        "y": 464
+      },
+      "logicalScale": 0.2363013698630137,
+      "sceneScale": 1,
       "contentBounds": [
-        146,
-        139,
-        368,
-        352
+        47,
+        174,
+        396,
+        465
       ],
       "frameBounds": [
         [
-          155,
-          139,
-          291,
-          352
+          181,
+          174,
+          359,
+          465
         ],
         [
-          172,
-          148,
-          343,
-          352
+          160,
+          190,
+          361,
+          465
         ],
         [
-          176,
-          146,
-          314,
-          352
-        ],
-        [
-          146,
-          153,
+          158,
+          189,
           368,
-          352
+          465
+        ],
+        [
+          47,
+          212,
+          396,
+          465
         ]
-      ]
+      ],
+      "bootContacts": [
+        [
+          [
+            257.0,
+            51,
+            464
+          ]
+        ],
+        [
+          [
+            190.5,
+            38,
+            462
+          ],
+          [
+            287.5,
+            50,
+            464
+          ]
+        ],
+        [
+          [
+            188.0,
+            43,
+            462
+          ],
+          [
+            294.0,
+            51,
+            464
+          ]
+        ],
+        [
+          [
+            168.0,
+            55,
+            460
+          ],
+          [
+            368.5,
+            34,
+            464
+          ]
+        ]
+      ],
+      "registrationVersion": 30,
+      "nativeContentSize": [
+        349,
+        291
+      ],
+      "sharedSourceScale": 1
     },
     "enemy_imp": {
       "src": "assets/material/props/imp-hd-v18.png",
@@ -5575,21 +5779,21 @@
       "logicalScale": 0.375
     },
     "portrait_wukong": {
-      "src": "assets/material/atlases/portraits.png",
+      "src": "assets/material/hero-v30/wukong-portrait.png",
       "sx": 0,
       "sy": 0,
-      "sourceW": 128,
-      "sourceH": 128,
+      "sourceW": 345,
+      "sourceH": 345,
       "frames": 1,
       "anchor": {
-        "x": 64,
-        "y": 128
+        "x": 172.5,
+        "y": 345
       },
       "contentBounds": [
         0,
         0,
-        128,
-        128
+        345,
+        345
       ]
     },
     "portrait_lantern": {
@@ -5721,34 +5925,28 @@
       }
     },
     "cinematic_wukong": {
-      "src": "assets/material/finale/wukong-cinematic-v21.png",
+      "src": "assets/material/hero-v30/wukong-seed.png",
       "sx": 0,
       "sy": 0,
-      "sourceW": 1199,
-      "sourceH": 1312,
+      "sourceW": 1254,
+      "sourceH": 1254,
       "frames": 1,
+      "anchor": {
+        "x": 627.0,
+        "y": 1190
+      },
       "contentBounds": [
-        21,
-        15,
-        1187,
-        1282
+        283,
+        20,
+        1099,
+        1190
       ],
       "nativeContentSize": [
-        1166,
-        1267
+        816,
+        1170
       ],
-      "anchor": {
-        "x": 604.0,
-        "y": 1282
-      },
-      "groundContact": {
-        "x": 604.0,
-        "y": 1282
-      },
-      "logicalScale": 0.056827150749802685,
-      "sceneScale": 1,
-      "registrationVersion": 21,
-      "cinematicOnly": true
+      "logicalScale": 0.18461538461538463,
+      "registrationVersion": 30
     }
   },
   "sources": [
@@ -5786,6 +5984,16 @@
       "file": "assets/material/source/fx.png",
       "width": 1536,
       "height": 1024
+    },
+    {
+      "file": "assets/material/hero-v30/wukong-seed.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/material/hero-v30/wukong-atlas-raw.png",
+      "width": 1254,
+      "height": 1254
     }
   ],
   "actorRegistration": {
@@ -5879,7 +6087,7 @@
     }
   ],
   "runtimeFiles": [
-    "assets/material/atlases/wukong.png",
+    "assets/material/hero-v30/wukong-atlas.png",
     "assets/material/props/imp-hd-v18.png",
     "assets/material/native-v18/sprites.png",
     "assets/material/finale/heart-three-forms-v21.png",
@@ -5897,9 +6105,10 @@
     "assets/material/landmarks/landmark-scripture-hd-v18.png",
     "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
     "assets/material/atlases/fx.png",
+    "assets/material/hero-v30/wukong-portrait.png",
     "assets/material/atlases/portraits.png",
     "assets/material/ui_backdrop.png",
-    "assets/material/finale/wukong-cinematic-v21.png"
+    "assets/material/hero-v30/wukong-seed.png"
   ],
-  "runtimeBytes": 52757467
+  "runtimeBytes": 53438032
 }

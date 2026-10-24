@@ -94,3 +94,6 @@ html :is(#journey-guide,#story-dock,#altar-ritual footer,#modal-actions) button:
 @media(max-height:800px) and (min-width:761px){html[data-ui-skins=ready] #modal-root .kit-token{min-height:100px}html[data-ui-skins=ready] #modal-root .kit-token canvas{width:54px;height:54px}}
 @media(prefers-reduced-motion:reduce){html :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button{transition:none}}
 body[data-motion=reduced] :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button{transition:none}
+.style-tableau[data-style-count="1"]{height:auto;min-height:65%;max-width:760px;margin:auto}
+.style-tableau[data-style-count="1"] button{width:min(620px,90%)}
+.style-unlock-note{font:15px/1.8 var(--serif);color:var(--s25-gold);text-align:center;max-width:44ch;margin:20px auto}

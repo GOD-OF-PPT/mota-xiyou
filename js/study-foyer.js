@@ -2,9 +2,11 @@
 (() => {
  'use strict';const form=document.querySelector('#setup'),params=new URLSearchParams(location.search),goals={'first-three':[['explore','石生心印','归位三枚舍利，唤醒石生心印。']],ferry:[['keep-key','留钥渡水','保留起始黄钥，取得舍利、定风并上行。'],['lantern-way','供灯开栈','供灯经过南北栈门，取得舍利、定风并上行。']],silk:[['atk','破执经之路','取得攻击经、收回丙影，以甲乙接通上行。'],['def','护心经之路','取得护心经、收回丙影，以甲乙接通上行。']]};
  for(const name of ['participant','round','task','art'])if(params.has(name)&&(name!=='task'||Object.hasOwn(goals,params.get(name)))&&(name!=='art'||['material','mural'].includes(params.get(name))))form.elements[name].value=params.get(name);
+ const canChangeStyle=()=>window.TowerStyleProgress?.isUnlocked('mural')===true;
+ if(!canChangeStyle()){form.elements.art.querySelector('[value=mural]')?.remove();form.elements.art.value='material';}
  function options(){const field=form.elements.objective,old=field.value;field.replaceChildren(...goals[form.elements.task.value].map(([value,text])=>new Option(text,value)));if([...field.options].some(o=>o.value===(params.get('objective')||old)))field.value=params.get('objective')||old;}
  const config=()=>Object.fromEntries(new FormData(form));
- function refresh(){const c=config(),entries=document.querySelector('#entries');entries.replaceChildren();document.documentElement.dataset.artStyle=c.art;document.querySelector('[data-foyer-style]').textContent=c.art==='mural'?'青绿壁画 · 换境':'玄金古寺 · 换境';document.querySelector('#study-identity').textContent=`${c.participant||'未留名'} · 第 ${c.round||'—'} 轮`;
+ function refresh(){const c=config(),entries=document.querySelector('#entries');if(!canChangeStyle()){c.art='material';form.elements.art.value='material';}entries.replaceChildren();document.documentElement.dataset.artStyle=c.art;const styleButton=document.querySelector('[data-foyer-style]');styleButton.textContent=canChangeStyle()?(c.art==='mural'?'青绿壁画 · 换境':'玄金古寺 · 换境'):'玄金古寺';styleButton.disabled=!canChangeStyle();document.querySelector('#study-identity').textContent=`${c.participant||'未留名'} · 第 ${c.round||'—'} 轮`;
   document.querySelectorAll('[data-study-task]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.studyTask===c.task)));
   document.querySelector('#study-goals').replaceChildren(...goals[c.task].map(([id,label])=>{const b=document.createElement('button');b.type='button';b.dataset.studyGoal=id;b.textContent=label;b.setAttribute('aria-pressed',String(c.objective===id));b.onclick=()=>{form.elements.objective.value=id;refresh();document.querySelector(`[data-study-goal="${id}"]`).focus({preventScroll:true});};return b;}));
   document.querySelector('#task-text').textContent=goals[c.task].find(g=>g[0]===c.objective)?.[2]||'';
@@ -15,6 +17,6 @@
  }
  options();refresh();form.elements.task.addEventListener('change',()=>{params.delete('objective');options();});form.addEventListener('input',refresh);form.addEventListener('change',refresh);form.addEventListener('submit',e=>e.preventDefault());
  document.querySelectorAll('[data-study-task]').forEach(b=>b.onclick=()=>{form.elements.task.value=b.dataset.studyTask;form.elements.task.dispatchEvent(new Event('change',{bubbles:true}));});
- document.querySelector('[data-foyer-style]').onclick=()=>{form.elements.art.value=form.elements.art.value==='mural'?'material':'mural';refresh();};
+ document.querySelector('[data-foyer-style]').onclick=()=>{if(!canChangeStyle())return;form.elements.art.value=form.elements.art.value==='mural'?'material':'mural';refresh();};
  document.querySelector('#download').onclick=()=>{if(!form.reportValidity())return;const c=config(),setup={...c,observedByHuman:false,note:'任务准备信息，不是参与者结果。',versions:Object.fromEntries(['baseline','new'].map(v=>{const f=TOWER_STUDY_FIXTURES[v][c.task];return [v,{trialId:f.id,startHash:f.startHash,budgetGroup:f.budgetGroup,source:f.source}];}))},a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(setup,null,2)],{type:'application/json'}));a.href=url;a.download=`study-${c.participant}-${c.task}-${c.round}-setup.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 })();

@@ -33,7 +33,8 @@
     };return api;
   }
   const families={mural,material:createAtlas(manifest)},storageKey='dasheng-art-style-v6';
-  let preferred='material';try{const stored=localStorage.getItem(storageKey);if(families[stored])preferred=stored;}catch{}
+  const unlocked=id=>id==='material'||root.TowerStyleProgress?.isUnlocked(id)===true;
+  let preferred='material';try{const stored=localStorage.getItem(storageKey);if(families[stored]&&unlocked(stored))preferred=stored;else if(stored==='mural')localStorage.setItem(storageKey,'material');}catch{}
   let active=preferred,requestSerial=0;
   const current=()=>families[active];
   const apply=id=>{
@@ -51,9 +52,11 @@
   };
   root.TowerStyle={
     get current(){return active;},get(){return active;},
-    available:[{id:'mural',name:'青绿壁画',description:'矿彩像素 · 清晰格点'},{id:'material',name:'玄金古寺',description:'三维材质预渲染 · 石木铜金'}],
+    isUnlocked:unlocked,
+    get available(){return [{id:'material',name:'玄金古寺',description:'三维材质预渲染 · 石木铜金'},{id:'mural',name:'青绿壁画',description:'矿彩像素 · 清晰格点'}].filter(s=>unlocked(s.id));},
     async set(id){
       if(!families[id])throw new Error('未收录的画境');
+      if(!unlocked(id)){const error=new Error('完成任一主线结局后解锁新画境');error.code='STYLE_LOCKED';throw error;}
       const serial=++requestSerial,result=await families[id].preload(value=>progress(id,value));
       if(result.failed.length){const error=new Error('画境载入未完成，保留当前风格');error.failed=result.failed;throw error;}
       if(serial===requestSerial)apply(id);
