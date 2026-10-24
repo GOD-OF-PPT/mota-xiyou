@@ -1,0 +1,26 @@
+{
+  "errors": [
+    "ev.target.matches is not a function",
+    "ev.target.matches is not a function",
+    "ev.target.matches is not a function"
+  ],
+  "battle": {
+    "hp": 620,
+    "damage": 20,
+    "kills": 0
+  },
+  "repeatResults": [
+    0,
+    0,
+    0
+  ],
+  "spaceKills": 0,
+  "directionKills": 0,
+  "result": {
+    "hp": 600,
+    "kills": 1,
+    "removed": true
+  },
+  "exactLoss": true,
+  "onlyExplicitConfirmation": true
+}

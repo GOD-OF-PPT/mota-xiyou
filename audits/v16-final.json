@@ -1,0 +1,94 @@
+{
+  "status": "implemented_and_verified_pc",
+  "completedAt": "2026-10-23T05:04:54.189Z",
+  "source": {
+    "js/renderer.js": "a0135333b6229bd6ab9c26911bb6235f475e92fb8f256d0f44a8d43433f9666a",
+    "js/ui.js": "9312adc50d8a9b60f976ae23e68c9eecfc56f28a10c3a70f55c520601c798514",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "css/experience.css": "3aa202593197d919380323410f703be5f5033fc8ff2c32ba9fae8bc5ef9fda09",
+    "index.html": "b86b65dee9a8b7836cb8a018fcdb5ef1001af6093aa794cbef22dd8238877154",
+    "js/material-assets.js": "7f241f0f1b901b5da38237675d7052fce0bd52b229f54f52b6d07754e3ac3741",
+    "assets/material/manifest.json": "ef82a584655265f20fa0bc51b0c6363dd875b704672f5efc3ad5ce0ec7e66a7f",
+    "assets/material/atlases/wukong.png": "0bd843bfd802cd180666829adca0b2d284c054791d7ad132cb1046cc6f26caf1",
+    "tests/v16-world-cohesion.cjs": "2646b7a4dd43319219806ff345e7fdfc905462af3e5b46883622edcea108f50a",
+    "tests/v14-prop-resolution.cjs": "bd54bc85749b63519d0ed6ecf370308808245eaed6d1e07e155d6702dd3de195"
+  },
+  "results": {
+    "scene": {
+      "report": "audits/v16-cohesion-after.json",
+      "groups": 13,
+      "legalCampaignActions": 4142,
+      "walkingPosesVerifiedAgainstOpaquePixels": true
+    },
+    "ui": {
+      "report": "audits/v10-interaction.json",
+      "groups": 21,
+      "all18Floors": true,
+      "bothEndings": true
+    },
+    "choices": {
+      "report": "audits/v15-choice-interaction.json",
+      "groups": 33
+    },
+    "resolution": {
+      "report": "audits/v14-resolution-v16.json",
+      "cases": 6,
+      "allNativeBitmapsWithinResolution": true,
+      "downstairs": "canvas-geometry at final DPR"
+    },
+    "occlusion": {
+      "report": "audits/v8-b4-occlusion.json",
+      "checks": 2,
+      "fixture": "playthrough-v9-free-mixed-direct-offering.json"
+    },
+    "mural": {
+      "report": "audits/v16-mural-comparison.json",
+      "matchingWorldRegions": [
+        "first",
+        "mechanism",
+        "courtyard"
+      ],
+      "hudChange": "PC control hint intentionally moved"
+    }
+  },
+  "legacyCheck": {
+    "report": "audits/v8-b3-independent.json",
+    "status": "obsolete static assertion",
+    "reason": "Expects old chest source contact 29,50; approved v13 HD chest uses 692,1000",
+    "currentReplacement": "v16 actual source alpha and moving-contact verification"
+  },
+  "visualReviewAtActualSize": [
+    "audits/v16-before-material-courtyard-detail.png",
+    "audits/v16-after-material-courtyard-detail.png",
+    "audits/v16-after-material-courtyard.png",
+    "audits/v16-after-material-mechanism.png",
+    "audits/v16-live-user-preview.png"
+  ],
+  "nativeAssetsUnchanged": true,
+  "engineWorldAndV15InputUnchanged": true,
+  "cacheVersion": 16,
+  "baseline": "audits/v16-cohesion-before.json",
+  "backup": ".backups/grounding-v16-20261023-121922",
+  "live": {
+    "url": "http://127.0.0.1:8765/",
+    "screenshot": "audits/v16-live-user-preview.png",
+    "floor": 2,
+    "hp": 477,
+    "mana": 6,
+    "keys": {
+      "yellow": 1,
+      "blue": 1,
+      "red": 0
+    },
+    "fragments": 2,
+    "choiceCommitted": false,
+    "actions": "Six legal empty-floor steps to observe the courtyard; no resource transactions"
+  },
+  "review": "docs/v16-world-cohesion-review.md",
+  "remaining": [
+    "All-floor bespoke art review",
+    "Fine contact registration for every actor frame",
+    "Human visual judgement and gameplay pacing"
+  ]
+}

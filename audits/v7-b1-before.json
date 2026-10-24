@@ -1,0 +1,38 @@
+{
+  "phase": "before",
+  "scope": "fixed PC 2525x1208 DPR1; target lifecycle only",
+  "errors": [],
+  "before": {
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "visible": true,
+    "link": true,
+    "direction": false,
+    "x": 10,
+    "y": 18
+  },
+  "after": {
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "visible": true,
+    "link": true,
+    "direction": false,
+    "x": 10,
+    "y": 17
+  },
+  "direction": "up",
+  "target": {
+    "x": 11,
+    "y": 18,
+    "type": "npc",
+    "dialogue": "lantern",
+    "name": "点灯僧",
+    "archetype": "lantern",
+    "id": "f0-0"
+  },
+  "screenshot": "audits/v7-b1-before.png"
+}

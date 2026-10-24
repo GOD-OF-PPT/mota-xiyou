@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "sourceMatchesAcceptance": true,
+  "interactiveChecks": 21,
+  "lateAbilityFrames": 6,
+  "paidDecisionChecks": [
+    {
+      "group": "locks",
+      "choice": "gold",
+      "exactResourceSettlement": true,
+      "repeatSpendsNothing": true
+    },
+    {
+      "group": "sevenWounds",
+      "choice": "rescue",
+      "exactResourceSettlement": true,
+      "repeatSpendsNothing": true
+    }
+  ],
+  "offline": {
+    "fileURL": true,
+    "networkOffline": true,
+    "remoteRequests": [],
+    "inventorySlots": 6,
+    "muralLoaded": true,
+    "ritualVisible": true
+  },
+  "ruleChecks": {
+    "engine": 39,
+    "equipment": 8,
+    "campaignAndAid": 6
+  },
+  "guidance": "docs/v10-immersion-plan.md",
+  "review": "docs/v10-immersion-review.md",
+  "source": {
+    "index.html": "055dae5f6a0a2aa9df753b3ad9d8e86f51672bcc568cd146332296b3a965bacb",
+    "js/ui.js": "1e35bdd8374d482971c9389dc4f5b383c56f0f6a52dbafa2299243f3853bbe56",
+    "js/presentation.js": "775967ec2c4dac09af2ef76c97e813237b73c99f62575624c31967a7451367e5",
+    "js/engine.js": "72d3ef140f5b06bab0d23d41ff175121c5ec2facafb22e3d4428122a79cd0fa9",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "css/experience.css": "d5d861aa1d35f46bdd2a56d9ce0f459ffc8c2d5279e3a6ee0a020746a468df21"
+  },
+  "visualReview": [
+    "v10-lotus-ritual-poor.png",
+    "v10-inventory-material.png",
+    "v10-inventory-mural.png",
+    "v10-short-speech.png",
+    "v10-locked-chest-readable.png",
+    "v10-arrival.png",
+    "v10-route-rite.png",
+    "v10-material-staff-late.png",
+    "v10-material-morph-late.png",
+    "v10-material-clone-late.png"
+  ],
+  "visualMethod": "Screenshots opened individually at original size; real player aesthetic acceptance is distinct from automated checks."
+}

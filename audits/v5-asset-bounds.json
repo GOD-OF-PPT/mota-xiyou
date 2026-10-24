@@ -1,0 +1,25 @@
+{
+  "assets": 145,
+  "files": 9,
+  "errors": [],
+  "runtimeBytes": 7250669,
+  "uniqueFrameGroups": 105,
+  "portraitWukong": {
+    "src": "assets/mural/atlases/wukong.png",
+    "sx": 32,
+    "sy": 30,
+    "sourceW": 40,
+    "sourceH": 40,
+    "frames": 1,
+    "anchor": {
+      "x": 20,
+      "y": 40
+    },
+    "contentBounds": [
+      0,
+      0,
+      40,
+      40
+    ]
+  }
+}

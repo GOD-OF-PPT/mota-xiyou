@@ -1,0 +1,118 @@
+{
+  "version": 24,
+  "date": "2026-10-24",
+  "scope": "Research-derived implementation and game-native art, motion and interaction for recently added pages",
+  "plan": "docs/v24-research-immersion-plan.md",
+  "scopeStatus": "complete",
+  "technicalAcceptance": true,
+  "representativeVisualAcceptance": true,
+  "humanEffectAcceptance": false,
+  "parentV23HumanGate": "pending",
+  "reports": [
+    {
+      "file": "audits/v24-playability-browser.json",
+      "passed": true,
+      "checks": 11,
+      "sha256": "91f0576922ccae817791945a1c30a461f0a6b7ef609320f40beb7665da030f19"
+    },
+    {
+      "file": "audits/v24-trials-browser.json",
+      "passed": true,
+      "checks": 11,
+      "sha256": "2dd1683e489cbddb4953679eea281e4647fc1b96991320637fbd096b8f039d37"
+    },
+    {
+      "file": "audits/v24-study-browser.json",
+      "passed": true,
+      "checks": 6,
+      "sha256": "eac40c87b38bc6df0853557707d2b3fb4ea5753701e3807ad35cd5fc6656d6bd"
+    },
+    {
+      "file": "audits/v24-folio-interaction.json",
+      "passed": true,
+      "checks": 7,
+      "sha256": "9418f666dd4ad5089bf0dd3313139bde5963cde82e15e820c7dc1af54d624847"
+    }
+  ],
+  "technicalCheckGroups": 35,
+  "syntaxFiles": [
+    "js/ui.js",
+    "js/planning-ui.js",
+    "js/trials-ui.js",
+    "js/study-storage.js",
+    "js/study-setup.js",
+    "js/study-entry.js",
+    "js/study-foyer.js",
+    "scripts/build_v23_study.cjs",
+    "tests/v24-planning-browser.cjs",
+    "tests/v24-trials-browser.cjs",
+    "tests/v24-study-browser.cjs",
+    "tests/v24-folio-interaction.cjs",
+    "research/study-v23/fixtures.js"
+  ],
+  "source": {
+    "index.html": "efa05792e246b1bca7e053142f703bdbee70b55b2c04a064840cbf5f474d596d",
+    "README.md": "4e5b1be332c8867de8daf043aa2ee6efeb255855962bbc2e9a6f66561937b361",
+    "js/ui.js": "2e6f489ef7221094b895f77c90e2a433d51375849d17e58fe4245897aeb3b608",
+    "js/planning-ui.js": "50573232967c7eb2d97bb43d79c57fb5bb9fc4b60fb762a4dee02a0c80fd1d55",
+    "js/trials-ui.js": "499bf4185f2a5d1ba5e869f98e048616e8b9b8ee2da140d8eff7df0189630b6b",
+    "js/study-storage.js": "364b7af05dea82c4cca41719cf8e6a8b41fbc2bcc708c676848302040ea79589",
+    "js/study-setup.js": "9a82f2ef8500ac7af7e46ca167b59bb16ed29e6f46f697cd9ef2feb35bbd286f",
+    "js/study-entry.js": "ff6aefbddc7344db94354eed3dc7f19e7bfc29541c257ccd383b2dcec520ca5a",
+    "js/study-foyer.js": "7cc23dcd47d3feb5c5f56ce994446d4442063c9f6fc04be3074278ecb718b341",
+    "css/chapter-pages.css": "dbe51413504940ff48d0fcadfe33b23ba3c8b5542bf9eaae4e3898c90433a96e",
+    "css/study-foyer.css": "5135697bcd3942b35770ea1590783ecfacd4b4b16453e8586beea9d90dc9d308",
+    "playtest-v23.html": "b2252dbffe898728377957e73195e243dc6a869813bbb080e2836927060d3308",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "playtest-v23-new.html": "df31ee0fe8f4d672108ca1c02ec184d955ad9b2691f778b3279e49c3a0d7b008",
+    "scripts/build_v23_study.cjs": "f01f364b3b45bda33754a56a2fce671a3647cc5a792197015b8b6603e4860e05",
+    "tests/v24-planning-browser.cjs": "bc10f17ef88ef640f7b72d622e4832fb068648e4b253a1ac127c53139541381c",
+    "tests/v24-trials-browser.cjs": "874f64595340ad1415e046b8f8764fbf5123c08f2fa6c537dcf62aab313772dd",
+    "tests/v24-study-browser.cjs": "c57ba16e88e66d836824d8bd1e401591fa81f87488465a91d04fc4e34c6d1ab4",
+    "tests/v24-folio-interaction.cjs": "082d2bcf4693f55e656b41f02f7161e81372f36192dde970dd5a0a26e3b7efa2",
+    "docs/v24-research-immersion-plan.md": "bf6c2db2b905c6a359c7346f5c1ca8bbfe9e4b67b1d643020ad802d7fa9beea6",
+    "docs/v24-research-immersion-review.md": "7b4778e42e0376a4f8fa17efdf424d3fc18894a03fde768487facd06e853b77b",
+    "docs/v23-human-playtest-protocol.md": "e3e523907fdbcbe2739be61cedf701a20494eccb003116506412b0742b81f79a",
+    "research/v24-progress.json": "f5818b28efde66a10c0a0c6b2a338abaf716c8a63c6f298009139fdad9a10ead",
+    "research/study-v23/manifest.json": "44c25171e8e0b765ae0c3d3d3a69099171c9f104b662ebbf1fc2e08e8a1c2e51",
+    "research/study-v23/fixtures.js": "4716cb22e7e8ed53f07d83466dd822f82fd057dc55fda3abf62fd94b11317573"
+  },
+  "unchangedRules": {
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9"
+  },
+  "visualReview": {
+    "method": "Screenshots opened one at a time at original size; final planning and trial screenshots await finite animations before capture.",
+    "files": {
+      "audits/v24-three-step-plan.png": "75b96274ea2866087e905b0607540cc17074b0e8fee8c5fcefd647d0be4bda16",
+      "audits/v24-mural-desk-1280.png": "6a20dcad54d5c25375b9357bf60d68daca4966ba7bd37ea5ebe310b1efeb3958",
+      "audits/v24-owned-gear-comparison.png": "176f73e702583e9b5ea55c6538816ffd105375b73047cfece6ac269d9a815772",
+      "audits/v24-chapter-restore-confirmation.png": "ef314bfa639ff1b3a17281cb0e553bf9dacbfa4f0746edf74ed1182b829b4797",
+      "audits/v24-material-trials-1280.png": "9874e11c8022bc0a283a719c4ddd4f1f40fffd124560077cea6e397785de53f8",
+      "audits/v24-mural-trials-1440.png": "b32ce5a67a1b69f0c457622afa0482ddaf9aacba3c8913b053b0ccffbe99c9e1",
+      "audits/v24-trial-result.png": "70e78a93093ab37c8e5418221d887fb4f5395dcd14c6e7dc72b4dba9acb19cde",
+      "audits/v24-trial-records.png": "62cd79015b8a723334e31007dfefbdc43911a795c6e5651b9f5ad0c00d30cff7",
+      "audits/v24-foyer-first.png": "ac90ae16d414f26c911e998d96fc19ae7cb9f95d5e682f9cab366e33378dea56",
+      "audits/v24-foyer-mural-1280.png": "e7c54abb7c9da97e2dda12a470f7da6cf6d2165595be94cf22e3b8e35830e6ae"
+    }
+  },
+  "legalEvidence": "The v24 browser checks reuse legal campaign-generated saves and recorded public-action trial routes; no user save unlock or resource injection.",
+  "humanObservation": {
+    "actualParticipants": 0,
+    "createdObservationRecords": false,
+    "limits": [
+      "Understanding, fatigue, completion sense and replay willingness still require actual players.",
+      "The task-entry palettes and PC screenshots are expert review, not population preference."
+    ]
+  },
+  "backup": ".backups/immersion-v24-20261024/"
+}

@@ -1,0 +1,161 @@
+{
+  "browserErrors": [],
+  "laptop": {
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "bodyWidth": 1366,
+    "canvas": {
+      "top": 189,
+      "bottom": 813,
+      "height": 624,
+      "width": 624
+    },
+    "abilityBar": {
+      "top": 852,
+      "bottom": 915,
+      "height": 63,
+      "width": 95
+    },
+    "context": {
+      "top": 358,
+      "bottom": 569,
+      "height": 211,
+      "width": 230
+    },
+    "dpad": {
+      "top": 0,
+      "bottom": 0,
+      "height": 0,
+      "width": 0
+    },
+    "typeSizes": {
+      "abilityHint": "7px",
+      "context": "11px",
+      "overline": "7px"
+    },
+    "smallButtons": [
+      {
+        "id": "btn-undo",
+        "w": 62,
+        "h": 34
+      },
+      {
+        "id": "btn-save",
+        "w": 62,
+        "h": 34
+      },
+      {
+        "id": "btn-load",
+        "w": 56,
+        "h": 34
+      },
+      {
+        "id": "btn-audio",
+        "w": 74,
+        "h": 34
+      },
+      {
+        "id": "btn-help",
+        "w": 56,
+        "h": 34
+      }
+    ]
+  },
+  "tapPlayer": {
+    "before": {
+      "x": 5,
+      "y": 11,
+      "facing": "left"
+    },
+    "after": {
+      "x": 4,
+      "y": 11,
+      "facing": "left"
+    },
+    "modal": "点灯僧"
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "bodyWidth": 390,
+    "canvas": {
+      "top": 371,
+      "bottom": 725,
+      "height": 354,
+      "width": 354
+    },
+    "abilityBar": {
+      "top": 758,
+      "bottom": 818,
+      "height": 61,
+      "width": 54
+    },
+    "context": {
+      "top": 1108,
+      "bottom": 1279,
+      "height": 171,
+      "width": 173
+    },
+    "dpad": {
+      "top": 859,
+      "bottom": 901,
+      "height": 42,
+      "width": 64
+    },
+    "typeSizes": {
+      "abilityHint": "6px",
+      "context": "10px",
+      "overline": "6px"
+    },
+    "smallButtons": [
+      {
+        "id": "btn-undo",
+        "w": 27,
+        "h": 34
+      },
+      {
+        "id": "btn-save",
+        "w": 27,
+        "h": 34
+      },
+      {
+        "id": "btn-load",
+        "w": 20,
+        "h": 34
+      },
+      {
+        "id": "btn-audio",
+        "w": 54,
+        "h": 34
+      },
+      {
+        "id": "btn-help",
+        "w": 21,
+        "h": 34
+      }
+    ],
+    "inspect": {
+      "title": "巡山小妖",
+      "forecastTop": 1191,
+      "viewportHeight": 844
+    }
+  },
+  "stickySkill": {
+    "floor": 3,
+    "beforeFloorClick": {
+      "x": 3,
+      "y": 7,
+      "mode": "staff"
+    },
+    "afterFloorClick": {
+      "x": 3,
+      "y": 7,
+      "mode": "staff"
+    },
+    "message": "金箍棒只能架起断口。"
+  }
+}

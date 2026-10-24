@@ -1,0 +1,311 @@
+{
+  "startedAt": "2026-10-23T06:39:36.772Z",
+  "source": {
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "js/renderer.js": "0c2b804046b965349035c3ce44cca118f14e3f9bc6b2e70c818d02f2a93ec8a1",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412",
+    "index.html": "6ea872992de0d22bdf02f6cd34b211eaa8da9a7b0a8587b238c2d6f1cc052b7c",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7"
+  },
+  "checks": [
+    "material one visible goal and real safe route; marking spends nothing",
+    "material early comparison explains a real growth benefit and an optional battle",
+    "material passing a monument stays in play; the crystal settles once and updates the goal",
+    "material continuous first three floors, first seal and first bridge with exact resources and no intermediate load",
+    "mural one visible goal and real safe route; marking spends nothing",
+    "mural early comparison explains a real growth benefit and an optional battle",
+    "mural passing a monument stays in play; the crystal settles once and updates the goal",
+    "mural continuous first three floors, first seal and first bridge with exact resources and no intermediate load"
+  ],
+  "sessions": [
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "steps": 582,
+      "actions": 34,
+      "films": 3,
+      "blockingDialogues": 0,
+      "arrivals": [
+        {
+          "floor": 0,
+          "goal": "先取西侧灵晶，增强金箍棒。"
+        },
+        {
+          "floor": 1,
+          "goal": "用火眼照破幻壁，接通舍利支院。"
+        },
+        {
+          "floor": 2,
+          "goal": "用火眼照破幻壁，接通舍利支院。"
+        },
+        {
+          "floor": 3,
+          "goal": "用金箍架桥，接通前方断口。"
+        }
+      ],
+      "startedAt": "2026-10-23T06:39:37.029Z",
+      "final": {
+        "floor": 3,
+        "x": 13,
+        "y": 16,
+        "hp": 687,
+        "atk": 33,
+        "def": 15,
+        "mana": 5,
+        "maxMana": 6,
+        "coins": 16,
+        "keys": {
+          "yellow": 1,
+          "blue": 0,
+          "red": 0
+        },
+        "relics": [
+          0
+        ],
+        "fragments": [
+          0,
+          1,
+          2
+        ],
+        "externalRelics": 3,
+        "treasures": [
+          "iron"
+        ],
+        "equipped": [
+          "iron"
+        ],
+        "orbs": 1,
+        "elixirs": 2,
+        "removed": {
+          "f0-13": true,
+          "f0-8": true,
+          "f0-9": true,
+          "f0-6": true,
+          "f0-4": true,
+          "f0-wing-guard-0": true,
+          "f0-7": true,
+          "f0-5": true,
+          "f0-fragment-0": true,
+          "f0-11": true,
+          "f0-10": true,
+          "f1-9": true,
+          "f1-8": true,
+          "f1-12": true,
+          "f1-4": true,
+          "f1-wing-guard-1": true,
+          "f1-5": true,
+          "f1-wing-guard-0": true,
+          "f1-7": true,
+          "f1-6": true,
+          "f1-fragment-1": true,
+          "f1-reliquary": true,
+          "f1-treasure-iron": true,
+          "f1-11": true,
+          "f1-10": true,
+          "f2-14": true,
+          "f2-13": true,
+          "f2-7": true,
+          "f2-9": true,
+          "f2-1": true,
+          "f2-2": true,
+          "f2-3": true,
+          "f2-6": true,
+          "f2-4": true,
+          "f2-5": true,
+          "f2-fragment-2": true,
+          "f2-17": true,
+          "f2-wing-guard-0": true,
+          "f2-8": true,
+          "f2-wing-guard-1": true,
+          "f2-15": true,
+          "f2-10": true,
+          "f3-5": true,
+          "f3-6": true
+        },
+        "switches": {
+          "f1-1": true
+        },
+        "terrain": {
+          "3:14:16": "."
+        },
+        "choices": {
+          "bellVow": "offering"
+        },
+        "quests": {},
+        "rescued": [],
+        "purchases": {
+          "atk": 2,
+          "def": 1,
+          "heal": 0
+        },
+        "turn": 616,
+        "kills": 18,
+        "won": false,
+        "selfAwakened": false
+      },
+      "finishedAt": "2026-10-23T06:41:15.245Z"
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "steps": 582,
+      "actions": 34,
+      "films": 3,
+      "blockingDialogues": 0,
+      "arrivals": [
+        {
+          "floor": 0,
+          "goal": "先取西侧灵晶，增强金箍棒。"
+        },
+        {
+          "floor": 1,
+          "goal": "用火眼照破幻壁，接通舍利支院。"
+        },
+        {
+          "floor": 2,
+          "goal": "用火眼照破幻壁，接通舍利支院。"
+        },
+        {
+          "floor": 3,
+          "goal": "用金箍架桥，接通前方断口。"
+        }
+      ],
+      "startedAt": "2026-10-23T06:41:15.336Z",
+      "final": {
+        "floor": 3,
+        "x": 13,
+        "y": 16,
+        "hp": 687,
+        "atk": 33,
+        "def": 15,
+        "mana": 5,
+        "maxMana": 6,
+        "coins": 16,
+        "keys": {
+          "yellow": 1,
+          "blue": 0,
+          "red": 0
+        },
+        "relics": [
+          0
+        ],
+        "fragments": [
+          0,
+          1,
+          2
+        ],
+        "externalRelics": 3,
+        "treasures": [
+          "iron"
+        ],
+        "equipped": [
+          "iron"
+        ],
+        "orbs": 1,
+        "elixirs": 2,
+        "removed": {
+          "f0-13": true,
+          "f0-8": true,
+          "f0-9": true,
+          "f0-6": true,
+          "f0-4": true,
+          "f0-wing-guard-0": true,
+          "f0-7": true,
+          "f0-5": true,
+          "f0-fragment-0": true,
+          "f0-11": true,
+          "f0-10": true,
+          "f1-9": true,
+          "f1-8": true,
+          "f1-12": true,
+          "f1-4": true,
+          "f1-wing-guard-1": true,
+          "f1-5": true,
+          "f1-wing-guard-0": true,
+          "f1-7": true,
+          "f1-6": true,
+          "f1-fragment-1": true,
+          "f1-reliquary": true,
+          "f1-treasure-iron": true,
+          "f1-11": true,
+          "f1-10": true,
+          "f2-14": true,
+          "f2-13": true,
+          "f2-7": true,
+          "f2-9": true,
+          "f2-1": true,
+          "f2-2": true,
+          "f2-3": true,
+          "f2-6": true,
+          "f2-4": true,
+          "f2-5": true,
+          "f2-fragment-2": true,
+          "f2-17": true,
+          "f2-wing-guard-0": true,
+          "f2-8": true,
+          "f2-wing-guard-1": true,
+          "f2-15": true,
+          "f2-10": true,
+          "f3-5": true,
+          "f3-6": true
+        },
+        "switches": {
+          "f1-1": true
+        },
+        "terrain": {
+          "3:14:16": "."
+        },
+        "choices": {
+          "bellVow": "offering"
+        },
+        "quests": {},
+        "rescued": [],
+        "purchases": {
+          "atk": 2,
+          "def": 1,
+          "heal": 0
+        },
+        "turn": 616,
+        "kills": 18,
+        "won": false,
+        "selfAwakened": false
+      },
+      "finishedAt": "2026-10-23T06:42:47.970Z"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v17-material-first-goal.png",
+    "audits/v17-material-first-comparison.png",
+    "audits/v17-material-first-growth-result.png",
+    "audits/v17-material-floor-2.png",
+    "audits/v17-material-bell-decision.png",
+    "audits/v17-material-floor-3.png",
+    "audits/v17-material-first-seal-film.png",
+    "audits/v17-material-seal-return.png",
+    "audits/v17-material-floor-4.png",
+    "audits/v17-material-first-bridge-film.png",
+    "audits/v17-material-bridge-return.png",
+    "audits/v17-mural-first-goal.png",
+    "audits/v17-mural-first-comparison.png",
+    "audits/v17-mural-first-growth-result.png",
+    "audits/v17-mural-floor-2.png",
+    "audits/v17-mural-bell-decision.png",
+    "audits/v17-mural-floor-3.png",
+    "audits/v17-mural-first-seal-film.png",
+    "audits/v17-mural-seal-return.png",
+    "audits/v17-mural-floor-4.png",
+    "audits/v17-mural-first-bridge-film.png",
+    "audits/v17-mural-bridge-return.png"
+  ],
+  "method": "Canonical legal route with all first-session actions performed by mouse and keyboard; this is not a blind human study",
+  "passed": true,
+  "finishedAt": "2026-10-23T06:42:47.978Z"
+}

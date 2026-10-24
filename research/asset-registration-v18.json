@@ -1,0 +1,3042 @@
+{
+  "revision": 18,
+  "records": [
+    {
+      "ids": [
+        "item_key_yellow",
+        "item_yellowKey"
+      ],
+      "file": "assets/material/native-v18/item_key_yellow.png",
+      "pixels": [
+        157,
+        161
+      ],
+      "contact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "worldSize": [
+        11.701863354037267,
+        12.0
+      ],
+      "sha256": "e15a72ff6303240a4e706ab3851b27bf6d59aa39f52cd6560a514aab8580394f",
+      "source": "objects.png",
+      "region": [
+        15,
+        10,
+        180,
+        180
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        2,
+        4,
+        159,
+        165
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        2,
+        157,
+        161
+      ]
+    },
+    {
+      "ids": [
+        "item_key_blue",
+        "item_blueKey"
+      ],
+      "file": "assets/material/native-v18/item_key_blue.png",
+      "pixels": [
+        143,
+        164
+      ],
+      "contact": {
+        "x": 71.5,
+        "y": 162
+      },
+      "worldSize": [
+        10.463414634146341,
+        12.0
+      ],
+      "sha256": "79eac20df3fac8f96e577428170a747bb02bdef125de54e69a4b9066bf92f5bd",
+      "source": "objects.png",
+      "region": [
+        199,
+        10,
+        350,
+        180
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        3,
+        4,
+        146,
+        168
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        2,
+        143,
+        164
+      ]
+    },
+    {
+      "ids": [
+        "item_key_red",
+        "item_redKey"
+      ],
+      "file": "assets/material/native-v18/item_key_red.png",
+      "pixels": [
+        157,
+        161
+      ],
+      "contact": {
+        "x": 78.5,
+        "y": 159
+      },
+      "worldSize": [
+        11.701863354037267,
+        12.0
+      ],
+      "sha256": "d8986cfffde2e5ada913910dd047928f970b278b28c14fd49ed23b2a3af0a261",
+      "source": "objects.png",
+      "region": [
+        387,
+        10,
+        550,
+        180
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        5,
+        161,
+        166
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        2,
+        157,
+        161
+      ]
+    },
+    {
+      "ids": [
+        "item_atk",
+        "item_amber",
+        "item_ruby"
+      ],
+      "file": "assets/material/native-v18/item_atk.png",
+      "pixels": [
+        148,
+        176
+      ],
+      "contact": {
+        "x": 74.0,
+        "y": 174
+      },
+      "worldSize": [
+        10.090909090909092,
+        12.0
+      ],
+      "sha256": "ef0ec97b0ffde5e7630061f7b10b2513bbbaa3aa615c1f07bd52bfb980e43474",
+      "source": "objects.png",
+      "region": [
+        582,
+        2,
+        740,
+        183
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        4,
+        153,
+        180
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        2,
+        148,
+        176
+      ]
+    },
+    {
+      "ids": [
+        "item_def",
+        "item_jade",
+        "item_emerald"
+      ],
+      "file": "assets/material/native-v18/item_def.png",
+      "pixels": [
+        148,
+        178
+      ],
+      "contact": {
+        "x": 74.0,
+        "y": 176
+      },
+      "worldSize": [
+        9.97752808988764,
+        12.0
+      ],
+      "sha256": "81b6f2a32ea8998045fae193ad35a8cea2b438b831795c735a0c95fdf45ea5fd",
+      "source": "objects.png",
+      "region": [
+        796,
+        0,
+        952,
+        183
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        3,
+        152,
+        181
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        2,
+        148,
+        178
+      ]
+    },
+    {
+      "ids": [
+        "item_coin",
+        "item_coins"
+      ],
+      "file": "assets/material/native-v18/item_coin.png",
+      "pixels": [
+        159,
+        144
+      ],
+      "contact": {
+        "x": 79.5,
+        "y": 142
+      },
+      "worldSize": [
+        12.0,
+        10.867924528301886
+      ],
+      "sha256": "9a9e2f65ec7efa881f50c6ae131516aefca978e58e8115684b5649c275d29c84",
+      "source": "objects.png",
+      "region": [
+        991,
+        23,
+        1157,
+        175
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        163,
+        148
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        2,
+        159,
+        144
+      ]
+    },
+    {
+      "ids": [
+        "item_orb"
+      ],
+      "file": "assets/material/native-v18/item_orb.png",
+      "pixels": [
+        157,
+        160
+      ],
+      "contact": {
+        "x": 78.5,
+        "y": 158
+      },
+      "worldSize": [
+        11.775,
+        12.0
+      ],
+      "sha256": "9a2b6f0cc85f08d6c222fc4e9be13a0f8634c087f7bb54b1cb95fc9632e50014",
+      "source": "objects.png",
+      "region": [
+        12,
+        198,
+        180,
+        368
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        5,
+        162,
+        165
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        2,
+        157,
+        160
+      ]
+    },
+    {
+      "ids": [
+        "item_mana"
+      ],
+      "file": "assets/material/native-v18/item_mana.png",
+      "pixels": [
+        143,
+        193
+      ],
+      "contact": {
+        "x": 71.5,
+        "y": 191
+      },
+      "worldSize": [
+        8.89119170984456,
+        12.0
+      ],
+      "sha256": "751041fd60e602adff85673cede557b5d31c4df5361eda57160cb2db53004b74",
+      "source": "objects.png",
+      "region": [
+        215,
+        177,
+        366,
+        376
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        3,
+        147,
+        196
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        2,
+        143,
+        193
+      ]
+    },
+    {
+      "ids": [
+        "item_elixir"
+      ],
+      "file": "assets/material/native-v18/item_elixir.png",
+      "pixels": [
+        150,
+        183
+      ],
+      "contact": {
+        "x": 75.0,
+        "y": 181
+      },
+      "worldSize": [
+        9.836065573770492,
+        12.0
+      ],
+      "sha256": "5e39e0a1349d916a68eb1541e1343aa245b13df3431cc395aa7a475e5b062a13",
+      "source": "objects.png",
+      "region": [
+        394,
+        177,
+        552,
+        368
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        154,
+        187
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        386,
+        150,
+        183
+      ]
+    },
+    {
+      "ids": [
+        "item_hp",
+        "item_peach",
+        "item_bigPeach",
+        "item_feast"
+      ],
+      "file": "assets/material/native-v18/item_hp.png",
+      "pixels": [
+        209,
+        159
+      ],
+      "contact": {
+        "x": 104.5,
+        "y": 157
+      },
+      "worldSize": [
+        12.0,
+        9.129186602870814
+      ],
+      "sha256": "4b2923297c6c3c723e15369f2fe9493ac957d151261d94962e89de671fb304e3",
+      "source": "objects.png",
+      "region": [
+        558,
+        204,
+        774,
+        371
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        213,
+        163
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        386,
+        209,
+        159
+      ]
+    },
+    {
+      "ids": [
+        "treasure_iron"
+      ],
+      "file": "assets/material/native-v18/treasure_iron.png",
+      "pixels": [
+        174,
+        192
+      ],
+      "contact": {
+        "x": 87.0,
+        "y": 190
+      },
+      "worldSize": [
+        11.78125,
+        13.0
+      ],
+      "sha256": "dfc361280f0cee9465bb75ea58ca61a74a4621c876cfa8a63afdf9b9358d8dcb",
+      "source": "objects.png",
+      "region": [
+        788,
+        178,
+        969,
+        377
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        178,
+        196
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        386,
+        174,
+        192
+      ]
+    },
+    {
+      "ids": [
+        "treasure_lotus"
+      ],
+      "file": "assets/material/native-v18/treasure_lotus.png",
+      "pixels": [
+        171,
+        184
+      ],
+      "contact": {
+        "x": 85.5,
+        "y": 182
+      },
+      "worldSize": [
+        12.081521739130435,
+        13.0
+      ],
+      "sha256": "6fce5f0cb9ca2160ed04e2ce4d4d36419aebc9b43dd0028634b6a61a049500cc",
+      "source": "objects.png",
+      "region": [
+        983,
+        179,
+        1162,
+        371
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        175,
+        188
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        386,
+        171,
+        184
+      ]
+    },
+    {
+      "ids": [
+        "treasure_thorn"
+      ],
+      "file": "assets/material/native-v18/treasure_thorn.png",
+      "pixels": [
+        179,
+        176
+      ],
+      "contact": {
+        "x": 89.5,
+        "y": 174
+      },
+      "worldSize": [
+        13.0,
+        12.782122905027933
+      ],
+      "sha256": "bf41190c64c5acd6bdcb69a03f31c7e117d95e93aa02e03d84f77aacc59b2392",
+      "source": "objects.png",
+      "region": [
+        3,
+        378,
+        190,
+        563
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        5,
+        183,
+        181
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        386,
+        179,
+        176
+      ]
+    },
+    {
+      "ids": [
+        "treasure_tide"
+      ],
+      "file": "assets/material/native-v18/treasure_tide.png",
+      "pixels": [
+        152,
+        163
+      ],
+      "contact": {
+        "x": 76.0,
+        "y": 161
+      },
+      "worldSize": [
+        12.122699386503067,
+        13.0
+      ],
+      "sha256": "79cd38be62a04d3bfab359bbc355880d8c4c87c60a790c2682b5245ed8883916",
+      "source": "objects.png",
+      "region": [
+        207,
+        386,
+        367,
+        557
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        156,
+        167
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        386,
+        152,
+        163
+      ]
+    },
+    {
+      "ids": [
+        "treasure_ember"
+      ],
+      "file": "assets/material/native-v18/treasure_ember.png",
+      "pixels": [
+        171,
+        192
+      ],
+      "contact": {
+        "x": 85.5,
+        "y": 190
+      },
+      "worldSize": [
+        11.578125,
+        13.0
+      ],
+      "sha256": "abcc31f8aa9acc229a591a8e5313dee06f00807cda9549b85378e2f76a1eb160",
+      "source": "objects.png",
+      "region": [
+        375,
+        370,
+        554,
+        569
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        175,
+        196
+      ],
+      "componentsBefore": 5,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        386,
+        171,
+        192
+      ]
+    },
+    {
+      "ids": [
+        "treasure_mirror"
+      ],
+      "file": "assets/material/native-v18/treasure_mirror.png",
+      "pixels": [
+        168,
+        189
+      ],
+      "contact": {
+        "x": 84.0,
+        "y": 187
+      },
+      "worldSize": [
+        11.555555555555555,
+        13.0
+      ],
+      "sha256": "a696f8d39168dd94a36180dbca907580c7fba92085c80e31863c7259e6c99119",
+      "source": "objects.png",
+      "region": [
+        572,
+        371,
+        748,
+        568
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        172,
+        193
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        386,
+        168,
+        189
+      ]
+    },
+    {
+      "ids": [
+        "prop_door_yellow"
+      ],
+      "file": "assets/material/native-v18/prop_door_yellow.png",
+      "pixels": [
+        182,
+        186
+      ],
+      "contact": {
+        "x": 91.0,
+        "y": 179
+      },
+      "worldSize": [
+        14.800000000000002,
+        15.125274725274727
+      ],
+      "sha256": "516b71d3f219cc521de2ddef5bf433a60d8bdf3218759d39f3e96e89e23c2ed2",
+      "source": "objects.png",
+      "region": [
+        767,
+        371,
+        957,
+        565
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        186,
+        190
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        770,
+        182,
+        186
+      ]
+    },
+    {
+      "ids": [
+        "prop_door_blue"
+      ],
+      "file": "assets/material/native-v18/prop_door_blue.png",
+      "pixels": [
+        190,
+        188
+      ],
+      "contact": {
+        "x": 95.0,
+        "y": 181
+      },
+      "worldSize": [
+        14.800000000000002,
+        14.64421052631579
+      ],
+      "sha256": "5fcbcf9bc5c7be7dac0adf5e39677a4cafe5fffba3b88a29065478846e3fc1d2",
+      "source": "objects.png",
+      "region": [
+        969,
+        372,
+        1167,
+        568
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        194,
+        192
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        770,
+        190,
+        188
+      ]
+    },
+    {
+      "ids": [
+        "prop_door_red"
+      ],
+      "file": "assets/material/native-v18/prop_door_red.png",
+      "pixels": [
+        174,
+        182
+      ],
+      "contact": {
+        "x": 87.0,
+        "y": 175
+      },
+      "worldSize": [
+        14.799999999999999,
+        15.480459770114942
+      ],
+      "sha256": "f28c885e791deadbbd7c5cf3f73c8ba15c6e76068b25f23057adba0af7f5b8e9",
+      "source": "objects.png",
+      "region": [
+        4,
+        559,
+        186,
+        748
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        178,
+        186
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        770,
+        174,
+        182
+      ]
+    },
+    {
+      "ids": [
+        "prop_gate",
+        "prop_bars"
+      ],
+      "file": "assets/material/native-v18/prop_gate.png",
+      "pixels": [
+        198,
+        183
+      ],
+      "contact": {
+        "x": 99.0,
+        "y": 176
+      },
+      "worldSize": [
+        14.800000000000002,
+        13.67878787878788
+      ],
+      "sha256": "d9427a811a7603fcc6d6c37eb3d4aaa593452cedf6180b309fe7ef99c3d06764",
+      "source": "objects.png",
+      "region": [
+        189,
+        559,
+        395,
+        750
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        202,
+        187
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        770,
+        198,
+        183
+      ]
+    },
+    {
+      "ids": [
+        "prop_relic",
+        "prop_fragment"
+      ],
+      "file": "assets/material/native-v18/prop_relic.png",
+      "pixels": [
+        170,
+        193
+      ],
+      "contact": {
+        "x": 85.0,
+        "y": 191
+      },
+      "worldSize": [
+        14.093264248704664,
+        16.0
+      ],
+      "sha256": "6c921ad1c47dec957b88fcf9d8670808ba12acc6422b96bb37aaa22d7189600a",
+      "source": "objects.png",
+      "region": [
+        578,
+        559,
+        756,
+        759
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        174,
+        197
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        770,
+        170,
+        193
+      ]
+    },
+    {
+      "ids": [
+        "prop_monument"
+      ],
+      "file": "assets/material/native-v18/prop_monument.png",
+      "pixels": [
+        146,
+        196
+      ],
+      "contact": {
+        "x": 73.0,
+        "y": 188
+      },
+      "worldSize": [
+        12.29081632653061,
+        16.499999999999996
+      ],
+      "sha256": "846135157e11f9918b1a392705f78b4ce90cd0e9b2696fa5b2412b06e4f26246",
+      "source": "objects.png",
+      "region": [
+        783,
+        561,
+        937,
+        764
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        150,
+        200
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "supersededBy": "assets/material/props/monument-hd-v18.png"
+    },
+    {
+      "ids": [
+        "prop_switch"
+      ],
+      "file": "assets/material/native-v18/prop_switch.png",
+      "pixels": [
+        184,
+        204
+      ],
+      "contact": {
+        "x": 92.0,
+        "y": 202
+      },
+      "worldSize": [
+        14.431372549019608,
+        16.0
+      ],
+      "sha256": "481dfab8d6bd75700c5ac06d3450ee9499cf5ef3133478a6dc2406094a65eae1",
+      "source": "objects.png",
+      "region": [
+        0,
+        741,
+        189,
+        953
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        1,
+        4,
+        185,
+        208
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        770,
+        184,
+        204
+      ]
+    },
+    {
+      "ids": [
+        "prop_plate"
+      ],
+      "file": "assets/material/native-v18/prop_plate.png",
+      "pixels": [
+        212,
+        159
+      ],
+      "contact": {
+        "x": 106.0,
+        "y": 114.47999999999999
+      },
+      "worldSize": [
+        10.666666666666666,
+        8.0
+      ],
+      "sha256": "84b00b0ec2b69341d6a95399260a482cc056064cf38aed7bd4c49103ab0f51f1",
+      "source": "objects.png",
+      "region": [
+        195,
+        774,
+        415,
+        941
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        216,
+        163
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        770,
+        212,
+        159
+      ]
+    },
+    {
+      "ids": [
+        "prop_lamp"
+      ],
+      "file": "assets/material/native-v18/prop_lamp.png",
+      "pixels": [
+        98,
+        189
+      ],
+      "contact": {
+        "x": 49.0,
+        "y": 187
+      },
+      "worldSize": [
+        7.777777777777778,
+        15.0
+      ],
+      "sha256": "1b2f0094b19934ad5349ebbf9589e6fdbd9a8c1f21121fee019d10f48f72b095",
+      "source": "objects.png",
+      "region": [
+        441,
+        752,
+        547,
+        949
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        102,
+        193
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        770,
+        98,
+        189
+      ]
+    },
+    {
+      "ids": [
+        "prop_seal"
+      ],
+      "file": "assets/material/native-v18/prop_seal.png",
+      "pixels": [
+        174,
+        171
+      ],
+      "contact": {
+        "x": 87.0,
+        "y": 123.11999999999999
+      },
+      "worldSize": [
+        8.140350877192981,
+        8.0
+      ],
+      "sha256": "0dd92786b732890180315ac30601d110c87de610f6ab40370710272c28417c01",
+      "source": "objects.png",
+      "region": [
+        983,
+        756,
+        1165,
+        935
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        178,
+        175
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        1154,
+        174,
+        171
+      ]
+    },
+    {
+      "ids": [
+        "prop_finale"
+      ],
+      "file": "assets/material/native-v18/prop_finale.png",
+      "pixels": [
+        192,
+        179
+      ],
+      "contact": {
+        "x": 96.0,
+        "y": 177
+      },
+      "worldSize": [
+        15.0,
+        13.984375
+      ],
+      "sha256": "1b257d553737b6c6bdeb48d0e1a5979cecf3e71a4ae4b146d4c4bf9ef2077f32",
+      "source": "objects.png",
+      "region": [
+        1,
+        944,
+        201,
+        1130
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        196,
+        183
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        1154,
+        192,
+        179
+      ]
+    },
+    {
+      "ids": [
+        "prop_rescue"
+      ],
+      "file": "assets/material/native-v18/prop_rescue.png",
+      "pixels": [
+        156,
+        186
+      ],
+      "contact": {
+        "x": 78.0,
+        "y": 184
+      },
+      "worldSize": [
+        13.419354838709678,
+        16.0
+      ],
+      "sha256": "e3268a1c263129b00ab7f0ce08f893d2119d9ea0382cc6385d881174706c00f1",
+      "source": "objects.png",
+      "region": [
+        414,
+        941,
+        578,
+        1135
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        160,
+        190
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        1154,
+        156,
+        186
+      ]
+    },
+    {
+      "ids": [
+        "prop_tide"
+      ],
+      "file": "assets/material/native-v18/prop_tide.png",
+      "pixels": [
+        189,
+        176
+      ],
+      "contact": {
+        "x": 94.5,
+        "y": 174
+      },
+      "worldSize": [
+        15.0,
+        13.968253968253968
+      ],
+      "sha256": "33762ac35caec93b0eb7cc72305c561f46f861047afcc744c5a16698d29e4753",
+      "source": "objects.png",
+      "region": [
+        577,
+        944,
+        774,
+        1128
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        193,
+        180
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        1154,
+        189,
+        176
+      ]
+    },
+    {
+      "ids": [
+        "prop_portal"
+      ],
+      "file": "assets/material/native-v18/prop_portal.png",
+      "pixels": [
+        204,
+        194
+      ],
+      "contact": {
+        "x": 102.0,
+        "y": 192
+      },
+      "worldSize": [
+        15.0,
+        14.26470588235294
+      ],
+      "sha256": "6b466eda9b34334af20cc6364698e0cb2f39d353d541139198eceaec335c4145",
+      "source": "objects.png",
+      "region": [
+        770,
+        932,
+        982,
+        1134
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        208,
+        198
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        1154,
+        204,
+        194
+      ]
+    },
+    {
+      "ids": [
+        "prop_illusion"
+      ],
+      "file": "assets/material/native-v18/prop_illusion.png",
+      "pixels": [
+        183,
+        192
+      ],
+      "contact": {
+        "x": 91.5,
+        "y": 190
+      },
+      "worldSize": [
+        15.0,
+        15.737704918032785
+      ],
+      "sha256": "7ddf9f95c4eb5036632c2443e574275f8526b2169bd165fbc560cd7fab178352",
+      "source": "objects.png",
+      "region": [
+        983,
+        932,
+        1172,
+        1132
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        187,
+        196
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        1154,
+        183,
+        192
+      ]
+    },
+    {
+      "ids": [
+        "prop_eye"
+      ],
+      "file": "assets/material/native-v18/prop_eye.png",
+      "pixels": [
+        187,
+        204
+      ],
+      "contact": {
+        "x": 93.5,
+        "y": 202
+      },
+      "worldSize": [
+        14.666666666666666,
+        16.0
+      ],
+      "sha256": "1a6be4de04a451d64de50c974a2d55329938b6af720134a5d093345ada6a689a",
+      "source": "objects.png",
+      "region": [
+        3,
+        1126,
+        198,
+        1338
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        191,
+        208
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        1154,
+        187,
+        204
+      ]
+    },
+    {
+      "ids": [
+        "prop_staff"
+      ],
+      "file": "assets/material/native-v18/prop_staff.png",
+      "pixels": [
+        256,
+        155
+      ],
+      "contact": {
+        "x": 128.0,
+        "y": 153
+      },
+      "worldSize": [
+        15.0,
+        9.08203125
+      ],
+      "sha256": "e1edf47cdbfd07e6245a44fddc56551c80450b8f3d3ee99255f788a2a312d13c",
+      "source": "objects.png",
+      "region": [
+        193,
+        1155,
+        457,
+        1318
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        260,
+        159
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        1154,
+        256,
+        155
+      ]
+    },
+    {
+      "ids": [
+        "prop_cicada"
+      ],
+      "file": "assets/material/native-v18/prop_cicada.png",
+      "pixels": [
+        138,
+        195
+      ],
+      "contact": {
+        "x": 69.0,
+        "y": 193
+      },
+      "worldSize": [
+        11.323076923076924,
+        16.0
+      ],
+      "sha256": "e86e960eac21451590b0ae9c3ddc1a6e2f4366ee10f105ba003f36a4e6d72317",
+      "source": "objects.png",
+      "region": [
+        453,
+        1132,
+        599,
+        1335
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        142,
+        199
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        1538,
+        138,
+        195
+      ]
+    },
+    {
+      "ids": [
+        "prop_clone"
+      ],
+      "file": "assets/material/native-v18/prop_clone.png",
+      "pixels": [
+        165,
+        208
+      ],
+      "contact": {
+        "x": 82.5,
+        "y": 206
+      },
+      "worldSize": [
+        12.692307692307693,
+        16.0
+      ],
+      "sha256": "e485dde970bd21f14dc06fccd112d47b4d1388d26ba2f14dfb2843ad49b383b5",
+      "source": "objects.png",
+      "region": [
+        608,
+        1127,
+        781,
+        1342
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        169,
+        212
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        1538,
+        165,
+        208
+      ]
+    },
+    {
+      "ids": [
+        "prop_gate_open"
+      ],
+      "file": "assets/material/native-v18/prop_gate_open.png",
+      "pixels": [
+        193,
+        198
+      ],
+      "contact": {
+        "x": 96.5,
+        "y": 196
+      },
+      "worldSize": [
+        15.0,
+        15.38860103626943
+      ],
+      "sha256": "75da0407cc216ef44a3f4cfed63e4b49de9f1febe65edc67c3b84e0559204c0b",
+      "source": "objects.png",
+      "region": [
+        770,
+        1126,
+        971,
+        1332
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        197,
+        202
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        1538,
+        193,
+        198
+      ]
+    },
+    {
+      "ids": [
+        "prop_door_open"
+      ],
+      "file": "assets/material/native-v18/prop_door_open.png",
+      "pixels": [
+        197,
+        195
+      ],
+      "contact": {
+        "x": 98.5,
+        "y": 188
+      },
+      "worldSize": [
+        14.800000000000002,
+        14.649746192893403
+      ],
+      "sha256": "3c187815c39653a1e448dc21ab6c90587d2a7e4eff22ab7edab8b32f341e2a46",
+      "source": "objects.png",
+      "region": [
+        968,
+        1128,
+        1172,
+        1331
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        4,
+        201,
+        199
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        1538,
+        197,
+        195
+      ]
+    },
+    {
+      "ids": [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      "file": "assets/material/native-v18/creatures-0.png",
+      "pixels": [
+        222,
+        239
+      ],
+      "contact": {
+        "x": 182,
+        "y": 234
+      },
+      "worldSize": [
+        14.397489539748955,
+        15.5
+      ],
+      "sha256": "67d15d3250ae2c133ac1c7c3f54169e81fc39f5e0a6c86211ac8f1fea8df444a",
+      "source": "creatures-corrected.png",
+      "region": [
+        44,
+        40,
+        276,
+        290
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        6,
+        227,
+        245
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "supersededBy": "assets/material/props/imp-hd-v18.png"
+    },
+    {
+      "ids": [
+        "enemy_monk",
+        "enemy_acolyte"
+      ],
+      "file": "assets/material/native-v18/creatures-1.png",
+      "pixels": [
+        215,
+        299
+      ],
+      "contact": {
+        "x": 97,
+        "y": 290
+      },
+      "worldSize": [
+        15.100334448160536,
+        21.0
+      ],
+      "sha256": "daaa0b35f7ec5152b2a25a8c1071996595c6b716f6726775c254076a75d24755",
+      "source": "creatures-corrected.png",
+      "region": [
+        374,
+        2,
+        600,
+        306
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        5,
+        220,
+        304
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        1538,
+        215,
+        299
+      ]
+    },
+    {
+      "ids": [
+        "enemy_ghost",
+        "enemy_bell"
+      ],
+      "file": "assets/material/native-v18/creatures-2.png",
+      "pixels": [
+        303,
+        304
+      ],
+      "contact": {
+        "x": 153,
+        "y": 291
+      },
+      "worldSize": [
+        18.0,
+        18.059405940594058
+      ],
+      "sha256": "b34ff2259993198787ae9f643a104b3562d88af40f8b74fd131f8d27d0a4de12",
+      "source": "creatures-corrected.png",
+      "region": [
+        651,
+        3,
+        967,
+        313
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        8,
+        6,
+        311,
+        310
+      ],
+      "componentsBefore": 18,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        1538,
+        303,
+        304
+      ]
+    },
+    {
+      "ids": [
+        "enemy_guard",
+        "enemy_brass",
+        "enemy_reliquary0"
+      ],
+      "file": "assets/material/native-v18/creatures-3.png",
+      "pixels": [
+        293,
+        310
+      ],
+      "contact": {
+        "x": 170,
+        "y": 301
+      },
+      "worldSize": [
+        18.0,
+        19.044368600682592
+      ],
+      "sha256": "c3d6381d64a81d3592e2ee19df627e8d773a88df106b9ec9005c51f2af35d929",
+      "source": "creatures-corrected.png",
+      "region": [
+        982,
+        0,
+        1287,
+        310
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        6,
+        0,
+        299,
+        310
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        1538,
+        293,
+        310
+      ]
+    },
+    {
+      "ids": [
+        "enemy_spider",
+        "enemy_puppet"
+      ],
+      "file": "assets/material/native-v18/creatures-4.png",
+      "pixels": [
+        322,
+        297
+      ],
+      "contact": {
+        "x": 161,
+        "y": 279
+      },
+      "worldSize": [
+        18.430976430976433,
+        17.0
+      ],
+      "sha256": "915727ed505c8e2548df3342f40cb19cc280456ac1c825b2fd8105b67b50b6e7",
+      "source": "creatures-corrected.png",
+      "region": [
+        12,
+        317,
+        340,
+        619
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        5,
+        327,
+        302
+      ],
+      "componentsBefore": 8,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        1538,
+        322,
+        297
+      ]
+    },
+    {
+      "ids": [
+        "enemy_yaksha",
+        "enemy_judge",
+        "enemy_reliquary1"
+      ],
+      "file": "assets/material/native-v18/creatures-5.png",
+      "pixels": [
+        257,
+        327
+      ],
+      "contact": {
+        "x": 148,
+        "y": 317
+      },
+      "worldSize": [
+        17.29051987767584,
+        22.0
+      ],
+      "sha256": "5eec51ab0be2cf7161be24385e77052e4d195de2ac9b64b819391706dee1596f",
+      "source": "creatures-corrected.png",
+      "region": [
+        370,
+        306,
+        636,
+        633
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        4,
+        0,
+        261,
+        327
+      ],
+      "componentsBefore": 5,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        1922,
+        257,
+        327
+      ]
+    },
+    {
+      "ids": [
+        "enemy_dragon",
+        "enemy_flood",
+        "enemy_reliquary2"
+      ],
+      "file": "assets/material/native-v18/creatures-6.png",
+      "pixels": [
+        280,
+        318
+      ],
+      "contact": {
+        "x": 137,
+        "y": 306
+      },
+      "worldSize": [
+        18.0,
+        20.442857142857143
+      ],
+      "sha256": "7efa36e37386279347e4dfb23c6423de3305f6af2519195687cc610b3c6bb7c1",
+      "source": "creatures-corrected.png",
+      "region": [
+        639,
+        309,
+        975,
+        627
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        45,
+        0,
+        325,
+        318
+      ],
+      "componentsBefore": 17,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        1922,
+        280,
+        318
+      ]
+    },
+    {
+      "ids": [
+        "enemy_boss",
+        "enemy_heart",
+        "enemy_boss_0"
+      ],
+      "file": "assets/material/native-v18/creatures-7.png",
+      "pixels": [
+        248,
+        323
+      ],
+      "contact": {
+        "x": 135,
+        "y": 311
+      },
+      "worldSize": [
+        18.427244582043343,
+        24.0
+      ],
+      "sha256": "0424b882682eb1e95aaa19d7a21b2c9a230436bc443490f27a026996463286ed",
+      "source": "creatures-corrected.png",
+      "region": [
+        1026,
+        306,
+        1286,
+        629
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        253,
+        323
+      ],
+      "componentsBefore": 9,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        1922,
+        248,
+        323
+      ]
+    },
+    {
+      "ids": [
+        "npc_lantern"
+      ],
+      "file": "assets/material/native-v18/creatures-8.png",
+      "pixels": [
+        216,
+        293
+      ],
+      "contact": {
+        "x": 132,
+        "y": 283
+      },
+      "worldSize": [
+        14.006825938566555,
+        19.0
+      ],
+      "sha256": "c9a8ff7ebb26deb61e11faa1aa4ce32154775933d8d1b4b02920fcf245d3f3ca",
+      "source": "creatures-corrected.png",
+      "region": [
+        49,
+        613,
+        275,
+        907
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        1,
+        221,
+        294
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        1922,
+        216,
+        293
+      ]
+    },
+    {
+      "ids": [
+        "npc_bajie"
+      ],
+      "file": "assets/material/native-v18/creatures-9.png",
+      "pixels": [
+        277,
+        278
+      ],
+      "contact": {
+        "x": 104,
+        "y": 266
+      },
+      "worldSize": [
+        17.0,
+        17.061371841155236
+      ],
+      "sha256": "7b2da9098448d2c1746f63e91ddce9dc25174674779db2c640d24586789bcb1d",
+      "source": "creatures-corrected.png",
+      "region": [
+        367,
+        630,
+        652,
+        908
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        282,
+        278
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        1922,
+        277,
+        278
+      ]
+    },
+    {
+      "ids": [
+        "npc_tangseng"
+      ],
+      "file": "assets/material/native-v18/creatures-10.png",
+      "pixels": [
+        272,
+        298
+      ],
+      "contact": {
+        "x": 128,
+        "y": 281
+      },
+      "worldSize": [
+        17.0,
+        18.625
+      ],
+      "sha256": "a566472a11ff8f6e9350cdb6c2d7afba5be5f314caf788a307269eb75bb55e99",
+      "source": "creatures-corrected.png",
+      "region": [
+        640,
+        616,
+        975,
+        914
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        49,
+        0,
+        321,
+        298
+      ],
+      "componentsBefore": 10,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        1922,
+        272,
+        298
+      ]
+    },
+    {
+      "ids": [
+        "npc_whitewutian",
+        "npc_whiteWutian"
+      ],
+      "file": "assets/material/native-v18/creatures-11.png",
+      "pixels": [
+        282,
+        292
+      ],
+      "contact": {
+        "x": 144,
+        "y": 277
+      },
+      "worldSize": [
+        18.0,
+        18.638297872340427
+      ],
+      "sha256": "3c85199c275d0731e24349604b3450660ef7eab92af771a4a0082f0986f05e3f",
+      "source": "creatures-corrected.png",
+      "region": [
+        997,
+        621,
+        1307,
+        913
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        18,
+        0,
+        300,
+        292
+      ],
+      "componentsBefore": 15,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        1922,
+        282,
+        292
+      ]
+    },
+    {
+      "ids": [
+        "npc_qiao"
+      ],
+      "file": "assets/material/native-v18/creatures-12.png",
+      "pixels": [
+        249,
+        285
+      ],
+      "contact": {
+        "x": 125,
+        "y": 277
+      },
+      "worldSize": [
+        17.0,
+        19.457831325301203
+      ],
+      "sha256": "9310b80a5a908b84b85f02f701d4c478b8798582794b5f758dd1d18760f18b36",
+      "source": "creatures-corrected.png",
+      "region": [
+        44,
+        906,
+        303,
+        1196
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        254,
+        285
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        1922,
+        249,
+        285
+      ]
+    },
+    {
+      "ids": [
+        "npc_nezha"
+      ],
+      "file": "assets/material/native-v18/creatures-13.png",
+      "pixels": [
+        263,
+        284
+      ],
+      "contact": {
+        "x": 116,
+        "y": 279
+      },
+      "worldSize": [
+        17.595070422535212,
+        19.0
+      ],
+      "sha256": "8e7d4ac464415ba105a3aabfdf42266c761869b79fb50b73f7ab1527d3b38fe5",
+      "source": "creatures-corrected.png",
+      "region": [
+        347,
+        910,
+        620,
+        1199
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        3,
+        268,
+        287
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        2306,
+        263,
+        284
+      ]
+    },
+    {
+      "ids": [
+        "enemy_boss_1",
+        "enemy_reliquary5"
+      ],
+      "file": "assets/material/native-v18/creatures-14.png",
+      "pixels": [
+        331,
+        299
+      ],
+      "contact": {
+        "x": 170,
+        "y": 292
+      },
+      "worldSize": [
+        21.0,
+        18.96978851963746
+      ],
+      "sha256": "1366a34b92a35339794ba207cf67a8a5107c434b5148d0d4bc0e79efbdfd7c52",
+      "source": "creatures-corrected.png",
+      "region": [
+        636,
+        900,
+        973,
+        1199
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        2,
+        0,
+        333,
+        299
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        2306,
+        331,
+        299
+      ]
+    },
+    {
+      "ids": [
+        "enemy_boss_2"
+      ],
+      "file": "assets/material/native-v18/creatures-15.png",
+      "pixels": [
+        299,
+        298
+      ],
+      "contact": {
+        "x": 157,
+        "y": 290
+      },
+      "worldSize": [
+        21.0,
+        20.929765886287626
+      ],
+      "sha256": "e7e209583332120569695ffd93a5f9649b0ff22f1333306cda282b99436efc26",
+      "source": "creatures-corrected.png",
+      "region": [
+        996,
+        901,
+        1308,
+        1199
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        7,
+        0,
+        306,
+        298
+      ],
+      "componentsBefore": 13,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        2306,
+        299,
+        298
+      ]
+    },
+    {
+      "ids": [
+        "enemy_bat"
+      ],
+      "file": "assets/material/native-v18/enemies-0.png",
+      "pixels": [
+        259,
+        264
+      ],
+      "contact": {
+        "x": 135,
+        "y": 253
+      },
+      "worldSize": [
+        18.640151515151516,
+        19.0
+      ],
+      "sha256": "99f028e4b6069e224b045241bfa607ce7118d168aaa3347c41e103017fa4947c",
+      "source": "enemies-extra.png",
+      "region": [
+        31,
+        32,
+        300,
+        306
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        6,
+        264,
+        270
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        2306,
+        259,
+        264
+      ]
+    },
+    {
+      "ids": [
+        "enemy_stone"
+      ],
+      "file": "assets/material/native-v18/enemies-1.png",
+      "pixels": [
+        287,
+        310
+      ],
+      "contact": {
+        "x": 140,
+        "y": 300
+      },
+      "worldSize": [
+        19.0,
+        20.522648083623693
+      ],
+      "sha256": "40e0d7498a1487dd1924da678ddef2f661a722eab416166423386856c76ba11b",
+      "source": "enemies-extra.png",
+      "region": [
+        315,
+        0,
+        612,
+        314
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        4,
+        292,
+        314
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        2306,
+        287,
+        310
+      ]
+    },
+    {
+      "ids": [
+        "enemy_thorn"
+      ],
+      "file": "assets/material/native-v18/enemies-2.png",
+      "pixels": [
+        255,
+        321
+      ],
+      "contact": {
+        "x": 124,
+        "y": 308
+      },
+      "worldSize": [
+        16.682242990654206,
+        21.0
+      ],
+      "sha256": "43007cb152a21caa97824b26f9b6583036b18ed65a6856e46caf6ab527a4e325",
+      "source": "enemies-extra.png",
+      "region": [
+        636,
+        2,
+        901,
+        329
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        6,
+        260,
+        327
+      ],
+      "componentsBefore": 14,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        2306,
+        255,
+        321
+      ]
+    },
+    {
+      "ids": [
+        "enemy_viper"
+      ],
+      "file": "assets/material/native-v18/enemies-3.png",
+      "pixels": [
+        290,
+        311
+      ],
+      "contact": {
+        "x": 154,
+        "y": 300
+      },
+      "worldSize": [
+        19.0,
+        20.375862068965517
+      ],
+      "sha256": "1ecad2962aad3abcecf0cba67515d938d52bc2fd22bcc7f3164ef1f44e01dbea",
+      "source": "enemies-extra.png",
+      "region": [
+        935,
+        0,
+        1235,
+        313
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        2,
+        295,
+        313
+      ],
+      "componentsBefore": 4,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        2306,
+        290,
+        311
+      ]
+    },
+    {
+      "ids": [
+        "enemy_bone"
+      ],
+      "file": "assets/material/native-v18/enemies-4.png",
+      "pixels": [
+        276,
+        315
+      ],
+      "contact": {
+        "x": 136,
+        "y": 303
+      },
+      "worldSize": [
+        18.0,
+        20.543478260869566
+      ],
+      "sha256": "c2a8aa9f80fd4a641e9cbc6f289a3275c8c433c2c822dbbb1c63471600f9442c",
+      "source": "enemies-extra.png",
+      "region": [
+        14,
+        309,
+        300,
+        624
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        281,
+        315
+      ],
+      "componentsBefore": 10,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        2306,
+        276,
+        315
+      ]
+    },
+    {
+      "ids": [
+        "enemy_water"
+      ],
+      "file": "assets/material/native-v18/enemies-5.png",
+      "pixels": [
+        279,
+        310
+      ],
+      "contact": {
+        "x": 135,
+        "y": 299
+      },
+      "worldSize": [
+        18.9,
+        21.0
+      ],
+      "sha256": "15832d2af7a256e70b98f72cba0e186fc08dfc6d2b5854bb3c1e9460bcde051a",
+      "source": "enemies-extra.png",
+      "region": [
+        321,
+        309,
+        610,
+        619
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        284,
+        310
+      ],
+      "componentsBefore": 10,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        2690,
+        279,
+        310
+      ]
+    },
+    {
+      "ids": [
+        "enemy_crab"
+      ],
+      "file": "assets/material/native-v18/enemies-6.png",
+      "pixels": [
+        296,
+        271
+      ],
+      "contact": {
+        "x": 149,
+        "y": 260
+      },
+      "worldSize": [
+        20.0,
+        18.31081081081081
+      ],
+      "sha256": "32058f4bbc480bf7e58b8aad18f1deb92f3fdac42b5760f19491f09634663878",
+      "source": "enemies-extra.png",
+      "region": [
+        620,
+        329,
+        926,
+        609
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        4,
+        301,
+        275
+      ],
+      "componentsBefore": 1,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        2690,
+        296,
+        271
+      ]
+    },
+    {
+      "ids": [
+        "enemy_flame"
+      ],
+      "file": "assets/material/native-v18/enemies-7.png",
+      "pixels": [
+        270,
+        302
+      ],
+      "contact": {
+        "x": 142,
+        "y": 291
+      },
+      "worldSize": [
+        18.0,
+        20.133333333333336
+      ],
+      "sha256": "7efd8ab2a2ae0c2502038b3ca47f38053371092a6b4a385b2af3cb90505b2cc0",
+      "source": "enemies-extra.png",
+      "region": [
+        937,
+        313,
+        1217,
+        620
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        4,
+        275,
+        306
+      ],
+      "componentsBefore": 6,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        2690,
+        270,
+        302
+      ]
+    },
+    {
+      "ids": [
+        "enemy_alchemist"
+      ],
+      "file": "assets/material/native-v18/enemies-8.png",
+      "pixels": [
+        257,
+        299
+      ],
+      "contact": {
+        "x": 130,
+        "y": 287
+      },
+      "worldSize": [
+        18.0,
+        20.941634241245136
+      ],
+      "sha256": "29b73bf2ab3d7382d72d05283335c7de866ed20472038d366dc7ee89062d74bc",
+      "source": "enemies-extra.png",
+      "region": [
+        26,
+        610,
+        293,
+        910
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        262,
+        299
+      ],
+      "componentsBefore": 6,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1154,
+        2690,
+        257,
+        299
+      ]
+    },
+    {
+      "ids": [
+        "enemy_furnace",
+        "enemy_reliquary3"
+      ],
+      "file": "assets/material/native-v18/enemies-9.png",
+      "pixels": [
+        325,
+        288
+      ],
+      "contact": {
+        "x": 162,
+        "y": 278
+      },
+      "worldSize": [
+        20.0,
+        17.723076923076924
+      ],
+      "sha256": "80de31c2eb3d3e20fe8827817d435807eafa9fe8ae28135aa9f3d7d69ab7d27b",
+      "source": "enemies-extra.png",
+      "region": [
+        301,
+        615,
+        634,
+        904
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        330,
+        288
+      ],
+      "componentsBefore": 5,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1538,
+        2690,
+        325,
+        288
+      ]
+    },
+    {
+      "ids": [
+        "enemy_mirror",
+        "enemy_reliquary4"
+      ],
+      "file": "assets/material/native-v18/enemies-10.png",
+      "pixels": [
+        296,
+        298
+      ],
+      "contact": {
+        "x": 154,
+        "y": 287
+      },
+      "worldSize": [
+        18.0,
+        18.12162162162162
+      ],
+      "sha256": "b343446bebab4e016baab6dc5df74644b8fba06f169ba8753f1c4ae859b5506e",
+      "source": "enemies-extra.png",
+      "region": [
+        620,
+        622,
+        926,
+        925
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        5,
+        301,
+        303
+      ],
+      "componentsBefore": 7,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        1922,
+        2690,
+        296,
+        298
+      ]
+    },
+    {
+      "ids": [
+        "enemy_ink"
+      ],
+      "file": "assets/material/native-v18/enemies-11.png",
+      "pixels": [
+        284,
+        295
+      ],
+      "contact": {
+        "x": 139,
+        "y": 283
+      },
+      "worldSize": [
+        19.0,
+        19.735915492957748
+      ],
+      "sha256": "7ed1b6fd91260a69f89e7c960ecb313dc841134aeeca015c970468fba5f88997",
+      "source": "enemies-extra.png",
+      "region": [
+        924,
+        621,
+        1244,
+        916
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        21,
+        0,
+        305,
+        295
+      ],
+      "componentsBefore": 10,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2306,
+        2690,
+        284,
+        295
+      ]
+    },
+    {
+      "ids": [
+        "enemy_sentinel"
+      ],
+      "file": "assets/material/native-v18/enemies-12.png",
+      "pixels": [
+        267,
+        341
+      ],
+      "contact": {
+        "x": 151,
+        "y": 330
+      },
+      "worldSize": [
+        17.225806451612904,
+        22.0
+      ],
+      "sha256": "8ddd5778e23efca9d63ac7972f9a31dd66fb7f35c91d3ce616a26a30fe33b08d",
+      "source": "enemies-extra.png",
+      "region": [
+        9,
+        902,
+        286,
+        1248
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        272,
+        341
+      ],
+      "componentsBefore": 5,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2690,
+        2690,
+        267,
+        341
+      ]
+    },
+    {
+      "ids": [
+        "enemy_archivist"
+      ],
+      "file": "assets/material/native-v18/enemies-13.png",
+      "pixels": [
+        278,
+        330
+      ],
+      "contact": {
+        "x": 134,
+        "y": 319
+      },
+      "worldSize": [
+        18.000000000000004,
+        21.366906474820144
+      ],
+      "sha256": "3b1e496dc1a49cf6b32ff49f8aac9b92ece108f57cf471062791a49336915f69",
+      "source": "enemies-extra.png",
+      "region": [
+        317,
+        901,
+        605,
+        1236
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        283,
+        330
+      ],
+      "componentsBefore": 2,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        2,
+        3074,
+        278,
+        330
+      ]
+    },
+    {
+      "ids": [
+        "enemy_shade"
+      ],
+      "file": "assets/material/native-v18/enemies-14.png",
+      "pixels": [
+        331,
+        332
+      ],
+      "contact": {
+        "x": 169,
+        "y": 320
+      },
+      "worldSize": [
+        21.0,
+        21.063444108761328
+      ],
+      "sha256": "9a330bf16d686bf564dd8711c2c1800d8a87a0dea8473ce4f406bde537484216",
+      "source": "enemies-extra.png",
+      "region": [
+        594,
+        901,
+        935,
+        1238
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        5,
+        0,
+        336,
+        332
+      ],
+      "componentsBefore": 9,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        386,
+        3074,
+        331,
+        332
+      ]
+    },
+    {
+      "ids": [
+        "enemy_wrath"
+      ],
+      "file": "assets/material/native-v18/enemies-15.png",
+      "pixels": [
+        310,
+        343
+      ],
+      "contact": {
+        "x": 169,
+        "y": 335
+      },
+      "worldSize": [
+        20.0,
+        22.129032258064516
+      ],
+      "sha256": "5415b69daeec07dc22f8c574486de5ccf6b6f3da62c525b4c1351ab32f073080",
+      "source": "enemies-extra.png",
+      "region": [
+        927,
+        903,
+        1244,
+        1252
+      ],
+      "retainedAttachments": [],
+      "paintedBounds": [
+        2,
+        0,
+        312,
+        343
+      ],
+      "componentsBefore": 3,
+      "method": "authored region plus selected silhouette and two-pixel antialias margin",
+      "runtimeFile": "assets/material/native-v18/sprites.png",
+      "atlasRect": [
+        770,
+        3074,
+        310,
+        343
+      ]
+    },
+    {
+      "ids": [
+        "landmark_buddha",
+        "landmark_jade"
+      ],
+      "file": "assets/material/landmarks/landmark-buddha-hd-v18.png",
+      "pixels": [
+        1032,
+        1428
+      ],
+      "sha256": "1d918e6c6fb17e16b389f6b9ac1fe211727a8d3e496c2004060ca75a79a8e0df",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "landmark_pagoda",
+        "landmark_amber"
+      ],
+      "file": "assets/material/landmarks/landmark-pagoda-hd-v18.png",
+      "pixels": [
+        966,
+        1404
+      ],
+      "sha256": "5b1528736ac9452111ecdd27ec50ca29cda60100cdf26fd21e5d3070e55de6bb",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "landmark_dragon",
+        "landmark_blue"
+      ],
+      "file": "assets/material/landmarks/landmark-dragon-hd-v18.png",
+      "pixels": [
+        1069,
+        1287
+      ],
+      "sha256": "90360c41ee7e201883bda1532f752faec7aa7792e9ef4dce2e1aba7bc283de6a",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "landmark_furnace",
+        "landmark_crimson"
+      ],
+      "file": "assets/material/landmarks/landmark-furnace-hd-v18.png",
+      "pixels": [
+        1086,
+        1281
+      ],
+      "sha256": "6bb83db270c8f04c57e1196b2424fc9b519a071dabffc25bb6fad88f63cfbe22",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "landmark_scripture",
+        "landmark_violet"
+      ],
+      "file": "assets/material/landmarks/landmark-scripture-hd-v18.png",
+      "pixels": [
+        1052,
+        1337
+      ],
+      "sha256": "843d3c7c97db373dafd6952053a732b0732270d5c1b4edf837d12adb77becb42",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "landmark_blacklotus",
+        "landmark_gold"
+      ],
+      "file": "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
+      "pixels": [
+        1074,
+        1372
+      ],
+      "sha256": "b448d4ae74cda06e6cced1feaba923e9d9bafbfc8d0ef113ed25fd5f708fdee4",
+      "method": "reviewed standalone generated HD image, unchanged pixels"
+    },
+    {
+      "ids": [
+        "prop_monument"
+      ],
+      "file": "assets/material/props/monument-hd-v18.png",
+      "pixels": [
+        819,
+        1274
+      ],
+      "contact": {
+        "x": 586.5,
+        "y": 1249.6699999999998
+      },
+      "sha256": "ecdbdd4e0d6bad34cacc01270bc4a1d0310940be80a5c26f4e8e93fe9c86e6e3",
+      "method": "HD replacement after native-size PC review, unchanged generated pixels"
+    },
+    {
+      "ids": [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      "file": "assets/material/props/imp-hd-v18.png",
+      "pixels": [
+        1170,
+        1252
+      ],
+      "contact": {
+        "x": 705.0,
+        "y": 1147.32
+      },
+      "sha256": "c29bb31200ada85e2dc5b14c201421b1cc796206e3f5461abebdc9d92b7abcaa",
+      "method": "HD replacement after native-size PC review, unchanged generated pixels"
+    }
+  ],
+  "runtimeBytes": 48107542,
+  "sources": {
+    "assets/material/source/creatures-corrected.png": "31fd54d921e973c90505522e2e7946676c2fecf0add79b809f9008c08c16e981",
+    "assets/material/source/creatures.png": "643c6d5c09388cbb49a67b80ef5883c121af5bfee9e1e2b5f80728e98459434f",
+    "assets/material/source/enemies-extra.png": "b0aa71e7c932f75ea03485ce9a3c04578171d9e797aaecc16684b06285717f0d",
+    "assets/material/source/fx.png": "909398f145b8aad44507fd9f41c6801004bbb30afc5f887cca9a2f928322b3a0",
+    "assets/material/source/landmarks.png": "4a3036305e14b0033661e347943270b71a5d25c0188d7238fb498f2e283e640a",
+    "assets/material/source/objects.png": "93f9061e2c601306c0715f5cb725b5c218bc734d2b40db19e3be976baf009134",
+    "assets/material/source/terrain.png": "169237d65034589a321f85e5b812921dba5c4bd079d429cc77cb8c277325e4c6",
+    "assets/material/source/wukong.png": "734693383a96babcb27a1b1500ae38457bbcadb3b54dc9660f869d4dcc29cf67"
+  }
+}

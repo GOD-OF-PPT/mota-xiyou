@@ -1,0 +1,1316 @@
+{
+  "checks": [
+    {
+      "name": "Three explicit actions include battle, pickup and finite supply; reordered blocked route differs from pinned A without any settlement"
+    },
+    {
+      "name": "Planning pauses world input, traps keyboard focus and returns to the game with Escape"
+    },
+    {
+      "name": "material full pause desk controls fit three PC viewports"
+    },
+    {
+      "name": "mural full pause desk controls fit three PC viewports"
+    },
+    {
+      "name": "Same-route owned gear comparison is free; explicit lantern equip is one undoable transaction"
+    },
+    {
+      "name": "Chapter preview is free; confirmed whole-state recovery survives refresh, preserves manual slot and returns to the prior complete journey"
+    },
+    {
+      "name": "Actual rescue result names the newly opened floor-15 side route; rehearsal never creates receipts"
+    },
+    {
+      "name": "The selected scene target opens the same planning surface with its actual action preselected"
+    },
+    {
+      "name": "Already walked empty corridor travels faster through the same legal steps and exact resources",
+      "steps": 8,
+      "travel": [
+        {
+          "fast": false,
+          "ms": 907
+        },
+        {
+          "fast": true,
+          "ms": 316
+        }
+      ]
+    },
+    {
+      "name": "Escape interrupts accelerated travel before the remaining path can execute"
+    },
+    {
+      "name": "Local planning, chapter records and assets load through offline file:// without remote dependencies"
+    }
+  ],
+  "screenshots": [
+    "audits/v27-three-step-plan.png",
+    "audits/v27-material-desk-1440.png",
+    "audits/v27-material-desk-1280.png",
+    "audits/v27-material-desk-1989.png",
+    "audits/v27-mural-desk-1440.png",
+    "audits/v27-mural-desk-1280.png",
+    "audits/v27-mural-desk-1989.png",
+    "audits/v27-owned-gear-comparison.png",
+    "audits/v27-chapter-list.png",
+    "audits/v27-chapter-restore-confirmation.png",
+    "audits/v27-concrete-stage-result.png",
+    "audits/v27-offline-planning.png"
+  ],
+  "errors": [],
+  "timing": [
+    {
+      "coldNewContextReadyMs": 787,
+      "browser": "156.0.8078.47",
+      "viewport": "1440x900",
+      "method": "fresh isolated browser context, local HTTP; single observation, not human hardware survey"
+    },
+    {
+      "safeRouteSteps": 8,
+      "travel": [
+        {
+          "fast": false,
+          "ms": 907
+        },
+        {
+          "fast": true,
+          "ms": 316
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "name": "three-step-plan",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-desk-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 553,
+          "height": 346.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-desk-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 561,
+          "height": 334.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 561,
+          "height": 304.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-desk-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 553,
+          "height": 346.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-desk-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 553,
+          "height": 346.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-desk-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 561,
+          "height": 334.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 561,
+          "height": 304.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-desk-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "plan-result blocked",
+          "glyphs": 13,
+          "width": 553,
+          "height": 346.21875
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "owned-gear-comparison",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        },
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 553,
+          "height": 314.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "确认换装 · 不执行路线",
+          "width": 184.734375,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "调整推演目标",
+          "width": 111.375,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "chapter-list",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "recovery-detail",
+          "glyphs": 2,
+          "width": 617.109375,
+          "height": 615
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "第一回 · 入塔第 1 层 · 第 0 步 · 生命 620 · 功德 0",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "残钟偏转台 · 防御 +2 / 异宝北门 · 选择前第 2 层 · 第 171 步 · 生命 776 · 功德 18",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 2 回 · 首次踏入第 4 层 · 第 581 步 · 生命 642 · 功德 7",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "无钥契台 · 两名守卫，保留钥匙 · 选择前第 5 层 · 第 781 步 · 生命 584 · 功德 15",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 3 回 · 首次踏入第 7 层 · 第 1143 步 · 生命 392 · 功德 31",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "渡灯台 · 留90生命 / 黄钥供灯开栈 · 选择前第 8 层 · 第 1349 步 · 生命 312 · 功德 18",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 4 回 · 首次踏入第 10 层 · 第 1725 步 · 生命 112 · 功德 55",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "破执经卷 · 双愿择一 · 选择前第 11 层 · 第 2096 步 · 生命 39 · 功德 47",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "chapter-restore-confirmation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "recovery-detail",
+          "glyphs": 8,
+          "width": 617.109375,
+          "height": 615
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "第一回 · 入塔第 1 层 · 第 0 步 · 生命 620 · 功德 0",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "残钟偏转台 · 防御 +2 / 异宝北门 · 选择前第 2 层 · 第 171 步 · 生命 776 · 功德 18",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 2 回 · 首次踏入第 4 层 · 第 581 步 · 生命 642 · 功德 7",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "无钥契台 · 两名守卫，保留钥匙 · 选择前第 5 层 · 第 781 步 · 生命 584 · 功德 15",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 3 回 · 首次踏入第 7 层 · 第 1143 步 · 生命 392 · 功德 31",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "渡灯台 · 留90生命 / 黄钥供灯开栈 · 选择前第 8 层 · 第 1349 步 · 生命 312 · 功德 18",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "第 4 回 · 首次踏入第 10 层 · 第 1725 步 · 生命 112 · 功德 55",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "破执经卷 · 双愿择一 · 选择前第 11 层 · 第 2096 步 · 生命 39 · 功德 47",
+          "width": 475.890625,
+          "height": 78,
+          "disabled": false
+        },
+        {
+          "text": "确认整段回退",
+          "width": 120,
+          "height": 45.59375,
+          "disabled": false
+        },
+        {
+          "text": "保留当前进度",
+          "width": 120,
+          "height": 45.59375,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "concrete-stage-result",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "offline-planning",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "plan-result possible",
+          "glyphs": 12,
+          "width": 561,
+          "height": 304.03125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "一短程推演",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "二法器比较",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "三章回前缘",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "四此行所得",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "落子",
+          "width": 68,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": true
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "↑",
+          "width": 36,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "移除",
+          "width": 46,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "记为方案甲",
+          "width": 96.8125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "清空",
+          "width": 53.125,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收起推演 · 回到塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "passed": true
+}

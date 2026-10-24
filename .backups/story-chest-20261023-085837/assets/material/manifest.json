@@ -1,0 +1,2984 @@
+{
+  "revision": 7,
+  "style": "玄金神怪 · 三维古寺",
+  "pipeline": "3D-material pre-rendered raster assets; actors drawn directly from high resolution sources at final device pixel ratio",
+  "assets": {
+    "actor_wukong_down": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        120,
+        151,
+        335,
+        352
+      ],
+      "frameBounds": [
+        [
+          120,
+          162,
+          268,
+          352
+        ],
+        [
+          155,
+          151,
+          305,
+          352
+        ],
+        [
+          125,
+          152,
+          266,
+          352
+        ],
+        [
+          132,
+          162,
+          335,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_right": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        78,
+        158,
+        356,
+        352
+      ],
+      "frameBounds": [
+        [
+          113,
+          158,
+          238,
+          352
+        ],
+        [
+          78,
+          160,
+          228,
+          352
+        ],
+        [
+          133,
+          160,
+          280,
+          352
+        ],
+        [
+          134,
+          162,
+          356,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_up": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        85,
+        152,
+        336,
+        352
+      ],
+      "frameBounds": [
+        [
+          85,
+          160,
+          224,
+          352
+        ],
+        [
+          90,
+          152,
+          230,
+          352
+        ],
+        [
+          105,
+          152,
+          247,
+          352
+        ],
+        [
+          123,
+          167,
+          336,
+          352
+        ]
+      ]
+    },
+    "actor_wukong_left": {
+      "src": "assets/material/atlases/wukong.png",
+      "sx": 0,
+      "sy": 1152,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 4,
+      "anchor": {
+        "x": 192,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        146,
+        139,
+        368,
+        352
+      ],
+      "frameBounds": [
+        [
+          155,
+          139,
+          291,
+          352
+        ],
+        [
+          172,
+          148,
+          343,
+          352
+        ],
+        [
+          176,
+          146,
+          314,
+          352
+        ],
+        [
+          146,
+          153,
+          368,
+          352
+        ]
+      ]
+    },
+    "enemy_imp": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        211,
+        148,
+        352
+      ]
+    },
+    "enemy_monk": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        116,
+        188,
+        352
+      ]
+    },
+    "enemy_ghost": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        190,
+        183,
+        352
+      ]
+    },
+    "enemy_guard": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        201,
+        162,
+        352
+      ]
+    },
+    "enemy_spider": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        229,
+        154,
+        352
+      ]
+    },
+    "enemy_yaksha": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        150,
+        219,
+        352
+      ]
+    },
+    "enemy_dragon": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        78,
+        176,
+        240,
+        352
+      ]
+    },
+    "enemy_boss": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        26,
+        90,
+        240,
+        352
+      ]
+    },
+    "npc_lantern": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        141,
+        175,
+        352
+      ]
+    },
+    "npc_bajie": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        133,
+        217,
+        352
+      ]
+    },
+    "npc_tangseng": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        55,
+        145,
+        240,
+        352
+      ]
+    },
+    "npc_whitewutian": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        34,
+        132,
+        240,
+        352
+      ]
+    },
+    "npc_qiao": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        131,
+        203,
+        352
+      ]
+    },
+    "npc_nezha": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        145,
+        226,
+        352
+      ]
+    },
+    "enemy_boss_1": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        211,
+        162,
+        352
+      ]
+    },
+    "enemy_boss_2": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        132,
+        233,
+        352
+      ]
+    },
+    "enemy_bat": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        25,
+        121,
+        240,
+        352
+      ]
+    },
+    "enemy_stone": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        29,
+        122,
+        240,
+        352
+      ]
+    },
+    "enemy_thorn": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        33,
+        98,
+        240,
+        352
+      ]
+    },
+    "enemy_viper": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        28,
+        125,
+        240,
+        352
+      ]
+    },
+    "enemy_bone": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        57,
+        141,
+        240,
+        352
+      ]
+    },
+    "enemy_water": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        111,
+        226,
+        352
+      ]
+    },
+    "enemy_crab": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 512,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        201,
+        156,
+        352
+      ]
+    },
+    "enemy_flame": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        55,
+        134,
+        240,
+        352
+      ]
+    },
+    "enemy_alchemist": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        100,
+        237,
+        352
+      ]
+    },
+    "enemy_furnace": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 256,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        30,
+        138,
+        240,
+        352
+      ]
+    },
+    "enemy_mirror": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 512,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        60,
+        166,
+        240,
+        352
+      ]
+    },
+    "enemy_ink": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 768,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        126,
+        216,
+        352
+      ]
+    },
+    "enemy_sentinel": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 0,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        125,
+        224,
+        240,
+        352
+      ]
+    },
+    "enemy_archivist": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 256,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        49,
+        172,
+        240,
+        352
+      ]
+    },
+    "enemy_shade": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 512,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        151,
+        236,
+        352
+      ]
+    },
+    "enemy_wrath": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 768,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        25,
+        142,
+        240,
+        352
+      ]
+    },
+    "enemy_acolyte": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        116,
+        188,
+        352
+      ]
+    },
+    "enemy_bell": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        190,
+        183,
+        352
+      ]
+    },
+    "enemy_brass": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        201,
+        162,
+        352
+      ]
+    },
+    "enemy_puppet": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        229,
+        154,
+        352
+      ]
+    },
+    "enemy_judge": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        150,
+        219,
+        352
+      ]
+    },
+    "enemy_flood": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        78,
+        176,
+        240,
+        352
+      ]
+    },
+    "enemy_heart": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        26,
+        90,
+        240,
+        352
+      ]
+    },
+    "enemy_thresholdImp": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        211,
+        148,
+        352
+      ]
+    },
+    "enemy_boss_0": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        26,
+        90,
+        240,
+        352
+      ]
+    },
+    "enemy_reliquary0": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        201,
+        162,
+        352
+      ]
+    },
+    "enemy_reliquary1": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        150,
+        219,
+        352
+      ]
+    },
+    "enemy_reliquary2": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 384,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        78,
+        176,
+        240,
+        352
+      ]
+    },
+    "enemy_reliquary3": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 256,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        30,
+        138,
+        240,
+        352
+      ]
+    },
+    "enemy_reliquary4": {
+      "src": "assets/material/atlases/enemies.png",
+      "sx": 512,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        60,
+        166,
+        240,
+        352
+      ]
+    },
+    "enemy_reliquary5": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 512,
+      "sy": 1152,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        16,
+        211,
+        162,
+        352
+      ]
+    },
+    "npc_whiteWutian": {
+      "src": "assets/material/atlases/creatures.png",
+      "sx": 768,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 352
+      },
+      "logicalScale": 0.25,
+      "contentBounds": [
+        34,
+        132,
+        240,
+        352
+      ]
+    },
+    "item_key_yellow": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        26,
+        22,
+        60,
+        58
+      ]
+    },
+    "item_key_blue": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        4,
+        51,
+        58
+      ]
+    },
+    "item_key_red": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        4,
+        55,
+        58
+      ]
+    },
+    "item_atk": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        4,
+        55,
+        58
+      ]
+    },
+    "item_def": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        15,
+        37,
+        58
+      ]
+    },
+    "item_coin": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        7,
+        53,
+        58
+      ]
+    },
+    "item_orb": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        14,
+        12,
+        60,
+        58
+      ]
+    },
+    "item_mana": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        14,
+        4,
+        57,
+        58
+      ]
+    },
+    "item_elixir": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        15,
+        12,
+        60,
+        58
+      ]
+    },
+    "item_hp": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        12,
+        13,
+        60,
+        58
+      ]
+    },
+    "treasure_iron": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        16,
+        42,
+        58
+      ]
+    },
+    "treasure_lotus": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        17,
+        40,
+        58
+      ]
+    },
+    "treasure_thorn": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        4,
+        58,
+        58
+      ]
+    },
+    "treasure_tide": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        14,
+        47,
+        58
+      ]
+    },
+    "treasure_ember": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        6,
+        5,
+        60,
+        58
+      ]
+    },
+    "treasure_mirror": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        13,
+        50,
+        58
+      ]
+    },
+    "prop_door_yellow": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        15,
+        14,
+        60,
+        58
+      ]
+    },
+    "prop_door_blue": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        24,
+        39,
+        58
+      ]
+    },
+    "prop_door_red": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        23,
+        37,
+        58
+      ]
+    },
+    "prop_gate": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        26,
+        40,
+        58
+      ]
+    },
+    "prop_altar": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        10,
+        4,
+        58,
+        58
+      ]
+    },
+    "prop_relic": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        21,
+        13,
+        60,
+        58
+      ]
+    },
+    "prop_monument": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        26,
+        23,
+        60,
+        58
+      ]
+    },
+    "prop_chest": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        6,
+        54,
+        58
+      ]
+    },
+    "prop_switch": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        4,
+        55,
+        58
+      ]
+    },
+    "prop_plate": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        16,
+        17,
+        60,
+        58
+      ]
+    },
+    "prop_lamp": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        7,
+        56,
+        58
+      ]
+    },
+    "prop_stairs_up": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        12,
+        11,
+        60,
+        58
+      ]
+    },
+    "prop_stairs_down": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        6,
+        52,
+        58
+      ]
+    },
+    "prop_seal": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        4,
+        57,
+        58
+      ]
+    },
+    "prop_finale": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        5,
+        4,
+        58,
+        58
+      ]
+    },
+    "prop_resonator": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        8,
+        60,
+        58
+      ]
+    },
+    "prop_rescue": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        19,
+        44,
+        58
+      ]
+    },
+    "prop_tide": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        6,
+        5,
+        60,
+        58
+      ]
+    },
+    "prop_portal": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        7,
+        60,
+        58
+      ]
+    },
+    "prop_illusion": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        11,
+        6,
+        60,
+        58
+      ]
+    },
+    "prop_eye": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        7,
+        60,
+        58
+      ]
+    },
+    "prop_staff": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        22,
+        32,
+        60,
+        58
+      ]
+    },
+    "prop_cicada": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        20,
+        45,
+        58
+      ]
+    },
+    "prop_clone": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        60,
+        58
+      ]
+    },
+    "prop_gate_open": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        11,
+        57,
+        58
+      ]
+    },
+    "prop_door_open": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        12,
+        60,
+        58
+      ]
+    },
+    "prop_bars": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        26,
+        40,
+        58
+      ]
+    },
+    "prop_choice": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        8,
+        60,
+        58
+      ]
+    },
+    "prop_fragment": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        21,
+        13,
+        60,
+        58
+      ]
+    },
+    "item_yellowKey": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        26,
+        22,
+        60,
+        58
+      ]
+    },
+    "item_blueKey": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        4,
+        51,
+        58
+      ]
+    },
+    "item_redKey": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        4,
+        55,
+        58
+      ]
+    },
+    "item_amber": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        4,
+        55,
+        58
+      ]
+    },
+    "item_ruby": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        4,
+        55,
+        58
+      ]
+    },
+    "item_jade": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        15,
+        37,
+        58
+      ]
+    },
+    "item_emerald": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        15,
+        37,
+        58
+      ]
+    },
+    "item_coins": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 320,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        7,
+        53,
+        58
+      ]
+    },
+    "item_peach": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        12,
+        13,
+        60,
+        58
+      ]
+    },
+    "item_bigPeach": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        12,
+        13,
+        60,
+        58
+      ]
+    },
+    "item_feast": {
+      "src": "assets/material/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        12,
+        13,
+        60,
+        58
+      ]
+    },
+    "floor_jade": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_amber": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_blue": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_crimson": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_violet": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "floor_gold": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_jade": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_amber": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_blue": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_crimson": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 384,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_violet": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "wall_gold": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 1152,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_cloud": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_gap": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "terrain_water": {
+      "src": "assets/material/atlases/terrain.png",
+      "sx": 768,
+      "sy": 384,
+      "sourceW": 384,
+      "sourceH": 384,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        384,
+        384
+      ]
+    },
+    "landmark_jade": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        109,
+        206,
+        312
+      ]
+    },
+    "landmark_amber": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        131,
+        186,
+        312
+      ]
+    },
+    "landmark_blue": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        6,
+        63,
+        252,
+        312
+      ]
+    },
+    "landmark_crimson": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        85,
+        243,
+        312
+      ]
+    },
+    "landmark_violet": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        139,
+        183,
+        312
+      ]
+    },
+    "landmark_gold": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        80,
+        245,
+        312
+      ]
+    },
+    "landmark_buddha": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        109,
+        206,
+        312
+      ]
+    },
+    "landmark_pagoda": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        131,
+        186,
+        312
+      ]
+    },
+    "landmark_dragon": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        6,
+        63,
+        252,
+        312
+      ]
+    },
+    "landmark_furnace": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        85,
+        243,
+        312
+      ]
+    },
+    "landmark_scripture": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        139,
+        183,
+        312
+      ]
+    },
+    "landmark_blacklotus": {
+      "src": "assets/material/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        80,
+        245,
+        312
+      ]
+    },
+    "fx_staff": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_morph": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 256,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_clone": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 512,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_door": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 768,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_pickup": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 1024,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_relic": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 1280,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "fx_hit": {
+      "src": "assets/material/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 256,
+      "frames": 4,
+      "anchor": {
+        "x": 128,
+        "y": 128
+      },
+      "logicalScale": 0.375
+    },
+    "portrait_wukong": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_lantern": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        2,
+        128,
+        128
+      ]
+    },
+    "portrait_bajie": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_tangseng": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_whitewutian": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_qiao": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 640,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        11,
+        0,
+        128,
+        128
+      ]
+    },
+    "portrait_nezha": {
+      "src": "assets/material/atlases/portraits.png",
+      "sx": 768,
+      "sy": 0,
+      "sourceW": 128,
+      "sourceH": 128,
+      "frames": 1,
+      "anchor": {
+        "x": 64,
+        "y": 128
+      },
+      "contentBounds": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    "ui_backdrop": {
+      "src": "assets/material/ui_backdrop.png",
+      "sourceW": 1619,
+      "sourceH": 971,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ui_motif": {
+      "src": "assets/material/ui_backdrop.png",
+      "sourceW": 1619,
+      "sourceH": 971,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "sources": [
+    {
+      "file": "assets/material/source/wukong.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/material/source/creatures-corrected.png",
+      "width": 1312,
+      "height": 1199
+    },
+    {
+      "file": "assets/material/source/enemies-extra.png",
+      "width": 1244,
+      "height": 1265
+    },
+    {
+      "file": "assets/material/source/objects.png",
+      "width": 1172,
+      "height": 1342
+    },
+    {
+      "file": "assets/material/source/terrain.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "assets/material/source/landmarks.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "assets/material/source/fx.png",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "actorRegistration": {
+    "sourceRows": [
+      0,
+      302,
+      600,
+      898,
+      1254
+    ],
+    "sourceColumns": [
+      0,
+      307,
+      614,
+      916,
+      1254
+    ],
+    "noise": "isolated components removed before registration",
+    "scale": "shared across sixteen poses"
+  },
+  "portraitRegistration": [
+    {
+      "id": "portrait_wukong",
+      "crop": [
+        86,
+        80,
+        184,
+        178
+      ],
+      "source": "wukong.png"
+    },
+    {
+      "id": "portrait_lantern",
+      "crop": [
+        102,
+        28,
+        224,
+        150
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_bajie",
+      "crop": [
+        90,
+        20,
+        222,
+        152
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_tangseng",
+      "crop": [
+        112,
+        4,
+        224,
+        116
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_whitewutian",
+      "crop": [
+        106,
+        20,
+        222,
+        136
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_qiao",
+      "crop": [
+        70,
+        17,
+        186,
+        133
+      ],
+      "source": "creatures-corrected.png"
+    },
+    {
+      "id": "portrait_nezha",
+      "crop": [
+        82,
+        33,
+        206,
+        157
+      ],
+      "source": "creatures-corrected.png"
+    }
+  ],
+  "runtimeFiles": [
+    "assets/material/atlases/wukong.png",
+    "assets/material/atlases/creatures.png",
+    "assets/material/atlases/enemies.png",
+    "assets/material/atlases/objects.png",
+    "assets/material/atlases/terrain.png",
+    "assets/material/atlases/landmarks.png",
+    "assets/material/atlases/fx.png",
+    "assets/material/atlases/portraits.png",
+    "assets/material/ui_backdrop.png"
+  ],
+  "runtimeBytes": 12661313
+}

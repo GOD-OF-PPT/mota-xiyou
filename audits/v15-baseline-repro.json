@@ -1,0 +1,10 @@
+{
+  "checks": [],
+  "errors": [],
+  "screenshots": [
+    "audits/v15-failure.png"
+  ],
+  "legalCampaignActions": 3850,
+  "failure": "AssertionError [ERR_ASSERTION]: Numeric comparison must not commit a choice\n+ actual - expected\n... Skipped lines\n\n  {\n    atk: 27,\n+   choices: {\n+     bellVow: 'offering'\n+   },\n-   choices: {},\n    coins: 18,\n+   def: 12,\n-   def: 10,\n    elixirs: 1,\n    equipped: [],\n    floor: 1,\n    fragments: [\n      0\n...\n      'f0-wing-guard-0': true,\n+     'f1-12': true,\n      'f1-8': true,\n      'f1-9': true\n    },\n    rescued: [],\n    switches: {\n...\n    treasures: [],\n+   turn: 172,\n-   turn: 171,\n    x: 9,\n    y: 16\n  }\n\n    at main (E:\\githome\\mota\\tests\\v15-choice-interaction.cjs:26:113)",
+  "visibleText": "行者C\n◆\n776\n生命\n灵息\n6 / 6\n1\n1\n0\n◈\n石胎守卫守着舍利，先看清战损。\n心印 0/5 · 外舍利 1/16\n◐\n玄金古寺\n↶\n↷\n☷\n行囊与手记\n02\nTHE RELIC TOWER 第 2 / 18 层 · 辨真篇\n残钟回廊\n返回探索 M\n归位 F\n此层经卷\n⌄\n火眼金睛 · 免费察看\n五印渐解 · 神通觉醒\n行走\n1\n火眼金睛\n2\n金箍架桥\n3\n青蝉化形\n4\n毫毛分身\n5\n残钟偏转 · 以玉换路\n功德 18 · 生命 776\n1\n留玉护身\n即付 · 无\n获得\n防御 +2\n\n北门仍闭，取定海铁须战精英，也可回访。\n\n已定此念\n2\n补钟开门\n即付 · 无\n获得\n永久开启定海铁宝龛北门\n\n舍弃防御 +2，绕精英取定海铁；不获精英功德。\n\n这份因果已经作出选择。\n\n确认即结算；另一份收益将封存，Z 可回溯这一念。\n\n此念已定：留玉护身 · 防御 +2\n暂不定念 Esc\n行囊 I\n回\n已展开整层。点选敌人、舍利与机关，先看路线再落子。"
+}

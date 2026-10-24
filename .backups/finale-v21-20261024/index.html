@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#103c43">
+  <meta name="description" content="十八层西游策略冒险。解开五重心印，集齐十六枚外舍利，照见无骨归真。">
+  <title>大圣 · 舍利魔塔</title>
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/cinnabar.css?v=19">
+  <link rel="stylesheet" href="css/mural.css?v=19">
+  <link rel="stylesheet" href="css/immersive.css?v=19">
+  <link rel="stylesheet" href="css/repair.css?v=19">
+  <link rel="stylesheet" href="css/experience.css?v=19">
+  <script defer src="js/world.js?v=19"></script>
+  <script defer src="js/engine.js?v=19"></script>
+  <script defer src="js/tactics.js?v=19"></script>
+  <script defer src="js/journey.js?v=19"></script>
+  <script defer src="js/assets.js?v=19"></script>
+  <script defer src="js/material-assets.js?v=19"></script>
+  <script defer src="js/art-style.js?v=19"></script>
+  <script defer src="js/renderer.js?v=19"></script>
+  <script defer src="js/audio.js?v=19"></script>
+  <script defer src="js/film-art.js?v=19"></script>
+  <script defer src="js/story-director.js?v=19"></script>
+  <script defer src="js/presentation.js?v=19"></script>
+  <script defer src="js/ui.js?v=19"></script>
+</head>
+<body>
+  <section id="start-screen" class="start-screen" aria-label="大圣：舍利魔塔 开始界面">
+    <div class="start-topline"><span class="tiny-emblem">卍</span><span>十八层西游策略冒险</span><span id="start-art-label" class="start-edition">玄金古寺 · 十八重因果</span></div>
+    <main class="start-main">
+      <div class="start-copy">
+        <div class="chapter-kicker"><span></span> 十六舍利，一位未归</div>
+        <h1 class="start-title">大圣<span class="title-seal">悟</span></h1>
+        <div class="start-subtitle"><span>舍利魔塔</span><i></i></div>
+        <p class="start-english">RELICS OF THE GREAT SAGE</p>
+        <p class="start-story">云垂山门，壁上众生。<br>十八重塔路，十六枚舍利，一颗无骨心。</p>
+        <p class="adaptation-caption">受《西游记后传》启发的原创平行篇章</p>
+        <div class="start-actions"><button id="new-game" class="primary-button">执棒入塔 <span>→</span></button><button id="continue-game" class="secondary-button" disabled>继续前缘 <span>↗</span></button></div>
+        <div id="asset-loading" class="asset-loading" role="status" aria-live="polite"><div><span id="asset-status">正在展开玄金古寺画卷</span><span id="asset-count"></span></div><progress id="asset-progress" value="0" max="1" aria-label="美术资源载入进度"></progress></div>
+        <div class="start-save-note"><span class="small-diamond"></span> 无需联网 · 自动存档 · 随时回溯</div>
+      </div>
+      <div class="start-art" aria-hidden="true">
+        <div class="art-caption">云垂山门 · 玄金古寺</div>
+        <img id="start-illustration" class="title-landscape" alt="玄金古寺的云山浮寺与鎏金佛龛" hidden>
+        <span class="art-coordinate">云路已现 / 候君入塔</span>
+        <div class="art-corner corner-tl"></div><div class="art-corner corner-br"></div>
+      </div>
+    </main>
+    <footer class="start-bottom"><div><b>壹</b><span>步步为营<small>十八幅异构塔路</small></span></div><div><b>贰</b><span>洞察因果<small>战前可算，不凭运气</small></span></div><div><b>叁</b><span>神通解局<small>六器取舍，旧路新解</small></span></div><span class="start-footer-note">有些门，需要先放下金箍棒。</span></footer>
+  </section>
+
+  <div id="game-shell" class="game-shell hidden">
+    <div class="hud-vitals" aria-label="当前生命与灵息">
+      <button id="btn-character" class="hud-character" data-action="character" title="行者详情 · C" aria-expanded="false"><canvas id="hud-portrait" width="96" height="96" data-asset="actor_wukong_down" aria-hidden="true"></canvas><span>行者<kbd>C</kbd></span></button>
+      <div class="hud-survival"><div><span class="hud-heart" aria-hidden="true">◆</span><strong id="hud-hp">620</strong><small>生命</small></div><div class="hud-breath"><span>灵息</span><b id="hud-mana">6 / 6</b><i id="hud-mana-bar"></i></div></div>
+      <div id="hud-keys" class="hud-keys" aria-label="钥匙数量"></div>
+    </div>
+    <header class="game-header">
+      <a class="game-brand" href="./" title="返回开始界面"><span class="brand-staff" aria-hidden="true"></span><span class="brand-name">大圣 <i>·</i> 舍利魔塔<small>RELICS OF THE GREAT SAGE</small></span></a>
+      <div class="header-center"><span class="header-symbol">◈</span><span id="narrative-goal" aria-label="当前主线目标">寻找散落的舍利，重开众生归路</span><small id="floor-progress">心印 0/5 · 外舍利 0/16</small></div>
+      <nav class="header-tools" aria-label="游戏菜单">
+        <div class="style-control"><button id="btn-style" data-action="style" aria-expanded="false" title="切换美术风格"><span aria-hidden="true">◐</span><span id="style-name">玄金古寺</span></button><div id="style-picker" class="style-picker hidden" role="group" aria-label="美术风格"><button data-style="material"><b>玄金古寺</b><small>湿石 · 古金 · 三维材质</small></button><button data-style="mural"><b>青绿壁画</b><small>重彩 · 金线 · 像素绘卷</small></button></div></div>
+        <button id="btn-undo" data-action="undo" title="回溯上一次决策 · Z" aria-label="回溯上一次决策"><span>↶</span><span class="tool-label">回溯</span></button>
+        <button id="btn-redo" data-action="redo" title="重做上一次决策 · Y" aria-label="重做上一次决策"><span>↷</span><span class="tool-label">重做</span></button>
+        <details id="game-toolbox" class="game-toolbox">
+          <summary title="行囊、因果簿、存档与指引"><span aria-hidden="true">☷</span><span class="menu-label">行囊与手记</span><span id="revisit-count" class="revisit-count hidden" aria-label="可回访变化数"></span></summary>
+          <div class="toolbox-menu">
+            <div class="toolbox-heading">行者行装 <span>PILGRIM'S NOTES</span></div>
+            <button id="btn-character-menu" data-action="character"><span>◇</span> 行者详情 <kbd>C</kbd></button>
+            <button id="btn-inventory" data-action="inventory"><span>▤</span> 行囊 <kbd>I</kbd></button>
+            <button id="btn-journal" data-action="journal"><span>☷</span> 因果手记 <kbd>J</kbd></button>
+            <button id="btn-bestiary" data-action="bestiary"><span>◉</span> 群妖图鉴 <kbd>B</kbd></button>
+            <div class="toolbox-divider"></div>
+            <button id="btn-save" data-action="save" title="手动保存 · Ctrl+S"><span>▣</span> 手动存档 <kbd>Ctrl S</kbd></button>
+            <button id="btn-load" data-action="load" title="选择手动或自动存档 · L"><span>↥</span> 读取前缘 <kbd>L</kbd></button>
+            <button id="btn-relics" data-action="relics"><span>✦</span> 舍利莲阵 <span id="external-count">0 / 16</span></button>
+            <button id="btn-audio" data-action="audio" title="音乐与音效独立设置"><span>♪</span> 声音与演出</button>
+            <button id="btn-help" data-action="help" title="规则、设置与操作 · H"><span>?</span> 指引与设置 <kbd>H</kbd></button>
+            <div class="toolbox-divider"></div>
+            <button id="btn-title" data-action="title"><span>⌂</span> 回到塔外</button>
+            <button id="btn-restart" data-action="restart"><span>↻</span> 重新踏上此行</button>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <main class="game-layout">
+      <aside id="character-drawer" class="hero-panel" aria-label="行者详细状态" aria-hidden="true"><button id="character-close" class="drawer-close" aria-label="收起行者详情">×</button>
+        <div class="panel-eyebrow">THE PILGRIM <span>行者</span></div>
+        <div class="hero-profile">
+          <div id="portrait" class="hero-portrait" aria-hidden="true"><svg viewBox="0 0 48 48" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="#1e302a"/><path d="M3 36h7v-5h5v-4h19v6h5v15H3z" fill="#9f4235"/><path d="M12 12h5V8h16v5h5v15h-5v7H17v-7h-5z" fill="#7b5937"/><path d="M17 16h16v12h-5v5h-8v-5h-3z" fill="#dfbc7e"/><path d="M14 10h22v6H14z" fill="#d8af57"/><path d="M18 5h4v7h-4zm9-3h4v10h-4z" fill="#e9c771"/><path d="M17 19h6v3h-6zm11 0h6v3h-6z" fill="#242c24"/><path d="M23 24h5v3h-5z" fill="#a2794e"/><path d="M19 28h10v3H19z" fill="#9a6e44"/><path d="M12 33h23v5H12z" fill="#be5f41"/><path d="M18 38h13v10H18z" fill="#c49a52"/><path d="M39 5h3v43h-3z" fill="#997b41"/><path d="M38 4h5v9h-5zm0 34h5v10h-5z" fill="#e3c471"/></svg></div>
+          <div><h2>孙悟空</h2><span class="hero-title">齐天大圣</span><div class="hero-rank"><i></i> 一棒破万相</div></div>
+        </div>
+        <div class="health-block"><div class="stat-caption"><span><i class="stat-dot red"></i> 生命</span><small>VITALITY</small></div><div class="health-value"><strong id="hp-value">620</strong><span>HP</span></div><div class="health-rule"><span></span></div></div>
+        <div class="stat-grid"><div><span class="stat-icon sword">⚔</span><label>攻击</label><strong id="atk-value">24</strong></div><div><span class="stat-icon shield">◇</span><label>防御</label><strong id="def-value">10</strong></div><div><span class="stat-icon spirit">✦</span><label>灵息</label><strong id="mana-value">6 <small>/ 6</small></strong></div><div><span class="stat-icon coin">◉</span><label>铜钱</label><strong id="coins-value">0</strong></div></div>
+        <div class="keys-block"><div class="section-label">过关之钥 <span>KEYS</span></div><div class="key-row"><div title="黄铜钥匙"><i class="key-icon yellow"></i><span id="key-yellow">1</span></div><div title="青玉钥匙"><i class="key-icon blue"></i><span id="key-blue">0</span></div><div title="朱砂钥匙"><i class="key-icon red"></i><span id="key-red">0</span></div></div></div>
+        <div class="relic-block"><div class="section-label">五重心印 <span id="relic-count-label">SEALS</span></div><div id="relic-slots" class="relic-slots"><span class="relic-slot">Ⅰ</span><span class="relic-slot">Ⅱ</span><span class="relic-slot">Ⅲ</span><span class="relic-slot">Ⅳ</span><span class="relic-slot">Ⅴ</span></div><p class="relic-caption">十六枚舍利散落塔路，五重心印开辟新途。</p></div>
+        <div class="journey-quote"><span>「</span>心猿归处，<br>自有灵山。<span>」</span></div>
+      </aside>
+      <section class="tower-panel" aria-label="塔层探索">
+        <div class="floor-header"><div class="floor-title"><span id="floor-number" class="floor-number">壹</span><div><div class="floor-overline">THE RELIC TOWER <span id="location-label">第 1 层 / 共 18 层</span></div><h1 id="floor-name">石生山门</h1></div></div><span id="floor-subtitle" class="floor-subtitle">万法起于足下</span></div>
+        <div class="map-toolbar"><button id="btn-overview" class="map-toggle" aria-pressed="false" title="近观 / 全图规划 · M">全图规划 <kbd>M</kbd></button><button id="btn-focus-player" class="focus-player" title="视野回到悟空 · F" aria-label="视野回到悟空">归位 <kbd>F</kbd></button><span id="viewport-label">近观 · 方向跟随</span><details class="quest-scroll"><summary>此层经卷 <span>⌄</span></summary><div><div class="section-label">此行所求</div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div id="floor-depth"></div><button id="btn-quest-journal">展开因果手记 ↗</button></div></details></div>
+        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="二十一乘二十一格塔层，近观视野随角色移动。M 展开全图；点击格子查看规则与寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
+        <div id="floor-entry" class="floor-entry" hidden aria-live="polite" aria-atomic="true"><canvas class="entry-panorama" aria-hidden="true"></canvas><small data-entry-number></small><h2></h2><p data-entry-atmosphere></p><div class="entry-goal"><span>此层要事</span><strong data-entry-goal></strong></div><button class="entry-continue">踏入此境 <kbd>Enter</kbd></button></div>
+        <div id="ability-bar" class="ability-bar" aria-label="行者神通">
+          <button data-mode="walk" id="skill-walk" class="ability active"><span class="ability-symbol">⌁</span><span>行走<small>自在探索</small></span><kbd>1</kbd></button>
+          <button data-mode="inspect" id="skill-inspect" class="ability"><span class="ability-symbol eye-symbol">◉</span><span>火眼金睛<small>洞察 · 无消耗</small></span><kbd>2</kbd></button>
+          <button data-mode="staff" id="skill-staff" class="ability locked"><span class="ability-symbol">╱</span><span>金箍架桥<small>石生心印解锁</small></span><kbd>3</kbd></button>
+          <button data-mode="morph" id="skill-morph" class="ability locked"><span class="ability-symbol">♧</span><span>青蝉化形<small>照骨心印解锁</small></span><kbd>4</kbd></button>
+          <button data-mode="clone" id="skill-clone" class="ability locked"><span class="ability-symbol">分</span><span>毫毛分身<small>渡厄心印解锁</small></span><kbd>5</kbd></button>
+        </div>
+        <div class="exploration-status"><i></i><span id="status-message" aria-live="polite">一切战斗都可预见。落子之前，先看清因果。</span></div>
+        <div class="mobile-controls" aria-label="触屏移动"><button data-move="left" aria-label="向左">←</button><div><button data-move="up" aria-label="向上">↑</button><button data-move="down" aria-label="向下">↓</button></div><button data-move="right" aria-label="向右">→</button><button id="btn-interact" data-action="interact" class="interact-button">交互</button></div>
+      </section>
+      <aside class="world-panel" aria-label="塔内信息">
+
+        <svg id="target-link" class="target-link hidden" aria-hidden="true"><path id="target-thread"></path><polygon id="target-nib"></polygon><circle id="target-foot" r="2.2"></circle></svg><button id="target-direction" class="target-direction hidden" aria-label="查看画外所选目标"><span id="target-direction-arrow" aria-hidden="true">↗</span><span id="target-direction-name"></span></button><section class="context-card" aria-label="目标附近的行动提示" aria-live="polite"><button id="context-dismiss" class="context-dismiss" hidden tabindex="-1" aria-hidden="true" aria-label="收起当前目标">×</button><div class="section-label">火眼所见 <span>INSIGHT</span></div><div class="context-heading"><canvas id="context-portrait" width="96" height="96" hidden aria-hidden="true"></canvas><h2 id="context-title">观照，方能破局</h2><span id="context-cost" class="bubble-cost" hidden></span></div><div id="context-body"><div class="insight-emblem">◉</div><p class="muted">点击塔内的守卫、机关或宝物，查看规则与战斗损失。</p><p class="context-note">无随机伤害 · 无怪物刷新<br>每一步，都有你的解法。</p></div></section>
+        <details class="event-card"><summary class="section-label">塔中回响 <span>⌄</span></summary><div id="event-log" class="event-log" aria-live="polite"><div class="log-entry"><span>·</span> 你踏入了破碎的浮屠。</div></div></details>
+        <div class="map-legend"><span><i class="legend-dot relic-dot"></i> 舍利</span><span><i class="legend-dot altar-dot"></i> 灵息坛</span><span><i class="legend-dot enemy-dot"></i> 守卫</span><span><i class="legend-dot gate-dot"></i> 机关</span></div>
+      </aside>
+    </main>
+    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> <kbd>M</kbd> 全图规划 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
+  </div>
+  <section id="journey-guide" class="journey-guide" aria-label="当前探索指引"><div class="journey-heading"><span>此行要事</span><small data-journey-phase></small></div><div class="journey-result" data-journey-result hidden role="status" aria-live="polite"><b></b><span></span></div><strong></strong><p data-journey-why></p><p class="journey-note" data-journey-note hidden></p><div class="journey-tools"><button data-journey-focus>标记目标 <kbd>G</kbd></button><small data-journey-help></small></div></section>
+  <section id="altar-ritual" class="altar-ritual" hidden tabindex="-1" aria-label="莲灯修心"><div class="ritual-aura" aria-hidden="true"></div><div class="ritual-heading"><span>莲灯 · 修心</span><b data-ritual-coins></b></div><div class="ritual-offerings"></div><div class="ritual-minor"></div><footer><span data-ritual-result aria-live="polite"></span><button data-ritual-close>离开莲灯 <kbd>Esc</kbd></button><button data-ritual-bag>行囊 <kbd>I</kbd></button></footer><p class="ritual-shortcuts" data-ritual-help hidden>数字键使用 · 方向键切换 · Enter 执行</p></section>
+  <section id="ability-cinematic" class="ability-cinematic" hidden aria-label="神通演出"><div class="cast-heading"><small data-cast-category>大圣神通</small><h2 data-cast-title></h2><p data-cast-verse></p></div><canvas aria-hidden="true"></canvas><div class="film-dialogue" hidden><span data-film-speaker></span><p data-film-line></p><div class="film-shots" aria-label="剧情分镜进度"><i></i><i></i><i></i></div></div><div class="cast-ending"><div><span data-cast-beat></span><strong data-cast-result></strong></div><button>略过演出 <kbd>Space</kbd></button></div></section>
+  <section id="story-dock" class="story-dock hidden" aria-label="塔中对白" aria-live="polite">
+    <button id="story-unfold" class="story-unfold" aria-expanded="true"><span id="story-speaker">塔中回响</span><span id="story-counter"></span><span aria-hidden="true">⌃</span></button>
+    <div class="story-scene"><div id="story-portrait" class="dialogue-portrait"></div><div><h2 id="story-title"></h2><p id="story-text"></p><p id="story-objective" class="story-objective" hidden></p><div class="story-controls"><button id="story-collapse">收起</button><button id="story-skip">略过本段</button><button id="story-next">继续 <kbd>Space</kbd></button></div></div></div>
+  </section>
+  <div id="style-progress" class="style-progress hidden" role="status" aria-live="polite"><span id="style-progress-text">正在载入画卷</span><progress id="style-progress-bar" max="1" value="0" aria-label="风格资源载入"></progress></div>
+  <div id="modal-root" class="surface-root hidden"><section id="modal-panel" class="surface-panel" role="region" aria-labelledby="modal-title" tabindex="-1"><button id="modal-close" class="modal-close" aria-label="收起当前卷册">×</button><div id="modal-eyebrow" class="modal-eyebrow">因果之间</div><h2 id="modal-title">灵山一梦</h2><div id="modal-content" class="modal-content"></div><div id="modal-actions" class="modal-actions"></div><div class="modal-footnote">大圣 · 舍利魔塔 <span>◇</span></div></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

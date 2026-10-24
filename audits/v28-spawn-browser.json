@@ -1,0 +1,564 @@
+{
+  "checks": [
+    "material fresh empty spawn in four PC sizes; one real step reaches ritual, free preview and return, exact save/resume",
+    "mural fresh empty spawn in four PC sizes; one real step reaches ritual, free preview and return, exact save/resume",
+    "Known previous first-three task stays accessible and preserves its saved position and resource bytes",
+    "Direct offline index starts on the empty authored apron"
+  ],
+  "screenshots": [
+    "audits/v28-material-spawn-629.png",
+    "audits/v28-material-spawn-1280.png",
+    "audits/v28-material-spawn-1440.png",
+    "audits/v28-material-spawn-1989.png",
+    "audits/v28-material-return-to-apron.png",
+    "audits/v28-material-resume-spawn.png",
+    "audits/v28-mural-spawn-629.png",
+    "audits/v28-mural-spawn-1280.png",
+    "audits/v28-mural-spawn-1440.png",
+    "audits/v28-mural-spawn-1989.png",
+    "audits/v28-mural-return-to-apron.png",
+    "audits/v28-mural-resume-spawn.png",
+    "audits/v28-offline-spawn.png"
+  ],
+  "errors": [],
+  "geometry": [
+    {
+      "style": "material",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "player": {
+        "foot": {
+          "x": 314.5,
+          "y": 576
+        },
+        "body": {
+          "x": 300.4375,
+          "y": 538.56
+        },
+        "bounds": {
+          "x": 274.375,
+          "y": 504,
+          "w": 52.125,
+          "h": 72
+        },
+        "footprint": {
+          "x": 299.79999999999995,
+          "y": 570.5999999999999,
+          "w": 29.400000000000002,
+          "h": 10.8
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 314.5,
+          "y": 521.0999999999999
+        },
+        "body": {
+          "x": 314.5,
+          "y": 497.34
+        },
+        "bounds": {
+          "x": 293.312213740458,
+          "y": 471.41999999999996,
+          "w": 42.375572519083974,
+          "h": 54
+        },
+        "footprint": {
+          "x": 293.5,
+          "y": 512.0999999999999,
+          "w": 42,
+          "h": 18
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 54.90000000000009
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "player": {
+        "foot": {
+          "x": 640,
+          "y": 610
+        },
+        "body": {
+          "x": 622.1428571428571,
+          "y": 562.4571428571428
+        },
+        "bounds": {
+          "x": 589.047619047619,
+          "y": 518.5714285714286,
+          "w": 66.19047619047619,
+          "h": 91.42857142857142
+        },
+        "footprint": {
+          "x": 621.3333333333333,
+          "y": 603.1428571428571,
+          "w": 37.333333333333336,
+          "h": 13.714285714285714
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 640,
+          "y": 540.2857142857142
+        },
+        "body": {
+          "x": 640,
+          "y": 510.11428571428564
+        },
+        "bounds": {
+          "x": 613.0948745910578,
+          "y": 477.19999999999993,
+          "w": 53.8102508178844,
+          "h": 68.57142857142857
+        },
+        "footprint": {
+          "x": 613.3333333333333,
+          "y": 528.8571428571428,
+          "w": 53.33333333333333,
+          "h": 22.857142857142854
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 69.71428571428578
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "player": {
+        "foot": {
+          "x": 720,
+          "y": 790
+        },
+        "body": {
+          "x": 699.9107142857143,
+          "y": 736.5142857142857
+        },
+        "bounds": {
+          "x": 662.6785714285714,
+          "y": 687.1428571428571,
+          "w": 74.46428571428571,
+          "h": 102.85714285714286
+        },
+        "footprint": {
+          "x": 699,
+          "y": 782.2857142857142,
+          "w": 42,
+          "h": 15.428571428571429
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 720,
+          "y": 711.5714285714286
+        },
+        "body": {
+          "x": 720,
+          "y": 677.6285714285714
+        },
+        "bounds": {
+          "x": 689.73173391494,
+          "y": 640.5999999999999,
+          "w": 60.536532170119955,
+          "h": 77.14285714285714
+        },
+        "footprint": {
+          "x": 690,
+          "y": 698.7142857142857,
+          "w": 60,
+          "h": 25.714285714285715
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 78.42857142857144
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "player": {
+        "foot": {
+          "x": 994.5,
+          "y": 999.3428571428573
+        },
+        "body": {
+          "x": 966.7516741071429,
+          "y": 925.4657142857144
+        },
+        "bounds": {
+          "x": 915.3247767857143,
+          "y": 857.2714285714287,
+          "w": 102.85379464285714,
+          "h": 142.07142857142856
+        },
+        "footprint": {
+          "x": 965.49375,
+          "y": 988.6875,
+          "w": 58.0125,
+          "h": 21.310714285714283
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 994.5,
+          "y": 891.0133928571429
+        },
+        "body": {
+          "x": 994.5,
+          "y": 844.1298214285714
+        },
+        "bounds": {
+          "x": 952.691957470011,
+          "y": 792.9841071428572,
+          "w": 83.61608505997819,
+          "h": 106.55357142857142
+        },
+        "footprint": {
+          "x": 953.0625,
+          "y": 873.2544642857143,
+          "w": 82.875,
+          "h": 35.51785714285714
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 108.32946428571438
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "player": {
+        "foot": {
+          "x": 314.5,
+          "y": 576
+        },
+        "body": {
+          "x": 314.5,
+          "y": 534.08
+        },
+        "bounds": {
+          "x": 266.5,
+          "y": 488.00000000000006,
+          "w": 96,
+          "h": 96
+        },
+        "footprint": {
+          "x": 299.5,
+          "y": 570.5999999999999,
+          "w": 30,
+          "h": 10.8
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 314.5,
+          "y": 528
+        },
+        "body": {
+          "x": 314.5,
+          "y": 501.48
+        },
+        "bounds": {
+          "x": 290.5,
+          "y": 477,
+          "w": 48,
+          "h": 51
+        },
+        "footprint": {
+          "x": 299.5,
+          "y": 522.5999999999999,
+          "w": 30,
+          "h": 10.8
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 48
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "player": {
+        "foot": {
+          "x": 640,
+          "y": 610
+        },
+        "body": {
+          "x": 640,
+          "y": 556.768253968254
+        },
+        "bounds": {
+          "x": 579.047619047619,
+          "y": 498.2539682539683,
+          "w": 121.9047619047619,
+          "h": 121.9047619047619
+        },
+        "footprint": {
+          "x": 620.952380952381,
+          "y": 603.1428571428571,
+          "w": 38.095238095238095,
+          "h": 13.714285714285714
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 640,
+          "y": 549.047619047619
+        },
+        "body": {
+          "x": 640,
+          "y": 515.3714285714285
+        },
+        "bounds": {
+          "x": 609.5238095238095,
+          "y": 484.2857142857143,
+          "w": 60.95238095238095,
+          "h": 64.76190476190476
+        },
+        "footprint": {
+          "x": 620.952380952381,
+          "y": 542.1904761904761,
+          "w": 38.095238095238095,
+          "h": 13.714285714285714
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 60.95238095238096
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "player": {
+        "foot": {
+          "x": 720,
+          "y": 789.9999999999999
+        },
+        "body": {
+          "x": 720,
+          "y": 730.1142857142856
+        },
+        "bounds": {
+          "x": 651.4285714285714,
+          "y": 664.2857142857142,
+          "w": 137.14285714285714,
+          "h": 137.14285714285714
+        },
+        "footprint": {
+          "x": 698.5714285714286,
+          "y": 782.2857142857141,
+          "w": 42.857142857142854,
+          "h": 15.428571428571429
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 720,
+          "y": 721.4285714285713
+        },
+        "body": {
+          "x": 720,
+          "y": 683.542857142857
+        },
+        "bounds": {
+          "x": 685.7142857142857,
+          "y": 648.5714285714284,
+          "w": 68.57142857142857,
+          "h": 72.85714285714286
+        },
+        "footprint": {
+          "x": 698.5714285714286,
+          "y": 713.7142857142856,
+          "w": 42.857142857142854,
+          "h": 15.428571428571429
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 68.57142857142856
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "player": {
+        "foot": {
+          "x": 994.5,
+          "y": 1002.9999999999999
+        },
+        "body": {
+          "x": 994.5,
+          "y": 920.2828571428572
+        },
+        "bounds": {
+          "x": 899.7857142857143,
+          "y": 829.3571428571429,
+          "w": 189.42857142857142,
+          "h": 189.42857142857142
+        },
+        "footprint": {
+          "x": 964.9017857142858,
+          "y": 992.3446428571427,
+          "w": 59.19642857142857,
+          "h": 21.310714285714283
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 19
+        },
+        "ready": true
+      },
+      "altar": {
+        "foot": {
+          "x": 994.5,
+          "y": 908.2857142857142
+        },
+        "body": {
+          "x": 994.5000000000001,
+          "y": 855.9560714285714
+        },
+        "bounds": {
+          "x": 947.1428571428572,
+          "y": 807.6517857142857,
+          "w": 94.71428571428571,
+          "h": 100.63392857142857
+        },
+        "footprint": {
+          "x": 964.9017857142858,
+          "y": 897.630357142857,
+          "w": 59.19642857142857,
+          "h": 21.310714285714283
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "footDistance": 94.71428571428567
+    }
+  ],
+  "source": {
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "index.html": "e6a7b53360fa5e063480de0364fb1df2aa9dbdc2f044edb276235625607a7258",
+    "js/study-setup.js": "ac24547e0e73bbe8cf09f6c55e1a90565894142c782506edbda481f4dca71784",
+    "scripts/build_v23_study.cjs": "92b005a7f4db47155a530d3332d4fda2d4e9a6ee7dfaca06cd1951581355187a",
+    "research/study-v23/fixtures.js": "f4462095494a2f5201b9b2ea3d3f406fba07c4814c9d5cc00e1f277709643142",
+    "playtest-v23-new.html": "3897d1a227814c139f5ac2bfd5d9c2c6ab7b58ade8df70177feea5295fc4d79a",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "passed": true
+}

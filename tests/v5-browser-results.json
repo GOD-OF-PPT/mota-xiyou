@@ -1,0 +1,46 @@
+{
+  "assetStats": {
+    "ready": true,
+    "loaded": 9,
+    "total": 9,
+    "failed": [],
+    "ids": 144
+  },
+  "crossedVowGates": [],
+  "physical": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "offerOrb": 2,
+    "bossPreparations": {
+      "direct": "977",
+      "anchor": "774",
+      "echoes": "800"
+    },
+    "awakenSelf": true,
+    "finish": 1
+  },
+  "errors": [],
+  "bothEndings": true,
+  "manualLoad": true,
+  "all16FragmentsViaUI": true,
+  "all6TreasuresViaUI": true,
+  "final": {
+    "hp": 148,
+    "atk": 113,
+    "def": 34,
+    "equipped": [
+      "iron",
+      "thorn"
+    ],
+    "orbs": 0,
+    "coins": 30
+  }
+}

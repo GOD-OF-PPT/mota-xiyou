@@ -1,0 +1,10 @@
+# Preserve authored bytes, including frozen comparison sources and hash evidence.
+# Runtime/test snapshots contain mixed historical line endings intentionally.
+* -text
+
+# Images are shipped assets or deliberately selected visual evidence.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary

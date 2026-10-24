@@ -1,0 +1,43 @@
+{
+  "startedAt": "2026-10-23T11:59:30.239Z",
+  "source": {
+    "js/material-assets.js": "1007608369730cb9688afa7bb34157fcca2644041fb00b1e45a930d31c22db69",
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327",
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7"
+  },
+  "checks": [
+    "material 1440 one goal remains on screen and leaves the player visible",
+    "material 1989 one goal remains on screen and leaves the player visible",
+    "material 1280 one goal remains on screen and leaves the player visible",
+    "mural 1440 one goal remains on screen and leaves the player visible",
+    "mural 1989 one goal remains on screen and leaves the player visible",
+    "mural 1280 one goal remains on screen and leaves the player visible",
+    "Journal and scene use the same current goal and return without an action",
+    "A foreign goal opens useful revisit controls, with one real mana payment and no reopen loop",
+    "Acquiring a treasure stays in play and explains that equipment is still required",
+    "Undo clears the settled result and derives the actual current goal",
+    "material milestone returns to a readable real receipt and next goal without duplicate dialogue",
+    "mural milestone returns to a readable real receipt and next goal without duplicate dialogue",
+    "Adaptive skill pacing also avoids repeated interruptions with reduced motion",
+    "Direct offline index.html has the same first goal and safe mark operation"
+  ],
+  "screenshots": [
+    "audits/v18-continuity-goal-material-1440.png",
+    "audits/v18-continuity-goal-material-1989.png",
+    "audits/v18-continuity-goal-material-1280.png",
+    "audits/v18-continuity-goal-mural-1440.png",
+    "audits/v18-continuity-goal-mural-1989.png",
+    "audits/v18-continuity-goal-mural-1280.png",
+    "audits/v18-continuity-treasure-handoff.png",
+    "audits/v18-continuity-milestone-handoff-material.png",
+    "audits/v18-continuity-milestone-handoff-mural.png"
+  ],
+  "errors": [],
+  "passed": true,
+  "finishedAt": "2026-10-23T11:59:47.125Z"
+}

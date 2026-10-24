@@ -1,0 +1,59 @@
+{
+  "version": 26,
+  "date": "2026-10-24",
+  "mode": "built-in image_gen",
+  "reference": {
+    "file": "C:/Users/KSG/.codex/codex-remote-attachments/01a16315-b007-72b2-bc96-2155a6a6566b/6AB31F31-07C8-4AA2-B4BB-6B3BC18ED5D2/1-照片-1.jpg",
+    "role": "User screenshot inspected to locate objective overlay and to avoid its flat web-ad styling; not an edit target."
+  },
+  "assets": [
+    {
+      "id": "quest-plaque",
+      "prompt": "Use case: stylized-concept\nAsset type: Production-ready single game UI panel skin, isolated transparent PNG, landscape ratio 2:1, front-facing orthographic view.\nPrimary request: Design a physically weighty Chinese mythological temple RPG quest plaque that will replace a flat green website-like tooltip. This is an actual reusable game interface asset, not a screenshot, not a mockup.\nSubject/materials: a compact worn dark hardwood tablet core, substantial bevelled edges, aged dark bronze corner fittings with restrained engraved cloud motifs, a tiny muted vermilion cord fastening on the upper edge. The inner writing field is almost-black desaturated green silk stretched across the wood, faint fine weave, visually quiet. Corners feel tactile and carved, not jewelry.\nComposition: one wide rectangular plaque occupies nearly the entire canvas with 3% transparent margin. The plaque outline is slightly irregular, visibly thick with a narrow downward-facing lip, frontal face and subtle edge depth. A generous central rectangular writing area occupies at least 80% width and 74% height; keep it blank and very dark. Top, bottom and side rail details must stay within the outer 8% and suit nine-slice border scaling.\nLighting/mood: dim ancient shrine, warm soft upper-left highlights on rubbed bronze, dark contact shadows built into edge depth. Crisp high-resolution material rendering that reads at 320x160 CSS pixels. Restrained and sturdy, serious adventure-game object.\nPalette: deep umber wood, patinated dark bronze, muted old gold, almost-black jade-green interior, very small cinnabar accent.\nText: none. No letters, no symbols resembling writing, no numbers.\nConstraints: genuine transparent background outside the plaque, opaque uniform center for live HTML text; no background scene, no character, no UI elements, no button, no glow, no sparkles, no glossy gradient, no modern dashboard, no ad banner, no watermark. Do not include multiple panels or a design sheet.",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-956c99f8-12d0-4267-8a5d-c0d90d4ea02a.png",
+      "file": "assets/ui-v26/quest-plaque.png",
+      "slice": [
+        170,
+        155,
+        175,
+        155
+      ]
+    },
+    {
+      "id": "reading-folio",
+      "prompt": "Use case: stylized-concept\nAsset type: One production game UI reading-panel skin, isolated transparent PNG, front-facing orthographic view, landscape 3:2 ratio.\nPrimary request: A tactile ancient Chinese temple field-notes folio for a mythological tactical RPG, used for enemy forecasts, doors, treasure and readable quest notes. Must feel like a physical manuscript mounted on a hard, weighty object, not a website card.\nMaterials: thick warm pale flax paper, slightly darker uneven fibrous edges, subtle fine horizontal paper grain. Very slim dark walnut backing frame with dull aged bronze corners and small restrained cloud-cut joints. A tiny vermilion silk binding knot at one top corner, low relief and no dangling large tassels. Corner craft and thickness convey age. The paper is firmly held, with a narrow beveled wooden lip below.\nComposition: one rectangular folio fills the canvas except a 3% transparent margin. Large calm blank paper center at least 82% width and 78% height; consistent pale parchment with minimal stains. No objects in this writing area. Decoration is limited to outer 7% border suitable for nine-slice scaling; keep opposing edges stable and unbroken. Text will be drawn by the game after generation.\nLighting: warm, soft upper-left highlights, narrow contact shadows inside mounting edge, realistic material relief. Sharply readable at 350x250 CSS pixels.\nPalette: warm muted parchment, dark umber walnut, old dark bronze, restrained cinnabar accent. No bright yellow, no shiny gold.\nText: absolutely no text, calligraphy, numbers, diagrams, icons or symbols.\nConstraints: genuine transparent surroundings, opaque blank paper interior, no photographed background, no table, no game scene, no character, no buttons, no labels, no multiple asset sheet, no modern window chrome, no luminous effects, no watermark.",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-7b259152-7571-4af9-a6aa-7bfa80c982f2.png",
+      "file": "assets/ui-v26/reading-folio.png",
+      "slice": [
+        125,
+        115,
+        150,
+        115
+      ]
+    },
+    {
+      "id": "dialogue-scroll",
+      "prompt": "Use case: stylized-concept\nAsset type: Single production fantasy RPG dialogue-strip frame on transparent background, front-facing orthographic view, very wide horizontal proportion about 3:1.\nPrimary request: A substantial, weathered dark-silk Chinese temple scroll used as an in-game conversation banner. This is a reusable raster skin with no text, not a mockup, not an advertisement.\nSubject: a long flat charcoal-jade silk writing face, firmly stretched between two short thick dark hardwood scroll ends, aged bronze retaining caps and small restrained cloud-carving hardware. A slim warm bronze lower rail and two slightly uneven bound silk corners establish physical thickness. No tall poles, no elaborate sculpture.\nComposition: one single horizontal scroll fully visible with transparent outside, occupies 94% canvas width. Quiet blank nearly-black-green silk field at least 84% width and 72% height for live Chinese text. Decorative ends fit inside outer 6% width; top and bottom edges within outer 10% height. Border can be nine-slice scaled horizontally and vertically without losing stable straight rails. Center texture is subtle and uniform, no gradients competing with text.\nLighting: subdued shrine light, tiny rubbed-bronze highlights, visible wood grain and cloth edge depth, short built-in contact shadows only. Restrained heavy atmosphere, high-resolution crisp details that remain legible at 650x200 CSS pixels.\nPalette: soot dark green, old walnut, oxidized dark bronze, sparse faded cinnabar binding.\nText: none at all, no labels, no letters, no glyphs, no numbers.\nConstraints: actual transparent pixels around the isolated frame, opaque dark center, NO background color or backdrop, no haze or drop shadow painted across the whole canvas, no characters, no game screenshot, no buttons, no icons, no neon or glowing frame, no SaaS styling, no multiple assets, no watermark.",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-390702b0-7f3c-4943-800b-cf43abcd4941.png",
+      "file": "assets/ui-v26/dialogue-scroll.png",
+      "slice": [
+        155,
+        200,
+        205,
+        200
+      ]
+    },
+    {
+      "id": "offering-tablet",
+      "prompt": "Use case: stylized-concept\nAsset type: One single reusable game UI offering-tag skin on transparent background, portrait proportion about 2:3, directly front facing.\nPrimary request: A weighty ritual offering tablet from an ancient Chinese temple adventure game. It will hold live text describing skills, costs, choices or items. The object should feel crafted and handled over centuries, not a flat advertisement or website rectangle.\nMaterials: substantial dark walnut backing board with a shallow beveled lip, old warm flax-paper insert mounted flush, a restrained narrow bronze top clamp with one dark red cord through two small holes, lower corners held by two small aged bronze brackets. Carved cloud detail on the clamp only. Very fine paper fiber, subtle rubbing at edges, visible wood grain and contact shadow around insert.\nComposition: exactly one portrait tablet centered with 3% transparent margin, rectangular silhouette with softly worn corners and a small shaped lower wooden tip. The blank pale parchment writing field occupies at least 80% width and 78% height. Top fastener uses at most upper 10%, bottom detail at most lower 7%. Side rails slim enough that live text has room. No art or marks in center; intended for border-image nine-slice, so edges must stay straight and stable. No long hanging cords.\nLighting: low warm shrine light from upper left, physically legible thickness, crisp material details at 180x240 CSS pixels. Matte surfaces and restrained old bronze.\nPalette: pale warm parchment, dark brown walnut, muted antique bronze, small cinnabar binding. No white plastic or shiny yellow gold.\nText: NONE. No inscription, glyph, label, number, icon or symbol.\nConstraints: truly transparent outside the object, opaque uniform pale inner field. No background wall, table, scene or character. No buttons, no UI layout, no bundle of variants. No excessive flourishes, glow, sparkles, modern chrome, watermark or perspective tilt.",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-d621bbc6-11eb-4c39-8ab3-d6eb0ef76d7a.png",
+      "file": "assets/ui-v26/offering-tablet.png",
+      "slice": [
+        205,
+        120,
+        220,
+        120
+      ]
+    }
+  ]
+}

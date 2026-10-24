@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "name": "Locked challenges reveal unlock conditions without later puzzle solutions or resource changes"
+    },
+    {
+      "name": "A legitimate completed campaign unlocks public trial goals; entry uses a canonical isolated start"
+    },
+    {
+      "name": "Real arrows, scene choice preview and explicit confirmation charge once; legal remaining actions finish with a replay-verified result"
+    },
+    {
+      "name": "Refresh restores the completed trial and its own records while campaign save bytes stay unchanged"
+    },
+    {
+      "name": "Two same-condition water plans retain attack/health tradeoffs; exit restores the exact original campaign and archive"
+    },
+    {
+      "name": "The paid ferry walks both new return gates and reaches the common exit without guardian fights or campaign mutation"
+    },
+    {
+      "name": "material trial selection fits three PC widths with bounded controls"
+    },
+    {
+      "name": "mural trial selection fits three PC widths with bounded controls"
+    },
+    {
+      "name": "Gate previews are scene-bound; chapter restore and return stay inside the trial and retain standard replay evidence"
+    },
+    {
+      "name": "An obsolete trial version exposes a direct start-screen return to the untouched original campaign"
+    },
+    {
+      "name": "Original and new trial modules and canonical assets work offline through direct index.html"
+    }
+  ],
+  "screenshots": [
+    "audits/v23-trials-locked.png",
+    "audits/v23-trials-unlocked.png",
+    "audits/v23-trial-ferry-entry.png",
+    "audits/v23-trial-result.png",
+    "audits/v23-trial-records.png",
+    "audits/v23-paid-ferry-return-map.png",
+    "audits/v23-material-trials-1280.png",
+    "audits/v23-material-trials-1440.png",
+    "audits/v23-material-trials-1989.png",
+    "audits/v23-mural-trials-1280.png",
+    "audits/v23-mural-trials-1440.png",
+    "audits/v23-mural-trials-1989.png",
+    "audits/v23-silk-gate-preview.png",
+    "audits/v23-silk-result.png",
+    "audits/v23-stale-trial-recovery.png",
+    "audits/v23-offline-trial.png"
+  ],
+  "errors": [],
+  "source": {
+    "index.html": "8d7de21e70306b8154a7cfefaf67e3647b84a20c5a15cfdc9c822b201a575ef7",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trials-ui.js": "d22f6e4d73c3d5c3ecaaa6be101239679793ddff893b370e9a75ec2e3c2248d3",
+    "js/ui.js": "f76025b57afc789be002c91fe93e9349fb7678d2f1a72e40d4a4c533f977163a",
+    "css/trials.css": "bb7fe38df85d79f6ba87bded3e2417a8eb75f78711486ae2679922162959a316",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/planning-ui.js": "78d08498bc9e0e5e0637f6d1dc4efeae965b80e4a61e03e9124345a5f96dfe9f",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179"
+  },
+  "passed": true
+}

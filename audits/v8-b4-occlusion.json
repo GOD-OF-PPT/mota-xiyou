@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "name": "Foreground wall rejects a real opaque source pixel behind it",
+      "floor": 0,
+      "asset": "enemy_imp",
+      "entity": {
+        "x": 6,
+        "y": 13
+      },
+      "source": {
+        "x": 24,
+        "y": 257,
+        "alpha": 255
+      },
+      "world": {
+        "x": 93.21875000000001,
+        "y": 210.65625
+      },
+      "screen": {
+        "x": 1018.1255580357143,
+        "y": 688.39453125
+      },
+      "wall": {
+        "x": 5,
+        "y": 13,
+        "depth": 224
+      },
+      "actorDepth": 220.5,
+      "pick": {
+        "x": 5,
+        "y": 13
+      },
+      "margin": 2.65625,
+      "selection": {
+        "x": 5,
+        "y": 13
+      }
+    },
+    {
+      "name": "Visible bat alpha remains selectable over its north wall",
+      "floor": 0,
+      "asset": "enemy_bat",
+      "entity": {
+        "x": 5,
+        "y": 3
+      },
+      "source": {
+        "x": 127,
+        "y": 225,
+        "alpha": 252
+      },
+      "world": {
+        "x": 87.94791666666667,
+        "y": 44.30809278898131
+      },
+      "screen": {
+        "x": 1000.9012276785714,
+        "y": 146.2294577973027
+      },
+      "wall": {
+        "x": 5,
+        "y": 2,
+        "depth": 48
+      },
+      "actorDepth": 60.5,
+      "pick": {
+        "x": 5,
+        "y": 3
+      },
+      "score": 1.002500000000001,
+      "selection": {
+        "x": 5,
+        "y": 3
+      }
+    }
+  ],
+  "errors": []
+}

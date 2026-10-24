@@ -1,0 +1,43 @@
+{
+  "errors": [],
+  "card": {
+    "x": 111,
+    "y": 180,
+    "width": 270,
+    "height": 224.984375
+  },
+  "controls": {
+    "x": 6,
+    "y": 631,
+    "width": 378,
+    "height": 51
+  },
+  "contextAvoidsControls": true,
+  "inventory": {
+    "paper": "linear-gradient(90deg, rgb(229, 204, 160), rgb(247, 232, 198) 8%, rgb(242, 223, 182) 95%, rgb(223, 194, 143))",
+    "images": 2,
+    "treasures": 6
+  },
+  "shortBar": {
+    "x": 7,
+    "y": 465,
+    "width": 376,
+    "height": 50
+  },
+  "landscapeDocument": {
+    "w": 844,
+    "h": 390
+  },
+  "failure": {
+    "stats": {
+      "loaded": 9,
+      "total": 9,
+      "failed": [
+        "assets/mural/atlases/objects.png"
+      ]
+    },
+    "status": "1 份画卷未载入；可使用基础图形继续",
+    "enabled": true
+  },
+  "playable": true
+}

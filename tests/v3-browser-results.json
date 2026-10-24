@@ -1,0 +1,36 @@
+{
+  "physicalChapters": [
+    "reveal",
+    "activateResonator",
+    "rescue",
+    "toggleTide"
+  ],
+  "sixteenExternal": 16,
+  "selfAwakened": true,
+  "errors": [],
+  "physicalSevenWounds": true,
+  "physicalRouteChoice": true,
+  "exclusiveScroll": true,
+  "cloneRecall": true,
+  "bossPlans": {
+    "directLoss": "1032",
+    "anchorLoss": "780",
+    "echoLoss": "816"
+  },
+  "previewMatchedCommit": true,
+  "complete18Floors": true,
+  "bothEndings": true,
+  "manualLoad": true,
+  "final": {
+    "hp": 1373,
+    "atk": 116,
+    "def": 34,
+    "choices": {
+      "locks": "blue",
+      "silk": "atk",
+      "sevenWounds": "rescue",
+      "residual": "offering"
+    },
+    "orbs": 7
+  }
+}

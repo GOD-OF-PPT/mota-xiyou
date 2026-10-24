@@ -1,0 +1,239 @@
+{
+  "version": 23,
+  "date": "2026-10-24",
+  "implementationStatus": "complete",
+  "technicalAcceptance": true,
+  "overallPlanAcceptance": false,
+  "goalStatus": "active",
+  "remainingGate": "S5 human observation or explicit user scope adjustment; no waiver inferred from unanswered question",
+  "phases": {
+    "S0": "complete",
+    "S1": "complete",
+    "S2": "complete",
+    "S3": "complete",
+    "S4": "complete",
+    "S5": "technical checks complete; human exploration criteria pending"
+  },
+  "reports": [
+    {
+      "file": "audits/v23-session-model.json",
+      "passed": true,
+      "checks": 6,
+      "sha256": "208420e1e5f9dd81ff90251ea13056c856b0ce66016c41e161409dfdf6076140"
+    },
+    {
+      "file": "audits/v23-integrity-model.json",
+      "passed": true,
+      "checks": 7,
+      "sha256": "2cea2452202b85329ce42a9b7ec8f52c8bea8d25a71d35189d359a91617313e3"
+    },
+    {
+      "file": "audits/v23-trials-browser.json",
+      "passed": true,
+      "checks": 11,
+      "sha256": "c846a9cfed9af396cd95f70cd7f8415718b6fd622c087bc8dad722bf172e29e5"
+    },
+    {
+      "file": "audits/v23-offline-new.json",
+      "passed": true,
+      "checks": 1,
+      "sha256": "82408f4fa709ab17f70f78bf81385dc11064559438fd6cc527c8abe21017dfc9"
+    },
+    {
+      "file": "audits/v23-regression-campaign-regression.json",
+      "passed": true,
+      "checks": 21,
+      "sha256": "14ef95c88a7f2f0c40eff44c441fc0a009f9d6adaf3f69d7bb22b938ad913948"
+    },
+    {
+      "file": "audits/v23-regression-finale-browser.json",
+      "passed": true,
+      "checks": 15,
+      "sha256": "c55c8f9e72780caa423fd12a226a57de261bfb8d327a5eea91c5b5c03a3f53a8"
+    }
+  ],
+  "technicalCheckGroups": 61,
+  "syntaxFiles": [
+    "js/art-style.js",
+    "js/assets.js",
+    "js/audio.js",
+    "js/chronicle.js",
+    "js/encounters.js",
+    "js/engine.js",
+    "js/film-art.js",
+    "js/finale.js",
+    "js/journey.js",
+    "js/material-assets.js",
+    "js/mechanisms.js",
+    "js/outcomes.js",
+    "js/planning-ui.js",
+    "js/planning.js",
+    "js/presentation.js",
+    "js/renderer.js",
+    "js/run-session.js",
+    "js/story-director.js",
+    "js/tactics.js",
+    "js/trial-seeds.js",
+    "js/trials-ui.js",
+    "js/trials.js",
+    "js/ui.js",
+    "js/world.js"
+  ],
+  "source": {
+    "index.html": "8d7de21e70306b8154a7cfefaf67e3647b84a20c5a15cfdc9c822b201a575ef7",
+    "README.md": "01d259c28c94475a24406ed1585354c2dd54e5dc85c06b72c207b42528c17c3a",
+    "docs/v23-implementation-review.md": "9c3682b5efa17444e6e458071f92de2df5887adc0b7189e05c7f276760c1dad6",
+    "docs/v23-human-playtest-protocol.md": "3242dc9e540c7b07358d05f0fd0ddefbd11ce5cd72eca1c45efaf37888fc20fa",
+    "docs/v23-research-implementation-plan.md": "f6331e68a6551bcc7f3800d4eaea159aa6d304a2bb7d03e9782d3d030fce96e5",
+    "research/v23-implementation-progress.json": "de4d347a7d13918e98bf57e7e1e3a191d9ccfc3e2bb6355a05813577d0c9c080",
+    "research/v23-human-study-template.json": "0f597107d0c851fb63e04fcf2fce571de899c9a60f2734c3700a019e4c9e47e5",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "js/audio.js": "66245635ced7061f604074b54b4badbb6ee3f2daee72d738f8d17709055fcf34",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/mechanisms.js": "fb178bec46115c029710ba7ebf6609301c0d8a998a6062b42a2087473fc994fc",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/planning-ui.js": "78d08498bc9e0e5e0637f6d1dc4efeae965b80e4a61e03e9124345a5f96dfe9f",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/renderer.js": "b31bbaa6736a82f145f9276d675ee55dbc7f37f0baccb0734910bb4860a8dbe3",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
+    "js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
+    "js/trials-ui.js": "d22f6e4d73c3d5c3ecaaa6be101239679793ddff893b370e9a75ec2e3c2248d3",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/ui.js": "f76025b57afc789be002c91fe93e9349fb7678d2f1a72e40d4a4c533f977163a",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "css/trials.css": "bb7fe38df85d79f6ba87bded3e2417a8eb75f78711486ae2679922162959a316",
+    "css/planning.css": "ebe2a27bf546c3345e3f0df21073559a6b41de7777dfc115eccdb7d1bbca1e87",
+    "scripts/build_campaigns_v23.cjs": "fc9bf582ec39613e2392d5bc9b8b04f1f1d9d384454921a6eaaad6cc77426934",
+    "scripts/build_trials_v23.cjs": "473e1a2fda5c0106f5cfa2e3ed2b3243b78c8efd35b6bd2dd04d9d871bbdce65",
+    "scripts/summarize_v23_human_study.py": "19c85e4d5898e17617a61ecb0b0c686a3b2eefa0b33d780c77bd3b0abb71b353",
+    "scripts/v23-route-tools.cjs": "091d7491cb917ffe7972775f5f1db0da9d0be0a89750b8080eb1b33de97a3992",
+    "scripts/verify_late_branches_v23.cjs": "c922ad5488c4ad2a7cb29e08e64de14acba7179fcf554ef16756e20759fcff9e",
+    "tests/v23-campaign-regression.cjs": "477166e13efbdcdc8067a12bd5cf160ff461cf693eb2888a7e941ae3d120f863",
+    "tests/v23-finale-regression.cjs": "1698497214439e7da88fdaa4e9b79cbe3e57039ce14a7106b318e9ba51f23c38",
+    "tests/v23-integrity-model.cjs": "98a10a0a1ec0307dc6382755099bd642feadb0a2c2125e2fd5c19dcb6a325e68",
+    "tests/v23-offline-new.cjs": "9720c15a50a857036349004ff4a93cc5173263e69108f9978be7563c70ef2d73",
+    "tests/v23-session-model.cjs": "5add56a69e1e46d0681f69a3c4ad89fc79342151f97b3cdb82ef9fbec1ce6819",
+    "tests/v23-trials-browser.cjs": "e229ad60fd969843b4f0f805876c41d79afa0cdbd5d02e29c305a3bc423f9450",
+    "playtest-v23.html": "0137363b40224fb6d4210491d16c4ac7c6c4c178621d69c902bc9abc14633717",
+    "playtest-v23-baseline.html": "55a632f14a307ed54a4a001573e0dbaba015c955e31787973213715adabdfbe7",
+    "playtest-v23-new.html": "093cbd2b210e04a6de04c07c2cdc5c9d1d8bff842a735f88bc7eb3a762ef8505",
+    "js/study-storage.js": "6f1cddd5b1584b665b478236f09987a8e69f93f6bb9429e8d4fbe1beb34afdb0",
+    "js/study-setup.js": "9a82f2ef8500ac7af7e46ca167b59bb16ed29e6f46f697cd9ef2feb35bbd286f",
+    "js/study-entry.js": "ff6aefbddc7344db94354eed3dc7f19e7bfc29541c257ccd383b2dcec520ca5a",
+    "scripts/build_v23_study.cjs": "0427d9be92107cb840658e8fa25e198cb51f2b16336d5ddc27469a2c6c2281e8",
+    "tests/v23-study-browser.cjs": "8b18b742517dadf0a61ccd39c2a53801242e587040133cc5db7ac8fa1d156917",
+    "tests/v23-human-study-summary.py": "729000829cf491a6e4bc6b7950a0bd3650be0ed47c645d55ffa940da7b8b312f"
+  },
+  "artifacts": {
+    "research/trials-v23-routes.json": "43984b53c143e1e9aa2499d16ac06e547226812a13e62e1bff0f37529fff1cc0",
+    "research/campaigns-v23.json": "14a32b6b0e28e815d34f8b588b20309ec3eac389e8d76aed5b2e3af7e55fb719",
+    "research/late-branches-v23.json": "9c92f92f2c618adedeec85eacd36c9fe5d4eebaedffa242ad8497833238f504b",
+    "research/v23-human-study-summary.json": "83d82ec6352b3be3c96fbf6df064c954f98aab417c513acb1e708e4d148157d9",
+    "tests/playthrough-v23-free-mixed-direct.json": "446e1aa62cbf0fc6c6ac680b0f0e342cc61d1ba830073aff54b34a03f12826e3",
+    "tests/playthrough-v23-gold-def-anchor.json": "83dcd61e24be90e6f59c0273635a83edbd536ea0d1ba354122bb1e35bed4bf58",
+    "research/study-v23/fixtures.js": "4716cb22e7e8ed53f07d83466dd822f82fd057dc55fda3abf62fd94b11317573",
+    "research/study-v23/manifest.json": "ad3311f799ea28256d12362999e72be1a5986f1f077c2ae14cd81760a0a47818"
+  },
+  "legalEvidence": {
+    "canonicalStarts": 4,
+    "trialRouteWitnesses": 12,
+    "secondaryLegalBudgetSamples": 4,
+    "lateCommonEndpointBranches": 4,
+    "newFullCampaignActions": [
+      4176,
+      3850
+    ],
+    "newFullCampaignRemainingHP": [
+      43,
+      160
+    ],
+    "oldLayoutKeptForRevision": 6,
+    "newLayoutRevision": 7,
+    "finiteResourceIdentitiesPreserved": true,
+    "paidReturnPathGuardianFights": 0,
+    "fullCampaignEndingsVerified": [
+      "release",
+      "keep"
+    ]
+  },
+  "visualReview": {
+    "method": "Representative PC screenshots inspected individually at original resolution; no source-only visual acceptance.",
+    "files": {
+      "audits/v23-material-trials-1280.png": "f6ea3fed091811d92fde4d6859d1572fb1ce113c8a1c52ea252b1de569cc5056",
+      "audits/v23-mural-trials-1440.png": "8ba1bee382bbb0760ef69ffd6dd543362a5aaa907e37da748cd2b99f632aabcf",
+      "audits/v23-trial-result.png": "3df128e5dc8d0a83cce74e68ec4944776ccce051d1a3f9f8cde0d6b9a22e7fcf",
+      "audits/v23-trial-ferry-entry.png": "74c55299a00e6948a9f13858e70080a5c47707bdb9a394c61fe029c09ac34983",
+      "audits/v23-silk-gate-preview.png": "e5e5c3802f2a26decba0327d995aabf6097b3353f04ba8eec0b687740fa76c23",
+      "audits/v23-paid-ferry-return-map.png": "934b7fad673958ebab669d68a6305c9f3bd543979174300ec903d6e9d7200da2",
+      "audits/v23-live-entry.png": "8baca56d1bb4d997bbfa605dd596811c794c5a6dac3d7ff121083b9eefa7f0db",
+      "audits/v23-study-launcher.png": "043840fd0f7d2ee62e3d1d6da62238eb580db1746a31cfeaed0fc1b6c9d60489",
+      "audits/v23-study-silk.png": "68a9cf764a1e8db48fdc3e6970ca9c9ff98209a18e13b3d063d8753e40e7af4c"
+    }
+  },
+  "livePreview": {
+    "browser": "Chrome",
+    "tab": "1646801396",
+    "url": "http://127.0.0.1:8765/",
+    "visibleOriginalProgress": {
+      "floor": 2,
+      "hp": 596,
+      "mana": [
+        6,
+        6
+      ],
+      "keys": [
+        2,
+        1,
+        0
+      ],
+      "externalRelics": 1,
+      "seals": 0
+    },
+    "operations": "Reloaded original tab, continued autosave, explicitly acknowledged arrival, opened trial catalogue. No restart, resource use or unlock injection.",
+    "newChallengesLockedByRealProgress": true,
+    "evidence": "audits/v23-live-entry.png"
+  },
+  "humanObservation": {
+    "protocol": "docs/v23-human-playtest-protocol.md",
+    "template": "research/v23-human-study-template.json",
+    "summary": "research/v23-human-study-summary.json",
+    "registeredParticipantRecords": 0,
+    "accepted": false
+  },
+  "limits": [
+    "Human comprehension, fatigue, chapter satisfaction and replay willingness remain pending actual observations.",
+    "Mobile and broad browser compatibility are deferred.",
+    "New v7 encounter layouts apply to new campaigns; existing v6 saves retain the matching original layout.",
+    "After a browser refresh, campaign ordinary undo follows the original read-boundary policy; persistent chapter archives remain.",
+    "Local score comparison is replay checked, not an online anti-cheat system."
+  ],
+  "backup": ".backups/implementation-v23-20261024/",
+  "studyPreparation": {
+    "status": "complete",
+    "entry": "playtest-v23.html",
+    "tasks": 3,
+    "versions": 2,
+    "checks": 6,
+    "report": "audits/v23-study-browser.json",
+    "reportSHA256": "4eb520c1c9d66db9977a2249124ab7bf0427071ff3e846124516c11fe0ff3415",
+    "summarySyntheticChecksPassed": true,
+    "observedParticipants": 0,
+    "countsAsHumanAcceptance": false,
+    "sourceVerifiedNoRuntimeDrift": true
+  },
+  "additionalSyntaxFiles": [
+    "js/study-storage.js",
+    "js/study-setup.js",
+    "js/study-entry.js",
+    "scripts/build_v23_study.cjs",
+    "tests/v23-study-browser.cjs"
+  ]
+}

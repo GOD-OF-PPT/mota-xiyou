@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "edits_after_generation": "None. PNG files copied unchanged into project; alpha occupancy measured read-only for rendering registration.",
+  "assets": [
+    {
+      "file": "assets/material/props/chest-v13.png",
+      "reference": "assets/material/atlases/objects.png",
+      "prompt": "Create ONE new transparent PNG game prop sprite, a closed treasure chest for a Chinese Journey to the West temple strategy game. The attached object atlas is only a material/style reference, NOT an edit target and do NOT reproduce the atlas. Show only ONE complete chest, centered, three-quarter top-down view, front face and right side visible, visually substantial broad domed lid, sturdy short feet on a consistent ground plane. Dark cinnabar lacquered wood, worn warm bronze bands with readable broad edges, a single large jade lotus clasp at the center. Match the reference's richly rendered pre-rendered 3D temple materials, controlled warm highlights and soft ambient shading, with a clean strong silhouette and less tiny ornament. Must be immediately recognizable as a treasure chest when rendered at 48-72 pixels tall. Design the lid seam, bronze rim, and clasp as three clear large shapes. Keep all external outlines visible. No pedestal, no floor, no cast background shadow, no floating particles, no glow haze, no coins or gems outside, no text or numbers, no border. True alpha transparency, generous even transparent margin of about 10 percent; chest takes about 80 percent of canvas. This output will ship as a standalone PNG in an offline browser game."
+    },
+    {
+      "file": "assets/mural/props/chest-v13.png",
+      "reference": "assets/mural/atlases/objects.png",
+      "prompt": "Generate ONE new closed treasure chest sprite for the Chinese Journey to the West pixel-art temple game. The attached atlas is a STYLE REFERENCE ONLY: match its azurite-teal and verdigris greens, cinnabar accents, warm leaf-gold outlines and heavy-color Dunhuang mural pixel-art language. Do not reproduce the atlas. Single complete chest, centered, three-quarter top-down view with front and right side visible, broad rounded domed lid and short block feet; thick warm-gold bands; teal lacquer and small cinnabar side panels; one LARGE jade lotus clasp in the center. Clean strong recognizable chest silhouette, obvious lid seam and latch, legible at 48-72 pixels tall. Deliberately chunky sprite design on an approximately 48 by 48 pixel grid enlarged with nearest-neighbor edges. Hard pixel boundaries, large color clusters, limited palette, no soft photographic texture or blur, restrained decoration. Only the object, no coins or treasure outside, no floating effects, no drop shadow, no ground, no scenery, no labels, no text, no frame. True transparent alpha background. Generous even transparent margins around all sides; the chest occupies about 80 percent of the canvas. This PNG will ship inside an offline browser game."
+    }
+  ]
+}

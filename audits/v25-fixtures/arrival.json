@@ -1,0 +1,182 @@
+{
+  "state": {
+    "version": 4,
+    "levelRevision": 7,
+    "floor": 0,
+    "x": 10,
+    "y": 18,
+    "facing": "up",
+    "hp": 620,
+    "atk": 24,
+    "def": 10,
+    "mana": 6,
+    "maxMana": 6,
+    "coins": 0,
+    "keys": {
+      "yellow": 1,
+      "blue": 0,
+      "red": 0
+    },
+    "relics": [],
+    "externalRelics": 0,
+    "fragments": [],
+    "treasures": [],
+    "equipped": [],
+    "selfAwakened": false,
+    "revealed": {},
+    "quests": {},
+    "tides": {},
+    "rescued": [],
+    "removed": {},
+    "switches": {},
+    "terrain": {},
+    "choices": {},
+    "visited": [
+      0
+    ],
+    "seenIntros": {
+      "0": true
+    },
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+        "floor": 0,
+        "kind": "intro",
+        "source": "tower:arrival",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "wukong",
+        "speaker": "孙悟空",
+        "chapter": 0
+      }
+    ],
+    "log": [
+      {
+        "text": "残钟响起。你踏入了自己的因果。",
+        "kind": "story",
+        "turn": 0
+      }
+    ],
+    "elixirs": 1,
+    "orbs": 1,
+    "turn": 0,
+    "defeated": false,
+    "won": false,
+    "ending": null,
+    "bossPlan": "direct",
+    "settings": {
+      "quickZero": false,
+      "showDamage": true,
+      "motion": "standard",
+      "screenShake": false,
+      "music": false,
+      "sfx": false
+    },
+    "purchases": {
+      "atk": 0,
+      "def": 0,
+      "heal": 0
+    },
+    "startedAt": 1792819623457,
+    "kills": 0
+  },
+  "savedAt": 1792819623457,
+  "chronicle": {
+    "version": 1,
+    "campaign": 1792819623457,
+    "seq": 1,
+    "seen": [
+      0
+    ],
+    "records": [
+      {
+        "id": 1,
+        "type": "chapter",
+        "key": "chapter:0",
+        "title": "第一回 · 入塔",
+        "state": {
+          "version": 4,
+          "levelRevision": 7,
+          "floor": 0,
+          "x": 10,
+          "y": 18,
+          "facing": "up",
+          "hp": 620,
+          "atk": 24,
+          "def": 10,
+          "mana": 6,
+          "maxMana": 6,
+          "coins": 0,
+          "keys": {
+            "yellow": 1,
+            "blue": 0,
+            "red": 0
+          },
+          "relics": [],
+          "externalRelics": 0,
+          "fragments": [],
+          "treasures": [],
+          "equipped": [],
+          "selfAwakened": false,
+          "revealed": {},
+          "quests": {},
+          "tides": {},
+          "rescued": [],
+          "removed": {},
+          "switches": {},
+          "terrain": {},
+          "choices": {},
+          "visited": [
+            0
+          ],
+          "seenIntros": {
+            "0": true
+          },
+          "journal": [
+            {
+              "title": "黑莲劫 · 入塔",
+              "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+              "floor": 0,
+              "kind": "intro",
+              "source": "tower:arrival",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "chapter": 0
+            }
+          ],
+          "log": [
+            {
+              "text": "残钟响起。你踏入了自己的因果。",
+              "kind": "story",
+              "turn": 0
+            }
+          ],
+          "elixirs": 1,
+          "orbs": 1,
+          "turn": 0,
+          "defeated": false,
+          "won": false,
+          "ending": null,
+          "bossPlan": "direct",
+          "settings": {
+            "quickZero": false,
+            "showDamage": true,
+            "motion": "standard",
+            "screenShake": false,
+            "music": false,
+            "sfx": false
+          },
+          "purchases": {
+            "atk": 0,
+            "def": 0,
+            "heal": 0
+          },
+          "startedAt": 1792819623457,
+          "kills": 0
+        }
+      }
+    ],
+    "returnPoint": null
+  }
+}

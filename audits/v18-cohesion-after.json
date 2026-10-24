@@ -1,0 +1,344 @@
+{
+  "tag": "after",
+  "startedAt": "2026-10-23T11:53:23.114Z",
+  "source": {
+    "js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    "js/material-assets.js": "1007608369730cb9688afa7bb34157fcca2644041fb00b1e45a930d31c22db69",
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7"
+  },
+  "checks": [
+    {
+      "name": "Material first draws grounded architecture and feet at final DPR",
+      "installations": [
+        {
+          "id": "f0-1",
+          "type": "altar",
+          "x": 10,
+          "y": 18,
+          "foot": {
+            "x": 168,
+            "y": 298.5
+          },
+          "bounds": {
+            "x": 160.1,
+            "y": 294.6,
+            "w": 15.8,
+            "h": 7.8
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f0-2",
+          "type": "monument",
+          "x": 9,
+          "y": 18,
+          "foot": {
+            "x": 152,
+            "y": 300.5
+          },
+          "bounds": {
+            "x": 144.9,
+            "y": 297.3,
+            "w": 14.2,
+            "h": 6.399999999999999
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f0-3",
+          "type": "chest",
+          "x": 17,
+          "y": 17,
+          "foot": {
+            "x": 280,
+            "y": 284.5
+          },
+          "bounds": {
+            "x": 272.9,
+            "y": 281.3,
+            "w": 14.2,
+            "h": 6.399999999999999
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f0-15",
+          "type": "choice",
+          "x": 3,
+          "y": 11,
+          "foot": {
+            "x": 56,
+            "y": 188.5
+          },
+          "bounds": {
+            "x": 48.1,
+            "y": 185.3,
+            "w": 15.8,
+            "h": 6.399999999999999
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        }
+      ],
+      "shadows": [
+        {
+          "id": "actor_wukong_up",
+          "frame": 0,
+          "contacts": [
+            {
+              "x": 152.125,
+              "y": 284.8,
+              "width": 2.25
+            }
+          ]
+        }
+      ],
+      "stairways": [],
+      "pass": "final-dpr"
+    },
+    {
+      "name": "Real image clicks distinguish the stone, lantern and NPC without changing resources"
+    },
+    {
+      "name": "Material courtyard draws grounded architecture and feet at final DPR",
+      "installations": [
+        {
+          "id": "f1-0",
+          "type": "altar",
+          "x": 10,
+          "y": 18,
+          "foot": {
+            "x": 168,
+            "y": 298.5
+          },
+          "bounds": {
+            "x": 160.1,
+            "y": 294.6,
+            "w": 15.8,
+            "h": 7.8
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f1-1",
+          "type": "switch",
+          "x": 3,
+          "y": 10,
+          "foot": {
+            "x": 56,
+            "y": 172.5
+          },
+          "bounds": {
+            "x": 48.9,
+            "y": 169.3,
+            "w": 14.2,
+            "h": 6.399999999999999
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f1-12",
+          "type": "choice",
+          "x": 9,
+          "y": 17,
+          "foot": {
+            "x": 152,
+            "y": 284.5
+          },
+          "bounds": {
+            "x": 144.1,
+            "y": 281.3,
+            "w": 15.8,
+            "h": 6.399999999999999
+          },
+          "source": "floor_jade",
+          "clippedToWalkable": true
+        }
+      ],
+      "shadows": [
+        {
+          "id": "actor_wukong_down",
+          "frame": 0,
+          "contacts": [
+            {
+              "x": 131.5,
+              "y": 284.8,
+              "width": 1.95
+            },
+            {
+              "x": 136.6875,
+              "y": 284.8,
+              "width": 1.7999999999999998
+            }
+          ]
+        }
+      ],
+      "stairways": [
+        {
+          "id": "prop_stairs_down",
+          "footX": 168,
+          "footY": 314.7,
+          "left": 160.55,
+          "top": 304.8,
+          "width": 14.9,
+          "height": 14.6,
+          "footprint": {
+            "x": 161,
+            "y": 310.2,
+            "w": 14,
+            "h": 9
+          },
+          "elevation": 0,
+          "depth": 314.7,
+          "priority": 1,
+          "scale": null,
+          "drawMode": "scene-geometry",
+          "direction": "down",
+          "steps": 7
+        }
+      ],
+      "pass": "final-dpr"
+    },
+    {
+      "name": "Material mechanism draws grounded architecture and feet at final DPR",
+      "installations": [
+        {
+          "id": "f3-11",
+          "type": "stairs",
+          "x": 18,
+          "y": 1,
+          "foot": {
+            "x": 296,
+            "y": 26.7
+          },
+          "bounds": {
+            "x": 288.9,
+            "y": 23.5,
+            "w": 14.2,
+            "h": 6.4
+          },
+          "source": "floor_amber",
+          "clippedToWalkable": true
+        },
+        {
+          "id": "f3-12",
+          "type": "resonator",
+          "x": 3,
+          "y": 3,
+          "foot": {
+            "x": 56,
+            "y": 60.5
+          },
+          "bounds": {
+            "x": 48.1,
+            "y": 57.3,
+            "w": 15.8,
+            "h": 6.399999999999999
+          },
+          "source": "floor_amber",
+          "clippedToWalkable": true
+        }
+      ],
+      "shadows": [
+        {
+          "id": "actor_wukong_up",
+          "frame": 0,
+          "contacts": [
+            {
+              "x": 56.125,
+              "y": 76.8,
+              "width": 2.25
+            }
+          ]
+        }
+      ],
+      "stairways": [
+        {
+          "id": "prop_stairs_down",
+          "footX": 168,
+          "footY": 314.7,
+          "left": 160.55,
+          "top": 304.8,
+          "width": 14.9,
+          "height": 14.6,
+          "footprint": {
+            "x": 161,
+            "y": 310.2,
+            "w": 14,
+            "h": 9
+          },
+          "elevation": 0,
+          "depth": 314.7,
+          "priority": 1,
+          "scale": null,
+          "drawMode": "scene-geometry",
+          "direction": "down",
+          "steps": 7
+        }
+      ],
+      "pass": "final-dpr"
+    },
+    {
+      "name": "Mural first retains the original pixel presentation"
+    },
+    {
+      "name": "Mural courtyard retains the original pixel presentation"
+    },
+    {
+      "name": "Mural mechanism retains the original pixel presentation"
+    },
+    {
+      "name": "The PC mode hint leaves the staircase opening unobstructed"
+    },
+    {
+      "name": "Actual clicks still select the contract, lantern and recessed staircase"
+    },
+    {
+      "name": "PC 1280 courtyard remains visible and playable"
+    },
+    {
+      "name": "Real movement crosses the visual foundations without extra collision or resource changes"
+    },
+    {
+      "name": "Animated boot shadows track actual opaque source pixels in both walking poses",
+      "activeFrames": 3,
+      "frames": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "DPR 2 renders scene geometry and original props directly"
+    },
+    {
+      "name": "Offline file:// displays the real floor installations and stairwell"
+    }
+  ],
+  "screenshots": [
+    "audits/v18-after-material-first.png",
+    "audits/v18-after-material-courtyard.png",
+    "audits/v18-after-material-courtyard-detail.png",
+    "audits/v18-after-material-mechanism.png",
+    "audits/v18-after-mural-first.png",
+    "audits/v18-after-mural-courtyard.png",
+    "audits/v18-after-mural-courtyard-detail.png",
+    "audits/v18-after-mural-mechanism.png",
+    "audits/v18-after-material-1280-courtyard.png",
+    "audits/v18-after-material-overview.png",
+    "audits/v18-after-material-dpr2.png",
+    "audits/v18-after-offline.png"
+  ],
+  "errors": [],
+  "campaignActions": 4142,
+  "passed": true,
+  "finishedAt": "2026-10-23T11:53:37.205Z"
+}

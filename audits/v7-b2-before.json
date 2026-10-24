@@ -1,0 +1,55 @@
+{
+  "phase": "before",
+  "scope": "fixed PC 2525x1208 DPR1; actual conversation and target details clicks",
+  "errors": [],
+  "expected": "无天的黑莲把十六枚外舍利封进五重心印，又用众生的记忆筑成这十八层塔。乔灵儿在塔外等你。先把困在这里的人带出去，别让那些名字也化成一堵墙。\n\n十六枚外舍利散在前十五层的支院。每三层组成一印：前三组各三枚，炼炉三枚，经阁最后四枚。先逐一寻回，再到第三、六、九、十二、十五层解开心印。灵晶与功德决定每一棒的轻重，支院异宝则让你选择自己的解法。\n\n火眼辨真免费，只揭穿幻象，不改写真实战损。敌人不重生；生命、钥匙、功德都有限。先看清代价，再决定往哪边走。莲灯可免费补满灵息。\n\n黄钥不只开门。八层渡灯还认一把黄钥与一份仙桃：它会为你开一条避战的舍利栈道。普通渡口一直都在；想换那条路，便从现在留下一把。",
+  "beforeTalk": {
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "story": {
+      "title": "黑莲劫 · 入塔",
+      "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+      "collapsed": true,
+      "visible": true
+    },
+    "targetText": "听一段塔中回响\n\n交谈\n详察",
+    "inline": false,
+    "modal": false
+  },
+  "afterTalk": {
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "story": {
+      "title": "黑莲劫 · 入塔",
+      "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+      "collapsed": true,
+      "visible": true
+    },
+    "targetText": "听一段塔中回响\n\n交谈\n详察",
+    "inline": false,
+    "modal": false
+  },
+  "afterDetails": {
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "story": {
+      "title": "黑莲劫 · 入塔",
+      "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+      "collapsed": true,
+      "visible": true
+    },
+    "targetText": "听一段塔中回响交谈详察",
+    "inline": false,
+    "modal": true
+  },
+  "screenshots": [
+    "audits/v7-b2-talk-before.png",
+    "audits/v7-b2-details-before.png"
+  ]
+}

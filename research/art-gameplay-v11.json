@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-23",
+  "status": "implemented_and_pc_verified_with_subjective_boundaries",
+  "skill": "game-studio:game-studio",
+  "interaction_guidance": "docs/v10-immersion-plan.md",
+  "review": "docs/v11-art-gameplay-review.md",
+  "acceptance_report": "audits/v11-final.json",
+  "sources": [
+    {"url": "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/", "read": true, "principle": "visual hierarchy, minimal noise and recognisable silhouettes"},
+    {"url": "https://www.riotgames.com/en/artedu/visual-effects", "read": true, "principle": "restrained effects accurately communicate action and state"},
+    {"url": "https://www.nintendo.com/us/store/products/into-the-breach-switch/", "read": true, "principle": "publisher description: telegraphed enemy attacks enable analysis before decisions"}
+  ],
+  "goals": [
+    {"id": "A1", "name": "降低地面重复纹样对人物和通路的干扰", "status": "implemented_and_visual_checked", "evidence": ["audits/v11-before-material.png", "audits/v11-material-explore.png", "audits/v11-mural-explore.png"]},
+    {"id": "A2", "name": "战斗蓄势、命中、收势与结果分离", "status": "implemented_and_visual_checked", "evidence": ["audits/v11-material-combat-0-41.png", "audits/v11-material-combat-1-12.png", "audits/v11-art-tactics.json"]},
+    {"id": "P1", "name": "单枚实际灵晶筹算和合法路线标示", "status": "implemented_and_legally_verified", "evidence": ["audits/v11-material-route.png", "audits/v11-floor07-material-comparison.png", "audits/v11-floor07-mural-comparison.png", "audits/v11-art-tactics.json"]},
+    {"id": "R1", "name": "保留完整冒险、沉浸输入、双画境与文件直开", "status": "regression_verified", "evidence": ["audits/v10-interaction.json", "audits/v10-presentation.json", "audits/v11-art-tactics.json"]},
+    {"id": "S1", "name": "接触音效与视觉时点匹配", "status": "implemented_listening_review_pending", "evidence": ["js/audio.js", "js/ui.js"]}
+  ],
+  "iterations": [
+    {"finding": "长虚线跨越墙体，会与可行走路线混淆", "repair": "保留真实青色步行路线；用守卫脚下金圈表示比较对象", "status": "visual_rechecked", "evidence": "audits/v11-material-route.png"}
+  ],
+  "acceptance": {"legal_campaign_actions": 4142, "walked_growth_routes": 37, "damage_reducing_routes": 15, "neutral_routes": 22, "pc_viewports": [[1440, 900], [1989, 1113]], "remote_requests_in_offline_file_session": 0, "user_chrome_progress_preserved": true},
+  "boundaries": ["not a whole-campaign optimal-route solver", "no new raster atlas generated", "sound listening review pending", "subjective fun and first-play pacing need player feedback", "representative original-size PC screenshot review, not every floor visually reviewed", "mobile and broad browser matrix deferred"]
+}

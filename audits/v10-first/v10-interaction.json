@@ -1,0 +1,98 @@
+{
+  "startedAt": "2026-10-22T13:57:07.564Z",
+  "checks": [
+    {
+      "name": "Arrival is acknowledged; its concrete objective survives in exploration without a lore wall"
+    },
+    {
+      "name": "Lotus ritual exposes all three offerings and shortage reasons without a sidebar or scrolling",
+      "height": 293.890625,
+      "scroll": 294,
+      "client": 294,
+      "text": "莲灯 · 修心\n功德 0 金\n1\n磨砺金箍\n攻击 +3 · 20 金\n还差 20 金\n2\n灯前疗伤\n生命 +120 · 12 金\n还差 12 金\n3\n淬炼护身\n防御 +3 · 20 金\n还差 20 金\n4灵息已满\n5奉珠 · 换 8 金\n6奉珠 · 回 50 命\n功德换修为；调息免费，不恢复生命。 · 凝息珠 1\n离开莲灯 Esc\n行囊 I"
+    },
+    {
+      "name": "The cloth inventory has six real slots, no scrolling, exact potion use and safe input/focus",
+      "client": 643,
+      "scroll": 643,
+      "rect": {
+        "x": 176,
+        "w": 1088
+      }
+    },
+    {
+      "name": "A real lotus purchase spends the exact rising price once and shows its result"
+    },
+    {
+      "name": "Equipment in the cloth slots obeys the real lantern and two-slot rules"
+    },
+    {
+      "name": "A single short dialogue highlights the current task; Space completes then advances"
+    },
+    {
+      "name": "Movement closes the target conversation and removes stale object prompts"
+    },
+    {
+      "name": "The root chest has a complete title, progress and one usable primary action",
+      "h": 42,
+      "w": 145,
+      "line": "22.5px"
+    },
+    {
+      "name": "Movement battle preview and deliberate second movement still work without held-key attacks"
+    },
+    {
+      "name": "staff has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "morph has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "clone has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "A rejected skill never plays a success cut-in or spends resources"
+    },
+    {
+      "name": "All menu entry points share the same game-wide pause mode and return rule"
+    },
+    {
+      "name": "Both art styles and the user screenshot viewport preserve resources and keep the ritual on screen"
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v10-arrival.png",
+    "E:\\githome\\mota\\audits\\v10-lotus-ritual-poor.png",
+    "E:\\githome\\mota\\audits\\v10-inventory-material.png",
+    "E:\\githome\\mota\\audits\\v10-lotus-ritual-result.png",
+    "E:\\githome\\mota\\audits\\v10-short-speech.png",
+    "E:\\githome\\mota\\audits\\v10-locked-chest-readable.png",
+    "E:\\githome\\mota\\audits\\v10-battle-capsule.png",
+    "E:\\githome\\mota\\audits\\v10-cinematic-staff.png",
+    "E:\\githome\\mota\\audits\\v10-cinematic-morph.png",
+    "E:\\githome\\mota\\audits\\v10-cinematic-clone.png",
+    "E:\\githome\\mota\\audits\\v10-character.png",
+    "E:\\githome\\mota\\audits\\v10-inventory-mural.png",
+    "E:\\githome\\mota\\audits\\v10-inventory-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v10-ritual-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v10-failure.png"
+  ],
+  "errors": [],
+  "reflections": [],
+  "source": {
+    "index.html": "055dae5f6a0a2aa9df753b3ad9d8e86f51672bcc568cd146332296b3a965bacb",
+    "js/ui.js": "848e517cc24914c1f214560977a61d0d03ed0c90fa77060b222ab103e96407b1",
+    "js/presentation.js": "638a645a7fc7f9ba1a5e64fe80d91da6c87d9c88e45f8dee5b4488346933fe1a",
+    "js/engine.js": "72d3ef140f5b06bab0d23d41ff175121c5ec2facafb22e3d4428122a79cd0fa9",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "css/experience.css": "ddf34c74e9fc7057b03da9ba808b887cb183d1631971b0e0c2008b98da9fb8c6"
+  },
+  "completed": false,
+  "failure": {
+    "stage": "reduced motion",
+    "message": "page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#setting-motion')\u001b[22m\n\u001b[2m    - locator resolved to <select aria-label=\"动作与演出\" id=\"setting-motion\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+    "stack": "page.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#setting-motion')\u001b[22m\n\u001b[2m    - locator resolved to <select aria-label=\"动作与演出\" id=\"setting-motion\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    59 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at main (E:\\githome\\mota\\tests\\v10-interaction.cjs:43:68)",
+    "text": "行者C\n◆\n620\n生命\n灵息\n6 / 6\n1\n0\n0\n◈\n寻回本层外舍利 · 本印 0/3\n心印 0/5 · 外舍利 0/16\n◐\n青绿壁画\n↶\n↷\n☷\n行囊与手记\n01\nTHE RELIC TOWER 第 1 / 18 层 · 辨真篇\n云垂山门\n全图规划 M\n归位 F\n此层经卷\n⌄\n行走 · 方向键 / WASD\n五印渐解 · 神通觉醒\n行走\n1\n火眼金睛\n2\n金箍架桥\n3\n青蝉化形\n4\n毫毛分身\n5\n‹ 返回塔中\n大圣 · 舍利魔塔\n入塔指引\n↑ ↓ ← →\n走近，看清\n\n方向键移动。遇怪先预览，松开再前进才出棒。\n\n2 · 火眼\n照破幻壁\n\n点幻壁再辨真，点守卫看实际战损，不消耗灵息。\n\nG · 下一步\n循线索行\n\n定位当前要事。每层入境都有目标，可按 Enter 继续。\n\n3 / 4 / 5\n神通开路\n\n架桥、化蝉、分身各有目标和代价；成功后有短演出。\n\nI / C / J\n整装与回访\n\n行囊、人物、手记。Esc 随时退回塔中。\n\nE · 莲灯\n修心取舍\n\n站在莲灯上修行。功德换成长，灵息免费补满。\n\n展开完整塔中规则\n记下了 · 继续"
+  },
+  "finishedAt": "2026-10-22T13:57:51.875Z"
+}

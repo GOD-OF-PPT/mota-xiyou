@@ -1,0 +1,169 @@
+{
+  "phase": "fixed-pc-bugs",
+  "startedAt": "2026-10-22T07:31:44.000Z",
+  "checks": [
+    {
+      "name": "repeat inputs never fight; explicit E is exact; staff / morph / clone perform real public actions"
+    }
+  ],
+  "matrix": [],
+  "nativeDraws": [],
+  "projectionHits": [],
+  "skills": [],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v7-skill-staff.png",
+    "E:\\githome\\mota\\audits\\v7-skill-morph.png",
+    "E:\\githome\\mota\\audits\\v7-skill-clone.png",
+    "E:\\githome\\mota\\audits\\v7-walk-no-ground-bubble.png"
+  ],
+  "errors": [],
+  "visualComplete": false,
+  "campaignComplete": false,
+  "sourceIdentity": {
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "js/ui.js": "a478f9c0b9fa5212ea1f17ad24f9430d23e98e949c16f16ac61d67438a963e8c",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "css/immersive.css": "d2ef916fdd0db14c83901bf4c92405cd97811f6c00a0b0001e7354432374f984",
+    "assets/material/manifest.json": "9dfa6b737f27d9b3f4441661afdaeee8240c1766e3d594b27804d51ec30dc5c8",
+    "docs/game-presentation-guidelines.md": "cfd9d4ab36e7549192840ecb8dc44703792bd4c5e9734617022f7dee5ee4f46d"
+  },
+  "scope": "One fixed PC2525x1208 DPR1; actual behavior and one campaign",
+  "compatibility_deferred": true,
+  "compatibilityNote": "User explicitly stopped all mobile, viewport and DPR compatibility work. Prior 844x390 G3 gap remains deferred_by_user; it does not block this PC bug replay.",
+  "renderingBackgroundEvidence": "audits/v7-browser-all.json",
+  "completed": false,
+  "failure": {
+    "stage": "walk ground / retained target / post-fight cleanup",
+    "message": "Explicit inspection must still explain ground\n\nfalse !== true\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Explicit inspection must still explain ground\n\nfalse !== true\n\n    at Object.walkSelection (E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:84:113)\n    at async E:\\githome\\mota\\tests\\v7-fixed-pc-bugs.cjs:9:37",
+    "state": {
+      "version": 4,
+      "levelRevision": 5,
+      "floor": 0,
+      "x": 17,
+      "y": 6,
+      "facing": "up",
+      "hp": 755,
+      "atk": 27,
+      "def": 10,
+      "mana": 6,
+      "maxMana": 6,
+      "coins": 0,
+      "keys": {
+        "yellow": 2,
+        "blue": 1,
+        "red": 0
+      },
+      "relics": [],
+      "externalRelics": 0,
+      "fragments": [],
+      "treasures": [],
+      "equipped": [],
+      "selfAwakened": false,
+      "revealed": {
+        "f0-16": true
+      },
+      "quests": {},
+      "tides": {},
+      "rescued": [],
+      "removed": {
+        "f0-13": true,
+        "f0-10": true,
+        "f0-8": true,
+        "f0-7": true,
+        "f0-9": true
+      },
+      "switches": {},
+      "terrain": {},
+      "choices": {},
+      "visited": [
+        0
+      ],
+      "seenIntros": {
+        "0": true,
+        "event:f0-2": true
+      },
+      "journal": [
+        {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。最后那个空位，不在任何宝匣里。”\n\n本作是受《西游记后传》启发的平行篇章；五重心印与无相塔为原创设定。",
+          "floor": 0,
+          "portrait": "wukong",
+          "chapter": 0
+        },
+        {
+          "title": "归根石刻",
+          "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+          "floor": 0,
+          "portrait": "lantern"
+        }
+      ],
+      "log": [
+        {
+          "text": "获得青玉钥匙 · 开启一扇青门；门永久消失。",
+          "kind": "item",
+          "turn": 55
+        },
+        {
+          "text": "获得小蟠桃 · 立即恢复 45 生命。",
+          "kind": "item",
+          "turn": 35
+        },
+        {
+          "text": "获得黄铜钥匙 · 可开启一扇黄门，也可留到第八层，配合舍弃一枚仙桃供渡灯、开舍利栈道。每次用途都会永久消耗一把。",
+          "kind": "item",
+          "turn": 30
+        },
+        {
+          "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+          "kind": "item",
+          "turn": 7
+        },
+        {
+          "text": "获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。",
+          "kind": "item",
+          "turn": 2
+        },
+        {
+          "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+          "kind": "magic",
+          "turn": 0
+        },
+        {
+          "text": "残钟响起。你踏入了自己的因果。",
+          "kind": "story",
+          "turn": 0
+        }
+      ],
+      "elixirs": 1,
+      "orbs": 1,
+      "turn": 60,
+      "defeated": false,
+      "won": false,
+      "ending": null,
+      "bossPlan": "direct",
+      "settings": {
+        "quickZero": false,
+        "showDamage": true,
+        "motion": "standard",
+        "screenShake": false,
+        "music": false,
+        "sfx": false
+      },
+      "purchases": {
+        "atk": 0,
+        "def": 0,
+        "heal": 0
+      },
+      "startedAt": 1792654303404,
+      "kills": 0
+    },
+    "selection": {
+      "mode": "inspect",
+      "selection": {
+        "x": 17,
+        "y": 6
+      }
+    }
+  }
+}

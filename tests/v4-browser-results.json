@@ -1,0 +1,38 @@
+{
+  "physical": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "choose": 4,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "offerOrb": 2,
+    "bossPreparations": {
+      "direct": "977",
+      "anchor": "774",
+      "echoes": "800"
+    },
+    "awakenSelf": true,
+    "finish": 1
+  },
+  "errors": [],
+  "bothEndings": true,
+  "manualLoad": true,
+  "all16FragmentsViaUI": true,
+  "all6TreasuresViaUI": true,
+  "final": {
+    "hp": 156,
+    "atk": 113,
+    "def": 34,
+    "equipped": [
+      "iron",
+      "thorn"
+    ],
+    "orbs": 0,
+    "coins": 30
+  }
+}

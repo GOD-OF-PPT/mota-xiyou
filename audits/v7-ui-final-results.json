@@ -1,0 +1,1222 @@
+{
+  "errors": [],
+  "npcDesktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "skill": {
+      "x": 424,
+      "y": 802,
+      "w": 592,
+      "h": 82
+    },
+    "tip": {
+      "x": 830.546875,
+      "y": 655,
+      "w": 196,
+      "h": 95.390625
+    },
+    "offscreen": false,
+    "placement": "right",
+    "anchor": {
+      "foot": {
+        "x": 788.5714285714286,
+        "y": 762.8571428571429
+      },
+      "body": {
+        "x": 774.0624999999999,
+        "y": 713.8749999999999
+      },
+      "bounds": {
+        "x": 738.5714285714284,
+        "y": 668.6607142857142,
+        "w": 70.98214285714286,
+        "h": 94.19642857142856
+      },
+      "visible": true,
+      "cell": {
+        "x": 11,
+        "y": 18
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 720,
+        "y": 762.8571428571429
+      },
+      "body": {
+        "x": 699.9107142857143,
+        "y": 709.3714285714286
+      },
+      "bounds": {
+        "x": 662.6785714285714,
+        "y": 660,
+        "w": 74.46428571428571,
+        "h": 102.85714285714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 10,
+        "y": 18
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 7.875,
+      "w": 21,
+      "h": 13.125,
+      "cellSize": 68.57142857142857,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 7
+    },
+    "selection": {
+      "x": 11,
+      "y": 18
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "16px",
+      "action": "14px"
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 424,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 544,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 664,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 784,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 904,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 824.13 747.53 L 788.57 762.86"
+  },
+  "details": {
+    "open": true,
+    "dialogCount": 0
+  },
+  "desktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "skill": {
+      "x": 424,
+      "y": 802,
+      "w": 592,
+      "h": 82
+    },
+    "tip": {
+      "x": 338.5,
+      "y": 429.78125,
+      "w": 196,
+      "h": 109.296875
+    },
+    "offscreen": false,
+    "placement": "right",
+    "anchor": {
+      "foot": {
+        "x": 308.57142857142856,
+        "y": 484.2857142857143
+      },
+      "body": {
+        "x": 288.0357142857143,
+        "y": 451.55357142857144
+      },
+      "bounds": {
+        "x": 258.57142857142856,
+        "y": 421.3392857142857,
+        "w": 58.92857142857142,
+        "h": 62.94642857142857
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 308.57142857142856,
+        "y": 552.8571428571429
+      },
+      "body": {
+        "x": 288.48214285714283,
+        "y": 499.37142857142857
+      },
+      "bounds": {
+        "x": 251.25,
+        "y": 450,
+        "w": 74.46428571428571,
+        "h": 102.85714285714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 1.9375,
+      "w": 21,
+      "h": 13.125,
+      "cellSize": 68.57142857142857,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 1
+    },
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "16px",
+      "action": "14px"
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 424,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 544,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 664,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 784,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 904,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 331.50 484.29 L 308.57 484.29"
+  },
+  "beforeMove": {
+    "foot": {
+      "x": 308.57142857142856,
+      "y": 484.2857142857143
+    },
+    "body": {
+      "x": 288.0357142857143,
+      "y": 451.55357142857144
+    },
+    "bounds": {
+      "x": 258.57142857142856,
+      "y": 421.3392857142857,
+      "w": 58.92857142857142,
+      "h": 62.94642857142857
+    },
+    "visible": true,
+    "cell": {
+      "x": 4,
+      "y": 8
+    },
+    "ready": true
+  },
+  "followed": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "skill": {
+      "x": 424,
+      "y": 802,
+      "w": 592,
+      "h": 82
+    },
+    "tip": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "offscreen": false,
+    "placement": "right",
+    "anchor": {
+      "foot": {
+        "x": 240,
+        "y": 484.2857142857143
+      },
+      "body": {
+        "x": 256.60714285714283,
+        "y": 424.95
+      },
+      "bounds": {
+        "x": 220.17857142857142,
+        "y": 370.17857142857144,
+        "w": 72.85714285714286,
+        "h": 114.10714285714285
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 240,
+        "y": 484.2857142857143
+      },
+      "body": {
+        "x": 256.60714285714283,
+        "y": 424.95
+      },
+      "bounds": {
+        "x": 220.17857142857142,
+        "y": 370.17857142857144,
+        "w": 72.85714285714286,
+        "h": 114.10714285714285
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 2.9375,
+      "w": 21,
+      "h": 13.125,
+      "cellSize": 68.57142857142857,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 2
+    },
+    "selection": {
+      "x": 3,
+      "y": 9
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "21px",
+      "action": null
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 424,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 544,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 664,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 784,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 904,
+          "y": 802,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 331.50 484.29 L 308.57 484.29"
+  },
+  "wide": {
+    "viewport": [
+      2525,
+      1208
+    ],
+    "skill": {
+      "x": 966.5,
+      "y": 1110,
+      "w": 592,
+      "h": 82
+    },
+    "tip": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "offscreen": false,
+    "placement": "right",
+    "anchor": {
+      "foot": {
+        "x": 420.83333333333337,
+        "y": 664.1190476190476
+      },
+      "body": {
+        "x": 449.9534970238095,
+        "y": 560.0755208333334
+      },
+      "bounds": {
+        "x": 386.07700892857144,
+        "y": 464.03534226190476,
+        "w": 127.75297619047619,
+        "h": 200.08370535714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 420.83333333333337,
+        "y": 664.1190476190476
+      },
+      "body": {
+        "x": 449.9534970238095,
+        "y": 560.0755208333334
+      },
+      "bounds": {
+        "x": 386.07700892857144,
+        "y": 464.03534226190476,
+        "w": 127.75297619047619,
+        "h": 200.08370535714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 4.476633663366337,
+      "w": 21,
+      "h": 10.046732673267327,
+      "cellSize": 120.23809523809524,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 2525,
+      "cssHeight": 1208,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 4
+    },
+    "selection": {
+      "x": 3,
+      "y": 9
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "21px",
+      "action": null
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 966.5,
+          "y": 1110,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 1086.5,
+          "y": 1110,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 1206.5,
+          "y": 1110,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 1326.5,
+          "y": 1110,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 1446.5,
+          "y": 1110,
+          "w": 112,
+          "h": 82
+        },
+        "labelSize": "16px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 331.50 484.29 L 308.57 484.29"
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "tip": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "offscreen": false,
+    "placement": "right",
+    "anchor": {
+      "foot": {
+        "x": 168,
+        "y": 446
+      },
+      "body": {
+        "x": 179.625,
+        "y": 404.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 366.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 168,
+        "y": 446
+      },
+      "body": {
+        "x": 179.625,
+        "y": 404.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 366.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 0.7083333333333339,
+      "w": 8.125,
+      "h": 17.583333333333332,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 0
+    },
+    "selection": {
+      "x": 3,
+      "y": 9
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "21px",
+      "action": null
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 12,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 86,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 160,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 234,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 308,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 331.50 484.29 L 308.57 484.29"
+  },
+  "offscreen": {
+    "viewport": [
+      390,
+      844
+    ],
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "tip": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "offscreen": true,
+    "placement": "left",
+    "anchor": {
+      "foot": {
+        "x": 840,
+        "y": 398
+      },
+      "body": {
+        "x": 825.6250000000001,
+        "y": 375.0875
+      },
+      "bounds": {
+        "x": 805.0000000000001,
+        "y": 353.9375,
+        "w": 41.25,
+        "h": 44.0625
+      },
+      "visible": false,
+      "cell": {
+        "x": 17,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 168,
+        "y": 446
+      },
+      "body": {
+        "x": 179.625,
+        "y": 404.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 366.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 0.7083333333333339,
+      "w": 8.125,
+      "h": 17.583333333333332,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 0
+    },
+    "selection": {
+      "x": 17,
+      "y": 8
+    },
+    "directionVisible": true,
+    "tipFonts": {
+      "name": "15px",
+      "action": "14px"
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 12,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 86,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 160,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 234,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 308,
+          "y": 754,
+          "w": 70,
+          "h": 76
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 297.46 343.14 L 325.00 343.14"
+  },
+  "selectionPreserved": true,
+  "landscape": {
+    "viewport": [
+      844,
+      390
+    ],
+    "skill": {
+      "x": 224,
+      "y": 304,
+      "w": 396,
+      "h": 72
+    },
+    "tip": {
+      "x": 638,
+      "y": 192,
+      "w": 196,
+      "h": 114.5
+    },
+    "offscreen": false,
+    "placement": "below",
+    "anchor": {
+      "foot": {
+        "x": 840,
+        "y": 171
+      },
+      "body": {
+        "x": 825.6250000000001,
+        "y": 148.0875
+      },
+      "bounds": {
+        "x": 805.0000000000001,
+        "y": 126.9375,
+        "w": 41.25,
+        "h": 44.0625
+      },
+      "visible": true,
+      "cell": {
+        "x": 17,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 168,
+        "y": 219
+      },
+      "body": {
+        "x": 179.625,
+        "y": 177.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 139.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "projection": {
+      "x": 0,
+      "y": 5.4375,
+      "w": 17.583333333333332,
+      "h": 8.125,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 844,
+      "cssHeight": 390,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 5
+    },
+    "selection": {
+      "x": 17,
+      "y": 8
+    },
+    "directionVisible": false,
+    "tipFonts": {
+      "name": "15px",
+      "action": "14px"
+    },
+    "skillLabels": [
+      {
+        "mode": "walk",
+        "rect": {
+          "x": 224,
+          "y": 304,
+          "w": 76,
+          "h": 72
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互",
+        "cost": "行走"
+      },
+      {
+        "mode": "inspect",
+        "rect": {
+          "x": 304,
+          "y": 304,
+          "w": 76,
+          "h": 72
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(234, 220, 189)",
+        "opacity": "1",
+        "title": null,
+        "description": "点选任何目标，免费查看真实规则和损失",
+        "cost": "免费"
+      },
+      {
+        "mode": "staff",
+        "rect": {
+          "x": 384,
+          "y": 304,
+          "w": 76,
+          "h": 72
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 3 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "morph",
+        "rect": {
+          "x": 464,
+          "y": 304,
+          "w": 76,
+          "h": 72
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 6 层解开心印后觉醒",
+        "cost": "未觉"
+      },
+      {
+        "mode": "clone",
+        "rect": {
+          "x": 544,
+          "y": 304,
+          "w": 76,
+          "h": 72
+        },
+        "labelSize": "14px",
+        "labelColor": "rgb(200, 191, 167)",
+        "opacity": "1",
+        "title": null,
+        "description": "第 9 层解开心印后觉醒",
+        "cost": "未觉"
+      }
+    ],
+    "leader": "M 817.77 187.78 L 840.00 171.00"
+  },
+  "status": "Historical capture before preserving selected targets during movement and before the locked-label pseudo-element fix.",
+  "superseded_by": "audits/v7-ui-follow-and-labels-fixed.json"
+}

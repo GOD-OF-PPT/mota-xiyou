@@ -1,0 +1,161 @@
+{
+  "reviewer": "independent acceptance subagent",
+  "timestamp": "2026-10-21T16:43:04.891Z",
+  "scope": "Read-only review of engine/world/ui contracts plus lightweight Node probes; no browser and no production-file edits.",
+  "sourceHashes": {
+    "js/engine.js": "6eca0f77fadb8328bee917e9b42b68c57ec34b5351644f08e999b341a0a641ba",
+    "js/world.js": "4913fa4efac14f401ac54828ed7e823eba908c4d0ab37deaf40f32f31043b4db",
+    "js/ui.js": "cb137206a02b7f64a9ae55b816351a412c85a0325faaddfa84164bd404d6d348",
+    ".backups/before-optimization/js/engine.js": "eb92a94b177b995f86d68a71f79befd549f78c5dd2526f95a6d79823cacd836d",
+    ".backups/before-optimization/js/world.js": "5ab7c7726b7b098084bf58ad4251ac20b9019f782ceaec6c0859cfa7b9496a11"
+  },
+  "discoveredAndFixed": [
+    {
+      "issue": "v1 F5 old growth could coexist with the new contract-cache budget",
+      "reproductionBeforeFix": "Old engine walked from floor-entry fixture to f4-11 without opening either door; old +3 attack plus new blue cache +5 yielded +8.",
+      "fixObserved": "Actual old growth removal marks locksLegacy and closes the cache; contract routes remain selectable, and UI announces inheritance."
+    },
+    {
+      "issue": "v1 F11 old ruby could coexist with a new scroll reward",
+      "reproductionBeforeFix": "Old ruby +5 and new attack scroll +4 yielded +9.",
+      "fixObserved": "Old ruby removal inherits silk attack choice and records silkLegacy without adding stats."
+    },
+    {
+      "issue": "Old door opening alone must not suppress an unclaimed growth reward",
+      "fixObserved": "Opening only inherits the chosen route; the cache remains available unless actual old growth was claimed."
+    }
+  ],
+  "postFixProbes": [
+    {
+      "name": "v1 f4-11 collected before opening either old door",
+      "legacyAction": {
+        "path": [
+          "left",
+          "left",
+          "left",
+          "left",
+          "left",
+          "up",
+          "up",
+          "up",
+          "up"
+        ],
+        "claimed": "amber"
+      },
+      "result": "pass",
+      "legacyGrowthPreserved": {
+        "atk": 27,
+        "def": 10,
+        "hp": 620,
+        "coins": 0
+      },
+      "contract": "free",
+      "northCacheAdditionalReward": 0
+    },
+    {
+      "name": "v1 f4-12 collected before opening either old door",
+      "legacyAction": {
+        "path": [
+          "left",
+          "left",
+          "left",
+          "up",
+          "up"
+        ],
+        "claimed": "jade"
+      },
+      "result": "pass",
+      "legacyGrowthPreserved": {
+        "atk": 24,
+        "def": 12,
+        "hp": 620,
+        "coins": 0
+      },
+      "contract": "free",
+      "northCacheAdditionalReward": 0
+    },
+    {
+      "name": "v1 F11 old ruby claimed",
+      "legacyAction": {
+        "consumed": "elixir",
+        "path": [
+          "left",
+          "left",
+          "left",
+          "left",
+          "left",
+          "up",
+          "up",
+          "right",
+          "right",
+          "up",
+          "up",
+          "left",
+          "left",
+          "up",
+          "up"
+        ],
+        "combats": [
+          "puppet"
+        ],
+        "claimed": "ruby"
+      },
+      "result": "pass",
+      "oldAndMigratedAttack": 29,
+      "silkChoice": "atk",
+      "newScrollAdditionalAttack": 0
+    },
+    {
+      "name": "v1 F5 old blue door opened with neither growth item collected",
+      "legacyAction": {
+        "path": [
+          "right",
+          "right",
+          "right",
+          "right",
+          "right",
+          "up",
+          "up",
+          "left",
+          "left",
+          "left",
+          "left",
+          "up",
+          "up"
+        ],
+        "opened": "f4-2",
+        "oldGrowthItemsCollected": false
+      },
+      "result": "pass",
+      "inheritedContract": "blue",
+      "northCacheAttackAward": 5
+    },
+    {
+      "name": "clean v1 F5 state remains eligible for contracts and reward",
+      "result": "pass"
+    }
+  ],
+  "otherInspectedContracts": [
+    {
+      "contract": "Self awakening and endings",
+      "evidence": "Source review: awakenSelf requires current adjacent finale, five seals, external count 16, and removed boss; finish requires real selfAwakened and removed boss for both endings."
+    },
+    {
+      "contract": "New entity interaction",
+      "evidence": "Source review of context handlers and engine.interact: illusion/resonator/rescue/tide/portal call authoritative engine methods; finale is shown through the same interaction flow."
+    },
+    {
+      "contract": "Seven-wound rescue bypass",
+      "evidence": "Directed graph probe on floor 15 with terrain routes open and unrelated obstacles removed: no route around archivist without sevenRescue; a route exists with sevenRescue. This isolates the authored bypass contract and does not claim a full public-action playthrough."
+    },
+    {
+      "contract": "Cross-floor and water persistence",
+      "evidence": "Source review: two-tower and furnace conditions resolve saved real control IDs; getTile and migrate resolve water crossing from saved tides, relocating wall or submerged legacy coordinates to the floor altar."
+    }
+  ],
+  "boundaries": [
+    "Legacy probes initialize a documented chapter-entry fixture and inherited seal/visited values; they are not a replay of the entire original v1 adventure. Claiming the legacy items and door opening use the actual backed-up v1 engine with walk, fight, consumable, and openDoor methods. Current-version final placement adjacent to a cache or scroll is a directed fixture, not a full campaign.",
+    "No new full-suite runs, browser sessions, screenshots, sound playback, mobile interaction, or human first-play study were performed by this reviewer.",
+    "Source review and directed probes did not reveal an additional mainline bypass or softlock; this is not an exhaustive proof over every resource allocation and historical save."
+  ]
+}

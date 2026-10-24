@@ -1,0 +1,5 @@
+Xbox Accessibility Guideline 101 - Microsoft Game Dev | Microsoft Learn
+https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/101
+Retrieved 2026-10-22, HTTP 200
+Short excerpt: Font size should equal or exceed
+Note: Measure visible text and allow readable sizing and spacing, rather than relying only on font configuration.

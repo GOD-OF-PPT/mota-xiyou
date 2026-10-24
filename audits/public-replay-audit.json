@@ -1,0 +1,92 @@
+{
+  "note": "Current engine replay of stored public action traces. These are three specified strategies, not an optimal solver or a human usability result.",
+  "profiles": [
+    {
+      "build": "none",
+      "won": true,
+      "defeated": false,
+      "hp": 106,
+      "atk": 82,
+      "def": 40,
+      "coins": 842,
+      "elixirs": 3,
+      "orbs": 10,
+      "kills": 69,
+      "actions": 2102,
+      "zeroDamageFights": 0,
+      "totalDamage": 6714,
+      "boss": {
+        "floor": 18,
+        "enemy": "heart",
+        "damage": 1872,
+        "hp": 1978,
+        "atk": 82,
+        "def": 40
+      },
+      "purchases": {
+        "atk": 0,
+        "def": 0,
+        "heal": 0
+      },
+      "failedActions": []
+    },
+    {
+      "build": "atk",
+      "won": true,
+      "defeated": false,
+      "hp": 1410,
+      "atk": 112,
+      "def": 40,
+      "coins": 102,
+      "elixirs": 9,
+      "orbs": 10,
+      "kills": 69,
+      "actions": 2262,
+      "zeroDamageFights": 0,
+      "totalDamage": 4210,
+      "boss": {
+        "floor": 18,
+        "enemy": "heart",
+        "damage": 1022,
+        "hp": 2432,
+        "atk": 112,
+        "def": 40
+      },
+      "purchases": {
+        "atk": 10,
+        "def": 0,
+        "heal": 0
+      },
+      "failedActions": []
+    },
+    {
+      "build": "def",
+      "won": true,
+      "defeated": false,
+      "hp": 2184,
+      "atk": 82,
+      "def": 70,
+      "coins": 133,
+      "elixirs": 9,
+      "orbs": 10,
+      "kills": 71,
+      "actions": 2272,
+      "zeroDamageFights": 11,
+      "totalDamage": 3436,
+      "boss": {
+        "floor": 18,
+        "enemy": "heart",
+        "damage": 792,
+        "hp": 2976,
+        "atk": 82,
+        "def": 70
+      },
+      "purchases": {
+        "atk": 0,
+        "def": 10,
+        "heal": 0
+      },
+      "failedActions": []
+    }
+  ]
+}

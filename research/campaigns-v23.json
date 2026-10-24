@@ -1,0 +1,27 @@
+{
+  "routes": [
+    {
+      "file": "tests/playthrough-v23-free-mixed-direct.json",
+      "actions": 4176,
+      "hp": 43,
+      "ending": "release",
+      "adaptations": [
+        {
+          "beforeOriginalIndex": 2219,
+          "reason": "北庭仙桃迁到甲乙门后，合法折返先取补给再挑战精英。",
+          "addedActions": 34
+        }
+      ],
+      "hash": "446e1aa62cbf0fc6c6ac680b0f0e342cc61d1ba830073aff54b34a03f12826e3"
+    },
+    {
+      "file": "tests/playthrough-v23-gold-def-anchor.json",
+      "actions": 3850,
+      "hp": 160,
+      "ending": "release",
+      "adaptations": [],
+      "hash": "83dcd61e24be90e6f59c0273635a83edbd536ea0d1ba354122bb1e35bed4bf58"
+    }
+  ],
+  "passed": true
+}

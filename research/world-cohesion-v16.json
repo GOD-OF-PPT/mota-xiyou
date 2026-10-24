@@ -1,0 +1,105 @@
+{
+  "status": "implemented_and_verified_pc",
+  "date": "2026-10-23",
+  "scope": "Ground-plane integration, contact, lighting, and descending stairs in the material scene",
+  "guidance": "docs/v10-immersion-plan.md",
+  "review": "docs/v16-world-cohesion-review.md",
+  "evidence": {
+    "user": "audits/v16-user-grounding.png",
+    "before": "audits/v16-cohesion-before.json",
+    "after": "audits/v16-cohesion-after.json",
+    "final": "audits/v16-final.json",
+    "live": "audits/v16-live-user-preview.png"
+  },
+  "changes": [
+    "World-aligned stone foundations clipped to real floor cells",
+    "Opaque-source boot contacts and upper-left silhouette shadows",
+    "Removed extra actor outline and brightness boost",
+    "Descending stairwell rendered into the floor at final DPR",
+    "Floor-aligned emitted light and unobstructed PC staircase entrance"
+  ],
+  "source": {
+    "js/renderer.js": "a0135333b6229bd6ab9c26911bb6235f475e92fb8f256d0f44a8d43433f9666a",
+    "js/ui.js": "9312adc50d8a9b60f976ae23e68c9eecfc56f28a10c3a70f55c520601c798514",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "css/experience.css": "3aa202593197d919380323410f703be5f5033fc8ff2c32ba9fae8bc5ef9fda09",
+    "index.html": "b86b65dee9a8b7836cb8a018fcdb5ef1001af6093aa794cbef22dd8238877154",
+    "js/material-assets.js": "7f241f0f1b901b5da38237675d7052fce0bd52b229f54f52b6d07754e3ac3741",
+    "assets/material/manifest.json": "ef82a584655265f20fa0bc51b0c6363dd875b704672f5efc3ad5ce0ec7e66a7f",
+    "assets/material/atlases/wukong.png": "0bd843bfd802cd180666829adca0b2d284c054791d7ad132cb1046cc6f26caf1",
+    "tests/v16-world-cohesion.cjs": "2646b7a4dd43319219806ff345e7fdfc905462af3e5b46883622edcea108f50a",
+    "tests/v14-prop-resolution.cjs": "bd54bc85749b63519d0ed6ecf370308808245eaed6d1e07e155d6702dd3de195"
+  },
+  "checks": {
+    "scene": {
+      "report": "audits/v16-cohesion-after.json",
+      "groups": 13,
+      "legalCampaignActions": 4142,
+      "walkingPosesVerifiedAgainstOpaquePixels": true
+    },
+    "ui": {
+      "report": "audits/v10-interaction.json",
+      "groups": 21,
+      "all18Floors": true,
+      "bothEndings": true
+    },
+    "choices": {
+      "report": "audits/v15-choice-interaction.json",
+      "groups": 33
+    },
+    "resolution": {
+      "report": "audits/v14-resolution-v16.json",
+      "cases": 6,
+      "allNativeBitmapsWithinResolution": true,
+      "downstairs": "canvas-geometry at final DPR"
+    },
+    "occlusion": {
+      "report": "audits/v8-b4-occlusion.json",
+      "checks": 2,
+      "fixture": "playthrough-v9-free-mixed-direct-offering.json"
+    },
+    "mural": {
+      "report": "audits/v16-mural-comparison.json",
+      "matchingWorldRegions": [
+        "first",
+        "mechanism",
+        "courtyard"
+      ],
+      "hudChange": "PC control hint intentionally moved"
+    }
+  },
+  "screenshots": [
+    "audits/v16-after-material-first.png",
+    "audits/v16-after-material-courtyard.png",
+    "audits/v16-after-material-courtyard-detail.png",
+    "audits/v16-after-material-mechanism.png",
+    "audits/v16-after-mural-first.png",
+    "audits/v16-after-mural-courtyard.png",
+    "audits/v16-after-mural-courtyard-detail.png",
+    "audits/v16-after-mural-mechanism.png",
+    "audits/v16-after-material-1280-courtyard.png",
+    "audits/v16-after-material-overview.png",
+    "audits/v16-after-material-dpr2.png",
+    "audits/v16-after-offline.png"
+  ],
+  "actualSizeReview": [
+    "audits/v16-before-material-courtyard-detail.png",
+    "audits/v16-after-material-courtyard-detail.png",
+    "audits/v16-after-material-courtyard.png",
+    "audits/v16-after-material-mechanism.png",
+    "audits/v16-live-user-preview.png"
+  ],
+  "preserved": [
+    "18 floors",
+    "Deterministic combat",
+    "Finite resources",
+    "Both art styles",
+    "Direct offline index.html"
+  ],
+  "remaining": [
+    "All-floor bespoke art review",
+    "Fine contact registration for every actor frame",
+    "Human visual judgement and gameplay pacing"
+  ]
+}

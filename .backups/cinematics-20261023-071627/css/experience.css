@@ -1,0 +1,123 @@
+/* Shared PC experience: scene rituals, a traveller's kit, short speech and film-like arrivals. */
+:root{--exp-ink:#111b1b;--exp-cloth:#342e20;--exp-paper:#eee2bf;--exp-gold:#d6b477;--exp-muted:#b3b5a1;--exp-accent:#b5593e}
+html[data-art-style=mural]{--exp-ink:#12393a;--exp-cloth:#234d45;--exp-paper:#f4e6bd;--exp-gold:#e4bc77;--exp-accent:#b9563d}
+mark{color:var(--exp-gold);background:transparent;font-weight:700;text-decoration:underline;text-decoration-color:#d6b47766;text-underline-offset:4px}
+button:focus-visible{outline:2px solid var(--exp-gold);outline-offset:4px}
+/* One scene-wide pause surface. It never occupies a long strip at the side. */
+#modal-root.surface-root{inset:0;z-index:65;pointer-events:auto;padding:0;background:radial-gradient(ellipse at 50% 48%,#101b19eb 15%,#071011e8 80%);display:grid;place-items:center}
+#modal-root.hidden{display:none!important}
+#modal-root .surface-panel,#modal-root[data-kind=ending] .surface-panel{position:relative;inset:auto;width:min(1160px,94vw);height:min(860px,94vh);max-width:none;margin:0;padding:30px 36px 24px;display:flex;flex-direction:column;overflow:hidden;border:0;background:radial-gradient(ellipse at center,#63583b14,transparent 65%);box-shadow:none;outline:0;animation:tableau-enter .22s ease-out}
+#modal-root .surface-panel:before,#modal-root .surface-panel:after{display:none}
+#modal-root .modal-eyebrow,#modal-root .surface-panel h2{text-align:center;padding:0}
+#modal-root .modal-eyebrow{font:13px/1.8 var(--serif);letter-spacing:5px;color:var(--exp-gold);margin:0 0 4px}
+#modal-root .surface-panel h2{font:34px/1.5 var(--serif);letter-spacing:6px;margin:0 0 12px;color:var(--exp-paper)}
+#modal-root .modal-content{margin:0;flex:1;min-height:0;overflow:auto;padding:6px 16px;scrollbar-width:thin;scrollbar-color:#8f7d514d transparent;font:16px/1.8 var(--sans)}
+#modal-root .modal-content p,#modal-root .modal-content li{font-size:16px;line-height:1.8;color:var(--exp-muted)}
+#modal-root .modal-content h3{color:var(--exp-gold);font:21px/1.6 var(--serif)}
+#modal-root .modal-actions{position:static;flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;background:none;border:0;padding:17px 0 0;margin:0;min-height:54px}
+#modal-root .modal-actions button{min-height:42px;min-width:130px;padding:9px 20px;font:16px/1.4 var(--serif);border:0;border-bottom:1px solid #c6a46777;background:linear-gradient(90deg,transparent,#b18a3b22,transparent);color:var(--exp-paper)}
+#modal-root .modal-actions button:disabled{color:#9a9c8c;background:none;opacity:.65}
+#modal-root .modal-close{position:absolute;z-index:2;top:28px;left:25px;right:auto;width:auto;height:40px;padding:5px 13px;font:15px/1.4 var(--serif);color:var(--exp-gold);border:0;background:none}
+#modal-root .modal-footnote{display:none}
+body[data-surface] #game-shell .hud-vitals,body[data-surface] #game-shell .header-tools,body[data-surface] #game-shell .floor-header{opacity:.15;pointer-events:none}
+/* The inventory is arranged on a cloth, with a single selected object's explanation. */
+#modal-root[data-view=inventory] .modal-content{overflow:hidden;padding:0 8px}
+.pilgrim-kit{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;height:100%;max-height:650px;align-items:center}
+.kit-pilgrim{align-self:stretch;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.kit-pilgrim:before{content:"";position:absolute;top:15%;width:210px;height:310px;border-radius:50%;border:1px solid #c8a56233;background:radial-gradient(ellipse,#aa814829,transparent 70%);transform:rotate(-12deg)}
+.kit-pilgrim>canvas{width:210px;height:240px;position:relative;object-fit:contain}
+.kit-pilgrim h3{letter-spacing:5px;margin:6px 0 0}.kit-pilgrim p{font:14px/1.9 var(--serif)!important;text-align:center;margin:4px 0}
+.kit-equipped{display:flex;gap:13px;margin:16px 0}.kit-equipped span{width:69px;height:69px;border:1px solid #c1a66b66;border-radius:50%;display:grid;place-items:center;color:#a69d81;background:#a6883b0f}
+.kit-equipped canvas{width:56px;height:56px}.kit-seals{display:flex;gap:8px;margin:10px 0}.kit-seals i{width:24px;height:24px;display:grid;place-items:center;font:12px var(--serif);border:1px solid #887a594d;transform:rotate(45deg);color:#8b8e7b;font-style:normal}.kit-seals i.lit{color:var(--exp-gold);border-color:var(--exp-gold);box-shadow:0 0 13px #cba45b33}
+.kit-belongings{display:flex;flex-direction:column;min-height:0;height:100%;justify-content:center;gap:13px}
+.kit-resources{display:flex;justify-content:space-between;gap:20px;font:16px/1.7 var(--serif);padding:0 18px;color:var(--exp-gold)}
+.kit-cloth{position:relative;padding:20px 27px 16px;background:repeating-linear-gradient(2deg,#c9af7529 0 1px,transparent 1px 5px),linear-gradient(120deg,#78603c55,var(--exp-cloth) 35%,#413724bb);border:1px solid #ad8c4e73;clip-path:polygon(2% 3%,96% 0,100% 7%,98% 96%,5% 100%,0 94%);box-shadow:inset 0 0 45px #0006}
+.kit-cloth:before{content:"";position:absolute;inset:10px;border:1px dashed #d0aa6155;pointer-events:none}
+.kit-gear{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px 18px}
+.kit-token{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:116px;padding:8px 5px;border:0;border-bottom:1px solid transparent;background:none;color:var(--exp-paper);font:15px/1.6 var(--serif);position:relative}
+.kit-token canvas{width:70px;height:70px;filter:drop-shadow(0 5px 5px #0007);transition:transform .2s}
+.kit-token .token-status{font:12px/1.5 var(--sans);color:var(--exp-muted)}
+.kit-token.unfound canvas{opacity:.48;filter:grayscale(1)}.kit-token.selected{border-bottom-color:var(--exp-gold);background:radial-gradient(ellipse,#e0b95a22,transparent 70%)}.kit-token.selected canvas{transform:translateY(-3px)}.kit-token.equipped:after{content:"佩";position:absolute;right:13px;top:11px;border:1px solid var(--exp-gold);font-size:12px;line-height:22px;width:22px;color:var(--exp-gold)}
+.kit-supplies{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:0 16px}
+.kit-supply{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:8px;min-height:70px;border:0;border-bottom:1px solid #8c794d66;background:none;color:var(--exp-paper);text-align:left;font:16px/1.6 var(--serif)}.kit-supply canvas{width:54px;height:54px}.kit-supply small{display:block;font:12px/1.5 var(--sans);color:var(--exp-muted)}.kit-supply.selected{border-color:var(--exp-gold)}
+.kit-description{margin:0 18px;min-height:97px;display:grid;grid-template-columns:1fr auto;gap:6px 20px;align-items:center}.kit-description h3{margin:0!important;font-size:20px!important}.kit-description p{margin:0!important;grid-column:1;font-size:15px!important;line-height:1.7!important}.kit-description button{grid-row:1/3;grid-column:2;min-height:44px;min-width:130px;border:1px solid #b99a5c88;background:#a57b2d22;color:var(--exp-gold);font:16px var(--serif);padding:8px 13px}.kit-description button:disabled{color:#a3a595;background:none}.kit-description [data-kit-reason]{font-size:12px;color:var(--exp-muted)}
+.kit-tools{display:flex;gap:18px;justify-content:center}.kit-tools button,.kit-tools label{font:13px/1.5 var(--serif);color:var(--exp-muted);background:none;border:0;cursor:pointer}
+/* Scene-bound lotus ritual: three large offerings on an arc, no scroll container. */
+.altar-ritual{position:fixed;z-index:45;width:470px;pointer-events:none;color:var(--exp-paper);padding:0 10px;text-align:center;filter:drop-shadow(0 3px 4px #000)}
+.altar-ritual[hidden]{display:none!important}.altar-ritual button{pointer-events:auto}
+.ritual-aura{position:absolute;inset:-16px -24px -18px;border-radius:50%;background:radial-gradient(ellipse,#0a1d18f5 0,#0a1d18eb 48%,#0a1d18a6 63%,transparent 77%);border-top:1px solid #bfa16266;pointer-events:none}
+.ritual-heading{position:relative;display:flex;gap:25px;justify-content:center;font:18px/1.8 var(--serif);letter-spacing:2px;padding:0 0 13px}.ritual-heading b{font:15px/2 var(--serif);color:var(--exp-gold)}
+.ritual-offerings{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:17px;padding:13px 6px 0}
+.ritual-petal{min-height:137px;padding:4px 0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;position:relative;background:radial-gradient(ellipse at 50% 62%,#071912bb 30%,transparent 72%);border:0;color:var(--exp-paper);font:18px/1.5 var(--serif);letter-spacing:0}
+.ritual-petal:nth-child(2){transform:translateY(-20px)}.ritual-petal canvas{width:54px;height:54px;filter:drop-shadow(0 0 10px #cfa95555);border-bottom:1px solid #c6a15d77;border-radius:50%;padding:4px}
+.ritual-petal small{font:15px/1.5 var(--serif);color:var(--exp-gold);white-space:nowrap;letter-spacing:0}.ritual-petal em{font:13px/1.5 var(--sans);color:#c8ccb7;font-style:normal;white-space:nowrap}.ritual-petal kbd{position:absolute;top:3px;left:12px;color:var(--exp-muted);font:12px var(--mono)}.ritual-petal:disabled{opacity:1}.ritual-petal:disabled canvas{opacity:.75;filter:grayscale(.4)}.ritual-petal:disabled small{color:#e0cca1}
+.ritual-minor{position:relative;display:flex;justify-content:center;gap:12px;padding:4px 0 9px}.ritual-minor button{font:13px/1.6 var(--serif);border:0;border-bottom:1px solid #b19b6955;background:#0f201a99;padding:6px 8px;color:var(--exp-paper);min-height:38px}.ritual-minor button:disabled{color:#b2b19a;background:#14211b88}.ritual-minor kbd{font-size:11px;margin-right:5px;color:var(--exp-gold)}
+.altar-ritual footer{position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:0 18px;align-items:center}.altar-ritual footer>span{width:100%;font:14px/1.7 var(--serif);min-height:24px;color:var(--exp-gold)}.altar-ritual footer>button{border:0;background:none;color:var(--exp-paper);font:13px/1.5 var(--serif);min-height:34px}.altar-ritual footer kbd{font:11px var(--mono);color:var(--exp-muted)}
+.altar-ritual[data-purpose=choice] .ritual-aura{inset:-12px -18px;background:radial-gradient(ellipse,#0b201af5 0,#0b201aef 52%,#0b201a99 69%,transparent 83%)}
+.decision-petal{pointer-events:auto;background:linear-gradient(180deg,#b9953e19,#0d211c9c);border:0;border-top:1px solid #b6a15c88;padding:12px 14px;color:var(--exp-paper);text-align:left;display:flex;flex-direction:column;gap:7px;letter-spacing:0;min-height:260px}
+.decision-petal h3{font:19px/1.5 var(--serif);color:var(--exp-gold);margin:0}.decision-petal kbd{font:11px var(--mono);color:var(--exp-muted)}.decision-cost,.decision-reward{font:15px/1.6 var(--serif);white-space:normal}.decision-reward{color:var(--exp-gold)}.decision-petal p{font:14px/1.7 var(--serif);color:var(--exp-paper);margin:2px 0 5px}.decision-petal strong{font:14px/1.6 var(--serif);color:var(--exp-gold);margin-top:auto}.decision-petal:disabled{opacity:1;background:#12231d99}.decision-petal:disabled strong{color:#c8bba0}.decision-petal.selected{border-top-width:3px;background:linear-gradient(180deg,#bc94332f,#142b21d9)}
+.decision-petal kbd{align-self:flex-start;width:22px;text-align:center;line-height:20px;background:none}.decision-reward{display:flex;flex-wrap:wrap;gap:2px 10px}.decision-reward small{width:100%;font:12px/1.6 var(--serif);color:var(--exp-muted)}.decision-reward>span{white-space:nowrap}.decision-cost{white-space:nowrap}
+.altar-ritual[data-purpose=choice] .ritual-minor p{font:14px/1.6 var(--serif);color:var(--exp-paper);margin:12px 0 3px}.altar-ritual[data-purpose=choice] .ritual-offerings{gap:20px;padding-top:0}
+/* One sentence of dialogue, with an independent actionable objective. */
+#story-dock.story-dock:not(.collapsed){left:50%;right:auto;translate:-50% 0;bottom:122px;width:min(800px,calc(100vw - 100px));max-height:none;padding:11px 22px;border:0;background:linear-gradient(90deg,transparent,#101e1af5 8%,#101e1af5 92%,transparent);clip-path:polygon(1% 0,98% 1%,100% 91%,96% 100%,0 96%)}
+html[data-art-style=mural] #story-dock.story-dock:not(.collapsed){background:linear-gradient(90deg,transparent,#123c3df5 8%,#123c3df5 92%,transparent)}
+#story-dock .story-scene{grid-template-columns:76px minmax(0,1fr);gap:17px;padding:0 12px 5px}
+#story-dock .story-unfold{position:relative;min-height:24px;padding:0 12px;font-size:15px;line-height:1.6;letter-spacing:2px}
+#story-dock .story-unfold>span:last-child{display:none}#story-counter{font-size:12px!important;letter-spacing:1px}
+#story-dock #story-title{display:none}#story-dock #story-text{font:21px/1.8 var(--serif);margin:0 0 6px;min-height:40px;max-height:none;color:var(--exp-paper)}
+#story-dock .story-scene .dialogue-portrait{height:86px;width:76px;align-self:center;padding:0}#story-dock .dialogue-portrait canvas{image-rendering:auto}
+#story-dock #story-objective{font:14px/1.6 var(--sans)!important;min-height:0;margin:0;color:var(--exp-gold)}
+#story-dock .story-controls{margin-top:5px;justify-content:flex-end;gap:20px}#story-dock #story-collapse{display:none}#story-dock .story-controls button{font-size:14px;min-height:32px;padding:2px 3px;border:0;background:none}#story-dock #story-skip{color:var(--exp-muted)}
+#story-dock.collapsed{bottom:124px;left:25px;max-width:350px;background:linear-gradient(90deg,#142a20e8,transparent);border:0;translate:0}
+body[data-speaking=true] #game-shell .context-card,body[data-speaking=true] #target-link{display:none!important}
+.journey-guide{position:fixed;z-index:18;left:24px;bottom:125px;max-width:min(415px,29vw);padding:8px 13px;border-left:2px solid var(--exp-gold);background:linear-gradient(90deg,#13231beb 78%,transparent);color:var(--exp-paper);display:grid;grid-template-columns:auto 1fr;gap:3px 9px}
+.journey-guide>span{font:12px/1.9 var(--serif);color:var(--exp-gold);letter-spacing:2px}.journey-guide>strong{font:16px/1.6 var(--serif);font-weight:400}.journey-guide button{grid-column:2;background:none;border:0;justify-self:start;font:13px/1.6 var(--sans);color:var(--exp-gold);padding:3px 0;min-height:28px}.journey-guide kbd{font:11px var(--mono);margin-left:6px}
+body:not([data-scene-started]) .journey-guide,body[data-surface] .journey-guide,body[data-speaking=true] .journey-guide,body[data-ritual=true] .journey-guide,body[data-entry=true] .journey-guide,body[data-cinematic=true] .journey-guide{display:none}
+/* Arrival is acknowledged, and never competes with dialogue or a tooltip. */
+#floor-entry.floor-entry{position:fixed;inset:0;translate:0;width:100%;z-index:57;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10vh 20px 16vh;pointer-events:auto;color:var(--exp-paper);background:radial-gradient(ellipse,#071916bb 0,#0a181980 45%,#07191b11 85%);opacity:1;transition:none;animation:none;text-shadow:0 2px 10px #000}
+#floor-entry[hidden]{display:none!important}#floor-entry small{font-size:15px;letter-spacing:8px;color:var(--exp-gold)}#floor-entry h2{font:54px/1.7 var(--serif);letter-spacing:12px;margin:12px 0 3px}#floor-entry h2:after{width:240px}
+#floor-entry [data-entry-atmosphere]{font:18px/1.9 var(--serif);letter-spacing:2px;margin:9px 0 22px;max-width:700px}
+.entry-goal{display:flex;flex-direction:column;gap:7px;align-items:center;max-width:740px}.entry-goal>span{font:13px/1.8 var(--serif);letter-spacing:5px;color:var(--exp-gold)}.entry-goal strong{font:22px/1.6 var(--serif);font-weight:400}
+#floor-entry .entry-continue{margin-top:32px;min-height:46px;padding:10px 34px;background:linear-gradient(90deg,transparent,#bd954c33,transparent);border:0;border-bottom:1px solid var(--exp-gold);font:17px var(--serif);letter-spacing:3px;color:var(--exp-paper);pointer-events:auto}
+#floor-entry kbd{font:12px var(--mono);margin-left:12px;color:var(--exp-gold)}
+body[data-entry=true] #story-dock,body[data-entry=true] #game-shell .context-card,body[data-entry=true] #toast,body[data-entry=true] #target-link{display:none!important}
+/* The target capsule has room for complete words and one primary action. */
+#game-shell .context-card.has-selection,#game-shell .context-card.has-selection.is-enemy{width:350px;max-width:350px;max-height:none;padding:13px 15px;border:0;border-left:2px solid var(--exp-gold);border-radius:0;background:linear-gradient(95deg,#142019f7,#142019ee);box-shadow:none}
+html[data-art-style=mural] #game-shell .context-card.has-selection{background:linear-gradient(95deg,#123b3cf7,#123b3cee)}
+#game-shell .context-card .context-heading{padding:0 0 5px;margin:0;min-height:0;gap:8px}
+#game-shell .context-card .context-heading h2{font:18px/1.5 var(--serif);white-space:normal;overflow:visible;text-overflow:clip;letter-spacing:.4px;overflow-wrap:normal;word-break:normal}
+#game-shell .context-card .target-brief{font:15px/1.65 var(--sans);max-height:none;margin:4px 0 7px;white-space:normal;overflow:visible;text-overflow:clip;color:var(--exp-muted)}
+#game-shell .context-card .scene-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:7px}
+#game-shell .context-card .context-button{width:auto;flex:1 1 150px;min-width:145px;min-height:42px;padding:8px 12px;white-space:nowrap;word-break:keep-all;font:15px/1.5 var(--serif);border:0;border-bottom:1px solid #bd9d5c88;background:#aa78352a;color:var(--exp-paper)}
+#game-shell .context-card .scene-rule-button{width:auto;flex:none;min-width:55px;min-height:40px;white-space:nowrap;word-break:keep-all;font:14px/1.5 var(--serif);padding:6px 9px;border:0;background:none;color:var(--exp-gold)}
+#game-shell .context-card .context-button:disabled{color:#aeb0a2;background:none}.context-card.has-selection:after,.context-card.has-selection:before{display:none}
+#game-shell .context-card.expanded{width:440px;max-width:440px}.context-card .scene-inline{max-height:min(52vh,420px);font:15px/1.8 var(--sans);padding-top:8px}
+body[data-ritual=true] #game-shell .context-card,body[data-ritual=true] #story-dock,body[data-ritual=true] #target-link{display:none!important}
+/* Brief central skill strip: illustrative action above the actual scene. */
+.ability-cinematic{position:fixed;z-index:58;left:50%;top:42%;translate:-50% -50%;width:min(1080px,89vw);height:260px;padding:9px 28px;pointer-events:none;color:var(--exp-paper);background:linear-gradient(90deg,transparent,#101b18f2 8%,#101b18f2 92%,transparent);border-top:1px solid #d2b27188;border-bottom:1px solid #d2b27188;clip-path:polygon(0 6%,97% 0,100% 94%,3% 100%)}
+.ability-cinematic[hidden]{display:none!important}.ability-cinematic:after{content:"";position:absolute;bottom:0;left:6%;height:2px;width:calc(88% * var(--cast-progress,0));background:var(--exp-gold)}
+.ability-cinematic>canvas{display:block;width:100%;height:190px;margin-top:17px}.cast-heading{position:absolute;z-index:1;left:38px;top:13px;display:flex;align-items:baseline;gap:17px}.cast-heading small{font:12px var(--serif);letter-spacing:4px;color:var(--exp-gold)}.cast-heading h2{font:27px/1.5 var(--serif);letter-spacing:5px;margin:0}.cast-heading p{font:14px/1.5 var(--serif);margin:0;color:var(--exp-muted)}
+.cast-ending{position:absolute;bottom:16px;left:40px;right:40px;display:flex;justify-content:space-between;align-items:center;font:14px/1.5 var(--serif)}.cast-ending strong{font-weight:400;color:var(--exp-gold)}.cast-ending button{pointer-events:auto;font:12px var(--serif);padding:5px 8px;border:0;background:none;color:var(--exp-muted)}.cast-ending kbd{font:10px var(--mono);margin-left:4px}
+body[data-cinematic=true] #game-shell .context-card,body[data-cinematic=true] #story-dock,body[data-cinematic=true] #target-link{display:none!important}
+/* Short full-game utility menus share the same centre and return rule. */
+.journey-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:24px 30px;max-width:850px;margin:25px auto}.journey-menu button{min-height:100px;border:0;border-bottom:1px solid #ae925765;background:radial-gradient(ellipse,#b5923d16,transparent);font:23px/1.6 var(--serif);letter-spacing:3px;color:var(--exp-paper)}.journey-menu button small{display:block;font:13px/1.6 var(--sans);letter-spacing:1px;color:var(--exp-gold)}
+.character-tableau{display:flex;gap:50px;align-items:center;justify-content:center;height:100%}.character-tableau>canvas{width:260px;height:320px;object-fit:contain}.character-values{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;min-width:400px}.character-values>div{border-bottom:1px solid #a18a554d;padding-bottom:12px;color:var(--exp-muted);font:16px var(--serif)}.character-values strong{display:block;color:var(--exp-paper);font:36px/1.7 var(--serif)}
+.style-tableau{height:100%;display:flex;gap:35px;align-items:center;justify-content:center}.style-tableau button{width:43%;min-height:350px;display:flex;flex-direction:column;align-items:center;gap:12px;background:none;border:0;border-bottom:1px solid #b6a26955;color:var(--exp-paper);padding:15px}.style-tableau img{width:100%;height:240px;object-fit:cover;mask-image:linear-gradient(black 65%,transparent)}.style-tableau strong{font:25px/1.6 var(--serif);letter-spacing:4px}.style-tableau span{font:15px var(--serif);color:var(--exp-muted)}.style-tableau small{font:13px/2 var(--sans);color:var(--exp-gold)}.style-tableau .chosen{border-bottom-color:var(--exp-gold);background:radial-gradient(ellipse at bottom,#ba8a3022,transparent 70%)}
+.game-guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin:15px auto 25px;max-width:950px}.game-guide-grid article{padding:10px 20px;border-left:1px solid #aa91565e}.game-guide-grid kbd{display:block;color:var(--exp-gold);font:28px/1.5 var(--serif)}
+@keyframes tableau-enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-height:800px){#modal-root .surface-panel{padding-top:18px;padding-bottom:13px}.kit-token{min-height:95px}.kit-token canvas{width:57px;height:57px}.kit-description{min-height:85px}.kit-cloth{padding-top:14px;padding-bottom:10px}.kit-pilgrim>canvas{height:200px}.kit-belongings{gap:8px}.pilgrim-kit{gap:15px}#floor-entry h2{font-size:44px}.ability-cinematic{height:220px}.ability-cinematic>canvas{height:155px}}
+body[data-motion=reduced] #modal-root .surface-panel,body[data-motion=reduced] .kit-token canvas{animation:none;transition:none}
+/* Readable combat rhythm and voluntary, scene-bound route comparisons. */
+#game-shell .context-card .encounter-read{font:13px/1.6 var(--sans);color:var(--exp-muted);margin:4px 0 2px}
+.encounter-read span{display:block;color:var(--exp-gold)}
+#game-shell .context-card .scene-tactics{max-height:min(46vh,370px)}
+#game-shell .context-card.has-selection:has(.scene-tactics){width:390px;max-width:390px}
+.scene-tactics .tactics-caption{font:16px/1.5 var(--serif);color:var(--exp-paper);margin:0 0 5px}
+.growth-comparison{padding:9px 0;border-top:1px solid #b5a16e44;position:relative}
+.growth-comparison>div{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.growth-comparison b{font:15px var(--serif);color:var(--exp-paper)}.growth-comparison>div>span{font:12px var(--sans);color:var(--exp-muted)}
+.growth-comparison p{display:flex;align-items:baseline;gap:7px;margin:5px 0 1px!important;font:13px/1.5 var(--sans)}
+.growth-comparison strong{font:17px var(--mono);color:var(--exp-paper)}.growth-comparison em{font:12px var(--sans);font-style:normal;color:var(--exp-gold);margin-left:auto}
+#game-shell .growth-comparison .scene-rule-button{font:13px var(--sans);min-height:32px;padding:3px 0}.growth-comparison button[aria-pressed=true]{color:#a9dfc3!important}
+.scene-tactics>small,.scene-tactics .tactics-empty{display:block;font:12px/1.7 var(--sans);color:var(--exp-muted);margin:5px 0}
+@media(prefers-reduced-motion:reduce){#modal-root .surface-panel,.kit-token canvas{animation:none;transition:none}}

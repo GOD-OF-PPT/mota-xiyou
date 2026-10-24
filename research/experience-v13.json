@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-23",
+  "status": "implemented_and_pc_verified_with_subjective_boundaries",
+  "review": "docs/v13-experience-review.md",
+  "guidance": "docs/v10-immersion-plan.md",
+  "acceptance": "audits/v13-final.json",
+  "goals": [
+    {"id": "C1", "name": "重新设计双画境宝箱并保留真实封印条件", "status": "implemented_and_verified", "evidence": ["audits/v13-material-chest-locked.png", "audits/v13-mural-chest-ready.png", "audits/v13-chest-story.json"]},
+    {"id": "S1", "name": "剧情从单场展示增强为人物对景、显现与结果三镜", "status": "implemented_and_verified", "evidence": ["audits/v13-seal-shot-1.png", "audits/v13-seal-shot-2.png", "audits/v13-seal-shot-3.png", "audits/v13-chest-story.json"]},
+    {"id": "P1", "name": "减少重复神通和回访揭幕对探索节奏的打断", "status": "implemented_and_verified", "evidence": ["audits/v13-pacing-settings.png", "audits/v13-chest-story.json", "audits/v10-interaction.json"]},
+    {"id": "P2", "name": "明确可识别目标、可理解代价、可控行动和结果反馈的优化顺序", "status": "analysis_and_selected_changes_delivered", "evidence": ["docs/v13-experience-review.md"]}
+  ],
+  "image_generation": {"mode": "built-in image_gen", "prompts": "research/v13-image-prompts.json", "registration": "research/chest-v13-registration.json", "assets": ["assets/material/props/chest-v13.png", "assets/mural/props/chest-v13.png"]},
+  "iterations": [
+    {"finding": "旧目标卡样式统一隐藏了新宝箱肖像", "repair": "只为宝箱目标启用实际图标，不改变普通敌人布局", "status": "runtime_and_visual_rechecked"},
+    {"finding": "直接继承透明图集旧坐标会使新宝箱的地面接点和点击范围失准", "repair": "只读测量新 PNG 的绘画范围，为两种画境记录各自的锚点和比例", "status": "legally_selected_and_collected"}
+  ],
+  "video": "audits/v13-story-preview.webm",
+  "boundaries": ["existing deterministic rules and finite rewards retained", "first-use cast history is session-only, preference is separate from campaign save", "no new voiceover or character animation atlas", "representative original-size PC visual inspection", "subjective fun, narrative impact and first-play guidance require human evaluation", "mobile and broad browser matrix deferred"]
+}

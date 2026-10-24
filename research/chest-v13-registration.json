@@ -1,0 +1,32 @@
+{
+  "material": {
+    "sourceW": 1374,
+    "sourceH": 1145,
+    "contentBounds": [
+      120,
+      83,
+      1264,
+      1080
+    ],
+    "anchor": {
+      "x": 692.0,
+      "y": 1000
+    },
+    "logicalScale": 0.038461538461538464
+  },
+  "mural": {
+    "sourceW": 1254,
+    "sourceH": 1254,
+    "contentBounds": [
+      88,
+      193,
+      1208,
+      1156
+    ],
+    "anchor": {
+      "x": 648.0,
+      "y": 1079
+    },
+    "logicalScale": 0.039285714285714285
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "stairChoke": {
+    "floor": 2,
+    "position": [
+      7,
+      11
+    ],
+    "target": [
+      5,
+      11
+    ],
+    "path": [
+      "right",
+      "right",
+      "up",
+      "up",
+      "up",
+      "up",
+      "up",
+      "up",
+      "up",
+      "up",
+      "left",
+      "left",
+      "down",
+      "down",
+      "left",
+      "left",
+      "down",
+      "down",
+      "right",
+      "right",
+      "down",
+      "down",
+      "left",
+      "left",
+      "left",
+      "left",
+      "left",
+      "left",
+      "down",
+      "down",
+      "right",
+      "right",
+      "right",
+      "right"
+    ],
+    "stairs": [
+      6,
+      11
+    ],
+    "message": "The geometric two-step path crosses an automatic down-stair tile."
+  },
+  "leverAutoToggle": {
+    "floor": 2,
+    "from": [
+      2,
+      5
+    ],
+    "target": [
+      7,
+      3
+    ],
+    "route": [
+      "right",
+      "down",
+      "down",
+      "left",
+      "left",
+      "down",
+      "down",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "up",
+      "up",
+      "left",
+      "left",
+      "up",
+      "up",
+      "right",
+      "right",
+      "up",
+      "up"
+    ],
+    "lever": {
+      "id": "f1-1",
+      "x": 3,
+      "y": 5,
+      "label": "启钟扳杆"
+    },
+    "before": true,
+    "after": false
+  }
+}

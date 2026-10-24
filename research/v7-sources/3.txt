@@ -1,0 +1,5 @@
+Xbox Accessibility Guideline 117 - Microsoft Game Dev | Microsoft Learn
+https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/117
+Retrieved 2026-10-22, HTTP 200
+Short excerpt: pause or completely stop any content that scrolls, blinks, auto-updates, or otherwise moves
+Note: Moving and distracting presentation should be stoppable or removable.

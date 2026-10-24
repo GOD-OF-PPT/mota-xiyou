@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-23",
+  "status": "fixed_and_pc_verified",
+  "review": "docs/v19-lotus-layout-review.md",
+  "source": {
+    "js/ui.js": "401556ca038f31e34362210fb70bce7c6cd116a7ac53dd7a9a6dcce739b6c791",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "index.html": "de1b857c1b6a7b5f872b36e6f585fca17cb513652e4446a826d94d9eae48c4dc",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e"
+  },
+  "checks": {
+    "layout": {
+      "report": "audits/v19-lotus-after.json",
+      "groups": 19,
+      "passed": true
+    },
+    "choices": {
+      "report": "audits/v19-choices-regression-choice-interaction.json",
+      "groups": 33,
+      "passed": true
+    },
+    "campaign": {
+      "report": "audits/v19-campaign-regression.json",
+      "groups": 21,
+      "passed": true
+    }
+  },
+  "rootCause": "Contract-specific choiceCount attribute persisted into lotus; unscoped pseudo-element injected comparison help into the lotus footer. Dense arc layout had no separate text/action rows.",
+  "changes": [
+    "Clear contract-only state and scope its CSS",
+    "Separate currency, benefit, price, shortage and action rows",
+    "Independent feedback and keyboard help",
+    "Responsive scene placement that preserves the full player silhouette",
+    "Preserve focus after settled transactions"
+  ],
+  "viewports": [
+    [
+      1267,
+      1034
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1100,
+      650
+    ],
+    [
+      1989,
+      1113
+    ]
+  ],
+  "styles": [
+    "material",
+    "mural"
+  ],
+  "dpr": [
+    1,
+    2
+  ],
+  "visualReview": [
+    "audits/v19-before-reported-lotus.png",
+    "audits/v19-after-reported-lotus.png",
+    "audits/v19-after-material-1100.png",
+    "audits/v19-after-lotus-detail.png",
+    "audits/v19-after-lotus-dpr2.png",
+    "audits/v19-live-lotus.png"
+  ],
+  "live": {
+    "url": "http://127.0.0.1:8765/",
+    "continuedLatestAutosave": true,
+    "floor": 2,
+    "coins": 9,
+    "orbs": 1,
+    "purchaseOrOfferingPerformed": false
+  },
+  "campaignAndResourcesUnchanged": true,
+  "offlineDirectIndexVerified": true
+}

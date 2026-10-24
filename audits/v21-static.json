@@ -1,0 +1,19 @@
+{
+  "syntax": [
+    "js\\art-style.js",
+    "js\\assets.js",
+    "js\\audio.js",
+    "js\\engine.js",
+    "js\\film-art.js",
+    "js\\finale.js",
+    "js\\journey.js",
+    "js\\material-assets.js",
+    "js\\presentation.js",
+    "js\\renderer.js",
+    "js\\story-director.js",
+    "js\\tactics.js",
+    "js\\ui.js",
+    "js\\world.js"
+  ],
+  "oldInteractionLabels": []
+}

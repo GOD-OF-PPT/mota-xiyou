@@ -1,0 +1,64 @@
+{
+  "errors": [],
+  "cases": {
+    "fight": {
+      "ok": true,
+      "hpBefore": 755,
+      "hpAfter": 745,
+      "events": [
+        "attack"
+      ],
+      "skipInvariant": true
+    },
+    "door": {
+      "ok": true,
+      "hpBefore": 686,
+      "hpAfter": 686,
+      "events": [
+        "door"
+      ],
+      "skipInvariant": true
+    },
+    "pickup": {
+      "ok": true,
+      "hpBefore": 620,
+      "hpAfter": 620,
+      "events": [
+        "pickup"
+      ],
+      "skipInvariant": true
+    },
+    "cast": {
+      "ok": true,
+      "hpBefore": 869,
+      "hpAfter": 869,
+      "events": [
+        "magic"
+      ],
+      "skipInvariant": true
+    }
+  },
+  "styleInvariant": true,
+  "reduced": {
+    "calm": true,
+    "motion": "reduced",
+    "geometry": {
+      "x": 1,
+      "y": 1.5,
+      "w": 20,
+      "h": 12,
+      "cellSize": 72,
+      "offsetX": 0,
+      "offsetY": 18,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "tileX": 1,
+      "tileY": 1
+    },
+    "style": "material",
+    "smoothing": true
+  },
+  "legalTrace": "playthrough-v5-free-mixed-direct-bypasses.json",
+  "directStateMutation": false
+}

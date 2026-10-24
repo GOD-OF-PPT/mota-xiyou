@@ -1,0 +1,111 @@
+{
+  "viewport": {
+    "width": 1989,
+    "height": 1113
+  },
+  "legalSetup": [
+    "left",
+    "up",
+    "left"
+  ],
+  "captures": [
+    {
+      "tag": "before",
+      "dpr": 1,
+      "name": "props",
+      "file": "audits/v18-detail-before-props-dpr1.png",
+      "clip": {
+        "x": 800,
+        "y": 691,
+        "width": 332,
+        "height": 251
+      }
+    },
+    {
+      "tag": "before",
+      "dpr": 1,
+      "name": "monster-buddha",
+      "file": "audits/v18-detail-before-monster-buddha-dpr1.png",
+      "clip": {
+        "x": 492,
+        "y": 137,
+        "width": 484,
+        "height": 455
+      }
+    },
+    {
+      "tag": "before",
+      "dpr": 2,
+      "name": "props",
+      "file": "audits/v18-detail-before-props-dpr2.png",
+      "clip": {
+        "x": 800,
+        "y": 691,
+        "width": 332,
+        "height": 251
+      }
+    },
+    {
+      "tag": "before",
+      "dpr": 2,
+      "name": "monster-buddha",
+      "file": "audits/v18-detail-before-monster-buddha-dpr2.png",
+      "clip": {
+        "x": 492,
+        "y": 137,
+        "width": 484,
+        "height": 455
+      }
+    },
+    {
+      "tag": "after",
+      "dpr": 1,
+      "name": "props",
+      "file": "audits/v18-detail-after-props-dpr1.png",
+      "clip": {
+        "x": 800,
+        "y": 691,
+        "width": 332,
+        "height": 251
+      }
+    },
+    {
+      "tag": "after",
+      "dpr": 1,
+      "name": "monster-buddha",
+      "file": "audits/v18-detail-after-monster-buddha-dpr1.png",
+      "clip": {
+        "x": 492,
+        "y": 137,
+        "width": 484,
+        "height": 455
+      }
+    },
+    {
+      "tag": "after",
+      "dpr": 2,
+      "name": "props",
+      "file": "audits/v18-detail-after-props-dpr2.png",
+      "clip": {
+        "x": 800,
+        "y": 691,
+        "width": 332,
+        "height": 251
+      }
+    },
+    {
+      "tag": "after",
+      "dpr": 2,
+      "name": "monster-buddha",
+      "file": "audits/v18-detail-after-monster-buddha-dpr2.png",
+      "clip": {
+        "x": 492,
+        "y": 137,
+        "width": 484,
+        "height": 455
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Launcher counterbalances the suggested order, publishes tasks, and fits a PC viewport",
+    "All six task entries load legitimate budgets, accept a keyboard step and manual save, and resume after refresh",
+    "Scoped clear/enumeration and separate participant, version, task, objective and round do not leak progress",
+    "Missing task identity fails closed without exposing the production save",
+    "Production autosave, manual save, art preference and trial records remain byte-identical",
+    "Frozen baseline and new task assets, isolated saves and resume entry boot offline through file URLs"
+  ],
+  "errors": [],
+  "observedByHuman": false,
+  "protectedFiles": {
+    "index.html": "a1c38cefba0666bebc7cddf59c35992e858e86bd1099c77de7bfaa087323d9ce",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/ui.js": "b3aefb7ef9b934e552609e40050e68a06bca4270ec09be468f8139c446864b4e",
+    ".backups/implementation-v23-20261024/index.html": "0aa35a815679d8f4b7a8f296c8d2e80dd754d422cd81a97f95a08eeb74efc652",
+    ".backups/implementation-v23-20261024/js/engine.js": "f632273b3d0395c16d3618617f32047947b0f83ac5d001e36775fcca20bd45aa"
+  },
+  "passed": true
+}

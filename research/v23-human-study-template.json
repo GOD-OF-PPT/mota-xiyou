@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "status": "pending_human_observation",
+  "observedByHuman": false,
+  "participants": [],
+  "participantSchema": {
+    "id": "匿名编号",
+    "experience": "new 或 experienced",
+    "observedByHuman": false,
+    "sessions": [
+      {
+        "scenario": "first-three 或 ferry 或 silk",
+        "variant": "baseline 或 new",
+        "order": 1,
+        "trialId": "实际题目 ID",
+        "startHash": "实际公开起点哈希",
+        "budgetGroup": "同一题型相同起始预算的配对名称",
+        "objective": "explore、keep-key、lantern-way、atk 或 def；填写实际目标",
+        "round": "1；填写同一对照轮次",
+        "completed": null,
+        "thinkingSeconds": null,
+        "newInformationSeconds": null,
+        "executionSeconds": null,
+        "hints": null,
+        "participantQuote": "",
+        "explainsGain": null,
+        "explainsCost": null,
+        "explainsForegone": null,
+        "explainsConcreteOutcome": null,
+        "explainsNextUse": null,
+        "planDescription": "",
+        "triedAnotherGoal": null,
+        "replayReasonQuote": "",
+        "recordingReference": ""
+      }
+    ]
+  }
+}

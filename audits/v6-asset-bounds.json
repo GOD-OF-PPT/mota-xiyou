@@ -1,0 +1,422 @@
+{
+  "material": {
+    "ids": 151,
+    "uniqueFrameGroups": 110,
+    "runtimeFiles": 9,
+    "runtimeBytes": 5479013,
+    "declaredRuntimeBytes": 5479013,
+    "problems": [],
+    "aliases": [
+      [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      [
+        "enemy_monk",
+        "enemy_acolyte"
+      ],
+      [
+        "enemy_ghost",
+        "enemy_bell"
+      ],
+      [
+        "enemy_guard",
+        "enemy_brass",
+        "enemy_reliquary0"
+      ],
+      [
+        "enemy_spider",
+        "enemy_puppet"
+      ],
+      [
+        "enemy_yaksha",
+        "enemy_judge",
+        "enemy_reliquary1"
+      ],
+      [
+        "enemy_dragon",
+        "enemy_flood",
+        "enemy_reliquary2"
+      ],
+      [
+        "enemy_boss",
+        "enemy_heart",
+        "enemy_boss_0"
+      ],
+      [
+        "npc_whitewutian",
+        "npc_whiteWutian"
+      ],
+      [
+        "enemy_boss_1",
+        "enemy_reliquary5"
+      ],
+      [
+        "enemy_furnace",
+        "enemy_reliquary3"
+      ],
+      [
+        "enemy_mirror",
+        "enemy_reliquary4"
+      ],
+      [
+        "item_key_yellow",
+        "item_yellowKey"
+      ],
+      [
+        "item_key_blue",
+        "item_blueKey"
+      ],
+      [
+        "item_key_red",
+        "item_redKey"
+      ],
+      [
+        "item_atk",
+        "item_amber",
+        "item_ruby"
+      ],
+      [
+        "item_def",
+        "item_jade",
+        "item_emerald"
+      ],
+      [
+        "item_coin",
+        "item_coins"
+      ],
+      [
+        "item_hp",
+        "item_peach",
+        "item_bigPeach",
+        "item_feast"
+      ],
+      [
+        "prop_gate",
+        "prop_bars"
+      ],
+      [
+        "prop_relic",
+        "prop_fragment"
+      ],
+      [
+        "prop_resonator",
+        "prop_choice"
+      ],
+      [
+        "floor_blue",
+        "terrain_cloud"
+      ],
+      [
+        "wall_jade",
+        "terrain_water"
+      ],
+      [
+        "wall_blue",
+        "terrain_gap"
+      ],
+      [
+        "landmark_jade",
+        "landmark_buddha"
+      ],
+      [
+        "landmark_amber",
+        "landmark_pagoda"
+      ],
+      [
+        "landmark_blue",
+        "landmark_dragon"
+      ],
+      [
+        "landmark_crimson",
+        "landmark_furnace"
+      ],
+      [
+        "landmark_violet",
+        "landmark_scripture"
+      ],
+      [
+        "landmark_gold",
+        "landmark_blacklotus"
+      ],
+      [
+        "fx_staff",
+        "fx_hit"
+      ],
+      [
+        "ui_backdrop",
+        "ui_motif"
+      ]
+    ],
+    "dimensions": {
+      "assets/material/atlases/wukong.png": {
+        "width": 384,
+        "height": 384,
+        "bytes": 72108,
+        "sha256": "171712e23ce6ccc9c494645d9ec9f61aa439b57c43e0c167598465706153ee2d"
+      },
+      "assets/material/atlases/portraits.png": {
+        "width": 896,
+        "height": 128,
+        "bytes": 211912,
+        "sha256": "12b7792a81c8bcedd8f6e05911cbe656ab7000d90936e9401e3327beeb348ef4"
+      },
+      "assets/material/atlases/creatures.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 88123,
+        "sha256": "9e8074e77747e820e779f269a2c714ca484aec71a20a5c6eb49ec2c7b4c967a9"
+      },
+      "assets/material/atlases/enemies.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 105552,
+        "sha256": "f65a779c32faf966645ae28a5a397cb0ef8c81f411313c0c3965574dae060208"
+      },
+      "assets/material/atlases/objects.png": {
+        "width": 384,
+        "height": 448,
+        "bytes": 213812,
+        "sha256": "61cae5beb29fd4c3b21842ee559c352f3860cfa1cc6b14f31b8461d7e3c0937d"
+      },
+      "assets/material/atlases/terrain.png": {
+        "width": 768,
+        "height": 576,
+        "bytes": 1068945,
+        "sha256": "b3d3ab58ee33874c09ec66f764c49749ea6efd603fd049b22babe7becf59136d"
+      },
+      "assets/material/atlases/landmarks.png": {
+        "width": 768,
+        "height": 640,
+        "bytes": 584304,
+        "sha256": "ac77b87b6ddf2ddbdad585eca61e756b24e4e4a014a7289dd24c8b0624db857c"
+      },
+      "assets/material/atlases/fx.png": {
+        "width": 384,
+        "height": 576,
+        "bytes": 335309,
+        "sha256": "c83b9f48eb1f3cdb1e9091a251734fa601769f22f8d7ca25bde88eb7f3747109"
+      },
+      "assets/material/ui_backdrop.png": {
+        "width": 1619,
+        "height": 971,
+        "bytes": 2798948,
+        "sha256": "3971ac5e0ab4da129f4a5d03a69bcb7e3e2e659872ce9b11df56e7bad06f4449"
+      }
+    }
+  },
+  "mural": {
+    "ids": 145,
+    "uniqueFrameGroups": 105,
+    "runtimeFiles": 9,
+    "runtimeBytes": 7250669,
+    "declaredRuntimeBytes": 7250669,
+    "problems": [],
+    "aliases": [
+      [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      [
+        "enemy_monk",
+        "enemy_acolyte"
+      ],
+      [
+        "enemy_ghost",
+        "enemy_bell"
+      ],
+      [
+        "enemy_guard",
+        "enemy_brass",
+        "enemy_reliquary0"
+      ],
+      [
+        "enemy_spider",
+        "enemy_puppet"
+      ],
+      [
+        "enemy_yaksha",
+        "enemy_judge",
+        "enemy_reliquary1"
+      ],
+      [
+        "enemy_dragon",
+        "enemy_flood",
+        "enemy_reliquary2"
+      ],
+      [
+        "enemy_boss",
+        "enemy_heart",
+        "enemy_boss_0"
+      ],
+      [
+        "npc_whitewutian",
+        "npc_whiteWutian"
+      ],
+      [
+        "enemy_boss_1",
+        "enemy_reliquary5"
+      ],
+      [
+        "enemy_furnace",
+        "enemy_reliquary3"
+      ],
+      [
+        "enemy_mirror",
+        "enemy_reliquary4"
+      ],
+      [
+        "item_key_yellow",
+        "item_yellowKey"
+      ],
+      [
+        "item_key_blue",
+        "item_blueKey"
+      ],
+      [
+        "item_key_red",
+        "item_redKey"
+      ],
+      [
+        "item_atk",
+        "item_amber",
+        "item_ruby"
+      ],
+      [
+        "item_def",
+        "item_jade",
+        "item_emerald"
+      ],
+      [
+        "item_coin",
+        "item_coins"
+      ],
+      [
+        "item_hp",
+        "item_peach",
+        "item_bigPeach",
+        "item_feast"
+      ],
+      [
+        "prop_gate",
+        "prop_bars"
+      ],
+      [
+        "prop_relic",
+        "prop_fragment"
+      ],
+      [
+        "prop_resonator",
+        "prop_choice"
+      ],
+      [
+        "floor_blue",
+        "terrain_cloud"
+      ],
+      [
+        "wall_jade",
+        "terrain_water"
+      ],
+      [
+        "wall_blue",
+        "terrain_gap"
+      ],
+      [
+        "landmark_jade",
+        "landmark_buddha"
+      ],
+      [
+        "landmark_amber",
+        "landmark_pagoda"
+      ],
+      [
+        "landmark_blue",
+        "landmark_dragon"
+      ],
+      [
+        "landmark_crimson",
+        "landmark_furnace"
+      ],
+      [
+        "landmark_violet",
+        "landmark_scripture"
+      ],
+      [
+        "landmark_gold",
+        "landmark_blacklotus"
+      ],
+      [
+        "fx_staff",
+        "fx_hit"
+      ]
+    ],
+    "dimensions": {
+      "assets/mural/atlases/wukong.png": {
+        "width": 384,
+        "height": 384,
+        "bytes": 116502,
+        "sha256": "0ae6bd3aa44a357183220f7b6e1818436c2e7c22222aca2a1065705d94a29d1e"
+      },
+      "assets/mural/atlases/creatures.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 118452,
+        "sha256": "4781762e8c1336b9fe95b347189b65c50d740534dbdaac7522e6e11c37c40aa4"
+      },
+      "assets/mural/atlases/enemies.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 108397,
+        "sha256": "9a526345b3f99baa3f7b8c42f6ea0edb22f3bd288340b53e8abfd350a94d1ccb"
+      },
+      "assets/mural/atlases/objects.png": {
+        "width": 384,
+        "height": 448,
+        "bytes": 201872,
+        "sha256": "56b125a3b73e43e524311613e6f438c1135bcbcc13c371eff34ad1b4ee48af45"
+      },
+      "assets/mural/atlases/terrain.png": {
+        "width": 768,
+        "height": 576,
+        "bytes": 1232583,
+        "sha256": "fcc3fa28bed908f9602ccbff0bbd17a6e7577618dd2c422d772cd50ed06720a8"
+      },
+      "assets/mural/atlases/landmarks.png": {
+        "width": 768,
+        "height": 640,
+        "bytes": 794043,
+        "sha256": "c588931ba98ba7aa8940e4b714fb88d087a3f93b26b750da78e97b4377a1070c"
+      },
+      "assets/mural/atlases/fx.png": {
+        "width": 384,
+        "height": 576,
+        "bytes": 173710,
+        "sha256": "c785be35f261b57527a2e62306dc339ddf45cfae5ab39b77b75616115a407139"
+      },
+      "assets/mural/ui_backdrop.png": {
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3609033,
+        "sha256": "3bc6ce69f4042a37d6081340283911b8613307a00b8dadb0b60996d9d74f055e"
+      },
+      "assets/mural/ui_motif.png": {
+        "width": 384,
+        "height": 1024,
+        "bytes": 896077,
+        "sha256": "dfeb5dae5d12e7fd9d967ddc713f78e28fac4bdd8bb048559c23b8465b1938fd"
+      }
+    }
+  },
+  "coverage": {
+    "missingMaterial": [],
+    "extraMaterial": [
+      "portrait_lantern",
+      "portrait_bajie",
+      "portrait_tangseng",
+      "portrait_whitewutian",
+      "portrait_qiao",
+      "portrait_nezha"
+    ],
+    "sharedPngHashes": 0
+  }
+}

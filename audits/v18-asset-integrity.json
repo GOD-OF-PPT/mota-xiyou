@@ -1,0 +1,34 @@
+{
+  "reportedContamination": {
+    "prop_lamp": {
+      "beforeComponents": [
+        10739,
+        1213,
+        844,
+        159
+      ],
+      "afterComponents": [
+        10813
+      ]
+    },
+    "prop_monument": {
+      "beforeComponents": [
+        17043,
+        86,
+        50,
+        49
+      ],
+      "afterComponents": [
+        672302
+      ]
+    }
+  },
+  "checks": [
+    "prop_lamp has no opaque detached neighbour fragments",
+    "prop_monument has no opaque detached neighbour fragments",
+    "Stone contact is on the actual centered base rather than lower neighbour debris",
+    "All source rectangles, native actor feet and unchanged original-source hashes are valid",
+    "All six landmark families use independently resolved HD assets"
+  ],
+  "passed": true
+}

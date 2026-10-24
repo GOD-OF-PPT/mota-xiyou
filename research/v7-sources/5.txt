@@ -1,0 +1,5 @@
+CanvasRenderingContext2D: imageSmoothingEnabled property - Web APIs | MDN
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled
+Retrieved 2026-10-22, HTTP 200
+Short excerpt: When enlarging images, the default resizing algorithm will blur the pixels
+Note: Nearest sampling preserves pixel art; continuous material art needs enough source pixels.

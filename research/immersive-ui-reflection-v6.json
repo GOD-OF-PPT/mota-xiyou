@@ -1,0 +1,82 @@
+{
+  "revision": 6,
+  "scope": "全视口沉浸场景、角落HUD、无蒙版游戏卷册、非阻断对白与明确战斗确认",
+  "files": [
+    "index.html",
+    "js/ui.js",
+    "css/immersive.css"
+  ],
+  "directions": {
+    "material": "玄金古寺：湿墨黑、旧金、朱红、暗玉",
+    "mural": "青绿壁画：矿彩、金线、矿青"
+  },
+  "evidence": [
+    "tests/v6-ui-first-results.json",
+    "tests/v6-ui-final-results.json",
+    "tests/v6-ui-target.png",
+    "tests/v6-ui-mobile.png",
+    "tests/v6-ui-rules.png"
+  ],
+  "reflection": [
+    {
+      "problem": "旧界面将棋盘夹在状态卷轴和外框之间。",
+      "change": "canvas固定覆盖完整视口，背景/框架不再占布局；仅左上生命、灵息、钥匙和右上位置/菜单常驻。C才打开人物详情。",
+      "verified": "1440×900、390×844、844×390的canvas矩形与视口完全相等，无页面溢出，无role=dialog/aria-modal/backdrop。"
+    },
+    {
+      "problem": "旧剧情借用阻断式确认层，无法边听边走。",
+      "change": "对白独立页队列与底部角色条，移动只收起；Space推进或展开；入塔/觉醒/NPC均不调用卷册层。",
+      "verified": "移动后同一页码仍在且对白折叠，游戏坐标可正常变化；C详情打开时暂隐对白与通知，队列不消费。"
+    },
+    {
+      "problem": "首次战斗侧签仍复用大段battleHTML，宽286且可能落在中央。",
+      "change": "重写普通敌情摘要，限228宽：名称、预计损失/战后生命、小迎战/规则；属性、特性、临界和公式由主动规则按钮进入边缘卷册。",
+      "verified": {
+        "desktopCard": [
+          228,
+          134
+        ],
+        "mobileCard": [
+          228,
+          130
+        ],
+        "position": "屏幕右侧，世界中央与敌人保持可见"
+      }
+    },
+    {
+      "problem": "方向连按、旧零损快结算或原生Space按钮行为可能越过玩家确认。",
+      "change": "任何碰敌只选中预览；自动接近完成后停下；非repeat E或点击迎战才结算；聚焦迎战/交互按钮的Space被消费。零损偏好改为精简说明。",
+      "verified": "定向操作中repeat E、重复朝敌方向、聚焦迎战后Space均未发生战斗；明确E才按真实预览扣损。完整流程由独立验收确认。"
+    },
+    {
+      "problem": "窗口派发的synthetic KeyboardEvent.target不是Element，首轮抛matches错误。",
+      "change": "键盘目标先归一到Element或activeElement，再检查表单/按钮；保留所有键盘和触屏入口。",
+      "verified": "首轮错误保留于v6-ui-combat-first-results.json；后续v6-ui-final-results.json errors为空并明确replaces历史结果。"
+    },
+    {
+      "problem": "强制near使桌面丢失全局规划；强制fit使手机只有约18px一格。",
+      "change": "按当前viewport计算fit格宽，低于28px时默认near，其他默认fit；M/F后记录主动选择，resize不覆盖。",
+      "verified": "390×844默认near；M手选fit后切844×390保持fit。默认只影响相机，不改角色、地图或存档。"
+    },
+    {
+      "problem": "人物抽屉在手机仍继承旧53px高度；材质对白沿用矿青底。",
+      "change": "详情明确height:auto与top/bottom约束，手机可完整滚动；材质头像优先独立脸肩PNG，底色湿墨黑，壁画仍矿青。",
+      "verified": "手机角色抽屉矩形282×718，C打开/关闭不改state；真实portrait_<kind>与scene actor资源分离。"
+    },
+    {
+      "problem": "仅移除遮罩仍可能像网页弹窗。",
+      "change": "场景目标是带观/问/启/得印记的符签，目标改变一次220ms扫线；通知为边缘得/回符字；新对白短笔触揭幕；主动交互卷册从边缘展开。",
+      "verified": "没有圆角alert和中心通知，减弱动态有静态等价；通知和普通剧情不使用showSurface。"
+    },
+    {
+      "problem": "双套透明图标反复重画会残留前一风格像素。",
+      "change": "静态canvas重画先clearRect；风格事件重画人物、技能、钥匙、法器及剧情头像，失败保留原风格。",
+      "verified": "两风格异步切换前后JSON游戏state相等；真实资源进度独立于游戏资源；静态清除由主控最终复核。"
+    }
+  ],
+  "browserDiscipline": "本代理每次仅单Chrome，所有进程在finally关闭；末轮后交renderer，再交独立验收。",
+  "boundaries": [
+    "没有修改引擎、世界、renderer、assets、README。",
+    "独立代理执行18层、旧档、boss准备、双结局和全程回放；本记录不以截图替代其结论。"
+  ]
+}

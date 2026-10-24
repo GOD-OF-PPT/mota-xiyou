@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "floorCount": 18,
+    "uniqueMaps": 18,
+    "entities": 387,
+    "enemies": 114,
+    "enemyTraits": {
+      "normal": 26,
+      "first": 15,
+      "counter": 12,
+      "magic": 28,
+      "armor": 20,
+      "venom": 12,
+      "boss": 1
+    },
+    "altars": 19,
+    "choiceGroups": [
+      "locks",
+      "silk",
+      "residual",
+      "compassion",
+      "sevenWounds",
+      "bellVow",
+      "ferryVow",
+      "emberVow"
+    ],
+    "treasures": [
+      "iron",
+      "lotus",
+      "thorn",
+      "tide",
+      "ember",
+      "mirror"
+    ],
+    "activeAbilitiesLearnedAtFloors": [
+      3,
+      6,
+      9
+    ],
+    "laterRelics": [
+      "floor12 passive ward",
+      "floor15 final-key return requirement"
+    ],
+    "twoTraceSpellKindSequencesEqual": true
+  },
+  "routes": [
+    {
+      "file": "tests/playthrough-v9-free-mixed-direct-offering.json",
+      "actions": 4142,
+      "steps": 3928,
+      "stepPercent": 94.83,
+      "quietSteps": 3795,
+      "quietPercent": 91.62,
+      "quietRevisits": 2362,
+      "longestQuietRun": 50,
+      "equipmentChanges": 2,
+      "casts": 24,
+      "mana": 34,
+      "refills": 18,
+      "final": {
+        "won": true,
+        "ending": "release",
+        "hp": 43,
+        "coins": 2,
+        "mana": 6,
+        "choices": {
+          "bellVow": "offering",
+          "locks": "free",
+          "ferryVow": "offering",
+          "silk": "atk",
+          "sevenWounds": "rescue",
+          "residual": "offering",
+          "emberVow": "offering"
+        }
+      }
+    },
+    {
+      "file": "tests/playthrough-v9-gold-def-anchor-offering.json",
+      "actions": 3850,
+      "steps": 3648,
+      "stepPercent": 94.75,
+      "quietSteps": 3514,
+      "quietPercent": 91.27,
+      "quietRevisits": 2083,
+      "longestQuietRun": 50,
+      "equipmentChanges": 2,
+      "casts": 24,
+      "mana": 34,
+      "refills": 18,
+      "final": {
+        "won": true,
+        "ending": "release",
+        "hp": 160,
+        "coins": 10,
+        "mana": 6,
+        "choices": {
+          "bellVow": "offering",
+          "locks": "gold",
+          "ferryVow": "offering",
+          "silk": "atk",
+          "sevenWounds": "rescue",
+          "residual": "offering",
+          "emberVow": "offering"
+        }
+      }
+    }
+  ]
+}

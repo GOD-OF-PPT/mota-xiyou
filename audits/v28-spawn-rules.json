@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "actionsCompared": 4176,
+  "addedLegalActions": [
+    {
+      "type": "step",
+      "args": [
+        "up"
+      ]
+    }
+  ],
+  "resourceFieldsCompared": [
+    "hp",
+    "atk",
+    "def",
+    "mana",
+    "maxMana",
+    "coins",
+    "keys",
+    "elixirs",
+    "orbs",
+    "equipped",
+    "relics",
+    "fragments",
+    "choices",
+    "quests",
+    "won",
+    "ending",
+    "kills",
+    "purchases",
+    "removed",
+    "terrain",
+    "switches",
+    "tides",
+    "rescued",
+    "treasures",
+    "selfAwakened",
+    "visited"
+  ],
+  "final": {
+    "hp": 43,
+    "mana": 6,
+    "coins": 2,
+    "ending": "release",
+    "turn": 4176
+  },
+  "legacyStartPreserved": true,
+  "all18EntriesClearOfSolidProps": true
+}

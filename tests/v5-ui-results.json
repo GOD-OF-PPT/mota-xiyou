@@ -1,0 +1,188 @@
+{
+  "desktop": {
+    "width": 1366,
+    "height": 768,
+    "scrollWidth": 1366,
+    "scrollHeight": 768,
+    "canvas": {
+      "x": 423,
+      "y": 151,
+      "w": 500,
+      "h": 500,
+      "bottom": 651
+    },
+    "ability": {
+      "x": 418,
+      "y": 683,
+      "w": 102,
+      "h": 49,
+      "bottom": 732
+    },
+    "interact": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "bottom": 0
+    },
+    "hero": {
+      "x": 28,
+      "y": 149,
+      "w": 196,
+      "h": 518.578125,
+      "bottom": 667.578125
+    },
+    "context": {
+      "x": 1122,
+      "y": 149,
+      "w": 216,
+      "h": 556.78125,
+      "bottom": 705.78125
+    },
+    "assets": {
+      "loaded": 9,
+      "total": 9,
+      "failed": []
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "scrollHeight": 844,
+    "canvas": {
+      "x": 13,
+      "y": 189,
+      "w": 364,
+      "h": 364,
+      "bottom": 553
+    },
+    "ability": {
+      "x": 7,
+      "y": 582,
+      "w": 75.1875,
+      "h": 48,
+      "bottom": 630
+    },
+    "interact": {
+      "x": 262,
+      "y": 634,
+      "w": 68,
+      "h": 41,
+      "bottom": 675
+    },
+    "hero": {
+      "x": 6,
+      "y": 51,
+      "w": 378,
+      "h": 53,
+      "bottom": 104
+    },
+    "context": {
+      "x": 111,
+      "y": 180,
+      "w": 270,
+      "h": 224.984375,
+      "bottom": 404.984375
+    },
+    "assets": {
+      "loaded": 9,
+      "total": 9,
+      "failed": []
+    }
+  },
+  "landscape": {
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "scrollHeight": 390,
+    "canvas": {
+      "x": 304,
+      "y": 112,
+      "w": 242,
+      "h": 242,
+      "bottom": 354
+    },
+    "ability": {
+      "x": 709,
+      "y": 50,
+      "w": 122,
+      "h": 35,
+      "bottom": 85
+    },
+    "interact": {
+      "x": 707,
+      "y": 342,
+      "w": 126,
+      "h": 40,
+      "bottom": 382
+    },
+    "hero": {
+      "x": 150,
+      "y": 102,
+      "w": 132,
+      "h": 279.09375,
+      "bottom": 381.09375
+    },
+    "context": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "bottom": 0
+    },
+    "assets": {
+      "loaded": 9,
+      "total": 9,
+      "failed": []
+    }
+  },
+  "shortMobile": {
+    "width": 390,
+    "height": 668,
+    "scrollWidth": 390,
+    "scrollHeight": 668,
+    "canvas": {
+      "x": 71,
+      "y": 189,
+      "w": 248,
+      "h": 248,
+      "bottom": 437
+    },
+    "ability": {
+      "x": 65,
+      "y": 466,
+      "w": 52,
+      "h": 48,
+      "bottom": 514
+    },
+    "interact": {
+      "x": 261.796875,
+      "y": 518,
+      "w": 64.203125,
+      "h": 41,
+      "bottom": 559
+    },
+    "hero": {
+      "x": 6,
+      "y": 51,
+      "w": 378,
+      "h": 53,
+      "bottom": 104
+    },
+    "context": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "bottom": 0
+    },
+    "assets": {
+      "loaded": 9,
+      "total": 9,
+      "failed": []
+    }
+  },
+  "questClosed": true,
+  "errors": []
+}

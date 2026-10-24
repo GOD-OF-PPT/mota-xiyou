@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": [
+    "Chapter-crossing undo and redo preserve exact archive metadata as well as full state",
+    "Malformed version, foreign campaign and excess record imports leave the active game and archive untouched"
+  ]
+}

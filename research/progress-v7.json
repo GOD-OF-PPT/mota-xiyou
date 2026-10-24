@@ -1,0 +1,24 @@
+{
+  "status": "superseded_by_user_bug_queue",
+  "currentPriority": "research/bug-queue-v8.json；所有兼容性、尺寸与DPR扩展暂停，按用户具体Bug顺序处理",
+  "goal": "修复用户截图中的地图、清晰度、场景提示、技能位置问题，并根据有来源准则审查实施",
+  "reference": "audits/v7-user-reference.png",
+  "scope": [
+    {"request":"全屏地图","implementation":"默认cover探索，M显式整层规划；南沿入口用最多1.5格不可走实体边界墙补偿底栏遮挡","evidence":"tests/v7-renderer-guard-report.json"},
+    {"request":"人物与怪物清晰","implementation":"从原source重建384/256x384动态帧，保持逻辑体量，最终DPR直接绘制；地形384四格材质缓存","evidence":"audits/v7-asset-bounds.json"},
+    {"request":"提示位于人物/怪物周围，不使用网页弹窗","implementation":"当帧实体锚点、邻接气泡、短引线、多候选避让、画外方向标、移动保留有效目标；普通地面不出泡","evidence":"audits/v7-ui-follow-and-labels-fixed.json"},
+    {"request":"技能在下方中间","implementation":"底中图标+名称+真实费用/锁定标识，桌面16px、手机14px，触控44px以上；南沿脚点不被遮住","evidence":"research/interaction-v7-reflection.json"},
+    {"request":"调查准则、形成文档、审查建议并实施","implementation":"直接读取六份公开原站资料，形成G1-G7准则、实测基线和实施纠偏表","evidence":"docs/game-presentation-guidelines.md"}
+  ],
+  "baseline": {"viewport":[2525,1208],"overviewAuthoredCoverage":0.4784,"nearAuthoredCoverage":0.6279,"oldHeroAlphaBounds":[37,47],"tooltipDistanceInCells":18.30,"skillCenterOffsetPx":1116},
+  "reflections": [
+    "仅检查canvas铺满会错过可玩地图两侧大面积远景，因此改为实际地图投影和边界分项测量。",
+    "仅扩大PNG字段或提高canvasDPR不能恢复中间缓存丢失的细节，因此从原图重采样并绕开动态低res缓存。",
+    "图框小、无aria-modal仍可能是脱离目标的网页卡片，必须检查相对目标距离、引线与跟随。",
+    "字体颜色和opacity字段正常仍可被伪元素实际盖住，必须打开原始裁片观察。",
+    "min48仅保护出生点，合法上楼入口仍被底栏盖住；用真实entry验证并明确边界墙构图例外。",
+    "可见精灵拾取与神通格点选择不是同一种输入语义，高身材主体不能拦截架桥/化蝉目标。"
+  ],
+  "pending": ["独立实机矩阵与完整流程","直接file协议离线检查","最终截图与审查记录收尾"],
+  "boundaries": ["玄金为三维材质预渲染二维图集，不是实时3D模型。","边界墙不计为可走地图，不改关卡/碰撞/资源/存档。","不把自动回放、软件帧计时或像素数量当作真人美术偏好和真机性能。"]
+}

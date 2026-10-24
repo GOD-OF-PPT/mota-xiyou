@@ -1,0 +1,263 @@
+{
+  "state": {
+    "version": 4,
+    "levelRevision": 7,
+    "floor": 0,
+    "x": 17,
+    "y": 7,
+    "facing": "down",
+    "hp": 620,
+    "atk": 27,
+    "def": 10,
+    "mana": 6,
+    "maxMana": 6,
+    "coins": 0,
+    "keys": {
+      "yellow": 2,
+      "blue": 1,
+      "red": 0
+    },
+    "relics": [],
+    "externalRelics": 0,
+    "fragments": [],
+    "treasures": [],
+    "equipped": [],
+    "selfAwakened": false,
+    "revealed": {
+      "f0-16": true
+    },
+    "quests": {},
+    "tides": {},
+    "rescued": [],
+    "removed": {
+      "f0-13": true,
+      "f0-8": true,
+      "f0-9": true
+    },
+    "switches": {},
+    "terrain": {},
+    "choices": {},
+    "visited": [
+      0
+    ],
+    "seenIntros": {
+      "0": true,
+      "event:f0-2": true
+    },
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+        "floor": 0,
+        "kind": "intro",
+        "source": "tower:arrival",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "wukong",
+        "speaker": "孙悟空",
+        "chapter": 0
+      },
+      {
+        "title": "归根之匣",
+        "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+        "floor": 0,
+        "kind": "lore",
+        "source": "f0-2",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "stone",
+        "speaker": "归根石刻"
+      }
+    ],
+    "log": [
+      {
+        "text": "获得青玉钥匙 · 开启一扇青门；门永久消失。",
+        "kind": "item",
+        "turn": 37
+      },
+      {
+        "text": "获得黄铜钥匙 · 可开启一扇黄门，也可留到第八层，配合舍弃一枚仙桃供渡灯、开舍利栈道。每次用途都会永久消耗一把。",
+        "kind": "item",
+        "turn": 22
+      },
+      {
+        "text": "获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。",
+        "kind": "item",
+        "turn": 2
+      },
+      {
+        "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+        "kind": "magic",
+        "turn": 0
+      },
+      {
+        "text": "残钟响起。你踏入了自己的因果。",
+        "kind": "story",
+        "turn": 0
+      }
+    ],
+    "elixirs": 1,
+    "orbs": 1,
+    "turn": 41,
+    "defeated": false,
+    "won": false,
+    "ending": null,
+    "bossPlan": "direct",
+    "settings": {
+      "quickZero": false,
+      "showDamage": true,
+      "motion": "standard",
+      "screenShake": false,
+      "music": false,
+      "sfx": false
+    },
+    "purchases": {
+      "atk": 0,
+      "def": 0,
+      "heal": 0
+    },
+    "startedAt": 1792819623457,
+    "kills": 0,
+    "outcomes": [],
+    "walked": {
+      "0:10:18": true,
+      "0:9:18": true,
+      "0:8:18": true,
+      "0:8:17": true,
+      "0:7:17": true,
+      "0:6:17": true,
+      "0:5:17": true,
+      "0:4:17": true,
+      "0:4:16": true,
+      "0:4:15": true,
+      "0:4:14": true,
+      "0:4:13": true,
+      "0:4:12": true,
+      "0:4:11": true,
+      "0:4:10": true,
+      "0:4:9": true,
+      "0:5:9": true,
+      "0:5:8": true,
+      "0:6:8": true,
+      "0:7:8": true,
+      "0:7:7": true,
+      "0:7:6": true,
+      "0:7:5": true,
+      "0:7:4": true,
+      "0:7:3": true,
+      "0:8:3": true,
+      "0:9:3": true,
+      "0:9:2": true,
+      "0:10:2": true,
+      "0:11:2": true,
+      "0:12:2": true,
+      "0:13:2": true,
+      "0:14:2": true,
+      "0:15:2": true,
+      "0:16:2": true,
+      "0:17:2": true,
+      "0:17:3": true,
+      "0:17:4": true,
+      "0:17:5": true,
+      "0:17:6": true,
+      "0:17:7": true
+    }
+  },
+  "savedAt": 1792819623464,
+  "chronicle": {
+    "version": 1,
+    "campaign": 1792819623457,
+    "seq": 1,
+    "seen": [
+      0
+    ],
+    "records": [
+      {
+        "id": 1,
+        "type": "chapter",
+        "key": "chapter:0",
+        "title": "第一回 · 入塔",
+        "state": {
+          "version": 4,
+          "levelRevision": 7,
+          "floor": 0,
+          "x": 10,
+          "y": 18,
+          "facing": "up",
+          "hp": 620,
+          "atk": 24,
+          "def": 10,
+          "mana": 6,
+          "maxMana": 6,
+          "coins": 0,
+          "keys": {
+            "yellow": 1,
+            "blue": 0,
+            "red": 0
+          },
+          "relics": [],
+          "externalRelics": 0,
+          "fragments": [],
+          "treasures": [],
+          "equipped": [],
+          "selfAwakened": false,
+          "revealed": {},
+          "quests": {},
+          "tides": {},
+          "rescued": [],
+          "removed": {},
+          "switches": {},
+          "terrain": {},
+          "choices": {},
+          "visited": [
+            0
+          ],
+          "seenIntros": {
+            "0": true
+          },
+          "journal": [
+            {
+              "title": "黑莲劫 · 入塔",
+              "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+              "floor": 0,
+              "kind": "intro",
+              "source": "tower:arrival",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "chapter": 0
+            }
+          ],
+          "log": [
+            {
+              "text": "残钟响起。你踏入了自己的因果。",
+              "kind": "story",
+              "turn": 0
+            }
+          ],
+          "elixirs": 1,
+          "orbs": 1,
+          "turn": 0,
+          "defeated": false,
+          "won": false,
+          "ending": null,
+          "bossPlan": "direct",
+          "settings": {
+            "quickZero": false,
+            "showDamage": true,
+            "motion": "standard",
+            "screenShake": false,
+            "music": false,
+            "sfx": false
+          },
+          "purchases": {
+            "atk": 0,
+            "def": 0,
+            "heal": 0
+          },
+          "startedAt": 1792819623457,
+          "kills": 0
+        }
+      }
+    ],
+    "returnPoint": null
+  }
+}

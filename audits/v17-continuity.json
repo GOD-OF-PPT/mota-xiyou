@@ -1,0 +1,41 @@
+{
+  "startedAt": "2026-10-23T06:42:32.137Z",
+  "source": {
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "js/renderer.js": "0c2b804046b965349035c3ce44cca118f14e3f9bc6b2e70c818d02f2a93ec8a1",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412",
+    "index.html": "6ea872992de0d22bdf02f6cd34b211eaa8da9a7b0a8587b238c2d6f1cc052b7c",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7"
+  },
+  "checks": [
+    "material 1440 one goal remains on screen and leaves the player visible",
+    "material 1989 one goal remains on screen and leaves the player visible",
+    "material 1280 one goal remains on screen and leaves the player visible",
+    "mural 1440 one goal remains on screen and leaves the player visible",
+    "mural 1989 one goal remains on screen and leaves the player visible",
+    "mural 1280 one goal remains on screen and leaves the player visible",
+    "Journal and scene use the same current goal and return without an action",
+    "A foreign goal opens useful revisit controls, with one real mana payment and no reopen loop",
+    "Acquiring a treasure stays in play and explains that equipment is still required",
+    "Undo clears the settled result and derives the actual current goal",
+    "material milestone returns to a readable real receipt and next goal without duplicate dialogue",
+    "mural milestone returns to a readable real receipt and next goal without duplicate dialogue",
+    "Adaptive skill pacing also avoids repeated interruptions with reduced motion",
+    "Direct offline index.html has the same first goal and safe mark operation"
+  ],
+  "screenshots": [
+    "audits/v17-goal-material-1440.png",
+    "audits/v17-goal-material-1989.png",
+    "audits/v17-goal-material-1280.png",
+    "audits/v17-goal-mural-1440.png",
+    "audits/v17-goal-mural-1989.png",
+    "audits/v17-goal-mural-1280.png",
+    "audits/v17-treasure-handoff.png",
+    "audits/v17-milestone-handoff-material.png",
+    "audits/v17-milestone-handoff-mural.png"
+  ],
+  "errors": [],
+  "passed": true,
+  "finishedAt": "2026-10-23T06:42:46.950Z"
+}

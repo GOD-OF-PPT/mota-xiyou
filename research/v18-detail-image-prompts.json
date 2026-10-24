@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "prompts": [
+    {
+      "asset": "monument",
+      "prompt": "Create ONE standalone transparent production sprite: ONLY the small grey stone memorial stele in row four, column five of the reference sheet. Keep its identity: squat rectangular ancient Chinese stone stele, a compact carved beast/lion crest, unreadable shallow carved panel, two short worn crimson ribbons, and a substantial two-step charcoal stone plinth. No text or readable glyphs. Dark Chinese Journey to the West pre-rendered material style, same family as the reference. Improve sharp native sculptural detail: clear plinth bevels, readable broad stone carvings, restrained weathering rather than noisy grain, no blur or haze. Three-quarter overhead orthographic camera, see the top face of the base at roughly 30 degrees, main light from upper-left. Full silhouette, centered base and straight vertical axis, only the object, no existing or new floor slab, no scenery, no cast shadow baked outside the base, no scattered fragments. At least 1024px tall. Transparent background, no sheet, no other props, no frame or UI. Optimized to remain legible at 90px high.",
+      "transparent_background": true,
+      "reason": "Native-size screenshot review found source illustration still soft after numeric coverage passed"
+    },
+    {
+      "asset": "imp",
+      "prompt": "ONE production-ready transparent full body game sprite: ONLY the small red horned imp in the UPPER LEFT of the reference. Preserve identity: a short lean red-skinned Chinese temple demon, two curved horns, glowing amber eyes, broad impish snarl, sparse dark bronze armor over the torso and red cloth skirt, one compact spiked bronze mace held upright on its LEFT side. Rebuild in genuinely high native detail, with bold clear facial and armor shapes readable at 85 pixels high; reduce tiny noisy ornamentation. Dark Journey to the West pre-rendered game material, upper-left key light, moderate contrast, no bloom or blur. Frontal three-quarter overhead orthographic game camera with slight view of top of head, both feet firmly on the same plane, calm idle stance, entire weapon and horns inside the frame. Keep the mace close to the body so silhouette remains compact and does not poke into adjacent grid cells. At least 1024px tall. Transparent background, no scenery, no floor patch, no baked cast shadow, no detached fragments, no text/UI, no other characters, no atlas or animation strip.",
+      "transparent_background": true,
+      "reason": "Native-size screenshot review found source illustration still soft after numeric coverage passed"
+    }
+  ]
+}

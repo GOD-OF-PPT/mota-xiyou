@@ -1,0 +1,26 @@
+{
+  "errors": [],
+  "physicalRouteChoice": true,
+  "exclusiveScroll": true,
+  "cloneRecall": true,
+  "bossPlans": {
+    "directLoss": "984",
+    "anchorLoss": "736",
+    "echoLoss": "780"
+  },
+  "previewMatchedCommit": true,
+  "complete18Floors": true,
+  "bothEndings": true,
+  "manualLoad": true,
+  "final": {
+    "hp": 1623,
+    "atk": 116,
+    "def": 38,
+    "choices": {
+      "locks": "blue",
+      "silk": "atk",
+      "residual": "offering"
+    },
+    "orbs": 7
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "version": 21,
+  "date": "2026-10-24",
+  "scope": [
+    "F interaction and R camera return",
+    "state-aware short story shots",
+    "two-style high-definition hero and three boss forms",
+    "optional finite deterministic seal arrangement finale"
+  ],
+  "passed": true,
+  "reports": [
+    {
+      "report": "audits/v21-finale-model.json",
+      "passed": true,
+      "checkGroups": 4
+    },
+    {
+      "report": "audits/v21-finale-browser.json",
+      "passed": true,
+      "checkGroups": 15
+    },
+    {
+      "report": "audits/v21-campaign-regression.json",
+      "passed": true,
+      "checkGroups": 21
+    },
+    {
+      "report": "audits/v21-choices-regression-choice-interaction.json",
+      "passed": true,
+      "checkGroups": 33
+    },
+    {
+      "report": "audits/v21-lotus-after.json",
+      "passed": true,
+      "checkGroups": 19
+    },
+    {
+      "report": "audits/v21-chest-story.json",
+      "passed": true,
+      "checkGroups": 12
+    }
+  ],
+  "totalCheckGroups": 104,
+  "source": {
+    "index.html": "f0bf1398179262b39f8652710e3daf470338301906f4493babdd937c95abf015",
+    "js/ui.js": "93614037e5efc7bc992e39395dd9b51aaf7b51df1c590d29aaef52484cc43cf8",
+    "js/journey.js": "8b7c05cef83f1f57fd4d45462c56e5ec489cefa889855ff844734f6474a5857f",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/engine.js": "1bef37efb3bcf382ea5dead3cb96f338e2445efa3bda5184c9d65c66232f03ab",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    "js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
+    "js/audio.js": "66245635ced7061f604074b54b4badbb6ee3f2daee72d738f8d17709055fcf34",
+    "css/finale.css": "3304b85a178cbd97ff6398405b44b2b3f05e92bae2467ad30a80c77e461d2687",
+    "js/assets.js": "cf64e15d2cad827493478c2e86b62debd28966511cb6529f34977d8ef107caa4",
+    "js/material-assets.js": "d61743e5abdadc280683dd3c284c0d27536b1bb170502cc3026441d08825187d",
+    "scripts/prepare_finale_assets.py": "c460b231f6e105c69f2d073a8f7befcdd0f86289275cd53b82bf3e66eb68ff70",
+    "scripts/prepare_material_v18.py": "ec9f2c9810ce86b6b368c24264bb744167b49d97ab6e8256ad08dd95ccd79a3e",
+    "scripts/prepare_mural_assets.py": "9044f0264830c96e7f48cddf168a48747bf4a308405cf19a520101260e10a5e0",
+    "assets/material/finale/heart-three-forms-v21.png": "44d3a357eda419e39928be2ac778279a34e0987f902c101081a659399907dd9f",
+    "assets/material/finale/wukong-cinematic-v21.png": "781e1e7ecee16b13ea1324dd02dc890d4197214644c2c18b99e2f31b85757fd1",
+    "assets/mural/finale/heart-three-forms-v21.png": "a59d79b85c3d77d3bbff54ca1e71d8b19f1bd4e97b84dab7dbd5a33e2f9815e8",
+    "assets/mural/finale/wukong-cinematic-v21.png": "7a89161052c95cd5c46aa5ab886511560911380d79e3cdc65857cfe56992913e"
+  },
+  "visualReview": {
+    "method": "Representative original-size PC screenshots opened individually; layout and asset drawing reviewed visually, beyond source assertions.",
+    "files": [
+      "audits/v21-material-arena-1440.png",
+      "audits/v21-material-arena-1280.png",
+      "audits/v21-mural-arena-1440.png",
+      "audits/v21-arena-dpr2.png",
+      "audits/v21-confrontation.png",
+      "audits/v21-duel-phase-1.png",
+      "audits/v21-duel-phase-2.png",
+      "audits/v21-duel-phase-3.png",
+      "audits/v21-story-release-shot-3.png",
+      "audits/v21-live-resumed.png"
+    ]
+  },
+  "legalProgression": {
+    "method": "Replay original public player actions from a fresh game; load only resulting legal checkpoints for focused real-browser input checks. No added resources or teleportation.",
+    "routes": [
+      "tests/playthrough-v9-free-mixed-direct-offering.json",
+      "tests/playthrough-v9-gold-def-anchor-offering.json"
+    ],
+    "originalCampaignFieldsUnchanged": true,
+    "fullBrowserCampaign": {
+      "floors": 18,
+      "endings": [
+        "release",
+        "keep"
+      ]
+    },
+    "sealComparisonCases": 21
+  },
+  "livePreview": {
+    "url": "http://127.0.0.1:8765/",
+    "chromeTab": "1646801396",
+    "action": "Refreshed existing user tab, continued existing autosave, explicitly acknowledged arrival, opened lotus with F. No new game or manual-save overwrite.",
+    "visibleBeforeAndAfter": {
+      "floor": 2,
+      "hp": 596,
+      "mana": [
+        6,
+        6
+      ],
+      "keys": [
+        2,
+        1,
+        0
+      ],
+      "coins": 9,
+      "orbs": 1,
+      "seals": 0,
+      "externalRelics": 1
+    },
+    "evidence": "audits/v21-live-resumed.png"
+  },
+  "limits": [
+    "Focused PC Chrome and direct offline file checks; mobile and broad compatibility deferred.",
+    "Automated deterministic routes and visual review do not establish new-player comprehension, long-term balance or personal enjoyment.",
+    "New cinematic sound cues execute with existing sound preferences; no independent listening review."
+  ],
+  "backup": ".backups/finale-v21-20261024"
+}

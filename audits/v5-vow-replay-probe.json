@@ -1,0 +1,140 @@
+{
+  "actions": 3905,
+  "failures": [],
+  "won": true,
+  "choices": [
+    {
+      "i": 193,
+      "choice": "bellVow",
+      "option": "passage",
+      "cost": {},
+      "reward": {
+        "quests": {
+          "bellPassage": true
+        }
+      },
+      "before": {
+        "hp": 821,
+        "atk": 27,
+        "def": 10,
+        "coins": 18,
+        "keys": {
+          "yellow": 1,
+          "blue": 1,
+          "red": 0
+        }
+      },
+      "after": {
+        "hp": 821,
+        "atk": 27,
+        "def": 10,
+        "coins": 18,
+        "keys": {
+          "yellow": 1,
+          "blue": 1,
+          "red": 0
+        }
+      },
+      "duplicateRejected": true
+    },
+    {
+      "i": 1310,
+      "choice": "ferryVow",
+      "option": "passage",
+      "cost": {
+        "key": {
+          "color": "yellow",
+          "amount": 1
+        }
+      },
+      "reward": {
+        "quests": {
+          "ferryPassage": true
+        }
+      },
+      "before": {
+        "hp": 480,
+        "atk": 55,
+        "def": 23,
+        "coins": 14,
+        "keys": {
+          "yellow": 1,
+          "blue": 1,
+          "red": 0
+        }
+      },
+      "after": {
+        "hp": 480,
+        "atk": 55,
+        "def": 23,
+        "coins": 14,
+        "keys": {
+          "yellow": 0,
+          "blue": 1,
+          "red": 0
+        }
+      },
+      "duplicateRejected": true
+    },
+    {
+      "i": 3568,
+      "choice": "emberVow",
+      "option": "passage",
+      "cost": {},
+      "reward": {
+        "quests": {
+          "emberPassage": true
+        }
+      },
+      "before": {
+        "hp": 439,
+        "atk": 95,
+        "def": 50,
+        "coins": 86,
+        "keys": {
+          "yellow": 0,
+          "blue": 0,
+          "red": 1
+        }
+      },
+      "after": {
+        "hp": 439,
+        "atk": 95,
+        "def": 50,
+        "coins": 86,
+        "keys": {
+          "yellow": 0,
+          "blue": 0,
+          "red": 1
+        }
+      },
+      "duplicateRejected": true
+    }
+  ],
+  "crossedVowGates": [
+    "f1-v5-bell-gate",
+    "f7-v5-ferry-south",
+    "f7-v5-ferry-north",
+    "f16-v5-ember-gate"
+  ],
+  "skipped": [
+    {
+      "id": "f1-reliquary",
+      "removed": false
+    },
+    {
+      "id": "f7-4",
+      "removed": false
+    },
+    {
+      "id": "f7-5",
+      "removed": false
+    },
+    {
+      "id": "f16-reliquary",
+      "removed": false
+    }
+  ],
+  "fragments": 16,
+  "treasures": 6
+}

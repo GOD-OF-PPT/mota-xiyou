@@ -1,0 +1,19 @@
+{
+  "version":25,
+  "pauseViews":["menu","inventory","character","style","journal","bestiary","collection","guide","settings","load","restart","defeat","awakening","ending-choice","ending","planning","trials"],
+  "sceneLayers":[
+    {"id":"altar-ritual:lotus","purpose":"供签、修行、奉珠与结果","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-campaign-regression.json"]},
+    {"id":"altar-ritual:choice","purpose":"两项及三项取舍、比较与独立确认","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-campaign-regression.json"]},
+    {"id":"context-card","purpose":"战斗、门、机关、宝物、条件与目标对白","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-campaign-regression.json","audits/v25-trials-browser.json"]},
+    {"id":"story-dock","purpose":"短对白、补全文字、推进与收起","evidence":["audits/v25-regression-campaign-regression.json"]},
+    {"id":"quest-scroll","purpose":"楼层经卷与定位；展开时收起重复常驻目标","evidence":["audits/v25-surfaces-browser.json","native UI25 current tab open/close observation"]},
+    {"id":"floor-entry","purpose":"当前层入境、目标和明确继续","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-campaign-regression.json"]},
+    {"id":"ability-cinematic","purpose":"神通与剧情演出；跳过不重新结算","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-campaign-regression.json","audits/v25-regression-finale-browser.json"]},
+    {"id":"final-battle","purpose":"三相三印、公开准备、取消和确认","evidence":["audits/v25-surfaces-browser.json","audits/v25-regression-finale-browser.json"]},
+    {"id":"transient-feedback","purpose":"场景回响、操作结果与画境载入","evidence":["audits/v25-regression-campaign-regression.json","audits/v25-trials-browser.json"]}
+  ],
+  "inputContracts":["Preview and selection never spend resources","Explicit confirmation settles once","Escape returns to the appropriate game or ritual state","Tab remains inside the active pause or ritual","Focused compact choices remain visible","Reduced motion is a static equivalent"],
+  "frozenBaseline":".backups/implementation-v23-20261024/",
+  "implementation":"js/ui.js and css/game-surfaces.css",
+  "humanObservation":false
+}

@@ -1,0 +1,20 @@
+/* An entry ritual for the observation tasks; no participant results are inferred. */
+(() => {
+ 'use strict';const form=document.querySelector('#setup'),params=new URLSearchParams(location.search),goals={'first-three':[['explore','石生心印','归位三枚舍利，唤醒石生心印。']],ferry:[['keep-key','留钥渡水','保留起始黄钥，取得舍利、定风并上行。'],['lantern-way','供灯开栈','供灯经过南北栈门，取得舍利、定风并上行。']],silk:[['atk','破执经之路','取得攻击经、收回丙影，以甲乙接通上行。'],['def','护心经之路','取得护心经、收回丙影，以甲乙接通上行。']]};
+ for(const name of ['participant','round','task','art'])if(params.has(name)&&(name!=='task'||Object.hasOwn(goals,params.get(name)))&&(name!=='art'||['material','mural'].includes(params.get(name))))form.elements[name].value=params.get(name);
+ function options(){const field=form.elements.objective,old=field.value;field.replaceChildren(...goals[form.elements.task.value].map(([value,text])=>new Option(text,value)));if([...field.options].some(o=>o.value===(params.get('objective')||old)))field.value=params.get('objective')||old;}
+ const config=()=>Object.fromEntries(new FormData(form));
+ function refresh(){const c=config(),entries=document.querySelector('#entries');entries.replaceChildren();document.documentElement.dataset.artStyle=c.art;document.querySelector('[data-foyer-style]').textContent=c.art==='mural'?'青绿壁画 · 换境':'玄金古寺 · 换境';document.querySelector('#study-identity').textContent=`${c.participant||'未留名'} · 第 ${c.round||'—'} 轮`;
+  document.querySelectorAll('[data-study-task]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.studyTask===c.task)));
+  document.querySelector('#study-goals').replaceChildren(...goals[c.task].map(([id,label])=>{const b=document.createElement('button');b.type='button';b.dataset.studyGoal=id;b.textContent=label;b.setAttribute('aria-pressed',String(c.objective===id));b.onclick=()=>{form.elements.objective.value=id;refresh();document.querySelector(`[data-study-goal="${id}"]`).focus({preventScroll:true});};return b;}));
+  document.querySelector('#task-text').textContent=goals[c.task].find(g=>g[0]===c.objective)?.[2]||'';
+  document.querySelector('#task-cost').textContent=c.task==='first-three'?'自行决定路线，不要求清空守卫。':c.task==='ferry'?(c.objective==='lantern-way'?'支付 1 黄钥，放弃 90 生命治疗；供灯换取通路。':'保住起始黄钥；先成长还是先补给，由你决定。'):'两卷互斥；至多两影，收影免费，重新驻守耗息。';
+  if(!form.checkValidity()){document.querySelector('#order').textContent='请展开“本次行者”，填写有效编号和轮次。';return;}
+  const digit=Number(c.participant.match(/\d(?=\D*$)/)?.[0]||1),order=digit%2?['baseline','new']:['new','baseline'];document.querySelector('#order').textContent='本次建议顺序：'+order.map(v=>v==='baseline'?'v22 原卷':'v23 新卷').join(' → ');
+  for(const [i,v]of order.entries()){const a=document.createElement('a'),name=document.createElement('span'),edition=document.createElement('small');a.href=`playtest-v23-${v}.html?`+new URLSearchParams(c);name.textContent=i?'再入另一卷':'执棒入境';edition.textContent=`第 ${i+1} 段 · ${v==='baseline'?'v22 原卷':'v23 新卷'}`;a.append(name,edition);entries.append(a);}
+ }
+ options();refresh();form.elements.task.addEventListener('change',()=>{params.delete('objective');options();});form.addEventListener('input',refresh);form.addEventListener('change',refresh);form.addEventListener('submit',e=>e.preventDefault());
+ document.querySelectorAll('[data-study-task]').forEach(b=>b.onclick=()=>{form.elements.task.value=b.dataset.studyTask;form.elements.task.dispatchEvent(new Event('change',{bubbles:true}));});
+ document.querySelector('[data-foyer-style]').onclick=()=>{form.elements.art.value=form.elements.art.value==='mural'?'material':'mural';refresh();};
+ document.querySelector('#download').onclick=()=>{if(!form.reportValidity())return;const c=config(),setup={...c,observedByHuman:false,note:'任务准备信息，不是参与者结果。',versions:Object.fromEntries(['baseline','new'].map(v=>{const f=TOWER_STUDY_FIXTURES[v][c.task];return [v,{trialId:f.id,startHash:f.startHash,budgetGroup:f.budgetGroup,source:f.source}];}))},a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(setup,null,2)],{type:'application/json'}));a.href=url;a.download=`study-${c.participant}-${c.task}-${c.round}-setup.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+})();

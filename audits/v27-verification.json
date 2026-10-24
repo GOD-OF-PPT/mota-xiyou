@@ -1,0 +1,46 @@
+{
+  "startedAt": "2026-10-24T11:37:50.498Z",
+  "runs": [
+    {
+      "file": "tests/v27-context-layout-browser.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-image-skins-browser.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-surfaces-browser.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-planning-browser.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-trials-browser.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-campaign-regression.cjs",
+      "exit": 0
+    },
+    {
+      "file": "tests/v27-study-browser.cjs",
+      "exit": 0
+    }
+  ],
+  "source": {
+    "index.html": "a1c38cefba0666bebc7cddf59c35992e858e86bd1099c77de7bfaa087323d9ce",
+    "js/ui.js": "b3aefb7ef9b934e552609e40050e68a06bca4270ec09be468f8139c446864b4e",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "css/ui-layout.css": "c2bbd52abcbfc67ba370c0ec76dae99151cf8caeb1115fac8ef71bba3f282a17",
+    "playtest-v23-new.html": "e04ba23faf8b719853c244bab4c626861d3724b8c72d6a217b11b52a6567854c",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c"
+  },
+  "finishedAt": "2026-10-24T11:42:37.831Z",
+  "passed": true
+}

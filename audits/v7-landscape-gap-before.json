@@ -1,0 +1,162 @@
+{
+  "phase": "all",
+  "startedAt": "2026-10-22T07:10:36.562Z",
+  "checks": [],
+  "matrix": [],
+  "nativeDraws": [],
+  "projectionHits": [],
+  "skills": [],
+  "screenshots": [],
+  "errors": [],
+  "visualComplete": false,
+  "campaignComplete": false,
+  "sourceIdentity": {
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "js/ui.js": "a478f9c0b9fa5212ea1f17ad24f9430d23e98e949c16f16ac61d67438a963e8c",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "css/immersive.css": "d2ef916fdd0db14c83901bf4c92405cd97811f6c00a0b0001e7354432374f984",
+    "assets/material/manifest.json": "9dfa6b737f27d9b3f4441661afdaeee8240c1766e3d594b27804d51ec30dc5c8",
+    "docs/game-presentation-guidelines.md": "cfd9d4ab36e7549192840ecb8dc44703792bd4c5e9734617022f7dee5ee4f46d"
+  },
+  "lastMeasurement": {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "dpr": 2,
+    "projection": {
+      "x": 0,
+      "y": 6.4375,
+      "w": 17.583333333333332,
+      "h": 8.125,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 844,
+      "cssHeight": 390,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null
+    },
+    "canvas": {
+      "width": 1688,
+      "height": 780
+    },
+    "map": {
+      "x": 0,
+      "y": 0,
+      "w": 844,
+      "h": 390
+    },
+    "coverage": 1,
+    "authored21Coverage": 1,
+    "boundaryWallCoverage": 0,
+    "offmapSceneryCoverage": 0,
+    "boundaryCollisionSamples": [],
+    "southGuardRows": 0,
+    "skills": {
+      "x": 224,
+      "y": 304,
+      "w": 396,
+      "h": 72
+    },
+    "skillsOffset": 0,
+    "target": {
+      "foot": {
+        "x": 312,
+        "y": 219
+      },
+      "body": {
+        "x": 297.625,
+        "y": 196.0875
+      },
+      "bounds": {
+        "x": 277,
+        "y": 174.9375,
+        "w": 41.25,
+        "h": 44.0625
+      },
+      "visible": true,
+      "cell": {
+        "x": 6,
+        "y": 10
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 312,
+        "y": 171
+      },
+      "body": {
+        "x": 312.75,
+        "y": 133.95
+      },
+      "bounds": {
+        "x": 285,
+        "y": 99.75,
+        "w": 55.5,
+        "h": 71.25
+      },
+      "visible": true,
+      "cell": {
+        "x": 6,
+        "y": 9
+      },
+      "ready": true
+    },
+    "bubble": {
+      "x": 356.5,
+      "y": 38.9375,
+      "w": 196,
+      "h": 114.5
+    },
+    "bubbleVisible": true,
+    "placement": "above",
+    "datasetTarget": {
+      "x": 312,
+      "y": 219
+    },
+    "bubbleGap": 43.87838306045472,
+    "footGap": 79.23819411275096,
+    "playerFootGap": 47.840269713391045,
+    "linkVisible": true,
+    "linkFoot": {
+      "x": 312,
+      "y": 219
+    },
+    "directionVisible": false,
+    "style": "material",
+    "cacheDensity": 6,
+    "terrain": {
+      "width": 2016,
+      "height": 2208
+    },
+    "buffer": {
+      "width": 1,
+      "height": 1
+    },
+    "extension": {
+      "width": 0,
+      "height": 0
+    },
+    "smoothing": {
+      "screen": true,
+      "cache": true,
+      "css": "auto"
+    },
+    "assets": {
+      "revision": 7,
+      "ready": true,
+      "failed": []
+    }
+  },
+  "completed": false,
+  "failure": {
+    "message": "Bubble detached from body 43.87838306045472",
+    "stack": "AssertionError [ERR_ASSERTION]: Bubble detached from body 43.87838306045472\n    at assertBubble (E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:35:388)\n    at Object.visual (E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:51:77)\n    at async E:\\githome\\mota\\tests\\v7-targeted-visual.cjs:5:86"
+  }
+}

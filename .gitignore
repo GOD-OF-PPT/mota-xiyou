@@ -1,0 +1,47 @@
+# Generated browser captures and diagnostic logs stay on the development machine.
+/audits/**/*.png
+/audits/**/*.jpg
+/audits/**/*.jpeg
+/audits/**/*.webp
+/audits/**/*.gif
+/tests/**/*.png
+/tests/**/*.jpg
+*.log
+
+# Representative release evidence, referenced by the current delivery notes.
+!/audits/v27-material-inventory-629.png
+!/audits/v27-material-choice-3-629.png
+!/audits/v28-material-spawn-629.png
+!/audits/v29-material-npc-command-629.png
+!/audits/v29-material-speech-629.png
+
+# Optional local tooling; the shipped game needs none of these directories.
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+coverage/
+playwright-report/
+test-results/
+.cache/
+.tmp/
+
+# Machine-specific secrets, editor state, and OS metadata.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
+
+# Do not ignore .backups/: frozen v22 and milestone source snapshots are
+# explicit dependencies of the comparison entry, replay tools and checks.

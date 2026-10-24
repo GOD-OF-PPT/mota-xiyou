@@ -1,0 +1,54 @@
+{
+  "checks": [
+    "material loads four project-bound transparent skins; objective, paper, ritual and marking preserve exact state in three PC sizes",
+    "mural loads four project-bound transparent skins; objective, paper, ritual and marking preserve exact state in three PC sizes",
+    "A failed generated asset is reported, leaves a readable original surface and still permits normal play",
+    "Direct file index loads all four local material assets with network disabled"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v26-material-objective-629.png",
+    "audits/v26-material-objective-1280.png",
+    "audits/v26-material-objective-1440.png",
+    "audits/v26-material-marked-object.png",
+    "audits/v26-material-ritual-materials.png",
+    "audits/v26-mural-objective-629.png",
+    "audits/v26-mural-objective-1280.png",
+    "audits/v26-mural-objective-1440.png",
+    "audits/v26-mural-marked-object.png",
+    "audits/v26-mural-ritual-materials.png",
+    "audits/v26-offline-objective.png"
+  ],
+  "timing": [
+    {
+      "style": "material",
+      "readyMilliseconds": 725,
+      "viewport": "629x678",
+      "method": "fresh headless Chrome context with local HTTP; one infrastructure observation, not a human performance claim"
+    },
+    {
+      "style": "material",
+      "objectiveMarkMilliseconds": 81,
+      "method": "browser click-to-selection observation; finite sample"
+    },
+    {
+      "style": "mural",
+      "readyMilliseconds": 244,
+      "viewport": "629x678",
+      "method": "fresh headless Chrome context with local HTTP; one infrastructure observation, not a human performance claim"
+    },
+    {
+      "style": "mural",
+      "objectiveMarkMilliseconds": 36,
+      "method": "browser click-to-selection observation; finite sample"
+    }
+  ],
+  "observedByHuman": false,
+  "source": {
+    "index.html": "b9fb63f3295a8dd69b876603bb156fd05c094672ad06cd0f91d0c0bcbe6735c1",
+    "js/ui.js": "9da509e120865c67abcff4ea53fd0bc187dca55b5281e6ea398ceb46ff992f68",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415"
+  },
+  "passed": true
+}

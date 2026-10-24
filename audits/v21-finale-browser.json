@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "name": "F interacts once, old E is inert, R independently returns the camera"
+    },
+    {
+      "name": "Help and visible shortcut labels match actual controls"
+    },
+    {
+      "name": "material phase, seal and preparation previews cancel with exact resources"
+    },
+    {
+      "name": "material 1440 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 900,
+      "clientHeight": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "commitVisible": true
+    },
+    {
+      "name": "material 1280 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 720,
+      "clientHeight": 720,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "commitVisible": true
+    },
+    {
+      "name": "material 1989 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 1113,
+      "clientHeight": 1113,
+      "scrollWidth": 1989,
+      "clientWidth": 1989,
+      "commitVisible": true
+    },
+    {
+      "name": "mural phase, seal and preparation previews cancel with exact resources"
+    },
+    {
+      "name": "mural 1440 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 900,
+      "clientHeight": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "commitVisible": true
+    },
+    {
+      "name": "mural 1280 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 720,
+      "clientHeight": 720,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "commitVisible": true
+    },
+    {
+      "name": "mural 1989 full encounter text and controls fit",
+      "out": [],
+      "scrollHeight": 1113,
+      "clientHeight": 1113,
+      "scrollWidth": 1989,
+      "clientWidth": 1989,
+      "commitVisible": true
+    },
+    {
+      "name": "Three phase choreography consumes the same one settled transaction; skip and F cannot replay it",
+      "damage": 884,
+      "orbs": 1
+    },
+    {
+      "name": "Undo restores the exact pre-fight resources"
+    },
+    {
+      "name": "Reduced motion keeps the same planner and a static final story beat"
+    },
+    {
+      "name": "DPR 2 keeps native canvas backing resolution and bounded controls",
+      "w": 2464,
+      "css": 1232
+    },
+    {
+      "name": "Direct offline index loads both encounter code and local finale assets"
+    }
+  ],
+  "screenshots": [
+    "audits/v21-confrontation.png",
+    "audits/v21-material-arena-1440.png",
+    "audits/v21-material-arena-1280.png",
+    "audits/v21-material-arena-1989.png",
+    "audits/v21-mural-arena-1440.png",
+    "audits/v21-mural-arena-1280.png",
+    "audits/v21-mural-arena-1989.png",
+    "audits/v21-duel-phase-1.png",
+    "audits/v21-duel-phase-2.png",
+    "audits/v21-duel-phase-3.png",
+    "audits/v21-reduced-final-battle.png",
+    "audits/v21-confrontation.png",
+    "audits/v21-arena-dpr2.png",
+    "audits/v21-confrontation.png",
+    "audits/v21-offline-arena.png"
+  ],
+  "errors": [],
+  "method": "Legal public-action checkpoints with actual browser clicks/keys; not a blind user study",
+  "passed": true
+}

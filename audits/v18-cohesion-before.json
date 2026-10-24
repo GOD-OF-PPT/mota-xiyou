@@ -1,0 +1,38 @@
+{
+  "tag": "before",
+  "startedAt": "2026-10-23T10:27:20.251Z",
+  "source": {
+    "js/renderer.js": "2b968c6f95504418e0bf3102c5197e60c7d2ed2d715ba40ae5d015cee4113e5d",
+    "js/material-assets.js": "98f39085e3f6e78ef36889a184101ed4c37a34330bc65ddab8dedfa9691dc27a",
+    "assets/material/manifest.json": "8c797e6aaac8bce6ddaf26acf6791cd4d03e080e84fb84e7810f6a27a592f21f",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7"
+  },
+  "checks": [],
+  "screenshots": [
+    "audits/v18-before-material-first.png",
+    "audits/v18-before-material-courtyard.png",
+    "audits/v18-before-material-courtyard-detail.png",
+    "audits/v18-before-material-mechanism.png",
+    "audits/v18-before-mural-first.png",
+    "audits/v18-before-mural-courtyard.png",
+    "audits/v18-before-mural-courtyard-detail.png",
+    "audits/v18-before-mural-mechanism.png"
+  ],
+  "errors": [],
+  "campaignActions": 4142,
+  "captured": true,
+  "finishedAt": "2026-10-23T10:27:24.899Z",
+  "baselineOverrides": {
+    "js/renderer.js": "0c2b804046b965349035c3ce44cca118f14e3f9bc6b2e70c818d02f2a93ec8a1",
+    "js/material-assets.js": "7f241f0f1b901b5da38237675d7052fce0bd52b229f54f52b6d07754e3ac3741"
+  },
+  "baselineMethod": "Original renderer and asset-manifest JS served by browser route overrides; unchanged current engine, maps and UI; same legally generated checkpoints",
+  "viewport": {
+    "width": 1989,
+    "height": 1113,
+    "dpr": 1
+  }
+}

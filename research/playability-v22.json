@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-24",
+  "analysis": "docs/v20-playability-analysis.md",
+  "plan": "docs/v22-playability-plan.md",
+  "review": "docs/v22-playability-review.md",
+  "evidence": "audits/v22-final.json",
+  "dispositions": {
+    "G01": "implemented: safe familiar-path acceleration, pause and interruption",
+    "G02": "implemented: bounded persistent whole-state chapter/choice recovery with a return point",
+    "G03": "implemented: explicit three-step read-only ordering and pinned comparison",
+    "G04": "partially addressed: existing mechanisms rehearsable; legal alternatives proved; new encounter arrangements deferred",
+    "G05": "implemented: same-route owned-equipment comparison and atomic lantern equip",
+    "G06": "implemented: safe familiar recovery paths and explicit mana/supply budgeting; free lantern refill preserved",
+    "G07": "implemented: concrete settled outcome feedback and session recap",
+    "G08": "deferred as ordered by analysis: independent challenges and local best records",
+    "G09": "measured locally: no evidence-based need for asset compression or engine replacement"
+  },
+  "boundaries": [
+    "G04 new map/encounter compositions not added; this pass implements current-puzzle comparison and proves legal existing alternatives.",
+    "G08 independent chapter challenge mode and local best records deferred per original analysis.",
+    "Human comprehension, fatigue, enjoyment and long-term balance remain unmeasured.",
+    "PC Chrome and offline index focus; mobile and broad browser adaptation deferred.",
+    "Recent outcome recap is session-only; formal quests remain in the campaign save and journal."
+  ]
+}

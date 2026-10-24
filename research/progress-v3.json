@@ -1,0 +1,63 @@
+{
+  "objective": "18层完整升级：六章玩法、界面和表现，十六外舍利与悟空自身第十七颗，逐步反思并修正",
+  "basis": "presentation-and-sequel-brief.json 及已交付v2玩法优化",
+  "status": "complete",
+  "steps": [
+    {
+      "step": "底层章节状态与叙事计数",
+      "before": "五个能力里程碑同时承担舍利计数；机关只处理本层状态，缺少救援、水位和最终自我觉醒标志。",
+      "change": "保留五次成长奖励，增加16外舍利计数；加入全局机关条件、幻壁、救援、水位和无骨觉醒，扩展v1/v2迁移。",
+      "evidence": ["js/engine.js", "tests/v3-rules-check.cjs"],
+      "reflection": "新计数不能扩大数值奖励，也不能让新增任务卡住已越过章节的旧档。迁移补齐已经过关的救援条件；水位拒绝操作需原样恢复状态。",
+      "status": "verified",
+      "result": "五组收集得到3/6/9/12/16外舍利，只发五次原有生命奖励；莲台必须战后邻接并真实觉醒才能结局。章节规则11/11、四套公开行动通关与实际浏览器16+1流程均通过。"
+    },
+    {
+      "step": "六章建筑与角色动作",
+      "before": "单一正面悟空与通用粒子，章节主要通过配色区分。",
+      "change": "加入四朝向、动作关键姿态、六章瓦片与建筑顶端地标、专属神通过程和材质反馈。",
+      "evidence": ["audits/v3-six-realms.png"],
+      "reflection": "主控审图确认六章材质可辨，但炉墙密集红点与塔心金边争夺注意力。已压暗非交互墙面、减少炉墙密度，增强安全地面与机关的主次；角色画廊又暴露命中与出棒姿态相似，补充下沉与棒势跟随。",
+      "status": "verified",
+      "result": "六章地标、四朝向与四段棒势实际出图；所有效果无脚本错误，减弱动态两帧像素相同。追加缩短简洁模式过程、区分金属双扇和木门散片。"
+    },
+    {
+      "step": "六章玩法与关卡因果",
+      "before": "部分中期题主要反复接通本层扳杆与永久镜台，环境主题与故事联系较弱。",
+      "change": "幻壁改变连接；双塔跨层共鸣；八戒解锁安全水轮；高低水各有独有资源袋；三炉读取六处真实机关；七伤救援开放绕敌侧门。",
+      "evidence": ["js/world.js", "tests/playthrough-v3-free-none-direct.json", "tests/playthrough-v3-blue-atk-echoes.json", "tests/playthrough-v3-gold-def-anchor.json", "tests/playthrough-v3-free-mixed-anchor.json"],
+      "reflection": "最初的水路可绕过关闭的水格，未形成真正路径差异，已加成双重水闸；完整回放发现西轴被自己的心印前置条件围住，已移到可达回廊。结构有效不代表可通关，必须用实际资源与行动走完。",
+      "status": "verified",
+      "result": "四套公开行动记录均走完18层，覆盖三钥契、两经卷、三首领准备、救援与修身；混合方案完成五处回访并实际绕过藏经守卫。独立探针确认侧门不能在未救援时绕敌。"
+    },
+    {
+      "step": "剧情、界面与声音",
+      "before": "五个舍利同时承担故事数量与能力进度；对话缺人物身份，原音频为单一短循环。",
+      "change": "五印HUD与16点外环分开，中心空位在终局显出悟空；像素人物对话与实际救援回顾；六章合成旋律和动作声效独立持久化。",
+      "evidence": ["tests/presentation-v3-results.json", "tests/v3-seven-wounds.png", "tests/v3-self-awakening.png", "tests/v3-ending.png"],
+      "reflection": "二次删减人物对白的实现说明，保留决策需要的代价与结果；修正力量选项误承诺援手侧门、结局救援名字泄露英文ID、手机章名孤字换行。",
+      "status": "verified",
+      "result": "实际点击新机关、七伤护送、三套首领准备、无骨觉醒、跳过、双结局和手动读档；确认跳过前后state不变，战损预览与结算一致。独立音乐/音效重载保持，系统减弱动态覆盖设置。"
+    },
+    {
+      "step": "交互舒适度与操作连续性",
+      "before": "旧通用效果可能追随新行动的位置，系统减弱动态未覆盖全部粒子、斩击与飘字。",
+      "change": "新动作先收束旧表现，不强迫等待；标准、简洁、减弱动态统一控制，震动默认关闭且只在标准模式生效。",
+      "evidence": ["tests/upgrade-ui-results.json", "audits/v3-renderer-results.json", "tests/presentation-v3-390.png", "tests/presentation-v3-844.png"],
+      "reflection": "渲染检查发现旧道具与心印仍在上下浮动，已统一读取有效动态设置；简洁模式原仅少画细节，现在也缩短过程，确保文字说明与表现相符。",
+      "status": "verified",
+      "result": "1366×768、390×844、844×390界面通过。手机地图与44px交互按钮在视口内，选敌战损浮卡可见，无横向溢出。"
+    },
+    {
+      "step": "独立复核与旧档预算",
+      "before": "v1旧灵晶已取，但新契约/经卷尚未选择时可能重复获得调拨成长；相反，仅开门也可能误封未领的奖励。",
+      "change": "按真实旧领取标志分别承续百锁灵晶、千丝朱砂和问心碧髓；界面说明继承结果；旧门只继承路线，未领取的成长仍保留。",
+      "evidence": ["audits/v3-independent-review.json", "tests/v3-rules-check.cjs", "tests/upgrade-rules-check.cjs"],
+      "reflection": "不能仅用合成新版存档验证兼容。独立代理使用备份中的真实v1引擎、实际走路/战斗/拾取生成旧档，复现后再验证修复。",
+      "status": "verified",
+      "result": "真实旧档5/5定向探针通过；保留既有属性，既无重复成长，也不封存尚未领取的奖励。最终39项底层、13项策略、11项章节规则共63项通过。"
+    }
+  ],
+  "delivery": {"entry":"../index.html","preview":"http://127.0.0.1:8765/","staticServerStatus":200,"browserErrors":[],"campaignVariants":4,"bothEndingsVerified":true},
+  "boundaries": ["自动回放证明规则与流程，不代表真人首玩理解度和主观乐趣。", "电视剧联动为平行改编，非官方授权续作。"]
+}

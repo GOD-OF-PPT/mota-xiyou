@@ -1,0 +1,105 @@
+{
+  "startedAt": "2026-10-23T02:03:20.257Z",
+  "source": {
+    "index.html": "5df6ceaff6f85e675656e3e5c3a693adb5242b03ff470e9e7eb844bd62d998ed",
+    "js/presentation.js": "172c45bdd52218f8f54b66501c81863a505605a9177583762bd4c4c94e50ac96",
+    "js/film-art.js": "207c38e16d09e57166870dfc298c78db5115c5e6b03ca82ebcb9e708a17840a3",
+    "js/ui.js": "de8c86c18d642b3c6a7362ad5ef16294e8a47efedac84ae81e1c2e754c0031c8",
+    "css/experience.css": "dfda17cfdc619114a7bfdf39f51bb5cebb52e0e6fb11a77818a80451b376e0cc"
+  },
+  "checks": [
+    {
+      "name": "Arrival panorama changes frames, settles, then waits for explicit acknowledgement"
+    },
+    {
+      "name": "material staff animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "material morph animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "material clone animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "material eye animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "mural staff animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "mural morph animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "mural clone animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "mural eye animates distinct action/result frames; movement, repeat-cast and undo cannot leak through; skip spends nothing"
+    },
+    {
+      "name": "Five later chapter panoramas come from real staircase transitions with exact resources"
+    },
+    {
+      "name": "seal has a real milestone film, skips safely and returns to the proper scene/ending"
+    },
+    {
+      "name": "boss has a real milestone film, skips safely and returns to the proper scene/ending"
+    },
+    {
+      "name": "awakening has a real milestone film, skips safely and returns to the proper scene/ending"
+    },
+    {
+      "name": "release has a real milestone film, skips safely and returns to the proper scene/ending"
+    },
+    {
+      "name": "keep has a real milestone film, skips safely and returns to the proper scene/ending"
+    },
+    {
+      "name": "Reduced motion has a genuinely static equivalent and identical settlement"
+    },
+    {
+      "name": "A live system motion reduction immediately stops the film without touching resources"
+    },
+    {
+      "name": "The large PC viewport retains all controls and natural completion cannot repeat settlement"
+    },
+    {
+      "name": "Offline file:// can show and skip the real skill film with zero remote requests"
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v12-entry-first.png",
+    "E:\\githome\\mota\\audits\\v12-material-staff-action.png",
+    "E:\\githome\\mota\\audits\\v12-material-staff-result.png",
+    "E:\\githome\\mota\\audits\\v12-material-morph-action.png",
+    "E:\\githome\\mota\\audits\\v12-material-morph-result.png",
+    "E:\\githome\\mota\\audits\\v12-material-clone-action.png",
+    "E:\\githome\\mota\\audits\\v12-material-clone-result.png",
+    "E:\\githome\\mota\\audits\\v12-material-eye-action.png",
+    "E:\\githome\\mota\\audits\\v12-material-eye-result.png",
+    "E:\\githome\\mota\\audits\\v12-mural-staff-action.png",
+    "E:\\githome\\mota\\audits\\v12-mural-staff-result.png",
+    "E:\\githome\\mota\\audits\\v12-mural-morph-action.png",
+    "E:\\githome\\mota\\audits\\v12-mural-morph-result.png",
+    "E:\\githome\\mota\\audits\\v12-mural-clone-action.png",
+    "E:\\githome\\mota\\audits\\v12-mural-clone-result.png",
+    "E:\\githome\\mota\\audits\\v12-mural-eye-action.png",
+    "E:\\githome\\mota\\audits\\v12-mural-eye-result.png",
+    "E:\\githome\\mota\\audits\\v12-chapter-4.png",
+    "E:\\githome\\mota\\audits\\v12-chapter-7.png",
+    "E:\\githome\\mota\\audits\\v12-chapter-10.png",
+    "E:\\githome\\mota\\audits\\v12-chapter-13.png",
+    "E:\\githome\\mota\\audits\\v12-chapter-16.png",
+    "E:\\githome\\mota\\audits\\v12-scene-seal.png",
+    "E:\\githome\\mota\\audits\\v12-scene-boss.png",
+    "E:\\githome\\mota\\audits\\v12-scene-awakening.png",
+    "E:\\githome\\mota\\audits\\v12-scene-release.png",
+    "E:\\githome\\mota\\audits\\v12-scene-keep.png",
+    "E:\\githome\\mota\\audits\\v12-reduced-clone.png",
+    "E:\\githome\\mota\\audits\\v12-user-viewport-staff.png"
+  ],
+  "errors": [],
+  "legalActions": 4142,
+  "completed": true,
+  "video": "audits/v12-cinematics-preview.webm",
+  "finishedAt": "2026-10-23T02:04:07.260Z"
+}

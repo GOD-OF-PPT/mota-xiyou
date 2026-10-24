@@ -1,0 +1,176 @@
+{
+  "trace": "playthrough-v5-free-mixed-direct-bypasses.json",
+  "checks": [
+    {
+      "name": "fullscreen scene with no modal dialog semantics",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "name": "story collapses without consuming pages; C drawer is reversible; movement dismisses inventory"
+    },
+    {
+      "name": "first E previews, held E / directions / Space do not fight, new E confirms exact damage",
+      "enemy": "f0-6",
+      "damage": 10
+    },
+    {
+      "name": "two actual asset families switch without changing any game state"
+    },
+    {
+      "name": "full scene and actual map selection on narrow and landscape viewports"
+    },
+    {
+      "name": "door cancel / consume / undo and an actual finite orb offering are exact"
+    },
+    {
+      "name": "all 18 floors, 16 relic fragments, 6 treasures, vows, water, resonance, clone and finale through real controls",
+      "physical": {
+        "reveal": 3,
+        "fragment": 16,
+        "traverse": 17,
+        "choose": 7,
+        "treasure": 6,
+        "equipTreasure": 2,
+        "activateResonator": 2,
+        "rescue": 1,
+        "toggleTide": 1,
+        "recallClone": 1,
+        "bossPreparations": {
+          "direct": 1130,
+          "anchor": 833,
+          "echoes": 894
+        },
+        "awakenSelf": 1,
+        "finish": 1
+      }
+    },
+    {
+      "name": "both endings and exact manual save / load round trip"
+    }
+  ],
+  "physical": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "bossPreparations": {
+      "direct": 1130,
+      "anchor": 833,
+      "echoes": 894
+    },
+    "awakenSelf": 1,
+    "finish": 1
+  },
+  "errors": [],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v6-title-material.png",
+    "E:\\githome\\mota\\audits\\v6-input-guard-preview.png",
+    "E:\\githome\\mota\\audits\\v6-rules-edge-scroll.png",
+    "E:\\githome\\mota\\audits\\v6-desktop-material.png",
+    "E:\\githome\\mota\\audits\\v6-desktop-mural.png",
+    "E:\\githome\\mota\\audits\\v6-mobile-material.png",
+    "E:\\githome\\mota\\audits\\v6-mobile-mural.png",
+    "E:\\githome\\mota\\audits\\v6-landscape-material.png",
+    "E:\\githome\\mota\\audits\\v6-landscape-mural.png",
+    "E:\\githome\\mota\\audits\\v6-choice-bellVow.png",
+    "E:\\githome\\mota\\audits\\v6-choice-ferryVow.png",
+    "E:\\githome\\mota\\audits\\v6-choice-sevenWounds.png",
+    "E:\\githome\\mota\\audits\\v6-choice-emberVow.png",
+    "E:\\githome\\mota\\audits\\v6-boss-preparation-scroll.png",
+    "E:\\githome\\mota\\audits\\v6-boss-scene-preview.png",
+    "E:\\githome\\mota\\audits\\v6-self-awakening.png",
+    "E:\\githome\\mota\\audits\\v6-ending-release.png",
+    "E:\\githome\\mota\\audits\\v6-ending-keep.png"
+  ],
+  "normalPreview": {
+    "x": 1188,
+    "y": 152,
+    "width": 228,
+    "height": 134
+  },
+  "styleGeometry": {
+    "material": {
+      "game-canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "story-dock": {
+        "x": 24,
+        "y": 886,
+        "width": 154.765625,
+        "height": 34
+      },
+      "character-drawer": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    "mural": {
+      "game-canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "story-dock": {
+        "x": 24,
+        "y": 886,
+        "width": 154.765625,
+        "height": 34
+      },
+      "character-drawer": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "materialAssets": {
+    "style": "material",
+    "ready": true,
+    "loaded": 9,
+    "total": 9,
+    "failed": [],
+    "ids": 151
+  },
+  "muralAssets": {
+    "style": "mural",
+    "ready": true,
+    "loaded": 9,
+    "total": 9,
+    "failed": [],
+    "ids": 145
+  },
+  "completed": true,
+  "final": {
+    "hp": 183,
+    "atk": 95,
+    "def": 53,
+    "orbs": 4,
+    "visited": 18,
+    "fragments": 16,
+    "treasures": 6
+  },
+  "crossedVowGates": [
+    "f1-v5-bell-gate",
+    "f7-v5-ferry-south",
+    "f7-v5-ferry-north",
+    "f16-v5-ember-gate"
+  ]
+}

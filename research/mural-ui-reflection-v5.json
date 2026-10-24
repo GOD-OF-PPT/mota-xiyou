@@ -1,0 +1,149 @@
+{
+  "revision": 5,
+  "scope": "青绿重彩 · 壁画浮世：实际图包接线、界面和规划交互；不改引擎结算",
+  "reference": "assets/mural/reference-selected.png",
+  "reviewedArt": [
+    "assets/mural/ui_backdrop.png",
+    "assets/mural/ui_motif.png",
+    "assets/mural/atlases/objects.png",
+    "assets/mural/atlases/wukong.png"
+  ],
+  "files": [
+    "index.html",
+    "js/ui.js",
+    "css/mural.css"
+  ],
+  "reflections": [
+    {
+      "problem": "初轮云山和主地图同样明亮，章名与工具文字落在浅云上。",
+      "change": "将画外云山压为青绿暗景；页头、章名、地图工具加深青底；保留可玩棋盘原亮度。",
+      "evidence": [
+        "tests/v5-ui-before-desktop.png",
+        "tests/v5-ui-desktop.png"
+      ],
+      "result": "主地图和奶白便笺成为视觉重点，章名可读。"
+    },
+    {
+      "problem": "旧版本高优先级手机网格把战损挤成窄列，浮卡覆盖技能和移动控件。",
+      "change": "清除遗留网格定位，改为完整战损行；浮卡放在地图上方区域，保留主动关闭。",
+      "evidence": [
+        "tests/v5-ui-before-mobile.png",
+        "tests/v5-ui-mobile.png",
+        "tests/v5-ui-polish-results.json"
+      ],
+      "result": {
+        "cardTop": 180,
+        "cardBottom": 404.984375,
+        "controlsTop": 631,
+        "avoidsControls": true
+      }
+    },
+    {
+      "problem": "横屏方向按钮未命中窄屏底色；左下装饰露出矩形贴片。",
+      "change": "横屏单独明确青绿方向与朱红交互；装饰以低透明度和渐隐蒙版融入画外底景。",
+      "evidence": [
+        "tests/v5-ui-before-landscape.png",
+        "tests/v5-ui-landscape.png"
+      ],
+      "result": "操作与美术材质一致，避免贴图硬边。"
+    },
+    {
+      "problem": "桌面短高度状态卷轴和横屏画框造成纵向溢出；短手机技能列过窄。",
+      "change": "压缩桌面状态冗余，按高度计算棋盘；短竖屏技能条扩至视口宽。",
+      "evidence": [
+        "tests/v5-ui-before-results.json",
+        "tests/v5-ui-results.json",
+        "tests/v5-ui-polish-results.json",
+        "tests/v5-ui-short-mobile.png"
+      ],
+      "result": {
+        "desktopScrollHeight": 768,
+        "desktopViewportHeight": 768,
+        "landscapeScrollHeight": 390,
+        "landscapeViewportHeight": 390,
+        "shortPortraitAbilityWidth": 376
+      }
+    },
+    {
+      "problem": "仅有数字代价时，零现有资源支出会掩盖放弃未领取成长。",
+      "change": "残钟、渡灯、无生三项选择明确列出即付与机会取舍；新通路条件以中文显示。",
+      "evidence": [
+        "js/ui.js:opportunityText",
+        "js/ui.js:resourceText",
+        "js/ui.js:requirementsHTML"
+      ],
+      "result": "放弃防御/生命和黄钥支出均在确认前可读；行为验收由主控完整流程覆盖。"
+    },
+    {
+      "problem": "关卡深化数据若只留在源码，首次游玩不能发现取舍与目标。",
+      "change": "将每层depth接到折叠经卷，提供问题、公开机会成本、可展开提醒与真实目标定位。",
+      "evidence": [
+        "tests/v5-ui-quest.png",
+        "tests/v5-ui-results.json"
+      ],
+      "result": "定位按钮会收起经卷并在真实地图聚焦目标，M/F可回到悟空。"
+    },
+    {
+      "problem": "主角96方帧与同道64×96帧使用固定比例会拉伸；旧图标和新地图断层。",
+      "change": "头像读取sourceW/H和anchor等比适配，仅用draw裁帧；钥匙、状态、背包、技能、敌情和法器引用实际图集。",
+      "evidence": [
+        "tests/v5-ui-desktop.png",
+        "tests/v5-ui-inventory.png",
+        "tests/v5-ui-polish-results.json"
+      ],
+      "result": "正常资源9/9成功，背包两件消耗品和六件法器卡均接真实资源。"
+    },
+    {
+      "problem": "载入失败不能呈现为全部就绪或永久阻止开始。",
+      "change": "实际预载进度；故障清单非空时明确显示部分画卷缺失并开放基础图形继续。",
+      "evidence": [
+        "tests/v5-ui-partial-load.png",
+        "tests/v5-ui-polish-results.json"
+      ],
+      "result": {
+        "injectedFailure": "assets/mural/atlases/objects.png",
+        "notice": "1 份画卷未载入；可使用基础图形继续",
+        "startEnabled": true,
+        "gameOpened": true
+      }
+    },
+    {
+      "problem": "无骨高潮仍使用旧SVG方头，缺少新角色资源的兑现。",
+      "change": "莲环保持数据驱动16点，中央觉醒后改用真正悟空PNG；三相消散对白复用三相PNG，不增加等待或改结算。",
+      "evidence": [
+        "js/ui.js:relicRing",
+        "js/ui.js:bossMemorial"
+      ],
+      "result": "语法检查通过；该最后小改等待主控统一全流程与高潮截图，不把它写为已完成独立视觉验收。"
+    }
+  ],
+  "browser": {
+    "channel": "Chrome",
+    "headless": true,
+    "origin": "file:///E:/githome/mota/index.html",
+    "viewports": [
+      [
+        1366,
+        768
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        390,
+        668
+      ]
+    ],
+    "pageErrors": [],
+    "allBrowsersClosedWithFinally": true
+  },
+  "limits": [
+    "没有真人首玩数据，不能由这些截图证明趣味或通关时长已增加。",
+    "最终无骨中心和三相消散小像尚需主控统一高潮截图；整体18层通关和旧档承续由主控验收。"
+  ]
+}

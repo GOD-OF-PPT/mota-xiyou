@@ -1,0 +1,10 @@
+{
+  "path": "assets/mural/finale/wukong-cinematic-v21.png",
+  "source": "exec-a9f5541e-7e8f-44ab-9c81-04e80b2e4bad.png",
+  "prompt": "Repair this supplied full-body pixel-art Sun Wukong cutout for shipping in a PC game. Keep the EXACT character design, pose, detailed pixel clusters, face, gold armor, red cape, tail and colors. Reframe/shrink the entire character slightly within a larger TRANSPARENT canvas so absolutely all parts have AT LEAST 8% transparent padding on every side. The supplied TOP pheasant feathers and RIGHT gold staff tip touch the image boundary; fully finish the feather tips and round right staff end so nothing is cropped or touches edges. Do not crop the character, do not cut feet, do not enlarge within the frame. One figure only, facing right, no floor, background, text, panel or frame. Preserve high-resolution sharp pixel style. Transparent alpha background. This is an asset normalization repair, not a redesign.",
+  "initial": {
+    "source": "exec-43df2378-9faa-440a-8780-576ea6daa7aa.png",
+    "prompt": "Create a single full-body Sun Wukong HERO facing RIGHT for a Chinese Journey to the West PC tower game's climactic cinematic, transparent background. Use the attached existing pixel sprite sheet only as character reference; output ONE character, no sheet and no extra poses. Keep recognizable heroic gold armor, red cape and scarf, high curved red-and-gold pheasant plumes, monkey face and tail, gold-ended staff braced diagonally pointing right in a ready-to-strike stance. Rich Chinese mural palette, crisp refined pixel-art with densely detailed readable armor, deliberate pixel clusters, roughly 480-pixel native character detail rendered sharply at at least 1024 px tall. Match mature refined pixel-art boss forms; avoid tiny chibi sprite enlarged into blur. Tall heroic proportions about 5 heads high, resolute friendly face. Complete uncropped head plumes, staff ends, feet and cape; 5 percent transparent margins. No stage, floor, frame, text, logo, shadows, panels, glow fog or other people. Honest transparent alpha, razor-sharp edges."
+  },
+  "reason": "Finish staff tip and provide uncropped transparent margins."
+}

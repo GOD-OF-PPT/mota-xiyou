@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-23",
+  "source": "assets/material/source/landmarks.png",
+  "prompts": [
+    {
+      "asset": "buddha",
+      "prompt": "Create ONE production-ready high resolution environment asset for a dark Chinese Journey to the West 2D top-down grid game. Use the upper-left Buddha sanctuary of the reference image ONLY as art direction. Rebuild this one sanctuary as a single tall rectangular wall relief, frontal three-quarter overhead orthographic projection, same charcoal stone, restrained antique gold seams, small jade green lamps, worn crimson ribbons. A monumental calm Buddha head integrated into ancient black stone masonry, one raised hand at left, small recessed shrine and broad stone steps at bottom center. The architecture fills a portrait 3:4 silhouette, designed to be embedded inside an existing rectangular wall footprint. Clean sharp carved stone shapes and medium details readable when reduced to 300x400 pixels, no overly noisy micro ornament. Main light from upper-left, restrained shadows, no bloom haze, no depth of field, no blur. Highest available resolution, at least 1024px tall with genuinely resolved native detail. All surrounding area outside this ONE sanctuary silhouette must be transparent. No surrounding terrain, no floor patch, no floating fragments, no text, no UI, no border, no sheet, no other five objects. Full asset including stair base visible and not cut off.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    },
+    {
+      "asset": "pagoda",
+      "prompt": "Create ONE high resolution production game environment asset, not a sheet: the twin pagoda temple in the UPPER MIDDLE of the reference, rebuilt with sharp native detail. Two asymmetrical tall Chinese black stone and bronze pagodas, three-quarter overhead orthographic game camera, charcoal stone, antique gold edgework, muted crimson banners, a few warm orange fires and jade lamps, no blooming fog. One connected compact sanctuary, with stairs and bottom platform, portrait 3:4 overall silhouette. Same dark Journey to the West pre-rendered material style as reference; clear roof tiers and large architectural shapes readable at 300x400px. Upper-left key light. At least 1024px tall. Entirely transparent outside this ONE building, no backdrop gradients, no ground plane, no debris fragments, no text/UI, no other objects. Full silhouette with margins, no cropping. This is a replacement for the pagoda asset only.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    },
+    {
+      "asset": "dragon",
+      "prompt": "ONE standalone high resolution production environment asset for a Chinese dark Journey to the West game. Recreate ONLY the UPPER RIGHT dragon sanctuary from the reference in sharper native detail. A black scaled Chinese dragon coils around an antique bronze ritual water wheel, stone shrine towers and compact broad stone stairs. Charcoal stone, worn antique gold inlays, muted crimson ribbons, small jade lanterns, a tiny restrained water cascade inside the structure. Same three-quarter overhead orthographic camera, upper-left key light, clear forms at 300x400px, no depth of field, no bloom, no haze. Portrait 3:4 overall silhouette, complete asset with safe margins, at least 1024px high. Transparent outside the single connected sanctuary, no background gradients or terrain plane, no floating fragments, no sheet, no other buildings, no letters or UI.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    },
+    {
+      "asset": "furnace",
+      "prompt": "Create ONE standalone high-resolution game environment asset: ONLY the lower-left alchemical furnace sanctuary from the reference, rebuilt with genuinely sharp native detail, not an atlas. Three interconnected Chinese bronze ritual furnaces, one central tall furnace and two smaller side crucibles, large readable fire openings, antique gold pipes, charcoal stone shrine pedestals and a small broad stair at front. Dark Journey to the West pre-rendered art, restrained crimson ribbons and jade lanterns, warm fire confined to the openings. Match reference three-quarter overhead orthographic game camera, upper-left key light. Portrait 3:4 overall silhouette, full structure with margins. At least 1024px tall. Readable at 300x400px, crisp medium-scale stone/bronze structure, no haze/blur/depth-of-field/bloom. Transparent outside this one connected structure, no background gradients, no large floor patch or scattered fragments, no labels or UI, no other sanctuary.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    },
+    {
+      "asset": "scripture",
+      "prompt": "Create ONE standalone high-resolution production game environment asset: ONLY the LOWER MIDDLE scripture sanctuary in the reference. An ancient charcoal stone sutra wall with three tall carved stone panels containing restrained antique gold Buddhist reliefs, flanked by short black stone pagoda pillars and worn dark crimson banners; one small ivory seated monk statue at center, tiny candles and jade lamps, broad short stone stair at front. Same dark Journey to the West pre-rendered material family, three-quarter overhead orthographic game camera and upper-left main light. Portrait 3:4 composition with full silhouette and safe margins, at least 1024px tall. Clear stone structure, sharp native carved detail readable at 300x400px, subdued gold, no haze/bloom/blur/depth-of-field. Transparent outside this ONE compact connected sanctuary; no background gradient, no large floor patch, no floating fragments, no sheet, no other structures. No text or readable lettering, no UI.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    },
+    {
+      "asset": "blacklotus",
+      "prompt": "ONE standalone high resolution production game asset: ONLY the LOWER RIGHT black lotus final sanctuary of the reference. A monumental black stone and antique bronze lotus throne, open dark metallic lotus petals around a circular antique gold ritual platform, restrained crimson embers along a few petal edges, flanked by two tall small-roofed temple pillars with worn red banners; broad stone steps at the front and small warm torches/jade lamps. Match the dark Journey to the West reference material family, three-quarter overhead orthographic camera, upper-left light, charcoal stone and subdued gold, clear large silhouettes at 300x400px. Portrait 3:4 overall silhouette, complete structure with margins, at least 1024px tall. Genuinely sharp native carving and stone detail, no blur/haze/bloom/depth of field. Transparent outside this single compact connected sanctuary, no background, no large floor patch, no detached debris, no text, no UI, no other assets.",
+      "mode": "built-in imagegen with source landmarks.png as visual reference",
+      "transparent_background": true,
+      "review": "generated output individually inspected before registration"
+    }
+  ]
+}

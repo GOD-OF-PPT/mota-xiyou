@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-23",
+  "status": "implemented_and_pc_accepted",
+  "plan": "docs/v18-asset-cohesion-plan.md",
+  "review": "docs/v18-asset-cohesion-review.md",
+  "goals": [
+    {
+      "id": "P1",
+      "name": "Same-condition baseline from legal checkpoints",
+      "status": "complete",
+      "evidence": "audits/v18-cohesion-before.json"
+    },
+    {
+      "id": "P2",
+      "name": "Authored crop isolation, transparent neighbours removed",
+      "status": "complete",
+      "evidence": "audits/v18-asset-integrity.json"
+    },
+    {
+      "id": "P3",
+      "name": "Physical contacts, scale and correct picking",
+      "status": "complete",
+      "evidence": "audits/v18-cohesion-after.json"
+    },
+    {
+      "id": "P4",
+      "name": "Native detail and eight reviewed HD replacements",
+      "status": "complete",
+      "evidence": "audits/v18-native-coverage.json"
+    },
+    {
+      "id": "P5",
+      "name": "Floor contact, masonry integration and contextual NPC mark",
+      "status": "complete",
+      "evidence": [
+        "audits/v18-detail-after-props-dpr2.png",
+        "audits/v18-detail-after-monster-buddha-dpr2.png",
+        "audits/v18-after-material-first.png",
+        "audits/v18-after-material-courtyard-detail.png",
+        "audits/v18-after-mural-first.png",
+        "audits/v18-chapter-floor-4.png",
+        "audits/v18-chapter-floor-7.png",
+        "audits/v18-chapter-floor-10.png",
+        "audits/v18-chapter-floor-13.png",
+        "audits/v18-chapter-floor-18.png",
+        "audits/v18-live-preview.png"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "PC, legal progression, continuous UI sessions, both styles and offline",
+      "status": "complete",
+      "evidence": [
+        "audits/v18-cohesion-after.json",
+        "audits/v18-native-coverage.json",
+        "audits/v18-first-session-first-session.json",
+        "audits/v18-campaign.json",
+        "audits/v18-choices-choice-interaction.json",
+        "audits/v18-continuity-continuity.json",
+        "audits/v18-prop-prop-integration.json",
+        "audits/v18-occlusion.json",
+        "audits/v18-asset-integrity.json",
+        "audits/v18-rebuild-integrity.json",
+        "audits/v18-detail-capture.json"
+      ]
+    }
+  ],
+  "resolution": {
+    "totalDrawSamples": 656,
+    "visibleDrawSamples": 344,
+    "minVisibleCoverage": 1.0188536953242837,
+    "floors": 18,
+    "dpr": [
+      1,
+      2
+    ],
+    "scope": "New v18 sprite and landmark registrations, not all legacy hero/terrain/UI pixels"
+  },
+  "source": {
+    "js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    "js/material-assets.js": "1007608369730cb9688afa7bb34157fcca2644041fb00b1e45a930d31c22db69",
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327",
+    "scripts/prepare_material_native.py": "d8079cb6ffb57a2f931a6e61c7ccbabfa41a9cc834ad59d0e84a2838631ba9ba",
+    "scripts/prepare_material_v18.py": "113f8a74ae8954031dc6161f3c9a7ab790f1b3732f1d21080085e3ee0c8adc96",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412"
+  },
+  "boundaries": [
+    "Representative original-size art review, not manual review of every placement on all eighteen floors",
+    "Existing hero, terrain, UI and mural art were not fully remastered",
+    "Mobile and broad browser compatibility deferred",
+    "Canonical-route agent play is not a blind human study or proof of long-term enjoyment"
+  ],
+  "acceptance": "audits/v18-final.json",
+  "remainingInScope": []
+}

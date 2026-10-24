@@ -1,0 +1,174 @@
+{
+  "scope": "B4 plus B3 joint grounding/occlusion at fixed PC2525x1208 DPR1 only",
+  "rendererSha": "8beac0cbde100e6ce5d2b2229be3da4bb31f07ac66e55bf64eba40ab42e638c2",
+  "checks": [
+    {
+      "name": "actual foreground draws stay within solid cells; depth sorted; landmark excluded and state unchanged",
+      "floor": 1,
+      "label": "buddha",
+      "wallCommands": 269,
+      "drawCalls": 496,
+      "depthCommands": 289,
+      "mark": {
+        "type": "buddha",
+        "x": 7,
+        "y": 11,
+        "w": 3,
+        "h": 4
+      },
+      "groundingPreserved": true
+    },
+    {
+      "name": "actual foreground draws stay within solid cells; depth sorted; landmark excluded and state unchanged",
+      "floor": 4,
+      "label": "pagoda",
+      "wallCommands": 264,
+      "drawCalls": 486,
+      "depthCommands": 282,
+      "mark": {
+        "type": "pagoda",
+        "x": 6,
+        "y": 1,
+        "w": 4,
+        "h": 5
+      },
+      "groundingPreserved": false
+    },
+    {
+      "name": "actual foreground draws stay within solid cells; depth sorted; landmark excluded and state unchanged",
+      "floor": 10,
+      "label": "furnace",
+      "wallCommands": 265,
+      "drawCalls": 488,
+      "depthCommands": 284,
+      "mark": {
+        "type": "furnace",
+        "x": 1,
+        "y": 13,
+        "w": 3,
+        "h": 4
+      },
+      "groundingPreserved": false
+    },
+    {
+      "name": "real opaque pixel behind foreground wall selects wall",
+      "case": {
+        "name": "hidden",
+        "floor": 1,
+        "entity": {
+          "x": 17,
+          "y": 8
+        },
+        "source": {
+          "x": 233,
+          "y": 289
+        },
+        "expected": {
+          "x": 18,
+          "y": 8
+        },
+        "alpha": 250
+      },
+      "point": {
+        "screen": {
+          "x": 1664.4123883928573,
+          "y": 427.8059734083816
+        },
+        "world": {
+          "x": 290.98958333333337,
+          "y": 130.91330333808398
+        },
+        "alpha": 250,
+        "wall": {
+          "x": 18,
+          "y": 8
+        },
+        "pick": {
+          "x": 18,
+          "y": 8
+        },
+        "occluded": true,
+        "actorDepth": 140.5,
+        "wallDepth": 144
+      },
+      "selection": {
+        "x": 18,
+        "y": 8
+      }
+    },
+    {
+      "name": "real visible bat pixel in front of north wall selects bat",
+      "case": {
+        "name": "visible",
+        "floor": 0,
+        "entity": {
+          "x": 5,
+          "y": 3
+        },
+        "source": {
+          "x": 127,
+          "y": 225
+        },
+        "expected": {
+          "x": 5,
+          "y": 3
+        },
+        "alpha": 252
+      },
+      "point": {
+        "screen": {
+          "x": 1000.9012276785714,
+          "y": 144.4268127688017
+        },
+        "world": {
+          "x": 87.94791666666667,
+          "y": 44.196183142365555
+        },
+        "alpha": 252,
+        "wall": {
+          "x": 5,
+          "y": 2
+        },
+        "pick": {
+          "x": 5,
+          "y": 3
+        },
+        "occluded": false,
+        "actorDepth": 60.5,
+        "wallDepth": 48
+      },
+      "selection": {
+        "x": 5,
+        "y": 3
+      }
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v8-b4-independent-wall-thickness.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-buddha-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-buddha-landmark.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-pagoda-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-pagoda-landmark.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-furnace-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-furnace-landmark.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-occlusion-hidden-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-occlusion-hidden-region.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-occlusion-visible-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b4-independent-occlusion-visible-region.png"
+  ],
+  "errors": [],
+  "checkpointTraceIndexes": {
+    "0": -1,
+    "1": 120,
+    "2": 347,
+    "3": 637,
+    "4": 837,
+    "5": 980,
+    "6": 1133,
+    "7": 1307,
+    "8": 1450,
+    "9": 1713
+  },
+  "rendererShaAfter": "8beac0cbde100e6ce5d2b2229be3da4bb31f07ac66e55bf64eba40ab42e638c2",
+  "completed": true
+}

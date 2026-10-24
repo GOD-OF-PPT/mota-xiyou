@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "userRequirements": [
+    "全屏地图，信息在左上和右上，人物详情按键出现",
+    "坚决禁止网页式弹窗提示，使用契合游戏风格且带效果的提示",
+    "战前预览融入场景，不以网页确认框打断",
+    "按此前三维材质设计稿生成独立美术资源，支持两套风格切换比较"
+  ],
+  "architecture": "Preserve deterministic plain HTML/CSS/JS engine; change scene projection, presentation events, DOM HUD and local raster atlas families.",
+  "artDirection": {"mural":"青绿重彩 · 壁画浮世","material":"玄金神怪 · 三维古寺","materialPipeline":"pre-rendered 3D-material raster; not runtime 3D geometry"},
+  "reflections": [
+    {"finding":"把方形棋盘周围面板简单搬到边缘仍像应用界面。","correction":"画布占据整个视口；只保留两个角落信息簇，人物详情C键展开。"},
+    {"finding":"去掉蒙版后，286x350战前卡仍遮住地图中央，违背用户要求。","correction":"默认改为紧凑玄金/矿彩符签，损失和战后生命一眼可见；计算细节由玩家主动展开。"},
+    {"finding":"手机强制整层同屏让人物缩到18px格宽。","correction":"按实际格宽选择初始近观/全图；M可手动切换，视口不替玩家反复覆盖选择。"},
+    {"finding":"长翎和金箍棒造成共享缩放受限；旧头像裁片显示小全身。","correction":"校准源帧分界与脚点双侧范围；对话与HUD改用独立高分辨率脸肩图。"},
+    {"finding":"玄金图集配无限重复侧墙仍缺少参考稿的空间层次。","correction":"真实地图之外以独立无UI远景、暗化和近墙雾过渡，地图内部始终绘制真实格点。"}
+  ],
+  "verification": {
+    "fullBrowserAdventure": true,
+    "visitedFloors": 18,
+    "fragments": 16,
+    "treasures": 6,
+    "bothEndings": true,
+    "manualSaveLoadExact": true,
+    "styleSwitchSnapshotIdentical": true,
+    "heldInputsNeverConfirmFight": true,
+    "visibleUpperSpriteClickBothStyles": true,
+    "normalPreviewDesktop": {"width":228,"height":134},
+    "normalPreviewMobile": {"width":228,"height":130},
+    "fileProtocolWithoutNetwork": true,
+    "actualActionSkipStateInvariant": ["fight","door","pickup","cast"],
+    "pageErrors": []
+  },
+  "evidence": ["assets/material/manifest.json","assets/material/prompts.json","audits/v6-asset-bounds.json","audits/v6-browser-acceptance.json","audits/v6-upper-sprite-picking.json","audits/v6-offline-check.json","audits/v6-style-comparison.png","tests/v6-renderer-effects-report.json","tests/v6-ui-final-results.json","research/immersive-ui-reflection-v6.json","design-qa.md"],
+  "boundaries": ["切换不改变任何战斗、成长、选择或存档。","自动检查不代替真人美术偏好与首次理解度。"]
+}

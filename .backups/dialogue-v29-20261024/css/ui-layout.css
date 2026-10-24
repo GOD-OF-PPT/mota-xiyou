@@ -1,0 +1,94 @@
+/* v27: live glyphs and actions belong inside the material's writing field. */
+:root{--ui-action-ink:#e7cf92;--ui-action-line:#bda26588;--ui-action-wash:#c6a66416;--ui-action-focus:#f4d99b}
+html[data-ui-skins=ready] #journey-guide{padding:28px 30px 30px;min-height:0}
+html[data-ui-skins=ready] #journey-guide .journey-tools{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;gap:16px;margin-top:12px}
+html[data-ui-skins=ready] #journey-guide .journey-tools small{grid-column:1;grid-row:1;min-width:0;max-width:none;text-align:left;display:grid;gap:2px;font:11px/1.7 var(--sans);color:#c9c5b1;overflow-wrap:anywhere}
+html[data-ui-skins=ready] #journey-guide .journey-tools button{grid-column:2;grid-row:1;min-width:0;white-space:normal;font:14px/1.5 var(--serif)}
+/* Copper etched commands on silk; cinnabar commands on paper. No nested web card. */
+html[data-ui-skins=ready] #journey-guide .journey-tools button,
+html[data-ui-skins=ready] #story-dock .story-controls button,
+html[data-ui-skins=ready] #altar-ritual footer button,
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm],
+html[data-ui-skins=ready] #modal-root[data-view] #modal-actions button,
+html[data-ui-skins=ready] #modal-root .planning-desk :is(.plan-add button,.plan-tools button),
+html[data-ui-skins=ready] #modal-root .trial-chapter .chapter-enter,
+html[data-ui-skins=ready] #floor-entry .entry-continue,
+html[data-ui-skins=ready] #final-battle :is([data-final-close],[data-final-reset]){
+ min-height:42px;height:auto;padding:9px 12px;border:0;border-block:1px solid var(--ui-action-line);border-radius:0;background:linear-gradient(90deg,transparent,var(--ui-action-wash),transparent);box-shadow:inset 0 1px #e5c88a12,inset 0 -1px #0005;color:var(--ui-action-ink);clip-path:none;letter-spacing:.04em;white-space:normal;overflow-wrap:anywhere;transition:background-color .16s,color .16s
+}
+html[data-ui-skins=ready] #journey-guide .journey-tools button{padding-inline:6px}
+html[data-ui-skins=ready] #modal-root .planning-desk :is(.plan-add button,.plan-tools button){background:linear-gradient(90deg,transparent,var(--ui-action-wash),transparent)!important}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm]{min-width:0;max-width:100%;min-height:46px;font:18px/1.6 var(--serif);border-bottom:2px solid #d9b977}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm]:disabled{background:none;color:#c3bca5;border-color:#9c8e6a66}
+html #story-dock .story-controls{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin-top:12px}
+html #story-dock .story-controls #story-next{border-bottom:2px solid #d9b977;color:#f5dfa8}
+html #story-dock .story-controls :is(#story-collapse,#story-skip){border-top-color:transparent;box-shadow:none;color:#cbc6b0;font-size:14px}
+html #altar-ritual footer button{font:15px/1.5 var(--serif);flex:0 1 auto}
+html #altar-ritual footer>span{flex-basis:100%;min-width:0;overflow-wrap:anywhere}
+html #modal-root[data-view] #modal-actions :is(.primary-button,.danger-button){--ui-action-ink:#fff0cc;--ui-action-line:#c78e5e;--ui-action-wash:#a84c3255;background-color:#663927}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection,
+html[data-ui-skins=ready] #modal-root :is(.kit-description,.journal-current,.bestiary-leaf,.recovery-detail,.plan-result,.save-slot,.game-guide-grid article){--ui-action-ink:#80402b;--ui-action-line:#94613d88;--ui-action-wash:#9b653b16;--ui-action-focus:#88432b}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection{padding:30px 30px 34px;display:flex;flex-direction:column;overflow:visible;min-width:0}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.expanded,
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy.expanded{padding:30px 30px 34px;width:420px;max-width:calc(100vw - 40px);max-height:calc(100vh - 220px);overflow:visible}
+html[data-ui-skins=ready] body:has(#game-shell .context-card.has-selection.expanded:not(.offscreen)) #journey-guide{visibility:hidden;pointer-events:none}
+html[data-ui-skins=ready] #game-shell .context-card #context-objective{flex:none;font:12px/1.8 var(--sans);color:#67583e;border-bottom:1px solid #94613d44;padding-bottom:8px;margin:0 0 10px}
+html[data-ui-skins=ready] #game-shell .context-card #context-objective mark{color:#80402b;background:none}
+html[data-ui-skins=ready] #game-shell .context-card.expanded .scene-inline{max-height:none;overflow:visible}
+html[data-ui-skins=ready] body[data-surface] #game-shell .context-card.has-selection{display:none}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection #context-body{overflow:auto;min-height:0;scrollbar-width:thin;overscroll-behavior:contain;padding:0 4px 3px 0;scrollbar-gutter:stable}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .context-heading{flex:none;min-width:0;margin-right:0}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .context-heading h2{min-width:0;overflow-wrap:anywhere}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection :is(.scene-actions,.context-actions){display:flex;flex-wrap:wrap;gap:10px;min-width:0}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection :is(.context-button,.scene-rule-button,.encounter-opportunity button),
+html[data-ui-skins=ready] #modal-root :is(.kit-description button,.journal-current button,.foe-reading button,.recovery-detail button,.plan-result button){
+ min-height:42px;height:auto;padding:9px 12px;min-width:0;border:0;border-block:1px solid var(--ui-action-line)!important;border-radius:0;background:linear-gradient(90deg,transparent,var(--ui-action-wash),transparent)!important;box-shadow:inset 0 -1px #fff5;color:var(--ui-action-ink)!important;font:16px/1.6 var(--serif);white-space:normal;overflow-wrap:anywhere;clip-path:none
+}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .scene-rule-button{flex:0 0 auto;font-size:14px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .context-button{flex:1 1 140px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .danger-engage{--ui-action-ink:#9e3528;--ui-action-line:#9e3528}
+html[data-ui-skins=ready] #modal-root :is(.kit-description,.journal-current,.bestiary-leaf,.recovery-detail,.plan-result,.game-guide-grid article){padding:30px 30px 34px;min-width:0}
+html[data-ui-skins=ready] #modal-root .save-slot{padding:42px 30px 34px}
+html[data-ui-skins=ready] #modal-root[data-view=load] .save-slot:before{content:"";position:absolute;inset:0;width:auto;height:auto;border:22px solid transparent;border-image:var(--ui26-folio) 125 115 150 115 fill / 22px 22px 26px 22px / 0 stretch;background:none;transform:none;display:block;pointer-events:none}
+html[data-ui-skins=ready] #modal-root .kit-description{flex-shrink:0}
+html[data-ui-skins=ready] #modal-root .pilgrim-kit{height:auto;min-height:100%;align-items:start}
+html[data-ui-skins=ready] #modal-root .kit-belongings{height:auto;justify-content:flex-start}
+html[data-ui-skins=ready] #modal-root .kit-pilgrim{align-self:center}
+html[data-ui-skins=ready] #game-shell .quest-scroll>div{padding:30px 30px 34px;overflow:visible}
+html[data-ui-skins=ready] #game-shell .quest-reading{max-height:calc(100vh - 284px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-gutter:stable;padding:0 4px 3px 0}
+html[data-ui-skins=ready] #story-dock.story-dock:not(.collapsed){padding:29px 44px 37px}
+html[data-ui-skins=ready] #story-dock .story-scene{padding:7px 0 0;min-width:0}
+html[data-ui-skins=ready] #story-dock .story-scene>div{min-width:0}
+html[data-ui-skins=ready] #story-dock.collapsed{padding:22px 40px 27px}
+html[data-ui-skins=ready] :is(#toast,#style-progress){padding:26px 38px 32px;max-width:calc(100vw - 32px);overflow-wrap:anywhere}
+html[data-ui-skins=ready] #altar-ritual .ritual-heading{padding-inline:36px}
+html[data-ui-skins=ready] #altar-ritual footer{padding-inline:34px;padding-bottom:30px;gap:8px 16px;flex-wrap:wrap}
+html[data-ui-skins=ready] #altar-ritual .ritual-minor{padding-inline:26px}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=lotus] .ritual-petal{padding-bottom:32px}
+html[data-ui-skins=ready] #altar-ritual .decision-petal{padding:40px 30px 36px}
+html[data-ui-skins=ready] #altar-ritual .decision-petal.selected:after{right:25px;top:24px}
+html[data-ui-skins=ready] #altar-ritual .decision-option{padding-right:25px;min-width:0;overflow-wrap:anywhere}
+/* A keyboard cue is a small engraved annotation, not a second button. */
+html :is(#journey-guide,#story-dock,#altar-ritual footer,#altar-ritual .ritual-minor,#floor-entry,#ability-cinematic,#final-battle) button kbd,
+html[data-ui-skins=ready] #game-shell .context-card.has-selection button kbd{display:inline-block;vertical-align:baseline;min-width:0;padding:0;margin-left:7px;border:0;border-radius:0;background:none;box-shadow:none;color:inherit;font:11px/1.5 var(--mono);opacity:.75;letter-spacing:0}
+html :is(#journey-guide,#story-dock,#altar-ritual footer,#floor-entry,#modal-actions,#final-battle) button:enabled:hover{background-color:#b79a4326;color:#fff0c3}
+html[data-ui-skins=ready] :is(#game-shell .context-card.has-selection,#modal-root .kit-description,#modal-root .journal-current,#modal-root .plan-result,#modal-root .recovery-detail,#modal-root .bestiary-leaf) button:enabled:hover{background-color:#98582716!important;color:#6e281c!important}
+html :is(#journey-guide,#story-dock,#altar-ritual,#floor-entry,#modal-root,#final-battle) button:focus-visible{outline:2px solid var(--ui-action-focus);outline-offset:3px}
+html :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button:disabled{cursor:default;opacity:.65}
+html :is(#journey-guide,#story-dock,#altar-ritual footer,#modal-actions) button:enabled:active{box-shadow:inset 0 2px 3px #0006}
+@media(max-width:760px){
+ html[data-ui-skins=ready] #game-shell .context-card.has-selection.expanded,
+ html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy.expanded{max-height:calc(100vh - 320px)}
+ html[data-ui-skins=ready] #journey-guide{padding:27px 30px 30px}
+ html[data-ui-skins=ready] #story-dock.story-dock:not(.collapsed){padding:28px 35px 34px}
+ html[data-ui-skins=ready] #modal-root .kit-description{padding:28px 30px 32px;min-height:0}
+ html[data-ui-skins=ready] #modal-root .kit-description{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,140px);gap:2px 18px}
+ html[data-ui-skins=ready] #modal-root .kit-description :is(h3,p,small){grid-column:1;margin-right:0}
+ html[data-ui-skins=ready] #modal-root .kit-description button{grid-column:2;grid-row:1/5;align-self:center;width:auto;margin:0}
+ html[data-ui-skins=ready] #altar-ritual footer>span{font-size:13px}
+ html[data-ui-skins=ready] #altar-ritual footer button{padding:7px 10px;font-size:14px}
+ html[data-ui-skins=ready] #altar-ritual .decision-petal{padding:36px 30px 34px}
+}
+@media(max-height:800px) and (min-width:761px){html[data-ui-skins=ready] #modal-root .kit-token{min-height:100px}html[data-ui-skins=ready] #modal-root .kit-token canvas{width:54px;height:54px}}
+@media(prefers-reduced-motion:reduce){html :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button{transition:none}}
+body[data-motion=reduced] :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button{transition:none}

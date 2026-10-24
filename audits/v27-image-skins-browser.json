@@ -1,0 +1,527 @@
+{
+  "checks": [
+    "material loads four project-bound transparent skins; objective, paper, ritual and marking preserve exact state in four PC sizes",
+    "mural loads four project-bound transparent skins; objective, paper, ritual and marking preserve exact state in four PC sizes",
+    "A failed generated asset is reported, leaves a readable original surface and still permits normal play",
+    "Direct file index loads all four local material assets with network disabled"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v27-material-objective-629.png",
+    "audits/v27-material-objective-1280.png",
+    "audits/v27-material-objective-1440.png",
+    "audits/v27-material-objective-1989.png",
+    "audits/v27-material-marked-object.png",
+    "audits/v27-material-ritual-materials.png",
+    "audits/v27-mural-objective-629.png",
+    "audits/v27-mural-objective-1280.png",
+    "audits/v27-mural-objective-1440.png",
+    "audits/v27-mural-objective-1989.png",
+    "audits/v27-mural-marked-object.png",
+    "audits/v27-mural-ritual-materials.png",
+    "audits/v27-offline-objective.png"
+  ],
+  "timing": [
+    {
+      "style": "material",
+      "readyMilliseconds": 749,
+      "viewport": "629x678",
+      "method": "fresh headless Chrome context with local HTTP; one infrastructure observation, not a human performance claim"
+    },
+    {
+      "style": "material",
+      "objectiveMarkMilliseconds": 45,
+      "method": "browser click-to-selection observation; finite sample"
+    },
+    {
+      "style": "mural",
+      "readyMilliseconds": 229,
+      "viewport": "629x678",
+      "method": "fresh headless Chrome context with local HTTP; one infrastructure observation, not a human performance claim"
+    },
+    {
+      "style": "mural",
+      "objectiveMarkMilliseconds": 43,
+      "method": "browser click-to-selection observation; finite sample"
+    }
+  ],
+  "observedByHuman": false,
+  "source": {
+    "index.html": "a1c38cefba0666bebc7cddf59c35992e858e86bd1099c77de7bfaa087323d9ce",
+    "js/ui.js": "b3aefb7ef9b934e552609e40050e68a06bca4270ec09be468f8139c446864b4e",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "css/ui-layout.css": "c2bbd52abcbfc67ba370c0ec76dae99151cf8caeb1115fac8ef71bba3f282a17"
+  },
+  "layouts": [
+    {
+      "name": "material-objective-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 188.96875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-objective-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-objective-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-objective-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-marked-object",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 5,
+          "width": 350,
+          "height": 241.484375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ritual-materials",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 594,
+          "height": 62.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 594,
+          "height": 104.09375
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.65625,
+          "height": 199
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.671875,
+          "height": 199
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.671875,
+          "height": 199
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 594,
+          "height": 84.6875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +320 金还差 20 金",
+          "width": 190.65625,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12012 金还差 12 金",
+          "width": 190.671875,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "3淬炼护身防御 +320 金还差 20 金",
+          "width": 190.671875,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 110.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 69.75,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-objective-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 188.96875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-objective-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-objective-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-objective-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-marked-object",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 193.328125
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 5,
+          "width": 350,
+          "height": 241.484375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ritual-materials",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 594,
+          "height": 62.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 594,
+          "height": 104.09375
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.65625,
+          "height": 199
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.671875,
+          "height": 199
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 190.671875,
+          "height": 199
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 594,
+          "height": 84.6875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +320 金还差 20 金",
+          "width": 190.65625,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12012 金还差 12 金",
+          "width": 190.671875,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "3淬炼护身防御 +320 金还差 20 金",
+          "width": 190.671875,
+          "height": 199,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 175.328125,
+          "height": 58.6875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 110.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 69.75,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "offline-objective",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 193.328125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "passed": true
+}

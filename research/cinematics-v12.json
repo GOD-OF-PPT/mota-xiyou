@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-23",
+  "status": "implemented_and_pc_verified",
+  "guidance": "docs/v10-immersion-plan.md",
+  "review": "docs/v12-cinematics-review.md",
+  "acceptance": "audits/v12-final.json",
+  "goals": [
+    {"id": "F1", "name": "四种神通分别具有蓄势、动作、结果编排", "status": "implemented_and_verified", "evidence": ["audits/v12-cinematics.json", "audits/v12-material-staff-result.png", "audits/v12-mural-eye-action.png"]},
+    {"id": "F2", "name": "章节地标入场与实际楼层目标相结合", "status": "implemented_and_verified", "evidence": ["audits/v12-cinematics.json", "audits/v12-chrome-entry.png"]},
+    {"id": "F3", "name": "心印、首领、无骨觉醒与双结局过场", "status": "implemented_and_verified", "evidence": ["audits/v12-cinematics.json", "audits/v12-style-scenes.json", "audits/v12-material-scene-awakening.png", "audits/v12-scene-release.png"]},
+    {"id": "F4", "name": "演出隔离输入、可跳过、低动态等价，结算只发生一次", "status": "implemented_and_verified", "evidence": ["audits/v12-cinematics.json", "audits/v10-interaction.json"]},
+    {"id": "F5", "name": "双画境、PC 视口与离线文件直开", "status": "implemented_and_verified", "evidence": ["audits/v12-cinematics.json", "audits/v12-offline-skill.png", "audits/v12-user-viewport-staff.png"]}
+  ],
+  "iterations": [
+    {"finding": "素材透明边界使门闩、阵台等在演出里过小", "repair": "按现有元数据中的实际绘画范围等比放置", "status": "visually_rechecked"},
+    {"finding": "壁画黑莲过场放大了邻幅残留的孤立边角", "repair": "仅在绘制时裁取本幅完整主体，不修改原始图集", "status": "visually_rechecked", "evidence": "audits/v12-scene-release.png"},
+    {"finding": "光柱顶端存在矩形边缘", "repair": "改为纵向渐隐、逐层收窄的光束", "status": "visually_rechecked", "evidence": "audits/v12-material-scene-awakening.png"},
+    {"finding": "系统中途减少动态时，开始播放的动画不能继续使用旧动态偏好", "repair": "立即关闭当前演出、收束入场并保留确认，资源不变", "status": "runtime_verified"}
+  ],
+  "video": "audits/v12-cinematics-preview.webm",
+  "boundaries": ["existing actor poses choreographed with code effects; no new sprite atlas", "no new voiceover or chapter soundtrack", "representative original-size screenshot review", "subjective impact and repeated-play pacing require player feedback", "no fixed-FPS or mobile/browser-matrix claim"]
+}

@@ -1,0 +1,292 @@
+{
+  "checks": [
+    {
+      "style": "material",
+      "size": {
+        "width": 629,
+        "height": 678
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 10,
+          "y": 118,
+          "w": 420,
+          "h": 358
+        }
+      }
+    },
+    {
+      "style": "material",
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 388.359375,
+          "y": 10,
+          "w": 420,
+          "h": 500
+        }
+      }
+    },
+    {
+      "style": "material",
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 524.25,
+          "y": 10,
+          "w": 420,
+          "h": 680
+        }
+      }
+    },
+    {
+      "style": "material",
+      "size": {
+        "width": 1989,
+        "height": 1113
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 1370.109375,
+          "y": 146,
+          "w": 420,
+          "h": 893
+        }
+      }
+    },
+    {
+      "style": "mural",
+      "size": {
+        "width": 629,
+        "height": 678
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 10,
+          "y": 118,
+          "w": 420,
+          "h": 358
+        }
+      }
+    },
+    {
+      "style": "mural",
+      "size": {
+        "width": 1280,
+        "height": 720
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 382.96875,
+          "y": 11.421875,
+          "w": 420,
+          "h": 500
+        }
+      }
+    },
+    {
+      "style": "mural",
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 517.25,
+          "y": 10,
+          "w": 420,
+          "h": 680
+        }
+      }
+    },
+    {
+      "style": "mural",
+      "size": {
+        "width": 1989,
+        "height": 1113
+      },
+      "collision": {
+        "vitals": 0,
+        "player": 0,
+        "goal": true,
+        "frame": {
+          "x": 845.0625,
+          "y": 10,
+          "w": 420,
+          "h": 893
+        }
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "style": "material",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 17,
+          "width": 420,
+          "height": 358
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 24,
+          "width": 420,
+          "height": 500
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 33,
+          "width": 420,
+          "height": 680
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "material",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 40,
+          "width": 420,
+          "height": 893
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 17,
+          "width": 420,
+          "height": 358
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 24,
+          "width": 420,
+          "height": 500
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 33,
+          "width": 420,
+          "height": 680
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "style": "mural",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 40,
+          "width": 420,
+          "height": 893
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v27-material-expanded-context.png",
+    "audits/v27-mural-expanded-context.png"
+  ],
+  "errors": [],
+  "passed": true
+}

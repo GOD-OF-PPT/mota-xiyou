@@ -1,0 +1,2692 @@
+{
+  "revision": 21,
+  "style": "青绿重彩 · 壁画浮世",
+  "assets": {
+    "actor_wukong_down": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    "actor_wukong_right": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 0,
+      "sy": 96,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    "actor_wukong_up": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    "actor_wukong_left": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 0,
+      "sy": 288,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    "portrait_wukong": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 32,
+      "sy": 30,
+      "sourceW": 40,
+      "sourceH": 40,
+      "frames": 1,
+      "anchor": {
+        "x": 20,
+        "y": 40
+      },
+      "contentBounds": [
+        0,
+        0,
+        40,
+        40
+      ]
+    },
+    "enemy_imp": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        24,
+        49,
+        88
+      ]
+    },
+    "enemy_monk": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        15,
+        21,
+        64,
+        88
+      ]
+    },
+    "enemy_ghost": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        5,
+        17,
+        61,
+        88
+      ]
+    },
+    "enemy_guard": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        30,
+        53,
+        88
+      ]
+    },
+    "enemy_spider": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        10,
+        28,
+        64,
+        88
+      ]
+    },
+    "enemy_yaksha": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        2,
+        33,
+        58,
+        88
+      ]
+    },
+    "enemy_dragon": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        3,
+        26,
+        59,
+        88
+      ]
+    },
+    "enemy_boss": {
+      "src": "assets/mural/finale/heart-three-forms-v21.png",
+      "sx": 21,
+      "sy": 10,
+      "sourceW": 817,
+      "sourceH": 685,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        817,
+        683
+      ],
+      "nativeContentSize": [
+        815,
+        681
+      ],
+      "anchor": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "groundContact": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "logicalScale": 0.08466257668711656,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0
+    },
+    "npc_lantern": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        24,
+        54,
+        88
+      ]
+    },
+    "npc_bajie": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        11,
+        21,
+        64,
+        88
+      ]
+    },
+    "npc_tangseng": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        7,
+        16,
+        63,
+        87
+      ]
+    },
+    "npc_whitewutian": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        7,
+        27,
+        63,
+        88
+      ]
+    },
+    "npc_qiao": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        8,
+        30,
+        64,
+        88
+      ]
+    },
+    "npc_nezha": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        20,
+        26,
+        64,
+        88
+      ]
+    },
+    "enemy_boss_1": {
+      "src": "assets/mural/finale/heart-three-forms-v21.png",
+      "sx": 824,
+      "sy": 10,
+      "sourceW": 632,
+      "sourceH": 688,
+      "frames": 1,
+      "contentBounds": [
+        0,
+        2,
+        630,
+        686
+      ],
+      "nativeContentSize": [
+        630,
+        684
+      ],
+      "anchor": {
+        "x": 315.0,
+        "y": 644.96
+      },
+      "groundContact": {
+        "x": 315.0,
+        "y": 644.96
+      },
+      "logicalScale": 0.08466257668711656,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 1
+    },
+    "enemy_boss_2": {
+      "src": "assets/mural/finale/heart-three-forms-v21.png",
+      "sx": 1471,
+      "sy": 31,
+      "sourceW": 693,
+      "sourceH": 667,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        691,
+        665
+      ],
+      "nativeContentSize": [
+        689,
+        663
+      ],
+      "anchor": {
+        "x": 346.5,
+        "y": 625.22
+      },
+      "groundContact": {
+        "x": 346.5,
+        "y": 625.22
+      },
+      "logicalScale": 0.08466257668711656,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 2
+    },
+    "enemy_bat": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        33,
+        55,
+        88
+      ]
+    },
+    "enemy_stone": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        34,
+        51,
+        88
+      ]
+    },
+    "enemy_thorn": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        8,
+        37,
+        64,
+        88
+      ]
+    },
+    "enemy_viper": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        6,
+        30,
+        62,
+        88
+      ]
+    },
+    "enemy_bone": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 0,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        27,
+        54,
+        88
+      ]
+    },
+    "enemy_water": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 64,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        29,
+        50,
+        88
+      ]
+    },
+    "enemy_crab": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 128,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        19,
+        32,
+        64,
+        88
+      ]
+    },
+    "enemy_flame": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 192,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        7,
+        29,
+        63,
+        88
+      ]
+    },
+    "enemy_alchemist": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        9,
+        29,
+        64,
+        88
+      ]
+    },
+    "enemy_furnace": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        3,
+        32,
+        59,
+        88
+      ]
+    },
+    "enemy_mirror": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 128,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        33,
+        46,
+        88
+      ]
+    },
+    "enemy_ink": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        4,
+        32,
+        60,
+        88
+      ]
+    },
+    "enemy_sentinel": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 0,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        31,
+        44,
+        88
+      ]
+    },
+    "enemy_archivist": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 64,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        6,
+        29,
+        62,
+        88
+      ]
+    },
+    "enemy_shade": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 128,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        26,
+        32,
+        64,
+        88
+      ]
+    },
+    "enemy_wrath": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 192,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        31,
+        37,
+        88
+      ]
+    },
+    "enemy_acolyte": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        15,
+        21,
+        64,
+        88
+      ]
+    },
+    "enemy_bell": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        5,
+        17,
+        61,
+        88
+      ]
+    },
+    "enemy_brass": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        30,
+        53,
+        88
+      ]
+    },
+    "enemy_puppet": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        10,
+        28,
+        64,
+        88
+      ]
+    },
+    "enemy_judge": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        2,
+        33,
+        58,
+        88
+      ]
+    },
+    "enemy_flood": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        3,
+        26,
+        59,
+        88
+      ]
+    },
+    "enemy_heart": {
+      "src": "assets/mural/finale/heart-three-forms-v21.png",
+      "sx": 21,
+      "sy": 10,
+      "sourceW": 817,
+      "sourceH": 685,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        817,
+        683
+      ],
+      "nativeContentSize": [
+        815,
+        681
+      ],
+      "anchor": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "groundContact": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "logicalScale": 0.08466257668711656,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0
+    },
+    "enemy_thresholdImp": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        24,
+        49,
+        88
+      ]
+    },
+    "enemy_boss_0": {
+      "src": "assets/mural/finale/heart-three-forms-v21.png",
+      "sx": 21,
+      "sy": 10,
+      "sourceW": 817,
+      "sourceH": 685,
+      "frames": 1,
+      "contentBounds": [
+        2,
+        2,
+        817,
+        683
+      ],
+      "nativeContentSize": [
+        815,
+        681
+      ],
+      "anchor": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "groundContact": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "logicalScale": 0.08466257668711656,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "finaleForm": 0
+    },
+    "enemy_reliquary0": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        30,
+        53,
+        88
+      ]
+    },
+    "enemy_reliquary1": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 64,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        2,
+        33,
+        58,
+        88
+      ]
+    },
+    "enemy_reliquary2": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 96,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        3,
+        26,
+        59,
+        88
+      ]
+    },
+    "enemy_reliquary3": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        3,
+        32,
+        59,
+        88
+      ]
+    },
+    "enemy_reliquary4": {
+      "src": "assets/mural/atlases/enemies.png",
+      "sx": 128,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        0,
+        33,
+        46,
+        88
+      ]
+    },
+    "enemy_reliquary5": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 128,
+      "sy": 288,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        12,
+        31,
+        64,
+        88
+      ]
+    },
+    "npc_whiteWutian": {
+      "src": "assets/mural/atlases/creatures.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 96,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 88
+      },
+      "contentBounds": [
+        7,
+        27,
+        63,
+        88
+      ]
+    },
+    "item_key_yellow": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        21,
+        6,
+        64,
+        58
+      ]
+    },
+    "item_key_blue": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        38,
+        58
+      ]
+    },
+    "item_key_red": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        37,
+        58
+      ]
+    },
+    "item_atk": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        3,
+        6,
+        53,
+        57
+      ]
+    },
+    "item_def": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        57,
+        58
+      ]
+    },
+    "item_coin": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        10,
+        38,
+        58
+      ]
+    },
+    "item_orb": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        52,
+        58
+      ]
+    },
+    "item_mana": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        18,
+        6,
+        53,
+        58
+      ]
+    },
+    "item_elixir": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        8,
+        60,
+        58
+      ]
+    },
+    "item_hp": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        14,
+        64,
+        58
+      ]
+    },
+    "treasure_iron": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        40,
+        58
+      ]
+    },
+    "treasure_lotus": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        17,
+        6,
+        47,
+        58
+      ]
+    },
+    "treasure_thorn": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        27,
+        6,
+        64,
+        58
+      ]
+    },
+    "treasure_tide": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        42,
+        58
+      ]
+    },
+    "treasure_ember": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        6,
+        55,
+        58
+      ]
+    },
+    "treasure_mirror": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        24,
+        7,
+        64,
+        58
+      ]
+    },
+    "prop_door_yellow": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        6,
+        6,
+        59,
+        58
+      ]
+    },
+    "prop_door_blue": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 128,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        6,
+        54,
+        58
+      ]
+    },
+    "prop_door_red": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        5,
+        6,
+        57,
+        58
+      ]
+    },
+    "prop_gate": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        22,
+        6,
+        64,
+        58
+      ]
+    },
+    "prop_altar": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        7,
+        56,
+        58
+      ]
+    },
+    "prop_relic": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        6,
+        57,
+        58
+      ]
+    },
+    "prop_monument": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        11,
+        6,
+        52,
+        58
+      ]
+    },
+    "prop_chest": {
+      "src": "assets/mural/props/chest-v13.png",
+      "sx": 0,
+      "sy": 0,
+      "frames": 1,
+      "sourceW": 1254,
+      "sourceH": 1254,
+      "contentBounds": [
+        88,
+        193,
+        1208,
+        1156
+      ],
+      "anchor": {
+        "x": 648,
+        "y": 1079
+      },
+      "logicalScale": 0.039285714285714285
+    },
+    "prop_switch": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        53,
+        58
+      ]
+    },
+    "prop_plate": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        13,
+        6,
+        48,
+        53
+      ]
+    },
+    "prop_lamp": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        19,
+        6,
+        61,
+        58
+      ]
+    },
+    "prop_stairs_up": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        57,
+        58
+      ]
+    },
+    "prop_stairs_down": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        5,
+        6,
+        59,
+        58
+      ]
+    },
+    "prop_seal": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 256,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        12,
+        60,
+        58
+      ]
+    },
+    "prop_finale": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        14,
+        60,
+        58
+      ]
+    },
+    "prop_resonator": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        8,
+        48,
+        58
+      ]
+    },
+    "prop_rescue": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        3,
+        10,
+        59,
+        58
+      ]
+    },
+    "prop_tide": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        6,
+        8,
+        58,
+        58
+      ]
+    },
+    "prop_portal": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        43,
+        53
+      ]
+    },
+    "prop_illusion": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        6,
+        58,
+        58
+      ]
+    },
+    "prop_eye": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        4,
+        13,
+        60,
+        58
+      ]
+    },
+    "prop_staff": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        11,
+        60,
+        58
+      ]
+    },
+    "prop_cicada": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        5,
+        7,
+        61,
+        58
+      ]
+    },
+    "prop_clone": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        16,
+        6,
+        64,
+        58
+      ]
+    },
+    "prop_gate_open": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        46,
+        58
+      ]
+    },
+    "prop_door_open": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 384,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        23,
+        7,
+        64,
+        58
+      ]
+    },
+    "prop_bars": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        22,
+        6,
+        64,
+        58
+      ]
+    },
+    "prop_choice": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 320,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        8,
+        48,
+        58
+      ]
+    },
+    "prop_fragment": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        8,
+        6,
+        57,
+        58
+      ]
+    },
+    "item_yellowKey": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        21,
+        6,
+        64,
+        58
+      ]
+    },
+    "item_blueKey": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 64,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        38,
+        58
+      ]
+    },
+    "item_redKey": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 128,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        6,
+        37,
+        58
+      ]
+    },
+    "item_amber": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        3,
+        6,
+        53,
+        57
+      ]
+    },
+    "item_ruby": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        3,
+        6,
+        53,
+        57
+      ]
+    },
+    "item_jade": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        57,
+        58
+      ]
+    },
+    "item_emerald": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        7,
+        6,
+        57,
+        58
+      ]
+    },
+    "item_coins": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 320,
+      "sy": 0,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        0,
+        10,
+        38,
+        58
+      ]
+    },
+    "item_peach": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        14,
+        64,
+        58
+      ]
+    },
+    "item_bigPeach": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        14,
+        64,
+        58
+      ]
+    },
+    "item_feast": {
+      "src": "assets/mural/atlases/objects.png",
+      "sx": 192,
+      "sy": 64,
+      "sourceW": 64,
+      "sourceH": 64,
+      "frames": 1,
+      "anchor": {
+        "x": 32,
+        "y": 58
+      },
+      "contentBounds": [
+        9,
+        14,
+        64,
+        58
+      ]
+    },
+    "floor_jade": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "floor_amber": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 192,
+      "sy": 0,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "floor_blue": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "floor_crimson": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 576,
+      "sy": 0,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "floor_violet": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "floor_gold": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 192,
+      "sy": 192,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_jade": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 384,
+      "sy": 192,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_amber": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 576,
+      "sy": 192,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_blue": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_crimson": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 192,
+      "sy": 384,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_violet": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 384,
+      "sy": 384,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "wall_gold": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 576,
+      "sy": 384,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "terrain_cloud": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 384,
+      "sy": 0,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "terrain_gap": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "terrain_water": {
+      "src": "assets/mural/atlases/terrain.png",
+      "sx": 384,
+      "sy": 192,
+      "sourceW": 192,
+      "sourceH": 192,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "tileCells": 4,
+      "contentBounds": [
+        0,
+        0,
+        192,
+        192
+      ]
+    },
+    "landmark_jade": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        6,
+        61,
+        254,
+        312
+      ]
+    },
+    "landmark_amber": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        16,
+        48,
+        256,
+        312
+      ]
+    },
+    "landmark_blue": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        41,
+        252,
+        312
+      ]
+    },
+    "landmark_crimson": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        13,
+        56,
+        256,
+        312
+      ]
+    },
+    "landmark_violet": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        0,
+        66,
+        244,
+        312
+      ]
+    },
+    "landmark_gold": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        13,
+        65,
+        256,
+        312
+      ]
+    },
+    "landmark_buddha": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        6,
+        61,
+        254,
+        312
+      ]
+    },
+    "landmark_pagoda": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        16,
+        48,
+        256,
+        312
+      ]
+    },
+    "landmark_dragon": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 0,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        4,
+        41,
+        252,
+        312
+      ]
+    },
+    "landmark_furnace": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 0,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        13,
+        56,
+        256,
+        312
+      ]
+    },
+    "landmark_scripture": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 256,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        0,
+        66,
+        244,
+        312
+      ]
+    },
+    "landmark_blacklotus": {
+      "src": "assets/mural/atlases/landmarks.png",
+      "sx": 512,
+      "sy": 320,
+      "sourceW": 256,
+      "sourceH": 320,
+      "frames": 1,
+      "anchor": {
+        "x": 128,
+        "y": 312
+      },
+      "contentBounds": [
+        13,
+        65,
+        256,
+        312
+      ]
+    },
+    "fx_staff": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_morph": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 96,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_clone": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 192,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_door": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 288,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_pickup": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 384,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_relic": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 480,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "fx_hit": {
+      "src": "assets/mural/atlases/fx.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 96,
+      "sourceH": 96,
+      "frames": 4,
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    "ui_backdrop": {
+      "src": "assets/mural/ui_backdrop.png",
+      "sourceW": 1536,
+      "sourceH": 1024,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "ui_motif": {
+      "src": "assets/mural/ui_motif.png",
+      "sourceW": 384,
+      "sourceH": 1024,
+      "frames": 1,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "cinematic_wukong": {
+      "src": "assets/mural/finale/wukong-cinematic-v21.png",
+      "sx": 0,
+      "sy": 0,
+      "sourceW": 1229,
+      "sourceH": 1280,
+      "frames": 1,
+      "contentBounds": [
+        83,
+        64,
+        1186,
+        1178
+      ],
+      "nativeContentSize": [
+        1103,
+        1114
+      ],
+      "anchor": {
+        "x": 634.5,
+        "y": 1178
+      },
+      "groundContact": {
+        "x": 634.5,
+        "y": 1178
+      },
+      "logicalScale": 0.06463195691202872,
+      "sceneScale": 1,
+      "registrationVersion": 21,
+      "cinematicOnly": true
+    }
+  },
+  "sources": [
+    {
+      "file": "assets/mural/source/wukong.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/mural/source/creatures.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/mural/source/enemies-extra.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "assets/mural/source/objects.png",
+      "width": 1161,
+      "height": 1355
+    },
+    {
+      "file": "assets/mural/source/terrain.png",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "assets/mural/source/landmarks.png",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "assets/mural/source/fx.png",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "runtimeFiles": [
+    "assets/mural/atlases/wukong.png",
+    "assets/mural/atlases/creatures.png",
+    "assets/mural/finale/heart-three-forms-v21.png",
+    "assets/mural/atlases/enemies.png",
+    "assets/mural/atlases/objects.png",
+    "assets/mural/props/chest-v13.png",
+    "assets/mural/atlases/terrain.png",
+    "assets/mural/atlases/landmarks.png",
+    "assets/mural/atlases/fx.png",
+    "assets/mural/ui_backdrop.png",
+    "assets/mural/ui_motif.png",
+    "assets/mural/finale/wukong-cinematic-v21.png"
+  ],
+  "runtimeBytes": 12070242
+}

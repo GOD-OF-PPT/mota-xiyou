@@ -1,0 +1,1952 @@
+{
+  "passed": true,
+  "method": "Original public full-campaign trace to pre-boss checkpoint, then 26 legal walking actions back to lantern. No resource or position edits.",
+  "floor": 18,
+  "returnPath": [
+    "down",
+    "right",
+    "right",
+    "right",
+    "down",
+    "down",
+    "down",
+    "right",
+    "right",
+    "right",
+    "right",
+    "down",
+    "down",
+    "down",
+    "down",
+    "down",
+    "down",
+    "down",
+    "down",
+    "left",
+    "left",
+    "left",
+    "left",
+    "left",
+    "left",
+    "left"
+  ],
+  "combinations": 22,
+  "steps": [
+    {
+      "id": "f17-7",
+      "x": 10,
+      "y": 5,
+      "floor": 17,
+      "name": "黑莲化影 · 心猿",
+      "kind": "fight",
+      "label": "黑莲化影 · 心猿"
+    }
+  ],
+  "ms": 80.892,
+  "rows": [
+    {
+      "gear": [],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1045，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [],
+        "reason": "预计损失 1045，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "iron"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -972
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 1,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -972
+        },
+        "damage": 972,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "iron",
+        "lotus"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -930
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 43,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -930
+        },
+        "damage": 930,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron",
+          "lotus"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "iron",
+        "tide"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -874
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 99,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -874
+        },
+        "damage": 874,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron",
+          "tide"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "iron",
+        "thorn"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -962
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 11,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -962
+        },
+        "damage": 962,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron",
+          "thorn"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "iron",
+        "mirror"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -972
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 1,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -972
+        },
+        "damage": 972,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron",
+          "mirror"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "iron",
+        "ember"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 980，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "iron",
+          "ember"
+        ],
+        "reason": "预计损失 980，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "lotus"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1026，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "lotus"
+        ],
+        "reason": "预计损失 1026，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "lotus",
+        "tide"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -923
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 50,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -923
+        },
+        "damage": 923,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "lotus",
+          "tide"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "lotus",
+        "thorn"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1025，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "lotus",
+          "thorn"
+        ],
+        "reason": "预计损失 1025，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "lotus",
+        "mirror"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1074，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "lotus",
+          "mirror"
+        ],
+        "reason": "预计损失 1074，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "lotus",
+        "ember"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1005，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "lotus",
+          "ember"
+        ],
+        "reason": "预计损失 1005，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "tide"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -940
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 33,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -940
+        },
+        "damage": 940,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "tide"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "tide",
+        "thorn"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -937
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 36,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -937
+        },
+        "damage": 937,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "tide",
+          "thorn"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "tide",
+        "mirror"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -966
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 7,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -966
+        },
+        "damage": 966,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "tide",
+          "mirror"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "tide",
+        "ember"
+      ],
+      "result": {
+        "possible": true,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {
+              "hp": -916
+            },
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": true
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 57,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {
+          "hp": -916
+        },
+        "damage": 916,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "tide",
+          "ember"
+        ],
+        "reason": ""
+      }
+    },
+    {
+      "gear": [
+        "thorn"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1042，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "thorn"
+        ],
+        "reason": "预计损失 1042，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "thorn",
+        "mirror"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1073，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "thorn",
+          "mirror"
+        ],
+        "reason": "预计损失 1073，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "thorn",
+        "ember"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1013，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "thorn",
+          "ember"
+        ],
+        "reason": "预计损失 1013，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "mirror"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1074，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "mirror"
+        ],
+        "reason": "预计损失 1074，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "mirror",
+        "ember"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1053，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "mirror",
+          "ember"
+        ],
+        "reason": "预计损失 1053，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    },
+    {
+      "gear": [
+        "ember"
+      ],
+      "result": {
+        "possible": false,
+        "steps": [
+          {
+            "label": "黑莲化影 · 心猿",
+            "kind": "fight",
+            "delta": {},
+            "path": [
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "left",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "up",
+              "right",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up",
+              "up",
+              "up",
+              "right",
+              "right",
+              "right",
+              "up"
+            ],
+            "possible": false,
+            "reason": "预计损失 1018，现有生命 973；战后将力竭，请调整成长或补给。"
+          }
+        ],
+        "before": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "after": {
+          "hp": 973,
+          "atk": 97,
+          "def": 55,
+          "mana": 6,
+          "coins": 2,
+          "orbs": 2,
+          "elixirs": 0,
+          "keys": {
+            "yellow": 0,
+            "blue": 2,
+            "red": 0
+          },
+          "rescued": 4
+        },
+        "delta": {},
+        "damage": 0,
+        "hpPaid": 0,
+        "hpGained": 0,
+        "walk": 26,
+        "equipped": [
+          "ember"
+        ],
+        "reason": "预计损失 1018，现有生命 973；战后将力竭，请调整成长或补给。"
+      }
+    }
+  ]
+}

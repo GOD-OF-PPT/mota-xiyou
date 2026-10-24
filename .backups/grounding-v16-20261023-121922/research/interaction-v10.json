@@ -1,0 +1,162 @@
+{
+  "status": "verified_current_pc",
+  "date": "2026-10-22",
+  "scope": "PC immersion and interaction system; preserve campaign rules and resources",
+  "previous_report": "docs/v9-repair-report.md",
+  "guidance": "docs/v10-immersion-plan.md",
+  "art_gameplay_followup": "research/art-gameplay-v11.json",
+  "cinematics_followup": "research/cinematics-v12.json",
+  "experience_followup": "research/experience-v13.json",
+  "clarity_followup": "research/clarity-v14.json",
+  "regression_verified_on": "2026-10-23",
+  "evidence": [
+    "audits/v10-user/01-altar-sidebar.png",
+    "audits/v10-user/02-dialogue-density.png",
+    "audits/v10-user/03-target-actions.png"
+  ],
+  "goals": [
+    {
+      "id": "T1",
+      "name": "统一模式与输入",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json",
+        "audits/v15-choice-interaction.json"
+      ]
+    },
+    {
+      "id": "T2",
+      "name": "场景莲灯与沉浸行囊",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json",
+        "audits/v15-choice-interaction.json"
+      ]
+    },
+    {
+      "id": "T3",
+      "name": "短句对白与实际进度引导",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json"
+      ]
+    },
+    {
+      "id": "T4",
+      "name": "十八层入场与恢复提示",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json"
+      ]
+    },
+    {
+      "id": "T5",
+      "name": "可读目标与明确动作",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json",
+        "audits/v15-choice-interaction.json"
+      ]
+    },
+    {
+      "id": "T6",
+      "name": "中屏神通演出和原场景结果",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json"
+      ]
+    },
+    {
+      "id": "T7",
+      "name": "实际操作和逐张截图验收",
+      "status": "implemented_and_verified",
+      "evidence": [
+        "audits/v10-interaction.json",
+        "audits/v10-presentation.json"
+      ]
+    }
+  ],
+  "reflections": [
+    {
+      "iteration": 1,
+      "finding": "场景莲灯在复杂地表上对比不足；禁用图标过暗",
+      "evidence": "audits/v10-first/v10-lotus-ritual-poor.png",
+      "repair": "加深莲花圆形背衬、提高字号和禁用图标可辨性",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 1,
+      "finding": "源帧的透明边距令行囊和中屏人物偏小",
+      "evidence": [
+        "audits/v10-first/v10-inventory-material.png",
+        "audits/v10-first/v10-cinematic-staff.png"
+      ],
+      "repair": "按实际内容边界直接从图集采样，保留原像素风采样规则",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 1,
+      "finding": "演出设置被完整规则折叠容器包住，不能直接操作",
+      "evidence": "audits/v10-first/v10-interaction.json",
+      "repair": "设置与可选全文规则分离，保留明确入口",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 2,
+      "finding": "较大字号下修心价格尾字换行",
+      "repair": "清除按钮继承的大内边距、价格保持完整词组，实际宽度再验收",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 2,
+      "finding": "技能角色放大后，固定水平棒体起点与手部不吻合",
+      "repair": "改为从举棒处投出金色幻形，落成真实桥体；跳过不重复结算",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 2,
+      "finding": "首次对白目标与次行提示重复，初层氛围误用作品说明",
+      "repair": "次行改为实际操作键提示，十八层分别使用简短世界内氛围文案",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 2,
+      "finding": "减弱动态的短展示造成自动关闭与测试点击竞态",
+      "repair": "静态等价帧保留900ms；退出使用实际跳过键，避免等待已隐藏按钮",
+      "status": "rechecked"
+    },
+    {
+      "iteration": 3,
+      "finding": "短对白仍会盖住行者和说话人物",
+      "repair": "使用真实渲染范围把对白移到人物上方，增加实际重叠面积为零的浏览器断言",
+      "status": "rechecked",
+      "evidence": "audits/v10-short-speech.png"
+    },
+    {
+      "iteration": 4,
+      "finding": "残钟取舍的点击和数字立即结算，行囊返回丢失比较，世界快捷键穿透",
+      "repair": "先比较后确认，保存未结算选择，统一键盘和外部点击边界",
+      "status": "rechecked",
+      "evidence": "audits/v15-choice-interaction.json"
+    },
+    {
+      "iteration": 4,
+      "finding": "1280窗口的当前目标挡住比较按钮；小窗口签页仍挡住角色；支付生命带正号；已取宝回访说明失真",
+      "repair": "纳入避让并收窄签页，校验实际角色重叠为零；分清支付与收益，显示余额及真实回访状态",
+      "status": "rechecked",
+      "evidence": "docs/v15-choice-review.md"
+    }
+  ],
+  "acceptance": [
+    "audits/v10-interaction.json",
+    "audits/v10-presentation.json"
+  ],
+  "review": "docs/v10-immersion-review.md",
+  "choice_followup": "research/choice-interaction-v15.json"
+}

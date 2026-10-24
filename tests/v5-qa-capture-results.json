@@ -1,0 +1,53 @@
+{
+  "desktop": {
+    "viewport": {
+      "width": 1440,
+      "height": 1024
+    },
+    "geometry": {
+      "game-canvas": {
+        "x": 350,
+        "y": 151,
+        "w": 720,
+        "h": 720
+      },
+      "portrait": {
+        "x": 47,
+        "y": 212,
+        "w": 51,
+        "h": 58
+      },
+      "context-body": {
+        "x": 1212,
+        "y": 246,
+        "w": 184,
+        "h": 263.1875
+      },
+      "skill-walk": {
+        "x": 345,
+        "y": 903,
+        "w": 146,
+        "h": 49
+      }
+    }
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewLabel": "近观 5–17 / 9–21 · 方向跟随",
+    "player": {
+      "x": 11,
+      "y": 19
+    },
+    "FReturnsPlayer": true
+  },
+  "reducedMotionIdenticalPixels": true,
+  "assets": {
+    "loaded": 9,
+    "total": 9,
+    "failed": []
+  },
+  "errors": []
+}

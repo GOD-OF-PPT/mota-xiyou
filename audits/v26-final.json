@@ -1,0 +1,145 @@
+{
+  "version": 26,
+  "date": "2026-10-24",
+  "scopeStatus": "complete",
+  "scope": "Built-in image generation and actual runtime integration for frequent game UI, starting with the user objective screenshot",
+  "generationMode": "built-in image_gen",
+  "assetCount": 4,
+  "generatedAssets": [
+    {
+      "file": "assets/ui-v26/quest-plaque.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-956c99f8-12d0-4267-8a5d-c0d90d4ea02a.png",
+      "sha256": "aa239a3f5c6e6989ffe72daf9330913a9039009660b38ee3019aff1fed5ae018",
+      "width": 1774,
+      "height": 887,
+      "alphaPreserved": true,
+      "bytes": 3036403
+    },
+    {
+      "file": "assets/ui-v26/reading-folio.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-7b259152-7571-4af9-a6aa-7bfa80c982f2.png",
+      "sha256": "4595d8637c5f1ba05b58a802c6fa36a95552a4ce07217c8eb318c25091269169",
+      "width": 1536,
+      "height": 1024,
+      "alphaPreserved": true,
+      "bytes": 2712877
+    },
+    {
+      "file": "assets/ui-v26/dialogue-scroll.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-390702b0-7f3c-4943-800b-cf43abcd4941.png",
+      "sha256": "26bf9e2f32c87f910f9afb1db81c3ceac9019740f16b410032827b9cb580a785",
+      "width": 2172,
+      "height": 724,
+      "alphaPreserved": true,
+      "bytes": 2069506
+    },
+    {
+      "file": "assets/ui-v26/offering-tablet.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-d621bbc6-11eb-4c39-8ab3-d6eb0ef76d7a.png",
+      "sha256": "867fb3469128b7d9ee7a9238bf83f31267170852dab93c91434dd0c9fc8d79ef",
+      "width": 1024,
+      "height": 1536,
+      "alphaPreserved": true,
+      "bytes": 3015241
+    }
+  ],
+  "totalNewAssetBytes": 10834027,
+  "prompts": "research/image-ui-v26/prompts.json",
+  "reports": [
+    {
+      "file": "audits/v26-image-skins-browser.json",
+      "sha256": "4e4345ad7a8e15f5fbe514c7776bb5aeffd8912e841cc9d4af011550e47728bf",
+      "passed": true,
+      "checks": 4
+    },
+    {
+      "file": "audits/v26-surfaces-browser.json",
+      "sha256": "73482b07de577667cc335852493a660dfa49fc71c66ba6130ed54aa7e61e9506",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "file": "audits/v26-regression-campaign-regression.json",
+      "sha256": "4ba1357615bea0ca8c768e4de9ab8650b01081eb3bd83ced109975b63de0722a",
+      "passed": true,
+      "checks": 21
+    },
+    {
+      "file": "audits/v26-study-browser.json",
+      "sha256": "e7df6a4d6f88c92b6a99a7ad1b73af42e49a8ce5010d6f1521b9d4e635231ed5",
+      "passed": true,
+      "checks": 6
+    }
+  ],
+  "technicalCheckGroups": 41,
+  "source": {
+    "index.html": "b9fb63f3295a8dd69b876603bb156fd05c094672ad06cd0f91d0c0bcbe6735c1",
+    "README.md": "e646bd34cbd341153857435430eae10fe73bb5e46356edc726559344a8de8a4b",
+    "js/ui.js": "9da509e120865c67abcff4ea53fd0bc187dca55b5281e6ea398ceb46ff992f68",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "scripts/build_v23_study.cjs": "685137480efb696e216bde8e8b593911ff6ca2f1180872f9136a5c666ec01afe",
+    "tests/v26-image-skins-browser.cjs": "95399d6bb14210cf0507849c316a1be02761eaddb4791f2cfa8b7bff3d8afafa",
+    "tests/v26-surfaces-browser.cjs": "542cc2298ee3d11d1796d5211bb22d071ad0d27f729aeba2c0d8025b2acf85a6",
+    "tests/v26-campaign-regression.cjs": "12098d5b82b727f6d80c4d85d177d6f3397e59707b24eb653cf7f1ac8383db83",
+    "tests/v26-study-browser.cjs": "5370ae6a862708cf4a6400b54b9ace84d33f8518b438a611a612df3d1e3c76b5",
+    "docs/v26-image-ui-plan.md": "66be09979bce0774ba4e6c102f21f5d53ec9af03e37b3123a3e478f515de2dd9",
+    "docs/v26-image-ui-review.md": "a6dd19e406a10e267bfb02095ee9c48e8f0b2f1f015ece95ec770dc5bef8aba5",
+    "docs/v23-human-playtest-protocol.md": "5ec0046c03084fc38daeee5fae0f0de278889d54093d620cfe19925c7e3eb868",
+    "research/image-ui-v26/prompts.json": "ef2df0eb5e4ea1d5b4425af99d54a8228f28a16fb821d7595cac459bf6c98983",
+    "research/image-ui-v26/assets.json": "cf6ba794226b5939c35805ad75edb7439693856a61f577bac8a1df933b8c5031",
+    "research/image-ui-v26/progress.json": "23bf21db42497c5c6b3feb0eb1601479dead7e943a17f4035e57ba5fa8674474",
+    "playtest-v23-new.html": "2c337ca618812c255a5ffdcd5eaeb27263d8f8b53fca9d9412537d61d9214f63",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "research/study-v23/manifest.json": "1fef702f4d2b706692d6a0dbf1bd1a2a4ae57feaaeb1cccdb737e5a6fb8e59df"
+  },
+  "unchangedRules": {
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/renderer.js": "b31bbaa6736a82f145f9276d675ee55dbc7f37f0baccb0734910bb4860a8dbe3",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83"
+  },
+  "frozenBaselineUnchanged": {
+    "file": "playtest-v23-baseline.html",
+    "sha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "visualReview": {
+    "method": "Generated assets and representative PC captures inspected one at a time at original resolution; direct render layer checks catch hidden or rotated skins.",
+    "files": {
+      "audits/v26-material-objective-629.png": "76a632ea4871a4c36cffda9b7d77c0fde2834535f3226f4ec32b31cb46c0992d",
+      "audits/v26-mural-objective-629.png": "7403c9c3f969e48ab48ecbdfadb68bc66ecd998fd2d5a904db798894383ea3d7",
+      "audits/v26-material-marked-object.png": "d0bcbf58f8846a8aa6036842b8ef7f9b8409be23424a9f385444fbe307061b1d",
+      "audits/v26-material-inventory-629.png": "0dc536ec100e206b77ef11f31d84b66834153750bfeaff1b5a362055adaf3cf9",
+      "audits/v26-material-ritual-materials.png": "f6e8346b604840a767758894fa46fc03f544b09e698b504f5fe936955fe99937",
+      "audits/v26-regression-campaign-regression-short-speech.png": "919a8e075ad9b17a20a79ede48494415af00ca6c75221bd7501189932a202b45"
+    }
+  },
+  "nativePreview": {
+    "url": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI26&round=1&task=first-three&objective=explore&art=material",
+    "actions": "Normal new game and explicit arrival, read-only source and screenshot confirmation of real quest plaque; no production-save mutations.",
+    "uiSkinState": "ready"
+  },
+  "preserved": [
+    "18 floors",
+    "deterministic finite resources",
+    "both art styles",
+    "one settled action on skip",
+    "main/trial isolation",
+    "offline index"
+  ],
+  "humanObservation": {
+    "actualParticipants": 0,
+    "preferenceAccepted": false,
+    "existingS5Gate": "pending"
+  },
+  "backup": ".backups/image-ui-v26-20261024/"
+}

@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "scope": [
+    "继续单层深度调研与落地",
+    "按选定像素风第二套重做真实美术资源",
+    "接入TA/特效/交互并完整验证"
+  ],
+  "selectedStyle": {
+    "name": "青绿重彩 · 壁画浮世",
+    "reference": "assets/mural/reference-selected.png",
+    "explicitChoice": "用户选择此前像素风第二套，未使用后来非像素方案"
+  },
+  "delivery": {
+    "floors": 18,
+    "map": "21x21; 13-tile follow view and full-floor planning",
+    "assets": {
+      "addressableIds": 145,
+      "uniqueFrameGroups": 105,
+      "runtimePngFiles": 9,
+      "runtimeBytes": 7250669,
+      "includesAliases": true
+    },
+    "preview": "http://127.0.0.1:8765/"
+  },
+  "steps": [
+    {
+      "step": "单层调查与资源关系",
+      "improvement": "用有限成长、治疗、钥匙与避战通路形成不同用途；18层均有问题/取舍/定位。",
+      "correction": "调查发现扩大房间后仍可全捡成长；改3个既有补给份额的用途，未追加敌人或资源总上限。",
+      "evidence": [
+        "research/level-depth-v5.json",
+        "tests/v5-depth-check.cjs"
+      ]
+    },
+    {
+      "step": "素材生产与TA注册",
+      "improvement": "真实像素PNG角色、24普通敌形象、6同道、6章建筑、42物件与6组4帧FX；48px原生绘制与脚点排序。",
+      "correction": "初轮仅亮色替换的code图仍粗糙；已在正常路径全部接真实资源，保留明确的失败降级。",
+      "evidence": [
+        "assets/mural/manifest.json",
+        "assets/mural/README.md",
+        "tests/v5-final-renderer-report.json"
+      ]
+    },
+    {
+      "step": "视觉主次与交互",
+      "improvement": "青绿暗景衬奶白棋盘/卷轴；新选择明确即付与放弃利益，经卷可定位，相机M/F归位。",
+      "correction": "修背景抢字、手机战损窄列/盖控件、透明留白、错误水材质、HUD全身像太小及觉醒符号人物。",
+      "evidence": [
+        "tests/v5-qa-comparison.png",
+        "tests/v5-qa-focused-comparison.png",
+        "research/mural-ui-reflection-v5.json"
+      ]
+    },
+    {
+      "step": "关卡/资源/存档完整闭环",
+      "improvement": "成长路线与避战路线都通过实际UI完整通关；资源/动作预览与结算一致。",
+      "correction": "独立检查发现旧save4在同版地图修订后虽落地合法却隔断退路；新增levelRevision首次安全归位，保持资源，同修订存档不平移。",
+      "evidence": [
+        "tests/v5-browser-offering-results.json",
+        "tests/v5-browser-passage-results.json",
+        "audits/v5-independent-review.json",
+        "audits/v5-migration-probe.json"
+      ]
+    }
+  ],
+  "verification": {
+    "ruleChecks": 78,
+    "browserCampaigns": 2,
+    "bothEndings": true,
+    "all16FragmentsAnd6TreasuresThroughUI": true,
+    "newBypassGatesActuallyCrossed": 4,
+    "specifiedBattlesSkipped": 4,
+    "oldStatesMigrationChecked": 3962,
+    "systemReducedPixelsStable": true,
+    "desktopViewport": [
+      1440,
+      1024
+    ],
+    "additionalViewports": [
+      [
+        1366,
+        768
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        390,
+        668
+      ]
+    ],
+    "designQa": "passed",
+    "pageErrors": []
+  },
+  "limits": [
+    "自动回放和视口检查不等同于真人首次理解度、主观趣味或真实手机性能。",
+    "没有据此承诺通关分钟数或称所有构筑都最优。",
+    "实际关卡几何与概念稿不同；源图作为艺术方向，不是实时游戏的整图背景。"
+  ]
+}

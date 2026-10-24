@@ -1,0 +1,1 @@
+Unity link probe: original manual redirects to package index; attempted package deep link returned HTTP404. Not used as evidence in the guidelines.

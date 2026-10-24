@@ -1,0 +1,31 @@
+{
+  "first": {
+    "region": [
+      350,
+      220,
+      1600,
+      900
+    ],
+    "worldPixelsIdentical": true,
+    "excluded": "The PC control hint intentionally moved to the HUD margin"
+  },
+  "mechanism": {
+    "region": [
+      350,
+      220,
+      1600,
+      900
+    ],
+    "worldPixelsIdentical": true,
+    "excluded": "The PC control hint intentionally moved to the HUD margin"
+  },
+  "courtyard": {
+    "region": [
+      0,
+      0,
+      404,
+      310
+    ],
+    "worldPixelsIdentical": true
+  }
+}

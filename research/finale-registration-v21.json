@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-24",
+  "records": [
+    {
+      "style": "material",
+      "phase": 0,
+      "ids": [
+        "enemy_boss_0",
+        "enemy_boss",
+        "enemy_heart"
+      ],
+      "source": "assets/material/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        15,
+        10,
+        777,
+        708
+      ],
+      "contentBounds": [
+        2,
+        2,
+        775,
+        706
+      ],
+      "groundContact": {
+        "x": 388.5,
+        "y": 663.76
+      },
+      "logicalScale": 0.09702457956015524,
+      "sha256": "44d3a357eda419e39928be2ac778279a34e0987f902c101081a659399907dd9f"
+    },
+    {
+      "style": "material",
+      "phase": 1,
+      "ids": [
+        "enemy_boss_1"
+      ],
+      "source": "assets/material/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        792,
+        6,
+        658,
+        708
+      ],
+      "contentBounds": [
+        2,
+        3,
+        656,
+        706
+      ],
+      "groundContact": {
+        "x": 329.0,
+        "y": 663.82
+      },
+      "logicalScale": 0.09702457956015524,
+      "sha256": "44d3a357eda419e39928be2ac778279a34e0987f902c101081a659399907dd9f"
+    },
+    {
+      "style": "material",
+      "phase": 2,
+      "ids": [
+        "enemy_boss_2"
+      ],
+      "source": "assets/material/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        1466,
+        14,
+        695,
+        704
+      ],
+      "contentBounds": [
+        3,
+        2,
+        692,
+        701
+      ],
+      "groundContact": {
+        "x": 347.5,
+        "y": 659.06
+      },
+      "logicalScale": 0.09702457956015524,
+      "sha256": "44d3a357eda419e39928be2ac778279a34e0987f902c101081a659399907dd9f"
+    },
+    {
+      "style": "material",
+      "id": "cinematic_wukong",
+      "source": "assets/material/finale/wukong-cinematic-v21.png",
+      "sourceRect": [
+        0,
+        0,
+        1199,
+        1312
+      ],
+      "contentBounds": [
+        21,
+        15,
+        1187,
+        1282
+      ],
+      "sha256": "781e1e7ecee16b13ea1324dd02dc890d4197214644c2c18b99e2f31b85757fd1"
+    },
+    {
+      "style": "mural",
+      "phase": 0,
+      "ids": [
+        "enemy_boss_0",
+        "enemy_boss",
+        "enemy_heart"
+      ],
+      "source": "assets/mural/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        21,
+        10,
+        817,
+        685
+      ],
+      "contentBounds": [
+        2,
+        2,
+        817,
+        683
+      ],
+      "groundContact": {
+        "x": 409.5,
+        "y": 642.14
+      },
+      "logicalScale": 0.08466257668711656,
+      "sha256": "a59d79b85c3d77d3bbff54ca1e71d8b19f1bd4e97b84dab7dbd5a33e2f9815e8"
+    },
+    {
+      "style": "mural",
+      "phase": 1,
+      "ids": [
+        "enemy_boss_1"
+      ],
+      "source": "assets/mural/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        824,
+        10,
+        632,
+        688
+      ],
+      "contentBounds": [
+        0,
+        2,
+        630,
+        686
+      ],
+      "groundContact": {
+        "x": 315.0,
+        "y": 644.96
+      },
+      "logicalScale": 0.08466257668711656,
+      "sha256": "a59d79b85c3d77d3bbff54ca1e71d8b19f1bd4e97b84dab7dbd5a33e2f9815e8"
+    },
+    {
+      "style": "mural",
+      "phase": 2,
+      "ids": [
+        "enemy_boss_2"
+      ],
+      "source": "assets/mural/finale/heart-three-forms-v21.png",
+      "sourceRect": [
+        1471,
+        31,
+        693,
+        667
+      ],
+      "contentBounds": [
+        2,
+        2,
+        691,
+        665
+      ],
+      "groundContact": {
+        "x": 346.5,
+        "y": 625.22
+      },
+      "logicalScale": 0.08466257668711656,
+      "sha256": "a59d79b85c3d77d3bbff54ca1e71d8b19f1bd4e97b84dab7dbd5a33e2f9815e8"
+    },
+    {
+      "style": "mural",
+      "id": "cinematic_wukong",
+      "source": "assets/mural/finale/wukong-cinematic-v21.png",
+      "sourceRect": [
+        0,
+        0,
+        1229,
+        1280
+      ],
+      "contentBounds": [
+        83,
+        64,
+        1186,
+        1178
+      ],
+      "sha256": "7a89161052c95cd5c46aa5ab886511560911380d79e3cdc65857cfe56992913e"
+    }
+  ],
+  "method": "native source rectangles, shared scale, explicit ground contact; original strip pixels unchanged"
+}

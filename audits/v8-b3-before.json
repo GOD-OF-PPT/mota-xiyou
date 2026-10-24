@@ -1,0 +1,208 @@
+{
+  "style": "material",
+  "viewport": {
+    "width": 2525,
+    "height": 1208,
+    "dpr": 1
+  },
+  "projection": {
+    "x": 0,
+    "y": 0,
+    "w": 21,
+    "h": 21,
+    "cellSize": 52.285714285714285,
+    "offsetX": 713.5,
+    "offsetY": 0,
+    "cssWidth": 2525,
+    "cssHeight": 1208,
+    "overview": true,
+    "guardShiftY": 0,
+    "boundaryRowsVisible": 0,
+    "authoredWidth": 21,
+    "authoredHeight": 21,
+    "planningHeight": 1098
+  },
+  "state": {
+    "version": 4,
+    "levelRevision": 5,
+    "floor": 0,
+    "x": 10,
+    "y": 18,
+    "facing": "up",
+    "hp": 620,
+    "atk": 24,
+    "def": 10,
+    "mana": 6,
+    "maxMana": 6,
+    "coins": 0,
+    "keys": {
+      "yellow": 1,
+      "blue": 0,
+      "red": 0
+    },
+    "relics": [],
+    "externalRelics": 0,
+    "fragments": [],
+    "treasures": [],
+    "equipped": [],
+    "selfAwakened": false,
+    "revealed": {},
+    "quests": {},
+    "tides": {},
+    "rescued": [],
+    "removed": {},
+    "switches": {},
+    "terrain": {},
+    "choices": {},
+    "visited": [
+      0
+    ],
+    "seenIntros": {
+      "0": true
+    },
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。最后那个空位，不在任何宝匣里。”\n\n本作是受《西游记后传》启发的平行篇章；五重心印与无相塔为原创设定。",
+        "floor": 0,
+        "portrait": "wukong",
+        "chapter": 0
+      }
+    ],
+    "log": [
+      {
+        "text": "残钟响起。你踏入了自己的因果。",
+        "kind": "story",
+        "turn": 0
+      }
+    ],
+    "elixirs": 1,
+    "orbs": 1,
+    "turn": 0,
+    "defeated": false,
+    "won": false,
+    "ending": null,
+    "bossPlan": "direct",
+    "settings": {
+      "quickZero": false,
+      "showDamage": true,
+      "motion": "standard",
+      "screenShake": false,
+      "music": false,
+      "sfx": false
+    },
+    "purchases": {
+      "atk": 0,
+      "def": 0,
+      "heal": 0
+    },
+    "startedAt": 1792657459787,
+    "kills": 0
+  },
+  "entities": [
+    {
+      "entity": {
+        "x": 17,
+        "y": 17,
+        "type": "chest",
+        "item": "redKey",
+        "requires": 5,
+        "label": "归根之匣 · 五印十六舍利共鸣，取得十八层心钥",
+        "id": "f0-3"
+      },
+      "anchor": {
+        "foot": {
+          "x": 1628.5,
+          "y": 941.1428571428571
+        },
+        "body": {
+          "x": 1625.232142857143,
+          "y": 911.6885714285714
+        },
+        "bounds": {
+          "x": 1598,
+          "y": 884.5,
+          "w": 54.464285714285715,
+          "h": 56.64285714285714
+        },
+        "visible": true,
+        "cell": {
+          "x": 17,
+          "y": 17
+        },
+        "ready": true
+      },
+      "raw": {
+        "footX": 280,
+        "footY": 288,
+        "left": 270.66666666666663,
+        "top": 270.6666666666667,
+        "width": 16.666666666666668,
+        "height": 17.333333333333332,
+        "priority": 1,
+        "id": "prop_chest"
+      },
+      "neighbors": {
+        "up": ".",
+        "down": "#",
+        "left": ".",
+        "right": "#"
+      }
+    },
+    {
+      "entity": {
+        "x": 5,
+        "y": 3,
+        "type": "enemy",
+        "enemy": "bat",
+        "id": "f0-5"
+      },
+      "anchor": {
+        "foot": {
+          "x": 1001.0714285714286,
+          "y": 209.14285714285714
+        },
+        "body": {
+          "x": 1002.6032366071428,
+          "y": 168.25379464285714
+        },
+        "bounds": {
+          "x": 966.0100446428571,
+          "y": 130.51004464285714,
+          "w": 73.18638392857143,
+          "h": 78.6328125
+        },
+        "visible": true,
+        "cell": {
+          "x": 5,
+          "y": 3
+        },
+        "ready": true
+      },
+      "raw": {
+        "footX": 88,
+        "footY": 64,
+        "left": 77.27083333333334,
+        "top": 39.9375,
+        "width": 22.395833333333336,
+        "height": 24.0625,
+        "priority": 2,
+        "id": "enemy_bat"
+      },
+      "neighbors": {
+        "up": "#",
+        "down": "#",
+        "left": ".",
+        "right": "."
+      }
+    }
+  ],
+  "canvas": {
+    "x": 0,
+    "y": 0
+  },
+  "labels": [],
+  "errors": [],
+  "rendererSha": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+  "stage": "before"
+}

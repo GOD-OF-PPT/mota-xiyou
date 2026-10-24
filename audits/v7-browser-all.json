@@ -1,0 +1,5786 @@
+{
+  "phase": "all",
+  "startedAt": "2026-10-22T07:00:35.731Z",
+  "checks": [
+    {
+      "name": "bubble follows rendered camera",
+      "style": "material",
+      "targetMoved": 240.47619047619042,
+      "bubbleMoved": 240.484375
+    },
+    {
+      "name": "bubble follows rendered camera",
+      "style": "mural",
+      "targetMoved": 240.47619047619042,
+      "bubbleMoved": 240.484375
+    }
+  ],
+  "matrix": [
+    {
+      "width": 2525,
+      "height": 1208,
+      "dpr": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 2525,
+        "height": 1208
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 2525,
+        "h": 1208
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 664.1190476190476
+        },
+        "body": {
+          "x": 745.5388144841271,
+          "y": 606.7241443452381
+        },
+        "bounds": {
+          "x": 693.8740079365081,
+          "y": 553.7442336309524,
+          "w": 103.3296130952381,
+          "h": 110.37481398809524
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 783.4263392857143,
+          "y": 451.0721726190476
+        },
+        "bounds": {
+          "x": 713.9136904761905,
+          "y": 365.40252976190476,
+          "w": 139.02529761904762,
+          "h": 178.47842261904762
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 683.546875,
+        "y": 685.109375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "bubbleGap": 20.99032738095235,
+      "footGap": 20.990327380952408,
+      "playerFootGap": 141.2284226190476,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "directionVisible": false,
+      "style": "material",
+      "cacheDensity": 6,
+      "terrain": {
+        "width": 2016,
+        "height": 2208
+      },
+      "buffer": {
+        "width": 1,
+        "height": 1
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": true,
+        "cache": true,
+        "css": "auto"
+      },
+      "assets": {
+        "revision": 7,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr1-material.png"
+    },
+    {
+      "width": 2525,
+      "height": 1208,
+      "dpr": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 2525,
+        "height": 1208
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 2525,
+        "h": 1208
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 664.1190476190476
+        },
+        "body": {
+          "x": 762.7604166666667,
+          "y": 580.7539682539682
+        },
+        "bounds": {
+          "x": 701.3888888888889,
+          "y": 503.80158730158723,
+          "w": 122.74305555555554,
+          "h": 160.3174603174603
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 781.547619047619,
+          "y": 438.87301587301585
+        },
+        "bounds": {
+          "x": 661.3095238095239,
+          "y": 323.4444444444444,
+          "w": 240.47619047619048,
+          "h": 240.47619047619048
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 683.546875,
+        "y": 685.109375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "bubbleGap": 20.990327380952465,
+      "footGap": 20.990327380952408,
+      "playerFootGap": 141.2284226190476,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "directionVisible": false,
+      "style": "mural",
+      "cacheDensity": 3,
+      "terrain": {
+        "width": 1008,
+        "height": 1104
+      },
+      "buffer": {
+        "width": 1008,
+        "height": 1104
+      },
+      "extension": {
+        "width": 1,
+        "height": 1
+      },
+      "smoothing": {
+        "screen": false,
+        "cache": false,
+        "css": "pixelated"
+      },
+      "assets": {
+        "revision": 5,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr1-mural.png"
+    },
+    {
+      "width": 2525,
+      "height": 1208,
+      "dpr": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 5050,
+        "height": 2416
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 2525,
+        "h": 1208
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 664.1190476190476
+        },
+        "body": {
+          "x": 745.5388144841271,
+          "y": 606.7241443452381
+        },
+        "bounds": {
+          "x": 693.8740079365081,
+          "y": 553.7442336309524,
+          "w": 103.3296130952381,
+          "h": 110.37481398809524
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 783.4263392857143,
+          "y": 451.0721726190476
+        },
+        "bounds": {
+          "x": 713.9136904761905,
+          "y": 365.40252976190476,
+          "w": 139.02529761904762,
+          "h": 178.47842261904762
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 683.546875,
+        "y": 685.109375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "bubbleGap": 20.99032738095235,
+      "footGap": 20.990327380952408,
+      "playerFootGap": 141.2284226190476,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "directionVisible": false,
+      "style": "material",
+      "cacheDensity": 6,
+      "terrain": {
+        "width": 2016,
+        "height": 2208
+      },
+      "buffer": {
+        "width": 1,
+        "height": 1
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": true,
+        "cache": true,
+        "css": "auto"
+      },
+      "assets": {
+        "revision": 7,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr2-material.png"
+    },
+    {
+      "width": 2525,
+      "height": 1208,
+      "dpr": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 5050,
+        "height": 2416
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 2525,
+        "h": 1208
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 664.1190476190476
+        },
+        "body": {
+          "x": 762.7604166666667,
+          "y": 580.7539682539682
+        },
+        "bounds": {
+          "x": 701.3888888888889,
+          "y": 503.80158730158723,
+          "w": 122.74305555555554,
+          "h": 160.3174603174603
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 781.547619047619,
+          "y": 438.87301587301585
+        },
+        "bounds": {
+          "x": 661.3095238095239,
+          "y": 323.4444444444444,
+          "w": 240.47619047619048,
+          "h": 240.47619047619048
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 683.546875,
+        "y": 685.109375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "bubbleGap": 20.990327380952465,
+      "footGap": 20.990327380952408,
+      "playerFootGap": 141.2284226190476,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 781.55,
+        "y": 664.12
+      },
+      "directionVisible": false,
+      "style": "mural",
+      "cacheDensity": 3,
+      "terrain": {
+        "width": 1008,
+        "height": 1104
+      },
+      "buffer": {
+        "width": 1008,
+        "height": 1104
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": false,
+        "cache": false,
+        "css": "pixelated"
+      },
+      "assets": {
+        "revision": 5,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr2-mural.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 484.2857142857143
+        },
+        "body": {
+          "x": 425.17857142857144,
+          "y": 451.55357142857144
+        },
+        "bounds": {
+          "x": 395.7142857142857,
+          "y": 421.3392857142857,
+          "w": 58.92857142857142,
+          "h": 62.94642857142857
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 446.7857142857142,
+          "y": 362.7857142857143
+        },
+        "bounds": {
+          "x": 407.1428571428571,
+          "y": 313.92857142857144,
+          "w": 79.28571428571428,
+          "h": 101.78571428571428
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 475.625,
+        "y": 429.78125,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "right",
+      "datasetTarget": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "bubbleGap": 20.982142857142854,
+      "footGap": 29.910714285714278,
+      "playerFootGap": 33.05344631497891,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "directionVisible": false,
+      "style": "material",
+      "cacheDensity": 6,
+      "terrain": {
+        "width": 2016,
+        "height": 2208
+      },
+      "buffer": {
+        "width": 1,
+        "height": 1
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": true,
+        "cache": true,
+        "css": "auto"
+      },
+      "assets": {
+        "revision": 7,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr1-material.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 1,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 1440,
+        "height": 900
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 484.2857142857143
+        },
+        "body": {
+          "x": 434.99999999999994,
+          "y": 436.74285714285713
+        },
+        "bounds": {
+          "x": 399.99999999999994,
+          "y": 392.85714285714283,
+          "w": 69.99999999999999,
+          "h": 91.42857142857142
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 445.71428571428567,
+          "y": 355.82857142857137
+        },
+        "bounds": {
+          "x": 377.1428571428571,
+          "y": 289.99999999999994,
+          "w": 137.14285714285714,
+          "h": 137.14285714285714
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 347.703125,
+        "y": 505.28125,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "bubbleGap": 20.99553571428575,
+      "footGap": 20.995535714285722,
+      "playerFootGap": 89.56696428571428,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "directionVisible": false,
+      "style": "mural",
+      "cacheDensity": 3,
+      "terrain": {
+        "width": 1008,
+        "height": 1104
+      },
+      "buffer": {
+        "width": 1008,
+        "height": 1104
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": false,
+        "cache": false,
+        "css": "pixelated"
+      },
+      "assets": {
+        "revision": 5,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr1-mural.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 2880,
+        "height": 1800
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 484.2857142857143
+        },
+        "body": {
+          "x": 425.17857142857144,
+          "y": 451.55357142857144
+        },
+        "bounds": {
+          "x": 395.7142857142857,
+          "y": 421.3392857142857,
+          "w": 58.92857142857142,
+          "h": 62.94642857142857
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 446.7857142857142,
+          "y": 362.7857142857143
+        },
+        "bounds": {
+          "x": 407.1428571428571,
+          "y": 313.92857142857144,
+          "w": 79.28571428571428,
+          "h": 101.78571428571428
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 475.625,
+        "y": 429.78125,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "right",
+      "datasetTarget": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "bubbleGap": 20.982142857142854,
+      "footGap": 29.910714285714278,
+      "playerFootGap": 33.05344631497891,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "directionVisible": false,
+      "style": "material",
+      "cacheDensity": 6,
+      "terrain": {
+        "width": 2016,
+        "height": 2208
+      },
+      "buffer": {
+        "width": 1,
+        "height": 1
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": true,
+        "cache": true,
+        "css": "auto"
+      },
+      "assets": {
+        "revision": 7,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr2-material.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "dpr": 2,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 2880,
+        "height": 1800
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 484.2857142857143
+        },
+        "body": {
+          "x": 434.99999999999994,
+          "y": 436.74285714285713
+        },
+        "bounds": {
+          "x": 399.99999999999994,
+          "y": 392.85714285714283,
+          "w": 69.99999999999999,
+          "h": 91.42857142857142
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 445.71428571428567,
+          "y": 355.82857142857137
+        },
+        "bounds": {
+          "x": 377.1428571428571,
+          "y": 289.99999999999994,
+          "w": 137.14285714285714,
+          "h": 137.14285714285714
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 347.703125,
+        "y": 505.28125,
+        "w": 196,
+        "h": 109.296875
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "bubbleGap": 20.99553571428575,
+      "footGap": 20.995535714285722,
+      "playerFootGap": 89.56696428571428,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 445.71,
+        "y": 484.29
+      },
+      "directionVisible": false,
+      "style": "mural",
+      "cacheDensity": 3,
+      "terrain": {
+        "width": 1008,
+        "height": 1104
+      },
+      "buffer": {
+        "width": 1008,
+        "height": 1104
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": false,
+        "cache": false,
+        "css": "pixelated"
+      },
+      "assets": {
+        "revision": 5,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr2-mural.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "projection": {
+        "x": 2.4375,
+        "y": 1.708333333333334,
+        "w": 8.125,
+        "h": 17.583333333333332,
+        "cellSize": 48,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 780,
+        "height": 1688
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 195,
+          "y": 446
+        },
+        "body": {
+          "x": 180.62500000000003,
+          "y": 423.0875
+        },
+        "bounds": {
+          "x": 160.00000000000003,
+          "y": 401.9375,
+          "w": 41.25,
+          "h": 44.0625
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 195,
+          "y": 398
+        },
+        "body": {
+          "x": 195.75,
+          "y": 360.95
+        },
+        "bounds": {
+          "x": 168,
+          "y": 326.75,
+          "w": 55.5,
+          "h": 71.25
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 105,
+        "y": 467,
+        "w": 180,
+        "h": 113.59375
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 195,
+        "y": 446
+      },
+      "bubbleGap": 21,
+      "footGap": 21,
+      "playerFootGap": 69,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 195,
+        "y": 446
+      },
+      "directionVisible": false,
+      "style": "material",
+      "cacheDensity": 6,
+      "terrain": {
+        "width": 2016,
+        "height": 2208
+      },
+      "buffer": {
+        "width": 1,
+        "height": 1
+      },
+      "extension": {
+        "width": 0,
+        "height": 0
+      },
+      "smoothing": {
+        "screen": true,
+        "cache": true,
+        "css": "auto"
+      },
+      "assets": {
+        "revision": 7,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-390x844-dpr2-material.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "projection": {
+        "x": 2.4375,
+        "y": 1.708333333333334,
+        "w": 8.125,
+        "h": 17.583333333333332,
+        "cellSize": 48,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "canvas": {
+        "width": 780,
+        "height": 1688
+      },
+      "map": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844
+      },
+      "coverage": 1,
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "boundaryCollisionSamples": [],
+      "southGuardRows": 0,
+      "skills": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      },
+      "skillsOffset": 0,
+      "target": {
+        "foot": {
+          "x": 195,
+          "y": 446
+        },
+        "body": {
+          "x": 187.5,
+          "y": 412.7199999999999
+        },
+        "bounds": {
+          "x": 163,
+          "y": 381.99999999999994,
+          "w": 49,
+          "h": 64
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 10
+        },
+        "ready": true
+      },
+      "player": {
+        "foot": {
+          "x": 195,
+          "y": 398
+        },
+        "body": {
+          "x": 195,
+          "y": 356.0799999999999
+        },
+        "bounds": {
+          "x": 147,
+          "y": 309.99999999999994,
+          "w": 96,
+          "h": 96
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "bubble": {
+        "x": 105,
+        "y": 467,
+        "w": 180,
+        "h": 113.59375
+      },
+      "bubbleVisible": true,
+      "placement": "below",
+      "datasetTarget": {
+        "x": 195,
+        "y": 446
+      },
+      "bubbleGap": 21.000000000000057,
+      "footGap": 21,
+      "playerFootGap": 69,
+      "linkVisible": true,
+      "linkFoot": {
+        "x": 195,
+        "y": 446
+      },
+      "directionVisible": false,
+      "style": "mural",
+      "cacheDensity": 3,
+      "terrain": {
+        "width": 1008,
+        "height": 1104
+      },
+      "buffer": {
+        "width": 1008,
+        "height": 1104
+      },
+      "extension": {
+        "width": 1,
+        "height": 1
+      },
+      "smoothing": {
+        "screen": false,
+        "cache": false,
+        "css": "pixelated"
+      },
+      "assets": {
+        "revision": 5,
+        "ready": true,
+        "failed": []
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-scene-390x844-dpr2-mural.png"
+    }
+  ],
+  "nativeDraws": [
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "material",
+      "dpr": 1,
+      "cacheDensity": 6,
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 7.514881134033203,
+            "b": 0,
+            "c": 0,
+            "d": 7.514881134033203,
+            "e": 0,
+            "f": -658.5
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.9393601417541504,
+          "cssPerSourceX": 0.9393601417541504
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 7.514881134033203,
+            "b": 0,
+            "c": 0,
+            "d": 7.514881134033203,
+            "e": 0,
+            "f": -658.5
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.7828001181284586,
+          "cssPerSourceX": 0.7828001181284586
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 7.514881134033203,
+            "b": 0,
+            "c": 0,
+            "d": 7.514881134033203,
+            "e": 0,
+            "f": -658.5
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.9393601417541504,
+          "cssPerSourceX": 0.9393601417541504
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 7.514881134033203,
+            "b": 0,
+            "c": 0,
+            "d": 7.514881134033203,
+            "e": 0,
+            "f": -658.5
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.7828001181284586,
+          "cssPerSourceX": 0.7828001181284586
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 783.4263392857143,
+          "y": 451.0721726190476
+        },
+        "bounds": {
+          "x": 713.9136904761905,
+          "y": 365.40252976190476,
+          "w": 139.02529761904762,
+          "h": 178.47842261904762
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 384,
+        "sourceH": 384,
+        "anchor": {
+          "x": 192,
+          "y": 352
+        },
+        "sx": 0,
+        "sy": 0,
+        "frameBounds": [
+          [
+            120,
+            162,
+            268,
+            352
+          ],
+          [
+            155,
+            151,
+            305,
+            352
+          ],
+          [
+            125,
+            152,
+            266,
+            352
+          ],
+          [
+            132,
+            162,
+            335,
+            352
+          ]
+        ],
+        "contentBounds": [
+          120,
+          151,
+          335,
+          352
+        ]
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 781.5476379394531,
+        "y": 543.8809814453125,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 384,
+          "h": 384
+        },
+        "context": "final"
+      }
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "mural",
+      "dpr": 1,
+      "cacheDensity": 3,
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 781.547619047619,
+          "y": 438.87301587301585
+        },
+        "bounds": {
+          "x": 661.3095238095239,
+          "y": 323.4444444444444,
+          "w": 240.47619047619048,
+          "h": 240.47619047619048
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 96,
+        "sourceH": 96,
+        "anchor": {
+          "x": 48,
+          "y": 88
+        },
+        "sx": 0,
+        "sy": 0
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 781.547619047619,
+        "y": 543.8809523809524,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 96,
+          "h": 96
+        },
+        "context": "buffer"
+      }
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "material",
+      "dpr": 2,
+      "cacheDensity": 6,
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 15.029762268066406,
+            "b": 0,
+            "c": 0,
+            "d": 15.029762268066406,
+            "e": 0,
+            "f": -1317
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.8787202835083008,
+          "cssPerSourceX": 0.9393601417541504
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 15.029762268066406,
+            "b": 0,
+            "c": 0,
+            "d": 15.029762268066406,
+            "e": 0,
+            "f": -1317
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.5656002362569172,
+          "cssPerSourceX": 0.7828001181284586
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 15.029762268066406,
+            "b": 0,
+            "c": 0,
+            "d": 15.029762268066406,
+            "e": 0,
+            "f": -1317
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.8787202835083008,
+          "cssPerSourceX": 0.9393601417541504
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 15.029762268066406,
+            "b": 0,
+            "c": 0,
+            "d": 15.029762268066406,
+            "e": 0,
+            "f": -1317
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.5656002362569172,
+          "cssPerSourceX": 0.7828001181284586
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 783.4263392857143,
+          "y": 451.0721726190476
+        },
+        "bounds": {
+          "x": 713.9136904761905,
+          "y": 365.40252976190476,
+          "w": 139.02529761904762,
+          "h": 178.47842261904762
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 384,
+        "sourceH": 384,
+        "anchor": {
+          "x": 192,
+          "y": 352
+        },
+        "sx": 0,
+        "sy": 0,
+        "frameBounds": [
+          [
+            120,
+            162,
+            268,
+            352
+          ],
+          [
+            155,
+            151,
+            305,
+            352
+          ],
+          [
+            125,
+            152,
+            266,
+            352
+          ],
+          [
+            132,
+            162,
+            335,
+            352
+          ]
+        ],
+        "contentBounds": [
+          120,
+          151,
+          335,
+          352
+        ]
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 781.5476379394531,
+        "y": 543.8809814453125,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 384,
+          "h": 384
+        },
+        "context": "final"
+      }
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "mural",
+      "dpr": 2,
+      "cacheDensity": 3,
+      "projection": {
+        "x": 0,
+        "y": 5.476633663366337,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 781.547619047619,
+          "y": 543.8809523809524
+        },
+        "body": {
+          "x": 781.547619047619,
+          "y": 438.87301587301585
+        },
+        "bounds": {
+          "x": 661.3095238095239,
+          "y": 323.4444444444444,
+          "w": 240.47619047619048,
+          "h": 240.47619047619048
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 96,
+        "sourceH": 96,
+        "anchor": {
+          "x": 48,
+          "y": 88
+        },
+        "sx": 0,
+        "sy": 0
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 781.547619047619,
+        "y": 543.8809523809524,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 96,
+          "h": 96
+        },
+        "context": "buffer"
+      }
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "material",
+      "dpr": 1,
+      "cacheDensity": 6,
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.4464285572369893,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.5357142686843872,
+          "cssPerSourceX": 0.5357142686843872
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.4464285572369893,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.4464285572369893,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.5357142686843872,
+          "cssPerSourceX": 0.5357142686843872
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 4.285714149475098,
+            "b": 0,
+            "c": 0,
+            "d": 4.285714149475098,
+            "e": 0,
+            "f": -270
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.4464285572369893,
+          "cssPerSourceX": 0.4464285572369893
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 446.7857142857142,
+          "y": 362.7857142857143
+        },
+        "bounds": {
+          "x": 407.1428571428571,
+          "y": 313.92857142857144,
+          "w": 79.28571428571428,
+          "h": 101.78571428571428
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 384,
+        "sourceH": 384,
+        "anchor": {
+          "x": 192,
+          "y": 352
+        },
+        "sx": 0,
+        "sy": 0,
+        "frameBounds": [
+          [
+            120,
+            162,
+            268,
+            352
+          ],
+          [
+            155,
+            151,
+            305,
+            352
+          ],
+          [
+            125,
+            152,
+            266,
+            352
+          ],
+          [
+            132,
+            162,
+            335,
+            352
+          ]
+        ],
+        "contentBounds": [
+          120,
+          151,
+          335,
+          352
+        ]
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 445.71427154541016,
+        "y": 415.7142639160156,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 384,
+          "h": 384
+        },
+        "context": "final"
+      }
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "mural",
+      "dpr": 1,
+      "cacheDensity": 3,
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 1
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 445.71428571428567,
+          "y": 355.82857142857137
+        },
+        "bounds": {
+          "x": 377.1428571428571,
+          "y": 289.99999999999994,
+          "w": 137.14285714285714,
+          "h": 137.14285714285714
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 96,
+        "sourceH": 96,
+        "anchor": {
+          "x": 48,
+          "y": 88
+        },
+        "sx": 0,
+        "sy": 0
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 445.7142857142857,
+        "y": 415.7142857142857,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 96,
+          "h": 96
+        },
+        "context": "buffer"
+      }
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "material",
+      "dpr": 2,
+      "cacheDensity": 6,
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.8928571144739786,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.0714285373687744,
+          "cssPerSourceX": 0.5357142686843872
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.8928571144739786,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.8928571144739786,
+          "cssPerSourceX": 0.4464285572369893
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 1.0714285373687744,
+          "cssPerSourceX": 0.5357142686843872
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 8.571428298950195,
+            "b": 0,
+            "c": 0,
+            "d": 8.571428298950195,
+            "e": 0,
+            "f": -540
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.8928571144739786,
+          "cssPerSourceX": 0.4464285572369893
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 446.7857142857142,
+          "y": 362.7857142857143
+        },
+        "bounds": {
+          "x": 407.1428571428571,
+          "y": 313.92857142857144,
+          "w": 79.28571428571428,
+          "h": 101.78571428571428
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 384,
+        "sourceH": 384,
+        "anchor": {
+          "x": 192,
+          "y": 352
+        },
+        "sx": 0,
+        "sy": 0,
+        "frameBounds": [
+          [
+            120,
+            162,
+            268,
+            352
+          ],
+          [
+            155,
+            151,
+            305,
+            352
+          ],
+          [
+            125,
+            152,
+            266,
+            352
+          ],
+          [
+            132,
+            162,
+            335,
+            352
+          ]
+        ],
+        "contentBounds": [
+          120,
+          151,
+          335,
+          352
+        ]
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 445.71427154541016,
+        "y": 415.7142639160156,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 384,
+          "h": 384
+        },
+        "context": "final"
+      }
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "mural",
+      "dpr": 2,
+      "cacheDensity": 3,
+      "projection": {
+        "x": 0,
+        "y": 3.9375,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 445.7142857142857,
+          "y": 415.7142857142857
+        },
+        "body": {
+          "x": 445.71428571428567,
+          "y": 355.82857142857137
+        },
+        "bounds": {
+          "x": 377.1428571428571,
+          "y": 289.99999999999994,
+          "w": 137.14285714285714,
+          "h": 137.14285714285714
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 96,
+        "sourceH": 96,
+        "anchor": {
+          "x": 48,
+          "y": 88
+        },
+        "sx": 0,
+        "sy": 0
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 445.7142857142857,
+        "y": 415.7142857142857,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 96,
+          "h": 96
+        },
+        "context": "buffer"
+      }
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "material",
+      "dpr": 2,
+      "cacheDensity": 6,
+      "projection": {
+        "x": 2.4375,
+        "y": 1.708333333333334,
+        "w": 8.125,
+        "h": 17.583333333333332,
+        "cellSize": 48,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.625,
+          "cssPerSourceX": 0.3125
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.75,
+          "cssPerSourceX": 0.375
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.625,
+          "cssPerSourceX": 0.3125
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            74.66666666666667,
+            27.333333333333336,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.625,
+          "cssPerSourceX": 0.3125
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            384,
+            384,
+            80,
+            116,
+            48,
+            48
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.75,
+          "cssPerSourceX": 0.375
+        },
+        {
+          "context": "final",
+          "src": "assets/material/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            256,
+            384,
+            90.66666666666667,
+            139.33333333333334,
+            26.666666666666664,
+            40
+          ],
+          "transform": {
+            "a": 6,
+            "b": 0,
+            "c": 0,
+            "d": 6,
+            "e": -234,
+            "f": -164
+          },
+          "smoothing": true,
+          "physicalPerSourceX": 0.625,
+          "cssPerSourceX": 0.3125
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 195,
+          "y": 398
+        },
+        "body": {
+          "x": 195.75,
+          "y": 360.95
+        },
+        "bounds": {
+          "x": 168,
+          "y": 326.75,
+          "w": 55.5,
+          "h": 71.25
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 384,
+        "sourceH": 384,
+        "anchor": {
+          "x": 192,
+          "y": 352
+        },
+        "sx": 0,
+        "sy": 0,
+        "frameBounds": [
+          [
+            120,
+            162,
+            268,
+            352
+          ],
+          [
+            155,
+            151,
+            305,
+            352
+          ],
+          [
+            125,
+            152,
+            266,
+            352
+          ],
+          [
+            132,
+            162,
+            335,
+            352
+          ]
+        ],
+        "contentBounds": [
+          120,
+          151,
+          335,
+          352
+        ]
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 195,
+        "y": 398,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 384,
+          "h": 384
+        },
+        "context": "final"
+      }
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "mural",
+      "dpr": 2,
+      "cacheDensity": 3,
+      "projection": {
+        "x": 2.4375,
+        "y": 1.708333333333334,
+        "w": 8.125,
+        "h": 17.583333333333332,
+        "cellSize": 48,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "records": [
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/enemies.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            77.33333333333333,
+            34.66666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/wukong.png",
+          "kind": "actor",
+          "args": [
+            0,
+            0,
+            96,
+            96,
+            88,
+            130.66666666666666,
+            32,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            0,
+            64,
+            96,
+            93.33333333333333,
+            146.66666666666666,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        },
+        {
+          "context": "buffer",
+          "src": "assets/mural/atlases/creatures.png",
+          "kind": "enemy",
+          "args": [
+            0,
+            192,
+            64,
+            96,
+            173.33333333333334,
+            274.6666666666667,
+            21.333333333333332,
+            32
+          ],
+          "transform": {
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "d": 3,
+            "e": 0,
+            "f": 0
+          },
+          "smoothing": false,
+          "physicalPerSourceX": 1,
+          "cssPerSourceX": 0.5
+        }
+      ],
+      "actorAnchor": {
+        "foot": {
+          "x": 195,
+          "y": 398
+        },
+        "body": {
+          "x": 195,
+          "y": 356.0799999999999
+        },
+        "bounds": {
+          "x": 147,
+          "y": 309.99999999999994,
+          "w": 96,
+          "h": 96
+        },
+        "visible": true,
+        "cell": {
+          "x": 6,
+          "y": 9
+        },
+        "ready": true
+      },
+      "actorMeta": {
+        "sourceW": 96,
+        "sourceH": 96,
+        "anchor": {
+          "x": 48,
+          "y": 88
+        },
+        "sx": 0,
+        "sy": 0
+      },
+      "facing": "down",
+      "actualActorFoot": {
+        "x": 195,
+        "y": 398,
+        "sourceCrop": {
+          "sx": 0,
+          "sy": 0,
+          "w": 96,
+          "h": 96
+        },
+        "context": "buffer"
+      }
+    }
+  ],
+  "projectionHits": [
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "material",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "mural",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "material",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "mural",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "material",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "mural",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "material",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "mural",
+      "samples": [
+        {
+          "cell": {
+            "x": 5,
+            "y": 7
+          },
+          "actual": {
+            "x": 5,
+            "y": 7
+          }
+        },
+        {
+          "cell": {
+            "x": 10,
+            "y": 10
+          },
+          "actual": {
+            "x": 10,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 15,
+            "y": 13
+          },
+          "actual": {
+            "x": 15,
+            "y": 13
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "material",
+      "samples": [
+        {
+          "cell": {
+            "x": 4,
+            "y": 6
+          },
+          "actual": {
+            "x": 4,
+            "y": 6
+          }
+        },
+        {
+          "cell": {
+            "x": 6,
+            "y": 10
+          },
+          "actual": {
+            "x": 6,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 8,
+            "y": 14
+          },
+          "actual": {
+            "x": 8,
+            "y": 14
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "mural",
+      "samples": [
+        {
+          "cell": {
+            "x": 4,
+            "y": 6
+          },
+          "actual": {
+            "x": 4,
+            "y": 6
+          }
+        },
+        {
+          "cell": {
+            "x": 6,
+            "y": 10
+          },
+          "actual": {
+            "x": 6,
+            "y": 10
+          }
+        },
+        {
+          "cell": {
+            "x": 8,
+            "y": 14
+          },
+          "actual": {
+            "x": 8,
+            "y": 14
+          }
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "material",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "mural",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "material",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 2
+      },
+      "style": "mural",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "material",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "style": "mural",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "material",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "style": "mural",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 112,
+          "h": 82,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 21.59375,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "70px",
+            "bottom": "54.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "material",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        }
+      ]
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "mural",
+      "buttons": [
+        {
+          "mode": "walk",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "行走",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"行走\"",
+            "display": "none",
+            "width": "max-content",
+            "height": "auto",
+            "right": "auto",
+            "bottom": "auto"
+          }
+        },
+        {
+          "mode": "inspect",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "火眼金睛",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"免费\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "staff",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "金箍架桥",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "morph",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "青蝉化形",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        },
+        {
+          "mode": "clone",
+          "w": 70,
+          "h": 76,
+          "hit": true,
+          "label": "毫毛分身",
+          "labelHeight": 18.1875,
+          "fee": {
+            "content": "\"未觉\"",
+            "display": "block",
+            "width": "28px",
+            "height": "18.1875px",
+            "right": "33px",
+            "bottom": "50.8125px"
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr1-material.png",
+    "E:\\githome\\mota\\audits\\v7-offscreen-target-material.png",
+    "E:\\githome\\mota\\audits\\v7-resize-1440x900-material.png",
+    "E:\\githome\\mota\\audits\\v7-planning-2525-material.png",
+    "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr1-mural.png",
+    "E:\\githome\\mota\\audits\\v7-offscreen-target-mural.png",
+    "E:\\githome\\mota\\audits\\v7-resize-1440x900-mural.png",
+    "E:\\githome\\mota\\audits\\v7-planning-2525-mural.png",
+    "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr2-material.png",
+    "E:\\githome\\mota\\audits\\v7-scene-2525x1208-dpr2-mural.png",
+    "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr1-material.png",
+    "E:\\githome\\mota\\audits\\v7-south-entry-before-1440x900.png",
+    "E:\\githome\\mota\\audits\\v7-south-entry-after-1440x900.png",
+    "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr1-mural.png",
+    "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr2-material.png",
+    "E:\\githome\\mota\\audits\\v7-scene-1440x900-dpr2-mural.png",
+    "E:\\githome\\mota\\audits\\v7-scene-390x844-dpr2-material.png",
+    "E:\\githome\\mota\\audits\\v7-planning-390-material.png",
+    "E:\\githome\\mota\\audits\\v7-south-entry-before-390x844.png",
+    "E:\\githome\\mota\\audits\\v7-south-entry-after-390x844.png",
+    "E:\\githome\\mota\\audits\\v7-scene-390x844-dpr2-mural.png",
+    "E:\\githome\\mota\\audits\\v7-planning-390-mural.png"
+  ],
+  "errors": [],
+  "visualComplete": false,
+  "campaignComplete": false,
+  "sourceIdentity": {
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "js/ui.js": "a478f9c0b9fa5212ea1f17ad24f9430d23e98e949c16f16ac61d67438a963e8c",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "css/immersive.css": "d2ef916fdd0db14c83901bf4c92405cd97811f6c00a0b0001e7354432374f984",
+    "assets/material/manifest.json": "9dfa6b737f27d9b3f4441661afdaeee8240c1766e3d594b27804d51ec30dc5c8",
+    "docs/game-presentation-guidelines.md": "cfd9d4ab36e7549192840ecb8dc44703792bd4c5e9734617022f7dee5ee4f46d"
+  },
+  "planning": [
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "material",
+      "projection": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 52.285714285714285,
+        "offsetX": 713.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": 1098
+      },
+      "map": {
+        "x": 713.5,
+        "y": 0,
+        "w": 1098,
+        "h": 1098
+      },
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-planning-2525-material.png"
+    },
+    {
+      "profile": {
+        "width": 2525,
+        "height": 1208,
+        "dpr": 1
+      },
+      "style": "mural",
+      "projection": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 52.285714285714285,
+        "offsetX": 713.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": 1098
+      },
+      "map": {
+        "x": 713.5,
+        "y": 0,
+        "w": 1098,
+        "h": 1098
+      },
+      "skills": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-planning-2525-mural.png"
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "material",
+      "projection": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 18.571428571428573,
+        "offsetX": -2.842170943040401e-14,
+        "offsetY": 175.99999999999997,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": true,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": 742
+      },
+      "map": {
+        "x": -2.842170943040401e-14,
+        "y": 175.99999999999997,
+        "w": 390.00000000000006,
+        "h": 390.00000000000006
+      },
+      "skills": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-planning-390-material.png"
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "style": "mural",
+      "projection": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 18.571428571428573,
+        "offsetX": -2.842170943040401e-14,
+        "offsetY": 175.99999999999997,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": true,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": 742
+      },
+      "map": {
+        "x": -2.842170943040401e-14,
+        "y": 175.99999999999997,
+        "w": 390.00000000000006,
+        "h": 390.00000000000006
+      },
+      "skills": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      },
+      "screenshot": "E:\\githome\\mota\\audits\\v7-planning-390-mural.png"
+    }
+  ],
+  "frameTiming": {
+    "frames": 120,
+    "meanFrameMs": 11.89333333333334,
+    "p95FrameMs": 16.699999999999818,
+    "minFrameMs": 10.900000000000546,
+    "maxFrameMs": 16.799999999999272,
+    "scope": "One warm Chrome 2525x1208 DPR2 exploration run; rAF scheduling is not physical mobile-device FPS."
+  },
+  "entryGuard": [
+    {
+      "profile": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "legalTraceIndex": 120,
+      "checkpoint": {
+        "floor": 1,
+        "x": 10,
+        "y": 19
+      },
+      "unprotectedFoot": {
+        "x": 720,
+        "y": 831.4285714285714
+      },
+      "beforeAuthored21Coverage": 1,
+      "beforeScreenshot": "E:\\githome\\mota\\audits\\v7-south-entry-before-1440x900.png",
+      "observedProtectedFoot": {
+        "x": 720,
+        "y": 789.9999999999999
+      },
+      "skillTop": 802,
+      "authored21Coverage": 0.9539682539682539,
+      "boundaryWallCoverage": 0.04603174603174609,
+      "offmapSceneryCoverage": 0,
+      "southGuardRows": 0.6041666666666679,
+      "reportedGuardShiftY": 0.604166666666667,
+      "collisionSamples": [
+        {
+          "x": 0,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 1,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 2,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 3,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 4,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 5,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 6,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 7,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 8,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 9,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 10,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 11,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 12,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 13,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 14,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 15,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 16,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 17,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 18,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 19,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 20,
+          "y": 21,
+          "tile": "#"
+        }
+      ],
+      "screenshot": "E:\\githome\\mota\\audits\\v7-south-entry-after-1440x900.png"
+    },
+    {
+      "profile": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "legalTraceIndex": 120,
+      "checkpoint": {
+        "floor": 1,
+        "x": 10,
+        "y": 19
+      },
+      "unprotectedFoot": {
+        "x": 195,
+        "y": 796
+      },
+      "beforeAuthored21Coverage": 1,
+      "beforeScreenshot": "E:\\githome\\mota\\audits\\v7-south-entry-before-390x844.png",
+      "observedProtectedFoot": {
+        "x": 195,
+        "y": 742
+      },
+      "skillTop": 754,
+      "authored21Coverage": 0.9360189573459715,
+      "boundaryWallCoverage": 0.06398104265402849,
+      "offmapSceneryCoverage": 0,
+      "southGuardRows": 1.125,
+      "reportedGuardShiftY": 1.125,
+      "collisionSamples": [
+        {
+          "x": 6,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 7,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 8,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 9,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 10,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 11,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 12,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 13,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 14,
+          "y": 21,
+          "tile": "#"
+        },
+        {
+          "x": 6,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 7,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 8,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 9,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 10,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 11,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 12,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 13,
+          "y": 22,
+          "tile": "#"
+        },
+        {
+          "x": 14,
+          "y": 22,
+          "tile": "#"
+        }
+      ],
+      "screenshot": "E:\\githome\\mota\\audits\\v7-south-entry-after-390x844.png"
+    }
+  ],
+  "completed": false,
+  "failure": {
+    "stage": "visual {\"width\":844,\"height\":390,\"dpr\":2}",
+    "message": "Bubble detached from body 43.87838306045472",
+    "stack": "AssertionError [ERR_ASSERTION]: Bubble detached from body 43.87838306045472\n    at assertBubble (E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:35:388)\n    at visual (E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:51:52)\n    at async E:\\githome\\mota\\tests\\v7-browser-acceptance.cjs:98:24"
+  }
+}

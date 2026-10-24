@@ -1,0 +1,111 @@
+{
+  "status": "superseded_by_v10_system_review",
+  "scope": "按用户消息顺序修复具体Bug，固定PC浏览器，不开展兼容性工作；修复后才整理设计缺陷与整体建议",
+  "compatibility": "deferred_by_user",
+  "bugs": [
+    {
+      "id": "B1",
+      "request": "离开事件和物品提示不自动消失",
+      "status": "verified_on_current_pc",
+      "cause": "表现层刻意保留旧selection，移动后仍展示旧目标",
+      "fix": "成功移动清除旧提示/引线/方向标，接近途中隐藏，抵达后重选",
+      "evidence": [
+        "audits/v8-user-b1.png",
+        "audits/v8-b1-b2-acceptance.json"
+      ],
+      "previousStatus": "independently_verified",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    },
+    {
+      "id": "B2",
+      "request": "点击交谈无响应，无会话剧情；详察仍是弹窗",
+      "status": "verified_on_current_pc",
+      "cause": "当前NPC消息排到已收起的入塔对白后面；详察借用全局卷册",
+      "fix": "主动NPC会话立即在目标处内联分页，详察/公式/首领准备就地展开，移动收起；切档清理旧会话",
+      "evidence": [
+        "audits/v8-user-b2.png",
+        "audits/v8-b1-b2-acceptance.json",
+        "audits/v8-b2-scroll-acceptance.json"
+      ],
+      "previousStatus": "independently_verified",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    },
+    {
+      "id": "B3",
+      "request": "大部分图标穿模，与地图不搭配",
+      "status": "visually_rechecked_on_current_pc",
+      "cause": "统一格底脚点、无接触底面、蝠翼占地过大、标签压脚，墙/实体没有深度关系",
+      "fix": "统一接触/悬浮/尺度profile供绘制、阴影、锚点和命中使用；宝箱底座收回地格，蝠妖保留完整双翼与独立阴影，标签避开身体",
+      "evidence": [
+        "audits/v8-user-b3.png",
+        "audits/v8-b3-independent.json",
+        "audits/v8-b3-independent-findings.md"
+      ],
+      "previousStatus": "grounding_independently_verified_joint_depth_in_B4",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    },
+    {
+      "id": "B4",
+      "request": "地图边界应该有立体墙壁感",
+      "status": "visually_rechecked_on_current_pc",
+      "fix": "真实墙格内墙顶/立面/倒角/接触阴影、实体与墙前后深度合成，遮住的身体不可穿墙点选；保留地标与开口",
+      "evidence": [
+        "audits/v8-user-b4.png",
+        "audits/v8-b4-after.json",
+        "audits/v8-b4-occlusion.json"
+      ],
+      "previousStatus": "implemented_awaiting_independent_review",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    },
+    {
+      "id": "B5",
+      "request": "完全没有剧情推进",
+      "status": "verified_on_current_pc",
+      "cause": "新里程碑仍排在旧的收起对白后，主线变化不可见",
+      "plannedFix": "当前剧情事件按进度前置显示，旧文存入因果簿；NPC内容随真实里程碑变化，不增加强制网页弹窗",
+      "previousStatus": "queued",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    },
+    {
+      "id": "B6",
+      "request": "技能效果非常不明显，障碍不明显，神通显得鸡肋",
+      "status": "verified_on_current_pc",
+      "confirmedExamples": [
+        "十八层纵向断口仍被画成横桥",
+        "铁栅借用普通金门，难辨技能对象",
+        "化蝉大小两图重叠、分身驻守残留动画帧",
+        "满两处分身仍提示第三台可用",
+        "机关开路缺少来源目标联动"
+      ],
+      "plannedFix": "共享真实能力预览，明确障碍材料/目标/费用/限制；按岸向架桥、单一化蝉往返、干净驻守与真实开门联动",
+      "previousStatus": "queued",
+      "currentEvidence": [
+        "audits/v9-browser-acceptance.json",
+        "docs/v9-repair-report.md"
+      ]
+    }
+  ],
+  "priorEvidence": "v7回放是旧交互语义的历史证据，不覆盖本批用户反例，不以旧通过结果宣称本批已修复。",
+  "afterBugFixes": [
+    "分析设计缺陷",
+    "提出有优先级、可评估的整体优化建议"
+  ],
+  "currentReport": "docs/v10-immersion-review.md",
+  "currentAcceptance": "audits/v10-final.json",
+  "previousReport": "docs/v9-repair-report.md"
+}

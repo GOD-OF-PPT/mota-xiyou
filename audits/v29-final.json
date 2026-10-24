@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-24",
+  "passed": true,
+  "source": {
+    "index.html": "42765dbbb633f41a6316d97d192bc6b63000d3a9a245873f488a7c745198ef94",
+    "js/ui.js": "db2ddc2cbdbe30386cb9bbd8188a56fc0e3f19d09fabd988009f3fe31fbdce03",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "css/ui-layout.css": "af660544f69888b295ae450a166f6b6d98f7c8656a949aa2390c5f4f8897c916",
+    "scripts/build_v23_study.cjs": "6ab30cd80cd91ba5c5a128d201785a7e02e3c2ac10bf20d5119ac9f9fae25caa",
+    "playtest-v23-new.html": "378b0c6b4e39b622f4e79b7c42dd62f7af2b4f7add662bca6d8df8b4fc2184fa",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "reports": [
+    "audits/v29-conversation-browser.json",
+    "audits/v29-regression-campaign-regression.json",
+    "audits/v29-study-browser.json"
+  ],
+  "checks": {
+    "conversation": 5,
+    "campaign": 21,
+    "study": 6,
+    "renderRecords": 25,
+    "writingAndPaintDefects": 0
+  },
+  "behavior": [
+    "One talk action for ordinary NPCs",
+    "One read action for monuments",
+    "Full background retained in journal",
+    "Clear continue and finish commands",
+    "No supply-coordinate false planning",
+    "Actual aid action preserved",
+    "One objective on narrative target card"
+  ],
+  "inspectedAtOriginalSize": [
+    "audits/v29-material-npc-command-629.png",
+    "audits/v29-mural-npc-command-629.png",
+    "audits/v29-material-speech-629.png",
+    "audits/v29-material-read-stone.png"
+  ],
+  "nativeTab": "Existing UI27 resumed and NPC card shows only talk F; no progress reset.",
+  "engineUnchangedFromV28": true,
+  "baselineUnchanged": true,
+  "humanParticipants": 0,
+  "backup": ".backups/dialogue-v29-20261024/"
+}

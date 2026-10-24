@@ -1,0 +1,839 @@
+{
+  "scope": "fixed PC2525x1208 DPR1; selective legal events, no new browser campaign",
+  "sourceIdentity": {
+    "index.html": "b46e06a2d7c245eeb98c0c9b6ddaa691d8aa724e64eb433b78c84d812afe547e",
+    "js/ui.js": "167864821410f4c091231420e20e0563b2ecbf6e3bf7be1750824a4c37d6bab8",
+    "js/engine.js": "f007f99f1ff580ffa9abfc3d0567ad6a14d82b7c84bae5d584c757a21351d0ba",
+    "js/world.js": "4057e6cdc062406cd39bfdf8d870c054c2e629dc94f12a6b08474fa0873f537e",
+    "css/immersive.css": "c051649b253520ec25be499a43e3bdbd3f4fe7afa400dfefb0aa54c6ac2591e3"
+  },
+  "errors": [],
+  "events": [],
+  "intro": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "speaker": "孙悟空",
+    "objective": "此行 · 寻回本层外舍利 · 本印 0/3",
+    "kind": "intro",
+    "visible": true,
+    "collapsed": false,
+    "selection": null,
+    "header": "寻回本层外舍利 · 本印 0/3",
+    "status": {
+      "chapter": 0,
+      "heading": "第1回 · 火眼辨真",
+      "goal": "寻回本层外舍利 · 本印 0/3",
+      "stage": "arrival",
+      "found": 0,
+      "required": 3
+    },
+    "counts": "心印 0/5 · 外舍利 0/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      }
+    ]
+  },
+  "afterMove": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "speaker": "孙悟空",
+    "objective": "此行 · 寻回本层外舍利 · 本印 0/3",
+    "kind": "intro",
+    "visible": true,
+    "collapsed": false,
+    "selection": null,
+    "header": "寻回本层外舍利 · 本印 0/3",
+    "status": {
+      "chapter": 0,
+      "heading": "第1回 · 火眼辨真",
+      "goal": "寻回本层外舍利 · 本印 0/3",
+      "stage": "arrival",
+      "found": 0,
+      "required": 3
+    },
+    "counts": "心印 0/5 · 外舍利 0/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      }
+    ]
+  },
+  "chapter": {
+    "title": "残钟回廊",
+    "text": "伪佛像的脸朝着西钟，影子却落在东廊。火眼看见墙缝中的黑莲纹；钟门仍须真正的扳杆来开。",
+    "speaker": "塔中回响",
+    "objective": "此行 · 寻回本层外舍利 · 本印 1/3",
+    "kind": "chapter",
+    "visible": true,
+    "collapsed": false,
+    "selection": null,
+    "header": "寻回本层外舍利 · 本印 1/3",
+    "status": {
+      "chapter": 0,
+      "heading": "第1回 · 火眼辨真",
+      "goal": "寻回本层外舍利 · 本印 1/3",
+      "stage": "arrival",
+      "found": 1,
+      "required": 3
+    },
+    "counts": "心印 0/5 · 外舍利 1/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      }
+    ]
+  },
+  "afterSkip": {
+    "title": "残钟回廊",
+    "text": "伪佛像的脸朝着西钟，影子却落在东廊。火眼看见墙缝中的黑莲纹；钟门仍须真正的扳杆来开。",
+    "speaker": "塔中回响",
+    "objective": "此行 · 寻回本层外舍利 · 本印 1/3",
+    "kind": "chapter",
+    "visible": false,
+    "collapsed": false,
+    "selection": null,
+    "header": "寻回本层外舍利 · 本印 1/3",
+    "status": {
+      "chapter": 0,
+      "heading": "第1回 · 火眼辨真",
+      "goal": "寻回本层外舍利 · 本印 1/3",
+      "stage": "arrival",
+      "found": 1,
+      "required": 3
+    },
+    "counts": "心印 0/5 · 外舍利 1/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      }
+    ]
+  },
+  "relic": {
+    "title": "石生心印 · 心印觉醒",
+    "text": "三枚外舍利从伪佛石胎中浮起，结成第一重心印。你不是来替佛像收拾供品，而是来救被黑莲封住的众生。金箍棒应声伸长，云垂山门的古炉也重新透出微光。",
+    "speaker": "孙悟空",
+    "objective": "此行 · 沿塔路寻舍利 · 本印 0/3",
+    "kind": "relic",
+    "visible": true,
+    "collapsed": false,
+    "selection": {
+      "x": 10,
+      "y": 3
+    },
+    "header": "沿塔路寻舍利 · 本印 0/3",
+    "status": {
+      "chapter": 0,
+      "heading": "第1回 · 火眼辨真",
+      "goal": "沿塔路寻舍利 · 本印 0/3",
+      "stage": "staff",
+      "found": 0,
+      "required": 3
+    },
+    "counts": "心印 1/5 · 外舍利 3/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      },
+      {
+        "title": "定海铁 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:1"
+      },
+      {
+        "title": "石胎古殿",
+        "kind": "chapter",
+        "source": "floor:2"
+      },
+      {
+        "title": "力能架桥，不能平定弱水",
+        "kind": "lore",
+        "source": "f2-18"
+      },
+      {
+        "title": "石生心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f2-17"
+      }
+    ]
+  },
+  "rescue": {
+    "title": "猪八戒",
+    "text": "“猴哥，水脉交给老猪！去转动水轮，两条渡路会随水位开合。莲灯与归路不会沉没。”",
+    "speaker": "猪八戒",
+    "objective": "此行 · 寻回本层外舍利 · 本印 0/3",
+    "kind": "rescue",
+    "visible": true,
+    "collapsed": false,
+    "selection": {
+      "x": 3,
+      "y": 10
+    },
+    "header": "寻回本层外舍利 · 本印 0/3",
+    "status": {
+      "chapter": 2,
+      "heading": "第3回 · 弱水同渡",
+      "goal": "寻回本层外舍利 · 本印 0/3",
+      "stage": "rescued",
+      "found": 0,
+      "required": 3
+    },
+    "counts": "心印 2/5 · 外舍利 6/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      },
+      {
+        "title": "定海铁 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:1"
+      },
+      {
+        "title": "石胎古殿",
+        "kind": "chapter",
+        "source": "floor:2"
+      },
+      {
+        "title": "力能架桥，不能平定弱水",
+        "kind": "lore",
+        "source": "f2-18"
+      },
+      {
+        "title": "石生心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f2-17"
+      },
+      {
+        "title": "断云栈道",
+        "kind": "chapter",
+        "source": "floor:3"
+      },
+      {
+        "title": "百锁偏殿",
+        "kind": "chapter",
+        "source": "floor:4"
+      },
+      {
+        "title": "北庭异宝记",
+        "kind": "lore",
+        "source": "f4-10"
+      },
+      {
+        "title": "莲灯芯 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:4"
+      },
+      {
+        "title": "照骨禅院",
+        "kind": "chapter",
+        "source": "floor:5"
+      },
+      {
+        "title": "双塔回访簿",
+        "kind": "lore",
+        "source": "f5-14"
+      },
+      {
+        "title": "外舍利点名册",
+        "kind": "lore",
+        "source": "f5-16"
+      },
+      {
+        "title": "照骨心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f5-8"
+      },
+      {
+        "title": "弱水缝院",
+        "kind": "chapter",
+        "source": "floor:6"
+      },
+      {
+        "title": "猪八戒",
+        "kind": "rescue",
+        "source": "f6-13"
+      }
+    ]
+  },
+  "boss": {
+    "title": "黑莲化影 · 消散",
+    "text": "三相金甲崩落，黑莲借你嗔怒造出的心猿终于平静。点灯僧将灯递来，灯中护着你一路解救的生命。",
+    "speaker": "点灯僧",
+    "objective": "此行 · 前往十八层莲阵，照见无骨舍利",
+    "kind": "boss",
+    "visible": true,
+    "collapsed": false,
+    "selection": {
+      "x": 10,
+      "y": 5
+    },
+    "header": "前往十八层莲阵，照见无骨舍利",
+    "status": {
+      "chapter": 5,
+      "heading": "第6回 · 无骨归真",
+      "goal": "前往十八层莲阵，照见无骨舍利",
+      "stage": "heart",
+      "found": 16,
+      "required": 16
+    },
+    "counts": "心印 5/5 · 外舍利 16/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      },
+      {
+        "title": "定海铁 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:1"
+      },
+      {
+        "title": "石胎古殿",
+        "kind": "chapter",
+        "source": "floor:2"
+      },
+      {
+        "title": "力能架桥，不能平定弱水",
+        "kind": "lore",
+        "source": "f2-18"
+      },
+      {
+        "title": "石生心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f2-17"
+      },
+      {
+        "title": "断云栈道",
+        "kind": "chapter",
+        "source": "floor:3"
+      },
+      {
+        "title": "百锁偏殿",
+        "kind": "chapter",
+        "source": "floor:4"
+      },
+      {
+        "title": "北庭异宝记",
+        "kind": "lore",
+        "source": "f4-10"
+      },
+      {
+        "title": "莲灯芯 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:4"
+      },
+      {
+        "title": "照骨禅院",
+        "kind": "chapter",
+        "source": "floor:5"
+      },
+      {
+        "title": "双塔回访簿",
+        "kind": "lore",
+        "source": "f5-14"
+      },
+      {
+        "title": "外舍利点名册",
+        "kind": "lore",
+        "source": "f5-16"
+      },
+      {
+        "title": "照骨心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f5-8"
+      },
+      {
+        "title": "弱水缝院",
+        "kind": "chapter",
+        "source": "floor:6"
+      },
+      {
+        "title": "猪八戒",
+        "kind": "rescue",
+        "source": "f6-13"
+      },
+      {
+        "title": "青蝉卸锁，真身不移",
+        "kind": "lore",
+        "source": "f6-8"
+      },
+      {
+        "title": "弱水梵井",
+        "kind": "chapter",
+        "source": "floor:7"
+      },
+      {
+        "title": "听潮贝 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:7"
+      },
+      {
+        "title": "悬丝水牢",
+        "kind": "chapter",
+        "source": "floor:8"
+      },
+      {
+        "title": "灵珠留用簿",
+        "kind": "lore",
+        "source": "f8-19"
+      },
+      {
+        "title": "渡厄心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f8-8"
+      },
+      {
+        "title": "留影棋坪",
+        "kind": "chapter",
+        "source": "floor:9"
+      },
+      {
+        "title": "千丝庭",
+        "kind": "chapter",
+        "source": "floor:10"
+      },
+      {
+        "title": "照骨齿 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:10"
+      },
+      {
+        "title": "两仪丹庭",
+        "kind": "chapter",
+        "source": "floor:11"
+      },
+      {
+        "title": "法器与炉魂",
+        "kind": "lore",
+        "source": "f11-20"
+      },
+      {
+        "title": "三炉同熄",
+        "kind": "lore",
+        "source": "f11-2"
+      },
+      {
+        "title": "慈悲心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f11-10"
+      },
+      {
+        "title": "息火莲台",
+        "kind": "chapter",
+        "source": "floor:12"
+      },
+      {
+        "title": "问心断碑",
+        "kind": "chapter",
+        "source": "floor:13"
+      },
+      {
+        "title": "七伤路账簿",
+        "kind": "lore",
+        "source": "f13-11"
+      },
+      {
+        "title": "双影镜 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:13"
+      },
+      {
+        "title": "倒影经阁",
+        "kind": "chapter",
+        "source": "floor:14"
+      },
+      {
+        "title": "十六之外",
+        "kind": "lore",
+        "source": "f14-2"
+      },
+      {
+        "title": "经壁留下的路",
+        "kind": "lore",
+        "source": "f14-1"
+      },
+      {
+        "title": "明心心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f14-9"
+      },
+      {
+        "title": "逆莲天梯",
+        "kind": "chapter",
+        "source": "floor:15"
+      },
+      {
+        "title": "三问无生门",
+        "kind": "chapter",
+        "source": "floor:16"
+      },
+      {
+        "title": "终局余烬记",
+        "kind": "lore",
+        "source": "f16-10"
+      },
+      {
+        "title": "心炉烬 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:16"
+      },
+      {
+        "title": "无骨莲心",
+        "kind": "chapter",
+        "source": "floor:17"
+      },
+      {
+        "title": "先算清，再承担",
+        "kind": "lore",
+        "source": "f17-1"
+      },
+      {
+        "title": "黑莲化影 · 消散",
+        "kind": "boss",
+        "source": "f17-7"
+      }
+    ]
+  },
+  "awakening": {
+    "title": "无骨归真 · 第十七颗",
+    "text": "十六枚外舍利，终于照见中央那个空位。悟空看见的不是另一件宝物，是一路仍愿意回头救人的自己。",
+    "speaker": "孙悟空",
+    "objective": "此行 · 走向莲台，选择最后的归途",
+    "kind": "awakening",
+    "visible": true,
+    "collapsed": false,
+    "selection": {
+      "x": 10,
+      "y": 1
+    },
+    "header": "走向莲台，选择最后的归途",
+    "status": {
+      "chapter": 5,
+      "heading": "第6回 · 无骨归真",
+      "goal": "走向莲台，选择最后的归途",
+      "stage": "awakened",
+      "found": 16,
+      "required": 16
+    },
+    "counts": "心印 5/5 · 外舍利 16/16",
+    "modal": false,
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "kind": "intro",
+        "source": "tower:arrival"
+      },
+      {
+        "title": "归根之匣",
+        "kind": "lore",
+        "source": "f0-2"
+      },
+      {
+        "title": "残钟回廊",
+        "kind": "chapter",
+        "source": "floor:1"
+      },
+      {
+        "title": "定海铁 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:1"
+      },
+      {
+        "title": "石胎古殿",
+        "kind": "chapter",
+        "source": "floor:2"
+      },
+      {
+        "title": "力能架桥，不能平定弱水",
+        "kind": "lore",
+        "source": "f2-18"
+      },
+      {
+        "title": "石生心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f2-17"
+      },
+      {
+        "title": "断云栈道",
+        "kind": "chapter",
+        "source": "floor:3"
+      },
+      {
+        "title": "百锁偏殿",
+        "kind": "chapter",
+        "source": "floor:4"
+      },
+      {
+        "title": "北庭异宝记",
+        "kind": "lore",
+        "source": "f4-10"
+      },
+      {
+        "title": "莲灯芯 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:4"
+      },
+      {
+        "title": "照骨禅院",
+        "kind": "chapter",
+        "source": "floor:5"
+      },
+      {
+        "title": "双塔回访簿",
+        "kind": "lore",
+        "source": "f5-14"
+      },
+      {
+        "title": "外舍利点名册",
+        "kind": "lore",
+        "source": "f5-16"
+      },
+      {
+        "title": "照骨心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f5-8"
+      },
+      {
+        "title": "弱水缝院",
+        "kind": "chapter",
+        "source": "floor:6"
+      },
+      {
+        "title": "猪八戒",
+        "kind": "rescue",
+        "source": "f6-13"
+      },
+      {
+        "title": "青蝉卸锁，真身不移",
+        "kind": "lore",
+        "source": "f6-8"
+      },
+      {
+        "title": "弱水梵井",
+        "kind": "chapter",
+        "source": "floor:7"
+      },
+      {
+        "title": "听潮贝 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:7"
+      },
+      {
+        "title": "悬丝水牢",
+        "kind": "chapter",
+        "source": "floor:8"
+      },
+      {
+        "title": "灵珠留用簿",
+        "kind": "lore",
+        "source": "f8-19"
+      },
+      {
+        "title": "渡厄心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f8-8"
+      },
+      {
+        "title": "留影棋坪",
+        "kind": "chapter",
+        "source": "floor:9"
+      },
+      {
+        "title": "千丝庭",
+        "kind": "chapter",
+        "source": "floor:10"
+      },
+      {
+        "title": "照骨齿 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:10"
+      },
+      {
+        "title": "两仪丹庭",
+        "kind": "chapter",
+        "source": "floor:11"
+      },
+      {
+        "title": "法器与炉魂",
+        "kind": "lore",
+        "source": "f11-20"
+      },
+      {
+        "title": "三炉同熄",
+        "kind": "lore",
+        "source": "f11-2"
+      },
+      {
+        "title": "慈悲心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f11-10"
+      },
+      {
+        "title": "息火莲台",
+        "kind": "chapter",
+        "source": "floor:12"
+      },
+      {
+        "title": "问心断碑",
+        "kind": "chapter",
+        "source": "floor:13"
+      },
+      {
+        "title": "七伤路账簿",
+        "kind": "lore",
+        "source": "f13-11"
+      },
+      {
+        "title": "双影镜 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:13"
+      },
+      {
+        "title": "倒影经阁",
+        "kind": "chapter",
+        "source": "floor:14"
+      },
+      {
+        "title": "十六之外",
+        "kind": "lore",
+        "source": "f14-2"
+      },
+      {
+        "title": "经壁留下的路",
+        "kind": "lore",
+        "source": "f14-1"
+      },
+      {
+        "title": "明心心印 · 心印觉醒",
+        "kind": "relic",
+        "source": "f14-9"
+      },
+      {
+        "title": "逆莲天梯",
+        "kind": "chapter",
+        "source": "floor:15"
+      },
+      {
+        "title": "三问无生门",
+        "kind": "chapter",
+        "source": "floor:16"
+      },
+      {
+        "title": "终局余烬记",
+        "kind": "lore",
+        "source": "f16-10"
+      },
+      {
+        "title": "心炉烬 · 法器入囊",
+        "kind": "treasure",
+        "source": "floor:16"
+      },
+      {
+        "title": "无骨莲心",
+        "kind": "chapter",
+        "source": "floor:17"
+      },
+      {
+        "title": "先算清，再承担",
+        "kind": "lore",
+        "source": "f17-1"
+      },
+      {
+        "title": "黑莲化影 · 消散",
+        "kind": "boss",
+        "source": "f17-7"
+      },
+      {
+        "title": "无骨归真 · 第十七颗",
+        "kind": "awakening",
+        "source": "f17-13"
+      }
+    ]
+  },
+  "dynamicNPC": {
+    "expected": {
+      "title": "回到第一盏灯前",
+      "speaker": "点灯僧",
+      "archetype": "lantern",
+      "lines": [
+        "五重心印都认回了你，十六枚外舍利也已归位。可数到最后，仍会少一个名字。",
+        "山门东南的归根之匣已经回应五印。带上心钥，再去十八层。那扇门后等着的，不是又一个该被打碎的妖怪。"
+      ],
+      "text": "五重心印都认回了你，十六枚外舍利也已归位。可数到最后，仍会少一个名字。\n\n山门东南的归根之匣已经回应五印。带上心钥，再去十八层。那扇门后等着的，不是又一个该被打碎的妖怪。",
+      "portrait": "lantern",
+      "objective": "开启东南归根之匣，取得心钥"
+    },
+    "actual": "开启东南归根之匣，取得心钥\n\n收起交谈\n详察\n\n五重心印都认回了你，十六枚外舍利也已归位。可数到最后，仍会少一个名字。\n\n1 / 2\n下一句 Space"
+  },
+  "completed": true
+}

@@ -1,0 +1,5 @@
+Xbox Accessibility Guideline 102 - Microsoft Game Dev | Microsoft Learn
+https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/102
+Retrieved 2026-10-22, HTTP 200
+Short excerpt: contrast ratio of at least 4.5:1
+Note: Important text needs adequate contrast against its actual background.

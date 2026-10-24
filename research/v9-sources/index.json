@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.riotgames.com/en/artedu/visual-effects",
+    "status": 200,
+    "title": [
+      "Visual Effects | Riot Games"
+    ],
+    "excerpt": " Visual Effects | Riot Games Jump to Main Content Jump to Primary Navigation Home The Videos About Episode 7 Visual Effects Watch Video Video Episode 7: Visual Effects It&rsquo;s easy to examine a single visual effect and think about ways it could be bigger, sparklier,&nbsp; and more exciting. But VFX artists carry the heavy burden of restraint so players can actually tell what the hell is going on in a game. VFX artists constantly balance satisfaction and gameplay clarity, ensuring that a visual effect&nbsp;accurately represents a given action or state, while remaining awesome.&nbsp; Ensuring that a visual effect accurately communicates gam"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/107",
+    "error": "<urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled",
+    "status": 200,
+    "title": [
+      "CanvasRenderingContext2D: imageSmoothingEnabled property - Web APIs | MDN"
+    ],
+    "excerpt": "the last value it was set to is returned. This property is useful for games and other apps that use pixel art. When enlarging images, the default resizing algorithm will blur the pixels. Set this property to false to retain the pixels' sharpness. Note: You can adjust the smoothing quality with the imageSmoothingQuality property. In this article Value Examples Specifications Browser compatibility See also Value A boolean value indicating whether to smooth scaled images or not. The default value is true . Examples Disabling image smoothing This example compares three images. The first image is drawn at its natural size, the second is scaled to 3X and drawn with image smoothing enabled, and the third is scaled to 3X but drawn with image smooth"
+  }
+]

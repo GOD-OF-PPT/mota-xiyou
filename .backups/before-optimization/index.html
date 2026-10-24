@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101917">
+  <meta name="description" content="一场关于取舍的西游像素策略冒险。执金箍、辨虚实，寻回五枚舍利，走进自己的心魔。">
+  <title>大圣 · 舍利魔塔</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/world.js"></script>
+  <script defer src="js/engine.js"></script>
+  <script defer src="js/renderer.js"></script>
+  <script defer src="js/ui.js"></script>
+</head>
+<body>
+  <section id="start-screen" class="start-screen" aria-label="大圣：舍利魔塔 开始界面">
+    <div class="start-topline"><span class="tiny-emblem">卍</span><span>独立像素策略冒险</span><span class="start-edition">A JOURNEY WITHIN · 壹</span></div>
+    <main class="start-main">
+      <div class="start-copy">
+        <div class="chapter-kicker"><span></span> 五枚舍利，一念成魔</div>
+        <h1 class="start-title">大圣<span class="title-seal">悟</span></h1>
+        <div class="start-subtitle"><span>舍利魔塔</span><i></i></div>
+        <p class="start-english">RELICS OF THE GREAT SAGE</p>
+        <p class="start-story">灵山无声，佛骨成尘。<br>执棒入塔的行者，要找回的究竟是谁？</p>
+        <div class="start-actions"><button id="new-game" class="primary-button">执棒入塔 <span>→</span></button><button id="continue-game" class="secondary-button" disabled>继续前缘 <span>↗</span></button></div>
+        <div class="start-save-note"><span class="small-diamond"></span> 无需联网 · 自动存档 · 随时回溯</div>
+      </div>
+      <div class="start-art" aria-hidden="true">
+        <div class="art-caption">照见五蕴皆空</div>
+        <svg class="title-landscape" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+          <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#1c3534"/><stop offset="1" stop-color="#101c1e"/></linearGradient><radialGradient id="moonGlow"><stop stop-color="#ac6849" stop-opacity=".24"/><stop offset="1" stop-color="#ac6849" stop-opacity="0"/></radialGradient></defs>
+          <rect width="320" height="320" fill="url(#sky)"/>
+          <circle cx="184" cy="82" r="93" fill="url(#moonGlow)"/>
+          <path d="M155 29h47v5h11v6h7v10h6v39h-6v11h-9v7h-12v5h-43v-5h-12v-7h-8V89h-5V52h5V42h8v-8h11z" fill="#b67654"/>
+          <path d="M155 29h47v5h-36v5h-16v8h-9v42h-5V52h5V42h8v-8h6z" fill="#ce9570"/>
+          <path d="M177 44h14v6h12v9h-14v-5h-12zm23 29h20v6h-12v9h-14V77h6zm-48 9h14v8h7v8h-14V91h-7z" fill="#a6684f" opacity=".5"/>
+          <path d="M0 96h23v-9h23v-8h23v-7h27v7h14v18h18v19h27v33h23v92H0z" fill="#233d3c"/>
+          <path d="M0 117h17v-12h22v-9h18v-8h12v25h17v20h22v22h18v86H0z" fill="#193031"/>
+          <path d="M320 83h-19v13h-14v7h-21v17h-18v26h-24v95h96z" fill="#24403d"/>
+          <path d="M320 112h-13v13h-16v14h-14v17h-16v85h59z" fill="#1b3332"/>
+          <path d="M1 57h26v-4h24v4h25v4H54v4H26v-4H1zm234 62h26v-4h28v4h30v5h-20v4h-47v-4h-17zM49 140h50v-5h28v5h22v5H96v5H49z" fill="#54716a" opacity=".3"/>
+          <path d="M180 31h3v11h-3zM175 42h13v4h-13zm4 4h5v12h-5z" fill="#cab57c"/>
+          <path d="M178 57h8v5h8v5h12v5h13v4h11v5h-98v-5h13v-4h11v-5h14v-5h8z" fill="#102222"/>
+          <path d="M131 79h102v4H131zm7 4h89v4h-89z" fill="#648074"/>
+          <path d="M150 87h63v31h-63z" fill="#34483f"/>
+          <path d="M155 89h4v28h-4zm48 0h4v28h-4z" fill="#6c7560"/>
+          <path d="M173 94h17v24h-17z" fill="#b8995b"/><path d="M177 98h9v20h-9z" fill="#dcc184"/><path d="M181 94h2v24h-2z" fill="#797248"/>
+          <path d="M148 110h66v5h12v5h15v5h-119v-5h15v-5h11z" fill="#142c2a"/><path d="M120 124h122v4H120zm9 4h104v4H129z" fill="#6c8375"/>
+          <path d="M142 132h79v34h-79z" fill="#2d423b"/><path d="M149 133h4v33h-4zm61 0h4v33h-4z" fill="#6c7560"/>
+          <path d="M164 141h10v18h-10zm25 0h10v18h-10z" fill="#c4a064"/><path d="M168 144h3v15h-3zm25 0h3v15h-3z" fill="#ead195"/>
+          <path d="M138 158h87v5h12v5h16v5H110v-5h16v-5h12z" fill="#102a28"/><path d="M110 172h145v4H110zm10 4h124v4H120z" fill="#738479"/>
+          <path d="M133 180h96v42h-96z" fill="#2c423a"/><path d="M139 181h5v40h-5zm78 0h5v40h-5z" fill="#6c7560"/>
+          <path d="M173 190h18v31h-18z" fill="#b79059"/><path d="M177 195h10v26h-10z" fill="#e1c583"/>
+          <path d="M128 213h106v5h14v5h17v6H99v-6h17v-5h12z" fill="#102825"/><path d="M97 227h171v5H97zm11 5h149v4H108z" fill="#738479"/>
+          <path d="M123 236h117v51H123z" fill="#30433b"/><path d="M130 237h5v50h-5zm98 0h5v50h-5z" fill="#6c7560"/>
+          <path d="M170 246h24v41h-24z" fill="#151f1e"/><path d="M173 246h18v4h-18zm-3 4h4v37h-4zm20 0h4v37h-4z" fill="#b9a074"/>
+          <path d="M114 285h134v5H114zm-10 5h154v6H104zm-10 6h174v7H94z" fill="#567064"/>
+          <path d="M0 222h24v7h17v8h14v13h17v17h18v53H0z" fill="#0b181a"/><path d="M320 207h-16v13h-18v16h-15v19h-18v65h67z" fill="#0d1b1c"/>
+          <path d="M0 281h39v-7h21v-8h17v12h21v7h26v12h32v23H0z" fill="#152622"/>
+          <path d="M0 292h49v-7h28v5h22v6h30v9h36v15H0z" fill="#31423a"/><path d="M3 290h34v3H3zm55-7h18v3H58zm45 12h20v3h-20z" fill="#77816a"/>
+          <path d="M52 249h5v-9h4v-8h10v-5h13v4h6v17h-5v9H58v-5h-6z" fill="#231e1a"/>
+          <path d="M61 233h5v-4h14v5h5v11h-6v7H65v-8h-4z" fill="#a37b49"/><path d="M68 237h13v5h-4v7h-8z" fill="#dfbd78"/>
+          <path d="M65 234h17v4H65zm2-8h5v8h-5zm9-3h5v11h-5z" fill="#e0bd68"/><path d="M67 239h4v3h-4zm10 0h4v3h-4z" fill="#191e1c"/>
+          <path d="M63 253h21v5h4v18h-6v7h-8v-9h-6v9h-9v-14h-4v-9h8z" fill="#9f3432"/><path d="M66 257h16v10H66z" fill="#c78c48"/>
+          <path d="M61 250h25v5H61zm20 5h14v5h13v5h12v5h-18v-5H88v-5h-7z" fill="#ba5140"/>
+          <path d="M62 281h9v5H58v-3h4zm14-1h8v5h7v4H76z" fill="#1a211d"/>
+          <path d="M95 233h3v57h-3z" fill="#b49a5f"/><path d="M94 229h5v10h-5zm0 49h5v12h-5z" fill="#efd391"/><path d="M84 258h13v5H84z" fill="#c6a36a"/>
+          <path d="M51 267h5v9h-6v-4h-9v-5h5v-5h5z" fill="#a37b49"/>
+          <path d="M0 309h320v11H0z" fill="#0c1919"/>
+          <path d="M270 160h2v4h-2zm-25 42h3v3h-3zM32 167h2v3h-2zm80-63h2v3h-2zm-5 148h2v3h-2zm175 14h3v3h-3z" fill="#d6b76f"/>
+        </svg>
+        <span class="art-coordinate">十八重浮屠 / 归心之路</span>
+        <div class="art-corner corner-tl"></div><div class="art-corner corner-br"></div>
+      </div>
+    </main>
+    <footer class="start-bottom"><div><b>壹</b><span>步步为营<small>固定地图，有限资源</small></span></div><div><b>贰</b><span>洞察因果<small>战前可算，不凭运气</small></span></div><div><b>叁</b><span>神通解局<small>一枚舍利，一种新路</small></span></div><span class="start-footer-note">有些门，需要先放下金箍棒。</span></footer>
+  </section>
+
+  <div id="game-shell" class="game-shell hidden">
+    <header class="game-header">
+      <a class="game-brand" href="./" title="返回开始界面"><span class="brand-staff" aria-hidden="true"></span><span class="brand-name">大圣 <i>·</i> 舍利魔塔<small>RELICS OF THE GREAT SAGE</small></span></a>
+      <div class="header-center"><span class="header-symbol">◈</span><span id="floor-progress">五蕴散落 · 一念归真</span></div>
+      <nav class="header-tools" aria-label="游戏菜单">
+        <button id="btn-undo" data-action="undo" title="回溯上一次决策 · Z" aria-label="回溯上一次决策"><span>↶</span><span class="tool-label">回溯</span></button>
+        <button id="btn-redo" data-action="redo" title="重做上一次决策 · Y" aria-label="重做上一次决策"><span>↷</span><span class="tool-label">重做</span></button>
+        <details id="game-toolbox" class="game-toolbox">
+          <summary title="行囊、因果簿、存档与指引"><span aria-hidden="true">☷</span><span class="menu-label">行囊与手记</span><span id="revisit-count" class="revisit-count hidden" aria-label="可回访变化数"></span></summary>
+          <div class="toolbox-menu">
+            <div class="toolbox-heading">行者行装 <span>PILGRIM'S NOTES</span></div>
+            <button id="btn-inventory" data-action="inventory"><span>▤</span> 行囊 <kbd>I</kbd></button>
+            <button id="btn-journal" data-action="journal"><span>☷</span> 因果手记 <kbd>J</kbd></button>
+            <button id="btn-bestiary" data-action="bestiary"><span>◉</span> 群妖图鉴 <kbd>B</kbd></button>
+            <div class="toolbox-divider"></div>
+            <button id="btn-save" data-action="save" title="手动保存 · Ctrl+S"><span>▣</span> 手动存档 <kbd>Ctrl S</kbd></button>
+            <button id="btn-load" data-action="load" title="选择手动或自动存档 · L"><span>↥</span> 读取前缘 <kbd>L</kbd></button>
+            <button id="btn-audio" data-action="audio" title="切换声音" aria-pressed="false"><span>♪</span> 声音 关</button>
+            <button id="btn-help" data-action="help" title="规则、设置与操作 · H"><span>?</span> 指引与设置 <kbd>H</kbd></button>
+            <div class="toolbox-divider"></div>
+            <button id="btn-restart" data-action="restart"><span>↻</span> 重新踏上此行</button>
+          </div>
+        </details>
+      </nav>
+    </header>
+    <main class="game-layout">
+      <aside class="hero-panel" aria-label="行者状态">
+        <div class="panel-eyebrow">THE PILGRIM <span>行者</span></div>
+        <div class="hero-profile">
+          <div id="portrait" class="hero-portrait" aria-hidden="true"><svg viewBox="0 0 48 48" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="#1e302a"/><path d="M3 36h7v-5h5v-4h19v6h5v15H3z" fill="#9f4235"/><path d="M12 12h5V8h16v5h5v15h-5v7H17v-7h-5z" fill="#7b5937"/><path d="M17 16h16v12h-5v5h-8v-5h-3z" fill="#dfbc7e"/><path d="M14 10h22v6H14z" fill="#d8af57"/><path d="M18 5h4v7h-4zm9-3h4v10h-4z" fill="#e9c771"/><path d="M17 19h6v3h-6zm11 0h6v3h-6z" fill="#242c24"/><path d="M23 24h5v3h-5z" fill="#a2794e"/><path d="M19 28h10v3H19z" fill="#9a6e44"/><path d="M12 33h23v5H12z" fill="#be5f41"/><path d="M18 38h13v10H18z" fill="#c49a52"/><path d="M39 5h3v43h-3z" fill="#997b41"/><path d="M38 4h5v9h-5zm0 34h5v10h-5z" fill="#e3c471"/></svg></div>
+          <div><h2>孙悟空</h2><span class="hero-title">齐天大圣</span><div class="hero-rank"><i></i> 一棒破万相</div></div>
+        </div>
+        <div class="health-block"><div class="stat-caption"><span><i class="stat-dot red"></i> 生命</span><small>VITALITY</small></div><div class="health-value"><strong id="hp-value">620</strong><span>HP</span></div><div class="health-rule"><span></span></div></div>
+        <div class="stat-grid"><div><span class="stat-icon sword">⚔</span><label>攻击</label><strong id="atk-value">24</strong></div><div><span class="stat-icon shield">◇</span><label>防御</label><strong id="def-value">10</strong></div><div><span class="stat-icon spirit">✦</span><label>灵息</label><strong id="mana-value">6 <small>/ 6</small></strong></div><div><span class="stat-icon coin">◉</span><label>铜钱</label><strong id="coins-value">0</strong></div></div>
+        <div class="keys-block"><div class="section-label">过关之钥 <span>KEYS</span></div><div class="key-row"><div title="黄铜钥匙"><i class="key-icon yellow"></i><span id="key-yellow">1</span></div><div title="青玉钥匙"><i class="key-icon blue"></i><span id="key-blue">0</span></div><div title="朱砂钥匙"><i class="key-icon red"></i><span id="key-red">0</span></div></div></div>
+        <div class="relic-block"><div class="section-label">五蕴舍利 <span id="relic-count-label">RELICS</span></div><div id="relic-slots" class="relic-slots"><span class="relic-slot">Ⅰ</span><span class="relic-slot">Ⅱ</span><span class="relic-slot">Ⅲ</span><span class="relic-slot">Ⅳ</span><span class="relic-slot">Ⅴ</span></div><p class="relic-caption">散落的是佛骨，亦是未了的心念。</p></div>
+        <div class="journey-quote"><span>「</span>心猿归处，<br>自有灵山。<span>」</span></div>
+      </aside>
+      <section class="tower-panel" aria-label="塔层探索">
+        <div class="floor-header"><div class="floor-title"><span id="floor-number" class="floor-number">壹</span><div><div class="floor-overline">THE RELIC TOWER <span id="location-label">第 1 层 / 共 18 层</span></div><h1 id="floor-name">石生山门</h1></div></div><span id="floor-subtitle" class="floor-subtitle">万法起于足下</span></div>
+        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="十三乘十三格的魔塔地图。使用方向键或WASD移动，点击格子查看或寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
+        <div class="ability-bar" aria-label="行者神通">
+          <button data-mode="walk" id="skill-walk" class="ability active"><span class="ability-symbol">⌁</span><span>行走<small>自在探索</small></span><kbd>1</kbd></button>
+          <button data-mode="inspect" id="skill-inspect" class="ability"><span class="ability-symbol eye-symbol">◉</span><span>火眼金睛<small>洞察 · 无消耗</small></span><kbd>2</kbd></button>
+          <button data-mode="staff" id="skill-staff" class="ability locked"><span class="ability-symbol">╱</span><span>金箍架桥<small>石生舍利解锁</small></span><kbd>3</kbd></button>
+          <button data-mode="morph" id="skill-morph" class="ability locked"><span class="ability-symbol">♧</span><span>青蝉化形<small>照骨舍利解锁</small></span><kbd>4</kbd></button>
+          <button data-mode="clone" id="skill-clone" class="ability locked"><span class="ability-symbol">分</span><span>毫毛分身<small>渡厄舍利解锁</small></span><kbd>5</kbd></button>
+        </div>
+        <div class="exploration-status"><i></i><span id="status-message" aria-live="polite">一切战斗都可预见。落子之前，先看清因果。</span></div>
+        <div class="mobile-controls" aria-label="触屏移动"><button data-move="left" aria-label="向左">←</button><div><button data-move="up" aria-label="向上">↑</button><button data-move="down" aria-label="向下">↓</button></div><button data-move="right" aria-label="向右">→</button><button id="btn-interact" data-action="interact" class="interact-button">交互</button></div>
+      </section>
+      <aside class="world-panel" aria-label="塔内信息">
+        <section class="objective-card"><div class="section-label"><span class="small-diamond"></span> 此行所求 <span>QUEST</span></div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div class="objective-decoration">一念起 · 万山开</div></section>
+        <section class="context-card" aria-live="polite"><button id="context-dismiss" class="context-dismiss" aria-label="收起当前目标">×</button><div class="section-label">火眼所见 <span>INSIGHT</span></div><h2 id="context-title">观照，方能破局</h2><div id="context-body"><div class="insight-emblem">◉</div><p class="muted">点击塔内的守卫、机关或宝物，查看规则与战斗损失。</p><p class="context-note">无随机伤害 · 无怪物刷新<br>每一步，都有你的解法。</p></div></section>
+        <section class="event-card"><div class="section-label">塔中回响 <span>CHRONICLE</span></div><div id="event-log" class="event-log" aria-live="polite"><div class="log-entry"><span>·</span> 你踏入了破碎的浮屠。</div></div></section>
+        <div class="map-legend"><span><i class="legend-dot relic-dot"></i> 舍利</span><span><i class="legend-dot altar-dot"></i> 灵息坛</span><span><i class="legend-dot enemy-dot"></i> 守卫</span><span><i class="legend-dot gate-dot"></i> 机关</span></div>
+      </aside>
+    </main>
+    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> 点击地面寻路 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
+  </div>
+  <div id="modal-root" class="modal-root hidden"><div id="modal-backdrop" class="modal-backdrop"></div><section id="modal-panel" class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><button id="modal-close" class="modal-close" aria-label="关闭">×</button><div id="modal-eyebrow" class="modal-eyebrow">因果之间</div><h2 id="modal-title">灵山一梦</h2><div id="modal-content" class="modal-content"></div><div id="modal-actions" class="modal-actions"></div><div class="modal-footnote">大圣 · 舍利魔塔 <span>◇</span></div></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

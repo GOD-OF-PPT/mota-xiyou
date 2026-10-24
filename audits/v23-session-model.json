@@ -1,0 +1,276 @@
+{
+  "source": {
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/mechanisms.js": "fb178bec46115c029710ba7ebf6609301c0d8a998a6062b42a2087473fc994fc",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179"
+  },
+  "checks": [
+    "All original and new trial routes replay from public seeds and reach the same exit qualification with standard records",
+    "Every trial entry/exit preserves the exact campaign state, archive, automatic bytes and manual bytes",
+    "Travel, portals, campaign endings and repeated completion are guarded at public action boundaries",
+    "Refresh resumes the trial namespace; manual load and undo/redo remain isolated; campaign imports are rejected inside trials",
+    "Same-goal prototype solutions trade attack/health and health/finite supplies; different rules or objectives never rank together",
+    "Mechanism preview is read-only and resolves existing gate dependencies"
+  ],
+  "routes": [
+    {
+      "trial": "ferry-r6",
+      "goal": "keep-key",
+      "order": "low-first",
+      "standard": true,
+      "vector": {
+        "hp": 186,
+        "atk": 53,
+        "def": 25,
+        "mana": 6,
+        "coins": 35,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 1,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "ferry-r6",
+      "goal": "keep-key",
+      "order": "high-first",
+      "standard": true,
+      "vector": {
+        "hp": 186,
+        "atk": 53,
+        "def": 25,
+        "mana": 6,
+        "coins": 34,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 1,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "ferry-r6",
+      "goal": "lantern-way",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 181,
+        "atk": 50,
+        "def": 25,
+        "mana": 6,
+        "coins": 24,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 0,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r6",
+      "goal": "atk",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 165,
+        "atk": 70,
+        "def": 30,
+        "mana": 3,
+        "coins": 55,
+        "orbs": 3,
+        "elixirs": 1,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r6",
+      "goal": "def",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 123,
+        "atk": 66,
+        "def": 34,
+        "mana": 3,
+        "coins": 70,
+        "orbs": 3,
+        "elixirs": 1,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "ferry-r7",
+      "goal": "keep-key",
+      "order": "low-first",
+      "standard": true,
+      "vector": {
+        "hp": 186,
+        "atk": 53,
+        "def": 25,
+        "mana": 6,
+        "coins": 35,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 1,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "ferry-r7",
+      "goal": "keep-key",
+      "order": "high-first",
+      "standard": true,
+      "vector": {
+        "hp": 231,
+        "atk": 50,
+        "def": 25,
+        "mana": 6,
+        "coins": 34,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 1,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "ferry-r7",
+      "goal": "lantern-way",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 222,
+        "atk": 53,
+        "def": 25,
+        "mana": 6,
+        "coins": 18,
+        "orbs": 2,
+        "elixirs": 2,
+        "yellow": 0,
+        "blue": 1,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r7",
+      "goal": "atk",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 255,
+        "atk": 70,
+        "def": 30,
+        "mana": 3,
+        "coins": 55,
+        "orbs": 3,
+        "elixirs": 1,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r7",
+      "goal": "atk",
+      "order": "supply-first",
+      "standard": true,
+      "vector": {
+        "hp": 55,
+        "atk": 70,
+        "def": 30,
+        "mana": 3,
+        "coins": 55,
+        "orbs": 3,
+        "elixirs": 2,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r7",
+      "goal": "def",
+      "order": "scroll-first",
+      "standard": true,
+      "vector": {
+        "hp": 213,
+        "atk": 66,
+        "def": 34,
+        "mana": 3,
+        "coins": 70,
+        "orbs": 3,
+        "elixirs": 1,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    },
+    {
+      "trial": "silk-r7",
+      "goal": "def",
+      "order": "supply-first",
+      "standard": true,
+      "vector": {
+        "hp": 13,
+        "atk": 66,
+        "def": 34,
+        "mana": 3,
+        "coins": 70,
+        "orbs": 3,
+        "elixirs": 2,
+        "yellow": 0,
+        "blue": 2,
+        "red": 0,
+        "rescued": [
+          "bajie"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

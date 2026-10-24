@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "name": "NPC talk is immediate, advances with Space, and never opens a page dialog"
+    },
+    {
+      "name": "Leaving a conversation/detail removes its card and target link"
+    },
+    {
+      "name": "Picking up an item clears its hint, connector and stale selection"
+    },
+    {
+      "name": "First movement previews; key repeat cannot attack; a fresh movement settles the exact forecast"
+    },
+    {
+      "name": "Door cost and confirmation are in the scene; the matching key is spent once"
+    },
+    {
+      "name": "Route choices expose actual costs and rewards beside the contract"
+    },
+    {
+      "name": "staff uses the same real cost, target and result as the engine"
+    },
+    {
+      "name": "morph uses the same real cost, target and result as the engine"
+    },
+    {
+      "name": "clone uses the same real cost, target and result as the engine"
+    },
+    {
+      "name": "The final vertical gap becomes a vertical bridge"
+    },
+    {
+      "name": "A previous-revision save returns safely to the lantern without losing or duplicating rewards"
+    },
+    {
+      "name": "Full PC viewport, centered bottom skills, and final-resolution material rendering",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900
+      },
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "dpr": 1,
+      "backing": {
+        "w": 1440,
+        "h": 900
+      },
+      "abilityCenter": 720,
+      "smoothing": true
+    },
+    {
+      "name": "Both art styles preserve the exact campaign state at the large PC viewport"
+    },
+    {
+      "name": "White Wutian actually opens the free south approach; there is no stat reward or hidden payment"
+    },
+    {
+      "name": "18-floor browser campaign: all stairs, sixteen fragments, five seals, awakening and both endings use real UI",
+      "traverse": 17,
+      "fragment": 16,
+      "relic": 5
+    },
+    {
+      "name": "Manual save/load preserves the completed campaign exactly"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v9-entry.png",
+    "E:\\githome\\mota\\audits\\v9-dialogue.png",
+    "E:\\githome\\mota\\audits\\v9-combat-preview.png",
+    "E:\\githome\\mota\\audits\\v9-door.png",
+    "E:\\githome\\mota\\audits\\v9-choice.png",
+    "E:\\githome\\mota\\audits\\v9-skill-staff.png",
+    "E:\\githome\\mota\\audits\\v9-skill-morph.png",
+    "E:\\githome\\mota\\audits\\v9-skill-clone.png",
+    "E:\\githome\\mota\\audits\\v9-vertical-bridge.png",
+    "E:\\githome\\mota\\audits\\v9-material-scene.png",
+    "E:\\githome\\mota\\audits\\v9-material-large.png",
+    "E:\\githome\\mota\\audits\\v9-mural-large.png",
+    "E:\\githome\\mota\\audits\\v9-white-aid.png",
+    "E:\\githome\\mota\\audits\\v9-ending-release.png",
+    "E:\\githome\\mota\\audits\\v9-ending-keep.png"
+  ],
+  "startedAt": "2026-10-22T10:54:38.151Z",
+  "source": {
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "72d3ef140f5b06bab0d23d41ff175121c5ec2facafb22e3d4428122a79cd0fa9",
+    "js/ui.js": "c89f8f7b7e33cbfd4ebedc92b452cf3067c21d88133ca158250c95ed3630b2b1",
+    "js/renderer.js": "64250fb8f0a5d757e1b625fb703e981669e34f15fa1a37f2cdf636588f73b29f",
+    "css/repair.css": "9a2fb569df3d5766e221fa2f9322e779e74cd4abec2bbaf478e42ce24042d16e",
+    "index.html": "97cb6c1f9a638ef60eee220d7e274c6f409ef19942b1f98d92223a2492fe7d40"
+  },
+  "completed": true,
+  "finishedAt": "2026-10-22T10:55:22.453Z"
+}

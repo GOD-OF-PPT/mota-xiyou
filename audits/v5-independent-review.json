@@ -1,0 +1,221 @@
+{
+  "timestamp": "2026-10-22T01:41:14.598Z",
+  "scope": "Independent read-only source, PNG-header bounds and public-action simulation probes. No browser or production edits.",
+  "hashes": {
+    "js/engine.js": "37f7f5d43d6f7bac46c0be810df2e29934653ec3b9099fefe303a161ce29243d",
+    "js/world.js": "3bb8fefd56277a02ac3bdb58491225494ed5df67f5813d97aa0da4b0511f0606",
+    "js/renderer.js": "551aa80bbe93aade423e6a4f7f755fbc2d75b1f6a26d9f4b7debb171f72355dd",
+    "js/assets.js": "cc4588763a67a948fb7e27305ff0e68ddff7d91d8e63cfd1388923e4308eb86a",
+    "assets/mural/manifest.json": "8e1a276d020bc714c0fc1ff1c38499e0bddb8366d2d8d3f871834b8959227bdc"
+  },
+  "assetBounds": {
+    "assets": 145,
+    "files": 9,
+    "errors": [],
+    "runtimeBytes": 7250669,
+    "uniqueFrameGroups": 105,
+    "portraitWukong": {
+      "src": "assets/mural/atlases/wukong.png",
+      "sx": 32,
+      "sy": 30,
+      "sourceW": 40,
+      "sourceH": 40,
+      "frames": 1,
+      "anchor": {
+        "x": 20,
+        "y": 40
+      },
+      "contentBounds": [
+        0,
+        0,
+        40,
+        40
+      ]
+    }
+  },
+  "vowReplay": {
+    "actions": 3905,
+    "failures": [],
+    "won": true,
+    "choices": [
+      {
+        "i": 193,
+        "choice": "bellVow",
+        "option": "passage",
+        "cost": {},
+        "reward": {
+          "quests": {
+            "bellPassage": true
+          }
+        },
+        "before": {
+          "hp": 821,
+          "atk": 27,
+          "def": 10,
+          "coins": 18,
+          "keys": {
+            "yellow": 1,
+            "blue": 1,
+            "red": 0
+          }
+        },
+        "after": {
+          "hp": 821,
+          "atk": 27,
+          "def": 10,
+          "coins": 18,
+          "keys": {
+            "yellow": 1,
+            "blue": 1,
+            "red": 0
+          }
+        },
+        "duplicateRejected": true
+      },
+      {
+        "i": 1310,
+        "choice": "ferryVow",
+        "option": "passage",
+        "cost": {
+          "key": {
+            "color": "yellow",
+            "amount": 1
+          }
+        },
+        "reward": {
+          "quests": {
+            "ferryPassage": true
+          }
+        },
+        "before": {
+          "hp": 480,
+          "atk": 55,
+          "def": 23,
+          "coins": 14,
+          "keys": {
+            "yellow": 1,
+            "blue": 1,
+            "red": 0
+          }
+        },
+        "after": {
+          "hp": 480,
+          "atk": 55,
+          "def": 23,
+          "coins": 14,
+          "keys": {
+            "yellow": 0,
+            "blue": 1,
+            "red": 0
+          }
+        },
+        "duplicateRejected": true
+      },
+      {
+        "i": 3568,
+        "choice": "emberVow",
+        "option": "passage",
+        "cost": {},
+        "reward": {
+          "quests": {
+            "emberPassage": true
+          }
+        },
+        "before": {
+          "hp": 439,
+          "atk": 95,
+          "def": 50,
+          "coins": 86,
+          "keys": {
+            "yellow": 0,
+            "blue": 0,
+            "red": 1
+          }
+        },
+        "after": {
+          "hp": 439,
+          "atk": 95,
+          "def": 50,
+          "coins": 86,
+          "keys": {
+            "yellow": 0,
+            "blue": 0,
+            "red": 1
+          }
+        },
+        "duplicateRejected": true
+      }
+    ],
+    "crossedVowGates": [
+      "f1-v5-bell-gate",
+      "f7-v5-ferry-south",
+      "f7-v5-ferry-north",
+      "f16-v5-ember-gate"
+    ],
+    "skipped": [
+      {
+        "id": "f1-reliquary",
+        "removed": false
+      },
+      {
+        "id": "f7-4",
+        "removed": false
+      },
+      {
+        "id": "f7-5",
+        "removed": false
+      },
+      {
+        "id": "f16-reliquary",
+        "removed": false
+      }
+    ],
+    "fragments": 16,
+    "treasures": 6
+  },
+  "migration": {
+    "checked": 3962,
+    "oldTraceActions": 3962,
+    "oldTraceFailures": [],
+    "migrationResourceDifferences": [],
+    "safeHub": 3962,
+    "unsafePositions": [],
+    "sameRevision": {
+      "action": 1279,
+      "position": [
+        4,
+        14
+      ],
+      "loaded": true,
+      "levelRevision": 5,
+      "sameState": true
+    }
+  },
+  "resolvedFindings": [
+    {
+      "id": "MIG-001",
+      "severity": "medium",
+      "area": "save4 map revision migration",
+      "before": "44 publicly reached v4 floor-8 positions had an unblocked retreat in v4 but lost it in v5 while their tile stayed walkable; migration only relocated blocked tile positions.",
+      "boundary": "The captured examples still had mana/orbs; this was a topology and forced-retreat-cost regression, not claimed to be a demonstrated zero-resource softlock.",
+      "fix": "Save state now carries levelRevision. First load from levelRevision<5 returns to the same floor lantern, preserves resources and control flags, and marks revision5. Same-revision loads preserve position.",
+      "evidence": "3962 actual old-v4 action states reloaded to safe lantern without scalar or key/choice/control differences. A real revision5 state at floor8 open water position4,14 reloaded byte-for-byte unchanged."
+    }
+  ],
+  "openFindings": [],
+  "limits": [
+    "No browser, pixel-fidelity, alpha-fringe appearance, performance, audio or mobile interaction acceptance is claimed here.",
+    "145 resource IDs are addressable names, including aliases; they are not 145 independent new illustrations. The manifest resolves to105 unique frame groups across9 PNG runtime files.",
+    "The terrain_water/terrain_gap/terrain_cloud manifest names are draft aliases; current renderer deliberately uses state-aware procedural water/gap/cloud instead of treating wall/paving pixels as water/cloud art.",
+    "Public traces demonstrate rules and routes, not human first-play comprehension, preferred art style, fun or human completion time."
+  ],
+  "result": "No remaining substantive source/state/bounds issue found in the inspected scope after MIG-001 fix.",
+  "finalArtRecheck": {
+    "scope": "Only asset metadata bounds and hashes. No browser, migration replay or campaign rerun.",
+    "change": "Added head-and-shoulder portrait_wukong crop from existing first Wukong frame; atlas and PNG count unchanged.",
+    "portraitBoundsValid": true,
+    "ids": 145,
+    "uniqueFrameGroups": 105,
+    "runtimeFiles": 9
+  }
+}

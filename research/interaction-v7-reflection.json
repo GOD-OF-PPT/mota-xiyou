@@ -1,0 +1,253 @@
+{
+  "revision": 7,
+  "currentScope": "按用户后续指示暂停全部兼容性工作，包括手机、PC尺寸、DPR与布局兜底；当前仅处理固定PC环境可复现的实际操作Bug。以下多视口数据保留为历史证据，不代表继续开展兼容工作。",
+  "deferredByUser": [
+    {
+      "item": "844×390 DPR2 material目标气泡间距复核",
+      "reason": "用户先暂停手机适配，随后暂停所有兼容性工作。",
+      "state": "deferred_by_user",
+      "historicalEvidence": "audits/v7-failed.png"
+    }
+  ],
+  "scope": [
+    "目标附近气泡、真实脚点连线与画外指引",
+    "底部正中可读技能、明确费用与锁态",
+    "默认探索cover和保留规划选择；界面只读相机/权威状态"
+  ],
+  "userCounterexample": "C:/Users/KSG/AppData/Local/Temp/codex-clipboard-ddc94e33-d555-4c61-8da1-555074e539ff.png",
+  "guidelinesRead": "docs/game-presentation-guidelines.md",
+  "ownedFiles": [
+    "index.html",
+    "js/ui.js",
+    "css/immersive.css"
+  ],
+  "reflections": [
+    {
+      "problem": "v6符签固定在右上，与用户所选怪物相距多格，缩小面板不能解决归属问题。",
+      "change": "按当帧anchorFor的真实脚点与精灵范围定位，左/右/上/下及斜向多候选避让目标、悟空、HUD、技能和对白；尖角与短引线接脚点，无窗头/关闭×。",
+      "evidence": [
+        "audits/v7-ui-first-enemy.png",
+        "audits/v7-ui-wide-fixed.png",
+        "audits/v7-ui-bubble-readable-native.png"
+      ],
+      "result": "邻接对象可见范围，不再右上兜底；离屏时隐藏气泡，方向边缘标记可移近目标，HUD无空位时暂隐。"
+    },
+    {
+      "problem": "原技能位于右下，图标与名字小；用户指定正下方中间。",
+      "change": "技能五格底中对齐，桌面48px图标/16px名称，手机44px图标/14px名称；费用和未觉直接显示，方向盘与对白在条上方分区。",
+      "evidence": [
+        "audits/v7-ui-skills-readable-native.png",
+        "audits/v7-ui-skills-mobile-readable-native.png"
+      ],
+      "result": "四种视口技能中心误差为0，手机每个操作格70×76，大于44px。"
+    },
+    {
+      "problem": "computed字体颜色看似正确，但原始裁片中锁定技能名仍近黑。",
+      "change": "实看native crop定位旧locked:after的right/bottom遗留；与新left/top共同把费用底板撑满整格，盖住字。清除right/bottom并限定内容宽高，仅图标降低alpha，名字和底板保持可读。",
+      "evidence": [
+        "audits/v7-ui-skills-native.png",
+        "audits/v7-ui-skills-readable-native.png",
+        "audits/v7-ui-skills-mobile-readable-native.png"
+      ],
+      "result": "已亲看修后原始裁片，staff/morph/clone名字与未觉标识清晰；没有将computed color或pane opacity当视觉通过。"
+    },
+    {
+      "problem": "引擎moveTo每步选择目的地，首轮follow样本在走一步后失去所选怪物。",
+      "change": "UI场景步进只在移动成功、原目标仍真实存在时恢复其选择，并focusPlayer保持相机跟悟空；阻挡时保留新接触目标，跨层不恢复。",
+      "evidence": [
+        "audits/v7-ui-final-results.json",
+        "audits/v7-ui-follow-and-labels-fixed.json",
+        "audits/v7-ui-follow-fixed.png"
+      ],
+      "result": "原选择在实际合法步进后保持、气泡随camera位置更新；普通空地不生成气泡、removed实体自动收起。旧报告已明确superseded。",
+      "historicalStatus": "superseded_by_user_B1",
+      "currentRule": "移动成功即清目标；自动接近仅到达后重新选择。"
+    },
+    {
+      "problem": "高身材pickCell若用于神通，可能把北格断口误判成悟空。",
+      "change": "架桥/化蝉/分身的施法点击严格按cellAt网格；行走/观察才使用精灵pickCell。",
+      "evidence": [
+        "js/ui.js pointerdown input routing"
+      ],
+      "result": "不改战斗、花费或地图；具体合法checkpoint由独立验收复核。"
+    },
+    {
+      "problem": "原title会弹浏览器原生白色提示，触屏也无法依赖悬停理解技能。",
+      "change": "移除技能title，改aria-label/data-description；hover/focus只更新同风格模式提示，触摸选择同样更新，费用常显。",
+      "evidence": [
+        "audits/v7-ui-follow-and-labels-fixed.json"
+      ],
+      "result": "五个技能title均为null；费用随真实abilityCost和装备变化计算。"
+    },
+    {
+      "problem": "南沿y19入场脚点会被底中条盖，移动技能位置会违背用户要求。",
+      "change": "UI传真实技能DOMRect到renderer.setPlayerGuard，几何不变不重复触发；由renderer在最多1.5格不可通行墙基内调整构图，规划仍完整fit在条上方。",
+      "evidence": [
+        "tests/v7-entry-guard-after.png",
+        "tests/v7-entry-planning.png"
+      ],
+      "result": "guard由renderer与主控实现和独立量测；本代理亲看after图，脚点留在技能上12px，不改可走格/碰撞/角色位置。"
+    },
+    {
+      "problem": "门的第一次方向接触仍可能自动调用旧决策卷册。",
+      "change": "首次碰门仅选中并显示目标气泡，明确E或点击主动作才进入原开门决策；原消耗按钮与回溯逻辑保留。",
+      "evidence": [
+        "js/ui.js door event/interact routing"
+      ],
+      "result": "保持现有data-context和钥匙结算，不让自动提示打开卷册。"
+    }
+  ],
+  "finalGeometry": {
+    "followed": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "bubble": {
+        "x": 338.5,
+        "y": 361.203125,
+        "w": 196,
+        "h": 109.296875
+      },
+      "targetBoundsGap": 21.0,
+      "allowedGap": 34.285714285714285,
+      "targetFootClearance": 29.928571428571445,
+      "playerFootClearance": 99.46002170906331,
+      "requiredFootRadius": 12.342857142857142,
+      "skillCenterError": 0.0,
+      "skill": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      }
+    },
+    "wide": {
+      "viewport": [
+        2525,
+        1208
+      ],
+      "bubble": {
+        "x": 577.71875,
+        "y": 489.375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "targetBoundsGap": 20.991319444444457,
+      "allowedGap": 60.11904761904762,
+      "targetFootClearance": 36.647321428571445,
+      "playerFootClearance": 169.98931250670148,
+      "requiredFootRadius": 21.642857142857142,
+      "skillCenterError": 0.0,
+      "skill": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      }
+    },
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "bubble": {
+        "x": 126,
+        "y": 218.9375,
+        "w": 180,
+        "h": 113.59375
+      },
+      "targetBoundsGap": 21.40625,
+      "allowedGap": 32,
+      "targetFootClearance": 65.46875,
+      "playerFootClearance": 113.46875,
+      "requiredFootRadius": 12,
+      "skillCenterError": 0.0,
+      "skill": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      }
+    },
+    "landscape": {
+      "viewport": [
+        844,
+        390
+      ],
+      "bubble": {
+        "x": 243.25,
+        "y": 80,
+        "w": 196,
+        "h": 114.5
+      },
+      "targetBoundsGap": 21.0,
+      "allowedGap": 32,
+      "targetFootClearance": 27.25,
+      "playerFootClearance": 79.13793338216509,
+      "requiredFootRadius": 12,
+      "skillCenterError": 0.0,
+      "skill": {
+        "x": 224,
+        "y": 304,
+        "w": 396,
+        "h": 72
+      }
+    }
+  },
+  "ownVerification": {
+    "pageErrors": [],
+    "selectionPreservedAfterStep": true,
+    "nativeCropsOpened": true,
+    "allChromeClosedWithFinally": true,
+    "noTestsModified": true
+  },
+  "handoff": "已交独立代理一次visual和完整campaign；本记录不以定向截图替代最终通关验收。",
+  "currentQueueOutcomes": [
+    {
+      "id": "B1",
+      "problem": "离开事件或物品后旧提示仍随悟空移动。",
+      "change": "撤销旧目标保留规则：普通移动成功即清选择、气泡、引线和方向标；自动接近途中隐藏目标，到达后重新选择。",
+      "evidence": [
+        "audits/v7-b1-before.json",
+        "audits/v7-b1-after.json",
+        "audits/v7-b1-after.png"
+      ],
+      "verified": "固定PC2525x1208 DPR1；真实鼠标点NPC和方向键移动前后复现；自动接近35ms期间无提示，到达后再选中；pageErrors为空。",
+      "reflection": "此前保留目标虽然满足旧反馈，却违反用户新要求。该条以最新离开即收起为准，下面旧follow数据仅作历史证据。"
+    },
+    {
+      "id": "B2",
+      "problem": "交谈被旧入塔未读队列挡住，点击后没有当前NPC会话；详察仍打开侧卷册。",
+      "change": "主动交谈的story立即显示在目标附近的内联分页对白；Space优先推进当前会话。详察、战斗规则、物品说明与首领准备在同一气泡内展开，再点收起，移动清理；明细单向滚动。显式手动读取或导入成功时清旧对白，回标题继续仍保留未读。",
+      "evidence": [
+        "audits/v7-b2-before.json",
+        "audits/v7-b2-after.json",
+        "audits/v7-b2-save.json",
+        "audits/v7-b2-talk-native.png",
+        "audits/v7-b2-details-native.png",
+        "audits/v7-b2-rules-native.png",
+        "audits/v7-b2-item-native.png"
+      ],
+      "verified": "固定PC实际点击交谈、下一句、详察、规则与物品；当前NPC1/4立即显示，下一句和Space到2/4、3/4；全部modal=false；移动后selection=null且inline=false。标题、手动读取与文件导入均真实操作复核，pageErrors为空。",
+      "reflection": "没有把可点击但排在旧队列后算作有效响应。亲看原始裁片确认当前正文、规则数字与物品效果可读；长详情靠滚动完整保留。未修改engine/world。"
+    },
+    {
+      "id": "B5",
+      "problem": "重大剧情进入旧未读队列后被收起，用户看不到新章节、心印与救援进展。",
+      "change": "story按kind识别当前重大事件，直接替换展开而不排在过期队列；历史留在engine既有journal。普通移动继续清B1目标，却不吞主线；明确收起、略过或读完才关闭。speaker/objective实际显示；顶部当前目标使用narrativeStatus并保留旧计数。NPC紧凑摘要、交谈、详察使用dialogueFor同阶段查询；无骨正文仅来自engine。",
+      "evidence": [
+        "audits/v7-b5-ui.json",
+        "audits/v7-b5-legacy.json",
+        "audits/v7-b5-current-chapter-native.png",
+        "audits/v7-b5-relic-native.png",
+        "audits/v7-b5-rescue-native.png",
+        "audits/v7-b5-awakening-native.png",
+        "audits/v7-b5-dynamic-npc-native.png",
+        "audits/v7-b5-story-pc.png"
+      ],
+      "verified": "固定PC2525x1208 DPR1，从既有合法轨迹提取关键事件前快照后真实点击触发；intro/chapter/relic/rescue/boss/awakening六类当前段全部展开，旧入塔未读不阻挡；移动后selection=null而主线仍展开；略过前后snapshot完全一致；唯一无骨记录；NPC交谈和详察同phase；无kind/source的旧journal真实读取可回看；pageErrors为空。",
+      "reflection": "没有把写入journal等同于玩家看见。分别核实当前文字、speaker、objective、展开状态与实际移动结果，并亲看五张原始裁片及固定PC全景。没有增加新弹窗或锁定输入，未重跑浏览器campaign/兼容矩阵。engine/world由root负责并冻结后验证。"
+    }
+  ]
+}

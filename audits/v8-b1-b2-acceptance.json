@@ -1,0 +1,527 @@
+{
+  "scope": "B1/B2 only; fixed PC 2525x1208 DPR1; real mouse/keyboard actions",
+  "startedAt": "2026-10-22T08:13:38.076Z",
+  "sourceIdentity": {
+    "js/ui.js": "c286f7ff24dee612bf5f512a254ea8fcffd92cb1af6e2f6982534e53edec9683",
+    "js/engine.js": "37f7f5d43d6f7bac46c0be810df2e29934653ec3b9099fefe303a161ce29243d",
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "css/immersive.css": "c222a4db6bc961f9790c8e28e42f07050f96a2ab0374d50b9fa802b7827342a4"
+  },
+  "errors": [],
+  "checks": [
+    {
+      "name": "B1 ordinary movement clears NPC card, line and direction",
+      "target": "f0-0",
+      "direction": "up",
+      "before": {
+        "selection": {
+          "x": 11,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "点灯僧",
+        "text": "听一段塔中回响\n\n交谈\n详察",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "after": {
+        "selection": null,
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 17
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "火眼金睛点选任何目标，免费查看真实规则和损失点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B1 ordinary movement clears selected item",
+      "traceIndex": 2,
+      "before": {
+        "selection": {
+          "x": 8,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 9,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "赤铜灵晶",
+        "text": "攻击 +3\n\n前往拾取\n详察",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "after": {
+        "selection": null,
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 9,
+          "y": 17
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "火眼金睛点选任何目标，免费查看真实规则和损失点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B1 item pickup and leaving it retain no stale target",
+      "target": "f0-13",
+      "traceIndex": 2,
+      "hpBefore": 620,
+      "hpAfter": 620
+    },
+    {
+      "name": "B1 performed event closes its hint when leaving",
+      "target": "f0-16",
+      "traceIndex": 0,
+      "after": {
+        "selection": null,
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 17
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "火眼金睛点选任何目标，免费查看真实规则和损失点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B1 autopath hides cues in motion and restores them at arrival without combat",
+      "target": "f0-4",
+      "during": {
+        "selection": null,
+        "path": 14,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 17
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "火眼金睛点选任何目标，免费查看真实规则和损失点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "arrived": {
+        "selection": {
+          "x": 4,
+          "y": 8
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 4,
+          "y": 9
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "守阶小妖",
+        "text": "损失\n20\n战后 600\n迎战\nE\n规则 ⌄",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 current NPC dialogue opens immediately over unread intro; click/Space pages finish inline with exact state neutrality",
+      "talk": {
+        "selection": {
+          "x": 11,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": null,
+        "title": "点灯僧",
+        "text": "听一段塔中回响\n\n收起交谈\n详察\n\n无天的黑莲把十六枚外舍利封进五重心印，又用众生的记忆筑成这十八层塔。乔灵儿在塔外等你。先把困在这里的人带出去，别让那些名字也化成一堵墙。\n\n1 / 4\n下一句 Space",
+        "dialogue": "无天的黑莲把十六枚外舍利封进五重心印，又用众生的记忆筑成这十八层塔。乔灵儿在塔外等你。先把困在这里的人带出去，别让那些名字也化成一堵墙。",
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "next": {
+        "selection": {
+          "x": 11,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": null,
+        "title": "点灯僧",
+        "text": "听一段塔中回响\n\n收起交谈\n详察\n\n十六枚外舍利散在前十五层的支院。每三层组成一印：前三组各三枚，炼炉三枚，经阁最后四枚。先逐一寻回，再到第三、六、九、十二、十五层解开心印。灵晶与功德决定每一棒的轻重，支院异宝则让你选择自己的解法。\n\n2 / 4\n下一句 Space",
+        "dialogue": "十六枚外舍利散在前十五层的支院。每三层组成一印：前三组各三枚，炼炉三枚，经阁最后四枚。先逐一寻回，再到第三、六、九、十二、十五层解开心印。灵晶与功德决定每一棒的轻重，支院异宝则让你选择自己的解法。",
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "space": {
+        "selection": {
+          "x": 11,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": null,
+        "title": "点灯僧",
+        "text": "听一段塔中回响\n\n收起交谈\n详察\n\n火眼辨真免费，只揭穿幻象，不改写真实战损。敌人不重生；生命、钥匙、功德都有限。先看清代价，再决定往哪边走。莲灯可免费补满灵息。\n\n3 / 4\n下一句 Space",
+        "dialogue": "火眼辨真免费，只揭穿幻象，不改写真实战损。敌人不重生；生命、钥匙、功德都有限。先看清代价，再决定往哪边走。莲灯可免费补满灵息。",
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      },
+      "pages": 5
+    },
+    {
+      "name": "B2 NPC details toggle inline and movement closes current conversation",
+      "details": {
+        "selection": {
+          "x": 11,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": "details",
+        "title": "点灯僧",
+        "text": "听一段塔中回响\n\n交谈\n收起\n\n无天的黑莲把十六枚外舍利封进五重心印，又用众生的记忆筑成这十八层塔。乔灵儿在塔外等你。先把困在这里的人带出去，别让那些名字也化成一堵墙。\n\n十六枚外舍利散在前十五层的支院。每三层组成一印：前三组各三枚，炼炉三枚，经阁最后四枚。先逐一寻回，再到第三、六、九、十二、十五层解开心印。灵晶与功德决定每一棒的轻重，支院异宝则让你选择自己的解法。\n\n火眼辨真免费，只揭穿幻象，不改写真实战损。敌人不重生；生命、钥匙、功德都有限。先看清代价，再决定往哪边走。莲灯可免费补满灵息。\n\n黄钥不只开门。八层渡灯还认一把黄钥与一份仙桃：它会为你开一条避战的舍利栈道。普通渡口一直都在；想换那条路，便从现在留下一把。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 object details are inline and resource neutral",
+      "object": {
+        "selection": {
+          "x": 8,
+          "y": 18
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 9,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": "details",
+        "title": "赤铜灵晶",
+        "text": "攻击 +3\n\n前往拾取\n收起\n\n永久攻击 +3。每次出手都生效。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 battle rules and expanded formula stay inline with exact state neutrality",
+      "rules": {
+        "selection": {
+          "x": 4,
+          "y": 8
+        },
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": "rules",
+        "title": "守阶小妖",
+        "text": "损失\n20\n战后 600\n接近 · 15 步\n收起\n生命\n42\n攻击\n20\n防御\n4\n功德\n2\n预计生命损失\n20\n战后剩余 600 生命\n普通 · 普通守卫。初始攻击 24 需三棒；先取赤铜灵晶升至 27，可减少一轮还击。\n下一基础攻击临界：25（再加 1）可少损 10 生命。\n展开真实计算过程\n每棒 24 − 4 = 20 点伤害\n42 生命，首棒额外 0；共 3 棒\n行者先手；敌人还击 2 次\n每次还击 max(0, 20 − 10)：10 点\n总损失 20；胜利功德 2\n总损失 = 20",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 boss preparation is inline; choosing a plan matches the public action and spends no resources",
+      "traceIndex": 3887,
+      "plans": [
+        "direct",
+        "anchor",
+        "echoes"
+      ],
+      "boss": {
+        "selection": {
+          "x": 10,
+          "y": 5
+        },
+        "path": 0,
+        "position": {
+          "floor": 17,
+          "x": 10,
+          "y": 6
+        },
+        "card": true,
+        "line": true,
+        "direction": false,
+        "inline": true,
+        "inlineKind": "plans",
+        "title": "黑莲化影 · 心猿",
+        "text": "损失\n1130\n战后 53\n迎战\nE\n规则 ⌄\n收起\n\n准备只改变预览；明确迎战时才消耗凝息珠。\n\n执棒破阵\n−1130\n保留凝息珠\n定海镇心\n−833\n1 珠\n毫毛合击\n−894\n2 珠\n生命\n1200\n攻击\n90\n防御\n48\n功德\n0\n预计生命损失 · 三相合计\n1130\n战后剩余 53 生命\n无相 · 三相连续结算：金甲先手、执念重甲、归心法术；战后心火 80，慈悲减至 72。战前可比较三种准备方案，确认时才消耗凝息珠。\n法器实效 · 攻 99 / 防 50\n定海铁：攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。\n双影镜：分身耗 1 灵息，架桥与化蝉耗 2；每棒反震减 2，攻击 −2。\n下一基础攻击临界：96（再加 1）可少损 40 生命。\n1 · 破妄 · 伪佛金甲\n生命 360 / 攻 90 / 防 48\n8 棒 · 敌出手 8 次 · 损失 320\n2 · 执念 · 黑莲重壳\n生命 420 / 攻 84 / 防 54\n10 棒 · 敌出手 9 次 · 损失 306\n3 · 归心 · 无骨心火\n生命 420 / 攻 62 / 防 48\n9 棒 · 敌出手 8 次 · 损失 432\n展开真实计算过程",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": true,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 title continue preserves unread story; explicit manual load clears old story and NPC dialogue",
+      "storyBefore": {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+        "visible": true,
+        "counter": "1 / 3"
+      },
+      "manual": {
+        "selection": null,
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "行走方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": false,
+          "counter": "1 / 3"
+        }
+      }
+    },
+    {
+      "name": "B2 explicit JSON import clears old dialogue and preserves imported state exactly",
+      "imported": {
+        "selection": null,
+        "path": 0,
+        "position": {
+          "floor": 0,
+          "x": 10,
+          "y": 18
+        },
+        "card": false,
+        "line": false,
+        "direction": false,
+        "inline": false,
+        "inlineKind": null,
+        "title": "观塔 · 再落子",
+        "text": "行走方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 E 交互点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。先救哪一份资源？ 黄门近路可少走一程；等第一印架桥则保留钥匙。",
+        "dialogue": null,
+        "modal": false,
+        "story": {
+          "title": "黑莲劫 · 入塔",
+          "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+          "visible": false,
+          "counter": "1 / 3"
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v8-b1-leave-npc.png",
+    "E:\\githome\\mota\\audits\\v8-b1-leave-event.png",
+    "E:\\githome\\mota\\audits\\v8-b1-autopath-arrival.png",
+    "E:\\githome\\mota\\audits\\v8-b2-talk-full.png",
+    "E:\\githome\\mota\\audits\\v8-b2-talk-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-space-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-npc-details-full.png",
+    "E:\\githome\\mota\\audits\\v8-b2-npc-details-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-object-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-formula-full.png",
+    "E:\\githome\\mota\\audits\\v8-b2-formula-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-boss-prep-full.png",
+    "E:\\githome\\mota\\audits\\v8-b2-boss-prep-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-boss-prep-full.png",
+    "E:\\githome\\mota\\audits\\v8-b2-boss-prep-card.png",
+    "E:\\githome\\mota\\audits\\v8-b2-manual-load-cleared.png",
+    "E:\\githome\\mota\\audits\\v8-b2-import-cleared.png"
+  ],
+  "harnessCorrection": "First attempt used retired .scene-calculation selector; corrected to actual inline details.formula and reran. No implementation change.",
+  "checkpoints": {
+    "source": "playthrough-v5-free-mixed-direct-bypasses.json public-action prefix; stopped before first boss fight",
+    "item": 2,
+    "event": 0,
+    "boss": 3887
+  },
+  "browser": {
+    "width": 2525,
+    "height": 1208,
+    "dpr": 1,
+    "style": "material"
+  },
+  "resumedFrom": "B2 boss preparation after harness turn accounting correction; earlier passing checks retained with unchanged source hashes",
+  "sourceIdentityAfter": {
+    "js/ui.js": "c286f7ff24dee612bf5f512a254ea8fcffd92cb1af6e2f6982534e53edec9683",
+    "js/engine.js": "37f7f5d43d6f7bac46c0be810df2e29934653ec3b9099fefe303a161ce29243d",
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "css/immersive.css": "c222a4db6bc961f9790c8e28e42f07050f96a2ab0374d50b9fa802b7827342a4"
+  },
+  "completed": true,
+  "finishedAt": "2026-10-22T08:13:47.074Z"
+}

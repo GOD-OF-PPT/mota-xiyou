@@ -1,0 +1,224 @@
+{
+  "scope": "B3 grounding only; fixed PC2525x1208 DPR1; wall occlusion/depth belongs to B4",
+  "startedAt": "2026-10-23T04:54:52.705Z",
+  "rendererSha": "a0135333b6229bd6ab9c26911bb6235f475e92fb8f256d0f44a8d43433f9666a",
+  "checks": [],
+  "errors": [],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v8-b3-independent-whole.png",
+    "E:\\githome\\mota\\audits\\v8-b3-independent-failure.png"
+  ],
+  "profile": {
+    "width": 2525,
+    "height": 1208,
+    "dpr": 1,
+    "style": "material"
+  },
+  "static": [
+    {
+      "entity": {
+        "x": 17,
+        "y": 17,
+        "type": "chest",
+        "item": "redKey",
+        "requires": 5,
+        "label": "归根之匣 · 五印十六舍利共鸣，取得十八层心钥",
+        "id": "f0-3"
+      },
+      "anchor": {
+        "foot": {
+          "x": 2104.1666666666665,
+          "y": 820.983630952381
+        },
+        "body": {
+          "x": 2104.1666666666665,
+          "y": 778.7422924297923
+        },
+        "bounds": {
+          "x": 2049.0575396825398,
+          "y": 732.6356074481073,
+          "w": 110.21825396825396,
+          "h": 96.05559371184371
+        },
+        "footprint": {
+          "x": 2053.065476190476,
+          "y": 800.3177083333334,
+          "w": 102.20238095238095,
+          "h": 41.33184523809524
+        },
+        "elevation": 0,
+        "visible": true,
+        "cell": {
+          "x": 17,
+          "y": 17
+        },
+        "ready": true
+      },
+      "raw": {
+        "footX": 280,
+        "footY": 284.5,
+        "left": 272.6666666666667,
+        "top": 272.7435897435897,
+        "width": 14.666666666666666,
+        "height": 12.782051282051283,
+        "footprint": {
+          "x": 273.2,
+          "y": 281.75,
+          "w": 13.6,
+          "h": 5.5
+        },
+        "elevation": 0,
+        "depth": 284.5,
+        "sourceContact": {
+          "x": 692,
+          "y": 1000
+        },
+        "scale": 0.038461538461538464,
+        "priority": 1,
+        "id": "prop_chest"
+      },
+      "profile": {
+        "groundX": 8,
+        "groundY": 12.5,
+        "contactWidth": 13.6,
+        "contactDepth": 5.5,
+        "elevation": 0,
+        "depthOffset": 0,
+        "scale": 1,
+        "shadowWidth": 7.1,
+        "shadowDepth": 2.3,
+        "sourceContact": {
+          "x": 692,
+          "y": 1000
+        }
+      },
+      "spriteScale": 1,
+      "canvas": {
+        "x": 0,
+        "y": 0
+      },
+      "projection": {
+        "x": 0,
+        "y": 10.953267326732673,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "badge": null
+    },
+    {
+      "entity": {
+        "x": 5,
+        "y": 3,
+        "type": "enemy",
+        "enemy": "bat",
+        "id": "f0-5",
+        "role": "guardian",
+        "purpose": "守护支院宝物；可先成长再挑战。"
+      },
+      "anchor": {
+        "foot": {
+          "x": 661.3095238095239,
+          "y": -862.3497023809524
+        },
+        "body": {
+          "x": 664.8321242559524,
+          "y": -977.6687721614635
+        },
+        "bounds": {
+          "x": 580.6811135912699,
+          "y": -1064.4656471614635,
+          "w": 168.3020213293651,
+          "h": 180.82682291666666
+        },
+        "footprint": {
+          "x": 631.25,
+          "y": -873.6220238095239,
+          "w": 60.11904761904762,
+          "h": 22.544642857142858
+        },
+        "elevation": 2.8,
+        "visible": false,
+        "cell": {
+          "x": 5,
+          "y": 3
+        },
+        "ready": true
+      },
+      "raw": {
+        "footX": 88,
+        "footY": 60.5,
+        "left": 77.27083333333334,
+        "top": 33.604571308415174,
+        "width": 22.395833333333336,
+        "height": 24.0625,
+        "footprint": {
+          "x": 84,
+          "y": 59,
+          "w": 8,
+          "h": 3
+        },
+        "elevation": 2.8,
+        "depth": 60.5,
+        "sourceContact": {
+          "x": 128,
+          "y": 352
+        },
+        "scale": 0.3125,
+        "priority": 2,
+        "id": "enemy_bat"
+      },
+      "profile": {
+        "groundX": 8,
+        "groundY": 12.5,
+        "contactWidth": 8,
+        "contactDepth": 3,
+        "elevation": 2.8,
+        "depthOffset": 0,
+        "scale": 1,
+        "shadowWidth": 5.4,
+        "shadowDepth": 1.7,
+        "sourceContact": null
+      },
+      "spriteScale": 1.25,
+      "canvas": {
+        "x": 0,
+        "y": 0
+      },
+      "projection": {
+        "x": 0,
+        "y": 10.953267326732673,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "guardShiftY": 0,
+        "boundaryRowsVisible": 0,
+        "authoredWidth": 21,
+        "authoredHeight": 21,
+        "planningHeight": null
+      },
+      "badge": null
+    }
+  ],
+  "completed": false,
+  "failure": {
+    "stage": "static grounding",
+    "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   x: 692,\n+   y: 1000\n-   x: 29,\n-   y: 50\n  }\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   x: 692,\n+   y: 1000\n-   x: 29,\n-   y: 50\n  }\n\n    at E:\\githome\\mota\\tests\\v8-b3-independent.cjs:16:532"
+  }
+}

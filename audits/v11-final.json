@@ -1,0 +1,59 @@
+{
+  "status": "pc_verified_with_documented_boundaries",
+  "completedAt": "2026-10-22T16:12:49.417Z",
+  "source": {
+    "index.html": "d71234ac08714a438bae08f151a915279d6f5dd0da0ed5b81f742f1f32fb0fcb",
+    "js/renderer.js": "72c1a1343ff1d89ec48b62513bcd7ceb8094c5196b4c9f32178c8c744128abb5",
+    "js/ui.js": "2ccf67017caf60b78afa2a4c9d0e8b959a2d19baec3b41418187d5435cf9354c",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    "js/audio.js": "ce7a983247daec8c30d4b6897ca23e2dd67cd882508fb102ac0e2374ffaae243",
+    "css/experience.css": "01679a838f7dde14dac83fe487a223996e909a654ae270b7bd49bc75f3d33c47"
+  },
+  "rules": {
+    "engine": 39,
+    "equipment": 8,
+    "topologyAndResources": 6,
+    "passed": true
+  },
+  "artAndTactics": "audits/v11-art-tactics.json",
+  "interaction": "audits/v10-interaction.json",
+  "presentation": "audits/v10-presentation.json",
+  "actualSizeVisualReview": [
+    "audits/v11-before-material.png",
+    "audits/v11-material-explore.png",
+    "audits/v11-mural-explore.png",
+    "audits/v11-material-route.png",
+    "audits/v11-material-user-viewport.png",
+    "audits/v11-material-combat-0-41.png",
+    "audits/v11-material-combat-1-12.png",
+    "audits/v11-floor07-material-comparison.png",
+    "audits/v11-floor07-mural-comparison.png",
+    "audits/v11-chrome-resumed.png"
+  ],
+  "seventhFloorComparison": {
+    "legalPrefixActions": 1143,
+    "styles": [
+      "material",
+      "mural"
+    ],
+    "atk": {
+      "value": 3,
+      "lossBefore": 52,
+      "lossAfter": 52
+    },
+    "def": {
+      "value": 4,
+      "lossBefore": 52,
+      "lossAfter": 44
+    }
+  },
+  "review": "docs/v11-art-gameplay-review.md",
+  "boundaries": [
+    "Subjective first-play pacing and fun require player feedback",
+    "Audio timing implemented; human listening review pending",
+    "Representative PC screenshots, not all-floor visual inspection",
+    "No new raster atlas generated",
+    "Mobile and broad browser coverage deferred"
+  ]
+}

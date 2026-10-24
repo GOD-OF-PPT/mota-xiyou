@@ -1,0 +1,72 @@
+{
+  "startedAt": "2026-10-22T16:11:38.955Z",
+  "checks": [
+    {
+      "name": "Legal 18-floor campaign and all offered one-crystal routes preserve costs and match exact forecasts",
+      "actions": 4142,
+      "encounterFloors": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "routeCount": 37,
+      "benefit": 15,
+      "neutral": 22
+    },
+    {
+      "name": "Physical PC clicks plan without spending; keyboard walks the marked route and gets the exact reduced loss"
+    },
+    {
+      "name": "Attack frames and separate health/reward receipts consume one settled combat result"
+    },
+    {
+      "name": "Both styles, two PC viewports and reduced-motion acknowledgement render without web modals"
+    },
+    {
+      "name": "Fresh file:// session runs and collects real growth with networking disabled",
+      "network": []
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v11-material-explore.png",
+    "E:\\githome\\mota\\audits\\v11-material-route.png",
+    "E:\\githome\\mota\\audits\\v11-material-combat-0-18.png",
+    "E:\\githome\\mota\\audits\\v11-material-combat-0-41.png",
+    "E:\\githome\\mota\\audits\\v11-material-combat-0-7.png",
+    "E:\\githome\\mota\\audits\\v11-material-combat-1-12.png",
+    "E:\\githome\\mota\\audits\\v11-mural-explore.png",
+    "E:\\githome\\mota\\audits\\v11-mural-tactics.png",
+    "E:\\githome\\mota\\audits\\v11-mural-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v11-material-explore.png",
+    "E:\\githome\\mota\\audits\\v11-material-tactics.png",
+    "E:\\githome\\mota\\audits\\v11-material-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v11-reduced-combat.png"
+  ],
+  "errors": [],
+  "source": {
+    "index.html": "d71234ac08714a438bae08f151a915279d6f5dd0da0ed5b81f742f1f32fb0fcb",
+    "js/renderer.js": "72c1a1343ff1d89ec48b62513bcd7ceb8094c5196b4c9f32178c8c744128abb5",
+    "js/ui.js": "2ccf67017caf60b78afa2a4c9d0e8b959a2d19baec3b41418187d5435cf9354c",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    "js/audio.js": "ce7a983247daec8c30d4b6897ca23e2dd67cd882508fb102ac0e2374ffaae243",
+    "css/experience.css": "01679a838f7dde14dac83fe487a223996e909a654ae270b7bd49bc75f3d33c47"
+  },
+  "completed": true,
+  "finishedAt": "2026-10-22T16:11:48.948Z"
+}

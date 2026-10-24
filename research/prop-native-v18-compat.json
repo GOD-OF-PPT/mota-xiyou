@@ -1,0 +1,22 @@
+{
+  "nativeMappings": 55,
+  "hdProps": [
+    [
+      "prop_altar",
+      "altar-hd-v14.png"
+    ],
+    [
+      "prop_stairs_up",
+      "stairs-up-hd-v14.png"
+    ],
+    [
+      "prop_stairs_down",
+      "stairs-down-hd-v14.png"
+    ],
+    [
+      "prop_resonator",
+      "resonator-hd-v14.png"
+    ]
+  ],
+  "runtimeBytes": 49057615
+}

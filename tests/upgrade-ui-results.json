@@ -1,0 +1,76 @@
+{
+  "desktop": {
+    "width": 1366,
+    "height": 768,
+    "body": 1366,
+    "canvas": {
+      "top": 127,
+      "bottom": 543,
+      "width": 416,
+      "height": 416
+    },
+    "ability": {
+      "top": 575,
+      "bottom": 629,
+      "width": 86,
+      "height": 54
+    },
+    "interact": {
+      "top": 0,
+      "bottom": 0,
+      "width": 0,
+      "height": 0
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "body": 390,
+    "canvas": {
+      "top": 213,
+      "bottom": 565,
+      "width": 352,
+      "height": 352
+    },
+    "ability": {
+      "top": 596,
+      "bottom": 650,
+      "width": 73,
+      "height": 54
+    },
+    "interact": {
+      "top": 790,
+      "bottom": 834,
+      "width": 66,
+      "height": 44
+    },
+    "forecast": {
+      "top": 700,
+      "bottom": 763
+    }
+  },
+  "landscape": {
+    "width": 844,
+    "height": 390,
+    "body": 844,
+    "canvas": {
+      "top": 92,
+      "bottom": 352,
+      "width": 260,
+      "height": 260
+    },
+    "ability": {
+      "top": 51,
+      "bottom": 95,
+      "width": 138,
+      "height": 44
+    },
+    "interact": {
+      "top": 332,
+      "bottom": 376,
+      "width": 140,
+      "height": 44
+    }
+  },
+  "errors": []
+}

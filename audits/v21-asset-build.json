@@ -1,0 +1,13 @@
+{
+  "idempotent": true,
+  "outputs": {
+    "assets/material/manifest.json": "7fe3cf26b3fc995da9c3e3d57e3baebabae370bf43d70a65df1cd0e9f2b992c4",
+    "assets/mural/manifest.json": "6f434442228653e40087871b4ae79893462ff05d327641dc9a52614a8e69d627",
+    "js/material-assets.js": "d61743e5abdadc280683dd3c284c0d27536b1bb170502cc3026441d08825187d",
+    "js/assets.js": "cf64e15d2cad827493478c2e86b62debd28966511cb6529f34977d8ef107caa4",
+    "research/finale-registration-v21.json": "08f94d18859fa2485a01edba98ed3381de431da1ee56c8e2a10c290bc187434c"
+  },
+  "registeredForms": 6,
+  "cinematicHeroes": 2,
+  "boundedSourceRects": true
+}

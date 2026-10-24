@@ -1,0 +1,170 @@
+{
+  "startedAt": "2026-10-23T17:48:33.123Z",
+  "source": {
+    "index.html": "f0bf1398179262b39f8652710e3daf470338301906f4493babdd937c95abf015",
+    "js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    "js/ui.js": "93614037e5efc7bc992e39395dd9b51aaf7b51df1c590d29aaef52484cc43cf8",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    "js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
+    "js/assets.js": "cf64e15d2cad827493478c2e86b62debd28966511cb6529f34977d8ef107caa4",
+    "js/material-assets.js": "d61743e5abdadc280683dd3c284c0d27536b1bb170502cc3026441d08825187d",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "assets/material/props/chest-v13.png": "62ef0cb5663b617dfa9efb19fab4e03a77c53fe496a4895da8aac90b58ba4abf",
+    "assets/mural/props/chest-v13.png": "4a94503da9eb292cf4d05427970c89cdd88b450044d0ade6bf67519e7a3274ae"
+  },
+  "checks": [
+    {
+      "name": "material chest uses the new local art, stays locked until five seals, and awards the finite key once",
+      "src": "assets/material/props/chest-v13.png",
+      "w": 1374,
+      "h": 1145,
+      "bounds": [
+        120,
+        83,
+        1264,
+        1080
+      ]
+    },
+    {
+      "name": "mural chest uses the new local art, stays locked until five seals, and awards the finite key once",
+      "src": "assets/mural/props/chest-v13.png",
+      "w": 1254,
+      "h": 1254,
+      "bounds": [
+        88,
+        193,
+        1208,
+        1156
+      ]
+    },
+    {
+      "name": "The first valid cast plays fully; repeated casts keep real scene effects and cost feedback without pausing exploration"
+    },
+    {
+      "name": "Always-full remains selectable, while this preference and seen-cast history stay outside the campaign save"
+    },
+    {
+      "name": "seal tells three short, different story beats, changes the shot and returns safely",
+      "lines": [
+        {
+          "speaker": "点灯僧",
+          "text": "3 枚外舍利归位，石生心印回应了你的脚步。"
+        },
+        {
+          "speaker": "孙悟空",
+          "text": "金箍所及，断路也能走。"
+        },
+        {
+          "speaker": "此行",
+          "text": "金箍架桥已醒。去找断口，也可回访旧路。"
+        }
+      ]
+    },
+    {
+      "name": "boss tells three short, different story beats, changes the shot and returns safely",
+      "lines": [
+        {
+          "speaker": "心猿",
+          "text": "若只会挥棒，你怎接得住自己的嗔怒？"
+        },
+        {
+          "speaker": "孙悟空",
+          "text": "甲再重，也不是你困住俺的理由。"
+        },
+        {
+          "speaker": "点灯僧",
+          "text": "三相已散。走向莲阵，照见最后那颗心。"
+        }
+      ]
+    },
+    {
+      "name": "awakening tells three short, different story beats, changes the shot and returns safely",
+      "lines": [
+        {
+          "speaker": "点灯僧",
+          "text": "十六枚都在，为何中央始终空着？"
+        },
+        {
+          "speaker": "孙悟空",
+          "text": "最后这颗不是宝物，是俺愿意回头的这颗心。"
+        },
+        {
+          "speaker": "此行",
+          "text": "无骨归真。走向莲台，选择与众生归去或留灯。"
+        }
+      ]
+    },
+    {
+      "name": "release tells three short, different story beats, changes the shot and returns safely",
+      "lines": [
+        {
+          "speaker": "孙悟空",
+          "text": "这一棒，替众生打开归路。"
+        },
+        {
+          "speaker": "八戒",
+          "text": "师父和俺们都在。猴哥，回家了。"
+        },
+        {
+          "speaker": "此行",
+          "text": "十七道光散入晨雾，你选择与众生归去。"
+        }
+      ]
+    },
+    {
+      "name": "keep tells three short, different story beats, changes the shot and returns safely",
+      "lines": [
+        {
+          "speaker": "孙悟空",
+          "text": "你们先走。塔里的这盏灯，俺来守。"
+        },
+        {
+          "speaker": "点灯僧",
+          "text": "留灯的人，也有人记得回来看望。"
+        },
+        {
+          "speaker": "此行",
+          "text": "长明灯已留在塔心，众生仍可离塔。"
+        }
+      ]
+    },
+    {
+      "name": "Mural story staging and subtitles remain usable at the large PC viewport"
+    },
+    {
+      "name": "Reduced motion shows the useful final story beat statically, retaining the exact reward"
+    },
+    {
+      "name": "New chest assets preload through file:// with networking disabled"
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v21-story-material-chest-locked.png",
+    "E:\\githome\\mota\\audits\\v21-story-material-chest-ready.png",
+    "E:\\githome\\mota\\audits\\v21-story-mural-chest-locked.png",
+    "E:\\githome\\mota\\audits\\v21-story-mural-chest-ready.png",
+    "E:\\githome\\mota\\audits\\v21-story-pacing-settings.png",
+    "E:\\githome\\mota\\audits\\v21-story-seal-shot-1.png",
+    "E:\\githome\\mota\\audits\\v21-story-seal-shot-2.png",
+    "E:\\githome\\mota\\audits\\v21-story-seal-shot-3.png",
+    "E:\\githome\\mota\\audits\\v21-story-boss-shot-1.png",
+    "E:\\githome\\mota\\audits\\v21-story-boss-shot-2.png",
+    "E:\\githome\\mota\\audits\\v21-story-boss-shot-3.png",
+    "E:\\githome\\mota\\audits\\v21-story-awakening-shot-1.png",
+    "E:\\githome\\mota\\audits\\v21-story-awakening-shot-2.png",
+    "E:\\githome\\mota\\audits\\v21-story-awakening-shot-3.png",
+    "E:\\githome\\mota\\audits\\v21-story-release-shot-1.png",
+    "E:\\githome\\mota\\audits\\v21-story-release-shot-2.png",
+    "E:\\githome\\mota\\audits\\v21-story-release-shot-3.png",
+    "E:\\githome\\mota\\audits\\v21-story-keep-shot-1.png",
+    "E:\\githome\\mota\\audits\\v21-story-keep-shot-2.png",
+    "E:\\githome\\mota\\audits\\v21-story-keep-shot-3.png",
+    "E:\\githome\\mota\\audits\\v21-story-mural-wide-story.png",
+    "E:\\githome\\mota\\audits\\v21-story-reduced-story.png"
+  ],
+  "errors": [],
+  "legalActions": 4142,
+  "completed": true,
+  "finishedAt": "2026-10-23T17:49:12.968Z"
+}

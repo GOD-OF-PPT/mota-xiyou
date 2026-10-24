@@ -1,0 +1,186 @@
+{
+  "errors": [],
+  "before": {
+    "v": {
+      "x": 6.4375,
+      "y": 3.416666666666668,
+      "w": 8.125,
+      "h": 17.583333333333332,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null
+    },
+    "player": {
+      "foot": {
+        "x": 195,
+        "y": 796
+      },
+      "body": {
+        "x": 188.8125,
+        "y": 758.17
+      },
+      "bounds": {
+        "x": 165.375,
+        "y": 723.25,
+        "w": 46.875,
+        "h": 72.75
+      },
+      "visible": true,
+      "cell": {
+        "x": 10,
+        "y": 19
+      },
+      "ready": true
+    },
+    "guard": null,
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "footInside": true,
+    "authoredCoverage": 0.9999999999999998,
+    "boundaryWallCoverage": 2.220446049250313e-16,
+    "terrain": [
+      2016,
+      2208
+    ]
+  },
+  "after": {
+    "v": {
+      "x": 6.4375,
+      "y": 4.541666666666668,
+      "w": 8.125,
+      "h": 17.583333333333332,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": false,
+      "guardShiftY": 1.125,
+      "boundaryRowsVisible": 1.125,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null
+    },
+    "player": {
+      "foot": {
+        "x": 195,
+        "y": 742
+      },
+      "body": {
+        "x": 188.8125,
+        "y": 704.17
+      },
+      "bounds": {
+        "x": 165.375,
+        "y": 669.25,
+        "w": 46.875,
+        "h": 72.75
+      },
+      "visible": true,
+      "cell": {
+        "x": 10,
+        "y": 19
+      },
+      "ready": true
+    },
+    "guard": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "footInside": false,
+    "authoredCoverage": 0.9360189573459714,
+    "boundaryWallCoverage": 0.0639810426540286,
+    "terrain": [
+      2016,
+      2208
+    ]
+  },
+  "wall": {
+    "cell": {
+      "x": 10,
+      "y": 22
+    },
+    "tile": "#"
+  },
+  "planning": {
+    "v": {
+      "x": 0,
+      "y": 0,
+      "w": 21,
+      "h": 21,
+      "cellSize": 18.571428571428573,
+      "offsetX": -2.842170943040401e-14,
+      "offsetY": 175.99999999999997,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": true,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": 742
+    },
+    "player": {
+      "foot": {
+        "x": 195,
+        "y": 547.4285714285714
+      },
+      "body": {
+        "x": 192.60602678571428,
+        "y": 532.7919642857142
+      },
+      "bounds": {
+        "x": 183.53794642857142,
+        "y": 519.28125,
+        "w": 18.136160714285715,
+        "h": 28.14732142857143
+      },
+      "visible": true,
+      "cell": {
+        "x": 10,
+        "y": 19
+      },
+      "ready": true
+    },
+    "guard": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "footInside": false,
+    "authoredCoverage": 0.46208530805687215,
+    "boundaryWallCoverage": 0,
+    "terrain": [
+      2016,
+      2208
+    ]
+  },
+  "invariant": true
+}

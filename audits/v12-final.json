@@ -1,0 +1,55 @@
+{
+  "status": "implemented_and_pc_verified",
+  "completedAt": "2026-10-22T23:56:23.056Z",
+  "source": {
+    "index.html": "79bd61793cec9b1ffdf75fe59312970b7aa573a954ec2a29f84fd3ca82fd9076",
+    "js/presentation.js": "f86782c2fd82aeb8deec004ceafd9d61f25bfaa2c09608a48b98b4efd41e7e51",
+    "js/film-art.js": "3d50aed3acc7df4c8c85faf9ea666071abed8a24c8d650067d93a1fcec7cd4d5",
+    "js/ui.js": "91d28bd7e621b698f10a614c8572cd22cf38fd7b92da2f409d773f7db3f90eba",
+    "css/experience.css": "ca3422f819563735bec742db3a708f476c5ba4c41ce7168d1ce497a537494807",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f"
+  },
+  "engineUnchangedSinceV11": true,
+  "checks": {
+    "cinematics": 19,
+    "interaction": 21,
+    "legalCampaignActions": 4142,
+    "errors": []
+  },
+  "evidence": [
+    "audits/v12-cinematics.json",
+    "audits/v10-interaction.json",
+    "audits/v12-style-scenes.json"
+  ],
+  "originalSizeVisualReview": [
+    "audits/v12-chrome-entry.png",
+    "audits/v12-material-staff-result.png",
+    "audits/v12-material-morph-result.png",
+    "audits/v12-material-clone-result.png",
+    "audits/v12-mural-eye-action.png",
+    "audits/v12-scene-release.png",
+    "audits/v12-material-scene-awakening.png"
+  ],
+  "chrome": {
+    "url": "http://127.0.0.1:8765/",
+    "refreshed": true,
+    "preservedProgress": {
+      "floor": 1,
+      "hp": 686,
+      "mana": 6,
+      "yellowKey": 1,
+      "blueKey": 1,
+      "externalRelics": 1
+    },
+    "waitingForArrivalAcknowledgement": true
+  },
+  "video": "audits/v12-cinematics-preview.webm",
+  "review": "docs/v12-cinematics-review.md",
+  "boundaries": [
+    "Existing actor poses; no new sprite atlas",
+    "No new voiceover or chapter music",
+    "Subjective impact and repeated-play pacing require player feedback",
+    "PC Chrome only; no fixed FPS promise"
+  ]
+}

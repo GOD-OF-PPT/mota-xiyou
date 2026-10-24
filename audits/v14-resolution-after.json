@@ -1,0 +1,354 @@
+{
+  "viewport": {
+    "width": 1989,
+    "height": 1113
+  },
+  "checks": [
+    {
+      "dpr": 1,
+      "case": "first",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            94.7,
+            91.6
+          ],
+          "ratio": 11.392156862745098,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_choice",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            102.6,
+            95
+          ],
+          "ratio": 12.562478245736164,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            83.6,
+            106.6
+          ],
+          "ratio": 12.294285235461706,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    },
+    {
+      "dpr": 1,
+      "case": "second",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            94.7,
+            91.6
+          ],
+          "ratio": 11.392156862745098,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_choice",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            102.6,
+            95
+          ],
+          "ratio": 12.562478245736164,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            83.6,
+            106.6
+          ],
+          "ratio": 12.294285235461706,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_stairs_down",
+          "native": [
+            1207,
+            1109
+          ],
+          "display": [
+            94.7,
+            87
+          ],
+          "ratio": 12.743589743589745,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    },
+    {
+      "dpr": 1,
+      "case": "mechanism",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            94.7,
+            91.6
+          ],
+          "ratio": 11.392156862745098,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_resonator",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            102.6,
+            95
+          ],
+          "ratio": 12.562478245736164,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            83.6,
+            106.6
+          ],
+          "ratio": 12.294285235461706,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_stairs_down",
+          "native": [
+            1207,
+            1109
+          ],
+          "display": [
+            94.7,
+            87
+          ],
+          "ratio": 12.743589743589745,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    },
+    {
+      "dpr": 2,
+      "case": "first",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            189.4,
+            183.3
+          ],
+          "ratio": 5.696078431372549,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_choice",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            205.2,
+            189.9
+          ],
+          "ratio": 6.281239122868082,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            167.2,
+            213.1
+          ],
+          "ratio": 6.147142617730853,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    },
+    {
+      "dpr": 2,
+      "case": "second",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            189.4,
+            183.3
+          ],
+          "ratio": 5.696078431372549,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_choice",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            205.2,
+            189.9
+          ],
+          "ratio": 6.281239122868082,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            167.2,
+            213.1
+          ],
+          "ratio": 6.147142617730853,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_stairs_down",
+          "native": [
+            1207,
+            1109
+          ],
+          "display": [
+            189.4,
+            174
+          ],
+          "ratio": 6.371794871794872,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    },
+    {
+      "dpr": 2,
+      "case": "mechanism",
+      "props": [
+        {
+          "id": "prop_stairs_up",
+          "native": [
+            1079,
+            1044
+          ],
+          "display": [
+            189.4,
+            183.3
+          ],
+          "ratio": 5.696078431372549,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_resonator",
+          "native": [
+            1289,
+            1193
+          ],
+          "display": [
+            205.2,
+            189.9
+          ],
+          "ratio": 6.281239122868082,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_altar",
+          "native": [
+            1028,
+            1310
+          ],
+          "display": [
+            167.2,
+            213.1
+          ],
+          "ratio": 6.147142617730853,
+          "pass": true,
+          "drawPass": "final-dpr"
+        },
+        {
+          "id": "prop_stairs_down",
+          "native": [
+            1207,
+            1109
+          ],
+          "display": [
+            189.4,
+            174
+          ],
+          "ratio": 6.371794871794872,
+          "pass": true,
+          "drawPass": "final-dpr"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

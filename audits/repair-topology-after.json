@@ -1,0 +1,2072 @@
+[
+  {
+    "floor": 1,
+    "barriers": [
+      {
+        "id": "f0-4",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "thresholdImp",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f0-5",
+        "type": "enemy",
+        "x": 5,
+        "y": 3,
+        "neighbors": "#.#.",
+        "label": "bat",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f0-fragment-0",
+            "type": "fragment",
+            "fragment": 0
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f0-6",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "thresholdImp",
+        "role": "optional",
+        "behind": [],
+        "detour": 16
+      },
+      {
+        "id": "f0-11",
+        "type": "door",
+        "x": 12,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "仙酿蟠桃宝龛 · 铜钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f0-10",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f0-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 13,
+        "neighbors": ".v.#",
+        "label": "imp",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f0-7",
+            "type": "item",
+            "item": "peach"
+          }
+        ],
+        "detour": 0
+      }
+    ],
+    "npcs": [
+      {
+        "id": "f0-0",
+        "dialogue": "lantern",
+        "x": 11,
+        "y": 18
+      }
+    ]
+  },
+  {
+    "floor": 2,
+    "barriers": [
+      {
+        "id": "f1-3",
+        "type": "gate",
+        "x": 17,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "东钟门 · 启钟扳杆",
+        "behind": [],
+        "detour": 10
+      },
+      {
+        "id": "f1-4",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "....",
+        "label": "imp",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f1-5",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "bat",
+        "role": "optional",
+        "behind": [],
+        "detour": 10
+      },
+      {
+        "id": "f1-6",
+        "type": "enemy",
+        "x": 5,
+        "y": 16,
+        "neighbors": "#.#.",
+        "label": "stone",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f1-fragment-1",
+            "type": "fragment",
+            "fragment": 1
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f1-11",
+        "type": "door",
+        "x": 5,
+        "y": 5,
+        "neighbors": ".#.v",
+        "label": "随身蟠桃宝龛 · 青钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f1-10",
+            "type": "item",
+            "item": "elixir"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f1-reliquary",
+        "type": "enemy",
+        "x": 15,
+        "y": 16,
+        "neighbors": "#.#.",
+        "label": "reliquary0",
+        "role": "treasure",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f1-wing-guard-0",
+        "type": "enemy",
+        "x": 5,
+        "y": 13,
+        "neighbors": ".#.#",
+        "label": "bat",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f1-7",
+            "type": "item",
+            "item": "peach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f1-wing-guard-1",
+        "type": "enemy",
+        "x": 15,
+        "y": 10,
+        "neighbors": "...#",
+        "label": "bat",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f1-v5-bell-gate",
+        "type": "gate",
+        "x": 17,
+        "y": 14,
+        "neighbors": ".#.#",
+        "label": "补钟北门 · 舍弃青玉后开启",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 3,
+    "barriers": [
+      {
+        "id": "f2-1",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "....",
+        "label": "imp",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      },
+      {
+        "id": "f2-2",
+        "type": "enemy",
+        "x": 16,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "imp",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f2-3",
+        "type": "enemy",
+        "x": 10,
+        "y": 10,
+        "neighbors": "....",
+        "label": "imp",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f2-4",
+        "type": "enemy",
+        "x": 8,
+        "y": 3,
+        "neighbors": "....",
+        "label": "thorn",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      },
+      {
+        "id": "f2-5",
+        "type": "enemy",
+        "x": 15,
+        "y": 3,
+        "neighbors": "#.v.",
+        "label": "stone",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f2-fragment-2",
+            "type": "fragment",
+            "fragment": 2
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f2-6",
+        "type": "enemy",
+        "x": 12,
+        "y": 4,
+        "neighbors": ".v#.",
+        "label": "bat",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f2-15",
+        "type": "door",
+        "x": 10,
+        "y": 12,
+        "neighbors": ".#.#",
+        "label": "仙酿蟠桃宝龛 · 铜钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f2-10",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f2-16",
+        "type": "door",
+        "x": 17,
+        "y": 7,
+        "neighbors": ".#.#",
+        "label": "朱砂灵晶宝龛 · 青钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f2-11",
+            "type": "item",
+            "item": "ruby"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f2-wing-guard-0",
+        "type": "enemy",
+        "x": 8,
+        "y": 12,
+        "neighbors": ".#.#",
+        "label": "acolyte",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f2-8",
+            "type": "item",
+            "item": "peach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f2-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "...#",
+        "label": "acolyte",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 4,
+    "barriers": [
+      {
+        "id": "f3-1",
+        "type": "enemy",
+        "x": 3,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "acolyte",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f3-7",
+            "type": "item",
+            "item": "orb"
+          },
+          {
+            "id": "f3-12",
+            "type": "resonator"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f3-2",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": ".###",
+        "label": "bell",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f3-3",
+        "type": "enemy",
+        "x": 15,
+        "y": 16,
+        "neighbors": "#.#~",
+        "label": "brass",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f3-fragment-3",
+            "type": "fragment",
+            "fragment": 3
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f3-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "bell",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f3-4",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f3-wing-guard-1",
+        "type": "enemy",
+        "x": 17,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "bell",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f3-9",
+            "type": "item",
+            "item": "amber"
+          }
+        ],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 5,
+    "barriers": [
+      {
+        "id": "f4-4",
+        "type": "enemy",
+        "x": 3,
+        "y": 10,
+        "neighbors": ".#.#",
+        "label": "acolyte",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f4-5",
+        "type": "enemy",
+        "x": 10,
+        "y": 10,
+        "neighbors": ".#.#",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 20
+      },
+      {
+        "id": "f4-6",
+        "type": "enemy",
+        "x": 17,
+        "y": 11,
+        "neighbors": ".#.#",
+        "label": "bell",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f4-17",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "imp",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f4-reliquary",
+        "type": "enemy",
+        "x": 6,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "reliquary1",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f4-treasure-lotus",
+            "type": "treasure"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f4-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 1,
+        "neighbors": "#.#.",
+        "label": "viper",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f4-7",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f4-wing-guard-1",
+        "type": "enemy",
+        "x": 16,
+        "y": 10,
+        "neighbors": "..##",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 6,
+    "barriers": [
+      {
+        "id": "f5-2",
+        "type": "enemy",
+        "x": 15,
+        "y": 3,
+        "neighbors": "#.#~",
+        "label": "bone",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f5-fragment-5",
+            "type": "fragment",
+            "fragment": 5
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f5-3",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "acolyte",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f5-4",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "bell",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f5-5",
+        "type": "enemy",
+        "x": 10,
+        "y": 12,
+        "neighbors": "....",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f5-6",
+        "type": "enemy",
+        "x": 8,
+        "y": 3,
+        "neighbors": "....",
+        "label": "brass",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      },
+      {
+        "id": "f5-7",
+        "type": "enemy",
+        "x": 12,
+        "y": 4,
+        "neighbors": ".##.",
+        "label": "acolyte",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f5-9",
+        "type": "door",
+        "x": 10,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "西院捷径 · 黄门",
+        "role": "shortcut",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f5-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "brass",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f5-10",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f5-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "brass",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 7,
+    "barriers": [
+      {
+        "id": "f6-1",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f6-2",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "water",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f6-3",
+        "type": "enemy",
+        "x": 5,
+        "y": 3,
+        "neighbors": "#=#.",
+        "label": "brass",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f6-fragment-6",
+            "type": "fragment",
+            "fragment": 6
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f6-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": "#.#.",
+        "label": "water",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f6-4",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f6-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "water",
+        "role": "optional",
+        "behind": [],
+        "detour": 14
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 8,
+    "barriers": [
+      {
+        "id": "f7-2",
+        "type": "gate",
+        "x": 17,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "梵井北门 · 定风扳杆",
+        "behind": [
+          {
+            "id": "f7-12",
+            "type": "stairs"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f7-4",
+        "type": "enemy",
+        "x": 5,
+        "y": 3,
+        "neighbors": "#.#.",
+        "label": "puppet",
+        "role": "guardian",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f7-5",
+        "type": "enemy",
+        "x": 4,
+        "y": 12,
+        "neighbors": ".#.#",
+        "label": "water",
+        "role": "optional",
+        "behind": [],
+        "detour": 4
+      },
+      {
+        "id": "f7-6",
+        "type": "enemy",
+        "x": 17,
+        "y": 12,
+        "neighbors": ".#.#",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 12
+      },
+      {
+        "id": "f7-reliquary",
+        "type": "enemy",
+        "x": 10,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "reliquary2",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f7-treasure-tide",
+            "type": "treasure"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f7-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": "#.#.",
+        "label": "puppet",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f7-8",
+            "type": "item",
+            "item": "peach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f7-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "puppet",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f7-v5-ferry-south",
+        "type": "gate",
+        "x": 2,
+        "y": 14,
+        "neighbors": ".#.#",
+        "label": "渡灯南栈门 · 黄钥供灯后开启",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f7-v5-ferry-north",
+        "type": "gate",
+        "x": 2,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "渡灯北栈门 · 通往舍利支院",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 9,
+    "barriers": [
+      {
+        "id": "f8-2",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "water",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f8-3",
+        "type": "enemy",
+        "x": 15,
+        "y": 3,
+        "neighbors": "#.#=",
+        "label": "flood",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f8-fragment-8",
+            "type": "fragment",
+            "fragment": 8
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f8-4",
+        "type": "enemy",
+        "x": 16,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "crab",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f8-5",
+        "type": "enemy",
+        "x": 10,
+        "y": 12,
+        "neighbors": "....",
+        "label": "puppet",
+        "role": "optional",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f8-6",
+        "type": "enemy",
+        "x": 8,
+        "y": 3,
+        "neighbors": "....",
+        "label": "water",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      },
+      {
+        "id": "f8-7",
+        "type": "enemy",
+        "x": 12,
+        "y": 4,
+        "neighbors": ".##.",
+        "label": "viper",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f8-11",
+        "type": "gate",
+        "x": 10,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "双生水闸 · 止水扳杆 + 同渡镜台",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f8-20",
+        "type": "door",
+        "x": 17,
+        "y": 7,
+        "neighbors": ".#.#",
+        "label": "随身蟠桃宝龛 · 青钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f8-15",
+            "type": "item",
+            "item": "elixir"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f8-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "crab",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f8-12",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f8-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "crab",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 10,
+    "barriers": [
+      {
+        "id": "f9-4",
+        "type": "gate",
+        "x": 17,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "双影东门 · 镜台 + 扳杆",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f9-5",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "flame",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f9-6",
+        "type": "enemy",
+        "x": 5,
+        "y": 3,
+        "neighbors": "#~#.",
+        "label": "alchemist",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f9-fragment-9",
+            "type": "fragment",
+            "fragment": 9
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f9-7",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "flame",
+        "role": "optional",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f9-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 13,
+        "neighbors": ".#.#",
+        "label": "alchemist",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f9-8",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f9-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "....",
+        "label": "alchemist",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 11,
+    "barriers": [
+      {
+        "id": "f10-3",
+        "type": "gate",
+        "x": 10,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "上行西门 · 甲 + 乙",
+        "behind": [
+          {
+            "id": "f10-15",
+            "type": "stairs"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-5",
+        "type": "gate",
+        "x": 4,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "破执经门 · 甲 + 丙，取卷后退路常开",
+        "behind": [
+          {
+            "id": "f10-18",
+            "type": "choice"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-6",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "....",
+        "label": "puppet",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f10-18",
+            "type": "choice"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-7",
+        "type": "enemy",
+        "x": 5,
+        "y": 16,
+        "neighbors": "#~#.",
+        "label": "alchemist",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f10-fragment-10",
+            "type": "fragment",
+            "fragment": 10
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-8",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "flame",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f10-13",
+            "type": "item",
+            "item": "coins"
+          },
+          {
+            "id": "f10-19",
+            "type": "choice"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-17",
+        "type": "gate",
+        "x": 17,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "护心经门 · 乙 + 丙，取卷后退路常开",
+        "behind": [
+          {
+            "id": "f10-13",
+            "type": "item",
+            "item": "coins"
+          },
+          {
+            "id": "f10-19",
+            "type": "choice"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-reliquary",
+        "type": "enemy",
+        "x": 15,
+        "y": 16,
+        "neighbors": "#.#.",
+        "label": "reliquary3",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f10-treasure-thorn",
+            "type": "treasure"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 7,
+        "neighbors": ".#.#",
+        "label": "flame",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f10-9",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f10-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "....",
+        "label": "flame",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f10-2",
+            "type": "switch"
+          },
+          {
+            "id": "f10-10",
+            "type": "item",
+            "item": "peach"
+          },
+          {
+            "id": "f10-13",
+            "type": "item",
+            "item": "coins"
+          },
+          {
+            "id": "f10-19",
+            "type": "choice"
+          }
+        ],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 12,
+    "barriers": [
+      {
+        "id": "f11-4",
+        "type": "enemy",
+        "x": 15,
+        "y": 3,
+        "neighbors": "#.v=",
+        "label": "judge",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f11-fragment-11",
+            "type": "fragment",
+            "fragment": 11
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f11-5",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "flame",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f11-6",
+        "type": "enemy",
+        "x": 16,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "alchemist",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f11-7",
+        "type": "enemy",
+        "x": 10,
+        "y": 10,
+        "neighbors": "....",
+        "label": "furnace",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f11-8",
+        "type": "enemy",
+        "x": 8,
+        "y": 3,
+        "neighbors": "....",
+        "label": "flame",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f11-9",
+        "type": "enemy",
+        "x": 12,
+        "y": 4,
+        "neighbors": ".v#.",
+        "label": "puppet",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f11-22",
+        "type": "door",
+        "x": 6,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "仙酿蟠桃宝龛 · 青钥换取",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f11-15",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f11-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 12,
+        "neighbors": "#.#.",
+        "label": "furnace",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f11-17",
+            "type": "item",
+            "item": "feast"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f11-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 9,
+        "neighbors": "#.#.",
+        "label": "furnace",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": [
+      {
+        "id": "f11-2",
+        "dialogue": "alchemy",
+        "x": 9,
+        "y": 18
+      }
+    ]
+  },
+  {
+    "floor": 13,
+    "barriers": [
+      {
+        "id": "f12-1",
+        "type": "enemy",
+        "x": 5,
+        "y": 3,
+        "neighbors": "#=#.",
+        "label": "mirror",
+        "role": "guardian",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f12-2",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "....",
+        "label": "flame",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f12-3",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "brass",
+        "role": "optional",
+        "behind": [],
+        "detour": 8
+      },
+      {
+        "id": "f12-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": "#.#.",
+        "label": "mirror",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f12-4",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f12-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "...#",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f12-white-passage",
+        "type": "gate",
+        "x": 3,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "善念南径 · 白衣无天引路",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": [
+      {
+        "id": "f12-11",
+        "dialogue": "whiteGoodness",
+        "x": 9,
+        "y": 18
+      }
+    ]
+  },
+  {
+    "floor": 14,
+    "barriers": [
+      {
+        "id": "f13-2",
+        "type": "gate",
+        "x": 10,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "断碑北门 · 问心扳杆",
+        "behind": [
+          {
+            "id": "f13-10",
+            "type": "item",
+            "item": "amber"
+          },
+          {
+            "id": "f13-13",
+            "type": "stairs"
+          },
+          {
+            "id": "f13-fragment-13",
+            "type": "fragment",
+            "fragment": 13
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f13-4",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "ink",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f13-5",
+        "type": "enemy",
+        "x": 16,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f13-6",
+        "type": "enemy",
+        "x": 15,
+        "y": 3,
+        "neighbors": "#.v~",
+        "label": "sentinel",
+        "role": "guardian",
+        "behind": [
+          {
+            "id": "f13-fragment-13",
+            "type": "fragment",
+            "fragment": 13
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f13-reliquary",
+        "type": "enemy",
+        "x": 5,
+        "y": 16,
+        "neighbors": "#.#.",
+        "label": "reliquary4",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f13-treasure-mirror",
+            "type": "treasure"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f13-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 12,
+        "neighbors": "#.#.",
+        "label": "ink",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f13-7",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f13-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 9,
+        "neighbors": "#.#.",
+        "label": "ink",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f13-1",
+            "type": "switch"
+          },
+          {
+            "id": "f13-7",
+            "type": "item",
+            "item": "bigPeach"
+          },
+          {
+            "id": "f13-9",
+            "type": "item",
+            "item": "coins"
+          },
+          {
+            "id": "f13-10",
+            "type": "item",
+            "item": "amber"
+          },
+          {
+            "id": "f13-13",
+            "type": "stairs"
+          },
+          {
+            "id": "f13-14",
+            "type": "choice"
+          },
+          {
+            "id": "f13-fragment-13",
+            "type": "fragment",
+            "fragment": 13
+          }
+        ],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 15,
+    "barriers": [
+      {
+        "id": "f14-3",
+        "type": "enemy",
+        "x": 15,
+        "y": 16,
+        "neighbors": "#.#=",
+        "label": "archivist",
+        "role": "guardian",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f14-4",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "....",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 8
+      },
+      {
+        "id": "f14-5",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "ink",
+        "role": "optional",
+        "behind": [],
+        "detour": 6
+      },
+      {
+        "id": "f14-6",
+        "type": "enemy",
+        "x": 10,
+        "y": 11,
+        "neighbors": "..#.",
+        "label": "sentinel",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f14-7",
+        "type": "enemy",
+        "x": 8,
+        "y": 3,
+        "neighbors": "#.#.",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f14-8",
+        "type": "enemy",
+        "x": 17,
+        "y": 4,
+        "neighbors": "....",
+        "label": "ink",
+        "role": "optional",
+        "behind": [],
+        "detour": 2
+      },
+      {
+        "id": "f14-23",
+        "type": "gate",
+        "x": 17,
+        "y": 14,
+        "neighbors": ".#.#",
+        "label": "援手侧门 · 七伤亲送后开启",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f14-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 13,
+        "neighbors": ".v.#",
+        "label": "sentinel",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f14-13",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f14-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "....",
+        "label": "sentinel",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": [
+      {
+        "id": "f14-2",
+        "dialogue": "truth",
+        "x": 9,
+        "y": 18
+      }
+    ]
+  },
+  {
+    "floor": 16,
+    "barriers": [
+      {
+        "id": "f15-4",
+        "type": "gate",
+        "x": 17,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "逆莲东门 · 西杆东台",
+        "behind": [],
+        "detour": 12
+      },
+      {
+        "id": "f15-5",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "shade",
+        "role": "optional",
+        "behind": [],
+        "detour": 16
+      },
+      {
+        "id": "f15-6",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "wrath",
+        "role": "optional",
+        "behind": [],
+        "detour": 12
+      },
+      {
+        "id": "f15-7",
+        "type": "enemy",
+        "x": 10,
+        "y": 11,
+        "neighbors": "..#.",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f15-11",
+        "type": "seal",
+        "x": 4,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "五印莲门 · 五重心印与十六枚外舍利齐聚",
+        "behind": [],
+        "detour": 16
+      },
+      {
+        "id": "f15-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 8,
+        "neighbors": ".#.#",
+        "label": "shade",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f15-8",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f15-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "...#",
+        "label": "shade",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  },
+  {
+    "floor": 17,
+    "barriers": [
+      {
+        "id": "f16-4",
+        "type": "gate",
+        "x": 17,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "无生东门 · 止妄 + 分身",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f16-5",
+        "type": "enemy",
+        "x": 4,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "wrath",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f16-6",
+        "type": "enemy",
+        "x": 17,
+        "y": 8,
+        "neighbors": "....",
+        "label": "shade",
+        "role": "optional",
+        "behind": [],
+        "detour": 14
+      },
+      {
+        "id": "f16-7",
+        "type": "enemy",
+        "x": 10,
+        "y": 12,
+        "neighbors": "....",
+        "label": "mirror",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f16-reliquary",
+        "type": "enemy",
+        "x": 5,
+        "y": 16,
+        "neighbors": "#.#.",
+        "label": "reliquary5",
+        "role": "treasure",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f16-wing-guard-0",
+        "type": "enemy",
+        "x": 6,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "wrath",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f16-8",
+            "type": "item",
+            "item": "bigPeach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f16-wing-guard-1",
+        "type": "enemy",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "wrath",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f16-v5-ember-gate",
+        "type": "gate",
+        "x": 3,
+        "y": 14,
+        "neighbors": ".#.#",
+        "label": "燃髓北径 · 舍弃碧髓后开启",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": [
+      {
+        "id": "f16-15",
+        "dialogue": "emptyRing",
+        "x": 9,
+        "y": 18
+      }
+    ]
+  },
+  {
+    "floor": 18,
+    "barriers": [
+      {
+        "id": "f17-2",
+        "type": "enemy",
+        "x": 3,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "shade",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f17-3",
+        "type": "enemy",
+        "x": 16,
+        "y": 8,
+        "neighbors": "#...",
+        "label": "shade",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f17-4",
+        "type": "enemy",
+        "x": 10,
+        "y": 11,
+        "neighbors": "..#.",
+        "label": "wrath",
+        "role": "optional",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f17-5",
+        "type": "enemy",
+        "x": 1,
+        "y": 13,
+        "neighbors": ".#.#",
+        "label": "wrath",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f17-16",
+            "type": "item",
+            "item": "elixir"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-6",
+        "type": "enemy",
+        "x": 15,
+        "y": 13,
+        "neighbors": ".#.#",
+        "label": "mirror",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f17-18",
+            "type": "item",
+            "item": "peach"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-7",
+        "type": "enemy",
+        "x": 10,
+        "y": 5,
+        "neighbors": ".#.#",
+        "label": "heart",
+        "role": "boss",
+        "behind": [
+          {
+            "id": "f17-13",
+            "type": "finale"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-10",
+        "type": "door",
+        "x": 10,
+        "y": 6,
+        "neighbors": ".#.#",
+        "label": "归根朱门 · 需第一层归根心钥",
+        "behind": [
+          {
+            "id": "f17-13",
+            "type": "finale"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-11",
+        "type": "gate",
+        "x": 6,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "无相心门 · 止战扳杆 + 归心镜台",
+        "behind": [],
+        "detour": 0
+      },
+      {
+        "id": "f17-12",
+        "type": "seal",
+        "x": 10,
+        "y": 4,
+        "neighbors": ".#.#",
+        "label": "五印心门 · 十六外舍利已归位",
+        "behind": [
+          {
+            "id": "f17-13",
+            "type": "finale"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-wing-guard-0",
+        "type": "enemy",
+        "x": 10,
+        "y": 15,
+        "neighbors": ".#.#",
+        "label": "shade",
+        "role": "treasure",
+        "behind": [
+          {
+            "id": "f17-14",
+            "type": "item",
+            "item": "feast"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-wing-guard-1",
+        "type": "enemy",
+        "x": 10,
+        "y": 16,
+        "neighbors": "....",
+        "label": "shade",
+        "role": "optional",
+        "behind": [
+          {
+            "id": "f17-14",
+            "type": "item",
+            "item": "feast"
+          }
+        ],
+        "detour": 0
+      },
+      {
+        "id": "f17-east-heart-gate",
+        "type": "gate",
+        "x": 14,
+        "y": 10,
+        "neighbors": "#.#.",
+        "label": "归心东门 · 止战扳杆 + 归心镜台",
+        "behind": [],
+        "detour": 0
+      }
+    ],
+    "npcs": []
+  }
+]

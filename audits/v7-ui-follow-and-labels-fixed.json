@@ -1,0 +1,724 @@
+{
+  "errors": [],
+  "before": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "tip": {
+      "x": 338.5,
+      "y": 361.203125,
+      "w": 196,
+      "h": 109.296875
+    },
+    "anchor": {
+      "foot": {
+        "x": 308.57142857142856,
+        "y": 415.7142857142857
+      },
+      "body": {
+        "x": 288.0357142857143,
+        "y": 382.98214285714283
+      },
+      "bounds": {
+        "x": 258.57142857142856,
+        "y": 352.7678571428571,
+        "w": 58.92857142857142,
+        "h": 62.94642857142857
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 308.57142857142856,
+        "y": 484.2857142857143
+      },
+      "body": {
+        "x": 288.48214285714283,
+        "y": 430.8
+      },
+      "bounds": {
+        "x": 251.25,
+        "y": 381.42857142857144,
+        "w": 74.46428571428571,
+        "h": 102.85714285714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 9
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 424,
+      "y": 802,
+      "w": 592,
+      "h": 82
+    },
+    "projection": {
+      "x": 0,
+      "y": 2.9375,
+      "w": 21,
+      "h": 13.125,
+      "cellSize": 68.57142857142857,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 2
+    },
+    "offscreen": false,
+    "leader": "M 331.50 415.71 L 308.57 415.71",
+    "labels": [
+      {
+        "mode": "walk",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "max-content",
+          "h": "auto",
+          "right": "auto",
+          "bottom": "auto"
+        }
+      },
+      {
+        "mode": "inspect",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "staff",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "morph",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "clone",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      }
+    ]
+  },
+  "followed": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "tip": {
+      "x": 338.5,
+      "y": 361.203125,
+      "w": 196,
+      "h": 109.296875
+    },
+    "anchor": {
+      "foot": {
+        "x": 308.57142857142856,
+        "y": 415.7142857142857
+      },
+      "body": {
+        "x": 288.0357142857143,
+        "y": 382.98214285714283
+      },
+      "bounds": {
+        "x": 258.57142857142856,
+        "y": 352.7678571428571,
+        "w": 58.92857142857142,
+        "h": 62.94642857142857
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 240,
+        "y": 484.2857142857143
+      },
+      "body": {
+        "x": 256.60714285714283,
+        "y": 424.95
+      },
+      "bounds": {
+        "x": 220.17857142857142,
+        "y": 370.17857142857144,
+        "w": 72.85714285714286,
+        "h": 114.10714285714285
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 424,
+      "y": 802,
+      "w": 592,
+      "h": 82
+    },
+    "projection": {
+      "x": 0,
+      "y": 2.9375,
+      "w": 21,
+      "h": 13.125,
+      "cellSize": 68.57142857142857,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 2
+    },
+    "offscreen": false,
+    "leader": "M 331.50 415.71 L 308.57 415.71",
+    "labels": [
+      {
+        "mode": "walk",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "max-content",
+          "h": "auto",
+          "right": "auto",
+          "bottom": "auto"
+        }
+      },
+      {
+        "mode": "inspect",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "staff",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "morph",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "clone",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      }
+    ]
+  },
+  "selectionPreserved": true,
+  "wide": {
+    "viewport": [
+      2525,
+      1208
+    ],
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "tip": {
+      "x": 577.71875,
+      "y": 489.375,
+      "w": 196,
+      "h": 109.296875
+    },
+    "anchor": {
+      "foot": {
+        "x": 541.0714285714286,
+        "y": 543.8809523809524
+      },
+      "body": {
+        "x": 505.0626240079365,
+        "y": 486.4860491071429
+      },
+      "bounds": {
+        "x": 453.39781746031747,
+        "y": 433.50613839285717,
+        "w": 103.3296130952381,
+        "h": 110.37481398809524
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 420.83333333333337,
+        "y": 664.1190476190476
+      },
+      "body": {
+        "x": 449.9534970238095,
+        "y": 560.0755208333334
+      },
+      "bounds": {
+        "x": 386.07700892857144,
+        "y": 464.03534226190476,
+        "w": 127.75297619047619,
+        "h": 200.08370535714286
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 966.5,
+      "y": 1110,
+      "w": 592,
+      "h": 82
+    },
+    "projection": {
+      "x": 0,
+      "y": 4.476633663366337,
+      "w": 21,
+      "h": 10.046732673267327,
+      "cellSize": 120.23809523809524,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 2525,
+      "cssHeight": 1208,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 4
+    },
+    "offscreen": false,
+    "leader": "M 570.73 543.88 L 541.07 543.88",
+    "labels": [
+      {
+        "mode": "walk",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "max-content",
+          "h": "auto",
+          "right": "auto",
+          "bottom": "auto"
+        }
+      },
+      {
+        "mode": "inspect",
+        "size": "16px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "staff",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "morph",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      },
+      {
+        "mode": "clone",
+        "size": "16px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "70px",
+          "bottom": "54.8125px"
+        }
+      }
+    ]
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "tip": {
+      "x": 126,
+      "y": 218.9375,
+      "w": 180,
+      "h": 113.59375
+    },
+    "anchor": {
+      "foot": {
+        "x": 216,
+        "y": 398
+      },
+      "body": {
+        "x": 201.625,
+        "y": 375.0875
+      },
+      "bounds": {
+        "x": 181,
+        "y": 353.9375,
+        "w": 41.25,
+        "h": 44.0625
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 168,
+        "y": 446
+      },
+      "body": {
+        "x": 179.625,
+        "y": 404.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 366.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "projection": {
+      "x": 0,
+      "y": 0.7083333333333339,
+      "w": 8.125,
+      "h": 17.583333333333332,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 0
+    },
+    "offscreen": false,
+    "leader": "M 216.00 339.94 L 216.00 398.00",
+    "labels": [
+      {
+        "mode": "walk",
+        "size": "14px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "max-content",
+          "h": "auto",
+          "right": "auto",
+          "bottom": "auto"
+        }
+      },
+      {
+        "mode": "inspect",
+        "size": "14px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "33px",
+          "bottom": "50.8125px"
+        }
+      },
+      {
+        "mode": "staff",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "33px",
+          "bottom": "50.8125px"
+        }
+      },
+      {
+        "mode": "morph",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "33px",
+          "bottom": "50.8125px"
+        }
+      },
+      {
+        "mode": "clone",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "33px",
+          "bottom": "50.8125px"
+        }
+      }
+    ]
+  },
+  "landscape": {
+    "viewport": [
+      844,
+      390
+    ],
+    "selection": {
+      "x": 4,
+      "y": 8
+    },
+    "tip": {
+      "x": 243.25,
+      "y": 80,
+      "w": 196,
+      "h": 114.5
+    },
+    "anchor": {
+      "foot": {
+        "x": 216,
+        "y": 171
+      },
+      "body": {
+        "x": 201.625,
+        "y": 148.0875
+      },
+      "bounds": {
+        "x": 181,
+        "y": 126.9375,
+        "w": 41.25,
+        "h": 44.0625
+      },
+      "visible": true,
+      "cell": {
+        "x": 4,
+        "y": 8
+      },
+      "ready": true
+    },
+    "player": {
+      "foot": {
+        "x": 168,
+        "y": 219
+      },
+      "body": {
+        "x": 179.625,
+        "y": 177.465
+      },
+      "bounds": {
+        "x": 154.125,
+        "y": 139.125,
+        "w": 51,
+        "h": 79.875
+      },
+      "visible": true,
+      "cell": {
+        "x": 3,
+        "y": 9
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 224,
+      "y": 304,
+      "w": 396,
+      "h": 72
+    },
+    "projection": {
+      "x": 0,
+      "y": 5.4375,
+      "w": 17.583333333333332,
+      "h": 8.125,
+      "cellSize": 48,
+      "offsetX": 0,
+      "offsetY": 0,
+      "cssWidth": 844,
+      "cssHeight": 390,
+      "overview": false,
+      "guardShiftY": 0,
+      "boundaryRowsVisible": 0,
+      "authoredWidth": 21,
+      "authoredHeight": 21,
+      "planningHeight": null,
+      "tileX": 0,
+      "tileY": 5
+    },
+    "offscreen": false,
+    "leader": "M 236.49 165.52 L 216.00 171.00",
+    "labels": [
+      {
+        "mode": "walk",
+        "size": "14px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "max-content",
+          "h": "auto",
+          "right": "auto",
+          "bottom": "auto"
+        }
+      },
+      {
+        "mode": "inspect",
+        "size": "14px",
+        "color": "rgb(234, 220, 189)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "34px",
+          "bottom": "44.8125px"
+        }
+      },
+      {
+        "mode": "staff",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "34px",
+          "bottom": "44.8125px"
+        }
+      },
+      {
+        "mode": "morph",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "34px",
+          "bottom": "44.8125px"
+        }
+      },
+      {
+        "mode": "clone",
+        "size": "14px",
+        "color": "rgb(200, 191, 167)",
+        "after": {
+          "w": "28px",
+          "h": "18.1875px",
+          "right": "34px",
+          "bottom": "44.8125px"
+        }
+      }
+    ]
+  }
+}

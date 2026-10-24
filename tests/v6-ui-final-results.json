@@ -1,0 +1,29 @@
+{
+  "errors": [],
+  "desktopCard": {
+    "x": 1188,
+    "y": 152,
+    "width": 228,
+    "height": 134
+  },
+  "mobileCard": {
+    "x": 150,
+    "y": 154,
+    "width": 228,
+    "height": 130
+  },
+  "noImplicitFight": true,
+  "mobileMode": "false",
+  "character": {
+    "x": 12,
+    "y": 112,
+    "width": 282,
+    "height": 718
+  },
+  "manualMode": "true",
+  "persistedMode": "true",
+  "manualViewPreserved": true,
+  "modalCount": 0,
+  "replaces": "tests/v6-ui-combat-first-results.json",
+  "scope": "Final UI geometry and non-confirming repeat/Space checks; complete combat and adventure acceptance is performed separately."
+}

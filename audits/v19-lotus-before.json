@@ -1,0 +1,92 @@
+{
+  "tag": "before",
+  "method": "Canonical public-action checkpoints plus legal walking to the lantern; no coordinate or resource injection",
+  "source": {
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "css/experience.css": "dca5e0a5c7d7da22aa4bbf9d5638d6b092d0bebe4f412e7ff22f5d222f8b0ea7",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e"
+  },
+  "checks": [],
+  "screenshots": [
+    "audits/v19-before-reported-lotus.png"
+  ],
+  "errors": [],
+  "reproduction": {
+    "bounds": {
+      "x": 398.5,
+      "y": 483.703125,
+      "w": 470,
+      "h": 310.390625
+    },
+    "overflow": [],
+    "scrollWidth": 494,
+    "clientWidth": 470,
+    "scrollHeight": 328,
+    "clientHeight": 310,
+    "pseudo": "\"1–2 / 方向键 比较 · Enter 确认\"",
+    "text": "莲灯 · 修心\n功德 18 金\n1\n磨砺金箍\n攻击 +3 · 20 金\n还差 2 金\n2\n灯前疗伤\n生命 +120 · 12 金\n定念即供奉\n3\n淬炼护身\n防御 +3 · 20 金\n还差 2 金\n4灵息已满\n5奉珠 · 换 8 金\n6奉珠 · 回 50 命\n功德换修为；调息免费，不恢复生命。 · 凝息珠 1\n离开莲灯 Esc\n行囊 I",
+    "choiceCount": "2",
+    "overlap": [],
+    "buttons": [
+      {
+        "text": "1\n磨砺金箍\n攻击 +3 · 20 金\n还差 2 金",
+        "x": 414.5,
+        "y": 542.09375,
+        "w": 132,
+        "h": 143
+      },
+      {
+        "text": "2\n灯前疗伤\n生命 +120 · 12 金\n定念即供奉",
+        "x": 563.5,
+        "y": 522.09375,
+        "w": 140,
+        "h": 143
+      },
+      {
+        "text": "3\n淬炼护身\n防御 +3 · 20 金\n还差 2 金",
+        "x": 720.5,
+        "y": 542.09375,
+        "w": 132,
+        "h": 143
+      },
+      {
+        "text": "4灵息已满",
+        "x": 436.40625,
+        "y": 689.09375,
+        "w": 89.0625,
+        "h": 38
+      },
+      {
+        "text": "5奉珠 · 换 8 金",
+        "x": 537.46875,
+        "y": 689.09375,
+        "w": 137.0625,
+        "h": 38
+      },
+      {
+        "text": "6奉珠 · 回 50 命",
+        "x": 686.53125,
+        "y": 689.09375,
+        "w": 144.0625,
+        "h": 38
+      },
+      {
+        "text": "离开莲灯 Esc",
+        "x": 446.75,
+        "y": 760.09375,
+        "w": 99.15625,
+        "h": 34
+      },
+      {
+        "text": "行囊 I",
+        "x": 563.90625,
+        "y": 760.09375,
+        "w": 61.0625,
+        "h": 34
+      }
+    ]
+  },
+  "finishedAt": "2026-10-23T13:55:37.333Z"
+}

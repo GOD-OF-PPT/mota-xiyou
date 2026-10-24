@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-24",
+  "tool": "image_gen.imagegen",
+  "method": "Generated transparent PNGs copied unchanged; runtime source rectangles and native alpha registration only.",
+  "assets": [
+    {
+      "path": "assets/material/finale/heart-three-forms-v21.png",
+      "source": "exec-857ae43a-faad-4d57-93a8-fe4b4bd20b8f.png",
+      "prompt": "Production sprite sheet for a dark Chinese Journey to the West game. Create exactly THREE full-body final-boss forms in ONE horizontal strip, equal width cells, transparent background, no scenery/text/UI. They are the same formidable shadow of Sun Wukong, recognizable simian face and monkey anatomy, not an elephant or human general. Use the reference Wukong for material family and cultural identity, not as the protagonist. Left form: Wrath, crimson eyes, dark red and worn gold armor, raised heavy staff, red-black embers. Middle form: Obsession, broad charcoal/antique gold heavy armor and closed defensive pose, black lotus motif, weighty stone-like silhouette. Right form: Delusion, lean dark violet/gold spectral monkey king, split shadow ribbons and jade-violet ritual light, one readable solid core. Same orthographic three-quarter overhead game camera and upper-left light in all THREE cells, consistent head/torso scale, feet aligned along a shared baseline. Full silhouette and weapon wholly inside each cell, clear transparent gutters at cell boundaries, safe margins above/below. Keep dramatic shapes readable at 100px height and sharp native detail at 350px height. At least 3072px wide and 1536px high if available. No baked floor patches or cast shadows, no detached decorative particles outside the body, no blur/depth of field, restrained glow."
+    },
+    {
+      "path": "assets/mural/finale/heart-three-forms-v21.png",
+      "source": "exec-cf6e092d-8d56-4f81-8fc7-5500818e3da5.png",
+      "prompt": "Create a production sprite strip for a Chinese Dunhuang pixel-art Journey to the West game, matching the compact painted-pixel material family of the reference. Exactly THREE full-body forms of the SAME shadow Monkey King final boss in one horizontal row, equal cells, same scale, shared boot baseline, wide transparent gutters. Left: crimson wrath form with gold-black armor, heavy horizontal staff and red flame-like cape; middle: charcoal-gold armored obsession form, weighty guarded stance, vertical staff; right: violet/jade delusion form, lean monkey king core and purple shadow ribbons. Recognizable simian face, not human or elephant; strong silhouettes, face and weapon readable at 90px height. Use crisp deliberate pixel clusters, restrained azurite/jade/vermilion/ochre palette and Dunhuang painted ornaments, no soft 3D rendering, no blurry gradients. Frontal three-quarter overhead game camera, upper-left lighting. Full weapons and headdress inside each cell with safe transparent margins, no floor, no scenery, no labels, no UI. Transparent background. One whole three-cell strip, not independent images."
+    },
+    {
+      "path": "assets/material/finale/wukong-cinematic-v21.png",
+      "source": "exec-76be9c7e-4582-44e3-b064-c52ed4acda48.png",
+      "prompt": "ONE production transparent cinematic game sprite of the heroic Sun Wukong, based on the reference hero's outfit and identity: warm expressive monkey face without evil glowing eyes, ornate worn golden armor with dark bronze plates, bright crimson scarf and two long red-gold head plumes, monkey tail. Full-body determined combat-ready stance facing RIGHT in three-quarter side view, a compact golden staff held diagonally forward at chest height, both feet on a coherent floor plane. Match the dark Chinese temple pre-rendered material family and upper-left key light. Bold clear silhouette, red cape flowing to LEFT, enough detail for a 300px-high cinematic character at DPR2. At least 1024px tall. Entire weapon, boots, tail and plumes inside the canvas with transparent margins. No floor slab, scenery, text, UI, particles or baked cast shadow; crisp natural edges, restrained highlights, no bloom or depth of field. This is the player hero for final-battle cinematic shots, not a villain and not a replacement for the walking animation strip."
+    }
+  ]
+}

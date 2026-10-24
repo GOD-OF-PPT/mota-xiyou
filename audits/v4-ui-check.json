@@ -1,0 +1,29 @@
+{
+  "desktop": {
+    "width": 1366,
+    "height": 768,
+    "canvas": {
+      "x": 515,
+      "y": 157,
+      "width": 482,
+      "height": 482,
+      "top": 157,
+      "right": 997,
+      "bottom": 639,
+      "left": 515
+    }
+  },
+  "overview": "true",
+  "fragment": "外舍利 · 1/16",
+  "treasureCards": 6,
+  "keyboardMap": "false",
+  "mobile": {
+    "width": 390,
+    "height": 844
+  },
+  "landscape": {
+    "width": 844,
+    "height": 390
+  },
+  "errors": []
+}

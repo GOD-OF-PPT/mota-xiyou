@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-24",
+  "objective": "Original v23 S0-S5, including human exploration gates",
+  "overallAchieved": false,
+  "goalDisposition": "blocked",
+  "previousGoalTurnClassification": "progress: v24 implemented and verified; original human gate remained",
+  "gateTurns": [
+    {
+      "id": "01a16b81-413e-7cc1-ad90-1a52d99c98df",
+      "status": "progress",
+      "remaining": "S5 human observation pending after implementation and technical acceptance"
+    },
+    {
+      "id": "01a16bed-526d-7890-b848-653eaabb21c8",
+      "status": "progress",
+      "remaining": "Study launcher prepared; zero real participants"
+    },
+    {
+      "id": "01a16bfb-b4b1-7660-a4d4-7fbfee4bd086",
+      "status": "progress",
+      "remaining": "v24 presentation and interaction completed; human observation still pending"
+    },
+    {
+      "id": "01a16c1f-6389-79b3-8962-1e0b966fca88",
+      "status": "completion_audit",
+      "remaining": "Fresh source/report hashes match; no human observations supplied"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "S0",
+      "status": "proved",
+      "evidence": [
+        ".backups/implementation-v23-20261024/",
+        "research/trials-v23-routes.json",
+        "research/study-v23/manifest.json"
+      ],
+      "finding": "Frozen baseline, four legal starts and common qualification, with actual tasks prepared."
+    },
+    {
+      "id": "S1",
+      "status": "proved",
+      "evidence": [
+        "audits/v23-session-model.json",
+        "audits/v23-integrity-model.json",
+        "audits/v24-trials-browser.json"
+      ],
+      "finding": "Public action scope, isolated saves/refresh/undo/recovery and exact campaign return."
+    },
+    {
+      "id": "S2",
+      "status": "proved",
+      "evidence": [
+        "research/trials-v23-routes.json",
+        "audits/v23-integrity-model.json",
+        "audits/v24-trials-browser.json"
+      ],
+      "finding": "Twelve legal trial route witnesses and four secondary budget samples, finite supply identity, retreats and goal differences."
+    },
+    {
+      "id": "S3",
+      "status": "proved",
+      "evidence": [
+        "research/late-branches-v23.json",
+        "audits/v23-integrity-model.json",
+        "audits/v24-playability-browser.json"
+      ],
+      "finding": "Later choice consequences and chapter results follow settled same-branch state."
+    },
+    {
+      "id": "S4",
+      "status": "proved",
+      "evidence": [
+        "js/trial-seeds.js",
+        "js/trials.js",
+        "js/run-session.js",
+        "audits/v23-session-model.json",
+        "audits/v24-trials-browser.json"
+      ],
+      "finding": "Two trial families, original/new versions, two objectives each, replay checked and versioned resource vectors."
+    },
+    {
+      "id": "S5-technical",
+      "status": "proved",
+      "evidence": [
+        "audits/v23-regression-campaign-regression.json",
+        "audits/v23-regression-finale-browser.json",
+        "audits/v23-offline-new.json",
+        "audits/v24-final.json"
+      ],
+      "finding": "Original legal full campaigns/dual endings and unchanged core rules, plus current UI/input/save/PC/offline acceptance. No full current human playthrough is claimed."
+    },
+    {
+      "id": "S5-human",
+      "status": "missing",
+      "evidence": [
+        "research/v23-human-study-template.json",
+        "research/v23-human-study-summary.json",
+        "docs/v23-human-playtest-protocol.md"
+      ],
+      "finding": "Zero participants, zero original quotes and zero paired execution observations. Understanding, plans, completion sense, execution fatigue and replay behavior cannot be accepted."
+    }
+  ],
+  "reportValidation": [
+    {
+      "file": "audits/v23-session-model.json",
+      "sha256": "208420e1e5f9dd81ff90251ea13056c856b0ce66016c41e161409dfdf6076140",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v23-integrity-model.json",
+      "sha256": "2cea2452202b85329ce42a9b7ec8f52c8bea8d25a71d35189d359a91617313e3",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v23-trials-browser.json",
+      "sha256": "c846a9cfed9af396cd95f70cd7f8415718b6fd622c087bc8dad722bf172e29e5",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v23-offline-new.json",
+      "sha256": "82408f4fa709ab17f70f78bf81385dc11064559438fd6cc527c8abe21017dfc9",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v23-regression-campaign-regression.json",
+      "sha256": "14ef95c88a7f2f0c40eff44c441fc0a009f9d6adaf3f69d7bb22b938ad913948",
+      "acceptanceField": "completed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v23-regression-finale-browser.json",
+      "sha256": "c55c8f9e72780caa423fd12a226a57de261bfb8d327a5eea91c5b5c03a3f53a8",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v24-playability-browser.json",
+      "sha256": "91f0576922ccae817791945a1c30a461f0a6b7ef609320f40beb7665da030f19",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v24-trials-browser.json",
+      "sha256": "2dd1683e489cbddb4953679eea281e4647fc1b96991320637fbd096b8f039d37",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v24-study-browser.json",
+      "sha256": "eac40c87b38bc6df0853557707d2b3fb4ea5753701e3807ad35cd5fc6656d6bd",
+      "acceptanceField": "passed",
+      "accepted": true
+    },
+    {
+      "file": "audits/v24-folio-interaction.json",
+      "sha256": "9418f666dd4ad5089bf0dd3313139bde5963cde82e15e820c7dc1af54d624847",
+      "acceptanceField": "passed",
+      "accepted": true
+    }
+  ],
+  "currentSourceRegistry": {
+    "file": "audits/v24-final.json",
+    "sha256": "04eb972332e8d5357315f3c23cd2922d68f9c2a4b06acc4c08727981ff963c44",
+    "sourceEntriesVerified": 25,
+    "unchangedRuleFilesVerified": 11
+  },
+  "legalArtifacts": {
+    "research/trials-v23-routes.json": "43984b53c143e1e9aa2499d16ac06e547226812a13e62e1bff0f37529fff1cc0",
+    "research/campaigns-v23.json": "14a32b6b0e28e815d34f8b588b20309ec3eac389e8d76aed5b2e3af7e55fb719",
+    "research/late-branches-v23.json": "9c92f92f2c618adedeec85eacd36c9fe5d4eebaedffa242ad8497833238f504b"
+  },
+  "humanObservation": {
+    "participants": 0,
+    "quotes": 0,
+    "pairedExecutionTimes": 0,
+    "waiver": false
+  },
+  "currentProgress": {
+    "file": "research/v23-implementation-progress.json",
+    "sha256": "887d8f04627f4517946af62eca1c165a399aab4a16f7455685d173024d6fc31b"
+  },
+  "remainingAction": "A human supplies actual observation records; then assess all five human exploration criteria and repair evidenced issues. No independent implementation/preparation task remains."
+}

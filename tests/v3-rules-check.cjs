@@ -1,0 +1,46 @@
+/* Chapter contracts: synthetic positions only arrange unit-test cases; campaign replay uses public actions. */
+const assert=require('node:assert/strict');global.window=global;require('../js/world.js');require('../js/engine.js');
+const checks=[];const test=(name,fn)=>checks.push({name,fn});
+function create(){return new TowerEngine(TowerData);}
+function ready(g,e){for(const id of e.requiresFragments||[])if(!g.state.fragments.includes(id))g.state.fragments.push(id);g.state.externalRelics=g.state.fragments.length;}
+function at(g,floor,e){Object.assign(g.state,{floor,x:e.x,y:e.y+1});if(!g.state.visited.includes(floor))g.state.visited.push(floor);}
+test('fire eye reveals a real collision once, consumes no resource, and undo restores it',()=>{
+ const g=create(),f=TowerData.floors.find(f=>f.entities.some(e=>e.type==='illusion')),a=f.entities.find(e=>e.type==='illusion');at(g,f.id,a);const before=g.snapshot();assert.equal(g.isBlocked(a),true);assert.equal(g.reveal(a),true);assert.equal(g.isBlocked(a),false);assert.equal(g.state.mana,before.mana);assert.equal(g.state.hp,before.hp);assert.equal(g.reveal(a),false);g.undo();assert.equal(g.isBlocked(a),true);
+});
+test('double towers require both actual cross-floor resonators before the second seal releases',()=>{
+ const g=create(),f=TowerData.floors[5],r=f.entities.find(e=>e.type==='relic');g.state.relics=[0];g.state.externalRelics=3;ready(g,r);assert.equal(g.requirements(r).met,false);
+ for(const id of ['east-tower','west-tower']){const f=TowerData.floors.find(f=>f.entities.some(e=>e.controlId===id)),a=f.entities.find(e=>e.controlId===id);at(g,f.id,a);assert.equal(g.activateResonator(a),true);assert.equal(g.activateResonator(a),false);if(id==='east-tower')assert.equal(g.requirements(r).met,false);}
+ assert.equal(g.requirements(r).met,true);g.undo();assert.equal(g.requirements(r).met,false);
+});
+test('rescue unlocks a real stair and water wheel, deep weakwater rejects both movement and staff',()=>{
+ const g=create();g.state.relics=[0,1];g.state.externalRelics=6;const f=TowerData.floors[6],a=f.entities.find(e=>e.type==='rescue'),up=f.entities.find(e=>e.type==='stairs'&&e.to>f.id);ready(g,up);at(g,6,up);assert.equal(g.traverse(up),false);at(g,6,a);assert.equal(g.rescue(a),true);assert.equal(g.state.rescued.includes('bajie'),true);assert.equal(g.rescue(a),false);assert.equal(g.requirements(up).met,true);
+ const water=TowerData.floors[7],wheel=water.entities.find(e=>e.type==='tide'),closed=water.waterTiles.find(t=>t.openWhen==='high'),open=water.waterTiles.find(t=>t.openWhen==='low');at(g,7,wheel);g.state.relics=[0,1];g.state.externalRelics=6;assert.equal(g.getTile(closed.x,closed.y),'w');Object.assign(g.state,{x:closed.x,y:closed.y+1});const mana=g.state.mana;assert.equal(g.moveTo(closed.x,closed.y),false);assert.equal(g.useAbility('staff',closed.x,closed.y),false);assert.equal(g.state.mana,mana);at(g,7,wheel);assert.equal(g.toggleTide(wheel),true);assert.equal(g.getTile(closed.x,closed.y),'.');assert.equal(g.getTile(open.x,open.y),'w');g.undo();assert.equal(g.getTile(open.x,open.y),'.');
+});
+test('three furnace hearts inspect six genuine controls across floors, never a decorative counter',()=>{
+ const g=create(),r=TowerData.floors[11].entities.find(e=>e.type==='relic');ready(g,r);assert.equal(r.requiresControls.length,6);for(const id of r.requiresControls){assert.equal(g.requirements(r).met,false);const a=TowerData.floors.flatMap(f=>f.entities).find(e=>e.controlId===id);assert.ok(a,id);g.state.switches[a.id]=true;}assert.equal(g.requirements(r).met,true);const a=TowerData.floors[10].entities.find(e=>e.controlId==='silk-a');g.state.switches[a.id]=false;assert.equal(g.requirements(r).met,false);
+});
+test('five awakenings yield 16 external relics but only five original health rewards',()=>{
+ const g=create(),hp=g.state.hp;for(let id=0;id<5;id++){const f=TowerData.floors.find(f=>f.entities.some(e=>e.type==='relic'&&e.relic===id)),a=f.entities.find(e=>e.type==='relic');at(g,f.id,a);for(const fragment of f.entities.filter(e=>e.type==='fragment'))g.takeFragment(fragment);for(const id of a.requiresFragments||[]){if(!g.state.fragments.includes(id)){const fragment=TowerData.floors.flatMap(f=>f.entities).find(e=>e.type==='fragment'&&e.fragment===id);g.takeFragment(fragment);}}for(const needed of a.requiresControls||[]){const c=TowerData.floors.flatMap(f=>f.entities).find(e=>e.controlId===needed);g.state.switches[c.id]=true;}for(const q of a.requiresQuests||[])g.state.quests[q]=true;g.takeRelic(a);assert.equal(g.state.externalRelics,[3,6,9,12,16][id]);g.takeRelic(a);}assert.equal(g.state.hp,hp+500);assert.equal(g.state.relics.length,5);assert.equal(g.state.selfAwakened,false);
+});
+test('legacy v2 campaign migration preserves resource budget and supplies already-passed rescue conditions',()=>{
+ const g=create(),s=g.snapshot();s.version=2;s.floor=8;s.visited=[0,1,2,3,4,5,6,7,8];s.relics=[0,1,2];s.hp=321;s.keys.blue=2;s.coins=77;delete s.externalRelics;delete s.selfAwakened;delete s.revealed;delete s.quests;delete s.rescued;delete s.tides;assert.equal(g.load(JSON.stringify(s)),true);assert.equal(g.state.version,4);assert.equal(g.state.externalRelics,9);assert.equal(g.state.quests.bajie,true);assert.deepEqual([g.state.hp,g.state.coins,g.state.keys.blue],[321,77,2]);
+});
+test('invalid v3 relic counts, tide states and presentation values reject atomically',()=>{
+ const g=create(),before=g.snapshot();for(const patch of [{externalRelics:16},{tides:{weakwater:'rising'}},{selfAwakened:true},{settings:{...before.settings,motion:'chaos'}}]){assert.equal(g.load(JSON.stringify({...before,...patch})),false);assert.deepEqual(g.state,before);}
+});
+test('presentation changes are independent from simulation resources and allow all three motion levels',()=>{
+ const g=create();for(const motion of ['standard','simple','reduced']){g.updateSettings({motion,screenShake:false,music:true,sfx:false});assert.equal(g.state.settings.motion,motion);assert.equal(g.state.hp,620);assert.equal(g.state.turn,0);}g.updateSettings({motion:'invalid'});assert.equal(g.state.settings.motion,'reduced');
+});
+test('seven-wound rescue opens a genuine bypass, power remains exclusive, and an old crystal cannot be awarded twice',()=>{
+ const g=create(),f=TowerData.floors[13],a=f.entities.find(e=>e.type==='choice'&&e.choice==='sevenWounds'),gate=TowerData.floors[14].entities.find(e=>e.requiresQuests?.includes('sevenRescue'));at(g,13,a);const hp=g.state.hp;assert.equal(g.isGateOpen(gate,14),false);assert.equal(g.choose(a,'rescue'),true);assert.equal(g.state.hp,hp-70);assert.equal(g.state.rescued.length,3);assert.equal(g.isGateOpen(gate,14),true);assert.equal(g.choose(a,'power'),false);g.undo();assert.equal(g.isGateOpen(gate,14),false);g.state.coins=20;const def=g.state.def;assert.equal(g.choose(a,'power'),true);assert.equal(g.state.def,def+4);assert.equal(g.state.rescued.length,0);assert.equal(g.isGateOpen(gate,14),false);
+ const old=create().snapshot();old.version=2;old.removed['f13-11']=true;old.def=44;assert.equal(g.load(JSON.stringify(old)),true);assert.equal(g.state.choices.sevenWounds,'power');assert.equal(g.state.quests.sevenLegacy,true);assert.equal(g.state.def,44);at(g,13,a);assert.equal(g.choose(a,'power'),false);
+});
+test('save on a currently open water crossing reloads the same position and water state',()=>{
+ const g=create(),f=TowerData.floors[7],tile=f.waterTiles.find(t=>t.openWhen==='high');Object.assign(g.state,{floor:7,x:tile.x,y:tile.y,visited:[0,7],tides:{weakwater:'high'}});const before=g.snapshot();assert.equal(g.getTile(tile.x,tile.y),'.');assert.equal(g.load(JSON.stringify(before)),true);assert.deepEqual(g.state,before);
+});
+test('v1 chapter growth cannot be taken again as redistributed contracts or scrolls',()=>{
+ for(const id of ['f4-11','f4-12']){const g=create(),s=g.snapshot();s.version=1;s.removed[id]=true;s.atk=29;s.def=12;assert.equal(g.load(JSON.stringify(s)),true);assert.equal(g.state.quests.locksLegacy,true);const f=TowerData.floors[4],cache=f.entities.find(e=>e.type==='cache'),choice=f.entities.find(e=>e.type==='choice'&&e.option==='blue');assert.equal(g.state.removed[cache.id],true);assert.equal(g.state.choices.locks,undefined);g.state.keys.blue=1;at(g,4,choice);assert.deepEqual(g.choicePreview(choice,'blue').reward,{});assert.equal(g.choose(choice,'blue'),true);assert.equal(g.state.atk,29);assert.equal(g.state.def,12);}
+ const g=create(),s=g.snapshot();s.version=1;s.removed['f10-13']=true;s.atk=29;assert.equal(g.load(JSON.stringify(s)),true);assert.equal(g.state.choices.silk,'atk');assert.equal(g.state.quests.silkLegacy,true);const scroll=TowerData.floors[10].entities.find(e=>e.choice==='silk');at(g,10,scroll);assert.equal(g.choose(scroll,'atk'),false);assert.equal(g.state.atk,29);
+ const clean=create().snapshot();clean.version=1;assert.equal(g.load(JSON.stringify(clean)),true);assert.equal(g.state.quests.locksLegacy,undefined);const cache=TowerData.floors[4].entities.find(e=>e.type==='cache');assert.equal(g.state.removed[cache.id],undefined);
+});
+let failed=0;for(const {name,fn}of checks){try{fn();console.log('PASS '+name);}catch(e){failed++;console.error('FAIL '+name+'\n'+e.stack);}}console.log(`${checks.length-failed}/${checks.length} chapter contracts passed`);if(failed)process.exitCode=1;

@@ -1,0 +1,45 @@
+{
+  "accessed_on": "2026-10-23",
+  "purpose": "Similar-game mechanics and selected player feedback for the Mota PC playability analysis",
+  "method": "Developer-published store descriptions and publicly readable Steam Community review pages; purposive theme selection, not a representative survey",
+  "games": 5,
+  "selected_review_samples": 10,
+  "sources": [
+    {"id":"S01","game":"Tactical Nexus","kind":"developer_description","url":"https://store.steampowered.com/app/1141290/Tactical_Nexus/","read":"body","supports":"Handcrafted deterministic towers, undo/redo, status comparison, memos and replay progression"},
+    {"id":"S02","game":"Tactical Nexus","kind":"player_review_collection","url":"https://steamcommunity.com/app/1141290/reviews/?browsefilter=toprated","read":"body","supports":"Selected individual opinions about sequencing, multiple solutions, undo and audience fit"},
+    {"id":"S03","game":"DROD RPG: Tendry's Tale","kind":"developer_description","url":"https://store.steampowered.com/app/351330/DROD_RPG_Tendrys_Tale/","read":"body","supports":"Handcrafted deterministic encounters and resource/order optimization"},
+    {"id":"S04","game":"DROD RPG: Tendry's Tale","kind":"player_review_collection","url":"https://steamcommunity.com/app/351330/reviews/?browsefilter=toprated","read":"body","supports":"Positive global optimization experience and negative loss of local completion/trial-and-error experience"},
+    {"id":"S05","game":"Desktop Dungeons: Rewind","kind":"developer_description","url":"https://store.steampowered.com/app/1976950/Desktop_Dungeons_Rewind/","read":"body","supports":"Small dungeons, exploration-based recovery, replay from earlier state and character variety"},
+    {"id":"S06","game":"Desktop Dungeons: Rewind","kind":"player_review_collection","url":"https://steamcommunity.com/app/1976950/reviews/?browsefilter=toprated","read":"body","supports":"Contrasting strategy-depth and UI/visual-clarity experiences"},
+    {"id":"S07","game":"DungeonUp","kind":"developer_description","url":"https://store.steampowered.com/app/388620/DungeonUp/","read":"body","supports":"Tower-of-the-Sorcerer influence, generated levels, item systems, difficulties and player maps"},
+    {"id":"S08","game":"DungeonUp","kind":"player_review_collection","url":"https://steamcommunity.com/app/388620/reviews/?browsefilter=toprated&l=english","read":"body","supports":"Sequencing, cleanup repetition, opaque prerequisites and cross-run comparison concerns"},
+    {"id":"S09","game":"Into the Breach","kind":"developer_description","url":"https://store.steampowered.com/app/590380/Into_the_Breach/","read":"body","supports":"Telegraphed attacks, protecting buildings, equipment and mission variation"},
+    {"id":"S10","game":"Into the Breach","kind":"player_review_collection","url":"https://steamcommunity.com/app/590380/reviews/?browsefilter=toprated","read":"body","supports":"Individual reports of replay interest, chess-like planning and patience requirements"}
+  ],
+  "reviews": [
+    {"id":"R01","source":"S02","posted":"2019-12-14","recommended":true,"paraphrase_zh":"喜欢资源和行动顺序，但说明受众小众。"},
+    {"id":"R02","source":"S02","posted":"2024-07-14","recommended":true,"paraphrase_zh":"肯定多解和免费撤销，也提醒可能很快疲倦。"},
+    {"id":"R03","source":"S04","posted":"2016-02-20","recommended":true,"paraphrase_zh":"欣赏全局资源与行动顺序优化。"},
+    {"id":"R04","source":"S04","posted":"2016-03-20","recommended":false,"paraphrase_zh":"怀念单房间完成感，认为整体关卡容易变成试错。"},
+    {"id":"R05","source":"S06","posted":"2023-04-18","recommended":true,"received_free":true,"paraphrase_zh":"喜欢策略深度与预测改进，但有界面和按键配置意见。"},
+    {"id":"R06","source":"S06","posted":"2023-04-28","recommended":false,"received_free":true,"paraphrase_zh":"认为新表现和信息分散削弱全图战术识别。"},
+    {"id":"R07","source":"S08","posted":"2015-11-29","recommended":true,"paraphrase_zh":"认可确定性战斗顺序，也指出回来清怪的重复感。"},
+    {"id":"R08","source":"S08","posted":"2018-10-02","recommended":false,"paraphrase_zh":"批评隐晦前提、攻略依赖与跨局资源的成绩公平问题。"},
+    {"id":"R09","source":"S10","posted":"2022-07-10","recommended":true,"paraphrase_zh":"完成成就之后仍然想继续游玩。"},
+    {"id":"R10","source":"S10","posted":"2018-02-28","recommended":true,"paraphrase_zh":"喜欢棋式推演，说明耐心门槛与个人风险回报偏好。"}
+  ],
+  "limitations": [
+    "Ten selected historical reviews are neither population sentiment nor proof that the same product issues remain in 2026.",
+    "Review collection URLs are live lists; locate samples by game, post date and theme. Individual permanent links were not verified for every sample.",
+    "Primarily English high-helpfulness Steam comments; hardcore-player, language and platform selection biases remain.",
+    "No sampled review sentiment frequencies, retention percentages, sales estimates or marketing playtime claims are used as outcome evidence.",
+    "Cross-game findings motivate hypotheses; they do not prove benefits in the current game."
+  ],
+  "excluded_or_unavailable": [
+    {"url":"https://www.subsetgames.com/itb.html","reason":"Full fetch returned 403; used the developer-published Steam description instead."},
+    {"url":"https://mota.games/tower/?name=51KeyWeak","reason":"Full fetch timed out; search snippets not counted as independent player evidence."},
+    {"url":"https://www.taptap.cn/app/190489/topic?type=strategy","reason":"No verified complete discussion body was obtained for the selected Chinese search results; excluded from the main sample."},
+    {"url":"https://store.steampowered.com/appreviews/1141290","reason":"Direct machine-side request did not return usable JSON; not counted as a successful API sample."}
+  ],
+  "method_reference": "https://partner.steamgames.com/doc/store/getreviews"
+}

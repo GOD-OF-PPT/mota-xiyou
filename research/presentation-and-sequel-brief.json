@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21",
+  "scope": "界面、视觉与声音反馈，以及2000年电视剧《西游记后传》的剧情连接调研；未修改游戏实现。",
+  "verificationBoundary": "结合当前代码与已有截图复核；外部资料已检索打开，未逐集重看电视剧。改编结构、时长和制作顺序均为本作建议。",
+  "presentationSources": [
+    {"title":"Breaking the NES","url":"https://old.yachtclubgames.com/2014/07/breaking-the-nes/","type":"开发者原文","fact":"控制粒子和画面对象数量，重视清晰剪影与有限配色。","application":"建立角色、环境、交互、效果的层级；减少通用粒子覆盖。"},
+    {"title":"Dead Cells art design deep dive","url":"https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-","type":"美术开发者署名文章","fact":"先用关键姿态确定节奏，再补帧和效果。","application":"悟空先完成蓄势、挥棒、命中、收势与四向移动；不要求迁移其3D生产管线。"},
+    {"title":"Sea of Stars press kit","url":"https://sabotagestudio.com/presskits/sea-of-stars/","type":"开发商官方资料","fact":"将动态光照作为像素世界的重要呈现系统。","application":"以舍利、莲灯、炉火、黑莲作为局部光源和地图状态反馈。"},
+    {"title":"Sea of Stars PlayStation announcement","url":"https://sabotagestudio.com/press-release/sea-of-stars-the-highly-anticipated-turn-based-rpg-from-sabotage-studio-primed-for-playstation-consoles-in-2023/","type":"开发商官方公告","fact":"把动态光照与影响世界的昼夜循环结合，服务日月主题。","application":"本作采用黑莲侵蚀到金光复明的状态变化，与觉醒和解阵联动。"},
+    {"title":"Into the Breach UI interview report","url":"https://www.gamedeveloper.com/design/-i-into-the-breach-i-dev-on-ui-design-sacrifice-cool-ideas-for-the-sake-of-clarity-every-time-","type":"开发者采访引述报道","fact":"强调清晰表达规则，必要时删除难以表达的设计。","application":"技能短示意与选中时的关联高亮；保留可信战损与棋盘占格。"},
+    {"title":"How I made Into the Breach's soundtrack","url":"https://www.pcgamer.com/how-i-made-into-the-breachs-soundtrack/","type":"作曲者第一人称文章","fact":"音乐的进入、退出与短暂留白会改变同一场景的戏剧效果。","application":"思考时保留环境层，确认行动后加入打击，觉醒时引入主题。"},
+    {"title":"Xbox Accessibility Guideline 117","url":"https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117","type":"平台官方指南","fact":"提供暂停或关闭非必要运动、闪动和背景动态的控制。","application":"完善标准、简洁、减弱动态设置；覆盖已有粒子、斩击、光环与飘字。"},
+    {"title":"莫高窟329窟莲花飞天藻井","url":"https://lib.tsinghua.edu.cn/arts/info/1034/2018.htm","type":"大学图书馆美术资料","fact":"莲花井心、五色转轮、飞天与卷草联珠边饰。","application":"提炼为原创五印图形、章首和莲阵母题；黑莲侵蚀是本作虚构，非传统图案原意。"}
+  ],
+  "storySources": [
+    {"title":"爱奇艺《西游记后传》第30集正片页","url":"https://www.iqiyi.com/v_1c65btl2ng8.html","type":"播出平台正片条目与全剧简介","supports":["无天导致三界浩劫","悟空帮助如来转世灵童乔灵儿重返灵山"],"limit":"条目年份等展示元数据不能代替剧情考据。"},
+    {"title":"中国文艺网《电视剧西游记后传》","url":"https://www.cflac.org.cn/wywzt/2012/dhxy/201202/t20120210_128043.html","type":"机构转载，页面标注来源百度百科","supports":["三十三年劫数与十七颗舍利","双塔合为舍利","悟空吞舍利与沸鼎炼化","八戒营救","悟空为第十七颗无骨舍利","众人凝聚意念后悟空回归"],"limit":"不是片方原始剧本；不写死取经后具体年数。三十三年与搜寻命令中的三十三天语境不同。"},
+    {"title":"电视猫第28集梗概","url":"https://m.tvmao.com/drama/bVlVLg%3D%3D/episode/9-28","type":"第三方分集梗概","supports":["八戒过弱水救悟空","唐僧等走七伤路救诸神"],"limit":"制作定稿前应与正片镜头复核。"},
+    {"title":"电视猫第29集梗概","url":"https://m.tvmao.com/drama/bVlVLg%3D%3D/episode/9-29","type":"第三方分集梗概","supports":["无天善念化身白衣无天协助开门、救诸神"],"limit":"本作点灯僧是原创人物，不与白衣无天或燃灯古佛混为一人。"},
+    {"title":"电视猫第30集梗概","url":"https://m.tvmao.com/drama/bVlVLg%3D%3D/episode/9-30","type":"第三方分集梗概","supports":["悟空化作无骨舍利击败无天","三界恢复"],"limit":"现有守塔结局是本作原创分歧，不作为剧集正史。"}
+  ],
+  "adaptationProposal": {
+    "status":"以下为本作平行改编方案，不是电视剧原有的五印魔塔设定。",
+    "premise":"无天劫中，十六枚外在舍利被五重镇封封存。悟空解印救人，最后认识自身无骨舍利的意义。",
+    "counts":{"floors":18,"externalRelics":16,"awakeningMilestones":5,"finalSelfRelic":17},
+    "groups":[3,3,3,3,4],
+    "growthRule":"剧情收集与属性成长分开；保留五次能力觉醒及总成长预算，不为新增十一枚外舍利叠加十一份数值奖励。",
+    "originalCharacters":"石生、照骨、渡厄、慈悲、明心及点灯僧、无相心猿属于本作原创。点灯僧可作为心念投影保留，燃灯若加入则独立呈现。",
+    "centralVisual":"十六点环绕一个空心位置；最终中心由悟空轮廓点亮，贯穿日志、塔心地面与觉醒。",
+    "endingRule":"舍身与众人呼唤可作为对应剧集的破劫线；保留守塔线时明确为原创分歧。"
+  },
+  "chapterProposal": [
+    {"floors":"1-3","theme":"伪佛山门、火眼辨真","mechanic":"识别幻象和机关关联，战损始终可信","landmark":"被黑莲侵蚀的佛像与山门"},
+    {"floors":"4-6","theme":"双塔合印","mechanic":"跨层镜像机关与分身协作","landmark":"彼此呼应的双塔残影"},
+    {"floors":"7-9","theme":"弱水救援","mechanic":"救援解锁渡路与安全回返","landmark":"悬链、水光和莲影"},
+    {"floors":"10-12","theme":"黑莲炼炉","mechanic":"镜台调度使三个炉心依序熄灭","landmark":"巨型铜炉、火窗与被封舍利"},
+    {"floors":"13-15","theme":"七伤与善念","mechanic":"公开代价的救助、力量与通路取舍","landmark":"破损经壁、白衣善念与复明区域"},
+    {"floors":"16-18","theme":"无骨归真","mechanic":"完整战前规划与最终承担","landmark":"十六外环、中央空位与悟空金身"}
+  ],
+  "productionOrder":["第一层：角色四向与山门地标、统一界面图形","第十一层：分身生成、驻守、回收和真实机关结果","第十八层：三相首领、莲阵与无骨觉醒高潮","将样板扩展为六章专属建筑与声音"],
+  "animationStartingPointsMs":{"normalBattle":[350,700],"ability":[400,800],"firstAwakening":[2000,3000]},
+  "presentationRules":["动画只呈现权威结算，跳过不改变结果","按当前化蝉规则表现为飞去开闩再回到原格，不用动画伪造角色跨格","机关与回访结果读档后仍可辨认","重要文字、损失和合法目标不被效果覆盖","普通战不逐棒重复长演出，高潮用于觉醒和首领","时长为试制起点，须经试玩调整"]
+}

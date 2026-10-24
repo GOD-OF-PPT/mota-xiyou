@@ -1,0 +1,47 @@
+{
+  "retrievedOn": "2026-10-22",
+  "queries": [
+    "game UI diegetic inventory interface immersion design",
+    "game accessibility interactive tutorials highlight important words",
+    "Riot visual clarity VFX gameplay hierarchy"
+  ],
+  "sources": [
+    {
+      "title": "Unity: How to immerse your players through effective UI and game design",
+      "url": "https://unity.com/blog/games/how-to-immerse-your-players-through-effective-ui-and-game-design",
+      "verified": "正文已读取",
+      "principle": "界面适应作品身份和情境；世界内表现可承载信息；减少无关文字。"
+    },
+    {
+      "title": "Game Accessibility Guidelines: Highlight important words",
+      "url": "https://gameaccessibilityguidelines.com/highlight-important-words/",
+      "verified": "正文已读取",
+      "principle": "关键词与小的信息单元帮助快速理解，避免大段文字阻碍游玩。"
+    },
+    {
+      "title": "Game Accessibility Guidelines: Use simple clear language",
+      "url": "https://gameaccessibilityguidelines.com/use-simple-clear-language/",
+      "verified": "正文已读取",
+      "principle": "保留作品口吻，同时避免不必要的长度和复杂表达。"
+    },
+    {
+      "title": "Game Accessibility Guidelines: Include interactive tutorials",
+      "url": "https://gameaccessibilityguidelines.com/include-interactive-tutorials/",
+      "verified": "正文已读取",
+      "principle": "在实际玩法里结合操作与说明，降低记忆负担。"
+    },
+    {
+      "title": "Microsoft XAG109: Objective clarity",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/109",
+      "verified": "公开正文目标段已读取",
+      "principle": "玩家应能简单地了解当前需要完成的目标。"
+    },
+    {
+      "title": "Riot: Clarity in League",
+      "url": "https://www.leagueoflegends.com/en-us/news/dev/clarity-in-league/",
+      "verified": "正文已读取",
+      "principle": "明确表达机制和方向，按重要性分配注意力，并减少视觉噪声。"
+    }
+  ],
+  "boundary": "场景莲灯、中央布囊、36字短句和横向神通演出为本作设计决定，不冒充来源中的固定标准。"
+}

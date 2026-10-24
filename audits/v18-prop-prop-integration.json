@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "name": "Native painted body pick: altar",
+      "pass": true
+    },
+    {
+      "name": "Native painted body pick: door",
+      "pass": true
+    },
+    {
+      "name": "Native painted body pick: resonator",
+      "pass": true
+    },
+    {
+      "name": "All native source rectangles stay inside actual image bounds",
+      "pass": true
+    },
+    {
+      "name": "Mural pixel art and campaign state preserved",
+      "pass": true
+    },
+    {
+      "name": "Offline file:// loads native props and the real altar interaction",
+      "pass": true,
+      "remote": []
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

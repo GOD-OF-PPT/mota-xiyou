@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>玩法深化 · 对照试玩准备</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101b1b;color:#eee7d4;font:17px/1.7 system-ui,sans-serif}main{max-width:900px;margin:5vh auto;padding:28px}h1{font-size:30px;margin:0 0 12px}h2{font-size:21px}p{color:#c9c5b8}form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}label{display:flex;flex-direction:column;gap:6px}input,select,button{font:inherit;padding:10px;background:#203332;color:inherit;border:1px solid #657266;border-radius:4px;min-width:0}input:focus,select:focus,a:focus{outline:2px solid #e2b977;outline-offset:3px}.wide{grid-column:1/-1}.entries{display:flex;gap:16px;flex-wrap:wrap}.entries a{padding:12px 22px;border:1px solid #d1aa6b;color:#ffe1ab;text-decoration:none}small{color:#aebeb8}#task-text{border-left:3px solid #d1aa6b;padding:12px 18px;background:#1b2b2a}.order{color:#ffe1ab}a{color:#e2bf8b}@media(max-width:700px){form{grid-template-columns:1fr}main{padding:20px}}
+</style>
+<main>
+<h1>玩法深化 · 对照试玩</h1>
+<p>同一位玩家体验两版的相同任务。每段独立保存，可刷新续玩。请使用匿名编号，结束后再记录玩家原话与观察结果。</p>
+<form id="setup">
+<label>匿名编号<input name="participant" value="P01" maxlength="24" pattern="[A-Za-z0-9_-]{1,24}" required autocomplete="off"></label>
+<label>轮次<input name="round" type="number" value="1" min="1" max="99" required></label>
+<label>任务<select name="task"><option value="first-three">首三层 · 探索与目标理解</option><option value="ferry">第八层 · 渡路与成长</option><option value="silk">第十一层 · 驻守与补给</option></select></label>
+<label>公开目标<select name="objective"></select></label>
+</form>
+<p id="task-text"></p>
+<p class="order" id="order"></p><div class="entries" id="entries"></div>
+<p><small>编号末位为奇数时先 v22，偶数时先 v23；这只是安排建议，观察记录必须保留实际顺序。同一编号、版本、任务、目标和轮次会续接已有进度。重做请更换轮次，或在该段开始界面选择重置。</small></p>
+<h2>观察者记录</h2>
+<p>开始前不给路线答案。计时区分思考、观察新信息、熟路执行；不能区分的项目留空。完成后询问：得到什么、支付什么、放弃什么？改变了什么，之后如何利用？是否愿意尝试另一目标？</p>
+<p>本页不自动计为真人样本。使用 <a href="docs/v23-human-playtest-protocol.md">记录方法</a> 和 <a href="research/v23-human-study-template.json">空白记录模板</a>；起点与配对信息见 <button id="download" type="button">下载本段准备信息</button>。</p>
+<p><a href="index.html">返回正式游戏</a></p>
+</main>
+<script src="research/study-v23/fixtures.js"></script>
+<script>
+'use strict';
+const form=document.querySelector('#setup'),goals={'first-three':[['explore','归位三枚舍利并唤醒石生心印']],ferry:[['keep-key','保留起始黄钥完成上行'],['lantern-way','供灯并经过两道栈门完成上行']],silk:[['atk','攻击经与甲乙上行'],['def','护心经与甲乙上行']]};
+const params=new URLSearchParams(location.search);for(const name of ['participant','round','task'])if(params.has(name)&&(name!=='task'||Object.hasOwn(goals,params.get(name))))form.elements[name].value=params.get(name);
+function options(){const field=form.elements.objective,old=field.value;field.replaceChildren(...(goals[form.elements.task.value]||goals['first-three']).map(([value,text])=>new Option(text,value)));if([...field.options].some(o=>o.value===(params.get('objective')||old)))field.value=params.get('objective')||old;}
+function config(){return Object.fromEntries(new FormData(form));}
+function refresh(){const c=config(),entries=document.querySelector('#entries');entries.replaceChildren();if(!form.checkValidity()) {document.querySelector('#order').textContent='请先填写有效的匿名编号和轮次。';return;}const digit=Number(c.participant.match(/\d(?=\D*$)/)?.[0]||1),order=digit%2?['baseline','new']:['new','baseline'];document.querySelector('#order').textContent='建议顺序：'+order.map(v=>v==='baseline'?'v22 基线':'v23 新版').join(' → ');document.querySelector('#task-text').textContent=c.task==='first-three'?'从头探索前三层；自行决定路径，不要求清空守卫。':c.task==='ferry'?'取得舍利并接通定风，按选定目标完成上行。':'经卷互斥；完成选定经卷，以甲乙接通上行。';for(const [i,v]of order.entries()){const a=document.createElement('a');a.href='playtest-v23-'+v+'.html?'+new URLSearchParams(c);a.textContent=`第 ${i+1} 段 · ${v==='baseline'?'v22 基线':'v23 新版'}`;entries.append(a);}}
+options();refresh();form.elements.task.addEventListener('change',()=>{params.delete('objective');options();});form.addEventListener('input',refresh);form.addEventListener('change',refresh);form.addEventListener('submit',e=>e.preventDefault());
+document.querySelector('#download').onclick=()=>{if(!form.reportValidity())return;const c=config(),setup={...c,observedByHuman:false,note:'任务准备信息，不是参与者结果。',versions:Object.fromEntries(['baseline','new'].map(v=>{const f=TOWER_STUDY_FIXTURES[v][c.task];return [v,{trialId:f.id,startHash:f.startHash,budgetGroup:f.budgetGroup,source:f.source}];}))},a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(setup,null,2)],{type:'application/json'}));a.href=url;a.download=`study-${c.participant}-${c.task}-${c.round}-setup.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+</script>
+</html>

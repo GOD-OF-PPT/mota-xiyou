@@ -1,0 +1,36 @@
+{
+  "trace": "playthrough-v5-free-mixed-direct-bypasses.json",
+  "publicActions": 3905,
+  "checkpointCounts": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "setBossPlan": 1,
+    "awakenSelf": 1,
+    "finish": 1
+  },
+  "currentSaveRoundTrips": 61,
+  "crossedVowGates": [
+    "f1-v5-bell-gate",
+    "f7-v5-ferry-south",
+    "f7-v5-ferry-north",
+    "f16-v5-ember-gate"
+  ],
+  "final": {
+    "floor": 18,
+    "visited": 18,
+    "fragments": 16,
+    "treasures": 6,
+    "won": true,
+    "hp": 183,
+    "atk": 95,
+    "def": 53
+  }
+}

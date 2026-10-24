@@ -1,0 +1,126 @@
+{
+  "status": "accepted",
+  "testedAt": "2026-10-22T04:26:15.291Z",
+  "implementationFilesModified": false,
+  "publicActionTrace": 3905,
+  "legalCheckpointRoundTrips": 61,
+  "blockingFindings": [],
+  "browserChecks": [
+    "fullscreen scene with no modal dialog semantics",
+    "story collapses without consuming pages; C drawer is reversible; movement dismisses inventory",
+    "first E previews, held E / directions / Space do not fight, new E confirms exact damage",
+    "two actual asset families switch without changing any game state",
+    "full scene and actual map selection on narrow and landscape viewports",
+    "door cancel / consume / undo and an actual finite orb offering are exact",
+    "all 18 floors, 16 relic fragments, 6 treasures, vows, water, resonance, clone and finale through real controls",
+    "both endings and exact manual save / load round trip"
+  ],
+  "physicalInteractions": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "bossPreparations": {
+      "direct": 1130,
+      "anchor": 833,
+      "echoes": 894
+    },
+    "awakenSelf": 1,
+    "finish": 1
+  },
+  "final": {
+    "hp": 183,
+    "atk": 95,
+    "def": 53,
+    "orbs": 4,
+    "visited": 18,
+    "fragments": 16,
+    "treasures": 6
+  },
+  "normalCombatSummary": {
+    "x": 1188,
+    "y": 152,
+    "width": 228,
+    "height": 134
+  },
+  "art": {
+    "material": {
+      "ids": 151,
+      "uniqueFrameGroups": 110,
+      "runtimePngs": 9,
+      "runtimeBytes": 5479013
+    },
+    "mural": {
+      "ids": 145,
+      "uniqueFrameGroups": 105,
+      "runtimePngs": 9,
+      "runtimeBytes": 7250669
+    },
+    "baseIdsMissing": [],
+    "frameOrAnchorProblems": [],
+    "note": "IDs include aliases; material images use pre-rendered 3D materials rather than runtime 3D geometry."
+  },
+  "visualReview": {
+    "settledScreenshotsOpened": true,
+    "normalSummaryAtEdge": true,
+    "activeRulesScrollAtEdge": true,
+    "storyCenterClear": true,
+    "mobileDrawer": {
+      "x": 12,
+      "y": 112,
+      "width": 282,
+      "height": 718
+    },
+    "noticeSigilAndAnimation": {
+      "text": "回因果回溯 · 已撤回上次行动。",
+      "animation": "notice-unroll",
+      "hasSigil": true
+    },
+    "reducedMotionStable": true,
+    "twoStylesDesktopMobileLandscapeReviewed": true,
+    "upperSpriteClicks": [
+      {
+        "style": "material",
+        "strict": {
+          "x": 5,
+          "y": 2
+        },
+        "picked": {
+          "x": 5,
+          "y": 3
+        },
+        "sourceAlpha": 255,
+        "actualSelection": "f0-5",
+        "stateUnchanged": true
+      },
+      {
+        "style": "mural",
+        "strict": {
+          "x": 5,
+          "y": 2
+        },
+        "picked": {
+          "x": 5,
+          "y": 3
+        },
+        "sourceAlpha": 255,
+        "actualSelection": "f0-5",
+        "stateUnchanged": true
+      }
+    ]
+  },
+  "evidence": [
+    "audits/v6-browser-acceptance.json",
+    "audits/v6-asset-bounds.json",
+    "audits/v6-legal-checkpoint-preparation.json",
+    "audits/v6-story-character-capture.json",
+    "audits/v6-upper-sprite-picking.json"
+  ],
+  "scopeLimit": "Chrome automation and actual screenshot review; no claim about human completion time, subjective difficulty, physical mobile devices, or subjective audio quality."
+}

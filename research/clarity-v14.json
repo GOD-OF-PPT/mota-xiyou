@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "status": "reproduced_fixed_and_pc_verified",
+  "review": "docs/v14-prop-clarity-review.md",
+  "acceptance": "audits/v14-final.json",
+  "root_cause": "Material objects were still packed into 64x64 atlas cells, then enlarged at PC display size.",
+  "changes": {"originalPixelMappings": 50, "hdMappingsIncludingAliases": 5, "newHdAssets": 4, "oldObjectsAtlasRuntimeReferences": 0},
+  "goals": [
+    {"id": "R1", "name": "真实源像素足够覆盖目标物件的 PC 绘制", "status": "red_then_green", "evidence": ["audits/v14-resolution-before.json", "audits/v14-resolution-after.json"]},
+    {"id": "R2", "name": "原尺寸画面中物件边缘和结构实际改善", "status": "visually_reviewed", "evidence": ["audits/v14-resolution-before-second-dpr1.png", "audits/v14-resolution-after-second-dpr1.png", "audits/v14-detail-after-dpr1.png", "audits/v14-detail-after-dpr2.png"]},
+    {"id": "R3", "name": "保持命中、深度、机关与冒险规则", "status": "runtime_verified", "evidence": ["audits/v14-prop-integration.json", "audits/v10-interaction.json"]},
+    {"id": "R4", "name": "壁画与离线加载保持可用", "status": "runtime_verified", "evidence": ["audits/v14-prop-integration.json", "audits/v14-offline-altar.png"]}
+  ],
+  "generation": "research/v14-image-prompts.json",
+  "registration": "scripts/prepare_material_native.py",
+  "scope": "Material prop family, representative PC DPR1/DPR2 views; not an all-device or all-art-family review"
+}

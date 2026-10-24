@@ -1,0 +1,92 @@
+{
+  "status": "implemented_and_verified_pc",
+  "completedAt": "2026-10-23T04:13:03.381Z",
+  "source": {
+    "index.html": "b9233211945793d0134d6b57be9ce7ca3665d43b2741b09bdec6a2ff8c0f422e",
+    "js/ui.js": "9312adc50d8a9b60f976ae23e68c9eecfc56f28a10c3a70f55c520601c798514",
+    "css/experience.css": "2517fd1be21cf76fe52166cf4e2c0ce1614a2031671d8193af04d614944983b9",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/renderer.js": "d0463576f0c10d99f01a1962a3aa3749a44847f91617a3e0898e1f9b7201b05a",
+    "js/material-assets.js": "7f241f0f1b901b5da38237675d7052fce0bd52b229f54f52b6d07754e3ac3741",
+    "js/presentation.js": "172c45bdd52218f8f54b66501c81863a505605a9177583762bd4c4c94e50ac96",
+    "js/story-director.js": "461b393b3ee8d81dcfa209e475c9b0e768f0f6fcc174d7b62cd24667f1b79c8b",
+    "tests/v15-choice-interaction.cjs": "dd16b5728e229279471b6b0f76beee94d19468759097abd0398b309532bde250",
+    "tests/v10-interaction.cjs": "7ca11c1c2d26e00f293aa3a6a937573969c5b135e1fcf203b735e981d7551a80",
+    "tests/v10-presentation-check.cjs": "8ba2ed7439d20738cfdf9046aa9dbd4df334e3d3a6df3535270dacb113ed74e6"
+  },
+  "results": {
+    "choiceInteraction": {
+      "report": "audits/v15-choice-interaction.json",
+      "groups": 33,
+      "sourceMatches": true
+    },
+    "fullCampaignUI": {
+      "report": "audits/v10-interaction.json",
+      "groups": 21,
+      "sourceMatches": true,
+      "all18Floors": true,
+      "bothEndings": true
+    },
+    "presentation": {
+      "report": "audits/v10-presentation.json",
+      "completed": true,
+      "lateFrames": 6,
+      "offline": {
+        "fileURL": true,
+        "networkOffline": true,
+        "remoteRequests": [],
+        "inventorySlots": 6,
+        "muralLoaded": true,
+        "ritualVisible": true
+      }
+    },
+    "rules": {
+      "engine": 39,
+      "equipment": 8,
+      "topology": 6,
+      "allExitCodes": 0
+    }
+  },
+  "actualSizeVisualReview": [
+    "audits/v15-live-user-preview.png",
+    "audits/v15-mural-1280-bell.png",
+    "audits/v15-material-1280-locks.png",
+    "audits/v15-mural-1989-locks.png",
+    "audits/v15-ferryVow-detail.png",
+    "audits/v15-sevenWounds-detail.png",
+    "audits/v15-material-1440-bell.png",
+    "audits/v15-material-1989-bell.png"
+  ],
+  "priorHDAssetsPreserved": true,
+  "cacheVersion": 15,
+  "baseline": "audits/v15-baseline-repro.json",
+  "baselineScreenshotNote": "The initial failure screenshot was overwritten during iteration; the original assertion/state text is preserved and the supplied screenshot is audits/v15-user-contract.png",
+  "backup": ".backups/interaction-v15-20261023-113543",
+  "live": {
+    "url": "http://127.0.0.1:8765/",
+    "screenshot": "audits/v15-live-user-preview.png",
+    "floor": 2,
+    "hp": 477,
+    "mana": 6,
+    "keys": {
+      "yellow": 1,
+      "blue": 1,
+      "red": 0
+    },
+    "fragments": 2,
+    "coins": 17,
+    "treasures": [
+      "iron"
+    ],
+    "choiceCommitted": false,
+    "view": "unselected comparison; user continues deciding"
+  },
+  "review": "docs/v15-choice-review.md",
+  "remaining": [
+    "Human judgement of fun and pacing",
+    "All-floor human visual review",
+    "Audio listening",
+    "Mobile and broad browser coverage"
+  ]
+}

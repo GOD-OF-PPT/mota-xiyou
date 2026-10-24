@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-24",
+  "plan": "docs/v23-research-implementation-plan.md",
+  "status": "blocked_waiting_for_real_human_observation",
+  "S0": "Complete: legal canonical starts and common wind/relic/exit qualification; baseline and new layouts retained.",
+  "S1": "Complete: isolated namespaces, action scope, save/refresh/undo/restore and exact campaign return.",
+  "S2": "Complete: three existing supplies moved, two paid-return gates, corrected guardian purposes. Twelve canonical routes and four secondary legal budget samples.",
+  "S3": "Complete: persistent settled outcomes, chapter net budgets and four legal later-consequence routes to common endpoints.",
+  "S4": "Complete: two families, original/new revisions, two public goals, same-condition vectors and replay-verified records; custom records excluded from ranking.",
+  "S5": "Technical checks complete: full new campaigns, old saves, dual endings, PC art styles and offline operation. Human exploration gate remains pending.",
+  "humanStudy": "No records supplied under the new protocol. Participant/template counters remain zero; no waiver or completed human observation was inferred from the unanswered question.",
+  "humanStudyPreparation": {
+    "status": "complete_not_observation",
+    "entry": "playtest-v23.html",
+    "tasks": [
+      "first-three",
+      "ferry",
+      "silk"
+    ],
+    "versions": [
+      "frozen_v22",
+      "current_v23"
+    ],
+    "comparisonMode": "Both versions run campaign tasks from paired legal budgets, separately from the v23 trial-interface replay observation.",
+    "isolation": "anonymous participant / version / task / objective / round",
+    "browserEvidence": "audits/v24-study-browser.json",
+    "summaryChecks": "tests/v23-human-study-summary.py uses temporary synthetic fixtures only; no research participant records created",
+    "remaining": "Actual 6-8 participant observations and plan-effect judgment; no independent preparation work remains."
+  },
+  "blockedAudit": {
+    "reason": "S5 requires actual participant observations; none have been supplied. Preparation and available technical work are complete.",
+    "consecutiveGateTurns": 4,
+    "evidence": "Native read_thread final outcomes and current research inputs",
+    "currentAudit": "audits/v23-goal-completion-audit.json",
+    "unblockWith": "Actual participant records under docs/v23-human-playtest-protocol.md, or an explicit user change to the acceptance scope. No waiver inferred."
+  }
+}

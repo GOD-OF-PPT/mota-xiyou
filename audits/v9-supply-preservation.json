@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "compared": "exact IDs, types and rewards of every finite pickup, cache and exclusive choice",
+  "entities": 135,
+  "beforeSourceHash": "4057e6cdc062406cd39bfdf8d870c054c2e629dc94f12a6b08474fa0873f537e",
+  "afterSourceHash": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f"
+}

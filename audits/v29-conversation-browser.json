@@ -1,0 +1,690 @@
+{
+  "checks": [
+    "material one narrative action, legal approach, F/Space/Esc return, no false planning, readable archive and explicit object rules",
+    "material distinct real aid remains available, free, settles once and loses its completed plan link",
+    "mural one narrative action, legal approach, F/Space/Esc return, no false planning, readable archive and explicit object rules",
+    "mural distinct real aid remains available, free, settles once and loses its completed plan link",
+    "The same single conversation works through offline index.html"
+  ],
+  "screenshots": [
+    "audits/v29-material-speech-629.png",
+    "audits/v29-material-speech-1280.png",
+    "audits/v29-material-speech-1440.png",
+    "audits/v29-material-speech-1989.png",
+    "audits/v29-material-npc-command-629.png",
+    "audits/v29-material-npc-command-1280.png",
+    "audits/v29-material-npc-command-1440.png",
+    "audits/v29-material-npc-command-1989.png",
+    "audits/v29-material-npc-supply-collision.png",
+    "audits/v29-material-read-stone.png",
+    "audits/v29-material-stone-speech.png",
+    "audits/v29-material-real-aid-action.png",
+    "audits/v29-mural-speech-629.png",
+    "audits/v29-mural-speech-1280.png",
+    "audits/v29-mural-speech-1440.png",
+    "audits/v29-mural-speech-1989.png",
+    "audits/v29-mural-npc-command-629.png",
+    "audits/v29-mural-npc-command-1280.png",
+    "audits/v29-mural-npc-command-1440.png",
+    "audits/v29-mural-npc-command-1989.png",
+    "audits/v29-mural-npc-supply-collision.png",
+    "audits/v29-mural-read-stone.png",
+    "audits/v29-mural-stone-speech.png",
+    "audits/v29-mural-real-aid-action.png",
+    "audits/v29-offline-conversation.png"
+  ],
+  "layouts": [
+    {
+      "name": "material-speech-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 589,
+          "height": 223.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 519,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 97.9375,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-speech-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-speech-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-speech-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-npc-command-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-npc-command-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-npc-command-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-npc-command-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-npc-supply-collision",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-read-stone",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-stone-speech",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 12,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "归根石刻1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "停止读碑 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-real-aid-action",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 8,
+          "width": 350,
+          "height": 361.46875
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-speech-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 589,
+          "height": 223.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 519,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 97.9375,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-speech-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-speech-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-speech-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-npc-command-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-npc-command-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-npc-command-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-npc-command-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-npc-supply-collision",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-read-stone",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 224.484375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-stone-speech",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 12,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "归根石刻1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "停止读碑 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-real-aid-action",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card is-narrative sigil-enter has-selection",
+          "glyphs": 8,
+          "width": 350,
+          "height": 361.46875
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "offline-conversation",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "source": {
+    "index.html": "42765dbbb633f41a6316d97d192bc6b63000d3a9a245873f488a7c745198ef94",
+    "js/ui.js": "db2ddc2cbdbe30386cb9bbd8188a56fc0e3f19d09fabd988009f3fe31fbdce03",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "css/ui-layout.css": "af660544f69888b295ae450a166f6b6d98f7c8656a949aa2390c5f4f8897c916",
+    "scripts/build_v23_study.cjs": "6ab30cd80cd91ba5c5a128d201785a7e02e3c2ac10bf20d5119ac9f9fae25caa",
+    "playtest-v23-new.html": "378b0c6b4e39b622f4e79b7c42dd62f7af2b4f7add662bca6d8df8b4fc2184fa",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "aidFixture": {
+    "file": "audits/v29-legal-aid.json",
+    "source": "tests/playthrough-v28-free-mixed-direct.json",
+    "prefixActions": 2621,
+    "sha256": "f78df19fff659b43f354d86390f9678bb364a94399843f202be706ec50a4dff6"
+  },
+  "passed": true
+}

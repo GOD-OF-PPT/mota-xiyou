@@ -1,0 +1,74 @@
+{
+  "check": {
+    "v": {
+      "x": 4,
+      "y": 8,
+      "w": 13,
+      "h": 13,
+      "overview": false
+    },
+    "p": {
+      "x": 332,
+      "y": 524
+    },
+    "hit": {
+      "x": 10,
+      "y": 18
+    },
+    "at": {
+      "x": 10,
+      "y": 18
+    }
+  },
+  "focus": {
+    "v": {
+      "x": 0,
+      "y": 0,
+      "w": 13,
+      "h": 13,
+      "overview": false
+    },
+    "hit": {
+      "x": 2,
+      "y": 2
+    },
+    "outside": null
+  },
+  "overview": {
+    "v": {
+      "x": 0,
+      "y": 0,
+      "w": 21,
+      "h": 21,
+      "overview": true
+    },
+    "hit": {
+      "x": 20,
+      "y": 20
+    }
+  },
+  "follow": {
+    "before": {
+      "x": 0,
+      "y": 0,
+      "w": 13,
+      "h": 13,
+      "overview": false
+    },
+    "after": {
+      "x": 5,
+      "y": 8,
+      "w": 13,
+      "h": 13,
+      "overview": false
+    }
+  },
+  "fragments": [
+    {
+      "life": 650,
+      "fragment": 0
+    }
+  ],
+  "errors": [],
+  "scope": "Renderer coordinate, overview, focus/follow, fragment pacing and actual native Canvas captures. Realm captures inspect authored scenery; state positioning is for visual review, not a gameplay completion claim."
+}

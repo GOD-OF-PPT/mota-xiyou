@@ -1,0 +1,125 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "quest-plaque",
+      "file": "assets/ui-v26/quest-plaque.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-956c99f8-12d0-4267-8a5d-c0d90d4ea02a.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "fullyTransparentPixels": 261839,
+      "nearOpaquePixels": 1281563,
+      "alphaBounds": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "bytes": 3036403,
+      "sha256": "aa239a3f5c6e6989ffe72daf9330913a9039009660b38ee3019aff1fed5ae018",
+      "slice": [
+        170,
+        155,
+        175,
+        155
+      ]
+    },
+    {
+      "id": "reading-folio",
+      "file": "assets/ui-v26/reading-folio.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-7b259152-7571-4af9-a6aa-7bfa80c982f2.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "fullyTransparentPixels": 249654,
+      "nearOpaquePixels": 1297690,
+      "alphaBounds": [
+        0,
+        9,
+        1528,
+        1024
+      ],
+      "bytes": 2712877,
+      "sha256": "4595d8637c5f1ba05b58a802c6fa36a95552a4ce07217c8eb318c25091269169",
+      "slice": [
+        125,
+        115,
+        150,
+        115
+      ]
+    },
+    {
+      "id": "dialogue-scroll",
+      "file": "assets/ui-v26/dialogue-scroll.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-390702b0-7f3c-4943-800b-cf43abcd4941.png",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "fullyTransparentPixels": 648038,
+      "nearOpaquePixels": 890302,
+      "alphaBounds": [
+        28,
+        23,
+        2141,
+        724
+      ],
+      "bytes": 2069506,
+      "sha256": "26bf9e2f32c87f910f9afb1db81c3ceac9019740f16b410032827b9cb580a785",
+      "slice": [
+        155,
+        200,
+        205,
+        200
+      ]
+    },
+    {
+      "id": "offering-tablet",
+      "file": "assets/ui-v26/offering-tablet.png",
+      "source": "C:/Users/KSG/.codex/generated_images/01a16315-b007-72b2-bc96-2155a6a6566b/exec-d621bbc6-11eb-4c39-8ab3-d6eb0ef76d7a.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "fullyTransparentPixels": 293226,
+      "nearOpaquePixels": 1244763,
+      "alphaBounds": [
+        0,
+        0,
+        979,
+        1536
+      ],
+      "bytes": 3015241,
+      "sha256": "867fb3469128b7d9ee7a9238bf83f31267170852dab93c91434dd0c9fc8d79ef",
+      "slice": [
+        205,
+        120,
+        220,
+        120
+      ]
+    }
+  ]
+}

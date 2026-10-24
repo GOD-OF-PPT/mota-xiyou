@@ -1,0 +1,322 @@
+{
+  "events": [
+    {
+      "kind": "intro",
+      "title": "黑莲劫 · 入塔",
+      "source": "tower:arrival",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "lore",
+      "title": "归根之匣",
+      "source": "f0-2",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "残钟回廊",
+      "source": "floor:1",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "treasure",
+      "title": "定海铁 · 法器入囊",
+      "source": "floor:1",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "石胎古殿",
+      "source": "floor:2",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "力能架桥，不能平定弱水",
+      "source": "f2-18",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "relic",
+      "title": "石生心印 · 心印觉醒",
+      "source": "f2-17",
+      "objective": "沿塔路寻舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "断云栈道",
+      "source": "floor:3",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "百锁偏殿",
+      "source": "floor:4",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "lore",
+      "title": "北庭异宝记",
+      "source": "f4-10",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "treasure",
+      "title": "莲灯芯 · 法器入囊",
+      "source": "floor:4",
+      "objective": "沿塔路寻舍利 · 本印 2/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "照骨禅院",
+      "source": "floor:5",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "双塔回访簿",
+      "source": "f5-14",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "外舍利点名册",
+      "source": "f5-16",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "relic",
+      "title": "照骨心印 · 心印觉醒",
+      "source": "f5-8",
+      "objective": "沿塔路寻舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "弱水缝院",
+      "source": "floor:6",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "rescue",
+      "title": "猪八戒",
+      "source": "f6-13",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "lore",
+      "title": "青蝉卸锁，真身不移",
+      "source": "f6-8",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "弱水梵井",
+      "source": "floor:7",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "treasure",
+      "title": "听潮贝 · 法器入囊",
+      "source": "floor:7",
+      "objective": "沿塔路寻舍利 · 本印 2/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "悬丝水牢",
+      "source": "floor:8",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "灵珠留用簿",
+      "source": "f8-19",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "relic",
+      "title": "渡厄心印 · 心印觉醒",
+      "source": "f8-8",
+      "objective": "沿塔路寻舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "留影棋坪",
+      "source": "floor:9",
+      "objective": "寻回本层外舍利 · 本印 0/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "千丝庭",
+      "source": "floor:10",
+      "objective": "寻回本层外舍利 · 本印 1/3"
+    },
+    {
+      "kind": "treasure",
+      "title": "照骨齿 · 法器入囊",
+      "source": "floor:10",
+      "objective": "沿塔路寻舍利 · 本印 2/3"
+    },
+    {
+      "kind": "chapter",
+      "title": "两仪丹庭",
+      "source": "floor:11",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "法器与炉魂",
+      "source": "f11-20",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "lore",
+      "title": "三炉同熄",
+      "source": "f11-2",
+      "objective": "寻回本层外舍利 · 本印 2/3"
+    },
+    {
+      "kind": "relic",
+      "title": "慈悲心印 · 心印觉醒",
+      "source": "f11-10",
+      "objective": "沿塔路寻舍利 · 本印 0/4"
+    },
+    {
+      "kind": "chapter",
+      "title": "息火莲台",
+      "source": "floor:12",
+      "objective": "寻回本层外舍利 · 本印 0/4"
+    },
+    {
+      "kind": "chapter",
+      "title": "问心断碑",
+      "source": "floor:13",
+      "objective": "寻回本层外舍利 · 本印 1/4"
+    },
+    {
+      "kind": "lore",
+      "title": "七伤路账簿",
+      "source": "f13-11",
+      "objective": "寻回本层外舍利 · 本印 1/4"
+    },
+    {
+      "kind": "treasure",
+      "title": "双影镜 · 法器入囊",
+      "source": "floor:13",
+      "objective": "沿塔路寻舍利 · 本印 2/4"
+    },
+    {
+      "kind": "chapter",
+      "title": "倒影经阁",
+      "source": "floor:14",
+      "objective": "寻回本层外舍利 · 本印 2/4"
+    },
+    {
+      "kind": "lore",
+      "title": "十六之外",
+      "source": "f14-2",
+      "objective": "寻回本层外舍利 · 本印 2/4"
+    },
+    {
+      "kind": "lore",
+      "title": "经壁留下的路",
+      "source": "f14-1",
+      "objective": "寻回本层外舍利 · 本印 3/4"
+    },
+    {
+      "kind": "relic",
+      "title": "明心心印 · 心印觉醒",
+      "source": "f14-9",
+      "objective": "回到第一层，取得归根心钥"
+    },
+    {
+      "kind": "chapter",
+      "title": "逆莲天梯",
+      "source": "floor:15",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "chapter",
+      "title": "三问无生门",
+      "source": "floor:16",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "lore",
+      "title": "终局余烬记",
+      "source": "f16-10",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "treasure",
+      "title": "心炉烬 · 法器入囊",
+      "source": "floor:16",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "chapter",
+      "title": "无骨莲心",
+      "source": "floor:17",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "lore",
+      "title": "先算清，再承担",
+      "source": "f17-1",
+      "objective": "前往十八层，合两翼机关、面对三相"
+    },
+    {
+      "kind": "boss",
+      "title": "黑莲化影 · 消散",
+      "source": "f17-7",
+      "objective": "前往十八层莲阵，照见无骨舍利"
+    },
+    {
+      "kind": "awakening",
+      "title": "无骨归真 · 第十七颗",
+      "source": "f17-13",
+      "objective": "走向莲台，选择最后的归途"
+    }
+  ],
+  "stages": [
+    {
+      "seals": 0,
+      "stage": "arrival",
+      "goal": "寻回本层外舍利 · 本印 0/3",
+      "npcTitle": "灯下有名"
+    },
+    {
+      "seals": 1,
+      "stage": "staff",
+      "goal": "沿塔路寻舍利 · 本印 0/3",
+      "npcTitle": "一棒也能渡人"
+    },
+    {
+      "seals": 2,
+      "stage": "cicada",
+      "goal": "沿塔路寻舍利 · 本印 0/3",
+      "npcTitle": "听见弱水里的人"
+    },
+    {
+      "seals": 3,
+      "stage": "companions",
+      "goal": "沿塔路寻舍利 · 本印 0/3",
+      "npcTitle": "分身不是替身"
+    },
+    {
+      "seals": 4,
+      "stage": "mercy",
+      "goal": "沿塔路寻舍利 · 本印 0/4",
+      "npcTitle": "那盏灯原来在你心里"
+    },
+    {
+      "seals": 5,
+      "stage": "five",
+      "goal": "回到第一层，取得归根心钥",
+      "npcTitle": "回到第一盏灯前"
+    }
+  ],
+  "won": true,
+  "hp": 183,
+  "fragments": 16,
+  "readOnlyQueries": true
+}

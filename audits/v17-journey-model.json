@@ -1,0 +1,721 @@
+{
+  "source": {
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f"
+  },
+  "checks": [
+    "New journey starts with the real nearby growth opportunity",
+    "All 18 floors resolve real prerequisites without mutating state or requiring forfeited routes",
+    "Every displayed safe route avoids closed gates, enemies and unpaid doors",
+    "Receipts use settled balances and floor arrival clears old rewards",
+    "Current-save loading, undo and redo recompute goals without awarding a new receipt",
+    "A rejected action cannot produce a success receipt",
+    "A legal but lethal battle records defeat rather than a reward",
+    "An acquired treasure is distinguished from an equipped, active treasure",
+    "A gap route ends on its real safe bank rather than entering the unbuilt bridge"
+  ],
+  "goals": [
+    {
+      "action": 0,
+      "floor": 0,
+      "text": "先取西侧灵晶，增强金箍棒。",
+      "phase": "成长",
+      "id": "f0-13"
+    },
+    {
+      "action": 2,
+      "floor": 0,
+      "text": "赤眼夜蝠挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f0-5"
+    },
+    {
+      "action": 87,
+      "floor": 0,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f0-fragment-0"
+    },
+    {
+      "action": 90,
+      "floor": 0,
+      "text": "本层要事已成，前往第 2 层。",
+      "phase": "启程",
+      "id": "f0-14"
+    },
+    {
+      "action": 122,
+      "floor": 1,
+      "text": "用火眼照破幻壁，接通舍利支院。",
+      "phase": "辨真",
+      "id": "f1-15"
+    },
+    {
+      "action": 123,
+      "floor": 1,
+      "text": "石胎守卫挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f1-6"
+    },
+    {
+      "action": 248,
+      "floor": 1,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f1-fragment-1"
+    },
+    {
+      "action": 251,
+      "floor": 1,
+      "text": "本层要事已成，前往第 3 层。",
+      "phase": "启程",
+      "id": "f1-14"
+    },
+    {
+      "action": 316,
+      "floor": 2,
+      "text": "用火眼照破幻壁，接通舍利支院。",
+      "phase": "辨真",
+      "id": "f2-21"
+    },
+    {
+      "action": 317,
+      "floor": 2,
+      "text": "石胎守卫挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f2-5"
+    },
+    {
+      "action": 486,
+      "floor": 2,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f2-fragment-2"
+    },
+    {
+      "action": 489,
+      "floor": 2,
+      "text": "本印舍利已齐，解开石生心印。",
+      "phase": "觉醒",
+      "id": "f2-17"
+    },
+    {
+      "action": 496,
+      "floor": 2,
+      "text": "本层要事已成，前往第 4 层。",
+      "phase": "启程",
+      "id": "f2-20"
+    },
+    {
+      "action": 580,
+      "floor": 3,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 611,
+      "floor": 3,
+      "text": "铜面罗汉挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f3-3"
+    },
+    {
+      "action": 733,
+      "floor": 3,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f3-fragment-3"
+    },
+    {
+      "action": 736,
+      "floor": 3,
+      "text": "本层要事已成，前往第 5 层。",
+      "phase": "启程",
+      "id": "f3-11"
+    },
+    {
+      "action": 766,
+      "floor": 4,
+      "text": "比较契台的代价与收益，再定一念。",
+      "phase": "取舍",
+      "id": "f4-2"
+    },
+    {
+      "action": 781,
+      "floor": 4,
+      "text": "铜铃怨灵挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f4-6"
+    },
+    {
+      "action": 786,
+      "floor": 4,
+      "text": "巡山小妖挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f4-17"
+    },
+    {
+      "action": 790,
+      "floor": 4,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f4-fragment-4"
+    },
+    {
+      "action": 814,
+      "floor": 4,
+      "text": "本层要事已成，前往第 6 层。",
+      "phase": "启程",
+      "id": "f4-14"
+    },
+    {
+      "action": 966,
+      "floor": 5,
+      "text": "青鳞蛇使挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f5-5"
+    },
+    {
+      "action": 982,
+      "floor": 5,
+      "text": "铜面罗汉挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f5-wing-guard-1"
+    },
+    {
+      "action": 998,
+      "floor": 5,
+      "text": "青鳞蛇使挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f5-5"
+    },
+    {
+      "action": 1010,
+      "floor": 5,
+      "text": "先查看铜钥封门的代价。",
+      "phase": "取舍",
+      "id": "f5-9"
+    },
+    {
+      "action": 1111,
+      "floor": 5,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 1120,
+      "floor": 5,
+      "text": "照骨禅师挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f5-2"
+    },
+    {
+      "action": 1125,
+      "floor": 5,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f5-fragment-5"
+    },
+    {
+      "action": 1128,
+      "floor": 5,
+      "text": "本印舍利已齐，解开照骨心印。",
+      "phase": "觉醒",
+      "id": "f5-8"
+    },
+    {
+      "action": 1135,
+      "floor": 5,
+      "text": "本层要事已成，前往第 7 层。",
+      "phase": "启程",
+      "id": "f5-20"
+    },
+    {
+      "action": 1142,
+      "floor": 6,
+      "text": "用青蝉化形，卸下前方铁栅。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 1233,
+      "floor": 6,
+      "text": "铜面罗汉挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f6-3"
+    },
+    {
+      "action": 1235,
+      "floor": 6,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f6-fragment-6"
+    },
+    {
+      "action": 1238,
+      "floor": 6,
+      "text": "本层要事已成，前往第 8 层。",
+      "phase": "启程",
+      "id": "f6-12"
+    },
+    {
+      "action": 1346,
+      "floor": 7,
+      "text": "比较契台的代价与收益，再定一念。",
+      "phase": "取舍",
+      "id": "f7-7"
+    },
+    {
+      "action": 1349,
+      "floor": 7,
+      "text": "溺水灯魂挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f7-5"
+    },
+    {
+      "action": 1362,
+      "floor": 7,
+      "text": "悬丝傀儡挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f7-4"
+    },
+    {
+      "action": 1401,
+      "floor": 7,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f7-fragment-7"
+    },
+    {
+      "action": 1404,
+      "floor": 7,
+      "text": "悬丝傀儡挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f7-wing-guard-1"
+    },
+    {
+      "action": 1422,
+      "floor": 7,
+      "text": "本层要事已成，前往第 9 层。",
+      "phase": "启程",
+      "id": "f7-12"
+    },
+    {
+      "action": 1498,
+      "floor": 8,
+      "text": "悬丝傀儡挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f8-5"
+    },
+    {
+      "action": 1513,
+      "floor": 8,
+      "text": "先接通止水扳杆。",
+      "phase": "接通",
+      "id": "f8-9"
+    },
+    {
+      "action": 1547,
+      "floor": 8,
+      "text": "用毫毛分身驻守阵眼，接通塔心。",
+      "phase": "接通",
+      "id": "f8-10"
+    },
+    {
+      "action": 1559,
+      "floor": 8,
+      "text": "用青蝉化形，卸下前方铁栅。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 1568,
+      "floor": 8,
+      "text": "覆水龙侍挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f8-3"
+    },
+    {
+      "action": 1644,
+      "floor": 8,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f8-fragment-8"
+    },
+    {
+      "action": 1647,
+      "floor": 8,
+      "text": "本印舍利已齐，解开渡厄心印。",
+      "phase": "觉醒",
+      "id": "f8-8"
+    },
+    {
+      "action": 1654,
+      "floor": 8,
+      "text": "用毫毛分身驻守阵眼，接通塔心。",
+      "phase": "接通",
+      "id": "f8-10"
+    },
+    {
+      "action": 1683,
+      "floor": 8,
+      "text": "本层要事已成，前往第 10 层。",
+      "phase": "启程",
+      "id": "f8-22"
+    },
+    {
+      "action": 1724,
+      "floor": 9,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 1890,
+      "floor": 9,
+      "text": "丹毒方士挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f9-6"
+    },
+    {
+      "action": 1996,
+      "floor": 9,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f9-fragment-9"
+    },
+    {
+      "action": 1999,
+      "floor": 9,
+      "text": "本层要事已成，前往第 11 层。",
+      "phase": "启程",
+      "id": "f9-14"
+    },
+    {
+      "action": 2016,
+      "floor": 10,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 2077,
+      "floor": 10,
+      "text": "丹毒方士挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f10-7"
+    },
+    {
+      "action": 2204,
+      "floor": 10,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f10-fragment-10"
+    },
+    {
+      "action": 2207,
+      "floor": 10,
+      "text": "本层要事已成，前往第 12 层。",
+      "phase": "启程",
+      "id": "f10-15"
+    },
+    {
+      "action": 2244,
+      "floor": 11,
+      "text": "用青蝉化形，卸下前方铁栅。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 2352,
+      "floor": 11,
+      "text": "两仪判官挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f11-4"
+    },
+    {
+      "action": 2556,
+      "floor": 11,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f11-fragment-11"
+    },
+    {
+      "action": 2559,
+      "floor": 11,
+      "text": "本印舍利已齐，解开慈悲心印。",
+      "phase": "觉醒",
+      "id": "f11-10"
+    },
+    {
+      "action": 2566,
+      "floor": 11,
+      "text": "本层要事已成，前往第 13 层。",
+      "phase": "启程",
+      "id": "f11-24"
+    },
+    {
+      "action": 2585,
+      "floor": 12,
+      "text": "向白衣善念求援，接通南侧归路。",
+      "phase": "援手",
+      "id": "f12-11"
+    },
+    {
+      "action": 2690,
+      "floor": 12,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f12-fragment-12"
+    },
+    {
+      "action": 2693,
+      "floor": 12,
+      "text": "本层要事已成，前往第 14 层。",
+      "phase": "启程",
+      "id": "f12-10"
+    },
+    {
+      "action": 2727,
+      "floor": 13,
+      "text": "墨骨书妖挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f13-wing-guard-1"
+    },
+    {
+      "action": 2750,
+      "floor": 13,
+      "text": "先接通问心扳杆。",
+      "phase": "接通",
+      "id": "f13-1"
+    },
+    {
+      "action": 2767,
+      "floor": 13,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 2874,
+      "floor": 13,
+      "text": "无字碑将挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f13-6"
+    },
+    {
+      "action": 2967,
+      "floor": 13,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f13-fragment-13"
+    },
+    {
+      "action": 2970,
+      "floor": 13,
+      "text": "本层要事已成，前往第 15 层。",
+      "phase": "启程",
+      "id": "f13-13"
+    },
+    {
+      "action": 3055,
+      "floor": 14,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f14-fragment-14"
+    },
+    {
+      "action": 3079,
+      "floor": 14,
+      "text": "镜中行者挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f14-4"
+    },
+    {
+      "action": 3267,
+      "floor": 14,
+      "text": "沿已开的通路，寻回本层外舍利。",
+      "phase": "寻回",
+      "id": "f14-fragment-15"
+    },
+    {
+      "action": 3274,
+      "floor": 14,
+      "text": "本印舍利已齐，解开明心心印。",
+      "phase": "觉醒",
+      "id": "f14-9"
+    },
+    {
+      "action": 3317,
+      "floor": 14,
+      "text": "回第 1 层，开启归根之匣。",
+      "phase": "回访",
+      "id": "f0-3"
+    },
+    {
+      "action": 3407,
+      "floor": 0,
+      "text": "五印已齐，开启归根之匣取得心钥。",
+      "phase": "回响",
+      "id": "f0-3"
+    },
+    {
+      "action": 3415,
+      "floor": 0,
+      "text": "本层要事已成，前往第 2 层。",
+      "phase": "启程",
+      "id": "f0-14"
+    },
+    {
+      "action": 3454,
+      "floor": 14,
+      "text": "本层要事已成，前往第 16 层。",
+      "phase": "启程",
+      "id": "f14-22"
+    },
+    {
+      "action": 3479,
+      "floor": 15,
+      "text": "先接通逆莲扳杆。",
+      "phase": "接通",
+      "id": "f15-1"
+    },
+    {
+      "action": 3567,
+      "floor": 15,
+      "text": "用毫毛分身驻守阵眼，接通塔心。",
+      "phase": "接通",
+      "id": "f15-2"
+    },
+    {
+      "action": 3601,
+      "floor": 15,
+      "text": "本层要事已成，前往第 17 层。",
+      "phase": "启程",
+      "id": "f15-14"
+    },
+    {
+      "action": 3672,
+      "floor": 16,
+      "text": "镜中行者挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f16-7"
+    },
+    {
+      "action": 3687,
+      "floor": 16,
+      "text": "嗔火金刚挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f16-wing-guard-1"
+    },
+    {
+      "action": 3688,
+      "floor": 16,
+      "text": "镜中行者挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f16-7"
+    },
+    {
+      "action": 3710,
+      "floor": 16,
+      "text": "嗔火金刚挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f16-wing-guard-1"
+    },
+    {
+      "action": 3726,
+      "floor": 16,
+      "text": "先接通止妄扳杆。",
+      "phase": "接通",
+      "id": "f16-1"
+    },
+    {
+      "action": 3808,
+      "floor": 16,
+      "text": "本层要事已成，前往第 18 层。",
+      "phase": "启程",
+      "id": "f16-14"
+    },
+    {
+      "action": 3856,
+      "floor": 17,
+      "text": "用金箍架桥，接通前方断口。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 3868,
+      "floor": 17,
+      "text": "先接通止战扳杆。",
+      "phase": "接通",
+      "id": "f17-8"
+    },
+    {
+      "action": 3873,
+      "floor": 17,
+      "text": "用青蝉化形，卸下前方铁栅。",
+      "phase": "开路",
+      "id": null
+    },
+    {
+      "action": 3898,
+      "floor": 17,
+      "text": "用毫毛分身驻守阵眼，接通塔心。",
+      "phase": "接通",
+      "id": "f17-9"
+    },
+    {
+      "action": 3912,
+      "floor": 17,
+      "text": "先查看心钥封门的代价。",
+      "phase": "取舍",
+      "id": "f17-10"
+    },
+    {
+      "action": 4079,
+      "floor": 17,
+      "text": "黑莲化影 · 心猿挡在前方，先比较战损。",
+      "phase": "比较",
+      "id": "f17-7"
+    },
+    {
+      "action": 4135,
+      "floor": 17,
+      "text": "走向莲阵，照见无骨舍利。",
+      "phase": "归真",
+      "id": "f17-13"
+    },
+    {
+      "action": 4141,
+      "floor": 17,
+      "text": "众生已有归途，这段因果已圆满。",
+      "phase": "归途",
+      "id": null
+    }
+  ],
+  "floors": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "receipts": 326,
+  "passed": true
+}

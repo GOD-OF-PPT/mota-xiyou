@@ -1,0 +1,18 @@
+{
+  "checked": 3962,
+  "oldTraceActions": 3962,
+  "oldTraceFailures": [],
+  "migrationResourceDifferences": [],
+  "safeHub": 3962,
+  "unsafePositions": [],
+  "sameRevision": {
+    "action": 1279,
+    "position": [
+      4,
+      14
+    ],
+    "loaded": true,
+    "levelRevision": 5,
+    "sameState": true
+  }
+}

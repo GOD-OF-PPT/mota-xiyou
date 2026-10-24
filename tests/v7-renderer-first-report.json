@@ -1,0 +1,313 @@
+{
+  "errors": [],
+  "sizes": [
+    {
+      "v": {
+        "x": 0,
+        "y": 10.953267326732673,
+        "w": 21,
+        "h": 10.046732673267327,
+        "cellSize": 120.23809523809524,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false
+      },
+      "player": {
+        "foot": {
+          "x": 1262.5,
+          "y": 967.5238095238095
+        },
+        "body": {
+          "x": 1227.2739955357142,
+          "y": 873.7380952380953
+        },
+        "bounds": {
+          "x": 1161.9884672619048,
+          "y": 787.1666666666667,
+          "w": 130.57105654761904,
+          "h": 180.35714285714286
+        },
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "skill": {
+        "x": 966.5,
+        "y": 1110,
+        "w": 592,
+        "h": 82
+      },
+      "footInsideSkill": false,
+      "roundtrip": {
+        "x": 10,
+        "y": 18
+      },
+      "terrainDensity": 6,
+      "terrain": [
+        2016,
+        2016
+      ],
+      "unusedBuffer": [
+        1,
+        1
+      ],
+      "actorPass": "final-dpr"
+    },
+    {
+      "v": {
+        "x": 0,
+        "y": 7.875,
+        "w": 21,
+        "h": 13.125,
+        "cellSize": 68.57142857142857,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 1440,
+        "cssHeight": 900,
+        "overview": false
+      },
+      "player": {
+        "foot": {
+          "x": 720,
+          "y": 762.8571428571429
+        },
+        "body": {
+          "x": 699.9107142857143,
+          "y": 709.3714285714286
+        },
+        "bounds": {
+          "x": 662.6785714285714,
+          "y": 660,
+          "w": 74.46428571428571,
+          "h": 102.85714285714286
+        },
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "skill": {
+        "x": 424,
+        "y": 802,
+        "w": 592,
+        "h": 82
+      },
+      "footInsideSkill": false,
+      "roundtrip": {
+        "x": 10,
+        "y": 18
+      },
+      "terrainDensity": 6,
+      "terrain": [
+        2016,
+        2016
+      ],
+      "unusedBuffer": [
+        1,
+        1
+      ],
+      "actorPass": "final-dpr"
+    },
+    {
+      "v": {
+        "x": 6.4375,
+        "y": 3.416666666666668,
+        "w": 8.125,
+        "h": 17.583333333333332,
+        "cellSize": 48,
+        "offsetX": 0,
+        "offsetY": 0,
+        "cssWidth": 390,
+        "cssHeight": 844,
+        "overview": false
+      },
+      "player": {
+        "foot": {
+          "x": 195,
+          "y": 748
+        },
+        "body": {
+          "x": 180.9375,
+          "y": 710.56
+        },
+        "bounds": {
+          "x": 154.875,
+          "y": 676,
+          "w": 52.125,
+          "h": 72
+        },
+        "visible": true,
+        "cell": {
+          "x": 10,
+          "y": 18
+        },
+        "ready": true
+      },
+      "skill": {
+        "x": 12,
+        "y": 754,
+        "w": 366,
+        "h": 76
+      },
+      "footInsideSkill": false,
+      "roundtrip": {
+        "x": 10,
+        "y": 18
+      },
+      "terrainDensity": 6,
+      "terrain": [
+        2016,
+        2016
+      ],
+      "unusedBuffer": [
+        1,
+        1
+      ],
+      "actorPass": "final-dpr"
+    }
+  ],
+  "entry": {
+    "floor": 1,
+    "x": 10,
+    "y": 19,
+    "player": {
+      "foot": {
+        "x": 195,
+        "y": 796
+      },
+      "body": {
+        "x": 188.8125,
+        "y": 758.17
+      },
+      "bounds": {
+        "x": 165.375,
+        "y": 723.25,
+        "w": 46.875,
+        "h": 72.75
+      },
+      "visible": true,
+      "cell": {
+        "x": 10,
+        "y": 19
+      },
+      "ready": true
+    },
+    "skill": {
+      "x": 12,
+      "y": 754,
+      "w": 366,
+      "h": 76
+    },
+    "footInsideSkill": true
+  },
+  "draws": [
+    {
+      "id": "enemy_imp",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.7828001181284586
+    },
+    {
+      "id": "npc_lantern",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.7828001181284586
+    },
+    {
+      "id": "actor_wukong_up",
+      "sourceW": 384,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.9393601417541504
+    },
+    {
+      "id": "enemy_thresholdImp",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.4464285572369893
+    },
+    {
+      "id": "enemy_imp",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.4464285572369893
+    },
+    {
+      "id": "npc_lantern",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.4464285572369893
+    },
+    {
+      "id": "actor_wukong_up",
+      "sourceW": 384,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.5357142686843872
+    },
+    {
+      "id": "enemy_imp",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.3125
+    },
+    {
+      "id": "npc_lantern",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.3125
+    },
+    {
+      "id": "actor_wukong_up",
+      "sourceW": 384,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.375
+    },
+    {
+      "id": "enemy_bat",
+      "sourceW": 256,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.3125
+    },
+    {
+      "id": "actor_wukong_right",
+      "sourceW": 384,
+      "sourceH": 384,
+      "logicalScale": 0.25,
+      "context": "main-final",
+      "cssSourceRatio": 0.375
+    }
+  ],
+  "screens": [
+    "E:/githome/mota/tests/v7-renderer-2525x1208.png",
+    "E:/githome/mota/tests/v7-renderer-1440x900.png",
+    "E:/githome/mota/tests/v7-renderer-390x844.png"
+  ]
+}

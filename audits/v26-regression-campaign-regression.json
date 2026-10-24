@@ -1,0 +1,180 @@
+{
+  "startedAt": "2026-10-24T10:09:38.401Z",
+  "checks": [
+    {
+      "name": "Arrival is acknowledged; its concrete objective survives in exploration without a lore wall"
+    },
+    {
+      "name": "Lotus ritual exposes all three offerings and shortage reasons without a sidebar or scrolling",
+      "height": 587.0625,
+      "scroll": 587,
+      "client": 587,
+      "overflow": "visible",
+      "buttons": [
+        {
+          "x": 429,
+          "y": 127.78125,
+          "w": 186,
+          "h": 234.390625
+        },
+        {
+          "x": 627,
+          "y": 127.78125,
+          "w": 186,
+          "h": 234.390625
+        },
+        {
+          "x": 825,
+          "y": 127.78125,
+          "w": 186,
+          "h": 234.390625
+        },
+        {
+          "x": 448,
+          "y": 392.171875,
+          "w": 173.328125,
+          "h": 61.796875
+        },
+        {
+          "x": 633.328125,
+          "y": 392.171875,
+          "w": 173.328125,
+          "h": 61.796875
+        },
+        {
+          "x": 818.65625,
+          "y": 392.171875,
+          "w": 173.328125,
+          "h": 61.796875
+        },
+        {
+          "x": 453,
+          "y": 530.15625,
+          "w": 118.15625,
+          "h": 42
+        },
+        {
+          "x": 912.9375,
+          "y": 530.15625,
+          "w": 74.0625,
+          "h": 42
+        }
+      ],
+      "text": "莲灯 · 修心\n功德 0 金\n凝息珠 1\n1\n磨砺金箍\n攻击 +3\n20 金\n还差 20 金\n2\n灯前疗伤\n生命 +120\n12 金\n还差 12 金\n3\n淬炼护身\n防御 +3\n20 金\n还差 20 金\n4\n调息\n灵息已满\n5\n奉珠换金\n1 珠 → 8 金\n6\n奉珠疗伤\n1 珠 → 50 命\n修行消耗功德；调息只恢复灵息。\n离开莲灯 Esc\n行囊 I\n\n数字键使用 · 方向键切换 · Enter 执行"
+    },
+    {
+      "name": "The cloth inventory has six real slots, no scrolling, exact potion use and safe input/focus",
+      "client": 706,
+      "scroll": 706,
+      "rect": {
+        "x": 80,
+        "w": 1280
+      }
+    },
+    {
+      "name": "A real lotus purchase spends the exact rising price once and shows its result"
+    },
+    {
+      "name": "Key doors retain scene-bound cost confirmation and spend exactly one matching key"
+    },
+    {
+      "name": "Contracts compare costs, rewards and consequences together in the scene; only a legal option commits"
+    },
+    {
+      "name": "Equipment in the cloth slots obeys the real lantern and two-slot rules"
+    },
+    {
+      "name": "A single short dialogue highlights the current task; Space completes then advances"
+    },
+    {
+      "name": "Movement closes the target conversation and removes stale object prompts"
+    },
+    {
+      "name": "The root chest has a complete title, progress and one usable primary action",
+      "h": 43,
+      "w": 242,
+      "line": "24px"
+    },
+    {
+      "name": "Movement battle preview and deliberate second movement still work without held-key attacks"
+    },
+    {
+      "name": "staff has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "morph has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "clone has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "A rejected skill never plays a success cut-in or spends resources"
+    },
+    {
+      "name": "All menu entry points share the same game-wide pause mode and return rule"
+    },
+    {
+      "name": "Both art styles and the user screenshot viewport preserve resources and keep the ritual on screen"
+    },
+    {
+      "name": "Reduced motion presents a static equivalent and preserves the exact action result"
+    },
+    {
+      "name": "Loading an ongoing journey shows the actual current-floor objective before resuming"
+    },
+    {
+      "name": "The current 18-floor UI campaign completes all arrivals, relics, seals, awakening and both endings",
+      "stairs": 17,
+      "fragments": 16,
+      "seals": 5
+    },
+    {
+      "name": "Manual save/load preserves the exact completed campaign"
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-arrival.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-lotus-ritual-poor.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-inventory-material.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-lotus-ritual-result.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-door-confirmation.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-route-rite.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-short-speech.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-locked-chest-readable.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-battle-capsule.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-cinematic-staff.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-cinematic-morph.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-cinematic-clone.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-character.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-inventory-mural.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-inventory-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-ritual-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-reduced-motion.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-floor-02-arrival.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-floor-11-arrival.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-ending-release.png",
+    "E:\\githome\\mota\\audits\\v26-regression-campaign-regression-ending-keep.png"
+  ],
+  "errors": [],
+  "reflections": [],
+  "source": {
+    "index.html": "b9fb63f3295a8dd69b876603bb156fd05c094672ad06cd0f91d0c0bcbe6735c1",
+    "js/ui.js": "9da509e120865c67abcff4ea53fd0bc187dca55b5281e6ea398ceb46ff992f68",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/renderer.js": "b31bbaa6736a82f145f9276d675ee55dbc7f37f0baccb0734910bb4860a8dbe3",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "css/game-surfaces.css": "be046deb7ef44c2efddcefa0274c1f76606fb8dcc06e2226b5be7d10e77e12a5",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179"
+  },
+  "completed": true,
+  "finishedAt": "2026-10-24T10:10:54.815Z"
+}

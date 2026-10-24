@@ -1,0 +1,74 @@
+{
+  "status": "implemented_and_pc_verified_with_subjective_boundaries",
+  "completedAt": "2026-10-23T02:10:24.663Z",
+  "source": {
+    "index.html": "5df6ceaff6f85e675656e3e5c3a693adb5242b03ff470e9e7eb844bd62d998ed",
+    "js/renderer.js": "f0643bf8b621c0ef278a7e58782b4210fb43b77fe582d8a1bc550d76468ff01e",
+    "js/ui.js": "de8c86c18d642b3c6a7362ad5ef16294e8a47efedac84ae81e1c2e754c0031c8",
+    "js/presentation.js": "172c45bdd52218f8f54b66501c81863a505605a9177583762bd4c4c94e50ac96",
+    "js/film-art.js": "207c38e16d09e57166870dfc298c78db5115c5e6b03ca82ebcb9e708a17840a3",
+    "js/story-director.js": "461b393b3ee8d81dcfa209e475c9b0e768f0f6fcc174d7b62cd24667f1b79c8b",
+    "js/assets.js": "f30638d1776333fdd101e810ba4a363f8c814f5ea678f8457aeb4bb573c59b51",
+    "js/material-assets.js": "926cc9c32b2e8fab8ef27fbcc2c39b4ff8e4eb5d8de48d9e0e6b385350899d9e",
+    "css/experience.css": "dfda17cfdc619114a7bfdf39f51bb5cebb52e0e6fb11a77818a80451b376e0cc",
+    "assets/material/props/chest-v13.png": "62ef0cb5663b617dfa9efb19fab4e03a77c53fe496a4895da8aac90b58ba4abf",
+    "assets/mural/props/chest-v13.png": "4a94503da9eb292cf4d05427970c89cdd88b450044d0ade6bf67519e7a3274ae",
+    "assets/material/manifest.json": "4019b9d1461839dded32df4d923243f81a17d7d5ce27d438a53ebf6144fec6e6",
+    "assets/mural/manifest.json": "05e57eecdb667b1fa14f1d404aa658b0122731a5dd6c145db724c0c749681744",
+    "research/chest-v13-registration.json": "e2316aa35937b950f2630d89fe8327678772080672e1adcccf48d7a497000fdd",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f"
+  },
+  "coreRulesUnchangedSinceV12": true,
+  "checks": {
+    "chestStoryAndPacing": 12,
+    "interaction": 21,
+    "cinematicRegression": 19,
+    "legalCampaignActions": 4142,
+    "errors": []
+  },
+  "evidence": [
+    "audits/v13-chest-story.json",
+    "audits/v10-interaction.json",
+    "audits/v12-cinematics.json"
+  ],
+  "actualSizeVisualReview": [
+    "audits/v13-chest-material-first.png",
+    "audits/v13-chest-mural-first.png",
+    "audits/v13-material-chest-locked.png",
+    "audits/v13-seal-shot-1.png",
+    "audits/v13-seal-shot-2.png",
+    "audits/v13-seal-shot-3.png",
+    "audits/v13-mural-wide-story.png",
+    "audits/v13-chrome-chest.png",
+    "audits/v13-chrome-current.png"
+  ],
+  "artGeneration": {
+    "mode": "built-in image_gen",
+    "prompts": "research/v13-image-prompts.json",
+    "assets": [
+      "assets/material/props/chest-v13.png",
+      "assets/mural/props/chest-v13.png"
+    ]
+  },
+  "chrome": {
+    "url": "http://127.0.0.1:8765/",
+    "normalReloadVerified": true,
+    "scriptVersion": "13",
+    "latestObservedAutoSave": {
+      "floor": 2,
+      "hp": 477,
+      "mana": 6,
+      "externalRelics": 2
+    },
+    "qaCheckpointsWrittenToUserProfile": false
+  },
+  "video": "audits/v13-story-preview.webm",
+  "review": "docs/v13-experience-review.md",
+  "boundaries": [
+    "No new voiceover or actor atlas",
+    "Subjective fun and narrative impact require player feedback",
+    "Representative PC Chrome screenshots",
+    "Mobile and broad browser matrix deferred"
+  ]
+}

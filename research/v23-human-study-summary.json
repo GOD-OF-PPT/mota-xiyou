@@ -1,0 +1,24 @@
+{
+  "status": "pending_human_observation",
+  "source": "research\\v23-human-study-template.json",
+  "participantsObserved": 0,
+  "sessionsWithOriginalQuotes": 0,
+  "understanding": {
+    "assessedSessions": 0,
+    "fullyExplained": 0,
+    "fraction": null,
+    "assessedParticipants": 0,
+    "participantsExplainingOneRoute": 0,
+    "participantFraction": null
+  },
+  "executionTimePairs": [],
+  "ambiguousPairsExcluded": [],
+  "medianExecutionReduction": null,
+  "limits": [
+    "Counts describe supplied observations only, not retention or population preference.",
+    "Missing times and judgments remain unknown.",
+    "Time pairs require completed tasks with the same scenario, budget, objective and round; ambiguous duplicates are excluded.",
+    "A human must assess plan reasoning and completion sense against original quotes."
+  ],
+  "fullyAccepted": false
+}

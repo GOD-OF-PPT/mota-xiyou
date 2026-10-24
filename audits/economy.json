@@ -1,0 +1,7960 @@
+{
+  "worlds": [
+    {
+      "floor": 1,
+      "name": "云垂山门",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 1,
+      "bars": 0,
+      "items": {
+        "redKey": 1,
+        "peach": 1,
+        "yellowKey": 1,
+        "blueKey": 1,
+        "bigPeach": 1,
+        "emerald": 1,
+        "amber": 1
+      }
+    },
+    {
+      "floor": 2,
+      "name": "残钟回廊",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "peach": 1,
+        "bigPeach": 1,
+        "coins": 1,
+        "elixir": 1,
+        "jade": 1
+      }
+    },
+    {
+      "floor": 3,
+      "name": "石胎古殿",
+      "enemies": 6,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "yellowKey": 1,
+        "peach": 2,
+        "coins": 2,
+        "bigPeach": 1,
+        "ruby": 1,
+        "emerald": 1
+      }
+    },
+    {
+      "floor": 4,
+      "name": "断云栈道",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 2,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "coins": 1,
+        "peach": 1,
+        "orb": 1,
+        "amber": 1
+      }
+    },
+    {
+      "floor": 5,
+      "name": "百锁偏殿",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "blueKey": 1,
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "orb": 1,
+        "amber": 1,
+        "jade": 1
+      }
+    },
+    {
+      "floor": 6,
+      "name": "照骨禅院",
+      "enemies": 6,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 1,
+      "items": {
+        "bigPeach": 2,
+        "ruby": 1,
+        "coins": 1,
+        "elixir": 1,
+        "peach": 1,
+        "orb": 1,
+        "emerald": 1
+      }
+    },
+    {
+      "floor": 7,
+      "name": "缝天井",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 2,
+      "items": {
+        "bigPeach": 1,
+        "coins": 2,
+        "peach": 1,
+        "amber": 1,
+        "emerald": 1
+      }
+    },
+    {
+      "floor": 8,
+      "name": "无声梵井",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 0,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "amber": 1
+      }
+    },
+    {
+      "floor": 9,
+      "name": "悬丝水牢",
+      "enemies": 6,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 1,
+      "bars": 0,
+      "items": {
+        "bigPeach": 2,
+        "peach": 1,
+        "elixir": 1,
+        "orb": 2,
+        "blueKey": 1,
+        "ruby": 1
+      }
+    },
+    {
+      "floor": 10,
+      "name": "留影棋坪",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "ruby": 1,
+        "jade": 1
+      }
+    },
+    {
+      "floor": 11,
+      "name": "千丝庭",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 2,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "orb": 1,
+        "ruby": 1
+      }
+    },
+    {
+      "floor": 12,
+      "name": "两仪丹庭",
+      "enemies": 6,
+      "altars": 2,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "bigPeach": 1,
+        "emerald": 1,
+        "feast": 1,
+        "elixir": 1,
+        "coins": 1,
+        "orb": 2
+      }
+    },
+    {
+      "floor": 13,
+      "name": "息火莲台",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 0,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "elixir": 1,
+        "ruby": 1
+      }
+    },
+    {
+      "floor": 14,
+      "name": "问心断碑",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 0,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "amber": 1,
+        "emerald": 1
+      }
+    },
+    {
+      "floor": 15,
+      "name": "倒影经阁",
+      "enemies": 6,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "bigPeach": 2,
+        "ruby": 1,
+        "emerald": 1,
+        "peach": 1,
+        "feast": 2,
+        "elixir": 1
+      }
+    },
+    {
+      "floor": 16,
+      "name": "逆莲天梯",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 0,
+      "bars": 0,
+      "items": {
+        "bigPeach": 1,
+        "peach": 1,
+        "coins": 1,
+        "ruby": 1
+      }
+    },
+    {
+      "floor": 17,
+      "name": "三问无生门",
+      "enemies": 3,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "bigPeach": 2,
+        "elixir": 1,
+        "orb": 1,
+        "emerald": 1
+      }
+    },
+    {
+      "floor": 18,
+      "name": "无相塔心",
+      "enemies": 6,
+      "altars": 1,
+      "levers": 1,
+      "plates": 1,
+      "bridges": 1,
+      "bars": 1,
+      "items": {
+        "feast": 2,
+        "elixir": 1,
+        "peach": 2
+      }
+    }
+  ],
+  "runs": [
+    {
+      "build": "none",
+      "actions": 2102,
+      "failed": [],
+      "final": {
+        "version": 1,
+        "floor": 17,
+        "x": 6,
+        "y": 2,
+        "facing": "up",
+        "hp": 106,
+        "atk": 82,
+        "def": 40,
+        "mana": 6,
+        "maxMana": 6,
+        "coins": 842,
+        "keys": {
+          "yellow": 0,
+          "blue": 0,
+          "red": 0
+        },
+        "relics": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "removed": {
+          "f0-13": true,
+          "f0-7": true,
+          "f0-10": true,
+          "f0-9": true,
+          "f0-6": true,
+          "f0-5": true,
+          "f0-8": true,
+          "f0-4": true,
+          "f0-11": true,
+          "f1-7": true,
+          "f1-12": true,
+          "f1-10": true,
+          "f1-8": true,
+          "f1-4": true,
+          "f1-9": true,
+          "f1-6": true,
+          "f2-7": true,
+          "f2-8": true,
+          "f2-2": true,
+          "f2-9": true,
+          "f2-14": true,
+          "f2-10": true,
+          "f2-3": true,
+          "f2-1": true,
+          "f2-4": true,
+          "f2-13": true,
+          "f2-6": true,
+          "f2-5": true,
+          "f2-17": true,
+          "f2-11": true,
+          "f2-15": true,
+          "f2-16": true,
+          "f3-9": true,
+          "f3-6": true,
+          "f3-2": true,
+          "f3-1": true,
+          "f3-4": true,
+          "f3-5": true,
+          "f3-7": true,
+          "f3-3": true,
+          "f4-1": true,
+          "f4-3": true,
+          "f4-5": true,
+          "f4-2": true,
+          "f4-4": true,
+          "f4-8": true,
+          "f4-10": true,
+          "f4-9": true,
+          "f4-7": true,
+          "f4-11": true,
+          "f4-12": true,
+          "f4-6": true,
+          "f5-14": true,
+          "f5-3": true,
+          "f5-11": true,
+          "f5-16": true,
+          "f5-7": true,
+          "f5-8": true,
+          "f5-2": true,
+          "f5-10": true,
+          "f5-4": true,
+          "f5-13": true,
+          "f5-12": true,
+          "f5-5": true,
+          "f5-15": true,
+          "f5-6": true,
+          "f6-9": true,
+          "f6-4": true,
+          "f6-1": true,
+          "f6-7": true,
+          "f6-6": true,
+          "f6-3": true,
+          "f6-10": true,
+          "f6-5": true,
+          "f6-2": true,
+          "f7-7": true,
+          "f7-5": true,
+          "f7-9": true,
+          "f7-8": true,
+          "f7-10": true,
+          "f7-6": true,
+          "f7-4": true,
+          "f8-17": true,
+          "f8-15": true,
+          "f8-5": true,
+          "f8-20": true,
+          "f8-7": true,
+          "f8-6": true,
+          "f8-19": true,
+          "f8-8": true,
+          "f8-2": true,
+          "f8-12": true,
+          "f8-4": true,
+          "f8-18": true,
+          "f8-16": true,
+          "f8-13": true,
+          "f8-14": true,
+          "f9-11": true,
+          "f9-8": true,
+          "f9-12": true,
+          "f9-7": true,
+          "f9-9": true,
+          "f9-10": true,
+          "f9-5": true,
+          "f9-6": true,
+          "f10-9": true,
+          "f10-6": true,
+          "f10-10": true,
+          "f10-13": true,
+          "f10-11": true,
+          "f10-12": true,
+          "f10-7": true,
+          "f10-8": true,
+          "f11-19": true,
+          "f11-15": true,
+          "f11-9": true,
+          "f11-20": true,
+          "f11-6": true,
+          "f11-5": true,
+          "f11-7": true,
+          "f11-16": true,
+          "f11-17": true,
+          "f11-18": true,
+          "f11-21": true,
+          "f11-8": true,
+          "f11-4": true,
+          "f11-10": true,
+          "f12-8": true,
+          "f12-4": true,
+          "f12-7": true,
+          "f12-5": true,
+          "f12-2": true,
+          "f12-1": true,
+          "f12-6": true,
+          "f12-3": true,
+          "f13-11": true,
+          "f13-7": true,
+          "f13-6": true,
+          "f13-5": true,
+          "f13-4": true,
+          "f13-10": true,
+          "f13-9": true,
+          "f13-8": true,
+          "f14-16": true,
+          "f14-19": true,
+          "f14-7": true,
+          "f14-15": true,
+          "f14-14": true,
+          "f14-5": true,
+          "f14-20": true,
+          "f14-17": true,
+          "f14-4": true,
+          "f14-8": true,
+          "f14-18": true,
+          "f14-6": true,
+          "f14-3": true,
+          "f14-9": true,
+          "f14-13": true,
+          "f0-3": true,
+          "f0-12": true,
+          "f15-12": true,
+          "f15-8": true,
+          "f15-9": true,
+          "f15-5": true,
+          "f15-10": true,
+          "f15-7": true,
+          "f16-8": true,
+          "f16-10": true,
+          "f16-12": true,
+          "f16-9": true,
+          "f16-6": true,
+          "f16-11": true,
+          "f16-7": true,
+          "f16-5": true,
+          "f17-14": true,
+          "f17-16": true,
+          "f17-2": true,
+          "f17-17": true,
+          "f17-6": true,
+          "f17-15": true,
+          "f17-3": true,
+          "f17-18": true,
+          "f17-5": true,
+          "f17-4": true,
+          "f17-10": true,
+          "f17-7": true
+        },
+        "switches": {
+          "f1-1": true,
+          "f7-1": true,
+          "f8-10": true,
+          "f8-9": true,
+          "f9-2": true,
+          "f9-1": true,
+          "f10-1": true,
+          "f10-2": true,
+          "f11-11": true,
+          "f11-12": true,
+          "f13-1": true,
+          "f14-11": true,
+          "f14-10": true,
+          "f15-2": true,
+          "f15-1": true,
+          "f16-2": true,
+          "f16-1": true,
+          "f17-9": true,
+          "f17-8": true
+        },
+        "terrain": {
+          "2:3:8": ".",
+          "3:7:4": ".",
+          "3:5:11": ".",
+          "5:6:6": ".",
+          "6:5:6": ".",
+          "6:11:6": ".",
+          "7:11:6": ".",
+          "7:5:10": ".",
+          "8:6:6": ".",
+          "11:6:10": ".",
+          "11:3:10": ".",
+          "14:7:4": ".",
+          "14:11:4": ".",
+          "0:10:9": ".",
+          "16:6:10": ".",
+          "16:3:6": ".",
+          "17:3:6": ".",
+          "17:9:6": "."
+        },
+        "visited": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "seenIntros": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true,
+          "13": true,
+          "14": true,
+          "15": true,
+          "16": true,
+          "17": true,
+          "event:f0-0": true,
+          "event:f2-18": true,
+          "event:f5-1": true,
+          "event:f6-8": true,
+          "event:f8-1": true,
+          "event:f14-1": true,
+          "event:f14-2": true,
+          "event:f0-2": true,
+          "event:f17-1": true
+        },
+        "journal": [
+          {
+            "title": "入塔",
+            "text": "五百年前，灵山借一座无相塔，封住了你取经途中舍下的杀心。如今五枚舍利碎落，塔中众生被困在同一夜。\n\n提灯人说：集齐舍利，你就能取回完整的自己。可那盏灯，为何让你觉得熟悉？",
+            "floor": 0
+          },
+          {
+            "title": "点灯僧",
+            "text": "舍利碎了，塔也失了心。五枚碎片分散在第三、第六、第九、第十二与第十五层，各守着一种被遗忘的念头。\n\n这里不比谁的棒更快。每一战的代价都能看清，敌人不会重生。先拿灵晶，再战守卫，往往能少流很多血。\n\n灵息坛可免费恢复灵息；功德金可换成长。生命不会因上下楼恢复。你手中的随身蟠桃留给真正需要的时候。",
+            "floor": 0
+          },
+          {
+            "title": "残钟回廊",
+            "text": "钟声在西殿响起，东侧的石门却随之振动。塔开始试探你的耐心。",
+            "floor": 1
+          },
+          {
+            "title": "石胎古殿",
+            "text": "山门后的古殿里，一尊石胎守着最初的心跳。第一枚舍利就在它身后。",
+            "floor": 2
+          },
+          {
+            "title": "石生舍利 · 觉醒",
+            "text": "石中传来久违的心跳。金箍棒伸出云海，你想起：力量不是用来把所有门打碎。\n\n金箍架桥：金箍棒：对相邻断桥施术，消耗 1 灵息，永久架桥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 2
+          },
+          {
+            "title": "断桥古碑",
+            "text": "金箍棒可以填补断桥，每次消耗 1 灵息。桥会永久留下。\n\n第一枚舍利觉醒后，山门西南的断桥后藏着朱砂灵晶。黄门也能抵达那里：花钥匙走近路，还是先得到架桥能力？",
+            "floor": 2
+          },
+          {
+            "title": "断云栈道",
+            "text": "石生舍利在掌心微热。前方的云阶只缺一截，却曾阻断无数归途。",
+            "floor": 3
+          },
+          {
+            "title": "百锁偏殿",
+            "text": "偏殿的锁比门还多。有人相信，关上所有门便能守住真相。",
+            "floor": 4
+          },
+          {
+            "title": "照骨禅院",
+            "text": "这里的佛像都没有影子。铜铃声中，你看到自己的骨骼竟是金色。",
+            "floor": 5
+          },
+          {
+            "title": "照骨舍利 · 觉醒",
+            "text": "大圣化作一只青蝉。最细的缝隙，原来容得下一段不肯低头的人生。第三层古殿的铁栅正在等待你。\n\n青蝉化形：七十二变 · 青蝉：对相邻铁栅施术，消耗 1 灵息，穿栅并从内侧永久解锁。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 5
+          },
+          {
+            "title": "照骨壁画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 5
+          },
+          {
+            "title": "缝天井",
+            "text": "院中没有门，只有细得几乎看不见的缝。化蝉的记忆正在苏醒。",
+            "floor": 6
+          },
+          {
+            "title": "蝉蜕石画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 6
+          },
+          {
+            "title": "无声梵井",
+            "text": "声音落到井底便消失了。只有扳杆转动时，北端的石门会遥遥应答。",
+            "floor": 7
+          },
+          {
+            "title": "悬丝水牢",
+            "text": "水声没有回响。每一条渡船都系着绳，却没有一条绳握在岸上的人手中。",
+            "floor": 8
+          },
+          {
+            "title": "渡厄舍利 · 觉醒",
+            "text": "你拔下一根毫毛，另一个你向对岸伸出手。分身可以留守多处镜台，替你完成一个人做不到的选择。\n\n毫毛分身：毫毛分身：点击四格内的镜台，消耗 2 灵息留下永久分身。可隔墙投影，无需直线视野。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 8
+          },
+          {
+            "title": "水牢石简",
+            "text": "西北扳杆与中央镜台，共同控制东南水闸。扳杆可以亲手扳动；镜台需要留下一个分身。\n\n渡厄舍利在中央西侧，由覆水龙侍守护。得到它后，点击四格内的镜台即可留下分身，墙壁不阻挡毫毛投影。\n\n每个镜台只需施术一次，分身会永久留守。分身不会跟你上下楼，也不会在存档后消失。",
+            "floor": 8
+          },
+          {
+            "title": "留影棋坪",
+            "text": "棋坪上没有棋子。你的影子落下时，远处的石门第一次有了回应。",
+            "floor": 9
+          },
+          {
+            "title": "千丝庭",
+            "text": "一根毫毛可以作一座桥，两根毫毛可以替你守住两端。塔从不催你，只等答案。",
+            "floor": 10
+          },
+          {
+            "title": "两仪丹庭",
+            "text": "丹炉仍在燃烧。丹庭被分成慈与怒的两半，而火焰分不清二者的颜色。",
+            "floor": 11
+          },
+          {
+            "title": "慈悲舍利 · 觉醒",
+            "text": "点灯僧摘下面具。他没有脸，却有你当年没有伸出的那只手。“我是你舍下的慈悲。如今，还给你。”\n\n定心护身：被动慈悲护持：每次法术反击减少 8；最终心火真实伤害减少 8。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 11
+          },
+          {
+            "title": "息火莲台",
+            "text": "慈悲舍利使塔中的火焰变得温和。你终于听清，火声之下有人在哭。",
+            "floor": 12
+          },
+          {
+            "title": "问心断碑",
+            "text": "碑将守着一块空白的石头。你忽然意识到，很多守卫并不值得战胜。",
+            "floor": 13
+          },
+          {
+            "title": "倒影经阁",
+            "text": "所有经卷都在描绘同一个人。每翻一页，那个人便少了一种情感。",
+            "floor": 14
+          },
+          {
+            "title": "明心舍利 · 觉醒",
+            "text": "所有碎片拼成的不是佛像，而是一颗心。塔心里，锁着你被分割的嗔怒。回到第一层出发的山门，带走完整的自己。\n\n归真共鸣：五舍利共鸣：返回第一层云垂山门，开启归根之匣，取得十八层朱门的唯一心钥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 14
+          },
+          {
+            "title": "无字经卷",
+            "text": "西北经室的门需要东南扳杆，以及北侧隔墙镜台同时响应。你无需走到镜台上：四格之内，毫毛会替你找到路。\n\n此层东方的两条上行通道，一条是铁栅，一条是断桥。不同能力可以解决同一个问题。\n\n五枚舍利齐聚后，请回到第一层山门东侧的归根之匣。塔心的朱门只认那把心钥。",
+            "floor": 14
+          },
+          {
+            "title": "点灯僧",
+            "text": "经卷里写着：大圣曾求塔主为他除去痛苦。塔主照做了，连同慈悲与愤怒一并剥离。\n\n可一颗不会痛的心，也记不得为何出发。五舍利并非五份神力，是五段被你否认的记忆。\n\n塔心的怪物叫心猿。它在替你记住所有不公。胜过它，然后自己决定：带它离开，还是再次把它镇住。",
+            "floor": 14
+          },
+          {
+            "title": "归根石刻",
+            "text": "“五光归一，初心为钥。”此匣在五舍利齐聚后开启。\n\n匣中只有一把归根心钥，用来开启十八层中央朱门。现在便记下它的位置：一层，山门最东。",
+            "floor": 0
+          },
+          {
+            "title": "逆莲天梯",
+            "text": "五枚舍利齐鸣，整座塔的脚步声都在向下。你知道，最后的钥匙不在高处。",
+            "floor": 15
+          },
+          {
+            "title": "三问无生门",
+            "text": "最后一段阶梯上，点灯僧没有再出现。他的灯，已经在你的心里。",
+            "floor": 16
+          },
+          {
+            "title": "无相塔心",
+            "text": "塔心没有佛像。金色牢笼中，一只与你一模一样的猿猴，抬起了眼睛。",
+            "floor": 17
+          },
+          {
+            "title": "塔心铭文",
+            "text": "西侧：金箍棒架桥，扳下止战扳杆。东侧：青蝉穿栅，将分身留在归心镜台。二者齐备，中央心门才会开启。\n\n中央朱门需要归根心钥。若未取得，请返回一层东南的归根之匣；五枚舍利会让它开启。\n\n心猿会先攻，随后每次反击按攻击减防御计算；最后另有一次心火。火眼金睛展示的损失，已经包括慈悲减伤。请在最后一战前用尽真正需要的准备。",
+            "floor": 17
+          },
+          {
+            "title": "无相之心",
+            "text": "你击碎最后一层金甲，露出的却不是妖魔。\n\n那是五百年前的你。暴戾，也孤独。提灯人将灯递来——灯中一直护着塔里每一个亡魂。\n\n“我是你被舍去的慈悲。舍利从来不属于佛，也不属于塔。它们是你一路作出的选择。”\n\n走向塔心，决定这份力量的归处。",
+            "floor": 17
+          }
+        ],
+        "log": [
+          {
+            "text": "舍利归尘，众生出塔。",
+            "kind": "relic",
+            "turn": 2101
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2086
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 2085
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 2084
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2083
+          },
+          {
+            "text": "击败无相 · 心猿 · 损失 1872 生命，获得 0 金。",
+            "kind": "combat",
+            "turn": 2070
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2067
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2066
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2065
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2064
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2063
+          },
+          {
+            "text": "服下随身蟠桃 · 生命 +200。",
+            "kind": "item",
+            "turn": 2062
+          },
+          {
+            "text": "消耗 1 把朱钥匙，门已开启。",
+            "kind": "item",
+            "turn": 2061
+          },
+          {
+            "text": "止战扳杆已接通。",
+            "kind": "magic",
+            "turn": 2053
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 100 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2051
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 100 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2028
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 2027
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2023
+          },
+          {
+            "text": "击败失心战影 · 损失 51 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2021
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2009
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 1991
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 1986
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 1977
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 1965
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 1961
+          },
+          {
+            "text": "击败失心战影 · 损失 51 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 1959
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 1953
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1949
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 1945
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1941
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 1940
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 1921
+          },
+          {
+            "text": "抵达 逆莲天梯",
+            "kind": "story",
+            "turn": 1920
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 100 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 1915
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 1904
+          },
+          {
+            "text": "获得凝息珠 · 收入行囊；随时使用，补满 6 点灵息。",
+            "kind": "item",
+            "turn": 1889
+          },
+          {
+            "text": "止妄扳杆已接通。",
+            "kind": "magic",
+            "turn": 1885
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 1879
+          },
+          {
+            "text": "击败失心战影 · 损失 51 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 1874
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1867
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 1856
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 1848
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1835
+          },
+          {
+            "text": "获得碧髓灵晶 · 永久防御 +4。",
+            "kind": "item",
+            "turn": 1831
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 1827
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1817
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1813
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 1812
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 1803
+          },
+          {
+            "text": "获得功德金 · 获得 12 功德，可在灵息坛换取成长或治疗。",
+            "kind": "item",
+            "turn": 1793
+          }
+        ],
+        "elixirs": 3,
+        "orbs": 10,
+        "turn": 2102,
+        "defeated": false,
+        "won": true,
+        "ending": "release",
+        "purchases": {
+          "atk": 0,
+          "def": 0,
+          "heal": 0
+        },
+        "startedAt": 1792590363678,
+        "kills": 69
+      },
+      "fights": [
+        {
+          "i": 18,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-6",
+          "beforeHP": 800,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 27,
+          "floor": 1,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f0-5",
+          "beforeHP": 790,
+          "atk": 27,
+          "def": 10,
+          "damage": 39,
+          "rounds": 3,
+          "gold": 4,
+          "plus3Atk": 26,
+          "plus3Def": 30
+        },
+        {
+          "i": 36,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-4",
+          "beforeHP": 751,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 98,
+          "floor": 2,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f1-4",
+          "beforeHP": 921,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 112,
+          "floor": 2,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f1-6",
+          "beforeHP": 913,
+          "atk": 27,
+          "def": 12,
+          "damage": 85,
+          "rounds": 6,
+          "gold": 7,
+          "plus3Atk": 68,
+          "plus3Def": 70
+        },
+        {
+          "i": 134,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-2",
+          "beforeHP": 888,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 164,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-3",
+          "beforeHP": 1060,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 175,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-1",
+          "beforeHP": 1052,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 183,
+          "floor": 3,
+          "enemy": "荆棘山魈",
+          "enemyId": "thorn",
+          "entity": "f2-4",
+          "beforeHP": 1044,
+          "atk": 27,
+          "def": 12,
+          "damage": 78,
+          "rounds": 5,
+          "gold": 5,
+          "plus3Atk": 59,
+          "plus3Def": 66
+        },
+        {
+          "i": 189,
+          "floor": 3,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f2-6",
+          "beforeHP": 966,
+          "atk": 27,
+          "def": 12,
+          "damage": 33,
+          "rounds": 3,
+          "gold": 4,
+          "plus3Atk": 22,
+          "plus3Def": 24
+        },
+        {
+          "i": 200,
+          "floor": 3,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f2-5",
+          "beforeHP": 933,
+          "atk": 27,
+          "def": 12,
+          "damage": 85,
+          "rounds": 6,
+          "gold": 7,
+          "plus3Atk": 68,
+          "plus3Def": 70
+        },
+        {
+          "i": 288,
+          "floor": 4,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f3-2",
+          "beforeHP": 1008,
+          "atk": 35,
+          "def": 12,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 293,
+          "floor": 4,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f3-1",
+          "beforeHP": 960,
+          "atk": 35,
+          "def": 12,
+          "damage": 57,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 57,
+          "plus3Def": 48
+        },
+        {
+          "i": 330,
+          "floor": 4,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f3-3",
+          "beforeHP": 1023,
+          "atk": 35,
+          "def": 12,
+          "damage": 115,
+          "rounds": 6,
+          "gold": 9,
+          "plus3Atk": 92,
+          "plus3Def": 100
+        },
+        {
+          "i": 392,
+          "floor": 5,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f4-5",
+          "beforeHP": 908,
+          "atk": 35,
+          "def": 12,
+          "damage": 86,
+          "rounds": 4,
+          "gold": 7,
+          "plus3Atk": 86,
+          "plus3Def": 77
+        },
+        {
+          "i": 408,
+          "floor": 5,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f4-4",
+          "beforeHP": 822,
+          "atk": 35,
+          "def": 12,
+          "damage": 57,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 57,
+          "plus3Def": 48
+        },
+        {
+          "i": 443,
+          "floor": 5,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f4-6",
+          "beforeHP": 945,
+          "atk": 38,
+          "def": 14,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 481,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-3",
+          "beforeHP": 897,
+          "atk": 38,
+          "def": 14,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 34,
+          "plus3Def": 42
+        },
+        {
+          "i": 491,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-7",
+          "beforeHP": 966,
+          "atk": 38,
+          "def": 14,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 34,
+          "plus3Def": 42
+        },
+        {
+          "i": 495,
+          "floor": 6,
+          "enemy": "照骨禅师",
+          "enemyId": "bone",
+          "entity": "f5-2",
+          "beforeHP": 1015,
+          "atk": 38,
+          "def": 14,
+          "damage": 144,
+          "rounds": 6,
+          "gold": 12,
+          "plus3Atk": 144,
+          "plus3Def": 126
+        },
+        {
+          "i": 534,
+          "floor": 6,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f5-4",
+          "beforeHP": 991,
+          "atk": 38,
+          "def": 14,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 554,
+          "floor": 6,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f5-5",
+          "beforeHP": 943,
+          "atk": 43,
+          "def": 14,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 60,
+          "plus3Def": 54
+        },
+        {
+          "i": 563,
+          "floor": 6,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f5-6",
+          "beforeHP": 943,
+          "atk": 43,
+          "def": 14,
+          "damage": 63,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 63,
+          "plus3Def": 54
+        },
+        {
+          "i": 615,
+          "floor": 7,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f6-1",
+          "beforeHP": 1000,
+          "atk": 46,
+          "def": 14,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 60,
+          "plus3Def": 54
+        },
+        {
+          "i": 637,
+          "floor": 7,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f6-3",
+          "beforeHP": 1000,
+          "atk": 46,
+          "def": 14,
+          "damage": 63,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 63,
+          "plus3Def": 54
+        },
+        {
+          "i": 650,
+          "floor": 7,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f6-2",
+          "beforeHP": 937,
+          "atk": 46,
+          "def": 18,
+          "damage": 84,
+          "rounds": 4,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 84
+        },
+        {
+          "i": 695,
+          "floor": 8,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f7-5",
+          "beforeHP": 973,
+          "atk": 46,
+          "def": 18,
+          "damage": 84,
+          "rounds": 4,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 84
+        },
+        {
+          "i": 758,
+          "floor": 8,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f7-6",
+          "beforeHP": 949,
+          "atk": 49,
+          "def": 18,
+          "damage": 52,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 52,
+          "plus3Def": 46
+        },
+        {
+          "i": 770,
+          "floor": 8,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f7-4",
+          "beforeHP": 897,
+          "atk": 49,
+          "def": 18,
+          "damage": 72,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 72,
+          "plus3Def": 63
+        },
+        {
+          "i": 803,
+          "floor": 9,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f8-5",
+          "beforeHP": 825,
+          "atk": 49,
+          "def": 18,
+          "damage": 72,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 72,
+          "plus3Def": 63
+        },
+        {
+          "i": 810,
+          "floor": 9,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f8-7",
+          "beforeHP": 753,
+          "atk": 49,
+          "def": 18,
+          "damage": 52,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 52,
+          "plus3Def": 46
+        },
+        {
+          "i": 815,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-6",
+          "beforeHP": 701,
+          "atk": 49,
+          "def": 18,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 56
+        },
+        {
+          "i": 861,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-2",
+          "beforeHP": 745,
+          "atk": 49,
+          "def": 18,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 56
+        },
+        {
+          "i": 873,
+          "floor": 9,
+          "enemy": "玄甲河将",
+          "enemyId": "crab",
+          "entity": "f8-4",
+          "beforeHP": 809,
+          "atk": 49,
+          "def": 18,
+          "damage": 96,
+          "rounds": 5,
+          "gold": 11,
+          "plus3Atk": 96,
+          "plus3Def": 84
+        },
+        {
+          "i": 927,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-7",
+          "beforeHP": 1013,
+          "atk": 59,
+          "def": 20,
+          "damage": 102,
+          "rounds": 4,
+          "gold": 10,
+          "plus3Atk": 102,
+          "plus3Def": 102
+        },
+        {
+          "i": 953,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-5",
+          "beforeHP": 971,
+          "atk": 59,
+          "def": 20,
+          "damage": 102,
+          "rounds": 4,
+          "gold": 10,
+          "plus3Atk": 102,
+          "plus3Def": 102
+        },
+        {
+          "i": 977,
+          "floor": 10,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f9-6",
+          "beforeHP": 869,
+          "atk": 59,
+          "def": 20,
+          "damage": 140,
+          "rounds": 5,
+          "gold": 12,
+          "plus3Atk": 114,
+          "plus3Def": 128
+        },
+        {
+          "i": 1030,
+          "floor": 11,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f10-6",
+          "beforeHP": 849,
+          "atk": 59,
+          "def": 20,
+          "damage": 45,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 45,
+          "plus3Def": 39
+        },
+        {
+          "i": 1108,
+          "floor": 11,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f10-7",
+          "beforeHP": 864,
+          "atk": 64,
+          "def": 20,
+          "damage": 114,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 114,
+          "plus3Def": 105
+        },
+        {
+          "i": 1113,
+          "floor": 11,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f10-8",
+          "beforeHP": 750,
+          "atk": 64,
+          "def": 20,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1151,
+          "floor": 12,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f11-9",
+          "beforeHP": 802,
+          "atk": 64,
+          "def": 20,
+          "damage": 45,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 45,
+          "plus3Def": 39
+        },
+        {
+          "i": 1159,
+          "floor": 12,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f11-6",
+          "beforeHP": 757,
+          "atk": 64,
+          "def": 20,
+          "damage": 114,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 114,
+          "plus3Def": 105
+        },
+        {
+          "i": 1210,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-5",
+          "beforeHP": 643,
+          "atk": 64,
+          "def": 20,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1221,
+          "floor": 12,
+          "enemy": "赤炉金刚",
+          "enemyId": "furnace",
+          "entity": "f11-7",
+          "beforeHP": 575,
+          "atk": 64,
+          "def": 20,
+          "damage": 120,
+          "rounds": 5,
+          "gold": 16,
+          "plus3Atk": 120,
+          "plus3Def": 108
+        },
+        {
+          "i": 1301,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-8",
+          "beforeHP": 635,
+          "atk": 64,
+          "def": 24,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1327,
+          "floor": 12,
+          "enemy": "两仪判官",
+          "enemyId": "judge",
+          "entity": "f11-4",
+          "beforeHP": 567,
+          "atk": 64,
+          "def": 24,
+          "damage": 135,
+          "rounds": 5,
+          "gold": 18,
+          "plus3Atk": 135,
+          "plus3Def": 120
+        },
+        {
+          "i": 1391,
+          "floor": 13,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f12-2",
+          "beforeHP": 712,
+          "atk": 69,
+          "def": 24,
+          "damage": 52,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 52,
+          "plus3Def": 52
+        },
+        {
+          "i": 1413,
+          "floor": 13,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f12-1",
+          "beforeHP": 660,
+          "atk": 69,
+          "def": 24,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 90,
+          "plus3Def": 90
+        },
+        {
+          "i": 1425,
+          "floor": 13,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f12-3",
+          "beforeHP": 570,
+          "atk": 69,
+          "def": 24,
+          "damage": 11,
+          "rounds": 2,
+          "gold": 9,
+          "plus3Atk": 11,
+          "plus3Def": 8
+        },
+        {
+          "i": 1470,
+          "floor": 14,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f13-6",
+          "beforeHP": 679,
+          "atk": 69,
+          "def": 28,
+          "damage": 162,
+          "rounds": 7,
+          "gold": 16,
+          "plus3Atk": 135,
+          "plus3Def": 144
+        },
+        {
+          "i": 1488,
+          "floor": 14,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f13-5",
+          "beforeHP": 517,
+          "atk": 69,
+          "def": 28,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 90,
+          "plus3Def": 90
+        },
+        {
+          "i": 1500,
+          "floor": 14,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f13-4",
+          "beforeHP": 427,
+          "atk": 69,
+          "def": 28,
+          "damage": 120,
+          "rounds": 5,
+          "gold": 13,
+          "plus3Atk": 91,
+          "plus3Def": 108
+        },
+        {
+          "i": 1580,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-7",
+          "beforeHP": 487,
+          "atk": 72,
+          "def": 28,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 90
+        },
+        {
+          "i": 1634,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-5",
+          "beforeHP": 397,
+          "atk": 77,
+          "def": 32,
+          "damage": 79,
+          "rounds": 4,
+          "gold": 13,
+          "plus3Atk": 79,
+          "plus3Def": 70
+        },
+        {
+          "i": 1646,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-4",
+          "beforeHP": 558,
+          "atk": 77,
+          "def": 32,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1660,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-8",
+          "beforeHP": 498,
+          "atk": 77,
+          "def": 32,
+          "damage": 79,
+          "rounds": 4,
+          "gold": 13,
+          "plus3Atk": 79,
+          "plus3Def": 70
+        },
+        {
+          "i": 1672,
+          "floor": 15,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f14-6",
+          "beforeHP": 599,
+          "atk": 77,
+          "def": 32,
+          "damage": 115,
+          "rounds": 6,
+          "gold": 16,
+          "plus3Atk": 92,
+          "plus3Def": 100
+        },
+        {
+          "i": 1691,
+          "floor": 15,
+          "enemy": "藏经无相",
+          "enemyId": "archivist",
+          "entity": "f14-3",
+          "beforeHP": 484,
+          "atk": 77,
+          "def": 32,
+          "damage": 130,
+          "rounds": 5,
+          "gold": 21,
+          "plus3Atk": 130,
+          "plus3Def": 115
+        },
+        {
+          "i": 1787,
+          "floor": 16,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f15-5",
+          "beforeHP": 754,
+          "atk": 82,
+          "def": 36,
+          "damage": 63,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 63,
+          "plus3Def": 54
+        },
+        {
+          "i": 1803,
+          "floor": 16,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f15-7",
+          "beforeHP": 691,
+          "atk": 82,
+          "def": 36,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1874,
+          "floor": 17,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f16-6",
+          "beforeHP": 871,
+          "atk": 82,
+          "def": 40,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 51,
+          "plus3Def": 42
+        },
+        {
+          "i": 1904,
+          "floor": 17,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f16-7",
+          "beforeHP": 820,
+          "atk": 82,
+          "def": 40,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1915,
+          "floor": 17,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f16-5",
+          "beforeHP": 760,
+          "atk": 82,
+          "def": 40,
+          "damage": 100,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 80,
+          "plus3Def": 85
+        },
+        {
+          "i": 1959,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-2",
+          "beforeHP": 840,
+          "atk": 82,
+          "def": 40,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 51,
+          "plus3Def": 42
+        },
+        {
+          "i": 1977,
+          "floor": 18,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f17-6",
+          "beforeHP": 849,
+          "atk": 82,
+          "def": 40,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 2021,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-3",
+          "beforeHP": 969,
+          "atk": 82,
+          "def": 40,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 51,
+          "plus3Def": 42
+        },
+        {
+          "i": 2028,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-5",
+          "beforeHP": 978,
+          "atk": 82,
+          "def": 40,
+          "damage": 100,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 80,
+          "plus3Def": 85
+        },
+        {
+          "i": 2051,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-4",
+          "beforeHP": 878,
+          "atk": 82,
+          "def": 40,
+          "damage": 100,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 80,
+          "plus3Def": 85
+        },
+        {
+          "i": 2070,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 1978,
+          "atk": 82,
+          "def": 40,
+          "damage": 1872,
+          "rounds": 36,
+          "gold": 0,
+          "plus3Atk": 1722,
+          "plus3Def": 1764
+        }
+      ],
+      "summary": {
+        "kills": 69,
+        "zeroDamage": 0,
+        "totalDamage": 6714,
+        "boss": {
+          "i": 2070,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 1978,
+          "atk": 82,
+          "def": 40,
+          "damage": 1872,
+          "rounds": 36,
+          "gold": 0,
+          "plus3Atk": 1722,
+          "plus3Def": 1764
+        },
+        "damageBeforeBoss": 4842,
+        "hpMargin": 706,
+        "orbUses": 0,
+        "healsUsed": 6,
+        "abilityUses": {
+          "staff": 10,
+          "morph": 8,
+          "clone": 9
+        },
+        "purchase": []
+      },
+      "floorTotals": [
+        {
+          "floor": 1,
+          "hpGain": 180,
+          "damage": 59,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 2,
+          "hpGain": 180,
+          "damage": 93,
+          "spells": 0,
+          "kills": 2,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 3,
+          "hpGain": 340,
+          "damage": 220,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 4,
+          "hpGain": 180,
+          "damage": 220,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 5,
+          "hpGain": 180,
+          "damage": 191,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 6,
+          "hpGain": 400,
+          "damage": 417,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 7,
+          "hpGain": 180,
+          "damage": 207,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 8,
+          "hpGain": 180,
+          "damage": 208,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 9,
+          "hpGain": 400,
+          "damage": 332,
+          "spells": 2,
+          "kills": 5,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 10,
+          "hpGain": 180,
+          "damage": 344,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 11,
+          "hpGain": 180,
+          "damage": 227,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 12,
+          "hpGain": 400,
+          "damage": 550,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 13,
+          "hpGain": 180,
+          "damage": 153,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 14,
+          "hpGain": 180,
+          "damage": 372,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 15,
+          "hpGain": 760,
+          "damage": 553,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 16,
+          "hpGain": 180,
+          "damage": 123,
+          "spells": 1,
+          "kills": 2,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 17,
+          "hpGain": 240,
+          "damage": 211,
+          "spells": 3,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 18,
+          "hpGain": 1680,
+          "damage": 2234,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        }
+      ],
+      "mana": [
+        {
+          "i": 215,
+          "floor": 3,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            8
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 226,
+          "floor": 3,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 286,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            7,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 304,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 307,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            5,
+            11
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 354,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 541,
+          "floor": 6,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 574,
+          "floor": 6,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 605,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 617,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            11,
+            6
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 668,
+          "floor": 7,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 713,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 746,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            10
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 775,
+          "floor": 8,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 842,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 844,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            6
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 851,
+          "floor": 9,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 923,
+          "floor": 10,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1029,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            9
+          ],
+          "manaBefore": 4,
+          "manaAfter": 2
+        },
+        {
+          "i": 1087,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 2,
+          "manaAfter": 6
+        },
+        {
+          "i": 1096,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1104,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 1167,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            1,
+            9
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1169,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1188,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1271,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            10
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1300,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1584,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            5,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1585,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            7,
+            4
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1611,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1626,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1693,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "up"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1718,
+          "floor": 15,
+          "action": "travel",
+          "args": [
+            0
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1733,
+          "floor": 1,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            10,
+            9
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 1734,
+          "floor": 1,
+          "action": "travel",
+          "args": [
+            14
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1774,
+          "floor": 16,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            9,
+            5
+          ],
+          "manaBefore": 3,
+          "manaAfter": 1
+        },
+        {
+          "i": 1813,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 1,
+          "manaAfter": 6
+        },
+        {
+          "i": 1848,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            6,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1856,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1867,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1879,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1941,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1961,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1991,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            11,
+            3
+          ],
+          "manaBefore": 5,
+          "manaAfter": 3
+        },
+        {
+          "i": 2009,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 2023,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            9,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2083,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        }
+      ],
+      "returns": [
+        {
+          "i": 1718,
+          "from": 15,
+          "to": 1,
+          "manaAfter": 5
+        },
+        {
+          "i": 1734,
+          "from": 1,
+          "to": 15,
+          "manaAfter": 3
+        }
+      ]
+    },
+    {
+      "build": "atk",
+      "actions": 2262,
+      "failed": [],
+      "final": {
+        "version": 1,
+        "floor": 17,
+        "x": 6,
+        "y": 2,
+        "facing": "up",
+        "hp": 1410,
+        "atk": 112,
+        "def": 40,
+        "mana": 6,
+        "maxMana": 6,
+        "coins": 102,
+        "keys": {
+          "yellow": 0,
+          "blue": 0,
+          "red": 0
+        },
+        "relics": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "removed": {
+          "f0-13": true,
+          "f0-7": true,
+          "f0-10": true,
+          "f0-9": true,
+          "f0-6": true,
+          "f0-5": true,
+          "f0-8": true,
+          "f0-4": true,
+          "f0-11": true,
+          "f1-7": true,
+          "f1-12": true,
+          "f1-10": true,
+          "f1-8": true,
+          "f1-4": true,
+          "f1-9": true,
+          "f1-6": true,
+          "f2-7": true,
+          "f2-8": true,
+          "f2-2": true,
+          "f2-9": true,
+          "f2-14": true,
+          "f2-10": true,
+          "f2-3": true,
+          "f2-1": true,
+          "f2-5": true,
+          "f2-17": true,
+          "f2-11": true,
+          "f2-4": true,
+          "f2-13": true,
+          "f2-6": true,
+          "f2-16": true,
+          "f2-15": true,
+          "f3-9": true,
+          "f3-6": true,
+          "f3-1": true,
+          "f3-2": true,
+          "f3-4": true,
+          "f3-5": true,
+          "f3-7": true,
+          "f3-3": true,
+          "f4-1": true,
+          "f4-3": true,
+          "f4-5": true,
+          "f4-2": true,
+          "f4-4": true,
+          "f4-8": true,
+          "f4-10": true,
+          "f4-9": true,
+          "f4-7": true,
+          "f4-11": true,
+          "f4-12": true,
+          "f4-6": true,
+          "f5-14": true,
+          "f5-3": true,
+          "f5-11": true,
+          "f5-16": true,
+          "f5-7": true,
+          "f5-8": true,
+          "f5-2": true,
+          "f5-10": true,
+          "f5-4": true,
+          "f5-13": true,
+          "f5-12": true,
+          "f5-5": true,
+          "f5-15": true,
+          "f5-6": true,
+          "f6-9": true,
+          "f6-4": true,
+          "f6-1": true,
+          "f6-7": true,
+          "f6-6": true,
+          "f6-3": true,
+          "f6-10": true,
+          "f6-5": true,
+          "f6-2": true,
+          "f7-7": true,
+          "f7-5": true,
+          "f7-9": true,
+          "f7-8": true,
+          "f7-10": true,
+          "f7-6": true,
+          "f7-4": true,
+          "f8-17": true,
+          "f8-15": true,
+          "f8-5": true,
+          "f8-20": true,
+          "f8-7": true,
+          "f8-6": true,
+          "f8-19": true,
+          "f8-8": true,
+          "f8-2": true,
+          "f8-12": true,
+          "f8-4": true,
+          "f8-18": true,
+          "f8-16": true,
+          "f8-13": true,
+          "f8-14": true,
+          "f9-11": true,
+          "f9-8": true,
+          "f9-12": true,
+          "f9-7": true,
+          "f9-9": true,
+          "f9-10": true,
+          "f9-5": true,
+          "f9-6": true,
+          "f10-9": true,
+          "f10-6": true,
+          "f10-10": true,
+          "f10-13": true,
+          "f10-11": true,
+          "f10-12": true,
+          "f10-7": true,
+          "f10-8": true,
+          "f11-19": true,
+          "f11-15": true,
+          "f11-9": true,
+          "f11-20": true,
+          "f11-6": true,
+          "f11-5": true,
+          "f11-7": true,
+          "f11-16": true,
+          "f11-17": true,
+          "f11-18": true,
+          "f11-21": true,
+          "f11-8": true,
+          "f11-4": true,
+          "f11-10": true,
+          "f12-8": true,
+          "f12-4": true,
+          "f12-7": true,
+          "f12-5": true,
+          "f12-2": true,
+          "f12-1": true,
+          "f12-6": true,
+          "f12-3": true,
+          "f13-11": true,
+          "f13-7": true,
+          "f13-6": true,
+          "f13-5": true,
+          "f13-4": true,
+          "f13-10": true,
+          "f13-9": true,
+          "f13-8": true,
+          "f14-16": true,
+          "f14-19": true,
+          "f14-7": true,
+          "f14-15": true,
+          "f14-14": true,
+          "f14-5": true,
+          "f14-20": true,
+          "f14-17": true,
+          "f14-4": true,
+          "f14-8": true,
+          "f14-18": true,
+          "f14-6": true,
+          "f14-3": true,
+          "f14-9": true,
+          "f14-13": true,
+          "f0-3": true,
+          "f0-12": true,
+          "f15-12": true,
+          "f15-8": true,
+          "f15-9": true,
+          "f15-5": true,
+          "f15-10": true,
+          "f15-7": true,
+          "f16-8": true,
+          "f16-10": true,
+          "f16-12": true,
+          "f16-9": true,
+          "f16-7": true,
+          "f16-11": true,
+          "f16-6": true,
+          "f16-5": true,
+          "f17-14": true,
+          "f17-16": true,
+          "f17-6": true,
+          "f17-15": true,
+          "f17-3": true,
+          "f17-18": true,
+          "f17-2": true,
+          "f17-17": true,
+          "f17-4": true,
+          "f17-5": true,
+          "f17-10": true,
+          "f17-7": true
+        },
+        "switches": {
+          "f1-1": true,
+          "f7-1": true,
+          "f8-10": true,
+          "f8-9": true,
+          "f9-2": true,
+          "f9-1": true,
+          "f10-1": true,
+          "f10-2": true,
+          "f11-11": true,
+          "f11-12": true,
+          "f13-1": true,
+          "f14-11": true,
+          "f14-10": true,
+          "f15-2": true,
+          "f15-1": true,
+          "f16-2": true,
+          "f16-1": true,
+          "f17-9": true,
+          "f17-8": true
+        },
+        "terrain": {
+          "2:3:8": ".",
+          "3:7:4": ".",
+          "3:5:11": ".",
+          "5:6:6": ".",
+          "6:5:6": ".",
+          "6:11:6": ".",
+          "7:11:6": ".",
+          "7:5:10": ".",
+          "8:6:6": ".",
+          "11:6:10": ".",
+          "11:3:10": ".",
+          "14:7:4": ".",
+          "14:11:4": ".",
+          "0:10:9": ".",
+          "16:6:10": ".",
+          "16:3:6": ".",
+          "17:9:6": ".",
+          "17:3:6": "."
+        },
+        "visited": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "seenIntros": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true,
+          "13": true,
+          "14": true,
+          "15": true,
+          "16": true,
+          "17": true,
+          "event:f0-0": true,
+          "event:f2-18": true,
+          "event:f5-1": true,
+          "event:f6-8": true,
+          "event:f8-1": true,
+          "event:f14-1": true,
+          "event:f14-2": true,
+          "event:f0-2": true,
+          "event:f17-1": true
+        },
+        "journal": [
+          {
+            "title": "入塔",
+            "text": "五百年前，灵山借一座无相塔，封住了你取经途中舍下的杀心。如今五枚舍利碎落，塔中众生被困在同一夜。\n\n提灯人说：集齐舍利，你就能取回完整的自己。可那盏灯，为何让你觉得熟悉？",
+            "floor": 0
+          },
+          {
+            "title": "点灯僧",
+            "text": "舍利碎了，塔也失了心。五枚碎片分散在第三、第六、第九、第十二与第十五层，各守着一种被遗忘的念头。\n\n这里不比谁的棒更快。每一战的代价都能看清，敌人不会重生。先拿灵晶，再战守卫，往往能少流很多血。\n\n灵息坛可免费恢复灵息；功德金可换成长。生命不会因上下楼恢复。你手中的随身蟠桃留给真正需要的时候。",
+            "floor": 0
+          },
+          {
+            "title": "残钟回廊",
+            "text": "钟声在西殿响起，东侧的石门却随之振动。塔开始试探你的耐心。",
+            "floor": 1
+          },
+          {
+            "title": "石胎古殿",
+            "text": "山门后的古殿里，一尊石胎守着最初的心跳。第一枚舍利就在它身后。",
+            "floor": 2
+          },
+          {
+            "title": "石生舍利 · 觉醒",
+            "text": "石中传来久违的心跳。金箍棒伸出云海，你想起：力量不是用来把所有门打碎。\n\n金箍架桥：金箍棒：对相邻断桥施术，消耗 1 灵息，永久架桥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 2
+          },
+          {
+            "title": "断桥古碑",
+            "text": "金箍棒可以填补断桥，每次消耗 1 灵息。桥会永久留下。\n\n第一枚舍利觉醒后，山门西南的断桥后藏着朱砂灵晶。黄门也能抵达那里：花钥匙走近路，还是先得到架桥能力？",
+            "floor": 2
+          },
+          {
+            "title": "断云栈道",
+            "text": "石生舍利在掌心微热。前方的云阶只缺一截，却曾阻断无数归途。",
+            "floor": 3
+          },
+          {
+            "title": "百锁偏殿",
+            "text": "偏殿的锁比门还多。有人相信，关上所有门便能守住真相。",
+            "floor": 4
+          },
+          {
+            "title": "照骨禅院",
+            "text": "这里的佛像都没有影子。铜铃声中，你看到自己的骨骼竟是金色。",
+            "floor": 5
+          },
+          {
+            "title": "照骨舍利 · 觉醒",
+            "text": "大圣化作一只青蝉。最细的缝隙，原来容得下一段不肯低头的人生。第三层古殿的铁栅正在等待你。\n\n青蝉化形：七十二变 · 青蝉：对相邻铁栅施术，消耗 1 灵息，穿栅并从内侧永久解锁。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 5
+          },
+          {
+            "title": "照骨壁画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 5
+          },
+          {
+            "title": "缝天井",
+            "text": "院中没有门，只有细得几乎看不见的缝。化蝉的记忆正在苏醒。",
+            "floor": 6
+          },
+          {
+            "title": "蝉蜕石画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 6
+          },
+          {
+            "title": "无声梵井",
+            "text": "声音落到井底便消失了。只有扳杆转动时，北端的石门会遥遥应答。",
+            "floor": 7
+          },
+          {
+            "title": "悬丝水牢",
+            "text": "水声没有回响。每一条渡船都系着绳，却没有一条绳握在岸上的人手中。",
+            "floor": 8
+          },
+          {
+            "title": "渡厄舍利 · 觉醒",
+            "text": "你拔下一根毫毛，另一个你向对岸伸出手。分身可以留守多处镜台，替你完成一个人做不到的选择。\n\n毫毛分身：毫毛分身：点击四格内的镜台，消耗 2 灵息留下永久分身。可隔墙投影，无需直线视野。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 8
+          },
+          {
+            "title": "水牢石简",
+            "text": "西北扳杆与中央镜台，共同控制东南水闸。扳杆可以亲手扳动；镜台需要留下一个分身。\n\n渡厄舍利在中央西侧，由覆水龙侍守护。得到它后，点击四格内的镜台即可留下分身，墙壁不阻挡毫毛投影。\n\n每个镜台只需施术一次，分身会永久留守。分身不会跟你上下楼，也不会在存档后消失。",
+            "floor": 8
+          },
+          {
+            "title": "留影棋坪",
+            "text": "棋坪上没有棋子。你的影子落下时，远处的石门第一次有了回应。",
+            "floor": 9
+          },
+          {
+            "title": "千丝庭",
+            "text": "一根毫毛可以作一座桥，两根毫毛可以替你守住两端。塔从不催你，只等答案。",
+            "floor": 10
+          },
+          {
+            "title": "两仪丹庭",
+            "text": "丹炉仍在燃烧。丹庭被分成慈与怒的两半，而火焰分不清二者的颜色。",
+            "floor": 11
+          },
+          {
+            "title": "慈悲舍利 · 觉醒",
+            "text": "点灯僧摘下面具。他没有脸，却有你当年没有伸出的那只手。“我是你舍下的慈悲。如今，还给你。”\n\n定心护身：被动慈悲护持：每次法术反击减少 8；最终心火真实伤害减少 8。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 11
+          },
+          {
+            "title": "息火莲台",
+            "text": "慈悲舍利使塔中的火焰变得温和。你终于听清，火声之下有人在哭。",
+            "floor": 12
+          },
+          {
+            "title": "问心断碑",
+            "text": "碑将守着一块空白的石头。你忽然意识到，很多守卫并不值得战胜。",
+            "floor": 13
+          },
+          {
+            "title": "倒影经阁",
+            "text": "所有经卷都在描绘同一个人。每翻一页，那个人便少了一种情感。",
+            "floor": 14
+          },
+          {
+            "title": "明心舍利 · 觉醒",
+            "text": "所有碎片拼成的不是佛像，而是一颗心。塔心里，锁着你被分割的嗔怒。回到第一层出发的山门，带走完整的自己。\n\n归真共鸣：五舍利共鸣：返回第一层云垂山门，开启归根之匣，取得十八层朱门的唯一心钥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 14
+          },
+          {
+            "title": "无字经卷",
+            "text": "西北经室的门需要东南扳杆，以及北侧隔墙镜台同时响应。你无需走到镜台上：四格之内，毫毛会替你找到路。\n\n此层东方的两条上行通道，一条是铁栅，一条是断桥。不同能力可以解决同一个问题。\n\n五枚舍利齐聚后，请回到第一层山门东侧的归根之匣。塔心的朱门只认那把心钥。",
+            "floor": 14
+          },
+          {
+            "title": "点灯僧",
+            "text": "经卷里写着：大圣曾求塔主为他除去痛苦。塔主照做了，连同慈悲与愤怒一并剥离。\n\n可一颗不会痛的心，也记不得为何出发。五舍利并非五份神力，是五段被你否认的记忆。\n\n塔心的怪物叫心猿。它在替你记住所有不公。胜过它，然后自己决定：带它离开，还是再次把它镇住。",
+            "floor": 14
+          },
+          {
+            "title": "归根石刻",
+            "text": "“五光归一，初心为钥。”此匣在五舍利齐聚后开启。\n\n匣中只有一把归根心钥，用来开启十八层中央朱门。现在便记下它的位置：一层，山门最东。",
+            "floor": 0
+          },
+          {
+            "title": "逆莲天梯",
+            "text": "五枚舍利齐鸣，整座塔的脚步声都在向下。你知道，最后的钥匙不在高处。",
+            "floor": 15
+          },
+          {
+            "title": "三问无生门",
+            "text": "最后一段阶梯上，点灯僧没有再出现。他的灯，已经在你的心里。",
+            "floor": 16
+          },
+          {
+            "title": "无相塔心",
+            "text": "塔心没有佛像。金色牢笼中，一只与你一模一样的猿猴，抬起了眼睛。",
+            "floor": 17
+          },
+          {
+            "title": "塔心铭文",
+            "text": "西侧：金箍棒架桥，扳下止战扳杆。东侧：青蝉穿栅，将分身留在归心镜台。二者齐备，中央心门才会开启。\n\n中央朱门需要归根心钥。若未取得，请返回一层东南的归根之匣；五枚舍利会让它开启。\n\n心猿会先攻，随后每次反击按攻击减防御计算；最后另有一次心火。火眼金睛展示的损失，已经包括慈悲减伤。请在最后一战前用尽真正需要的准备。",
+            "floor": 17
+          },
+          {
+            "title": "无相之心",
+            "text": "你击碎最后一层金甲，露出的却不是妖魔。\n\n那是五百年前的你。暴戾，也孤独。提灯人将灯递来——灯中一直护着塔里每一个亡魂。\n\n“我是你被舍去的慈悲。舍利从来不属于佛，也不属于塔。它们是你一路作出的选择。”\n\n走向塔心，决定这份力量的归处。",
+            "floor": 17
+          }
+        ],
+        "log": [
+          {
+            "text": "舍利归尘，众生出塔。",
+            "kind": "relic",
+            "turn": 2261
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2246
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 2245
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 2244
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2243
+          },
+          {
+            "text": "击败无相 · 心猿 · 损失 1022 生命，获得 0 金。",
+            "kind": "combat",
+            "turn": 2230
+          },
+          {
+            "text": "消耗 1 把朱钥匙，门已开启。",
+            "kind": "item",
+            "turn": 2227
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 60 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2203
+          },
+          {
+            "text": "止战扳杆已接通。",
+            "kind": "magic",
+            "turn": 2178
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 60 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2176
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 2175
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2171
+          },
+          {
+            "text": "击败失心战影 · 损失 34 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2169
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2163
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 2147
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2143
+          },
+          {
+            "text": "击败失心战影 · 损失 34 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2141
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 2139
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 2134
+          },
+          {
+            "text": "击败镜中行者 · 损失 30 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 2125
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 2123
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2119
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 2115
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2111
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 2110
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 2091
+          },
+          {
+            "text": "抵达 逆莲天梯",
+            "kind": "story",
+            "turn": 2090
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 60 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2085
+          },
+          {
+            "text": "供奉 128 金 · 攻击 +3。",
+            "kind": "item",
+            "turn": 2072
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2071
+          },
+          {
+            "text": "击败失心战影 · 损失 34 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2063
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2058
+          },
+          {
+            "text": "止妄扳杆已接通。",
+            "kind": "magic",
+            "turn": 2053
+          },
+          {
+            "text": "获得凝息珠 · 收入行囊；随时使用，补满 6 点灵息。",
+            "kind": "item",
+            "turn": 2049
+          },
+          {
+            "text": "击败镜中行者 · 损失 30 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 2033
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2016
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2005
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 1997
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1984
+          },
+          {
+            "text": "获得碧髓灵晶 · 永久防御 +4。",
+            "kind": "item",
+            "turn": 1980
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 1976
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1966
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1962
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 1961
+          },
+          {
+            "text": "击败镜中行者 · 损失 30 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 1952
+          },
+          {
+            "text": "获得功德金 · 获得 12 功德，可在灵息坛换取成长或治疗。",
+            "kind": "item",
+            "turn": 1942
+          },
+          {
+            "text": "逆莲扳杆已接通。",
+            "kind": "magic",
+            "turn": 1940
+          },
+          {
+            "text": "击败失心战影 · 损失 42 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 1936
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 1923
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 1922
+          }
+        ],
+        "elixirs": 9,
+        "orbs": 10,
+        "turn": 2262,
+        "defeated": false,
+        "won": true,
+        "ending": "release",
+        "purchases": {
+          "atk": 10,
+          "def": 0,
+          "heal": 0
+        },
+        "startedAt": 1792590363883,
+        "kills": 69
+      },
+      "fights": [
+        {
+          "i": 18,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-6",
+          "beforeHP": 800,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 27,
+          "floor": 1,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f0-5",
+          "beforeHP": 790,
+          "atk": 27,
+          "def": 10,
+          "damage": 39,
+          "rounds": 3,
+          "gold": 4,
+          "plus3Atk": 26,
+          "plus3Def": 30
+        },
+        {
+          "i": 36,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-4",
+          "beforeHP": 751,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 98,
+          "floor": 2,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f1-4",
+          "beforeHP": 921,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 112,
+          "floor": 2,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f1-6",
+          "beforeHP": 913,
+          "atk": 27,
+          "def": 12,
+          "damage": 85,
+          "rounds": 6,
+          "gold": 7,
+          "plus3Atk": 68,
+          "plus3Def": 70
+        },
+        {
+          "i": 134,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-2",
+          "beforeHP": 888,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 169,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-3",
+          "beforeHP": 1060,
+          "atk": 30,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 180,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-1",
+          "beforeHP": 1052,
+          "atk": 30,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 204,
+          "floor": 3,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f2-5",
+          "beforeHP": 1044,
+          "atk": 33,
+          "def": 12,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 7,
+          "plus3Atk": 51,
+          "plus3Def": 42
+        },
+        {
+          "i": 243,
+          "floor": 3,
+          "enemy": "荆棘山魈",
+          "enemyId": "thorn",
+          "entity": "f2-4",
+          "beforeHP": 1093,
+          "atk": 38,
+          "def": 12,
+          "damage": 40,
+          "rounds": 3,
+          "gold": 5,
+          "plus3Atk": 40,
+          "plus3Def": 34
+        },
+        {
+          "i": 249,
+          "floor": 3,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f2-6",
+          "beforeHP": 1053,
+          "atk": 38,
+          "def": 12,
+          "damage": 22,
+          "rounds": 2,
+          "gold": 4,
+          "plus3Atk": 22,
+          "plus3Def": 16
+        },
+        {
+          "i": 322,
+          "floor": 4,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f3-1",
+          "beforeHP": 1091,
+          "atk": 41,
+          "def": 12,
+          "damage": 38,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 38,
+          "plus3Def": 32
+        },
+        {
+          "i": 327,
+          "floor": 4,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f3-2",
+          "beforeHP": 1053,
+          "atk": 41,
+          "def": 12,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 24,
+          "plus3Def": 48
+        },
+        {
+          "i": 368,
+          "floor": 4,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f3-3",
+          "beforeHP": 1125,
+          "atk": 41,
+          "def": 12,
+          "damage": 92,
+          "rounds": 5,
+          "gold": 9,
+          "plus3Atk": 69,
+          "plus3Def": 80
+        },
+        {
+          "i": 431,
+          "floor": 5,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f4-5",
+          "beforeHP": 1033,
+          "atk": 44,
+          "def": 12,
+          "damage": 64,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 64,
+          "plus3Def": 58
+        },
+        {
+          "i": 447,
+          "floor": 5,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f4-4",
+          "beforeHP": 969,
+          "atk": 44,
+          "def": 12,
+          "damage": 38,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 38,
+          "plus3Def": 32
+        },
+        {
+          "i": 482,
+          "floor": 5,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f4-6",
+          "beforeHP": 1111,
+          "atk": 47,
+          "def": 14,
+          "damage": 24,
+          "rounds": 2,
+          "gold": 6,
+          "plus3Atk": 24,
+          "plus3Def": 24
+        },
+        {
+          "i": 520,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-3",
+          "beforeHP": 1087,
+          "atk": 47,
+          "def": 14,
+          "damage": 34,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 34,
+          "plus3Def": 28
+        },
+        {
+          "i": 530,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-7",
+          "beforeHP": 1173,
+          "atk": 47,
+          "def": 14,
+          "damage": 34,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 34,
+          "plus3Def": 28
+        },
+        {
+          "i": 534,
+          "floor": 6,
+          "enemy": "照骨禅师",
+          "enemyId": "bone",
+          "entity": "f5-2",
+          "beforeHP": 1239,
+          "atk": 47,
+          "def": 14,
+          "damage": 120,
+          "rounds": 5,
+          "gold": 12,
+          "plus3Atk": 96,
+          "plus3Def": 105
+        },
+        {
+          "i": 586,
+          "floor": 6,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f5-4",
+          "beforeHP": 1239,
+          "atk": 50,
+          "def": 14,
+          "damage": 24,
+          "rounds": 2,
+          "gold": 6,
+          "plus3Atk": 24,
+          "plus3Def": 24
+        },
+        {
+          "i": 606,
+          "floor": 6,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f5-5",
+          "beforeHP": 1215,
+          "atk": 55,
+          "def": 14,
+          "damage": 40,
+          "rounds": 2,
+          "gold": 7,
+          "plus3Atk": 40,
+          "plus3Def": 37
+        },
+        {
+          "i": 615,
+          "floor": 6,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f5-6",
+          "beforeHP": 1235,
+          "atk": 55,
+          "def": 14,
+          "damage": 42,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 42,
+          "plus3Def": 36
+        },
+        {
+          "i": 667,
+          "floor": 7,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f6-1",
+          "beforeHP": 1313,
+          "atk": 58,
+          "def": 14,
+          "damage": 40,
+          "rounds": 2,
+          "gold": 7,
+          "plus3Atk": 40,
+          "plus3Def": 37
+        },
+        {
+          "i": 722,
+          "floor": 7,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f6-3",
+          "beforeHP": 1333,
+          "atk": 61,
+          "def": 14,
+          "damage": 42,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 42,
+          "plus3Def": 36
+        },
+        {
+          "i": 735,
+          "floor": 7,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f6-2",
+          "beforeHP": 1291,
+          "atk": 61,
+          "def": 18,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 28,
+          "plus3Def": 56
+        },
+        {
+          "i": 780,
+          "floor": 8,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f7-5",
+          "beforeHP": 1355,
+          "atk": 61,
+          "def": 18,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 28,
+          "plus3Def": 56
+        },
+        {
+          "i": 843,
+          "floor": 8,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f7-6",
+          "beforeHP": 1359,
+          "atk": 64,
+          "def": 18,
+          "damage": 36,
+          "rounds": 2,
+          "gold": 7,
+          "plus3Atk": 36,
+          "plus3Def": 33
+        },
+        {
+          "i": 855,
+          "floor": 8,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f7-4",
+          "beforeHP": 1323,
+          "atk": 64,
+          "def": 18,
+          "damage": 49,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 49,
+          "plus3Def": 43
+        },
+        {
+          "i": 888,
+          "floor": 9,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f8-5",
+          "beforeHP": 1274,
+          "atk": 64,
+          "def": 18,
+          "damage": 49,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 49,
+          "plus3Def": 43
+        },
+        {
+          "i": 895,
+          "floor": 9,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f8-7",
+          "beforeHP": 1225,
+          "atk": 64,
+          "def": 18,
+          "damage": 36,
+          "rounds": 2,
+          "gold": 7,
+          "plus3Atk": 36,
+          "plus3Def": 33
+        },
+        {
+          "i": 900,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-6",
+          "beforeHP": 1189,
+          "atk": 64,
+          "def": 18,
+          "damage": 28,
+          "rounds": 2,
+          "gold": 8,
+          "plus3Atk": 28,
+          "plus3Def": 28
+        },
+        {
+          "i": 967,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-2",
+          "beforeHP": 1261,
+          "atk": 67,
+          "def": 18,
+          "damage": 28,
+          "rounds": 2,
+          "gold": 8,
+          "plus3Atk": 28,
+          "plus3Def": 28
+        },
+        {
+          "i": 979,
+          "floor": 9,
+          "enemy": "玄甲河将",
+          "enemyId": "crab",
+          "entity": "f8-4",
+          "beforeHP": 1353,
+          "atk": 67,
+          "def": 18,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 11,
+          "plus3Atk": 48,
+          "plus3Def": 42
+        },
+        {
+          "i": 1033,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-7",
+          "beforeHP": 1605,
+          "atk": 77,
+          "def": 20,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1059,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-5",
+          "beforeHP": 1597,
+          "atk": 77,
+          "def": 20,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1083,
+          "floor": 10,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f9-6",
+          "beforeHP": 1529,
+          "atk": 77,
+          "def": 20,
+          "damage": 88,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 88,
+          "plus3Def": 82
+        },
+        {
+          "i": 1136,
+          "floor": 11,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f10-6",
+          "beforeHP": 1561,
+          "atk": 77,
+          "def": 20,
+          "damage": 24,
+          "rounds": 2,
+          "gold": 9,
+          "plus3Atk": 24,
+          "plus3Def": 21
+        },
+        {
+          "i": 1215,
+          "floor": 11,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f10-7",
+          "beforeHP": 1597,
+          "atk": 85,
+          "def": 20,
+          "damage": 88,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 88,
+          "plus3Def": 82
+        },
+        {
+          "i": 1220,
+          "floor": 11,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f10-8",
+          "beforeHP": 1509,
+          "atk": 85,
+          "def": 20,
+          "damage": 34,
+          "rounds": 2,
+          "gold": 10,
+          "plus3Atk": 34,
+          "plus3Def": 34
+        },
+        {
+          "i": 1258,
+          "floor": 12,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f11-9",
+          "beforeHP": 1595,
+          "atk": 85,
+          "def": 20,
+          "damage": 24,
+          "rounds": 2,
+          "gold": 9,
+          "plus3Atk": 24,
+          "plus3Def": 21
+        },
+        {
+          "i": 1266,
+          "floor": 12,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f11-6",
+          "beforeHP": 1571,
+          "atk": 85,
+          "def": 20,
+          "damage": 88,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 88,
+          "plus3Def": 82
+        },
+        {
+          "i": 1317,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-5",
+          "beforeHP": 1483,
+          "atk": 85,
+          "def": 20,
+          "damage": 34,
+          "rounds": 2,
+          "gold": 10,
+          "plus3Atk": 34,
+          "plus3Def": 34
+        },
+        {
+          "i": 1328,
+          "floor": 12,
+          "enemy": "赤炉金刚",
+          "enemyId": "furnace",
+          "entity": "f11-7",
+          "beforeHP": 1449,
+          "atk": 85,
+          "def": 20,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 16,
+          "plus3Atk": 60,
+          "plus3Def": 81
+        },
+        {
+          "i": 1408,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-8",
+          "beforeHP": 1539,
+          "atk": 85,
+          "def": 24,
+          "damage": 34,
+          "rounds": 2,
+          "gold": 10,
+          "plus3Atk": 34,
+          "plus3Def": 34
+        },
+        {
+          "i": 1434,
+          "floor": 12,
+          "enemy": "两仪判官",
+          "enemyId": "judge",
+          "entity": "f11-4",
+          "beforeHP": 1505,
+          "atk": 85,
+          "def": 24,
+          "damage": 108,
+          "rounds": 4,
+          "gold": 18,
+          "plus3Atk": 108,
+          "plus3Def": 96
+        },
+        {
+          "i": 1517,
+          "floor": 13,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f12-2",
+          "beforeHP": 1677,
+          "atk": 93,
+          "def": 24,
+          "damage": 26,
+          "rounds": 2,
+          "gold": 10,
+          "plus3Atk": 26,
+          "plus3Def": 26
+        },
+        {
+          "i": 1539,
+          "floor": 13,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f12-1",
+          "beforeHP": 1651,
+          "atk": 93,
+          "def": 24,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1551,
+          "floor": 13,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f12-3",
+          "beforeHP": 1591,
+          "atk": 93,
+          "def": 24,
+          "damage": 11,
+          "rounds": 2,
+          "gold": 9,
+          "plus3Atk": 11,
+          "plus3Def": 8
+        },
+        {
+          "i": 1596,
+          "floor": 14,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f13-6",
+          "beforeHP": 1700,
+          "atk": 93,
+          "def": 28,
+          "damage": 81,
+          "rounds": 4,
+          "gold": 16,
+          "plus3Atk": 81,
+          "plus3Def": 72
+        },
+        {
+          "i": 1614,
+          "floor": 14,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f13-5",
+          "beforeHP": 1619,
+          "atk": 93,
+          "def": 28,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1626,
+          "floor": 14,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f13-4",
+          "beforeHP": 1559,
+          "atk": 93,
+          "def": 28,
+          "damage": 62,
+          "rounds": 3,
+          "gold": 13,
+          "plus3Atk": 62,
+          "plus3Def": 56
+        },
+        {
+          "i": 1706,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-7",
+          "beforeHP": 1677,
+          "atk": 96,
+          "def": 28,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 30,
+          "plus3Def": 60
+        },
+        {
+          "i": 1783,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-5",
+          "beforeHP": 1617,
+          "atk": 104,
+          "def": 32,
+          "damage": 54,
+          "rounds": 3,
+          "gold": 13,
+          "plus3Atk": 54,
+          "plus3Def": 48
+        },
+        {
+          "i": 1795,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-4",
+          "beforeHP": 1803,
+          "atk": 104,
+          "def": 32,
+          "damage": 30,
+          "rounds": 2,
+          "gold": 12,
+          "plus3Atk": 30,
+          "plus3Def": 30
+        },
+        {
+          "i": 1809,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-8",
+          "beforeHP": 1773,
+          "atk": 104,
+          "def": 32,
+          "damage": 54,
+          "rounds": 3,
+          "gold": 13,
+          "plus3Atk": 54,
+          "plus3Def": 48
+        },
+        {
+          "i": 1821,
+          "floor": 15,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f14-6",
+          "beforeHP": 1899,
+          "atk": 104,
+          "def": 32,
+          "damage": 69,
+          "rounds": 4,
+          "gold": 16,
+          "plus3Atk": 69,
+          "plus3Def": 60
+        },
+        {
+          "i": 1840,
+          "floor": 15,
+          "enemy": "藏经无相",
+          "enemyId": "archivist",
+          "entity": "f14-3",
+          "beforeHP": 1830,
+          "atk": 104,
+          "def": 32,
+          "damage": 104,
+          "rounds": 4,
+          "gold": 21,
+          "plus3Atk": 104,
+          "plus3Def": 92
+        },
+        {
+          "i": 1936,
+          "floor": 16,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f15-5",
+          "beforeHP": 2126,
+          "atk": 109,
+          "def": 36,
+          "damage": 42,
+          "rounds": 3,
+          "gold": 14,
+          "plus3Atk": 42,
+          "plus3Def": 36
+        },
+        {
+          "i": 1952,
+          "floor": 16,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f15-7",
+          "beforeHP": 2084,
+          "atk": 109,
+          "def": 36,
+          "damage": 30,
+          "rounds": 2,
+          "gold": 12,
+          "plus3Atk": 30,
+          "plus3Def": 30
+        },
+        {
+          "i": 2033,
+          "floor": 17,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f16-7",
+          "beforeHP": 2294,
+          "atk": 109,
+          "def": 40,
+          "damage": 30,
+          "rounds": 2,
+          "gold": 12,
+          "plus3Atk": 30,
+          "plus3Def": 30
+        },
+        {
+          "i": 2063,
+          "floor": 17,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f16-6",
+          "beforeHP": 2264,
+          "atk": 109,
+          "def": 40,
+          "damage": 34,
+          "rounds": 3,
+          "gold": 14,
+          "plus3Atk": 34,
+          "plus3Def": 28
+        },
+        {
+          "i": 2085,
+          "floor": 17,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f16-5",
+          "beforeHP": 2230,
+          "atk": 112,
+          "def": 40,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 17,
+          "plus3Atk": 60,
+          "plus3Def": 51
+        },
+        {
+          "i": 2125,
+          "floor": 18,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f17-6",
+          "beforeHP": 2350,
+          "atk": 112,
+          "def": 40,
+          "damage": 30,
+          "rounds": 2,
+          "gold": 12,
+          "plus3Atk": 30,
+          "plus3Def": 30
+        },
+        {
+          "i": 2141,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-3",
+          "beforeHP": 2500,
+          "atk": 112,
+          "def": 40,
+          "damage": 34,
+          "rounds": 3,
+          "gold": 14,
+          "plus3Atk": 34,
+          "plus3Def": 28
+        },
+        {
+          "i": 2169,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-2",
+          "beforeHP": 2526,
+          "atk": 112,
+          "def": 40,
+          "damage": 34,
+          "rounds": 3,
+          "gold": 14,
+          "plus3Atk": 34,
+          "plus3Def": 28
+        },
+        {
+          "i": 2176,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-4",
+          "beforeHP": 2552,
+          "atk": 112,
+          "def": 40,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 17,
+          "plus3Atk": 60,
+          "plus3Def": 51
+        },
+        {
+          "i": 2203,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-5",
+          "beforeHP": 2492,
+          "atk": 112,
+          "def": 40,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 17,
+          "plus3Atk": 60,
+          "plus3Def": 51
+        },
+        {
+          "i": 2230,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 2432,
+          "atk": 112,
+          "def": 40,
+          "damage": 1022,
+          "rounds": 19,
+          "gold": 0,
+          "plus3Atk": 972,
+          "plus3Def": 965
+        }
+      ],
+      "summary": {
+        "kills": 69,
+        "zeroDamage": 0,
+        "totalDamage": 4210,
+        "boss": {
+          "i": 2230,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 2432,
+          "atk": 112,
+          "def": 40,
+          "damage": 1022,
+          "rounds": 19,
+          "gold": 0,
+          "plus3Atk": 972,
+          "plus3Def": 965
+        },
+        "damageBeforeBoss": 3188,
+        "hpMargin": 3210,
+        "orbUses": 0,
+        "healsUsed": 0,
+        "abilityUses": {
+          "staff": 10,
+          "morph": 8,
+          "clone": 9
+        },
+        "purchase": [
+          {
+            "i": 164,
+            "floor": 3,
+            "kind": "atk",
+            "cost": 20
+          },
+          {
+            "i": 195,
+            "floor": 3,
+            "kind": "atk",
+            "cost": 32
+          },
+          {
+            "i": 393,
+            "floor": 4,
+            "kind": "atk",
+            "cost": 44
+          },
+          {
+            "i": 584,
+            "floor": 6,
+            "kind": "atk",
+            "cost": 56
+          },
+          {
+            "i": 694,
+            "floor": 7,
+            "kind": "atk",
+            "cost": 68
+          },
+          {
+            "i": 937,
+            "floor": 9,
+            "kind": "atk",
+            "cost": 80
+          },
+          {
+            "i": 1194,
+            "floor": 11,
+            "kind": "atk",
+            "cost": 92
+          },
+          {
+            "i": 1469,
+            "floor": 12,
+            "kind": "atk",
+            "cost": 104
+          },
+          {
+            "i": 1718,
+            "floor": 15,
+            "kind": "atk",
+            "cost": 116
+          },
+          {
+            "i": 2072,
+            "floor": 17,
+            "kind": "atk",
+            "cost": 128
+          }
+        ]
+      },
+      "floorTotals": [
+        {
+          "floor": 1,
+          "hpGain": 180,
+          "damage": 59,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 2,
+          "hpGain": 180,
+          "damage": 93,
+          "spells": 0,
+          "kills": 2,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 3,
+          "hpGain": 340,
+          "damage": 137,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 4,
+          "hpGain": 180,
+          "damage": 178,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 5,
+          "hpGain": 180,
+          "damage": 126,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 6,
+          "hpGain": 400,
+          "damage": 294,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 7,
+          "hpGain": 180,
+          "damage": 138,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 8,
+          "hpGain": 180,
+          "damage": 141,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 9,
+          "hpGain": 400,
+          "damage": 189,
+          "spells": 2,
+          "kills": 5,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 10,
+          "hpGain": 180,
+          "damage": 224,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 11,
+          "hpGain": 180,
+          "damage": 146,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 12,
+          "hpGain": 400,
+          "damage": 378,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 13,
+          "hpGain": 180,
+          "damage": 97,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 14,
+          "hpGain": 180,
+          "damage": 203,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 15,
+          "hpGain": 760,
+          "damage": 371,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 16,
+          "hpGain": 180,
+          "damage": 72,
+          "spells": 1,
+          "kills": 2,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 17,
+          "hpGain": 240,
+          "damage": 124,
+          "spells": 3,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 18,
+          "hpGain": 480,
+          "damage": 1240,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        }
+      ],
+      "mana": [
+        {
+          "i": 219,
+          "floor": 3,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            8
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 229,
+          "floor": 3,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 318,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            7,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 342,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 345,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            5,
+            11
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 392,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 593,
+          "floor": 6,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 626,
+          "floor": 6,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 657,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 669,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            11,
+            6
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 693,
+          "floor": 7,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 798,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 831,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            10
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 860,
+          "floor": 8,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 948,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 950,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            6
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 957,
+          "floor": 9,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1029,
+          "floor": 10,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1135,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            9
+          ],
+          "manaBefore": 4,
+          "manaAfter": 2
+        },
+        {
+          "i": 1193,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 2,
+          "manaAfter": 6
+        },
+        {
+          "i": 1203,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1211,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 1274,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            1,
+            9
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1276,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1295,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1378,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            10
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1407,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1733,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            5,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1734,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            7,
+            4
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1760,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1775,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1842,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "up"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1867,
+          "floor": 15,
+          "action": "travel",
+          "args": [
+            0
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1882,
+          "floor": 1,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            10,
+            9
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 1883,
+          "floor": 1,
+          "action": "travel",
+          "args": [
+            14
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1923,
+          "floor": 16,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            9,
+            5
+          ],
+          "manaBefore": 3,
+          "manaAfter": 1
+        },
+        {
+          "i": 1962,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 1,
+          "manaAfter": 6
+        },
+        {
+          "i": 1997,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            6,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 2005,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 2016,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 2058,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2071,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 2139,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            11,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 2143,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            9,
+            6
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 2163,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 2171,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2243,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        }
+      ],
+      "returns": [
+        {
+          "i": 1867,
+          "from": 15,
+          "to": 1,
+          "manaAfter": 5
+        },
+        {
+          "i": 1883,
+          "from": 1,
+          "to": 15,
+          "manaAfter": 3
+        }
+      ]
+    },
+    {
+      "build": "def",
+      "actions": 2272,
+      "failed": [],
+      "final": {
+        "version": 1,
+        "floor": 17,
+        "x": 6,
+        "y": 2,
+        "facing": "up",
+        "hp": 2184,
+        "atk": 82,
+        "def": 70,
+        "mana": 6,
+        "maxMana": 6,
+        "coins": 133,
+        "keys": {
+          "yellow": 0,
+          "blue": 0,
+          "red": 0
+        },
+        "relics": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "removed": {
+          "f0-13": true,
+          "f0-7": true,
+          "f0-10": true,
+          "f0-9": true,
+          "f0-6": true,
+          "f0-5": true,
+          "f0-8": true,
+          "f0-4": true,
+          "f0-11": true,
+          "f1-7": true,
+          "f1-12": true,
+          "f1-10": true,
+          "f1-8": true,
+          "f1-4": true,
+          "f1-9": true,
+          "f1-6": true,
+          "f2-7": true,
+          "f2-8": true,
+          "f2-2": true,
+          "f2-9": true,
+          "f2-14": true,
+          "f2-10": true,
+          "f2-3": true,
+          "f2-1": true,
+          "f2-4": true,
+          "f2-13": true,
+          "f2-6": true,
+          "f2-5": true,
+          "f2-17": true,
+          "f2-11": true,
+          "f2-15": true,
+          "f2-16": true,
+          "f3-9": true,
+          "f3-6": true,
+          "f3-1": true,
+          "f3-2": true,
+          "f3-4": true,
+          "f3-5": true,
+          "f3-7": true,
+          "f3-3": true,
+          "f4-1": true,
+          "f4-3": true,
+          "f4-5": true,
+          "f4-2": true,
+          "f4-4": true,
+          "f4-8": true,
+          "f4-10": true,
+          "f4-9": true,
+          "f4-7": true,
+          "f4-11": true,
+          "f4-12": true,
+          "f4-6": true,
+          "f5-14": true,
+          "f5-3": true,
+          "f5-11": true,
+          "f5-16": true,
+          "f5-7": true,
+          "f5-8": true,
+          "f5-2": true,
+          "f5-10": true,
+          "f5-5": true,
+          "f5-15": true,
+          "f5-6": true,
+          "f5-4": true,
+          "f5-13": true,
+          "f5-12": true,
+          "f6-9": true,
+          "f6-4": true,
+          "f6-1": true,
+          "f6-7": true,
+          "f6-6": true,
+          "f6-3": true,
+          "f6-10": true,
+          "f6-5": true,
+          "f6-2": true,
+          "f7-7": true,
+          "f7-5": true,
+          "f7-9": true,
+          "f7-8": true,
+          "f7-10": true,
+          "f7-6": true,
+          "f7-4": true,
+          "f8-17": true,
+          "f8-15": true,
+          "f8-5": true,
+          "f8-20": true,
+          "f8-7": true,
+          "f8-6": true,
+          "f8-19": true,
+          "f8-8": true,
+          "f8-3": true,
+          "f8-2": true,
+          "f8-12": true,
+          "f8-4": true,
+          "f8-18": true,
+          "f8-16": true,
+          "f8-13": true,
+          "f8-14": true,
+          "f9-11": true,
+          "f9-8": true,
+          "f9-12": true,
+          "f9-6": true,
+          "f9-9": true,
+          "f9-7": true,
+          "f9-10": true,
+          "f9-5": true,
+          "f10-9": true,
+          "f10-6": true,
+          "f10-10": true,
+          "f10-13": true,
+          "f10-11": true,
+          "f10-12": true,
+          "f10-7": true,
+          "f10-8": true,
+          "f11-19": true,
+          "f11-15": true,
+          "f11-9": true,
+          "f11-20": true,
+          "f11-7": true,
+          "f11-16": true,
+          "f11-17": true,
+          "f11-6": true,
+          "f11-8": true,
+          "f11-5": true,
+          "f11-18": true,
+          "f11-21": true,
+          "f11-4": true,
+          "f11-10": true,
+          "f12-8": true,
+          "f12-4": true,
+          "f12-7": true,
+          "f12-5": true,
+          "f12-2": true,
+          "f12-1": true,
+          "f12-6": true,
+          "f12-3": true,
+          "f13-11": true,
+          "f13-7": true,
+          "f13-6": true,
+          "f13-4": true,
+          "f13-10": true,
+          "f13-9": true,
+          "f13-8": true,
+          "f13-5": true,
+          "f14-16": true,
+          "f14-19": true,
+          "f14-7": true,
+          "f14-15": true,
+          "f14-14": true,
+          "f14-6": true,
+          "f14-8": true,
+          "f14-18": true,
+          "f14-5": true,
+          "f14-20": true,
+          "f14-17": true,
+          "f14-3": true,
+          "f14-9": true,
+          "f14-13": true,
+          "f14-4": true,
+          "f0-3": true,
+          "f0-12": true,
+          "f15-12": true,
+          "f15-8": true,
+          "f15-9": true,
+          "f15-6": true,
+          "f15-5": true,
+          "f15-10": true,
+          "f15-7": true,
+          "f16-8": true,
+          "f16-10": true,
+          "f16-12": true,
+          "f16-9": true,
+          "f16-6": true,
+          "f16-11": true,
+          "f16-5": true,
+          "f16-7": true,
+          "f17-14": true,
+          "f17-16": true,
+          "f17-2": true,
+          "f17-17": true,
+          "f17-4": true,
+          "f17-6": true,
+          "f17-15": true,
+          "f17-3": true,
+          "f17-18": true,
+          "f17-5": true,
+          "f17-10": true,
+          "f17-7": true
+        },
+        "switches": {
+          "f1-1": true,
+          "f7-1": true,
+          "f8-10": true,
+          "f8-9": true,
+          "f9-2": true,
+          "f9-1": true,
+          "f10-1": true,
+          "f10-2": true,
+          "f11-12": true,
+          "f11-11": true,
+          "f13-1": true,
+          "f14-11": true,
+          "f14-10": true,
+          "f15-2": true,
+          "f15-1": true,
+          "f16-2": true,
+          "f16-1": true,
+          "f17-8": true,
+          "f17-9": true
+        },
+        "terrain": {
+          "2:3:8": ".",
+          "3:7:4": ".",
+          "3:5:11": ".",
+          "5:6:6": ".",
+          "6:5:6": ".",
+          "6:11:6": ".",
+          "7:11:6": ".",
+          "7:5:10": ".",
+          "8:6:6": ".",
+          "11:6:10": ".",
+          "11:3:10": ".",
+          "14:7:4": ".",
+          "14:11:4": ".",
+          "0:10:9": ".",
+          "16:6:10": ".",
+          "16:3:6": ".",
+          "17:3:6": ".",
+          "17:9:6": "."
+        },
+        "visited": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "seenIntros": {
+          "0": true,
+          "1": true,
+          "2": true,
+          "3": true,
+          "4": true,
+          "5": true,
+          "6": true,
+          "7": true,
+          "8": true,
+          "9": true,
+          "10": true,
+          "11": true,
+          "12": true,
+          "13": true,
+          "14": true,
+          "15": true,
+          "16": true,
+          "17": true,
+          "event:f0-0": true,
+          "event:f2-18": true,
+          "event:f5-1": true,
+          "event:f6-8": true,
+          "event:f8-1": true,
+          "event:f14-1": true,
+          "event:f14-2": true,
+          "event:f0-2": true,
+          "event:f17-1": true
+        },
+        "journal": [
+          {
+            "title": "入塔",
+            "text": "五百年前，灵山借一座无相塔，封住了你取经途中舍下的杀心。如今五枚舍利碎落，塔中众生被困在同一夜。\n\n提灯人说：集齐舍利，你就能取回完整的自己。可那盏灯，为何让你觉得熟悉？",
+            "floor": 0
+          },
+          {
+            "title": "点灯僧",
+            "text": "舍利碎了，塔也失了心。五枚碎片分散在第三、第六、第九、第十二与第十五层，各守着一种被遗忘的念头。\n\n这里不比谁的棒更快。每一战的代价都能看清，敌人不会重生。先拿灵晶，再战守卫，往往能少流很多血。\n\n灵息坛可免费恢复灵息；功德金可换成长。生命不会因上下楼恢复。你手中的随身蟠桃留给真正需要的时候。",
+            "floor": 0
+          },
+          {
+            "title": "残钟回廊",
+            "text": "钟声在西殿响起，东侧的石门却随之振动。塔开始试探你的耐心。",
+            "floor": 1
+          },
+          {
+            "title": "石胎古殿",
+            "text": "山门后的古殿里，一尊石胎守着最初的心跳。第一枚舍利就在它身后。",
+            "floor": 2
+          },
+          {
+            "title": "石生舍利 · 觉醒",
+            "text": "石中传来久违的心跳。金箍棒伸出云海，你想起：力量不是用来把所有门打碎。\n\n金箍架桥：金箍棒：对相邻断桥施术，消耗 1 灵息，永久架桥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 2
+          },
+          {
+            "title": "断桥古碑",
+            "text": "金箍棒可以填补断桥，每次消耗 1 灵息。桥会永久留下。\n\n第一枚舍利觉醒后，山门西南的断桥后藏着朱砂灵晶。黄门也能抵达那里：花钥匙走近路，还是先得到架桥能力？",
+            "floor": 2
+          },
+          {
+            "title": "断云栈道",
+            "text": "石生舍利在掌心微热。前方的云阶只缺一截，却曾阻断无数归途。",
+            "floor": 3
+          },
+          {
+            "title": "百锁偏殿",
+            "text": "偏殿的锁比门还多。有人相信，关上所有门便能守住真相。",
+            "floor": 4
+          },
+          {
+            "title": "照骨禅院",
+            "text": "这里的佛像都没有影子。铜铃声中，你看到自己的骨骼竟是金色。",
+            "floor": 5
+          },
+          {
+            "title": "照骨舍利 · 觉醒",
+            "text": "大圣化作一只青蝉。最细的缝隙，原来容得下一段不肯低头的人生。第三层古殿的铁栅正在等待你。\n\n青蝉化形：七十二变 · 青蝉：对相邻铁栅施术，消耗 1 灵息，穿栅并从内侧永久解锁。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 5
+          },
+          {
+            "title": "照骨壁画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 5
+          },
+          {
+            "title": "缝天井",
+            "text": "院中没有门，只有细得几乎看不见的缝。化蝉的记忆正在苏醒。",
+            "floor": 6
+          },
+          {
+            "title": "蝉蜕石画",
+            "text": "铁栅不是墙。得到照骨舍利后，用青蝉之变穿过相邻铁栅，可从内侧把锁卸下。\n\n机关只消耗灵息，不消耗生命。此层中央栅室与一层东侧密室，都值得回头。",
+            "floor": 6
+          },
+          {
+            "title": "无声梵井",
+            "text": "声音落到井底便消失了。只有扳杆转动时，北端的石门会遥遥应答。",
+            "floor": 7
+          },
+          {
+            "title": "悬丝水牢",
+            "text": "水声没有回响。每一条渡船都系着绳，却没有一条绳握在岸上的人手中。",
+            "floor": 8
+          },
+          {
+            "title": "渡厄舍利 · 觉醒",
+            "text": "你拔下一根毫毛，另一个你向对岸伸出手。分身可以留守多处镜台，替你完成一个人做不到的选择。\n\n毫毛分身：毫毛分身：点击四格内的镜台，消耗 2 灵息留下永久分身。可隔墙投影，无需直线视野。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 8
+          },
+          {
+            "title": "水牢石简",
+            "text": "西北扳杆与中央镜台，共同控制东南水闸。扳杆可以亲手扳动；镜台需要留下一个分身。\n\n渡厄舍利在中央西侧，由覆水龙侍守护。得到它后，点击四格内的镜台即可留下分身，墙壁不阻挡毫毛投影。\n\n每个镜台只需施术一次，分身会永久留守。分身不会跟你上下楼，也不会在存档后消失。",
+            "floor": 8
+          },
+          {
+            "title": "留影棋坪",
+            "text": "棋坪上没有棋子。你的影子落下时，远处的石门第一次有了回应。",
+            "floor": 9
+          },
+          {
+            "title": "千丝庭",
+            "text": "一根毫毛可以作一座桥，两根毫毛可以替你守住两端。塔从不催你，只等答案。",
+            "floor": 10
+          },
+          {
+            "title": "两仪丹庭",
+            "text": "丹炉仍在燃烧。丹庭被分成慈与怒的两半，而火焰分不清二者的颜色。",
+            "floor": 11
+          },
+          {
+            "title": "慈悲舍利 · 觉醒",
+            "text": "点灯僧摘下面具。他没有脸，却有你当年没有伸出的那只手。“我是你舍下的慈悲。如今，还给你。”\n\n定心护身：被动慈悲护持：每次法术反击减少 8；最终心火真实伤害减少 8。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 11
+          },
+          {
+            "title": "息火莲台",
+            "text": "慈悲舍利使塔中的火焰变得温和。你终于听清，火声之下有人在哭。",
+            "floor": 12
+          },
+          {
+            "title": "问心断碑",
+            "text": "碑将守着一块空白的石头。你忽然意识到，很多守卫并不值得战胜。",
+            "floor": 13
+          },
+          {
+            "title": "倒影经阁",
+            "text": "所有经卷都在描绘同一个人。每翻一页，那个人便少了一种情感。",
+            "floor": 14
+          },
+          {
+            "title": "明心舍利 · 觉醒",
+            "text": "所有碎片拼成的不是佛像，而是一颗心。塔心里，锁着你被分割的嗔怒。回到第一层出发的山门，带走完整的自己。\n\n归真共鸣：五舍利共鸣：返回第一层云垂山门，开启归根之匣，取得十八层朱门的唯一心钥。\n\n舍利与你共鸣：生命 +100，灵息回复至 6。旧塔层也许已有新的道路。",
+            "floor": 14
+          },
+          {
+            "title": "无字经卷",
+            "text": "西北经室的门需要东南扳杆，以及北侧隔墙镜台同时响应。你无需走到镜台上：四格之内，毫毛会替你找到路。\n\n此层东方的两条上行通道，一条是铁栅，一条是断桥。不同能力可以解决同一个问题。\n\n五枚舍利齐聚后，请回到第一层山门东侧的归根之匣。塔心的朱门只认那把心钥。",
+            "floor": 14
+          },
+          {
+            "title": "点灯僧",
+            "text": "经卷里写着：大圣曾求塔主为他除去痛苦。塔主照做了，连同慈悲与愤怒一并剥离。\n\n可一颗不会痛的心，也记不得为何出发。五舍利并非五份神力，是五段被你否认的记忆。\n\n塔心的怪物叫心猿。它在替你记住所有不公。胜过它，然后自己决定：带它离开，还是再次把它镇住。",
+            "floor": 14
+          },
+          {
+            "title": "归根石刻",
+            "text": "“五光归一，初心为钥。”此匣在五舍利齐聚后开启。\n\n匣中只有一把归根心钥，用来开启十八层中央朱门。现在便记下它的位置：一层，山门最东。",
+            "floor": 0
+          },
+          {
+            "title": "逆莲天梯",
+            "text": "五枚舍利齐鸣，整座塔的脚步声都在向下。你知道，最后的钥匙不在高处。",
+            "floor": 15
+          },
+          {
+            "title": "三问无生门",
+            "text": "最后一段阶梯上，点灯僧没有再出现。他的灯，已经在你的心里。",
+            "floor": 16
+          },
+          {
+            "title": "无相塔心",
+            "text": "塔心没有佛像。金色牢笼中，一只与你一模一样的猿猴，抬起了眼睛。",
+            "floor": 17
+          },
+          {
+            "title": "塔心铭文",
+            "text": "西侧：金箍棒架桥，扳下止战扳杆。东侧：青蝉穿栅，将分身留在归心镜台。二者齐备，中央心门才会开启。\n\n中央朱门需要归根心钥。若未取得，请返回一层东南的归根之匣；五枚舍利会让它开启。\n\n心猿会先攻，随后每次反击按攻击减防御计算；最后另有一次心火。火眼金睛展示的损失，已经包括慈悲减伤。请在最后一战前用尽真正需要的准备。",
+            "floor": 17
+          },
+          {
+            "title": "无相之心",
+            "text": "你击碎最后一层金甲，露出的却不是妖魔。\n\n那是五百年前的你。暴戾，也孤独。提灯人将灯递来——灯中一直护着塔里每一个亡魂。\n\n“我是你被舍去的慈悲。舍利从来不属于佛，也不属于塔。它们是你一路作出的选择。”\n\n走向塔心，决定这份力量的归处。",
+            "floor": 17
+          }
+        ],
+        "log": [
+          {
+            "text": "舍利归尘，众生出塔。",
+            "kind": "relic",
+            "turn": 2271
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2256
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 2255
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 2254
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2253
+          },
+          {
+            "text": "击败无相 · 心猿 · 损失 792 生命，获得 0 金。",
+            "kind": "combat",
+            "turn": 2240
+          },
+          {
+            "text": "消耗 1 把朱钥匙，门已开启。",
+            "kind": "item",
+            "turn": 2237
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 0 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2213
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 2212
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2208
+          },
+          {
+            "text": "击败失心战影 · 损失 0 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2206
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2194
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 2176
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 2171
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 2162
+          },
+          {
+            "text": "止战扳杆已接通。",
+            "kind": "magic",
+            "turn": 2148
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 0 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2146
+          },
+          {
+            "text": "获得小蟠桃 · 立即恢复 60 生命。生命没有上限。",
+            "kind": "item",
+            "turn": 2145
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2141
+          },
+          {
+            "text": "击败失心战影 · 损失 0 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2139
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 2133
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2129
+          },
+          {
+            "text": "获得九转仙桃 · 立即恢复 180 生命。",
+            "kind": "item",
+            "turn": 2125
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2121
+          },
+          {
+            "text": "抵达 无相塔心",
+            "kind": "story",
+            "turn": 2120
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 2101
+          },
+          {
+            "text": "抵达 逆莲天梯",
+            "kind": "story",
+            "turn": 2100
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 2093
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 0 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 2084
+          },
+          {
+            "text": "获得凝息珠 · 收入行囊；随时使用，补满 6 点灵息。",
+            "kind": "item",
+            "turn": 2063
+          },
+          {
+            "text": "止妄扳杆已接通。",
+            "kind": "magic",
+            "turn": 2059
+          },
+          {
+            "text": "你化作青蝉钻过门隙，从内侧拔下门闩 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2053
+          },
+          {
+            "text": "击败失心战影 · 损失 0 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 2048
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2041
+          },
+          {
+            "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+            "kind": "magic",
+            "turn": 2030
+          },
+          {
+            "text": "毫毛化形，分身永久守住阵眼 · 灵息 −2。",
+            "kind": "magic",
+            "turn": 2022
+          },
+          {
+            "text": "供奉 128 金 · 防御 +3。",
+            "kind": "item",
+            "turn": 2003
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 2002
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1984
+          },
+          {
+            "text": "获得碧髓灵晶 · 永久防御 +4。",
+            "kind": "item",
+            "turn": 1980
+          },
+          {
+            "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+            "kind": "item",
+            "turn": 1976
+          },
+          {
+            "text": "获得仙酿蟠桃 · 立即恢复 120 生命。",
+            "kind": "item",
+            "turn": 1966
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1962
+          },
+          {
+            "text": "抵达 三问无生门",
+            "kind": "story",
+            "turn": 1961
+          },
+          {
+            "text": "击败镜中行者 · 损失 60 生命，获得 12 金。",
+            "kind": "combat",
+            "turn": 1952
+          },
+          {
+            "text": "获得功德金 · 获得 12 功德，可在灵息坛换取成长或治疗。",
+            "kind": "item",
+            "turn": 1942
+          },
+          {
+            "text": "逆莲扳杆已接通。",
+            "kind": "magic",
+            "turn": 1940
+          },
+          {
+            "text": "击败失心战影 · 损失 0 生命，获得 14 金。",
+            "kind": "combat",
+            "turn": 1936
+          },
+          {
+            "text": "莲灯燃起，灵息尽复。生命不会自动恢复。",
+            "kind": "magic",
+            "turn": 1909
+          },
+          {
+            "text": "击败嗔火金刚 · 损失 0 生命，获得 17 金。",
+            "kind": "combat",
+            "turn": 1900
+          }
+        ],
+        "elixirs": 9,
+        "orbs": 10,
+        "turn": 2272,
+        "defeated": false,
+        "won": true,
+        "ending": "release",
+        "purchases": {
+          "atk": 0,
+          "def": 10,
+          "heal": 0
+        },
+        "startedAt": 1792590364093,
+        "kills": 71
+      },
+      "fights": [
+        {
+          "i": 18,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-6",
+          "beforeHP": 800,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 27,
+          "floor": 1,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f0-5",
+          "beforeHP": 790,
+          "atk": 27,
+          "def": 10,
+          "damage": 39,
+          "rounds": 3,
+          "gold": 4,
+          "plus3Atk": 26,
+          "plus3Def": 30
+        },
+        {
+          "i": 36,
+          "floor": 1,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f0-4",
+          "beforeHP": 751,
+          "atk": 27,
+          "def": 10,
+          "damage": 10,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 10,
+          "plus3Def": 7
+        },
+        {
+          "i": 98,
+          "floor": 2,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f1-4",
+          "beforeHP": 921,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 112,
+          "floor": 2,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f1-6",
+          "beforeHP": 913,
+          "atk": 27,
+          "def": 12,
+          "damage": 85,
+          "rounds": 6,
+          "gold": 7,
+          "plus3Atk": 68,
+          "plus3Def": 70
+        },
+        {
+          "i": 134,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-2",
+          "beforeHP": 888,
+          "atk": 27,
+          "def": 12,
+          "damage": 8,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 8,
+          "plus3Def": 5
+        },
+        {
+          "i": 169,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-3",
+          "beforeHP": 1060,
+          "atk": 27,
+          "def": 15,
+          "damage": 5,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 5,
+          "plus3Def": 2
+        },
+        {
+          "i": 180,
+          "floor": 3,
+          "enemy": "巡山小妖",
+          "enemyId": "imp",
+          "entity": "f2-1",
+          "beforeHP": 1055,
+          "atk": 27,
+          "def": 15,
+          "damage": 5,
+          "rounds": 2,
+          "gold": 3,
+          "plus3Atk": 5,
+          "plus3Def": 2
+        },
+        {
+          "i": 209,
+          "floor": 3,
+          "enemy": "荆棘山魈",
+          "enemyId": "thorn",
+          "entity": "f2-4",
+          "beforeHP": 1050,
+          "atk": 27,
+          "def": 18,
+          "damage": 54,
+          "rounds": 5,
+          "gold": 5,
+          "plus3Atk": 41,
+          "plus3Def": 42
+        },
+        {
+          "i": 215,
+          "floor": 3,
+          "enemy": "赤眼夜蝠",
+          "enemyId": "bat",
+          "entity": "f2-6",
+          "beforeHP": 996,
+          "atk": 27,
+          "def": 18,
+          "damage": 15,
+          "rounds": 3,
+          "gold": 4,
+          "plus3Atk": 10,
+          "plus3Def": 6
+        },
+        {
+          "i": 226,
+          "floor": 3,
+          "enemy": "石胎守卫",
+          "enemyId": "stone",
+          "entity": "f2-5",
+          "beforeHP": 981,
+          "atk": 27,
+          "def": 18,
+          "damage": 55,
+          "rounds": 6,
+          "gold": 7,
+          "plus3Atk": 44,
+          "plus3Def": 40
+        },
+        {
+          "i": 316,
+          "floor": 4,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f3-1",
+          "beforeHP": 1086,
+          "atk": 35,
+          "def": 18,
+          "damage": 39,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 39,
+          "plus3Def": 30
+        },
+        {
+          "i": 321,
+          "floor": 4,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f3-2",
+          "beforeHP": 1047,
+          "atk": 35,
+          "def": 18,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 362,
+          "floor": 4,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f3-3",
+          "beforeHP": 1119,
+          "atk": 35,
+          "def": 18,
+          "damage": 85,
+          "rounds": 6,
+          "gold": 9,
+          "plus3Atk": 68,
+          "plus3Def": 70
+        },
+        {
+          "i": 425,
+          "floor": 5,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f4-5",
+          "beforeHP": 1034,
+          "atk": 35,
+          "def": 21,
+          "damage": 59,
+          "rounds": 4,
+          "gold": 7,
+          "plus3Atk": 59,
+          "plus3Def": 50
+        },
+        {
+          "i": 441,
+          "floor": 5,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f4-4",
+          "beforeHP": 975,
+          "atk": 35,
+          "def": 21,
+          "damage": 30,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 30,
+          "plus3Def": 21
+        },
+        {
+          "i": 476,
+          "floor": 5,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f4-6",
+          "beforeHP": 1125,
+          "atk": 38,
+          "def": 23,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 514,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-3",
+          "beforeHP": 1077,
+          "atk": 38,
+          "def": 23,
+          "damage": 24,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 16,
+          "plus3Def": 15
+        },
+        {
+          "i": 524,
+          "floor": 6,
+          "enemy": "灰烬沙弥",
+          "enemyId": "acolyte",
+          "entity": "f5-7",
+          "beforeHP": 1173,
+          "atk": 38,
+          "def": 23,
+          "damage": 24,
+          "rounds": 4,
+          "gold": 6,
+          "plus3Atk": 16,
+          "plus3Def": 15
+        },
+        {
+          "i": 528,
+          "floor": 6,
+          "enemy": "照骨禅师",
+          "enemyId": "bone",
+          "entity": "f5-2",
+          "beforeHP": 1249,
+          "atk": 38,
+          "def": 23,
+          "damage": 90,
+          "rounds": 6,
+          "gold": 12,
+          "plus3Atk": 90,
+          "plus3Def": 72
+        },
+        {
+          "i": 590,
+          "floor": 6,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f5-5",
+          "beforeHP": 1279,
+          "atk": 38,
+          "def": 26,
+          "damage": 44,
+          "rounds": 4,
+          "gold": 7,
+          "plus3Atk": 36,
+          "plus3Def": 35
+        },
+        {
+          "i": 599,
+          "floor": 6,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f5-6",
+          "beforeHP": 1295,
+          "atk": 38,
+          "def": 26,
+          "damage": 36,
+          "rounds": 5,
+          "gold": 9,
+          "plus3Atk": 36,
+          "plus3Def": 24
+        },
+        {
+          "i": 608,
+          "floor": 6,
+          "enemy": "铜铃怨灵",
+          "enemyId": "bell",
+          "entity": "f5-4",
+          "beforeHP": 1259,
+          "atk": 38,
+          "def": 26,
+          "damage": 48,
+          "rounds": 3,
+          "gold": 6,
+          "plus3Atk": 48,
+          "plus3Def": 48
+        },
+        {
+          "i": 665,
+          "floor": 7,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f6-1",
+          "beforeHP": 1331,
+          "atk": 46,
+          "def": 26,
+          "damage": 36,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 36,
+          "plus3Def": 30
+        },
+        {
+          "i": 720,
+          "floor": 7,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f6-3",
+          "beforeHP": 1355,
+          "atk": 46,
+          "def": 29,
+          "damage": 18,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 18,
+          "plus3Def": 9
+        },
+        {
+          "i": 733,
+          "floor": 7,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f6-2",
+          "beforeHP": 1337,
+          "atk": 46,
+          "def": 33,
+          "damage": 84,
+          "rounds": 4,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 84
+        },
+        {
+          "i": 778,
+          "floor": 8,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f7-5",
+          "beforeHP": 1373,
+          "atk": 46,
+          "def": 33,
+          "damage": 84,
+          "rounds": 4,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 84
+        },
+        {
+          "i": 841,
+          "floor": 8,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f7-6",
+          "beforeHP": 1349,
+          "atk": 49,
+          "def": 33,
+          "damage": 22,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 22,
+          "plus3Def": 20
+        },
+        {
+          "i": 853,
+          "floor": 8,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f7-4",
+          "beforeHP": 1327,
+          "atk": 49,
+          "def": 33,
+          "damage": 27,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 27,
+          "plus3Def": 18
+        },
+        {
+          "i": 886,
+          "floor": 9,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f8-5",
+          "beforeHP": 1300,
+          "atk": 49,
+          "def": 33,
+          "damage": 27,
+          "rounds": 4,
+          "gold": 9,
+          "plus3Atk": 27,
+          "plus3Def": 18
+        },
+        {
+          "i": 893,
+          "floor": 9,
+          "enemy": "青鳞蛇使",
+          "enemyId": "viper",
+          "entity": "f8-7",
+          "beforeHP": 1273,
+          "atk": 49,
+          "def": 33,
+          "damage": 22,
+          "rounds": 3,
+          "gold": 7,
+          "plus3Atk": 22,
+          "plus3Def": 20
+        },
+        {
+          "i": 898,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-6",
+          "beforeHP": 1251,
+          "atk": 49,
+          "def": 33,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 56
+        },
+        {
+          "i": 960,
+          "floor": 9,
+          "enemy": "覆水龙侍",
+          "enemyId": "flood",
+          "entity": "f8-3",
+          "beforeHP": 1295,
+          "atk": 49,
+          "def": 36,
+          "damage": 48,
+          "rounds": 7,
+          "gold": 14,
+          "plus3Atk": 40,
+          "plus3Def": 30
+        },
+        {
+          "i": 974,
+          "floor": 9,
+          "enemy": "溺水灯魂",
+          "enemyId": "water",
+          "entity": "f8-2",
+          "beforeHP": 1247,
+          "atk": 49,
+          "def": 36,
+          "damage": 56,
+          "rounds": 3,
+          "gold": 8,
+          "plus3Atk": 56,
+          "plus3Def": 56
+        },
+        {
+          "i": 986,
+          "floor": 9,
+          "enemy": "玄甲河将",
+          "enemyId": "crab",
+          "entity": "f8-4",
+          "beforeHP": 1311,
+          "atk": 49,
+          "def": 36,
+          "damage": 24,
+          "rounds": 5,
+          "gold": 11,
+          "plus3Atk": 24,
+          "plus3Def": 12
+        },
+        {
+          "i": 1060,
+          "floor": 10,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f9-6",
+          "beforeHP": 1587,
+          "atk": 59,
+          "def": 38,
+          "damage": 68,
+          "rounds": 5,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 56
+        },
+        {
+          "i": 1073,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-7",
+          "beforeHP": 1579,
+          "atk": 59,
+          "def": 38,
+          "damage": 102,
+          "rounds": 4,
+          "gold": 10,
+          "plus3Atk": 102,
+          "plus3Def": 102
+        },
+        {
+          "i": 1091,
+          "floor": 10,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f9-5",
+          "beforeHP": 1477,
+          "atk": 59,
+          "def": 38,
+          "damage": 102,
+          "rounds": 4,
+          "gold": 10,
+          "plus3Atk": 102,
+          "plus3Def": 102
+        },
+        {
+          "i": 1149,
+          "floor": 11,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f10-6",
+          "beforeHP": 1495,
+          "atk": 59,
+          "def": 38,
+          "damage": 9,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 9,
+          "plus3Def": 9
+        },
+        {
+          "i": 1228,
+          "floor": 11,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f10-7",
+          "beforeHP": 1546,
+          "atk": 64,
+          "def": 41,
+          "damage": 51,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 51,
+          "plus3Def": 42
+        },
+        {
+          "i": 1233,
+          "floor": 11,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f10-8",
+          "beforeHP": 1495,
+          "atk": 64,
+          "def": 41,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1271,
+          "floor": 12,
+          "enemy": "悬丝傀儡",
+          "enemyId": "puppet",
+          "entity": "f11-9",
+          "beforeHP": 1547,
+          "atk": 64,
+          "def": 41,
+          "damage": 9,
+          "rounds": 3,
+          "gold": 9,
+          "plus3Atk": 9,
+          "plus3Def": 9
+        },
+        {
+          "i": 1279,
+          "floor": 12,
+          "enemy": "赤炉金刚",
+          "enemyId": "furnace",
+          "entity": "f11-7",
+          "beforeHP": 1538,
+          "atk": 64,
+          "def": 41,
+          "damage": 36,
+          "rounds": 5,
+          "gold": 16,
+          "plus3Atk": 36,
+          "plus3Def": 24
+        },
+        {
+          "i": 1304,
+          "floor": 12,
+          "enemy": "丹毒方士",
+          "enemyId": "alchemist",
+          "entity": "f11-6",
+          "beforeHP": 1682,
+          "atk": 64,
+          "def": 45,
+          "damage": 39,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 39,
+          "plus3Def": 36
+        },
+        {
+          "i": 1353,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-8",
+          "beforeHP": 1643,
+          "atk": 64,
+          "def": 45,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1370,
+          "floor": 12,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f11-5",
+          "beforeHP": 1575,
+          "atk": 64,
+          "def": 45,
+          "damage": 68,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 68,
+          "plus3Def": 68
+        },
+        {
+          "i": 1462,
+          "floor": 12,
+          "enemy": "两仪判官",
+          "enemyId": "judge",
+          "entity": "f11-4",
+          "beforeHP": 1507,
+          "atk": 64,
+          "def": 48,
+          "damage": 15,
+          "rounds": 5,
+          "gold": 18,
+          "plus3Atk": 15,
+          "plus3Def": 0
+        },
+        {
+          "i": 1526,
+          "floor": 13,
+          "enemy": "丹炉火灵",
+          "enemyId": "flame",
+          "entity": "f12-2",
+          "beforeHP": 1772,
+          "atk": 69,
+          "def": 48,
+          "damage": 52,
+          "rounds": 3,
+          "gold": 10,
+          "plus3Atk": 52,
+          "plus3Def": 52
+        },
+        {
+          "i": 1548,
+          "floor": 13,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f12-1",
+          "beforeHP": 1720,
+          "atk": 69,
+          "def": 48,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 90,
+          "plus3Def": 90
+        },
+        {
+          "i": 1560,
+          "floor": 13,
+          "enemy": "铜面罗汉",
+          "enemyId": "brass",
+          "entity": "f12-3",
+          "beforeHP": 1630,
+          "atk": 69,
+          "def": 48,
+          "damage": 0,
+          "rounds": 2,
+          "gold": 9,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 1605,
+          "floor": 14,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f13-6",
+          "beforeHP": 1750,
+          "atk": 69,
+          "def": 52,
+          "damage": 18,
+          "rounds": 7,
+          "gold": 16,
+          "plus3Atk": 15,
+          "plus3Def": 0
+        },
+        {
+          "i": 1626,
+          "floor": 14,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f13-4",
+          "beforeHP": 1732,
+          "atk": 69,
+          "def": 52,
+          "damage": 24,
+          "rounds": 5,
+          "gold": 13,
+          "plus3Atk": 19,
+          "plus3Def": 20
+        },
+        {
+          "i": 1672,
+          "floor": 14,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f13-5",
+          "beforeHP": 1768,
+          "atk": 72,
+          "def": 52,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 90
+        },
+        {
+          "i": 1716,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-7",
+          "beforeHP": 1798,
+          "atk": 72,
+          "def": 55,
+          "damage": 90,
+          "rounds": 4,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 90
+        },
+        {
+          "i": 1773,
+          "floor": 15,
+          "enemy": "无字碑将",
+          "enemyId": "sentinel",
+          "entity": "f14-6",
+          "beforeHP": 1708,
+          "atk": 77,
+          "def": 59,
+          "damage": 0,
+          "rounds": 6,
+          "gold": 16,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 1779,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-8",
+          "beforeHP": 1708,
+          "atk": 77,
+          "def": 59,
+          "damage": 16,
+          "rounds": 4,
+          "gold": 13,
+          "plus3Atk": 16,
+          "plus3Def": 16
+        },
+        {
+          "i": 1792,
+          "floor": 15,
+          "enemy": "墨骨书妖",
+          "enemyId": "ink",
+          "entity": "f14-5",
+          "beforeHP": 1872,
+          "atk": 77,
+          "def": 59,
+          "damage": 16,
+          "rounds": 4,
+          "gold": 13,
+          "plus3Atk": 16,
+          "plus3Def": 16
+        },
+        {
+          "i": 1810,
+          "floor": 15,
+          "enemy": "藏经无相",
+          "enemyId": "archivist",
+          "entity": "f14-3",
+          "beforeHP": 2096,
+          "atk": 77,
+          "def": 59,
+          "damage": 0,
+          "rounds": 5,
+          "gold": 21,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 1823,
+          "floor": 15,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f14-4",
+          "beforeHP": 2316,
+          "atk": 77,
+          "def": 59,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 1900,
+          "floor": 16,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f15-6",
+          "beforeHP": 2436,
+          "atk": 82,
+          "def": 63,
+          "damage": 0,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 1936,
+          "floor": 16,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f15-5",
+          "beforeHP": 2436,
+          "atk": 82,
+          "def": 63,
+          "damage": 0,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 1952,
+          "floor": 16,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f15-7",
+          "beforeHP": 2436,
+          "atk": 82,
+          "def": 63,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 2048,
+          "floor": 17,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f16-6",
+          "beforeHP": 2616,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2084,
+          "floor": 17,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f16-5",
+          "beforeHP": 2616,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2093,
+          "floor": 17,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f16-7",
+          "beforeHP": 2616,
+          "atk": 82,
+          "def": 70,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 2139,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-2",
+          "beforeHP": 2736,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2146,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-4",
+          "beforeHP": 2796,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2162,
+          "floor": 18,
+          "enemy": "镜中行者",
+          "enemyId": "mirror",
+          "entity": "f17-6",
+          "beforeHP": 2796,
+          "atk": 82,
+          "def": 70,
+          "damage": 60,
+          "rounds": 3,
+          "gold": 12,
+          "plus3Atk": 60,
+          "plus3Def": 60
+        },
+        {
+          "i": 2206,
+          "floor": 18,
+          "enemy": "失心战影",
+          "enemyId": "shade",
+          "entity": "f17-3",
+          "beforeHP": 2916,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 4,
+          "gold": 14,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2213,
+          "floor": 18,
+          "enemy": "嗔火金刚",
+          "enemyId": "wrath",
+          "entity": "f17-5",
+          "beforeHP": 2976,
+          "atk": 82,
+          "def": 70,
+          "damage": 0,
+          "rounds": 5,
+          "gold": 17,
+          "plus3Atk": 0,
+          "plus3Def": 0
+        },
+        {
+          "i": 2240,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 2976,
+          "atk": 82,
+          "def": 70,
+          "damage": 792,
+          "rounds": 36,
+          "gold": 0,
+          "plus3Atk": 732,
+          "plus3Def": 684
+        }
+      ],
+      "summary": {
+        "kills": 71,
+        "zeroDamage": 11,
+        "totalDamage": 3436,
+        "boss": {
+          "i": 2240,
+          "floor": 18,
+          "enemy": "无相 · 心猿",
+          "enemyId": "heart",
+          "entity": "f17-7",
+          "beforeHP": 2976,
+          "atk": 82,
+          "def": 70,
+          "damage": 792,
+          "rounds": 36,
+          "gold": 0,
+          "plus3Atk": 732,
+          "plus3Def": 684
+        },
+        "damageBeforeBoss": 2644,
+        "hpMargin": 3984,
+        "orbUses": 0,
+        "healsUsed": 0,
+        "abilityUses": {
+          "staff": 10,
+          "morph": 8,
+          "clone": 9
+        },
+        "purchase": [
+          {
+            "i": 164,
+            "floor": 3,
+            "kind": "def",
+            "cost": 20
+          },
+          {
+            "i": 195,
+            "floor": 3,
+            "kind": "def",
+            "cost": 32
+          },
+          {
+            "i": 387,
+            "floor": 4,
+            "kind": "def",
+            "cost": 44
+          },
+          {
+            "i": 578,
+            "floor": 6,
+            "kind": "def",
+            "cost": 56
+          },
+          {
+            "i": 692,
+            "floor": 7,
+            "kind": "def",
+            "cost": 68
+          },
+          {
+            "i": 935,
+            "floor": 9,
+            "kind": "def",
+            "cost": 80
+          },
+          {
+            "i": 1207,
+            "floor": 11,
+            "kind": "def",
+            "cost": 92
+          },
+          {
+            "i": 1414,
+            "floor": 12,
+            "kind": "def",
+            "cost": 104
+          },
+          {
+            "i": 1682,
+            "floor": 14,
+            "kind": "def",
+            "cost": 116
+          },
+          {
+            "i": 2003,
+            "floor": 17,
+            "kind": "def",
+            "cost": 128
+          }
+        ]
+      },
+      "floorTotals": [
+        {
+          "floor": 1,
+          "hpGain": 180,
+          "damage": 59,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 2,
+          "hpGain": 180,
+          "damage": 93,
+          "spells": 0,
+          "kills": 2,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 3,
+          "hpGain": 340,
+          "damage": 142,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 4,
+          "hpGain": 180,
+          "damage": 172,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 5,
+          "hpGain": 180,
+          "damage": 137,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 6,
+          "hpGain": 400,
+          "damage": 266,
+          "spells": 1,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 7,
+          "hpGain": 180,
+          "damage": 138,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 8,
+          "hpGain": 180,
+          "damage": 133,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 9,
+          "hpGain": 400,
+          "damage": 233,
+          "spells": 2,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 10,
+          "hpGain": 180,
+          "damage": 272,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 11,
+          "hpGain": 180,
+          "damage": 128,
+          "spells": 2,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 12,
+          "hpGain": 400,
+          "damage": 235,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 13,
+          "hpGain": 180,
+          "damage": 142,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 1
+        },
+        {
+          "floor": 14,
+          "hpGain": 180,
+          "damage": 132,
+          "spells": 0,
+          "kills": 3,
+          "zeroDamage": 0
+        },
+        {
+          "floor": 15,
+          "hpGain": 760,
+          "damage": 182,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 2
+        },
+        {
+          "floor": 16,
+          "hpGain": 180,
+          "damage": 60,
+          "spells": 1,
+          "kills": 3,
+          "zeroDamage": 2
+        },
+        {
+          "floor": 17,
+          "hpGain": 240,
+          "damage": 60,
+          "spells": 3,
+          "kills": 3,
+          "zeroDamage": 2
+        },
+        {
+          "floor": 18,
+          "hpGain": 480,
+          "damage": 852,
+          "spells": 3,
+          "kills": 6,
+          "zeroDamage": 4
+        }
+      ],
+      "mana": [
+        {
+          "i": 241,
+          "floor": 3,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            8
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 252,
+          "floor": 3,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 312,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            7,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 336,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 339,
+          "floor": 4,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            5,
+            11
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 386,
+          "floor": 4,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 615,
+          "floor": 6,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 624,
+          "floor": 6,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 655,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 667,
+          "floor": 7,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            11,
+            6
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 691,
+          "floor": 7,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 796,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 829,
+          "floor": 8,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            5,
+            10
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 858,
+          "floor": 8,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 946,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 948,
+          "floor": 9,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            6
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 955,
+          "floor": 9,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1036,
+          "floor": 10,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1050,
+          "floor": 10,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 1148,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            3,
+            9
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1206,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 1216,
+          "floor": 11,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            7,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1224,
+          "floor": 11,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 4,
+          "manaAfter": 6
+        },
+        {
+          "i": 1312,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            1,
+            9
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1314,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1333,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1449,
+          "floor": 12,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            10
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1464,
+          "floor": 12,
+          "action": "step",
+          "args": [
+            "up"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1720,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            5,
+            3
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 1721,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            7,
+            4
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1747,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 1762,
+          "floor": 15,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            11,
+            4
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1812,
+          "floor": 15,
+          "action": "step",
+          "args": [
+            "up"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 1838,
+          "floor": 15,
+          "action": "travel",
+          "args": [
+            0
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 1853,
+          "floor": 1,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            10,
+            9
+          ],
+          "manaBefore": 5,
+          "manaAfter": 4
+        },
+        {
+          "i": 1854,
+          "floor": 1,
+          "action": "travel",
+          "args": [
+            14
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 1894,
+          "floor": 16,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            9,
+            5
+          ],
+          "manaBefore": 3,
+          "manaAfter": 1
+        },
+        {
+          "i": 1909,
+          "floor": 16,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 1,
+          "manaAfter": 6
+        },
+        {
+          "i": 2022,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            6,
+            5
+          ],
+          "manaBefore": 6,
+          "manaAfter": 4
+        },
+        {
+          "i": 2030,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            6,
+            10
+          ],
+          "manaBefore": 4,
+          "manaAfter": 3
+        },
+        {
+          "i": 2041,
+          "floor": 17,
+          "action": "step",
+          "args": [
+            "right"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 2053,
+          "floor": 17,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2121,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "left"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        },
+        {
+          "i": 2141,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "staff",
+            3,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2176,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "clone",
+            11,
+            3
+          ],
+          "manaBefore": 5,
+          "manaAfter": 3
+        },
+        {
+          "i": 2194,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 3,
+          "manaAfter": 6
+        },
+        {
+          "i": 2208,
+          "floor": 18,
+          "action": "useAbility",
+          "args": [
+            "morph",
+            9,
+            6
+          ],
+          "manaBefore": 6,
+          "manaAfter": 5
+        },
+        {
+          "i": 2253,
+          "floor": 18,
+          "action": "step",
+          "args": [
+            "down"
+          ],
+          "manaBefore": 5,
+          "manaAfter": 6
+        }
+      ],
+      "returns": [
+        {
+          "i": 1838,
+          "from": 15,
+          "to": 1,
+          "manaAfter": 5
+        },
+        {
+          "i": 1854,
+          "from": 1,
+          "to": 15,
+          "manaAfter": 3
+        }
+      ]
+    }
+  ]
+}

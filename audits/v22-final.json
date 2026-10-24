@@ -1,0 +1,169 @@
+{
+  "version": 22,
+  "date": "2026-10-24",
+  "status": "implemented_and_locally_verified",
+  "scope": "P0 playability loops and related P1 comparison, recovery and concrete outcomes; no external player-study completion claim",
+  "source": {
+    "index.html": "0aa35a815679d8f4b7a8f296c8d2e80dd754d422cd81a97f95a08eeb74efc652",
+    "js/engine.js": "f632273b3d0395c16d3618617f32047947b0f83ac5d001e36775fcca20bd45aa",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/planning.js": "503c93a8c950dc071fa5cfe32422bbc298e2648f21c2b3bc79ddc5cac75b5276",
+    "js/planning-ui.js": "450d5f4d56cef27646b73291e6050b0520b032847e336698bf5387ed4ced9adc",
+    "js/ui.js": "2472a3215be8604eb476ee62e627194ddb7a122e2434eefd1a6ec604f452782b",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    "css/planning.css": "ebe2a27bf546c3345e3f0df21073559a6b41de7777dfc115eccdb7d1bbca1e87",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "docs/v22-playability-plan.md": "7690d6c52f8e19f462f609792c0583fc6b5b00238c068d9b1e8844ca0c10acd6",
+    "docs/v22-playability-review.md": "856caedc563563d50f8b24ec897f7dfbc280b5e3964cbbebc60395dcc7e9fb00",
+    "tests/v22-all-owned-gear.cjs": "b117b5ab13204486189f8033bef1399e7405eedf86ea261885415595f47212a3",
+    "tests/v22-archive-hardening.cjs": "aa5826b180ff7ab3412b8ef45bc532be9aeed6af506e02ffb10d80c20bd5284c",
+    "tests/v22-branch-routes.cjs": "75b88e188ead25b6688ea9f6fabd332606596b0dea6bd3b90b07e4162fdbe095",
+    "tests/v22-campaign-regression.cjs": "aaf4355f61bfe361dd0af4d63e467f6f9087d82a567938a6fcb0f1f70bddf4d2",
+    "tests/v22-finale-regression.cjs": "5acf0c4bc198f683bb7e4dbddfd0abdeb0f2838f9bd5d46572e6c56a87f244d3",
+    "tests/v22-playability-browser.cjs": "1131b62e27f311d3d16065abeff8e78fe457608b2b6999b255f284b6e6915329",
+    "tests/v22-playability-model.cjs": "d8f1a377d6624d865f07360a189b6866b7c00b752a5ff9c72430c28ff5fb51b7",
+    "README.md": "98aa5d87ecc4a15186f4e3d543781d741245bf5a3f0d2a29de912be88e2bb011"
+  },
+  "reports": [
+    {
+      "file": "audits/v22-playability-model.json",
+      "passed": true,
+      "checkGroups": 7,
+      "sha256": "eb7b1f4663cde4380630c73cd978d35004745ab4048602651639b6996822a103"
+    },
+    {
+      "file": "audits/v22-playability-browser.json",
+      "passed": true,
+      "checkGroups": 11,
+      "sha256": "4e92c9ac9144bca0e75d284785ed0ad4a79198a8a97ef5ca1d84b8274403b3e3"
+    },
+    {
+      "file": "audits/v22-branch-routes.json",
+      "passed": true,
+      "checkGroups": 3,
+      "sha256": "5104ae1762b0fc423517ff945f3300e531982a9416ac9d36bafadedd1e63f151"
+    },
+    {
+      "file": "audits/v22-all-owned-gear.json",
+      "passed": true,
+      "checkGroups": 1,
+      "sha256": "003ac3a7022dd6781c5724e2d3f9216a46a64eed34b603328fff153345496632"
+    },
+    {
+      "file": "audits/v22-archive-hardening.json",
+      "passed": true,
+      "checkGroups": 2,
+      "sha256": "a027af13513aa72735bff16b1053d70f100fbfca6ff69f3209beb9cc76301b63"
+    },
+    {
+      "file": "audits/v22-regression-campaign-regression.json",
+      "passed": true,
+      "checkGroups": 21,
+      "sha256": "8c24b0e87078bebff530f62a665fcc68aae450c403af4f45ef40ae7af6dc88d0"
+    },
+    {
+      "file": "audits/v22-regression-finale-browser.json",
+      "passed": true,
+      "checkGroups": 15,
+      "sha256": "8ccfb38124f7452d31a84ca9c4ce1518c0b45ba0126ea10d6767ea6885ff3013"
+    }
+  ],
+  "checkGroups": 60,
+  "syntaxFiles": [
+    "js/art-style.js",
+    "js/assets.js",
+    "js/audio.js",
+    "js/chronicle.js",
+    "js/engine.js",
+    "js/film-art.js",
+    "js/finale.js",
+    "js/journey.js",
+    "js/material-assets.js",
+    "js/planning-ui.js",
+    "js/planning.js",
+    "js/presentation.js",
+    "js/renderer.js",
+    "js/story-director.js",
+    "js/tactics.js",
+    "js/ui.js",
+    "js/world.js"
+  ],
+  "visualReview": {
+    "method": "Representative screenshots opened individually at original resolution; live Chrome screenshot also inspected.",
+    "files": [
+      "audits/v22-three-step-plan.png",
+      "audits/v22-material-desk-1280.png",
+      "audits/v22-owned-gear-comparison.png",
+      "audits/v22-chapter-restore-confirmation.png",
+      "audits/v22-concrete-stage-result.png",
+      "audits/v22-live-continuation.png",
+      "audits/v22-live-planning.png"
+    ]
+  },
+  "performanceSamples": [
+    {
+      "coldNewContextReadyMs": 680,
+      "browser": "156.0.8078.47",
+      "viewport": "1440x900",
+      "method": "fresh isolated browser context, local HTTP; single observation, not human hardware survey"
+    },
+    {
+      "safeRouteSteps": 8,
+      "travel": [
+        {
+          "fast": false,
+          "ms": 911
+        },
+        {
+          "fast": true,
+          "ms": 337
+        }
+      ]
+    }
+  ],
+  "legalProgression": {
+    "originalFullRoutesPreserved": [
+      4142,
+      3850
+    ],
+    "alternateLocalBranches": 8,
+    "floor8": "Both ferry outcomes obtain the same relic using a key saved by legally skipping an optional first-floor alcove.",
+    "floor11": "Both scroll outcomes legally reassign two shadows and traverse to floor 12.",
+    "allOwnedGearSets": 22,
+    "allOwnedGearSurvivableAtSample": 10,
+    "method": "Public player actions from new games; focused browser checks import only resulting legal snapshots and their archives. No added resource or arbitrary position state."
+  },
+  "livePreview": {
+    "url": "http://127.0.0.1:8765/",
+    "browser": "Chrome",
+    "tabId": "1646801396",
+    "floor": 2,
+    "turn": 165,
+    "hp": 596,
+    "mana": [
+      6,
+      6
+    ],
+    "keys": [
+      2,
+      1,
+      0
+    ],
+    "coins": 9,
+    "orbs": 1,
+    "operations": "Reload existing tab; continue old autosave; acknowledge arrival; open T; inspect continuation archive; mark a guardian and consumable in read-only rehearsal. No battle, consumable use, equipment change or chapter restore in the user game.",
+    "oldArchivePolicy": "Only the actual current continuation point is created for a state-only legacy save."
+  },
+  "limits": [
+    "G04 new map/encounter compositions not added; this pass implements current-puzzle comparison and proves legal existing alternatives.",
+    "G08 independent chapter challenge mode and local best records deferred per original analysis.",
+    "Human comprehension, fatigue, enjoyment and long-term balance remain unmeasured.",
+    "PC Chrome and offline index focus; mobile and broad browser adaptation deferred.",
+    "Recent outcome recap is session-only; formal quests remain in the campaign save and journal."
+  ],
+  "backup": ".backups/playability-v22-20261024"
+}

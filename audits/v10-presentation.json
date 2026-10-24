@@ -1,0 +1,66 @@
+{
+  "startedAt": "2026-10-23T04:10:34.891Z",
+  "frames": [
+    {
+      "style": "material",
+      "mode": "staff",
+      "file": "v10-material-staff-late.png",
+      "phase": "late; actual committed cast"
+    },
+    {
+      "style": "material",
+      "mode": "morph",
+      "file": "v10-material-morph-late.png",
+      "phase": "late; actual committed cast"
+    },
+    {
+      "style": "material",
+      "mode": "clone",
+      "file": "v10-material-clone-late.png",
+      "phase": "late; actual committed cast"
+    },
+    {
+      "style": "mural",
+      "mode": "staff",
+      "file": "v10-mural-staff-late.png",
+      "phase": "late; actual committed cast"
+    },
+    {
+      "style": "mural",
+      "mode": "morph",
+      "file": "v10-mural-morph-late.png",
+      "phase": "late; actual committed cast"
+    },
+    {
+      "style": "mural",
+      "mode": "clone",
+      "file": "v10-mural-clone-late.png",
+      "phase": "late; actual committed cast"
+    }
+  ],
+  "errors": [],
+  "offline": {
+    "fileURL": true,
+    "networkOffline": true,
+    "remoteRequests": [],
+    "inventorySlots": 6,
+    "muralLoaded": true,
+    "ritualVisible": true
+  },
+  "completed": true,
+  "decisions": [
+    {
+      "group": "locks",
+      "choice": "gold",
+      "exactResourceSettlement": true,
+      "repeatSpendsNothing": true
+    },
+    {
+      "group": "sevenWounds",
+      "choice": "rescue",
+      "exactResourceSettlement": true,
+      "repeatSpendsNothing": true
+    }
+  ],
+  "finishedAt": "2026-10-23T04:10:47.163Z"
+}

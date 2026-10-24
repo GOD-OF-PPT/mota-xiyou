@@ -1,0 +1,30 @@
+{
+  "errors": [],
+  "loader": {
+    "loaded": 9,
+    "total": 9,
+    "failed": []
+  },
+  "frames": {
+    "calls": 16,
+    "missing": [],
+    "entries": 144,
+    "bounds": [
+      6,
+      61,
+      254,
+      312
+    ]
+  },
+  "effects": {
+    "standard": 4,
+    "reduced": true,
+    "skipped": 0,
+    "stateUntouched": true
+  },
+  "ids": {
+    "checked": 58,
+    "missing": []
+  },
+  "stagedVisuals": true
+}

@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-24",
+  "status": "implemented_pc_layout_acceptance_complete",
+  "report": "docs/v27-popup-layout-review.md",
+  "verification": "audits/v27-verification.json",
+  "source": {
+    "index.html": "a1c38cefba0666bebc7cddf59c35992e858e86bd1099c77de7bfaa087323d9ce",
+    "js/ui.js": "b3aefb7ef9b934e552609e40050e68a06bca4270ec09be468f8139c446864b4e",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "css/ui-layout.css": "c2bbd52abcbfc67ba370c0ec76dae99151cf8caeb1115fac8ef71bba3f282a17",
+    "playtest-v23-new.html": "e04ba23faf8b719853c244bab4c626861d3724b8c72d6a217b11b52a6567854c",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c"
+  },
+  "results": [
+    {
+      "report": "audits/v27-context-layout-browser.json",
+      "checks": 8,
+      "renderRecords": 8,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-image-skins-browser.json",
+      "checks": 4,
+      "renderRecords": 13,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-surfaces-browser.json",
+      "checks": 10,
+      "renderRecords": 226,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-playability-browser.json",
+      "checks": 11,
+      "renderRecords": 12,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-trials-browser.json",
+      "checks": 11,
+      "renderRecords": 16,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-regression-campaign-regression.json",
+      "checks": 21,
+      "renderRecords": 21,
+      "writingAndPaintDefects": 0
+    },
+    {
+      "report": "audits/v27-study-browser.json",
+      "checks": 6,
+      "renderRecords": 0,
+      "writingAndPaintDefects": 0
+    }
+  ],
+  "pcViewports": [
+    "629x678",
+    "1280x720",
+    "1440x900",
+    "1989x1113"
+  ],
+  "artStyles": [
+    "material",
+    "mural"
+  ],
+  "pauseViews": [
+    "awakening",
+    "bestiary",
+    "character",
+    "collection",
+    "defeat",
+    "ending",
+    "ending-choice",
+    "guide",
+    "inventory",
+    "journal",
+    "load",
+    "menu",
+    "planning",
+    "restart",
+    "settings",
+    "style",
+    "trials"
+  ],
+  "inspectedAtOriginalSize": [
+    "audits/v27-material-objective-629.png",
+    "audits/v27-material-inventory-629.png",
+    "audits/v27-material-owned-inventory.png",
+    "audits/v27-material-floor-scroll-629.png",
+    "audits/v27-material-journal-629.png",
+    "audits/v27-material-bestiary-629.png",
+    "audits/v27-material-guide-629.png",
+    "audits/v27-material-settings-629.png",
+    "audits/v27-material-planning-629.png",
+    "audits/v27-material-lotus-629.png",
+    "audits/v27-material-choice-3-629.png",
+    "audits/v27-material-battle-forecast.png",
+    "audits/v27-material-battle-rules-629.png",
+    "audits/v27-material-expanded-context.png",
+    "audits/v27-material-menu-629.png",
+    "audits/v27-material-style-629.png",
+    "audits/v27-material-load-629.png",
+    "audits/v27-material-trials-629.png",
+    "audits/v27-material-collection-629.png",
+    "audits/v27-material-restart-629.png",
+    "audits/v27-material-awakening.png",
+    "audits/v27-material-defeat.png",
+    "audits/v27-material-ending-choice.png",
+    "audits/v27-material-ending.png",
+    "audits/v27-regression-campaign-regression-short-speech.png"
+  ],
+  "nativePreview": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI27&round=1&task=first-three&objective=explore&art=material",
+  "unchangedRules": [
+    "js/engine.js",
+    "js/world.js",
+    "js/encounters.js",
+    "js/outcomes.js",
+    "js/journey.js"
+  ],
+  "frozenBaselineSHA256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "backup": ".backups/layout-v27-20261024/",
+  "humanParticipants": 0,
+  "limits": "Expert screenshot inspection and automated checks do not replace player preference studies."
+}

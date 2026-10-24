@@ -1,0 +1,19 @@
+{
+  "reviewDate": "2026-10-21",
+  "scope": "Official and developer descriptions of adjacent game mechanics; proposed adaptations are design hypotheses, not player-validated results.",
+  "sources": [
+    {"game":"Desktop Dungeons: Rewind","url":"https://store.steampowered.com/app/1976950/Desktop_Dungeons_Rewind/","mechanic":"Exploration restores resources while the supply of unexplored terrain is finite.","adaptation":"Visible finite incense nodes with alternative uses; preserve readable fixed maps."},
+    {"game":"Into the Breach","url":"https://www.subsetgames.com/itb.html","mechanic":"Enemy attacks are telegraphed.","adaptation":"A few deterministic elite rooms and boss phases with full outcome previews."},
+    {"game":"Hoplite","url":"https://www.magmafortress.com/2013/09/hoplite-20.html","mechanic":"Throwing a spear temporarily removes lunge until it is retrieved; some upgrades require health sacrifice.","adaptation":"Ability deployment should change available options and create explicit opportunity costs."},
+    {"game":"DROD","url":"https://caravelgames.com/Articles/Games_2/AE.html","mechanic":"Handcrafted rooms focus on movement, weapon orientation and logic.","adaptation":"Room-level reversible experimentation that restores all local rewards and costs atomically."},
+    {"game":"Baba Is You","url":"https://hempuli.itch.io/baba","mechanic":"Manipulating visible rule objects changes interactions.","adaptation":"A small stable vocabulary of weight, light, solidity and identity shared by abilities and mechanisms."},
+    {"game":"Dungeon and Puzzles","url":"https://www.nintendo.com/us/store/products/dungeon-and-puzzles-switch/","mechanic":"Equipment changes the adventurer's usable ability and spatial solution.","adaptation":"Different monkey forms should change object interactions, not merely unlock a differently colored obstacle."},
+    {"game":"TUNIC","url":"https://finji.co/games/tunic/","mechanic":"An interconnected world and collectible manual pages with hints and secrets.","adaptation":"A clue journal that connects newly understood rules with explicitly marked earlier locations."},
+    {"game":"Slay the Spire","url":"https://store.steampowered.com/app/646570/Slay_the_Spire/","mechanic":"Synergistic builds and dangerous or safe paths with different rewards and costs.","adaptation":"Visible branch rewards and build commitments without importing card draws or randomized maps."},
+    {"game":"Patrick's Parabox","url":"https://patricktraynor.itch.io/patricks-parabox","mechanic":"Handcrafted puzzles develop a system through new ideas rather than filler.","adaptation":"Give every floor a distinct intended discovery, with introduction, variation and combination across each chapter."},
+    {"game":"Fidel Dungeon Rescue","url":"https://danielben.itch.io/fidel-dungeon-rescue","mechanic":"Rewind supports searching paths through monsters and treasure.","adaptation":"Decision-level undo and comparing selected route plans."},
+    {"game":"Tactical Nexus","url":"https://store.steampowered.com/app/1141290/Tactical_Nexus/","mechanic":"Fixed nonrandom towers with undo/redo, status comparison and route memos.","adaptation":"Persist manual save slots, compare snapshots and record routes without making repeated walking consume all undo history."},
+    {"game":"Outer Wilds","url":"https://www.mobiusdigitalgames.com/news/filling-out-the-toolbox","mechanic":"Contextual tool learning and opportunities to experiment.","adaptation":"Short safe situations that demonstrate why a tool matters before presenting the full rules."},
+    {"game":"Invisible, Inc.","url":"https://www.klei.com/games/invisible-inc/","mechanic":"Stealth, precision and cooperation support high-stakes mission objectives.","adaptation":"Optional rescue, bypass and preservation objectives so killing every guardian is not the only rewarding policy."}
+  ]
+}

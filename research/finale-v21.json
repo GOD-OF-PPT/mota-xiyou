@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-24",
+  "requirements": [
+    {
+      "id": "F-keys",
+      "status": "implemented and locally verified",
+      "evidence": [
+        "audits/v21-finale-browser.json",
+        "audits/v21-static.json",
+        "audits/v21-live-resumed.png"
+      ]
+    },
+    {
+      "id": "story",
+      "status": "implemented and locally verified",
+      "evidence": [
+        "audits/v21-chest-story.json",
+        "js/story-director.js"
+      ]
+    },
+    {
+      "id": "finale",
+      "status": "implemented and locally verified",
+      "evidence": [
+        "audits/v21-finale-model.json",
+        "audits/v21-finale-browser.json",
+        "research/finale-registration-v21.json"
+      ]
+    }
+  ],
+  "design": "Three impressions turn previous abilities into three mutually exclusive phase assignments. Finite preparation orbs remain available for a separate cost-benefit choice. All costs and total damage are forecast before commitment.",
+  "sources": [
+    "docs/v10-immersion-plan.md",
+    "docs/v20-similar-games-research.md",
+    "docs/v20-playability-analysis.md"
+  ],
+  "assetProvenance": [
+    "research/finale-asset-provenance-v21.json",
+    "research/finale-mural-hero-provenance-v21.json"
+  ],
+  "review": "docs/v21-finale-review.md",
+  "limits": [
+    "Focused PC Chrome and direct offline file checks; mobile and broad compatibility deferred.",
+    "Automated deterministic routes and visual review do not establish new-player comprehension, long-term balance or personal enjoyment.",
+    "New cinematic sound cues execute with existing sound preferences; no independent listening review."
+  ]
+}

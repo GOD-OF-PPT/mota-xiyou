@@ -1,0 +1,114 @@
+{
+  "source": {
+    "js/engine.js": "f632273b3d0395c16d3618617f32047947b0f83ac5d001e36775fcca20bd45aa",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/planning.js": "503c93a8c950dc071fa5cfe32422bbc298e2648f21c2b3bc79ddc5cac75b5276",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c"
+  },
+  "checks": [
+    "Both legal full campaigns preserve every original state field, six chapter starts and bounded decision archives",
+    "Save/load, exact whole-state restore, forward-record trimming, one return to present, manual-slot isolation and malformed import rejection",
+    "Old state-only saves start a current continuation record without fabricated earlier chapters",
+    "Representative legal battles match real damage; isolated simulations do not write storage or mutate the original state",
+    "A restored choice can take the alternate outcome once; undo and redo retain finite resource semantics",
+    "Only owned zero/one/two gear sets compare freely; lantern confirmation is atomic and undoable",
+    "Local three-step limit, cross-floor refusal, unwalked cells and event adjacency stop fast travel"
+  ],
+  "routes": [
+    {
+      "file": "playthrough-v9-free-mixed-direct-offering.json",
+      "actions": 4142,
+      "archiveBytes": 705379,
+      "chapters": 6,
+      "records": 13
+    },
+    {
+      "file": "playthrough-v9-gold-def-anchor-offering.json",
+      "actions": 3850,
+      "archiveBytes": 704292,
+      "chapters": 6,
+      "records": 13
+    }
+  ],
+  "samples": [
+    {
+      "floor": 1,
+      "enemy": "thresholdImp",
+      "damage": 10
+    },
+    {
+      "floor": 1,
+      "enemy": "thresholdImp",
+      "damage": 10
+    },
+    {
+      "floor": 1,
+      "enemy": "imp",
+      "damage": 10
+    },
+    {
+      "floor": 1,
+      "enemy": "bat",
+      "damage": 39
+    },
+    {
+      "floor": 2,
+      "enemy": "imp",
+      "damage": 8
+    },
+    {
+      "floor": 2,
+      "enemy": "bat",
+      "damage": 22
+    },
+    {
+      "floor": 2,
+      "enemy": "bat",
+      "damage": 22
+    },
+    {
+      "floor": 2,
+      "enemy": "bat",
+      "damage": 22
+    },
+    {
+      "floor": 2,
+      "enemy": "stone",
+      "damage": 68
+    },
+    {
+      "floor": 2,
+      "enemy": "reliquary0",
+      "damage": 85
+    },
+    {
+      "floor": 3,
+      "enemy": "imp",
+      "damage": 8
+    },
+    {
+      "floor": 3,
+      "enemy": "imp",
+      "damage": 8
+    }
+  ],
+  "timing": [
+    {
+      "file": "playthrough-v9-free-mixed-direct-offering.json",
+      "engineMsMedian": 1.75649999999996,
+      "engineMsP95": 5.069700000000012
+    },
+    {
+      "file": "playthrough-v9-gold-def-anchor-offering.json",
+      "engineMsMedian": 1.4562999999998283,
+      "engineMsP95": 5.016799999997602
+    },
+    {
+      "allOwnedCombinations": 4,
+      "steps": 2,
+      "ms": 2.2476000000024214
+    }
+  ],
+  "passed": true
+}

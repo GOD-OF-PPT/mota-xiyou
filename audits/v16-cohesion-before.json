@@ -1,0 +1,25 @@
+{
+  "tag": "before",
+  "startedAt": "2026-10-23T04:22:29.604Z",
+  "source": {
+    "js/renderer.js": "d0463576f0c10d99f01a1962a3aa3749a44847f91617a3e0898e1f9b7201b05a",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "index.html": "b9233211945793d0134d6b57be9ce7ca3665d43b2741b09bdec6a2ff8c0f422e"
+  },
+  "checks": [],
+  "screenshots": [
+    "audits/v16-before-material-first.png",
+    "audits/v16-before-material-courtyard.png",
+    "audits/v16-before-material-courtyard-detail.png",
+    "audits/v16-before-material-mechanism.png",
+    "audits/v16-before-mural-first.png",
+    "audits/v16-before-mural-courtyard.png",
+    "audits/v16-before-mural-courtyard-detail.png",
+    "audits/v16-before-mural-mechanism.png"
+  ],
+  "errors": [],
+  "campaignActions": 4142,
+  "captured": true,
+  "finishedAt": "2026-10-23T04:22:34.155Z"
+}

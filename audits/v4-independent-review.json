@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-10-21T23:42:25.884Z",
+  "scope": "Read-only source and Node probes. No browser, no production edits, no claim about human play time.",
+  "hashes": {
+    "js/engine.js": "75aa490f0433cefd3536ed99b92d4881c5052eb681d110e0af985cb793f124b4",
+    "js/world.js": "b81077a8854f53d953729d86811bea24ebb24b92caa1ef3a2a546b8f39088f21",
+    "js/ui.js": "e7e5f7e93b7e8b7603ba84b3bbe7ec826bdc55529f0f1d64308994c6605d39ce"
+  },
+  "combat": {
+    "checked": 4356,
+    "mismatches": []
+  },
+  "migration": {
+    "checked": 48,
+    "mismatches": [],
+    "replayFailures": [],
+    "replayedToVictory": true
+  },
+  "guardTopology": [
+    {
+      "floor": 1,
+      "target": "f0-fragment-0",
+      "guard": "f0-5",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 2,
+      "target": "f1-fragment-1",
+      "guard": "f1-6",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 2,
+      "target": "f1-treasure-iron",
+      "guard": "f1-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 3,
+      "target": "f2-fragment-2",
+      "guard": "f2-5",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 4,
+      "target": "f3-fragment-3",
+      "guard": "f3-3",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 5,
+      "target": "f4-fragment-4",
+      "guard": "f4-wing-guard-0",
+      "reachableWithGuardAlive": true,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": true
+    },
+    {
+      "floor": 5,
+      "target": "f4-treasure-lotus",
+      "guard": "f4-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 6,
+      "target": "f5-fragment-5",
+      "guard": "f5-2",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 7,
+      "target": "f6-fragment-6",
+      "guard": "f6-3",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 8,
+      "target": "f7-fragment-7",
+      "guard": "f7-4",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 8,
+      "target": "f7-treasure-tide",
+      "guard": "f7-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 9,
+      "target": "f8-fragment-8",
+      "guard": "f8-3",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 10,
+      "target": "f9-fragment-9",
+      "guard": "f9-6",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 11,
+      "target": "f10-fragment-10",
+      "guard": "f10-7",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 11,
+      "target": "f10-treasure-thorn",
+      "guard": "f10-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 12,
+      "target": "f11-fragment-11",
+      "guard": "f11-4",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 13,
+      "target": "f12-fragment-12",
+      "guard": "f12-1",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 14,
+      "target": "f13-fragment-13",
+      "guard": "f13-6",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 14,
+      "target": "f13-treasure-mirror",
+      "guard": "f13-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 15,
+      "target": "f14-fragment-14",
+      "guard": "f14-3",
+      "reachableWithGuardAlive": true,
+      "intendedRescueBypass": true,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 15,
+      "target": "f14-fragment-15",
+      "guard": "f14-3",
+      "reachableWithGuardAlive": true,
+      "intendedRescueBypass": true,
+      "intendedBlueContractBypass": false
+    },
+    {
+      "floor": 17,
+      "target": "f16-treasure-ember",
+      "guard": "f16-reliquary",
+      "reachableWithGuardAlive": false,
+      "intendedRescueBypass": false,
+      "intendedBlueContractBypass": false
+    }
+  ],
+  "stairRequirements": [
+    {
+      "floor": 1,
+      "missingFragment": 0,
+      "rejected": true
+    },
+    {
+      "floor": 2,
+      "missingFragment": 1,
+      "rejected": true
+    },
+    {
+      "floor": 3,
+      "missingFragment": 2,
+      "rejected": true
+    },
+    {
+      "floor": 4,
+      "missingFragment": 3,
+      "rejected": true
+    },
+    {
+      "floor": 5,
+      "missingFragment": 4,
+      "rejected": true
+    },
+    {
+      "floor": 6,
+      "missingFragment": 5,
+      "rejected": true
+    },
+    {
+      "floor": 7,
+      "missingFragment": 6,
+      "rejected": true
+    },
+    {
+      "floor": 8,
+      "missingFragment": 7,
+      "rejected": true
+    },
+    {
+      "floor": 9,
+      "missingFragment": 8,
+      "rejected": true
+    },
+    {
+      "floor": 10,
+      "missingFragment": 9,
+      "rejected": true
+    },
+    {
+      "floor": 11,
+      "missingFragment": 10,
+      "rejected": true
+    },
+    {
+      "floor": 12,
+      "missingFragment": 11,
+      "rejected": true
+    },
+    {
+      "floor": 13,
+      "missingFragment": 12,
+      "rejected": true
+    },
+    {
+      "floor": 14,
+      "missingFragment": 13,
+      "rejected": true
+    },
+    {
+      "floor": 15,
+      "missingFragment": 14,
+      "rejected": true
+    },
+    {
+      "floor": 15,
+      "missingFragment": 15,
+      "rejected": true
+    }
+  ],
+  "findings": [],
+  "resolvedFindings": [
+    {
+      "severity": "high",
+      "type": "recall-softlock",
+      "source": "js/engine.js hasSafeRetreat",
+      "before": "A staircase counted as safe without its required controls/fragments. Public-action replay plus orb offerings and cloud travel reached floor 11 upstairs with zero mana/orbs; recalling silk-a closed both retreat and the only usable stairs.",
+      "fix": "Staircase now requires requirements(here,flags).met as well as its heart-seal requirement.",
+      "verification": "audits/v4-softlock-check.cjs refuses recall without changing flags/resources, preserving the usable stairs and lantern retreat."
+    },
+    {
+      "severity": "minor",
+      "type": "misdirecting-dialogue",
+      "source": "js/world.js dialogues.library and dialogues.sevenWounds",
+      "before": "Said northwest rescue side gate; actual floor 15 gate is player coordinate 18,15 in southeast wing.",
+      "fixObserved": true
+    },
+    {
+      "severity": "minor",
+      "type": "outdated-collection-copy",
+      "source": "js/world.js dialogues.lantern.lines[1] and dialogues.library.lines[2]",
+      "before": "Said heart seals hide grouped relics; v4 fragments are separately collected across floors.",
+      "fixObserved": true
+    },
+    {
+      "severity": "minor",
+      "type": "floor-5-route-information",
+      "before": "Blue north lock enters the fragment wing behind its advertised serpent guard. Gold/free routes meet the east mouth guard.",
+      "resolution": "Root retained this actual key-route advantage and disclosed it in objective, hint and fragment description.",
+      "fixObserved": true
+    }
+  ]
+}

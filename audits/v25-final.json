@@ -1,0 +1,142 @@
+{
+  "version": 25,
+  "date": "2026-10-24",
+  "scopeStatus": "complete",
+  "scope": "Current-version popup and pause art/interaction overhaul based on verified game UI guidance",
+  "technicalAcceptance": true,
+  "representativeVisualAcceptance": true,
+  "humanPreferenceAcceptance": false,
+  "sourceReferences": "research/ui-v25-sources.json",
+  "surfaceIndex": "research/ui-v25-surface-index.json",
+  "reports": [
+    {
+      "file": "audits/v25-playability-browser.json",
+      "passed": true,
+      "checks": 11,
+      "sha256": "9f919183888daede8cd0b4583066a134c5a126336048a29320775154daad931e"
+    },
+    {
+      "file": "audits/v25-trials-browser.json",
+      "passed": true,
+      "checks": 11,
+      "sha256": "0b7d33ec2f7e184230e02b469583612b3a2ea492dd9b30689e8156051d71e03c"
+    },
+    {
+      "file": "audits/v25-regression-campaign-regression.json",
+      "passed": true,
+      "checks": 21,
+      "sha256": "bd0cb422c412b50bfcfd202562a9cf0c50c9490af70bde7334230ae09e63bed2"
+    },
+    {
+      "file": "audits/v25-regression-finale-browser.json",
+      "passed": true,
+      "checks": 15,
+      "sha256": "505c344f529b0254a15972a9bebac3ed29f827a4c007b2fde747aa5774b017e4"
+    },
+    {
+      "file": "audits/v25-surfaces-browser.json",
+      "passed": true,
+      "checks": 10,
+      "sha256": "7281a5d557f45521ba77965d7de8a00e1fa758b574fceaa5ecd8eeda5011fddd"
+    },
+    {
+      "file": "audits/v25-study-browser.json",
+      "passed": true,
+      "checks": 6,
+      "sha256": "8107971fa9e4fb51c1394d53425aa7fc55634ff394c0d3828fd71ebe44cf8616"
+    }
+  ],
+  "technicalCheckGroups": 74,
+  "syntaxFiles": [
+    "js/ui.js",
+    "scripts/build_v23_study.cjs",
+    "scripts/prepare_v25_fixtures.cjs",
+    "tests/v25-planning-browser.cjs",
+    "tests/v25-trials-browser.cjs",
+    "tests/v25-campaign-regression.cjs",
+    "tests/v25-finale-regression.cjs",
+    "tests/v25-surfaces-browser.cjs",
+    "tests/v25-study-browser.cjs",
+    "research/study-v23/fixtures.js"
+  ],
+  "source": {
+    "index.html": "dad97f3c883860e38d35fa568db521fa93ca9e508ce76a7e93a032baee02b704",
+    "README.md": "ab9f3aaa6828f2a876abb9c3eb29db77073e3ec58b3d4e8563b89bf521bf50f4",
+    "js/ui.js": "5b5d4b28eac65e79895946563b062cf0392e69932105b6b792b7e5daf27d215e",
+    "css/game-surfaces.css": "be046deb7ef44c2efddcefa0274c1f76606fb8dcc06e2226b5be7d10e77e12a5",
+    "scripts/build_v23_study.cjs": "cd30a26520fc120eaa31c47cf110e558f0c1741625d6d0a8c5479547493a2fe0",
+    "scripts/prepare_v25_fixtures.cjs": "2322161a629d104da77b45272b00aeb1c84d09077a85dab0d441fa3c40d9b2a1",
+    "tests/v25-planning-browser.cjs": "ca501267a5e065338012ae2e28d1500e89190ecfd8bdb702707e2ea4a6c7d5c7",
+    "tests/v25-trials-browser.cjs": "5d5d41ec2df45dadd382bb23b3d399f5699d50f0598b87d9f62c254e9b7117a1",
+    "tests/v25-campaign-regression.cjs": "c3fc23f692eec5cec9b9f6b9d1a3bdab011b6993f73728df211778e3c85b1262",
+    "tests/v25-finale-regression.cjs": "2fb708be6e7b2e1f9cbb5228b676b1a428e7ca1792ccb92f0371c34425beb383",
+    "tests/v25-surfaces-browser.cjs": "a53f710b3645b8ae464c25c53dc33dcb6e7d851834580e1f4737c13015cbb0a6",
+    "tests/v25-study-browser.cjs": "d1a01be555a37f2887e14bea84a2db55a66789c8b08627d263bc54fdb1d62287",
+    "docs/v25-game-surfaces-plan.md": "23a12ad959a5ce4ee7705ccfabeb429aadf84d6bdc6afabb4398bce3e16ec322",
+    "docs/v25-game-surfaces-review.md": "c09b24ae1fda7a9b59606c736aeeb4f69ec0e3b15c262ffaa07b688b5865e88a",
+    "docs/v23-human-playtest-protocol.md": "a77b5ab9143d3e9ed69c13c49f107f4d1ede504d3293e3c02e7745925a1ad04d",
+    "research/ui-v25-sources.json": "69d55a70cd8594b90f898e201af0fbbf7c0d8a083ef7a05b0dc64d97c602ab6b",
+    "research/ui-v25-surface-index.json": "7495b9a02b929c01e072a7b69ee2b45e828658f89843df38600ccf9561f6ac96",
+    "research/ui-v25-progress.json": "1a0d793e1bde4104d55c157de8ad322c2d9e05ca6e2dc690dc34188f4eabe065",
+    "research/study-v23/manifest.json": "9bf3171b8cd1f410a67fc9fce46bf313c6cf2a99197e9efaced6efc9d8e6ddb7",
+    "research/study-v23/fixtures.js": "4716cb22e7e8ed53f07d83466dd822f82fd057dc55fda3abf62fd94b11317573",
+    "playtest-v23-new.html": "3ead402e76cd61861e6c9991be35c76ef2c2bd82b25ec735f2dbb3b02227d647",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "audits/v25-fixtures/manifest.json": "bd456ad1dfdef5aa5f2265375476c63068d7e180003fed0195bd19fad9f263bb"
+  },
+  "unchangedRules": {
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/engine.js": "7b3a6f8f9752df4207e2afcc6adf7fb128a87dd375a983eb9150947eff83c1d5",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/renderer.js": "b31bbaa6736a82f145f9276d675ee55dbc7f37f0baccb0734910bb4860a8dbe3",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83"
+  },
+  "legalFixtures": {
+    "manifest": "audits/v25-fixtures/manifest.json",
+    "method": "Public-action prefixes plus one legal losing attack, loaded through real import controls in the surface coverage checks.",
+    "campaignActions": 4176
+  },
+  "visualReview": {
+    "method": "Representative screenshots inspected individually at original resolution; finite animations settled before capture.",
+    "files": {
+      "audits/v25-material-inventory-629.png": "2606cee92ba3809259544e487bcbd319e6ad30ebc9a4c1bc4f463fd0fd3564f4",
+      "audits/v25-material-journal-1440.png": "0a9767a48150abeb0047e3e9a57d03fb2e3830de6b74a04e8d961ec26701fcfd",
+      "audits/v25-material-bestiary-1440.png": "75768c35764bf96ef91c99a38d78118fac7869bf2a6b0f2500b22100af9e9e4c",
+      "audits/v25-material-collection-629.png": "f863d6dfbf38f946ee235351b7bccb02b8d3705d496fe5b21209102cd7f862f7",
+      "audits/v25-material-lotus-629.png": "2872852f888d36901223ccc9549a805fcca8580e2254962fa570e04e06284d4b",
+      "audits/v25-material-choice-3-629.png": "e6df1d9897fed69a020e45e9af113df984e3c6032df0ff077e778c7fdc0c3244",
+      "audits/v25-material-battle-forecast.png": "9527e2e0b862d2570f16760137660c1e3e27dae71cb36f4702445d95c5a3e739",
+      "audits/v25-material-floor-scroll-629.png": "1a7cf7ca55d00b030f88446170dd3019f4b9659ff8cd1bab7f66a19f0a90d466",
+      "audits/v25-material-final-battle-629.png": "68c4d2682f8619d02997f5c0e4d8927c32bde541afe8dfdc3f0035b1c27e9f92",
+      "audits/v25-mural-owned-inventory.png": "f94776479536f1f03068452fb0400c4bb0425c82eea75e81eecf58a5e23dc43d"
+    }
+  },
+  "nativePreview": {
+    "entry": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI25&round=1&task=first-three&objective=explore&art=material",
+    "actions": "Normal new game, explicit arrival acknowledgement, inventory and ritual opening; refresh resumed own progress; quest open/close verified duplicate guide hidden/visible.",
+    "baseline": "Original P01 v22 tab inspected read-only; frozen runtime not modified.",
+    "observedByHuman": false,
+    "questGuideObservation": {
+      "expanded": "hidden",
+      "collapsed": "visible",
+      "settledResourcesUnchanged": true
+    }
+  },
+  "humanObservation": {
+    "participants": 0,
+    "oldS5Gate": "Still pending; this task is art/interaction implementation, not a substitute for participant records."
+  },
+  "backup": ".backups/immersive-surfaces-v25-20261024/",
+  "limits": [
+    "PC Chromium and in-app browser checked; broad browser/mobile work deferred.",
+    "Expert visual review does not establish player preference, fatigue or replay willingness."
+  ]
+}

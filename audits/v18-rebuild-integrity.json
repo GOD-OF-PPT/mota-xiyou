@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "hashes": {
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327",
+    "js/material-assets.js": "1007608369730cb9688afa7bb34157fcca2644041fb00b1e45a930d31c22db69",
+    "assets/material/native-v18/sprites.png": "dc9c0f9c7cb1b0c249094550753558384faee433ae0e1d400ed5952b7557d457",
+    "research/asset-registration-v18.json": "35b13f9cff1a75a40e4023922891d97ee30513563b91ecf20f95cbb4b5750a4b"
+  },
+  "entryPoint": "scripts/prepare_material_native.py"
+}

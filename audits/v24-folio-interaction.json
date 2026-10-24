@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "Native selector arrows and letter keys work inside pause without moving the player or closing the folio",
+    "Rehearsal updates preserve keyboard focus and open accounts; resource differences precede both results and settle nothing",
+    "Chapter preview retains timeline position; cancelling returns focus to its record and Escape restores map control",
+    "Shared pause changes preserve inventory, character, journal, help and load input boundaries without settling gameplay",
+    "Goal and edition preview preserve focus, provisions and main state; reduced-motion removes folio and seal animation",
+    "Scene chapter cards and goal sigils route to the intended isolated task, carry its chosen art style and create no human observation",
+    "Entry controls stay visible without horizontal overflow in both art palettes across three PC sizes"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v24-foyer-material-1280.png",
+    "audits/v24-foyer-material-1440.png",
+    "audits/v24-foyer-mural-1280.png",
+    "audits/v24-foyer-mural-1440.png"
+  ],
+  "observedByHuman": false,
+  "source": {
+    "index.html": "efa05792e246b1bca7e053142f703bdbee70b55b2c04a064840cbf5f474d596d",
+    "js/ui.js": "2e6f489ef7221094b895f77c90e2a433d51375849d17e58fe4245897aeb3b608",
+    "js/planning-ui.js": "50573232967c7eb2d97bb43d79c57fb5bb9fc4b60fb762a4dee02a0c80fd1d55",
+    "js/trials-ui.js": "499bf4185f2a5d1ba5e869f98e048616e8b9b8ee2da140d8eff7df0189630b6b",
+    "css/chapter-pages.css": "dbe51413504940ff48d0fcadfe33b23ba3c8b5542bf9eaae4e3898c90433a96e",
+    "css/study-foyer.css": "5135697bcd3942b35770ea1590783ecfacd4b4b16453e8586beea9d90dc9d308",
+    "js/study-foyer.js": "7cc23dcd47d3feb5c5f56ce994446d4442063c9f6fc04be3074278ecb718b341",
+    "js/study-storage.js": "364b7af05dea82c4cca41719cf8e6a8b41fbc2bcc708c676848302040ea79589"
+  },
+  "passed": true
+}

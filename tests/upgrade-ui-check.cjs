@@ -1,0 +1,24 @@
+const {chromium}=require('C:/Users/KSG/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const path=require('node:path'),fs=require('node:fs'),assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'chrome',headless:true});try{
+ const page=await browser.newPage({viewport:{width:1366,height:768}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('file:///'+path.resolve(__dirname,'../index.html').replaceAll('\\','/'));await page.click('#new-game');await page.locator('#modal-actions button').first().click();await page.waitForTimeout(350);
+ const metrics=()=>page.evaluate(()=>{const rect=id=>{const r=document.getElementById(id).getBoundingClientRect();return {top:Math.round(r.top),bottom:Math.round(r.bottom),width:Math.round(r.width),height:Math.round(r.height)};};return {width:innerWidth,height:innerHeight,body:document.documentElement.scrollWidth,canvas:rect('game-canvas'),ability:rect('skill-walk'),interact:rect('btn-interact')};});
+ const desktop=await metrics();await page.screenshot({path:path.join(__dirname,'upgrade-desktop.png')});
+ assert.ok(desktop.ability.bottom<=768,'Desktop abilities fit the viewport');
+ const before=await page.evaluate(()=>({x:game.state.x,y:game.state.y})),enemy=await page.evaluate(()=>TowerData.floors[0].entities.find(e=>e.type==='enemy'));
+ const clickCell=async(x,y)=>{const b=await page.locator('#game-canvas').boundingBox();await page.mouse.click(b.x+(x+.5)*b.width/13,b.y+(y+.5)*b.height/13);};
+ await clickCell(enemy.x,enemy.y);assert.deepEqual(await page.evaluate(()=>({x:game.state.x,y:game.state.y})),before,'Inspect does not move');
+ await page.waitForTimeout(150);await clickCell(before.x,before.y);assert.deepEqual(await page.evaluate(()=>({x:game.state.x,y:game.state.y})),before,'Tap player never moves');assert.equal(await page.locator('#modal-title').textContent(),'行者行囊');await page.keyboard.press('Escape');
+ await page.keyboard.press('Control+s');const saved=await page.evaluate(()=>game.getSaveSummary('manual'));await page.keyboard.press('ArrowLeft');await page.waitForTimeout(150);await page.keyboard.press('ArrowLeft');
+ await page.keyboard.press('Escape');assert.deepEqual(await page.evaluate(()=>game.getSaveSummary('manual')),saved,'Auto progress preserves manual slot');
+ await page.click('#btn-undo');assert.equal(await page.locator('#btn-redo').isDisabled(),false);await page.click('#btn-redo');
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(180);await clickCell(enemy.x,enemy.y);await page.waitForTimeout(200);
+ const mobile=await metrics();mobile.forecast=await page.locator('.forecast').evaluate(e=>{const r=e.getBoundingClientRect();return {top:Math.round(r.top),bottom:Math.round(r.bottom)};});
+ await page.screenshot({path:path.join(__dirname,'upgrade-mobile.png')});assert.ok(mobile.interact.bottom<=844&&mobile.interact.top>=0,'Mobile controls remain visible');assert.ok(mobile.forecast.top>=0&&mobile.forecast.bottom<=844,'Selected enemy forecast stays visible');assert.equal(mobile.body,390);
+ await page.click('#context-dismiss');await page.click('#game-toolbox summary');await page.keyboard.press('Control+s');assert.ok(await page.evaluate(()=>game.hasManualSave()));await page.keyboard.press('Escape');assert.equal(await page.locator('#game-toolbox').getAttribute('open'),null);
+ await page.keyboard.press('h');await page.locator('#setting-zero').check();assert.equal(await page.evaluate(()=>game.state.settings.quickZero),true);await page.keyboard.press('Escape');
+ await page.click('.game-brand');assert.equal(await page.locator('#start-screen').isVisible(),true);assert.equal(await page.locator('#continue-game').isEnabled(),true);await page.click('#continue-game');assert.equal(await page.locator('#game-shell').isVisible(),true);
+ await page.setViewportSize({width:844,height:390});await page.waitForTimeout(180);const landscape=await metrics();await page.screenshot({path:path.join(__dirname,'upgrade-landscape.png')});assert.ok(landscape.canvas.bottom<=390,'Landscape playfield fits');
+ assert.deepEqual(errors,[]);fs.writeFileSync(path.join(__dirname,'upgrade-ui-results.json'),JSON.stringify({desktop,mobile,landscape,errors},null,2));console.log(JSON.stringify({desktop,mobile,landscape,errors},null,2));
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

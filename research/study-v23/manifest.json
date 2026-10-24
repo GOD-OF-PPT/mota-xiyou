@@ -1,0 +1,159 @@
+{
+  "purpose": "Human observation preparation only; no observed participants or results.",
+  "source": {
+    "css/style.css": "1a106d6ff75936eae9ae98950723b33dfc1520aad797e6a8d33ade5846ec797a",
+    "css/cinnabar.css": "557e8a8b81ab94de74679abece2e5c9e3bb81702f6d77b8c9579673cba96f5f0",
+    "css/mural.css": "31a059c510b8f2445dadc271c75f6e71e12d7c18907aee14cc7f7aa6c891fa84",
+    "css/immersive.css": "c051649b253520ec25be499a43e3bdbd3f4fe7afa400dfefb0aa54c6ac2591e3",
+    "css/repair.css": "9a2fb569df3d5766e221fa2f9322e779e74cd4abec2bbaf478e42ce24042d16e",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "css/finale.css": "3304b85a178cbd97ff6398405b44b2b3f05e92bae2467ad30a80c77e461d2687",
+    "css/planning.css": "ebe2a27bf546c3345e3f0df21073559a6b41de7777dfc115eccdb7d1bbca1e87",
+    "css/trials.css": "bb7fe38df85d79f6ba87bded3e2417a8eb75f78711486ae2679922162959a316",
+    "css/chapter-pages.css": "dbe51413504940ff48d0fcadfe33b23ba3c8b5542bf9eaae4e3898c90433a96e",
+    "css/game-surfaces.css": "be046deb7ef44c2efddcefa0274c1f76606fb8dcc06e2226b5be7d10e77e12a5",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "css/ui-layout.css": "af660544f69888b295ae450a166f6b6d98f7c8656a949aa2390c5f4f8897c916",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/assets.js": "cf64e15d2cad827493478c2e86b62debd28966511cb6529f34977d8ef107caa4",
+    "js/material-assets.js": "d61743e5abdadc280683dd3c284c0d27536b1bb170502cc3026441d08825187d",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "js/renderer.js": "b31bbaa6736a82f145f9276d675ee55dbc7f37f0baccb0734910bb4860a8dbe3",
+    "js/audio.js": "66245635ced7061f604074b54b4badbb6ee3f2daee72d738f8d17709055fcf34",
+    "js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    "js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
+    "js/planning-ui.js": "50573232967c7eb2d97bb43d79c57fb5bb9fc4b60fb762a4dee02a0c80fd1d55",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials-ui.js": "499bf4185f2a5d1ba5e869f98e048616e8b9b8ee2da140d8eff7df0189630b6b",
+    "js/mechanisms.js": "fb178bec46115c029710ba7ebf6609301c0d8a998a6062b42a2087473fc994fc",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "js/ui.js": "db2ddc2cbdbe30386cb9bbd8188a56fc0e3f19d09fabd988009f3fe31fbdce03",
+    ".backups/implementation-v23-20261024/css/style.css": "1a106d6ff75936eae9ae98950723b33dfc1520aad797e6a8d33ade5846ec797a",
+    ".backups/implementation-v23-20261024/css/cinnabar.css": "557e8a8b81ab94de74679abece2e5c9e3bb81702f6d77b8c9579673cba96f5f0",
+    ".backups/implementation-v23-20261024/css/mural.css": "31a059c510b8f2445dadc271c75f6e71e12d7c18907aee14cc7f7aa6c891fa84",
+    ".backups/implementation-v23-20261024/css/immersive.css": "c051649b253520ec25be499a43e3bdbd3f4fe7afa400dfefb0aa54c6ac2591e3",
+    ".backups/implementation-v23-20261024/css/repair.css": "9a2fb569df3d5766e221fa2f9322e779e74cd4abec2bbaf478e42ce24042d16e",
+    ".backups/implementation-v23-20261024/css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    ".backups/implementation-v23-20261024/css/finale.css": "3304b85a178cbd97ff6398405b44b2b3f05e92bae2467ad30a80c77e461d2687",
+    ".backups/implementation-v23-20261024/css/planning.css": "ebe2a27bf546c3345e3f0df21073559a6b41de7777dfc115eccdb7d1bbca1e87",
+    ".backups/implementation-v23-20261024/js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    ".backups/implementation-v23-20261024/js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    ".backups/implementation-v23-20261024/js/engine.js": "f632273b3d0395c16d3618617f32047947b0f83ac5d001e36775fcca20bd45aa",
+    ".backups/implementation-v23-20261024/js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    ".backups/implementation-v23-20261024/js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    ".backups/implementation-v23-20261024/js/assets.js": "cf64e15d2cad827493478c2e86b62debd28966511cb6529f34977d8ef107caa4",
+    ".backups/implementation-v23-20261024/js/material-assets.js": "d61743e5abdadc280683dd3c284c0d27536b1bb170502cc3026441d08825187d",
+    ".backups/implementation-v23-20261024/js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    ".backups/implementation-v23-20261024/js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    ".backups/implementation-v23-20261024/js/audio.js": "66245635ced7061f604074b54b4badbb6ee3f2daee72d738f8d17709055fcf34",
+    ".backups/implementation-v23-20261024/js/film-art.js": "934123613d16fcc16016bd691d97f111ed9739fb90cf1545e0a8ccdba9aa7d40",
+    ".backups/implementation-v23-20261024/js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
+    ".backups/implementation-v23-20261024/js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    ".backups/implementation-v23-20261024/js/finale.js": "2c42e8637dc915b9ccf0c0830d68fba04a248fc6a2b84a0ebd58360cde7fe289",
+    ".backups/implementation-v23-20261024/js/planning.js": "503c93a8c950dc071fa5cfe32422bbc298e2648f21c2b3bc79ddc5cac75b5276",
+    ".backups/implementation-v23-20261024/js/planning-ui.js": "450d5f4d56cef27646b73291e6050b0520b032847e336698bf5387ed4ced9adc",
+    ".backups/implementation-v23-20261024/js/ui.js": "2472a3215be8604eb476ee62e627194ddb7a122e2434eefd1a6ec604f452782b",
+    "css/study-foyer.css": "5135697bcd3942b35770ea1590783ecfacd4b4b16453e8586beea9d90dc9d308",
+    "js/study-foyer.js": "7cc23dcd47d3feb5c5f56ce994446d4442063c9f6fc04be3074278ecb718b341",
+    "index.html": "42765dbbb633f41a6316d97d192bc6b63000d3a9a245873f488a7c745198ef94",
+    ".backups/implementation-v23-20261024/index.html": "0aa35a815679d8f4b7a8f296c8d2e80dd754d422cd81a97f95a08eeb74efc652",
+    "research/trials-v23-routes.json": "43984b53c143e1e9aa2499d16ac06e547226812a13e62e1bff0f37529fff1cc0",
+    "scripts/build_v23_study.cjs": "6ab30cd80cd91ba5c5a128d201785a7e02e3c2ac10bf20d5119ac9f9fae25caa",
+    "js/study-storage.js": "364b7af05dea82c4cca41719cf8e6a8b41fbc2bcc708c676848302040ea79589",
+    "js/study-setup.js": "ac24547e0e73bbe8cf09f6c55e1a90565894142c782506edbda481f4dca71784",
+    "js/study-entry.js": "ff6aefbddc7344db94354eed3dc7f19e7bfc29541c257ccd383b2dcec520ca5a",
+    "playtest-v23.html": "b2252dbffe898728377957e73195e243dc6a869813bbb080e2836927060d3308"
+  },
+  "tasks": {
+    "baseline": {
+      "first-three": {
+        "id": "campaign-r6-start",
+        "startHash": "4b832895c537541a385e2d42e1e2628bc0e2f5653eb688d8ee99123eb6589f5d",
+        "budgetGroup": "first-three-620-24-10",
+        "source": {
+          "script": "TowerEngine.newGame",
+          "actions": 0,
+          "revision": 6
+        }
+      },
+      "ferry": {
+        "id": "ferry-r6",
+        "startHash": "9c72ae47e02ead8b2d4b11054209d3dd8316b241c80956d8c71ce28fd0eb9f30",
+        "budgetGroup": "ferry-canonical-v23-study",
+        "source": {
+          "id": "ferry-r6",
+          "sourceActions": 1342,
+          "sourceScript": "tests/playthrough-v9-free-mixed-direct-offering.json",
+          "prefix": "078bf1befa2a9abd93e8b6a07e2dbae735465fd426cae67103671e6f6d232a71",
+          "startHash": "ceb18cb0d7752dade168f28ad1f159c8bbc72acf5e14881ef631bcc477134c65"
+        }
+      },
+      "silk": {
+        "id": "silk-r6",
+        "startHash": "5119691d4a6a335a03f9048c7f21399a060ee3dcd8ca546784961d42730a9aa5",
+        "budgetGroup": "silk-canonical-v23-study",
+        "source": {
+          "id": "silk-r6",
+          "sourceActions": 2017,
+          "sourceScript": "tests/playthrough-v9-free-mixed-direct-offering.json",
+          "prefix": "eac71d5f124585b8b3136c5b0db9a1492d5c7dde8b9f8b2772bccb0b10de1bdd",
+          "startHash": "a162c67667f092bb28e8443c9739b13008d4383da4353f6d575210c6e077c62e"
+        }
+      }
+    },
+    "new": {
+      "first-three": {
+        "id": "campaign-r7-start",
+        "startHash": "e52d1c7864dbe59672df9c57d1c916426e4c455780e67a53ec2836d66e80c5bb",
+        "budgetGroup": "first-three-620-24-10",
+        "source": {
+          "script": "TowerEngine.newGame",
+          "actions": 0,
+          "revision": 7
+        }
+      },
+      "ferry": {
+        "id": "ferry-r7",
+        "startHash": "5a94db0abd5e23a531cf42ca799e7ac8bf1bbb0c5cca5e4d2655082e197fee02",
+        "budgetGroup": "ferry-canonical-v23-study",
+        "source": {
+          "id": "ferry-r7",
+          "sourceActions": 1342,
+          "sourceScript": "tests/playthrough-v9-free-mixed-direct-offering.json",
+          "prefix": "078bf1befa2a9abd93e8b6a07e2dbae735465fd426cae67103671e6f6d232a71",
+          "startHash": "5a94db0abd5e23a531cf42ca799e7ac8bf1bbb0c5cca5e4d2655082e197fee02"
+        }
+      },
+      "silk": {
+        "id": "silk-r7",
+        "startHash": "aabdbf1f3fc2cd340bcb18e9c6c9cf9c5dc8267438a1f7fd1712b3fa7b7cb58e",
+        "budgetGroup": "silk-canonical-v23-study",
+        "source": {
+          "id": "silk-r7",
+          "sourceActions": 2017,
+          "sourceScript": "tests/playthrough-v9-free-mixed-direct-offering.json",
+          "prefix": "eac71d5f124585b8b3136c5b0db9a1492d5c7dde8b9f8b2772bccb0b10de1bdd",
+          "startHash": "aabdbf1f3fc2cd340bcb18e9c6c9cf9c5dc8267438a1f7fd1712b3fa7b7cb58e"
+        }
+      }
+    }
+  },
+  "outputs": {
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "playtest-v23-new.html": "378b0c6b4e39b622f4e79b7c42dd62f7af2b4f7add662bca6d8df8b4fc2184fa",
+    "research/study-v23/fixtures.js": "f4462095494a2f5201b9b2ea3d3f406fba07c4814c9d5cc00e1f277709643142"
+  },
+  "sharedAssets": "Root assets reused; v22 runtime JS/CSS comes from frozen backup. Both entries run campaign tasks, with the same predeclared goal and budget.",
+  "storage": "Prefix by anonymous participant, version, task, objective and round. Production localStorage keys are invisible to the game in these entries."
+}

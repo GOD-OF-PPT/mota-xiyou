@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-23",
+  "status": "analysis_completed_no_gameplay_changes",
+  "documents": {
+    "docs/v20-similar-games-research.md": "0da402272e42a6ffc45a7fac6400ff361d82d152fbc6f7a7305672215eda4b02",
+    "docs/v20-playability-analysis.md": "6a992978ceb772061e0b63ba3c29c4677f060618a91e296588bcc83fcfaad8df"
+  },
+  "sourceIndex": "research/playability-v20-sources.json",
+  "routeMetrics": "research/playability-v20-metrics.json",
+  "reproduce": "node research/v20-route-analysis.cjs",
+  "evidence": {
+    "games": 5,
+    "datedSelectedReviews": 10,
+    "mainSources": 10,
+    "existingLegalTracesReplayed": 2,
+    "currentRuntimeMatchesV19": true,
+    "localDocumentLinksResolve": true
+  },
+  "priorities": {
+    "P0": [
+      "G01 repeat execution",
+      "G02 chapter recovery",
+      "G03 bounded sequence comparison"
+    ],
+    "P1": [
+      "G04 ability combinations",
+      "G05 equipment comparison",
+      "G06 meaningful recovery segments",
+      "G07 local completion feedback"
+    ],
+    "P2": [
+      "G08 optional replay goals",
+      "G09 measured performance and readability"
+    ]
+  },
+  "source": {
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/ui.js": "401556ca038f31e34362210fb70bce7c6cd116a7ac53dd7a9a6dcce739b6c791",
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/tactics.js": "4338bf6d55dd975cb99fe149784ea2950edfe36d7a7f89d939a7655a776f2eea",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412",
+    "index.html": "de1b857c1b6a7b5f872b36e6f585fca17cb513652e4446a826d94d9eae48c4dc",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327"
+  },
+  "boundaries": [
+    "No gameplay, asset, UI or live browser save changes",
+    "No new blind player study or retention claim",
+    "Selected historical feedback is not representative sentiment or proof of current competitor defects",
+    "Model movement counts do not measure physical clicks, human time or boredom"
+  ]
+}

@@ -1,0 +1,1835 @@
+{
+  "material": {
+    "revision": 7,
+    "ids": 151,
+    "uniqueFrameGroups": 110,
+    "runtimePngs": 9,
+    "runtimeBytes": 12661313,
+    "problems": [],
+    "aliases": [
+      [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      [
+        "enemy_monk",
+        "enemy_acolyte"
+      ],
+      [
+        "enemy_ghost",
+        "enemy_bell"
+      ],
+      [
+        "enemy_guard",
+        "enemy_brass",
+        "enemy_reliquary0"
+      ],
+      [
+        "enemy_spider",
+        "enemy_puppet"
+      ],
+      [
+        "enemy_yaksha",
+        "enemy_judge",
+        "enemy_reliquary1"
+      ],
+      [
+        "enemy_dragon",
+        "enemy_flood",
+        "enemy_reliquary2"
+      ],
+      [
+        "enemy_boss",
+        "enemy_heart",
+        "enemy_boss_0"
+      ],
+      [
+        "npc_whitewutian",
+        "npc_whiteWutian"
+      ],
+      [
+        "enemy_boss_1",
+        "enemy_reliquary5"
+      ],
+      [
+        "enemy_furnace",
+        "enemy_reliquary3"
+      ],
+      [
+        "enemy_mirror",
+        "enemy_reliquary4"
+      ],
+      [
+        "item_key_yellow",
+        "item_yellowKey"
+      ],
+      [
+        "item_key_blue",
+        "item_blueKey"
+      ],
+      [
+        "item_key_red",
+        "item_redKey"
+      ],
+      [
+        "item_atk",
+        "item_amber",
+        "item_ruby"
+      ],
+      [
+        "item_def",
+        "item_jade",
+        "item_emerald"
+      ],
+      [
+        "item_coin",
+        "item_coins"
+      ],
+      [
+        "item_hp",
+        "item_peach",
+        "item_bigPeach",
+        "item_feast"
+      ],
+      [
+        "prop_gate",
+        "prop_bars"
+      ],
+      [
+        "prop_relic",
+        "prop_fragment"
+      ],
+      [
+        "prop_resonator",
+        "prop_choice"
+      ],
+      [
+        "floor_blue",
+        "terrain_cloud"
+      ],
+      [
+        "wall_jade",
+        "terrain_water"
+      ],
+      [
+        "wall_blue",
+        "terrain_gap"
+      ],
+      [
+        "landmark_jade",
+        "landmark_buddha"
+      ],
+      [
+        "landmark_amber",
+        "landmark_pagoda"
+      ],
+      [
+        "landmark_blue",
+        "landmark_dragon"
+      ],
+      [
+        "landmark_crimson",
+        "landmark_furnace"
+      ],
+      [
+        "landmark_violet",
+        "landmark_scripture"
+      ],
+      [
+        "landmark_gold",
+        "landmark_blacklotus"
+      ],
+      [
+        "fx_staff",
+        "fx_hit"
+      ],
+      [
+        "ui_backdrop",
+        "ui_motif"
+      ]
+    ],
+    "dimensions": {
+      "assets/material/atlases/wukong.png": {
+        "width": 1536,
+        "height": 1536,
+        "bytes": 722487,
+        "sha256": "0bd843bfd802cd180666829adca0b2d284c054791d7ad132cb1046cc6f26caf1"
+      },
+      "assets/material/atlases/creatures.png": {
+        "width": 1024,
+        "height": 1536,
+        "bytes": 1021003,
+        "sha256": "ef851f93548e863896bfe62fe09a7938784f38a2af2aa279e9d7730b8dbe909a"
+      },
+      "assets/material/atlases/enemies.png": {
+        "width": 1024,
+        "height": 1536,
+        "bytes": 1248336,
+        "sha256": "86151419d1d1f49972feb70cdd67447e9b968a5df338740f9c706cbf74c513d6"
+      },
+      "assets/material/atlases/objects.png": {
+        "width": 384,
+        "height": 448,
+        "bytes": 213812,
+        "sha256": "61cae5beb29fd4c3b21842ee559c352f3860cfa1cc6b14f31b8461d7e3c0937d"
+      },
+      "assets/material/atlases/terrain.png": {
+        "width": 1536,
+        "height": 1152,
+        "bytes": 4030080,
+        "sha256": "dfd63ee1bcb741d6f882f13f620cca388c854f0eef1dae43d9aaab0100033d6a"
+      },
+      "assets/material/atlases/landmarks.png": {
+        "width": 768,
+        "height": 640,
+        "bytes": 584304,
+        "sha256": "ac77b87b6ddf2ddbdad585eca61e756b24e4e4a014a7289dd24c8b0624db857c"
+      },
+      "assets/material/atlases/fx.png": {
+        "width": 1024,
+        "height": 1536,
+        "bytes": 1830431,
+        "sha256": "4e5d709142579fdaf77c251c5bbd426349a6c8eaaa014801de42c7874d5b36e8"
+      },
+      "assets/material/atlases/portraits.png": {
+        "width": 896,
+        "height": 128,
+        "bytes": 211912,
+        "sha256": "12b7792a81c8bcedd8f6e05911cbe656ab7000d90936e9401e3327beeb348ef4"
+      },
+      "assets/material/ui_backdrop.png": {
+        "width": 1619,
+        "height": 971,
+        "bytes": 2798948,
+        "sha256": "3971ac5e0ab4da129f4a5d03a69bcb7e3e2e659872ce9b11df56e7bad06f4449"
+      }
+    },
+    "sources": [
+      {
+        "file": "assets/material/source/wukong.png",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1839608,
+        "sha256": "734693383a96babcb27a1b1500ae38457bbcadb3b54dc9660f869d4dcc29cf67"
+      },
+      {
+        "file": "assets/material/source/creatures-corrected.png",
+        "width": 1312,
+        "height": 1199,
+        "bytes": 2324368,
+        "sha256": "31fd54d921e973c90505522e2e7946676c2fecf0add79b809f9008c08c16e981"
+      },
+      {
+        "file": "assets/material/source/enemies-extra.png",
+        "width": 1244,
+        "height": 1265,
+        "bytes": 2787537,
+        "sha256": "b0aa71e7c932f75ea03485ce9a3c04578171d9e797aaecc16684b06285717f0d"
+      },
+      {
+        "file": "assets/material/source/objects.png",
+        "width": 1172,
+        "height": 1342,
+        "bytes": 2886641,
+        "sha256": "93f9061e2c601306c0715f5cb725b5c218bc734d2b40db19e3be976baf009134"
+      },
+      {
+        "file": "assets/material/source/terrain.png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3668386,
+        "sha256": "169237d65034589a321f85e5b812921dba5c4bd079d429cc77cb8c277325e4c6"
+      },
+      {
+        "file": "assets/material/source/landmarks.png",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3326342,
+        "sha256": "4a3036305e14b0033661e347943270b71a5d25c0188d7238fb498f2e283e640a"
+      },
+      {
+        "file": "assets/material/source/fx.png",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2685741,
+        "sha256": "909398f145b8aad44507fd9f41c6801004bbb30afc5f887cca9a2f928322b3a0"
+      }
+    ]
+  },
+  "mural": {
+    "revision": 5,
+    "ids": 145,
+    "uniqueFrameGroups": 105,
+    "runtimePngs": 9,
+    "runtimeBytes": 7250669,
+    "problems": [],
+    "aliases": [
+      [
+        "enemy_imp",
+        "enemy_thresholdImp"
+      ],
+      [
+        "enemy_monk",
+        "enemy_acolyte"
+      ],
+      [
+        "enemy_ghost",
+        "enemy_bell"
+      ],
+      [
+        "enemy_guard",
+        "enemy_brass",
+        "enemy_reliquary0"
+      ],
+      [
+        "enemy_spider",
+        "enemy_puppet"
+      ],
+      [
+        "enemy_yaksha",
+        "enemy_judge",
+        "enemy_reliquary1"
+      ],
+      [
+        "enemy_dragon",
+        "enemy_flood",
+        "enemy_reliquary2"
+      ],
+      [
+        "enemy_boss",
+        "enemy_heart",
+        "enemy_boss_0"
+      ],
+      [
+        "npc_whitewutian",
+        "npc_whiteWutian"
+      ],
+      [
+        "enemy_boss_1",
+        "enemy_reliquary5"
+      ],
+      [
+        "enemy_furnace",
+        "enemy_reliquary3"
+      ],
+      [
+        "enemy_mirror",
+        "enemy_reliquary4"
+      ],
+      [
+        "item_key_yellow",
+        "item_yellowKey"
+      ],
+      [
+        "item_key_blue",
+        "item_blueKey"
+      ],
+      [
+        "item_key_red",
+        "item_redKey"
+      ],
+      [
+        "item_atk",
+        "item_amber",
+        "item_ruby"
+      ],
+      [
+        "item_def",
+        "item_jade",
+        "item_emerald"
+      ],
+      [
+        "item_coin",
+        "item_coins"
+      ],
+      [
+        "item_hp",
+        "item_peach",
+        "item_bigPeach",
+        "item_feast"
+      ],
+      [
+        "prop_gate",
+        "prop_bars"
+      ],
+      [
+        "prop_relic",
+        "prop_fragment"
+      ],
+      [
+        "prop_resonator",
+        "prop_choice"
+      ],
+      [
+        "floor_blue",
+        "terrain_cloud"
+      ],
+      [
+        "wall_jade",
+        "terrain_water"
+      ],
+      [
+        "wall_blue",
+        "terrain_gap"
+      ],
+      [
+        "landmark_jade",
+        "landmark_buddha"
+      ],
+      [
+        "landmark_amber",
+        "landmark_pagoda"
+      ],
+      [
+        "landmark_blue",
+        "landmark_dragon"
+      ],
+      [
+        "landmark_crimson",
+        "landmark_furnace"
+      ],
+      [
+        "landmark_violet",
+        "landmark_scripture"
+      ],
+      [
+        "landmark_gold",
+        "landmark_blacklotus"
+      ],
+      [
+        "fx_staff",
+        "fx_hit"
+      ]
+    ],
+    "dimensions": {
+      "assets/mural/atlases/wukong.png": {
+        "width": 384,
+        "height": 384,
+        "bytes": 116502,
+        "sha256": "0ae6bd3aa44a357183220f7b6e1818436c2e7c22222aca2a1065705d94a29d1e"
+      },
+      "assets/mural/atlases/creatures.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 118452,
+        "sha256": "4781762e8c1336b9fe95b347189b65c50d740534dbdaac7522e6e11c37c40aa4"
+      },
+      "assets/mural/atlases/enemies.png": {
+        "width": 256,
+        "height": 384,
+        "bytes": 108397,
+        "sha256": "9a526345b3f99baa3f7b8c42f6ea0edb22f3bd288340b53e8abfd350a94d1ccb"
+      },
+      "assets/mural/atlases/objects.png": {
+        "width": 384,
+        "height": 448,
+        "bytes": 201872,
+        "sha256": "56b125a3b73e43e524311613e6f438c1135bcbcc13c371eff34ad1b4ee48af45"
+      },
+      "assets/mural/atlases/terrain.png": {
+        "width": 768,
+        "height": 576,
+        "bytes": 1232583,
+        "sha256": "fcc3fa28bed908f9602ccbff0bbd17a6e7577618dd2c422d772cd50ed06720a8"
+      },
+      "assets/mural/atlases/landmarks.png": {
+        "width": 768,
+        "height": 640,
+        "bytes": 794043,
+        "sha256": "c588931ba98ba7aa8940e4b714fb88d087a3f93b26b750da78e97b4377a1070c"
+      },
+      "assets/mural/atlases/fx.png": {
+        "width": 384,
+        "height": 576,
+        "bytes": 173710,
+        "sha256": "c785be35f261b57527a2e62306dc339ddf45cfae5ab39b77b75616115a407139"
+      },
+      "assets/mural/ui_backdrop.png": {
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3609033,
+        "sha256": "3bc6ce69f4042a37d6081340283911b8613307a00b8dadb0b60996d9d74f055e"
+      },
+      "assets/mural/ui_motif.png": {
+        "width": 384,
+        "height": 1024,
+        "bytes": 896077,
+        "sha256": "dfeb5dae5d12e7fd9d967ddc713f78e28fac4bdd8bb048559c23b8465b1938fd"
+      }
+    },
+    "sources": [
+      {
+        "file": "assets/mural/source/wukong.png",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1745886,
+        "sha256": "3e4b7a9309e552248fb8b76b0538a8b3c242528141affa82ba86659919d553d5"
+      },
+      {
+        "file": "assets/mural/source/creatures.png",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2921110,
+        "sha256": "23bf2b753b1283acc7d24241e0d605d80ae53a12e5f45cada5957a6bde1905dd"
+      },
+      {
+        "file": "assets/mural/source/enemies-extra.png",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 3514115,
+        "sha256": "e700fd2f7b2a79950b267ac3ab5594f61ac56c164dbe865b344ecfaeaa78a555"
+      },
+      {
+        "file": "assets/mural/source/objects.png",
+        "width": 1161,
+        "height": 1355,
+        "bytes": 2605503,
+        "sha256": "4d262303332df267d45f4f919c90a00dfb6128682a5c70013a0f90658f7c4b46"
+      },
+      {
+        "file": "assets/mural/source/terrain.png",
+        "width": 1448,
+        "height": 1086,
+        "bytes": 3838973,
+        "sha256": "f0fcb2e6f19da5c83aad39d7292c24d1e3a8ec7a81739868f308efaf83bb867f"
+      },
+      {
+        "file": "assets/mural/source/landmarks.png",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 3430234,
+        "sha256": "8353ec6f3223377704a15d5fe67c197dd1c4e736903601759dc06729996eaa58"
+      },
+      {
+        "file": "assets/mural/source/fx.png",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2227110,
+        "sha256": "a027e999cac52c036c90724e2b6c00e87539331808c2faee9d739aadfb64fead"
+      }
+    ]
+  },
+  "coverage": {
+    "missingMaterial": [],
+    "extraMaterial": [
+      "portrait_lantern",
+      "portrait_bajie",
+      "portrait_tangseng",
+      "portrait_whitewutian",
+      "portrait_qiao",
+      "portrait_nezha"
+    ]
+  },
+  "logicalVolumes": [
+    {
+      "id": "actor_wukong_down",
+      "source": {
+        "w": 384,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    {
+      "id": "actor_wukong_right",
+      "source": {
+        "w": 384,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    {
+      "id": "actor_wukong_up",
+      "source": {
+        "w": 384,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    {
+      "id": "actor_wukong_left",
+      "source": {
+        "w": 384,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_imp",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_monk",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_ghost",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_guard",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_spider",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_yaksha",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_dragon",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_boss",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_lantern",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_bajie",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_tangseng",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_whitewutian",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_qiao",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_nezha",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_boss_1",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_boss_2",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_bat",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_stone",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_thorn",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_viper",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_bone",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_water",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_crab",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_flame",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_alchemist",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_furnace",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_mirror",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_ink",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_sentinel",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_archivist",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_shade",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_wrath",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_acolyte",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_bell",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_brass",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_puppet",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_judge",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_flood",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_heart",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_thresholdImp",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_boss_0",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary0",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary1",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary2",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary3",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary4",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "enemy_reliquary5",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "npc_whiteWutian",
+      "source": {
+        "w": 256,
+        "h": 384
+      },
+      "logicalScale": 0.25,
+      "logicalFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 64,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 32,
+        "y": 88
+      }
+    },
+    {
+      "id": "fx_staff",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_morph",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_clone",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_door",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_pickup",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_relic",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "fx_hit",
+      "source": {
+        "w": 256,
+        "h": 256
+      },
+      "logicalScale": 0.375,
+      "logicalFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "baselineFrame": {
+        "w": 96,
+        "h": 96
+      },
+      "logicalAnchor": {
+        "x": 48,
+        "y": 48
+      }
+    }
+  ],
+  "terrain": [
+    {
+      "id": "floor_jade",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "floor_amber",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "floor_blue",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "floor_crimson",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "floor_violet",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "floor_gold",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_jade",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_amber",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_blue",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_crimson",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_violet",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    },
+    {
+      "id": "wall_gold",
+      "source": 384,
+      "tileCells": 4,
+      "worldPeriod": 64,
+      "expectedCacheDensity": 6
+    }
+  ],
+  "expectedTerrainCache": {
+    "density": 6,
+    "width": 2016,
+    "authoredHeight": 2016,
+    "withSouthBoundaryHeight": 2208,
+    "southBoundaryRows": 2,
+    "runtimeObservation": "Deferred until stable browser acceptance; source metadata implies density 6; the runtime south guard uses a separately reported non-walkable boundary-wall band."
+  },
+  "originalSourceVerification": {
+    "method": "Pure normalizer functions applied to original source PNGs in memory; no atlas input used for regeneration",
+    "atlases": [
+      {
+        "atlas": "wukong",
+        "originalSource": "wukong.png",
+        "originalSize": [
+          1254,
+          1254
+        ],
+        "framesCompared": 16,
+        "mismatchedFrames": []
+      },
+      {
+        "atlas": "creatures",
+        "originalSource": "creatures-corrected.png",
+        "originalSize": [
+          1312,
+          1199
+        ],
+        "framesCompared": 16,
+        "mismatchedFrames": []
+      },
+      {
+        "atlas": "enemies",
+        "originalSource": "enemies-extra.png",
+        "originalSize": [
+          1244,
+          1265
+        ],
+        "framesCompared": 16,
+        "mismatchedFrames": []
+      }
+    ],
+    "actualAlphaBoundsMismatches": []
+  }
+}

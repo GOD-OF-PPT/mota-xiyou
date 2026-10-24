@@ -1,0 +1,14 @@
+{
+  "completed": true,
+  "checks": [
+    "Every repaired lock/guard has a unique real reward behind its actual cell",
+    "Every keyed door has a guarded reward, a measured shortcut, or the final heart-key role",
+    "NPC aid creates a real alternate route without changing any finite resource",
+    "The new white passage collects its relic without fighting the original guardian",
+    "Level repair preserves the authored finite item inventory and all sixteen unique fragments",
+    "A current full campaign still completes on public actions and has exact current-save round trips"
+  ],
+  "alcoves": 26,
+  "resourceBudget": "no new items, crystals, healing or keys",
+  "finishedAt": "2026-10-23T04:05:07.547Z"
+}

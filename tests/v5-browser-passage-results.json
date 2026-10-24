@@ -1,0 +1,50 @@
+{
+  "assetStats": {
+    "ready": true,
+    "loaded": 9,
+    "total": 9,
+    "failed": [],
+    "ids": 144
+  },
+  "crossedVowGates": [
+    "f1-v5-bell-gate",
+    "f7-v5-ferry-south",
+    "f7-v5-ferry-north",
+    "f16-v5-ember-gate"
+  ],
+  "physical": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "bossPreparations": {
+      "direct": "1130",
+      "anchor": "833",
+      "echoes": "894"
+    },
+    "awakenSelf": true,
+    "finish": 1
+  },
+  "errors": [],
+  "bothEndings": true,
+  "manualLoad": true,
+  "all16FragmentsViaUI": true,
+  "all6TreasuresViaUI": true,
+  "final": {
+    "hp": 183,
+    "atk": 95,
+    "def": 53,
+    "equipped": [
+      "iron",
+      "mirror"
+    ],
+    "orbs": 4,
+    "coins": 56
+  }
+}

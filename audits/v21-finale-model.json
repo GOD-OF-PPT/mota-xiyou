@@ -1,0 +1,234 @@
+{
+  "checks": [
+    "Both existing full-campaign routes retain every original resource and progression result",
+    "All three preparations and six seal permutations share exact preview/settlement, undo, once-only commitment and save round-trip",
+    "Duplicate, unknown and malformed seal layouts reject without a transaction",
+    "All story branches keep three distinct short, actionable shots"
+  ],
+  "cases": [
+    {
+      "plan": "direct",
+      "seals": [
+        null,
+        null,
+        null
+      ],
+      "damage": 1318,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "staff",
+        "morph",
+        "clone"
+      ],
+      "damage": 1168,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "staff",
+        "clone",
+        "morph"
+      ],
+      "damage": 1152,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "morph",
+        "staff",
+        "clone"
+      ],
+      "damage": 1164,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "morph",
+        "clone",
+        "staff"
+      ],
+      "damage": 1132,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "clone",
+        "staff",
+        "morph"
+      ],
+      "damage": 1132,
+      "canAfford": true
+    },
+    {
+      "plan": "direct",
+      "seals": [
+        "clone",
+        "morph",
+        "staff"
+      ],
+      "damage": 1116,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        null,
+        null,
+        null
+      ],
+      "damage": 992,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "staff",
+        "morph",
+        "clone"
+      ],
+      "damage": 858,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "staff",
+        "clone",
+        "morph"
+      ],
+      "damage": 834,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "morph",
+        "staff",
+        "clone"
+      ],
+      "damage": 904,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "morph",
+        "clone",
+        "staff"
+      ],
+      "damage": 824,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "clone",
+        "staff",
+        "morph"
+      ],
+      "damage": 884,
+      "canAfford": true
+    },
+    {
+      "plan": "anchor",
+      "seals": [
+        "clone",
+        "morph",
+        "staff"
+      ],
+      "damage": 828,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        null,
+        null,
+        null
+      ],
+      "damage": 1002,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "staff",
+        "morph",
+        "clone"
+      ],
+      "damage": 868,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "staff",
+        "clone",
+        "morph"
+      ],
+      "damage": 854,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "morph",
+        "staff",
+        "clone"
+      ],
+      "damage": 900,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "morph",
+        "clone",
+        "staff"
+      ],
+      "damage": 868,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "clone",
+        "staff",
+        "morph"
+      ],
+      "damage": 882,
+      "canAfford": true
+    },
+    {
+      "plan": "echoes",
+      "seals": [
+        "clone",
+        "morph",
+        "staff"
+      ],
+      "damage": 864,
+      "canAfford": true
+    }
+  ],
+  "legalRoutes": [
+    {
+      "file": "playthrough-v9-free-mixed-direct-offering.json",
+      "actions": 4142,
+      "finalHp": 43
+    },
+    {
+      "file": "playthrough-v9-gold-def-anchor-offering.json",
+      "actions": 3850,
+      "finalHp": 160
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

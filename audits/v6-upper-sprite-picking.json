@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "style": "material",
+      "x": 481.9047619047619,
+      "y": 137.15277777777777,
+      "sourcePixel": {
+        "x": 32,
+        "y": 45,
+        "alpha": 255
+      },
+      "strict": {
+        "x": 5,
+        "y": 2
+      },
+      "picked": {
+        "x": 5,
+        "y": 3
+      },
+      "entity": {
+        "id": "f0-5",
+        "x": 5,
+        "y": 3
+      },
+      "stateUnchanged": true,
+      "screenshot": "E:\\githome\\mota\\audits\\v6-pick-upper-material.png"
+    },
+    {
+      "style": "mural",
+      "x": 467.0238095238095,
+      "y": 140.87301587301587,
+      "sourcePixel": {
+        "x": 17,
+        "y": 38,
+        "alpha": 255
+      },
+      "strict": {
+        "x": 5,
+        "y": 2
+      },
+      "picked": {
+        "x": 5,
+        "y": 3
+      },
+      "entity": {
+        "id": "f0-5",
+        "x": 5,
+        "y": 3
+      },
+      "stateUnchanged": true,
+      "screenshot": "E:\\githome\\mota\\audits\\v6-pick-upper-mural.png"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,277 @@
+{
+  "phase": "fixed-pc-bugs",
+  "startedAt": "2026-10-22T07:39:32.473Z",
+  "checks": [
+    {
+      "name": "queue 1: actual PC exploration map fills"
+    },
+    {
+      "name": "queue 2: HD source and actual final draw evidence reused"
+    },
+    {
+      "name": "queue 3: actual clicked target has an adjacent linked bubble"
+    },
+    {
+      "name": "queue 4: centered named skills actually respond"
+    },
+    {
+      "name": "repeat inputs never fight; explicit E is exact; staff / morph / clone perform real public actions",
+      "reusedFrom": "audits/v7-fixed-pc-before-ground-assertion.json"
+    },
+    {
+      "name": "ordinary walk has no ground popup; selected live target follows movement; combat removes its sign"
+    },
+    {
+      "name": "real opaque sprite pixels above the grid select the correct entity in both styles"
+    },
+    {
+      "name": "story stays nonmodal, C is state-neutral, manual save is exact, reduced canvas is stable"
+    },
+    {
+      "name": "one complete 18-floor campaign, all fragments / treasures / mechanisms, both endings, exact save/load",
+      "physical": {
+        "reveal": 3,
+        "fragment": 16,
+        "traverse": 17,
+        "choose": 7,
+        "treasure": 6,
+        "equipTreasure": 2,
+        "activateResonator": 2,
+        "rescue": 1,
+        "toggleTide": 1,
+        "recallClone": 1,
+        "bossPreparations": {
+          "direct": 1130,
+          "anchor": 833,
+          "echoes": 894
+        },
+        "awakenSelf": 1,
+        "finish": 1
+      }
+    }
+  ],
+  "matrix": [],
+  "nativeDraws": [],
+  "projectionHits": [
+    {
+      "style": "material",
+      "upper": {
+        "x": 1001.0714285714286,
+        "y": 152.6361607142857,
+        "strict": {
+          "x": 5,
+          "y": 2
+        },
+        "picked": {
+          "x": 5,
+          "y": 3
+        },
+        "pixel": {
+          "x": 128,
+          "y": 186,
+          "alpha": 251
+        },
+        "entity": "f0-5"
+      }
+    },
+    {
+      "style": "mural",
+      "upper": {
+        "x": 984.7321428571429,
+        "y": 152.5,
+        "strict": {
+          "x": 5,
+          "y": 2
+        },
+        "picked": {
+          "x": 5,
+          "y": 3
+        },
+        "pixel": {
+          "x": 17,
+          "y": 36,
+          "alpha": 255
+        },
+        "entity": "f0-5"
+      }
+    }
+  ],
+  "skills": [],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v7-queue-3-target-bubble.png",
+    "E:\\githome\\mota\\audits\\v7-walk-no-ground-bubble.png",
+    "E:\\githome\\mota\\audits\\v7-selected-target-after-walk.png",
+    "E:\\githome\\mota\\audits\\v7-after-combat-no-ground-bubble.png",
+    "E:\\githome\\mota\\audits\\v7-upper-pick-material.png",
+    "E:\\githome\\mota\\audits\\v7-upper-pick-mural.png",
+    "E:\\githome\\mota\\audits\\v7-story-desktop.png",
+    "E:\\githome\\mota\\audits\\v7-character-desktop.png",
+    "E:\\githome\\mota\\audits\\v7-reduced-motion.png",
+    "E:\\githome\\mota\\audits\\v7-choice-bellVow.png",
+    "E:\\githome\\mota\\audits\\v7-choice-ferryVow.png",
+    "E:\\githome\\mota\\audits\\v7-choice-sevenWounds.png",
+    "E:\\githome\\mota\\audits\\v7-choice-emberVow.png",
+    "E:\\githome\\mota\\audits\\v7-boss-preparation-scroll.png",
+    "E:\\githome\\mota\\audits\\v7-boss-scene.png",
+    "E:\\githome\\mota\\audits\\v7-self-awakening.png",
+    "E:\\githome\\mota\\audits\\v7-ending-release.png",
+    "E:\\githome\\mota\\audits\\v7-ending-keep.png"
+  ],
+  "errors": [],
+  "visualComplete": false,
+  "campaignComplete": true,
+  "sourceIdentity": {
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "js/ui.js": "a478f9c0b9fa5212ea1f17ad24f9430d23e98e949c16f16ac61d67438a963e8c",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "css/immersive.css": "d2ef916fdd0db14c83901bf4c92405cd97811f6c00a0b0001e7354432374f984",
+    "assets/material/manifest.json": "9dfa6b737f27d9b3f4441661afdaeee8240c1766e3d594b27804d51ec30dc5c8",
+    "docs/game-presentation-guidelines.md": "cfd9d4ab36e7549192840ecb8dc44703792bd4c5e9734617022f7dee5ee4f46d"
+  },
+  "scope": "One fixed PC2525x1208 DPR1; actual behavior and one campaign",
+  "compatibility_deferred": true,
+  "compatibilityNote": "User explicitly stopped all mobile, viewport and DPR compatibility work. Prior 844x390 G3 gap remains deferred_by_user; it does not block this PC bug replay.",
+  "renderingBackgroundEvidence": "audits/v7-browser-all.json",
+  "queueOutcomes": [
+    {
+      "number": 1,
+      "item": "Actual PC exploration map fills the viewport",
+      "status": "accepted",
+      "authored21Coverage": 1,
+      "boundaryWallCoverage": 0,
+      "offmapSceneryCoverage": 0,
+      "evidence": "audits/v7-scene-2525x1208-dpr1-material.png"
+    },
+    {
+      "number": 2,
+      "item": "HD hero and enemies rendered directly to final canvas",
+      "status": "accepted",
+      "evidence": [
+        "audits/v7-asset-bounds.json",
+        "audits/v7-browser-all.json",
+        "audits/v7-scene-2525x1208-dpr1-material.png"
+      ],
+      "actualSourceCrops": [
+        "actor:384x384",
+        "enemy:256x384"
+      ],
+      "screenshotActuallyReviewed": true
+    },
+    {
+      "number": 3,
+      "item": "Target-adjacent bubble and explicit action",
+      "status": "accepted",
+      "gap": 20.99032738095235,
+      "targetFoot": {
+        "x": 781.547619047619,
+        "y": 664.1190476190476
+      },
+      "bubble": {
+        "x": 683.546875,
+        "y": 685.109375,
+        "w": 196,
+        "h": 109.296875
+      },
+      "evidence": "E:\\githome\\mota\\audits\\v7-queue-3-target-bubble.png"
+    },
+    {
+      "number": 4,
+      "item": "Bottom-centered named skills remain clickable",
+      "status": "accepted",
+      "centerOffset": 0,
+      "names": [
+        "行走",
+        "火眼金睛",
+        "金箍架桥",
+        "青蝉化形",
+        "毫毛分身"
+      ],
+      "evidence": "audits/v7-scene-2525x1208-dpr1-material.png",
+      "screenshotActuallyReviewed": true
+    },
+    {
+      "number": 5,
+      "item": "Guidelines reviewed against implementation",
+      "status": "owner_documentation",
+      "evidence": [
+        "docs/game-presentation-guidelines.md",
+        "docs/v7-presentation-review.md"
+      ]
+    }
+  ],
+  "reusedFrameTiming": {
+    "frames": 120,
+    "meanFrameMs": 11.89333333333334,
+    "p95FrameMs": 16.699999999999818,
+    "minFrameMs": 10.900000000000546,
+    "maxFrameMs": 16.799999999999272,
+    "scope": "One warm Chrome 2525x1208 DPR2 exploration run; rAF scheduling is not physical mobile-device FPS."
+  },
+  "compatibilityNotReexecuted": true,
+  "optionalGroundInspection": {
+    "bubbleVisible": false,
+    "blocking": false,
+    "reason": "The latest user queue concerns meaningful target bubbles; ordinary ground information is outside the blocking scope."
+  },
+  "walkSelection": {
+    "ordinaryWalkNoBubble": true,
+    "selectedEnemyRetained": {
+      "x": 17,
+      "y": 8
+    },
+    "beforeFoot": {
+      "x": 2104.1666666666665,
+      "y": 784.3571428571429
+    },
+    "afterFoot": {
+      "x": 2104.1666666666665,
+      "y": 904.5952380952381
+    },
+    "postFightBubbleClosed": true
+  },
+  "behaviorComplete": true,
+  "physical": {
+    "reveal": 3,
+    "fragment": 16,
+    "traverse": 17,
+    "choose": 7,
+    "treasure": 6,
+    "equipTreasure": 2,
+    "activateResonator": 2,
+    "rescue": 1,
+    "toggleTide": 1,
+    "recallClone": 1,
+    "bossPreparations": {
+      "direct": 1130,
+      "anchor": 833,
+      "echoes": 894
+    },
+    "awakenSelf": 1,
+    "finish": 1
+  },
+  "final": {
+    "hp": 183,
+    "atk": 95,
+    "def": 53,
+    "orbs": 4,
+    "visited": 18,
+    "fragments": 16,
+    "treasures": 6
+  },
+  "crossedVowGates": [
+    "f1-v5-bell-gate",
+    "f7-v5-ferry-south",
+    "f7-v5-ferry-north",
+    "f16-v5-ember-gate"
+  ],
+  "sourceIdentityAfter": {
+    "js/renderer.js": "160d9271a54737e49619e86fabeed59550a77cb3f6e68fd0923bde61701c63b9",
+    "js/ui.js": "a478f9c0b9fa5212ea1f17ad24f9430d23e98e949c16f16ac61d67438a963e8c",
+    "js/art-style.js": "d5e36fdf0a933deb6e1b8126932e9f794f6f5e25c4cd6e157f45abc5337ac9ed",
+    "css/immersive.css": "d2ef916fdd0db14c83901bf4c92405cd97811f6c00a0b0001e7354432374f984",
+    "assets/material/manifest.json": "9dfa6b737f27d9b3f4441661afdaeee8240c1766e3d594b27804d51ec30dc5c8",
+    "docs/game-presentation-guidelines.md": "cfd9d4ab36e7549192840ecb8dc44703792bd4c5e9734617022f7dee5ee4f46d"
+  },
+  "completed": true,
+  "finishedAt": "2026-10-22T07:40:10.992Z"
+}

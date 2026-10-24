@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-24",
+  "status": "plan_only",
+  "document": "docs/v23-research-implementation-plan.md",
+  "sha256": "f6331e68a6551bcc7f3800d4eaea159aa6d304a2bb7d03e9782d3d030fce96e5",
+  "inputs": {
+    "docs/v20-similar-games-research.md": "0da402272e42a6ffc45a7fac6400ff361d82d152fbc6f7a7305672215eda4b02",
+    "research/playability-v20-sources.json": "a288367d626b78dcbc5d4a25fda434a239f3f5bec36fdb60ac3df569b67eb2a8",
+    "docs/v22-playability-review.md": "856caedc563563d50f8b24ec897f7dfbc280b5e3964cbbebc60395dcc7e9fb00",
+    "research/playability-v22.json": "c26de2cdc14a8e54720acc46b0387683cf0e345da3d79f2670ff8b1d37ae0812",
+    "audits/v22-final.json": "c4a84f2c65e01aa4f4c4c30401fd3834e17a9fae27e5a3c8341e509cb59d3359",
+    "audits/v22-branch-routes.json": "5104ae1762b0fc423517ff945f3300e531982a9416ac9d36bafadedd1e63f151",
+    "AGENTS.md": "025c1847a2dd7e5135cf62267ef2162da4096124d76a72d9f0be27ac48be4cd4"
+  },
+  "currentBaseline": {
+    "version": 22,
+    "checkedRuntimeMatchesAcceptance": true,
+    "files": {
+      "index.html": "0aa35a815679d8f4b7a8f296c8d2e80dd754d422cd81a97f95a08eeb74efc652",
+      "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+      "js/engine.js": "f632273b3d0395c16d3618617f32047947b0f83ac5d001e36775fcca20bd45aa",
+      "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+      "js/planning.js": "503c93a8c950dc071fa5cfe32422bbc298e2648f21c2b3bc79ddc5cac75b5276",
+      "js/planning-ui.js": "450d5f4d56cef27646b73291e6050b0520b032847e336698bf5387ed4ced9adc",
+      "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+      "js/ui.js": "2472a3215be8604eb476ee62e627194ddb7a122e2434eefd1a6ec604f452782b"
+    }
+  },
+  "researchScope": {
+    "games": 5,
+    "historicalSelectedReviews": 10,
+    "sourceDate": "2026-10-23",
+    "newWebResearch": false
+  },
+  "priorities": [
+    "Meaningful encounter combinations",
+    "Clear local completion and consequences",
+    "Isolated same-condition replay challenges and records"
+  ],
+  "tasks": [
+    {
+      "id": "S0",
+      "title": "统一起点和完成条件",
+      "dependsOn": [],
+      "doneWhen": "八层路线到同一达标条件，基线动作与预算可复算"
+    },
+    {
+      "id": "S1",
+      "title": "八层独立挑战闭环",
+      "dependsOn": [
+        "S0"
+      ],
+      "doneWhen": "合法起点可进入达标退出，保存刷新与主线完全隔离"
+    },
+    {
+      "id": "S2",
+      "title": "八层和十一层组合样板",
+      "dependsOn": [
+        "S1"
+      ],
+      "doneWhen": "分别有同起点同终点的合法多解与真实资源权衡"
+    },
+    {
+      "id": "S3",
+      "title": "后段因果和章末回顾",
+      "dependsOn": [
+        "S2"
+      ],
+      "doneWhen": "救援配装和终战后果对应正式状态，回退保持一致"
+    },
+    {
+      "id": "S4",
+      "title": "第二挑战和公平记录",
+      "dependsOn": [
+        "S1",
+        "S2"
+      ],
+      "doneWhen": "两个挑战各有两个公开目标，记录按相同起点规则目标比较"
+    },
+    {
+      "id": "S5",
+      "title": "逐处主线集成和验收",
+      "dependsOn": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "doneWhen": "十八层合法路线、旧档、双画境、离线与真人观察分别完成"
+    }
+  ],
+  "preserve": [
+    "18-floor campaign",
+    "deterministic finite resources",
+    "both art styles",
+    "offline direct index.html",
+    "existing F/R/T controls",
+    "in-scene ordinary interactions",
+    "whole-state archive semantics"
+  ],
+  "implementationPerformed": false,
+  "runtimeOrSaveMutations": false,
+  "playerStudyPerformed": false
+}

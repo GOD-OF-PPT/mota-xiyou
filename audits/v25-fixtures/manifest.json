@@ -1,0 +1,144 @@
+{
+  "source": "tests/playthrough-v23-free-mixed-direct.json",
+  "sourceSHA256": "446e1aa62cbf0fc6c6ac680b0f0e342cc61d1ba830073aff54b34a03f12826e3",
+  "method": "Unmodified current engine, 4176 public actions; each save is a real prefix. Defeat adds one allowed attack from an adjacent legal state.",
+  "observedByHuman": false,
+  "records": {
+    "arrival": {
+      "file": "audits/v25-fixtures/arrival.json",
+      "prefixActions": 0,
+      "sha256": "5dcf70deda23feaebe92de62633e718f4a6a76a8b0585f20b5fa7508e35bb5c7"
+    },
+    "battle": {
+      "file": "audits/v25-fixtures/battle.json",
+      "prefixActions": 41,
+      "sha256": "58754c65929eec401e1fed6649d59df8a86d9be1dd98c644b76afb417ffe880b",
+      "target": {
+        "x": 17,
+        "y": 8,
+        "type": "enemy",
+        "enemy": "thresholdImp",
+        "id": "f0-6",
+        "role": "optional",
+        "purpose": "可绕行的功德挑战；胜利功德可在莲灯换取成长。"
+      }
+    },
+    "choice-2": {
+      "file": "audits/v25-fixtures/choice-2.json",
+      "prefixActions": 171,
+      "sha256": "905507de4e8448526e475c39dc34fce4fe3382869d56f38b4ff7489ea79bed0a",
+      "target": {
+        "x": 9,
+        "y": 17,
+        "type": "choice",
+        "id": "f1-12",
+        "originalSupply": "jade",
+        "choice": "bellVow",
+        "blocking": false,
+        "label": "残钟偏转台 · 防御 +2 / 异宝北门",
+        "name": "残钟偏转台 · 防御 +2 / 异宝北门"
+      }
+    },
+    "lantern-gear": {
+      "file": "audits/v25-fixtures/lantern-gear.json",
+      "prefixActions": 276,
+      "sha256": "5f9eb1290bdc741ba7e220d43d7a1b5a9efbaeb6317756d25d7a685b96e80266"
+    },
+    "ability": {
+      "file": "audits/v25-fixtures/ability.json",
+      "prefixActions": 611,
+      "sha256": "7f5e426ed15e0370f2f11d9cab8b252fb8ea22cf29b5db87ef255b7eda076c21",
+      "action": {
+        "type": "useAbility",
+        "args": [
+          "staff",
+          14,
+          16
+        ]
+      }
+    },
+    "choice-3": {
+      "file": "audits/v25-fixtures/choice-3.json",
+      "prefixActions": 781,
+      "sha256": "1d3aae8648a4f47d6e58118b3e6de184dbc2645b5331371108603587ccfecaa2",
+      "target": {
+        "x": 17,
+        "y": 15,
+        "type": "choice",
+        "choice": "locks",
+        "option": "free",
+        "label": "无钥契台 · 两名守卫，保留钥匙",
+        "id": "f4-15"
+      }
+    },
+    "floor11": {
+      "file": "audits/v25-fixtures/floor11.json",
+      "prefixActions": 2017,
+      "sha256": "515e21052d10adf887e811e1ed53fbdc5961a694a6cb1830c7b65d58c955d430"
+    },
+    "pre-defeat": {
+      "file": "audits/v25-fixtures/pre-defeat.json",
+      "prefixActions": 2087,
+      "sha256": "f0489b2d102ff12b24d3b05cd8a111f2e951bb0e1ec9c641cc36326cfea7ea3b",
+      "target": {
+        "x": 6,
+        "y": 7,
+        "type": "enemy",
+        "enemy": "flame",
+        "id": "f10-wing-guard-0",
+        "guards": [],
+        "role": "optional",
+        "purpose": "可选的功德挑战；可以保留生命，不取这份战利。"
+      }
+    },
+    "defeat": {
+      "file": "audits/v25-fixtures/defeat.json",
+      "prefixActions": 2087,
+      "sha256": "87a1ad8293541ced07914be530b4c8393ecec39dd55530982eb7da8cde5adc44",
+      "extraPublicAction": {
+        "type": "fight",
+        "args": [
+          {
+            "x": 6,
+            "y": 7,
+            "type": "enemy",
+            "enemy": "flame",
+            "id": "f10-wing-guard-0",
+            "guards": [],
+            "role": "optional",
+            "purpose": "可选的功德挑战；可以保留生命，不取这份战利。"
+          }
+        ]
+      }
+    },
+    "final-battle": {
+      "file": "audits/v25-fixtures/final-battle.json",
+      "prefixActions": 4169,
+      "sha256": "6b871b543f90ed6f89530cb7c29d0009935e35915443a6c1ea7e55cdfb8d1c0b",
+      "target": {
+        "x": 10,
+        "y": 5,
+        "type": "enemy",
+        "enemy": "heart",
+        "id": "f17-7",
+        "role": "boss",
+        "purpose": "守护最后莲阵，战胜三相后才能完成归真。"
+      }
+    },
+    "awakening": {
+      "file": "audits/v25-fixtures/awakening.json",
+      "prefixActions": 4174,
+      "sha256": "8a26a217192ca470052ac99f1e85f0404de67f127cef3db2a8d7da6d67f5253e"
+    },
+    "ending-choice": {
+      "file": "audits/v25-fixtures/ending-choice.json",
+      "prefixActions": 4175,
+      "sha256": "9456ef5507568b71b03786871fe19e9312288766d408ccdabb1edb811445bfa7"
+    },
+    "ending": {
+      "file": "audits/v25-fixtures/ending.json",
+      "prefixActions": 4176,
+      "sha256": "79e05d846fc2b35efbbdfdb662f31be86dc1f39eb11e3422344f4eeb7c4fcb04"
+    }
+  }
+}

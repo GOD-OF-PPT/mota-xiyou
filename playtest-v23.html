@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN" data-art-style="material">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>灯下重游 · 大圣舍利魔塔</title><link rel="stylesheet" href="css/study-foyer.css?v=24"></head>
+<body>
+<div class="foyer-world" aria-hidden="true"></div>
+<header class="foyer-top"><a href="index.html">‹ 回到塔外</a><span>大圣 · 舍利魔塔</span><button type="button" data-foyer-style>玄金古寺 · 换境</button></header>
+<main class="foyer-main">
+<section class="foyer-heading"><span>灯下重游</span><h1>再走一段因果</h1><p>同一个起点，试一条不同的路。</p></section>
+<section class="study-chapters" aria-label="选择重游章回">
+<button type="button" data-study-task="first-three" aria-pressed="true"><span class="chapter-index" aria-hidden="true">壹</span><img src="assets/material/landmarks/landmark-buddha-hd-v18.png" alt=""><b>重踏山门</b><small>首三层 · 自己看清下一步</small></button>
+<button type="button" data-study-task="ferry" aria-pressed="false"><span class="chapter-index" aria-hidden="true">捌</span><img src="assets/material/landmarks/landmark-dragon-hd-v18.png" alt=""><b>弱水渡路</b><small>第八层 · 一把钥，一段归路</small></button>
+<button type="button" data-study-task="silk" aria-pressed="false"><span class="chapter-index" aria-hidden="true">拾壹</span><img src="assets/material/landmarks/landmark-scripture-hd-v18.png" alt=""><b>两影同渡</b><small>第十一层 · 驻守与补给</small></button>
+</section>
+<section class="study-intent" aria-label="本次公开目标"><div id="study-goals" role="group" aria-label="选择目标"></div><p id="task-text"></p><p id="task-cost"></p></section>
+<div class="entries" id="entries"></div><p id="order"></p>
+<section class="study-keeper">
+<details id="identity-settings"><summary>本次行者 · 编号与篇章设置 <span id="study-identity"></span></summary>
+<form id="setup">
+<label>匿名编号<input name="participant" value="P01" maxlength="24" pattern="[A-Za-z0-9_-]{1,24}" required autocomplete="off"></label>
+<label>轮次<input name="round" type="number" value="1" min="1" max="99" required></label>
+<label>任务<select name="task"><option value="first-three">首三层 · 探索与目标理解</option><option value="ferry">第八层 · 渡路与成长</option><option value="silk">第十一层 · 驻守与补给</option></select></label>
+<label>公开目标<select name="objective"></select></label>
+<label>入境画境<select name="art"><option value="material">玄金古寺</option><option value="mural">青绿壁画</option></select></label>
+</form>
+<div class="keeper-notes">同一编号、版本、任务、目标和轮次会续接已有进度。重做请换轮次，或在该段开始界面重置。<br>编号末位奇数先 v22，偶数先 v23；这里只建议顺序，记录必须保留实际顺序。</div>
+</details>
+<details><summary>随行札记 · 观察者须知</summary><div class="keeper-notes"><p>每段独立保存，刷新可继续。两版从对应合法起点开始；主线进度保留在原处。</p><p>开始前不给路线答案。计时区分思考、观察新信息、熟路执行，未知留空。结束后询问：得到什么、支付什么、放弃什么？改变了什么，之后如何利用？是否愿意尝试另一目标？</p><p>这里不会自动登记真人样本。使用 <a href="docs/v23-human-playtest-protocol.md">记录方法</a> 与 <a href="research/v23-human-study-template.json">空白记录模板</a>。</p><button id="download" type="button">抄下起点与配对信息</button></div></details>
+</section>
+<footer class="foyer-foot">同一份前缘 · 不同的解法 · 独立试玩进度</footer>
+</main>
+<script src="research/study-v23/fixtures.js"></script><script src="js/study-foyer.js?v=24"></script>
+</body></html>

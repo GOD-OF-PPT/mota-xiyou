@@ -1,0 +1,56 @@
+{
+  "scope": [
+    "js/ui.js",
+    "index.html",
+    "css/cinnabar.css"
+  ],
+  "theme": "朱砂拓印 · 倒悬灵山",
+  "changes": [
+    "暖纸行者卷轴替换绿面板，地图为主画面；任务收为可展开经卷，目标便笺仅选中时显示",
+    "开始图采用TowerRenderer.backdrop，与实际地图巨断佛掌、倒悬塔、悟空朱巾雉翎使用同一像素语汇",
+    "M及醒目全图规划按钮；世界坐标命中按地图宽高动态计算；舍利/回访/敌情定位调用focusCell",
+    "十六舍利逐枚状态与已到达楼层目标定位；五印公开对应舍利编号；单片拾取使用轻铃",
+    "六件法器全收录、代价与守藏层公开、莲灯装卸、最多两件、有效属性与基础值区分",
+    "战斗界面读权威gearLines/effectiveAtk/effectiveDef/goldReward；临界文案明确基础攻击；神通费用调用abilityCost"
+  ],
+  "reflection": [
+    {
+      "observation": "首轮1366x768整页高830，技能行超出可视区；844x390整页高412，旧状态网格文字溢出",
+      "correction": "收紧楼层与工具行，用剩余高度约束画布；横屏单独重置属性网格与画布高度",
+      "evidence": "audits/v4-ui-check.json：桌面1366x768、竖屏390x844、横屏844x390均无横向或纵向溢出"
+    },
+    {
+      "observation": "独立SVG开始图与实际地图母题风格不完全一致",
+      "correction": "改用renderer同源原生像素backdrop，开始页与塔内巨像及角色统一",
+      "evidence": "audits/v4-ui-title.png 与 audits/v4-ui-desktop.png"
+    },
+    {
+      "observation": "全图选择远处后回近观仍可能留在远处目标，看不到行者",
+      "correction": "回到近观及关闭便笺时显式聚焦玩家当前位置",
+      "evidence": "toggleOverview及context-dismiss处理"
+    },
+    {
+      "observation": "新增法器使原“攻击临界”易被误解为含装备的有效攻击；舍利心印条件实际是编号数组",
+      "correction": "改为“下一基础攻击临界”，心印公开实际编号列表并沿用引擎requirements缺项",
+      "evidence": "battleHTML及relic context"
+    },
+    {
+      "observation": "立即截图会捕捉弹窗进入动画透明首帧，不能据此认定对比度故障",
+      "correction": "等待260ms后重新摄影，同时补齐纸面粗体/公式背景的深墨文字",
+      "evidence": "audits/v4-ui-inventory.png，opacity已为1"
+    }
+  ],
+  "verification": {
+    "javascriptSyntax": "node --check js/ui.js passed",
+    "browser": "Chrome, single instance, finally closed",
+    "errors": [],
+    "checks": [
+      "全图按钮aria-pressed=true",
+      "M切回近观aria-pressed=false",
+      "点击世界坐标(3,3)舍利打开真实信息",
+      "背包有6张法器卡",
+      "三端无整页溢出"
+    ]
+  },
+  "boundary": "完成界面接线和三端局部交互摄影；本记录不替代主控的18层完整公共行动通关或真人时长评价。"
+}

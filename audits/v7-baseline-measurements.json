@@ -1,0 +1,1263 @@
+{
+  "userReference": "C:/Users/KSG/AppData/Local/Temp/codex-clipboard-ddc94e33-d555-4c61-8da1-555074e539ff.png",
+  "capturedAt": "2026-10-22T04:48:11.990Z",
+  "sourceIdentity": {
+    "js/renderer.js": "426293f9f78a002b12fa1bb2cac1db29cefe75f8b91fd1a684bca05217c7adca",
+    "js/ui.js": "75e3da861fb7692b2ccb77d0e410c475f9b3af151a23ff83cf33df5f0a37b004",
+    "js/art-style.js": "8dde4ee4db6d618837d045312db493fee3024ec28ca2df051a24a9a3fd230335",
+    "css/immersive.css": "4f2d276ddf1ac9f0c475912a2e74edf6a1f9864a6fa743d49f2b4c5157309ebf",
+    "assets/material/manifest.json": "a001d840d839c7ea02ddea1320d18673a2b43862d4828daa591f9eff2e20bbd3"
+  },
+  "legalCheckpoint": {
+    "floor": 0,
+    "x": 6,
+    "y": 9,
+    "hp": 735,
+    "turn": 86,
+    "facing": "down"
+  },
+  "cases": [
+    {
+      "style": "material",
+      "mode": "overview",
+      "dpr": 1,
+      "devicePixelRatio": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 2525,
+          "height": 1208
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 57.523809523809526,
+        "offsetX": 658.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "tileX": 0,
+        "tileY": 0
+      },
+      "map": {
+        "x": 658.5,
+        "y": 0,
+        "width": 1208,
+        "height": 1208,
+        "right": 1866.5,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.4784158415841584,
+      "nonMapFraction": 0.5215841584158416,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": true,
+        "screen": true,
+        "buffer": true,
+        "css": "auto"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            30,
+            41,
+            67,
+            88
+          ],
+          "nonzeroAlphaPixels": 1043,
+          "solidPixels": 417
+        },
+        "scale": 1.5,
+        "cssPerSourcePixel": 1.7976190476190474,
+        "physicalPixelsPerSourcePixel": 1.7976190476190474,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 575.2380952380953
+        },
+        "opaqueScreenBounds": {
+          "x": 1000.047619047619,
+          "y": 490.75000000000006,
+          "width": 66.51190476190476,
+          "height": 84.48809523809523
+        },
+        "bufferRasterPerSourcePixel": 1.5,
+        "finalBufferPhysicalScale": 1.1984126984126984
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            4,
+            53,
+            37,
+            88
+          ],
+          "nonzeroAlphaPixels": 734,
+          "solidPixels": 392
+        },
+        "scale": 1.25,
+        "cssPerSourcePixel": 1.498015873015873,
+        "physicalPixelsPerSourcePixel": 1.498015873015873,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 632.7619047619048
+        },
+        "opaqueScreenBounds": {
+          "x": 990.4603174603175,
+          "y": 580.3313492063493,
+          "width": 49.43452380952381,
+          "height": 52.43055555555556
+        },
+        "bufferRasterPerSourcePixel": 1.25,
+        "finalBufferPhysicalScale": 1.1984126984126984
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1288.1460955103987,
+      "contextDistanceInCells": 22.39326821665428,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-material-overview-dpr1.png"
+    },
+    {
+      "style": "material",
+      "mode": "near",
+      "dpr": 1,
+      "devicePixelRatio": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 2525,
+          "height": 1208
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 1.5,
+        "w": 21,
+        "h": 16,
+        "cellSize": 75.5,
+        "offsetX": 469.75,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "tileX": 0,
+        "tileY": 1
+      },
+      "map": {
+        "x": 469.75,
+        "y": 0,
+        "width": 1585.5,
+        "height": 1208,
+        "right": 2055.25,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.6279207920792079,
+      "nonMapFraction": 0.3720792079207921,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": true,
+        "screen": true,
+        "buffer": true,
+        "css": "auto"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            30,
+            41,
+            67,
+            88
+          ],
+          "nonzeroAlphaPixels": 1043,
+          "solidPixels": 417
+        },
+        "scale": 1.5,
+        "cssPerSourcePixel": 2.359375,
+        "physicalPixelsPerSourcePixel": 2.359375,
+        "foot": {
+          "x": 960.5,
+          "y": 641.75
+        },
+        "opaqueScreenBounds": {
+          "x": 918.03125,
+          "y": 530.859375,
+          "width": 87.296875,
+          "height": 110.890625
+        },
+        "bufferRasterPerSourcePixel": 1.5,
+        "finalBufferPhysicalScale": 1.5729166666666667
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            4,
+            53,
+            37,
+            88
+          ],
+          "nonzeroAlphaPixels": 734,
+          "solidPixels": 392
+        },
+        "scale": 1.25,
+        "cssPerSourcePixel": 1.9661458333333335,
+        "physicalPixelsPerSourcePixel": 1.9661458333333335,
+        "foot": {
+          "x": 960.5,
+          "y": 717.25
+        },
+        "opaqueScreenBounds": {
+          "x": 905.4479166666666,
+          "y": 648.4348958333334,
+          "width": 64.8828125,
+          "height": 68.81510416666667
+        },
+        "bufferRasterPerSourcePixel": 1.25,
+        "finalBufferPhysicalScale": 1.5729166666666667
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1381.5327764841484,
+      "contextDistanceInCells": 18.298447370650972,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-material-near-dpr1.png"
+    },
+    {
+      "style": "mural",
+      "mode": "overview",
+      "dpr": 1,
+      "devicePixelRatio": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 2525,
+          "height": 1208
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 57.523809523809526,
+        "offsetX": 658.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "tileX": 0,
+        "tileY": 0
+      },
+      "map": {
+        "x": 658.5,
+        "y": 0,
+        "width": 1208,
+        "height": 1208,
+        "right": 1866.5,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.4784158415841584,
+      "nonMapFraction": 0.5215841584158416,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": false,
+        "screen": false,
+        "buffer": false,
+        "css": "pixelated"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            32,
+            11,
+            86,
+            88
+          ],
+          "nonzeroAlphaPixels": 2138,
+          "solidPixels": 2138
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.1984126984126984,
+        "physicalPixelsPerSourcePixel": 1.1984126984126984,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 575.2380952380953
+        },
+        "opaqueScreenBounds": {
+          "x": 1013.2301587301588,
+          "y": 482.9603174603175,
+          "width": 64.71428571428571,
+          "height": 92.27777777777777
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 1.1984126984126984
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            0,
+            24,
+            49,
+            88
+          ],
+          "nonzeroAlphaPixels": 1611,
+          "solidPixels": 1611
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.1984126984126984,
+        "physicalPixelsPerSourcePixel": 1.1984126984126984,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 632.7619047619048
+        },
+        "opaqueScreenBounds": {
+          "x": 994.0555555555555,
+          "y": 556.0634920634922,
+          "width": 58.72222222222222,
+          "height": 76.6984126984127
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 1.1984126984126984
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1288.1460955103987,
+      "contextDistanceInCells": 22.39326821665428,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-mural-overview-dpr1.png"
+    },
+    {
+      "style": "mural",
+      "mode": "near",
+      "dpr": 1,
+      "devicePixelRatio": 1,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 2525,
+          "height": 1208
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 1.5,
+        "w": 21,
+        "h": 16,
+        "cellSize": 75.5,
+        "offsetX": 469.75,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "tileX": 0,
+        "tileY": 1
+      },
+      "map": {
+        "x": 469.75,
+        "y": 0,
+        "width": 1585.5,
+        "height": 1208,
+        "right": 2055.25,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.6279207920792079,
+      "nonMapFraction": 0.3720792079207921,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": false,
+        "screen": false,
+        "buffer": false,
+        "css": "pixelated"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            32,
+            11,
+            86,
+            88
+          ],
+          "nonzeroAlphaPixels": 2138,
+          "solidPixels": 2138
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.5729166666666667,
+        "physicalPixelsPerSourcePixel": 1.5729166666666667,
+        "foot": {
+          "x": 960.5,
+          "y": 641.75
+        },
+        "opaqueScreenBounds": {
+          "x": 935.3333333333334,
+          "y": 520.6354166666666,
+          "width": 84.9375,
+          "height": 121.11458333333334
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 1.5729166666666667
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            0,
+            24,
+            49,
+            88
+          ],
+          "nonzeroAlphaPixels": 1611,
+          "solidPixels": 1611
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.5729166666666667,
+        "physicalPixelsPerSourcePixel": 1.5729166666666667,
+        "foot": {
+          "x": 960.5,
+          "y": 717.25
+        },
+        "opaqueScreenBounds": {
+          "x": 910.1666666666666,
+          "y": 616.5833333333334,
+          "width": 77.07291666666667,
+          "height": 100.66666666666667
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 1.5729166666666667
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1381.5327764841484,
+      "contextDistanceInCells": 18.298447370650972,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-mural-near-dpr1.png"
+    },
+    {
+      "style": "material",
+      "mode": "overview",
+      "dpr": 2,
+      "devicePixelRatio": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 5050,
+          "height": 2416
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 57.523809523809526,
+        "offsetX": 658.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "tileX": 0,
+        "tileY": 0
+      },
+      "map": {
+        "x": 658.5,
+        "y": 0,
+        "width": 1208,
+        "height": 1208,
+        "right": 1866.5,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.4784158415841584,
+      "nonMapFraction": 0.5215841584158416,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": true,
+        "screen": true,
+        "buffer": true,
+        "css": "auto"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            30,
+            41,
+            67,
+            88
+          ],
+          "nonzeroAlphaPixels": 1043,
+          "solidPixels": 417
+        },
+        "scale": 1.5,
+        "cssPerSourcePixel": 1.7976190476190474,
+        "physicalPixelsPerSourcePixel": 3.595238095238095,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 575.2380952380953
+        },
+        "opaqueScreenBounds": {
+          "x": 1000.047619047619,
+          "y": 490.75000000000006,
+          "width": 66.51190476190476,
+          "height": 84.48809523809523
+        },
+        "bufferRasterPerSourcePixel": 1.5,
+        "finalBufferPhysicalScale": 2.3968253968253967
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            4,
+            53,
+            37,
+            88
+          ],
+          "nonzeroAlphaPixels": 734,
+          "solidPixels": 392
+        },
+        "scale": 1.25,
+        "cssPerSourcePixel": 1.498015873015873,
+        "physicalPixelsPerSourcePixel": 2.996031746031746,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 632.7619047619048
+        },
+        "opaqueScreenBounds": {
+          "x": 990.4603174603175,
+          "y": 580.3313492063493,
+          "width": 49.43452380952381,
+          "height": 52.43055555555556
+        },
+        "bufferRasterPerSourcePixel": 1.25,
+        "finalBufferPhysicalScale": 2.3968253968253967
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1288.1460955103987,
+      "contextDistanceInCells": 22.39326821665428,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-material-overview-dpr2.png"
+    },
+    {
+      "style": "material",
+      "mode": "near",
+      "dpr": 2,
+      "devicePixelRatio": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 5050,
+          "height": 2416
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 1.5,
+        "w": 21,
+        "h": 16,
+        "cellSize": 75.5,
+        "offsetX": 469.75,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "tileX": 0,
+        "tileY": 1
+      },
+      "map": {
+        "x": 469.75,
+        "y": 0,
+        "width": 1585.5,
+        "height": 1208,
+        "right": 2055.25,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.6279207920792079,
+      "nonMapFraction": 0.3720792079207921,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": true,
+        "screen": true,
+        "buffer": true,
+        "css": "auto"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            30,
+            41,
+            67,
+            88
+          ],
+          "nonzeroAlphaPixels": 1043,
+          "solidPixels": 417
+        },
+        "scale": 1.5,
+        "cssPerSourcePixel": 2.359375,
+        "physicalPixelsPerSourcePixel": 4.71875,
+        "foot": {
+          "x": 960.5,
+          "y": 641.75
+        },
+        "opaqueScreenBounds": {
+          "x": 918.03125,
+          "y": 530.859375,
+          "width": 87.296875,
+          "height": 110.890625
+        },
+        "bufferRasterPerSourcePixel": 1.5,
+        "finalBufferPhysicalScale": 3.1458333333333335
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            4,
+            53,
+            37,
+            88
+          ],
+          "nonzeroAlphaPixels": 734,
+          "solidPixels": 392
+        },
+        "scale": 1.25,
+        "cssPerSourcePixel": 1.9661458333333335,
+        "physicalPixelsPerSourcePixel": 3.932291666666667,
+        "foot": {
+          "x": 960.5,
+          "y": 717.25
+        },
+        "opaqueScreenBounds": {
+          "x": 905.4479166666666,
+          "y": 648.4348958333334,
+          "width": 64.8828125,
+          "height": 68.81510416666667
+        },
+        "bufferRasterPerSourcePixel": 1.25,
+        "finalBufferPhysicalScale": 3.1458333333333335
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1381.5327764841484,
+      "contextDistanceInCells": 18.298447370650972,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-material-near-dpr2.png"
+    },
+    {
+      "style": "mural",
+      "mode": "overview",
+      "dpr": 2,
+      "devicePixelRatio": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 5050,
+          "height": 2416
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 21,
+        "cellSize": 57.523809523809526,
+        "offsetX": 658.5,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": true,
+        "tileX": 0,
+        "tileY": 0
+      },
+      "map": {
+        "x": 658.5,
+        "y": 0,
+        "width": 1208,
+        "height": 1208,
+        "right": 1866.5,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.4784158415841584,
+      "nonMapFraction": 0.5215841584158416,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": false,
+        "screen": false,
+        "buffer": false,
+        "css": "pixelated"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            32,
+            11,
+            86,
+            88
+          ],
+          "nonzeroAlphaPixels": 2138,
+          "solidPixels": 2138
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.1984126984126984,
+        "physicalPixelsPerSourcePixel": 2.3968253968253967,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 575.2380952380953
+        },
+        "opaqueScreenBounds": {
+          "x": 1013.2301587301588,
+          "y": 482.9603174603175,
+          "width": 64.71428571428571,
+          "height": 92.27777777777777
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 2.3968253968253967
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            0,
+            24,
+            49,
+            88
+          ],
+          "nonzeroAlphaPixels": 1611,
+          "solidPixels": 1611
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.1984126984126984,
+        "physicalPixelsPerSourcePixel": 2.3968253968253967,
+        "foot": {
+          "x": 1032.404761904762,
+          "y": 632.7619047619048
+        },
+        "opaqueScreenBounds": {
+          "x": 994.0555555555555,
+          "y": 556.0634920634922,
+          "width": 58.72222222222222,
+          "height": 76.6984126984127
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 2.3968253968253967
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1288.1460955103987,
+      "contextDistanceInCells": 22.39326821665428,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-mural-overview-dpr2.png"
+    },
+    {
+      "style": "mural",
+      "mode": "near",
+      "dpr": 2,
+      "devicePixelRatio": 2,
+      "viewport": {
+        "width": 2525,
+        "height": 1208
+      },
+      "canvas": {
+        "css": {
+          "x": 0,
+          "y": 0,
+          "width": 2525,
+          "height": 1208,
+          "centerX": 1262.5,
+          "centerY": 604
+        },
+        "backing": {
+          "width": 5050,
+          "height": 2416
+        }
+      },
+      "camera": {
+        "x": 0,
+        "y": 1.5,
+        "w": 21,
+        "h": 16,
+        "cellSize": 75.5,
+        "offsetX": 469.75,
+        "offsetY": 0,
+        "cssWidth": 2525,
+        "cssHeight": 1208,
+        "overview": false,
+        "tileX": 0,
+        "tileY": 1
+      },
+      "map": {
+        "x": 469.75,
+        "y": 0,
+        "width": 1585.5,
+        "height": 1208,
+        "right": 2055.25,
+        "bottom": 1208
+      },
+      "actualMapCoverage": 0.6279207920792079,
+      "nonMapFraction": 0.3720792079207921,
+      "buffer": {
+        "width": 1008,
+        "height": 1008
+      },
+      "smoothing": {
+        "material": false,
+        "screen": false,
+        "buffer": false,
+        "css": "pixelated"
+      },
+      "actor": {
+        "id": "actor_wukong_down",
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "sourceFrame": {
+          "width": 96,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 96,
+          "sourceH": 96,
+          "opaqueBounds": [
+            32,
+            11,
+            86,
+            88
+          ],
+          "nonzeroAlphaPixels": 2138,
+          "solidPixels": 2138
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.5729166666666667,
+        "physicalPixelsPerSourcePixel": 3.1458333333333335,
+        "foot": {
+          "x": 960.5,
+          "y": 641.75
+        },
+        "opaqueScreenBounds": {
+          "x": 935.3333333333334,
+          "y": 520.6354166666666,
+          "width": 84.9375,
+          "height": 121.11458333333334
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 3.1458333333333335
+      },
+      "enemy": {
+        "id": "enemy_imp",
+        "position": {
+          "x": 6,
+          "y": 10
+        },
+        "sourceFrame": {
+          "width": 64,
+          "height": 96
+        },
+        "alpha": {
+          "sourceW": 64,
+          "sourceH": 96,
+          "opaqueBounds": [
+            0,
+            24,
+            49,
+            88
+          ],
+          "nonzeroAlphaPixels": 1611,
+          "solidPixels": 1611
+        },
+        "scale": 1,
+        "cssPerSourcePixel": 1.5729166666666667,
+        "physicalPixelsPerSourcePixel": 3.1458333333333335,
+        "foot": {
+          "x": 960.5,
+          "y": 717.25
+        },
+        "opaqueScreenBounds": {
+          "x": 910.1666666666666,
+          "y": 616.5833333333334,
+          "width": 77.07291666666667,
+          "height": 100.66666666666667
+        },
+        "bufferRasterPerSourcePixel": 1,
+        "finalBufferPhysicalScale": 3.1458333333333335
+      },
+      "context": {
+        "x": 2273,
+        "y": 152,
+        "width": 228,
+        "height": 134,
+        "centerX": 2387,
+        "centerY": 219
+      },
+      "contextDistanceToEnemyFoot": 1381.5327764841484,
+      "contextDistanceInCells": 18.298447370650972,
+      "skills": {
+        "x": 2256,
+        "y": 1140,
+        "width": 245,
+        "height": 45,
+        "centerX": 2378.5,
+        "centerY": 1162.5
+      },
+      "skillsCenterDeviation": 1116,
+      "screenshot": "E:\\githome\\mota\\audits\\v7-baseline-mural-near-dpr2.png"
+    }
+  ],
+  "errors": [],
+  "baselineReview": {
+    "sourceIdentityMatchedAtImmediatePostCaptureReview": true,
+    "imagesActuallyOpened": [
+      "C:/Users/KSG/AppData/Local/Temp/codex-clipboard-ddc94e33-d555-4c61-8da1-555074e539ff.png",
+      "audits/v7-baseline-material-overview-dpr1.png",
+      "audits/v7-baseline-material-near-dpr2.png"
+    ],
+    "formalV7AcceptanceRun": false
+  }
+}

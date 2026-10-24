@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    {
+      "body": 390,
+      "canvasBottom": 565,
+      "controlsBottom": 834,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "body": 844,
+      "canvasBottom": 352,
+      "controlsBottom": 376,
+      "width": 844,
+      "height": 390
+    }
+  ],
+  "errors": [],
+  "scope": "Actual opening, 16-point menu, independent persisted sound settings, free illusion interaction and OS motion preference. Finale is verified by parent adventure run."
+}

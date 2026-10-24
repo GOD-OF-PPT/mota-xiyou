@@ -1,0 +1,61 @@
+{
+  "status": "reproduced_fixed_and_pc_verified",
+  "completedAt": "2026-10-23T03:26:09.782Z",
+  "source": {
+    "index.html": "c8b762bd52959ee1f0f6f55a160fe800502aab1cc7d52524bb988e300788b2a3",
+    "js/renderer.js": "d0463576f0c10d99f01a1962a3aa3749a44847f91617a3e0898e1f9b7201b05a",
+    "js/material-assets.js": "7f241f0f1b901b5da38237675d7052fce0bd52b229f54f52b6d07754e3ac3741",
+    "assets/material/manifest.json": "ef82a584655265f20fa0bc51b0c6363dd875b704672f5efc3ad5ce0ec7e66a7f",
+    "scripts/prepare_material_native.py": "4f0fb85c45a3ec1d41715b3619214b44c4781e43e554e8f41aa8a1d1a10388c9",
+    "scripts/prepare_material_assets.py": "b3c4ad627a35e829bebd2e436c3f1b2dd50ab58d0833514f025f8f49640026a5",
+    "assets/material/props/altar-hd-v14.png": "bcb4f45c6a86bd6922e626ed017c732510bdf16ac534749134fa252d5ab1e62f",
+    "assets/material/props/resonator-hd-v14.png": "8e2c7a81fb41322bcf7d5d05ef2fdaccebb52a05b35790c9a0fb30735c9f44b0",
+    "assets/material/props/stairs-up-hd-v14.png": "c431d771aa7c7a17c88e6de7c3c853fc39fed19951863464d237585bee7dc9a1",
+    "assets/material/props/stairs-down-hd-v14.png": "6711ecbcc2bbec0b5e43609db47b3ddfbc944de48ac2f6b12ec2d67e18856896"
+  },
+  "regressionBefore": {
+    "failedDrawSamples": 22,
+    "exitCode": 1
+  },
+  "resolutionAfter": {
+    "passed": true,
+    "drawSamples": 22,
+    "viewport": {
+      "width": 1989,
+      "height": 1113
+    },
+    "dprs": [
+      1,
+      2
+    ],
+    "minNativePixelCoverage": 5.696078431372549
+  },
+  "sourceMappings": {
+    "nativeOriginal": 50,
+    "hdIncludingAliases": 5,
+    "oldAtlasReferences": 0
+  },
+  "integrationGroups": 6,
+  "interactionGroups": 21,
+  "engineWorldMuralAndChestUnchanged": true,
+  "actualSizeVisualReview": [
+    "audits/v14-resolution-before-second-dpr1.png",
+    "audits/v14-resolution-after-second-dpr1.png",
+    "audits/v14-detail-after-dpr1.png",
+    "audits/v14-detail-after-dpr2.png",
+    "audits/v14-chrome-native.png"
+  ],
+  "chrome": {
+    "refreshed": true,
+    "scriptVersion": 14,
+    "preserved": {
+      "floor": 2,
+      "hp": 477,
+      "mana": 6,
+      "externalRelics": 2
+    },
+    "madeContractChoice": false
+  },
+  "review": "docs/v14-prop-clarity-review.md",
+  "prompts": "research/v14-image-prompts.json"
+}

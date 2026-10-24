@@ -1,0 +1,565 @@
+[
+  {
+    "floor": 1,
+    "name": "云垂山门",
+    "walkable": 77,
+    "branchCells": 10,
+    "deadEnds": 0,
+    "cycles": 6,
+    "enemies": 3,
+    "doors": [
+      "yellow"
+    ],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 1,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": []
+  },
+  {
+    "floor": 2,
+    "name": "残钟回廊",
+    "walkable": 75,
+    "branchCells": 6,
+    "deadEnds": 0,
+    "cycles": 4,
+    "enemies": 3,
+    "doors": [
+      "blue"
+    ],
+    "gates": 2,
+    "levers": 1,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 3,
+    "name": "石胎古殿",
+    "walkable": 78,
+    "branchCells": 20,
+    "deadEnds": 5,
+    "cycles": 10,
+    "enemies": 6,
+    "doors": [
+      "yellow",
+      "blue"
+    ],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "5,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": [
+      {
+        "id": "imp",
+        "x": 8,
+        "y": 11,
+        "blocksRelic": false
+      },
+      {
+        "id": "imp",
+        "x": 7,
+        "y": 9,
+        "blocksRelic": false
+      },
+      {
+        "id": "imp",
+        "x": 4,
+        "y": 5,
+        "blocksRelic": false
+      },
+      {
+        "id": "thorn",
+        "x": 9,
+        "y": 5,
+        "blocksRelic": false
+      },
+      {
+        "id": "stone",
+        "x": 5,
+        "y": 2,
+        "blocksRelic": true
+      },
+      {
+        "id": "bat",
+        "x": 11,
+        "y": 2,
+        "blocksRelic": false
+      }
+    ]
+  },
+  {
+    "floor": 4,
+    "name": "断云栈道",
+    "walkable": 74,
+    "branchCells": 6,
+    "deadEnds": 2,
+    "cycles": 3,
+    "enemies": 3,
+    "doors": [],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 2,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": []
+  },
+  {
+    "floor": 5,
+    "name": "百锁偏殿",
+    "walkable": 75,
+    "branchCells": 6,
+    "deadEnds": 0,
+    "cycles": 4,
+    "enemies": 3,
+    "doors": [
+      "blue",
+      "yellow"
+    ],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": []
+  },
+  {
+    "floor": 6,
+    "name": "照骨禅院",
+    "walkable": 73,
+    "branchCells": 8,
+    "deadEnds": 3,
+    "cycles": 4,
+    "enemies": 6,
+    "doors": [
+      "yellow"
+    ],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "1,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": [
+      {
+        "id": "bone",
+        "x": 1,
+        "y": 2,
+        "blocksRelic": false
+      },
+      {
+        "id": "acolyte",
+        "x": 3,
+        "y": 6,
+        "blocksRelic": true
+      },
+      {
+        "id": "bell",
+        "x": 7,
+        "y": 9,
+        "blocksRelic": false
+      },
+      {
+        "id": "viper",
+        "x": 9,
+        "y": 5,
+        "blocksRelic": false
+      },
+      {
+        "id": "brass",
+        "x": 7,
+        "y": 3,
+        "blocksRelic": false
+      },
+      {
+        "id": "acolyte",
+        "x": 3,
+        "y": 1,
+        "blocksRelic": false
+      }
+    ]
+  },
+  {
+    "floor": 7,
+    "name": "缝天井",
+    "walkable": 74,
+    "branchCells": 6,
+    "deadEnds": 2,
+    "cycles": 3,
+    "enemies": 3,
+    "doors": [],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 2,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": []
+  },
+  {
+    "floor": 8,
+    "name": "无声梵井",
+    "walkable": 77,
+    "branchCells": 10,
+    "deadEnds": 0,
+    "cycles": 6,
+    "enemies": 3,
+    "doors": [],
+    "gates": 2,
+    "levers": 1,
+    "plates": 0,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 9,
+    "name": "悬丝水牢",
+    "walkable": 75,
+    "branchCells": 10,
+    "deadEnds": 1,
+    "cycles": 6,
+    "enemies": 6,
+    "doors": [
+      "blue"
+    ],
+    "gates": 1,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 1,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "5,5",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": [
+      {
+        "id": "water",
+        "x": 3,
+        "y": 7,
+        "blocksRelic": false
+      },
+      {
+        "id": "flood",
+        "x": 5,
+        "y": 6,
+        "blocksRelic": false
+      },
+      {
+        "id": "crab",
+        "x": 1,
+        "y": 2,
+        "blocksRelic": false
+      },
+      {
+        "id": "puppet",
+        "x": 9,
+        "y": 8,
+        "blocksRelic": false
+      },
+      {
+        "id": "water",
+        "x": 9,
+        "y": 3,
+        "blocksRelic": false
+      },
+      {
+        "id": "viper",
+        "x": 11,
+        "y": 5,
+        "blocksRelic": false
+      }
+    ]
+  },
+  {
+    "floor": 10,
+    "name": "留影棋坪",
+    "walkable": 76,
+    "branchCells": 8,
+    "deadEnds": 0,
+    "cycles": 5,
+    "enemies": 3,
+    "doors": [],
+    "gates": 2,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 11,
+    "name": "千丝庭",
+    "walkable": 75,
+    "branchCells": 6,
+    "deadEnds": 0,
+    "cycles": 4,
+    "enemies": 3,
+    "doors": [],
+    "gates": 3,
+    "levers": 0,
+    "plates": 2,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 12,
+    "name": "两仪丹庭",
+    "walkable": 75,
+    "branchCells": 10,
+    "deadEnds": 4,
+    "cycles": 4,
+    "enemies": 6,
+    "doors": [
+      "blue"
+    ],
+    "gates": 2,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 2,
+    "upAt": "1,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": [
+      {
+        "id": "judge",
+        "x": 1,
+        "y": 2,
+        "blocksRelic": true
+      },
+      {
+        "id": "flame",
+        "x": 5,
+        "y": 7,
+        "blocksRelic": false
+      },
+      {
+        "id": "alchemist",
+        "x": 9,
+        "y": 7,
+        "blocksRelic": false
+      },
+      {
+        "id": "furnace",
+        "x": 9,
+        "y": 3,
+        "blocksRelic": false
+      },
+      {
+        "id": "flame",
+        "x": 5,
+        "y": 3,
+        "blocksRelic": false
+      },
+      {
+        "id": "puppet",
+        "x": 11,
+        "y": 8,
+        "blocksRelic": false
+      }
+    ]
+  },
+  {
+    "floor": 13,
+    "name": "息火莲台",
+    "walkable": 76,
+    "branchCells": 9,
+    "deadEnds": 1,
+    "cycles": 5,
+    "enemies": 3,
+    "doors": [],
+    "gates": 0,
+    "levers": 0,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": true,
+    "guardians": []
+  },
+  {
+    "floor": 14,
+    "name": "问心断碑",
+    "walkable": 75,
+    "branchCells": 7,
+    "deadEnds": 1,
+    "cycles": 4,
+    "enemies": 3,
+    "doors": [],
+    "gates": 2,
+    "levers": 1,
+    "plates": 0,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 15,
+    "name": "倒影经阁",
+    "walkable": 75,
+    "branchCells": 8,
+    "deadEnds": 2,
+    "cycles": 4,
+    "enemies": 6,
+    "doors": [],
+    "gates": 1,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "1,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": [
+      {
+        "id": "archivist",
+        "x": 1,
+        "y": 2,
+        "blocksRelic": true
+      },
+      {
+        "id": "mirror",
+        "x": 3,
+        "y": 6,
+        "blocksRelic": false
+      },
+      {
+        "id": "ink",
+        "x": 5,
+        "y": 7,
+        "blocksRelic": false
+      },
+      {
+        "id": "sentinel",
+        "x": 5,
+        "y": 2,
+        "blocksRelic": false
+      },
+      {
+        "id": "mirror",
+        "x": 9,
+        "y": 5,
+        "blocksRelic": false
+      },
+      {
+        "id": "ink",
+        "x": 9,
+        "y": 3,
+        "blocksRelic": false
+      }
+    ]
+  },
+  {
+    "floor": 16,
+    "name": "逆莲天梯",
+    "walkable": 75,
+    "branchCells": 6,
+    "deadEnds": 0,
+    "cycles": 4,
+    "enemies": 3,
+    "doors": [],
+    "gates": 2,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 0,
+    "bars": 0,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 17,
+    "name": "三问无生门",
+    "walkable": 77,
+    "branchCells": 10,
+    "deadEnds": 0,
+    "cycles": 6,
+    "enemies": 3,
+    "doors": [],
+    "gates": 2,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "11,1",
+    "targetReachableWithoutKeys": true,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  },
+  {
+    "floor": 18,
+    "name": "无相塔心",
+    "walkable": 64,
+    "branchCells": 9,
+    "deadEnds": 6,
+    "cycles": 3,
+    "enemies": 6,
+    "doors": [
+      "red"
+    ],
+    "gates": 1,
+    "levers": 1,
+    "plates": 1,
+    "bridges": 1,
+    "bars": 1,
+    "altars": 1,
+    "upAt": "6,1",
+    "targetReachableWithoutKeys": false,
+    "targetReachableWithoutGate": false,
+    "guardians": []
+  }
+]

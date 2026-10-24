@@ -1,0 +1,241 @@
+{
+  "date": "2026-10-23",
+  "status": "implemented_and_pc_accepted",
+  "plan": "docs/v18-asset-cohesion-plan.md",
+  "review": "docs/v18-asset-cohesion-review.md",
+  "goals": [
+    {
+      "id": "P1",
+      "name": "Same-condition baseline from legal checkpoints",
+      "status": "complete",
+      "evidence": "audits/v18-cohesion-before.json"
+    },
+    {
+      "id": "P2",
+      "name": "Authored crop isolation, transparent neighbours removed",
+      "status": "complete",
+      "evidence": "audits/v18-asset-integrity.json"
+    },
+    {
+      "id": "P3",
+      "name": "Physical contacts, scale and correct picking",
+      "status": "complete",
+      "evidence": "audits/v18-cohesion-after.json"
+    },
+    {
+      "id": "P4",
+      "name": "Native detail and eight reviewed HD replacements",
+      "status": "complete",
+      "evidence": "audits/v18-native-coverage.json"
+    },
+    {
+      "id": "P5",
+      "name": "Floor contact, masonry integration and contextual NPC mark",
+      "status": "complete",
+      "evidence": [
+        "audits/v18-detail-after-props-dpr2.png",
+        "audits/v18-detail-after-monster-buddha-dpr2.png",
+        "audits/v18-after-material-first.png",
+        "audits/v18-after-material-courtyard-detail.png",
+        "audits/v18-after-mural-first.png",
+        "audits/v18-chapter-floor-4.png",
+        "audits/v18-chapter-floor-7.png",
+        "audits/v18-chapter-floor-10.png",
+        "audits/v18-chapter-floor-13.png",
+        "audits/v18-chapter-floor-18.png",
+        "audits/v18-live-preview.png"
+      ]
+    },
+    {
+      "id": "P6",
+      "name": "PC, legal progression, continuous UI sessions, both styles and offline",
+      "status": "complete",
+      "evidence": [
+        "audits/v18-cohesion-after.json",
+        "audits/v18-native-coverage.json",
+        "audits/v18-first-session-first-session.json",
+        "audits/v18-campaign.json",
+        "audits/v18-choices-choice-interaction.json",
+        "audits/v18-continuity-continuity.json",
+        "audits/v18-prop-prop-integration.json",
+        "audits/v18-occlusion.json",
+        "audits/v18-asset-integrity.json",
+        "audits/v18-rebuild-integrity.json",
+        "audits/v18-detail-capture.json"
+      ]
+    }
+  ],
+  "source": {
+    "js/renderer.js": "a2834e78331d8f8544bacbebbd947043e6156f54c422c241d3774ebf0a9c9cd3",
+    "js/material-assets.js": "1007608369730cb9688afa7bb34157fcca2644041fb00b1e45a930d31c22db69",
+    "assets/material/manifest.json": "3c881efa3b7d07ff1df06c505dd4fa9db59c65e8263b8744fa41460eb67f8327",
+    "scripts/prepare_material_native.py": "d8079cb6ffb57a2f931a6e61c7ccbabfa41a9cc834ad59d0e84a2838631ba9ba",
+    "scripts/prepare_material_v18.py": "113f8a74ae8954031dc6161f3c9a7ab790f1b3732f1d21080085e3ee0c8adc96",
+    "index.html": "1f7a42dba128e0ef4bba141d9c7f0221109fa086a60f0e178fcac91a1c7522b3",
+    "js/world.js": "c11e42fe9d704390b636a7d8620e853bfc96dd421bd03def0934636418569a5f",
+    "js/engine.js": "7ed69f814487226db3a12513a05454cadcdadf34bf3af06f3dd233a2764f600e",
+    "js/ui.js": "ca3437e3121c6c070ead2b7f30200a01585ee11a2c86f562cee993e1b9eae5e5",
+    "js/journey.js": "6501efd1c86aa4a963ea2c7fa1ed08e944e318430729ffaacfa0284daed973f5",
+    "js/presentation.js": "ad058c3052589c83b19a8cec422d93d1401bee76c7010a0857ae12f746a9e412"
+  },
+  "runtimeAssets": {
+    "assets/material/atlases/wukong.png": "0bd843bfd802cd180666829adca0b2d284c054791d7ad132cb1046cc6f26caf1",
+    "assets/material/props/imp-hd-v18.png": "c29bb31200ada85e2dc5b14c201421b1cc796206e3f5461abebdc9d92b7abcaa",
+    "assets/material/native-v18/sprites.png": "dc9c0f9c7cb1b0c249094550753558384faee433ae0e1d400ed5952b7557d457",
+    "assets/material/props/altar-hd-v14.png": "bcb4f45c6a86bd6922e626ed017c732510bdf16ac534749134fa252d5ab1e62f",
+    "assets/material/props/monument-hd-v18.png": "ecdbdd4e0d6bad34cacc01270bc4a1d0310940be80a5c26f4e8e93fe9c86e6e3",
+    "assets/material/props/chest-v13.png": "62ef0cb5663b617dfa9efb19fab4e03a77c53fe496a4895da8aac90b58ba4abf",
+    "assets/material/props/stairs-up-hd-v14.png": "c431d771aa7c7a17c88e6de7c3c853fc39fed19951863464d237585bee7dc9a1",
+    "assets/material/props/stairs-down-hd-v14.png": "6711ecbcc2bbec0b5e43609db47b3ddfbc944de48ac2f6b12ec2d67e18856896",
+    "assets/material/props/resonator-hd-v14.png": "8e2c7a81fb41322bcf7d5d05ef2fdaccebb52a05b35790c9a0fb30735c9f44b0",
+    "assets/material/atlases/terrain.png": "dfd63ee1bcb741d6f882f13f620cca388c854f0eef1dae43d9aaab0100033d6a",
+    "assets/material/landmarks/landmark-buddha-hd-v18.png": "1d918e6c6fb17e16b389f6b9ac1fe211727a8d3e496c2004060ca75a79a8e0df",
+    "assets/material/landmarks/landmark-pagoda-hd-v18.png": "5b1528736ac9452111ecdd27ec50ca29cda60100cdf26fd21e5d3070e55de6bb",
+    "assets/material/landmarks/landmark-dragon-hd-v18.png": "90360c41ee7e201883bda1532f752faec7aa7792e9ef4dce2e1aba7bc283de6a",
+    "assets/material/landmarks/landmark-furnace-hd-v18.png": "6bb83db270c8f04c57e1196b2424fc9b519a071dabffc25bb6fad88f63cfbe22",
+    "assets/material/landmarks/landmark-scripture-hd-v18.png": "843d3c7c97db373dafd6952053a732b0732270d5c1b4edf837d12adb77becb42",
+    "assets/material/landmarks/landmark-blacklotus-hd-v18.png": "b448d4ae74cda06e6cced1feaba923e9d9bafbfc8d0ef113ed25fd5f708fdee4",
+    "assets/material/atlases/fx.png": "4e5d709142579fdaf77c251c5bbd426349a6c8eaaa014801de42c7874d5b36e8",
+    "assets/material/atlases/portraits.png": "12b7792a81c8bcedd8f6e05911cbe656ab7000d90936e9401e3327beeb348ef4",
+    "assets/material/ui_backdrop.png": "3971ac5e0ab4da129f4a5d03a69bcb7e3e2e659872ce9b11df56e7bad06f4449"
+  },
+  "runtime": {
+    "files": 19,
+    "bytes": 48107542,
+    "currentRegisteredGroups": 75,
+    "hdReplacements": 8
+  },
+  "checks": {
+    "scene": {
+      "report": "audits/v18-cohesion-after.json",
+      "passed": true,
+      "groups": 14
+    },
+    "resolution": {
+      "report": "audits/v18-native-coverage.json",
+      "passed": true,
+      "groups": 0
+    },
+    "firstSession": {
+      "report": "audits/v18-first-session-first-session.json",
+      "passed": true,
+      "groups": 8
+    },
+    "campaign": {
+      "report": "audits/v18-campaign.json",
+      "passed": true,
+      "groups": 21
+    },
+    "choices": {
+      "report": "audits/v18-choices-choice-interaction.json",
+      "passed": true,
+      "groups": 33
+    },
+    "continuity": {
+      "report": "audits/v18-continuity-continuity.json",
+      "passed": true,
+      "groups": 14
+    },
+    "props": {
+      "report": "audits/v18-prop-prop-integration.json",
+      "passed": true,
+      "groups": 6
+    },
+    "occlusion": {
+      "report": "audits/v18-occlusion.json",
+      "passed": true,
+      "groups": 2
+    },
+    "isolation": {
+      "report": "audits/v18-asset-integrity.json",
+      "passed": true,
+      "groups": 5
+    },
+    "rebuild": {
+      "report": "audits/v18-rebuild-integrity.json",
+      "passed": true,
+      "groups": 0
+    },
+    "detailCapture": {
+      "report": "audits/v18-detail-capture.json",
+      "passed": true,
+      "groups": 0
+    }
+  },
+  "resolution": {
+    "totalDrawSamples": 656,
+    "visibleDrawSamples": 344,
+    "minVisibleCoverage": 1.0188536953242837,
+    "floors": 18,
+    "dpr": [
+      1,
+      2
+    ],
+    "scope": "New v18 sprite and landmark registrations, not all legacy hero/terrain/UI pixels"
+  },
+  "continuousSessions": [
+    {
+      "style": "material",
+      "movementActions": 582,
+      "otherActions": 34,
+      "blockingDialogues": 0,
+      "noIntermediateLoad": true
+    },
+    {
+      "style": "mural",
+      "movementActions": 582,
+      "otherActions": 34,
+      "blockingDialogues": 0,
+      "noIntermediateLoad": true
+    }
+  ],
+  "visualReview": {
+    "method": "Each screenshot opened individually at original size; browser-native detail crops without postprocess",
+    "files": {
+      "audits/v18-detail-after-props-dpr2.png": "163c6873101aea9803619f65ebb83d9116e5b84c28643dea741ed5fc8563ad23",
+      "audits/v18-detail-after-monster-buddha-dpr2.png": "95e10f3d3b9a8c5215d401f87b57423a43bd596a8d055f5c575a557bc3055f64",
+      "audits/v18-after-material-first.png": "a8ea0a1593fc6fa51e8e572f88c5bdd4f723a592b04c6d323aabcbc8505f29d9",
+      "audits/v18-after-material-courtyard-detail.png": "b1bd79fd954199d6edddbf0c4a8c6d186b96dfae7dca583a16f24d66fe883d8c",
+      "audits/v18-after-mural-first.png": "66c71bc5306b4f99e93759fdb478e2276188022b7868254349356f3614deeeca",
+      "audits/v18-chapter-floor-4.png": "5aa3a886736fd001124272ba306a3331f44626f65e11035c909b59d10605d03b",
+      "audits/v18-chapter-floor-7.png": "4fa4777889ac423eddb5065cfd645d49a8bfb8cf6e286e6b566ca3b336bc1ebd",
+      "audits/v18-chapter-floor-10.png": "59c94f8f90d2706ea0c8250079f2245f54060ead3821b9959f19d8efe72790db",
+      "audits/v18-chapter-floor-13.png": "018c0a650c192ceb9a6cd3c9a6979099afc7d8f03da82400d8212e308f8d89bf",
+      "audits/v18-chapter-floor-18.png": "51d39f248800b452c21c83303d499ca835a91f56d73ec9d75f13c6880081a4c5",
+      "audits/v18-live-preview.png": "eddfeaa7a2054064923199af8df0183e5a9cd75329d9685c4b3133e988f6cff3"
+    }
+  },
+  "livePreview": {
+    "url": "http://127.0.0.1:8765/",
+    "browser": "Chrome",
+    "continuedExistingSave": true,
+    "floor": 1,
+    "hp": 620,
+    "mana": [
+      6,
+      6
+    ],
+    "keys": [
+      1,
+      0,
+      0
+    ],
+    "seals": 0,
+    "externalRelics": 0,
+    "objective": "Use insight to reveal the illusory wall",
+    "worldActionTaken": false,
+    "screenshot": "audits/v18-live-preview.png"
+  },
+  "constraints": {
+    "campaignAndEngineUnchanged": true,
+    "finiteResources": true,
+    "bothArtStyles": true,
+    "offlineDirectIndex": true
+  },
+  "boundaries": [
+    "Representative original-size art review, not manual review of every placement on all eighteen floors",
+    "Existing hero, terrain, UI and mural art were not fully remastered",
+    "Mobile and broad browser compatibility deferred",
+    "Canonical-route agent play is not a blind human study or proof of long-term enjoyment"
+  ]
+}

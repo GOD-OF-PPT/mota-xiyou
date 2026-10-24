@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "mode": "reference-guided generation and one targeted character correction",
+  "reference": "assets/material/reference-selected.png",
+  "referenceRole": "material, lighting and silhouette direction; never a replacement for the real board",
+  "commonSpecification": "Ancient Chinese mythology, physically rendered 3D material appearance, charcoal weathered stone, tarnished gold and bronze, crimson cloth, jade lantern light, orthographic 40 degree overhead camera, consistent upper-left light. Not pixel art, not a flat illustration, not a toy. Production raster sheets with no UI or labels. Transparent backgrounds for actors, props, landmarks and effects.",
+  "promptSpecifications": [
+    {"source":"source/wukong.png","layout":"4 columns x 4 rows","specification":"Same Wukong with aged gold scale armor, monkey face, gold headband, two plumes, crimson scarf and staff. Rows down/right/up/left, columns idle/left-foot step/right-foot step/directional staff strike. Full bodies, stable proportions and wide padding."},
+    {"source":"source/creatures.png","layout":"4 columns x 4 rows","specification":"Reading order: imp, fallen monk, bell ghost, armored guard; bronze spider, yaksha, dragon servant, black lotus demon king; lantern monk, Bajie, Tang Sanzang, benevolent white Wutian; Qiao Linger, Nezha, armored wrath boss phase, charcoal ember boss phase. Isolated bodies, no bases or floors."},
+    {"source":"source/creatures-corrected.png","editTarget":"source/creatures.png","specification":"Only replace row3 column4 with clearly male adult benevolent Wutian in plain ivory robe and long black hair; row4 column1 with clearly male young scholar Qiao Linger in cream-grey robes and topknot. Preserve the other fourteen figures, camera, material, lighting and transparency."},
+    {"source":"source/enemies-extra.png","layout":"4 columns x 4 rows","specification":"Bat, stone guardian, thorn warrior, viper woman; golden-bone monk, water spirit, crab general, iron-mask flame; corrupt alchemist, brass furnace guardian, mirror Wukong, ink-bone scholar; stele sentinel, scripture archivist, dark battle shadow, red wrath general. Distinct silhouettes, uniform slots."},
+    {"source":"source/objects.png","layout":"6 columns x 7 rows","specification":"42 isolated objects in manifest order: three key colors, attack/defense crystals, coin; orb, mana, elixir, peach, iron treasure, lotus treasure; thorn, tide shell, ember censer, mirror, yellow/blue doors; red door, gate, altar, relic, monument, chest; lever, plate, lamp, stairs up/down, seal; finale, resonator, rescue cage, waterwheel, portal, illusion; eye, staff bridge, cicada, duplicate, open gate, open door."},
+    {"source":"source/terrain.png","layout":"4 columns x 3 rows","specification":"Twelve edge-to-edge orthogonal material swatches. First six are legible medium-grey walkable stone by chapter: temple, twin pagoda, wet water temple, burnt alchemy, scripture, final lotus. Last six dark blocking materials: basalt, bronze/wood, damp slate, soot iron, stele, obsidian. Tileable continuous four-by-four areas, no actors or isometric distortion."},
+    {"source":"source/landmarks.png","layout":"3 columns x 2 rows","specification":"Six isolated architectural sets: broken Buddha head and raised broken palm; twin black-gold pagodas; coiled dragon and bronze waterwheel; three furnaces and gilt pipes; broken scripture wall with a seated white-robed figure; obsidian sixteen-petalled black lotus throne with empty golden center. No surrounding scene or actors."},
+    {"source":"source/fx.png","layout":"6 columns x 4 rows","specification":"Each column one effect, rows onset/anticipation/peak/dissipate: directional golden staff arc, spectral jade cicada wings, golden hair-duplicate, retracting bronze door leaves, five inward loot sparks, awakening lotus bead. Shared centers and scale, controlled bloom, no text or painted background."},
+    {"source":"ui_backdrop.png","layout":"wide environment","specification":"Distant floating ruined pagodas, broken Buddha cliff and fingers on the left, layered cold grey mist, wet charcoal rock, tiny amber windows, old gold carving, red prayer ribbons and sparse jade lights. Detailed outer edges, quiet broad central mist. No heroes, enemies, items, UI, grid, lettering or central floor platform."}
+  ],
+  "technicalCorrections": [
+    "Reviewed source slot boundaries and removed isolated cross-slot noise before shared-scale actor registration.",
+    "Fit both left and right extents around the common foot anchor to prevent staff cropping.",
+    "Use high resolution source head-and-shoulder crops for dialogue portraits instead of shrinking the whole actor.",
+    "Keep original generated sources and normalize only derived runtime atlases."
+  ]
+}

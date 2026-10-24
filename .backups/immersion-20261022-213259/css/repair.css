@@ -1,0 +1,38 @@
+/* PC scene feedback: parchment speech, one target, no page dialog chrome. */
+.floor-entry{position:fixed;z-index:20;top:17%;left:50%;translate:-50% 0;width:min(580px,65vw);text-align:center;pointer-events:none;opacity:0;transition:opacity .5s;color:#fff0cc;text-shadow:0 2px 5px #000,0 0 12px #000;background:radial-gradient(ellipse,#111d21de,transparent 70%);padding:16px 28px 23px}
+.floor-entry.visible{opacity:1;animation:floor-arrive .6s ease-out}
+.floor-entry small{font:13px/1.8 var(--serif);letter-spacing:4px;color:#d3b77e}
+.floor-entry h2{font:36px/1.65 var(--serif);letter-spacing:8px;margin:2px 0}
+.floor-entry h2:after{content:"";display:block;height:1px;width:160px;margin:auto;background:linear-gradient(90deg,transparent,#e0bd70,transparent)}
+.floor-entry p{font:15px/1.9 var(--serif);letter-spacing:1px;margin:8px 0 0}
+#narrative-goal{cursor:pointer;text-decoration:underline;text-decoration-color:#ae91524d;text-underline-offset:4px}
+#narrative-goal:focus-visible{outline:1px solid var(--scene-gold)}
+#game-shell .context-card.has-selection{max-height:none}
+#game-shell .context-card.has-selection.is-enemy{width:254px;max-width:254px}
+.context-card.is-enemy .encounter-purpose{display:block!important;font:12px/1.65 var(--sans);color:var(--scene-gold);margin:3px 0 4px;white-space:normal}
+#game-shell .context-card.has-selection.is-dialogue{width:350px;max-width:350px;border:0;border-left:2px solid var(--scene-gold);border-radius:0;background:linear-gradient(105deg,#11201af5 85%,#11201ab0);padding:15px 18px;box-shadow:0 5px 20px #0003;clip-path:polygon(0 0,97% 1%,100% 8%,99% 93%,94% 100%,0 99%)}
+html[data-art-style=mural] #game-shell .context-card.has-selection.is-dialogue{background:linear-gradient(105deg,#113e41f5 85%,#113e41b0)}
+.context-card.is-dialogue .target-brief{display:none}
+.context-card.is-dialogue .context-heading{margin:0 0 9px;padding-left:8px;border-bottom:1px solid var(--scene-line);padding-bottom:6px}
+.context-card.is-dialogue .context-heading h2{font:19px/1.5 var(--serif)}
+.context-card.is-dialogue #context-portrait{display:block!important;width:40px!important;height:46px!important}
+.context-card.is-dialogue .scene-inline{border:0;padding:0;overflow:visible}
+.context-card.is-dialogue .scene-dialogue-text p{font:17px/1.9 var(--serif);color:#f1e9d2;min-height:96px}
+.context-card.is-dialogue .scene-actions{display:none!important}
+.context-card.is-dialogue .scene-dialogue-controls button{min-height:36px}
+.context-card .scene-choice-options article{padding:7px 0 12px;border-bottom:1px solid var(--scene-line)}
+.context-card .scene-choice-options h3{color:var(--scene-gold);font:16px/1.6 var(--serif);margin:3px 0}
+.context-card .scene-choice-options small{display:block;font:13px/1.7 var(--sans);margin:5px 0;color:var(--scene-muted)}
+.context-card .scene-door p{font:15px/1.8 var(--serif)}
+#story-dock.story-dock:not(.collapsed){left:50%;right:auto;translate:-50% 0;bottom:116px;width:min(680px,calc(100vw - 64px));max-height:300px;border:0;border-top:1px solid #d9b77275;background:linear-gradient(100deg,transparent,#12201af2 6%,#12201af2 92%,transparent);box-shadow:none;padding:8px 18px;clip-path:polygon(1% 0,100% 2%,98% 100%,0 97%)}
+html[data-art-style=mural] #story-dock.story-dock:not(.collapsed){background:linear-gradient(100deg,transparent,#123d40f5 6%,#123d40f5 92%,transparent)}
+#story-dock .story-unfold{background:none;border:0;font:15px/1.6 var(--serif)}
+#story-dock .story-scene{grid-template-columns:72px minmax(0,1fr);padding:0 14px 12px;gap:15px}
+#story-dock .story-scene .dialogue-portrait{width:72px;height:88px;background:none;border:0}
+#story-dock .story-scene h2{font:15px/1.7 var(--serif);color:var(--scene-gold)}
+#story-dock .story-scene p{font:17px/1.85 var(--serif);max-height:none;line-clamp:unset;-webkit-line-clamp:unset}
+#story-dock .story-controls button{background:none;border:0;border-bottom:1px solid var(--scene-line);font-size:13px;min-height:32px}
+#story-dock .story-objective{font-size:13px!important;color:var(--scene-jade)}
+@keyframes floor-arrive{from{opacity:0;filter:blur(3px);transform:translateY(9px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+body[data-motion=reduced] .floor-entry{animation:none;transition:none}
+@media(prefers-reduced-motion:reduce){.floor-entry{animation:none;transition:none}}

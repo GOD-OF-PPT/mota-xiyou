@@ -1,0 +1,34 @@
+{
+  "scope": "fixed PC; title continuation and explicit save loading",
+  "errors": [],
+  "beforeTitle": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "visible": true,
+    "inline": false
+  },
+  "afterTitle": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "visible": true,
+    "inline": false
+  },
+  "afterManualLoad": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "visible": false,
+    "inline": false
+  },
+  "beforeImport": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "visible": true,
+    "inline": false
+  },
+  "afterImport": {
+    "title": "黑莲劫 · 入塔",
+    "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外在舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。",
+    "visible": false,
+    "inline": false
+  }
+}

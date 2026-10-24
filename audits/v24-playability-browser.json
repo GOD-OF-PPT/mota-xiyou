@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "name": "Three explicit actions include battle, pickup and finite supply; reordered blocked route differs from pinned A without any settlement"
+    },
+    {
+      "name": "Planning pauses world input, traps keyboard focus and returns to the game with Escape"
+    },
+    {
+      "name": "material full pause desk controls fit three PC viewports"
+    },
+    {
+      "name": "mural full pause desk controls fit three PC viewports"
+    },
+    {
+      "name": "Same-route owned gear comparison is free; explicit lantern equip is one undoable transaction"
+    },
+    {
+      "name": "Chapter preview is free; confirmed whole-state recovery survives refresh, preserves manual slot and returns to the prior complete journey"
+    },
+    {
+      "name": "Actual rescue result names the newly opened floor-15 side route; rehearsal never creates receipts"
+    },
+    {
+      "name": "The selected scene target opens the same planning surface with its actual action preselected"
+    },
+    {
+      "name": "Already walked empty corridor travels faster through the same legal steps and exact resources",
+      "steps": 8,
+      "travel": [
+        {
+          "fast": false,
+          "ms": 910
+        },
+        {
+          "fast": true,
+          "ms": 303
+        }
+      ]
+    },
+    {
+      "name": "Escape interrupts accelerated travel before the remaining path can execute"
+    },
+    {
+      "name": "Local planning, chapter records and assets load through offline file:// without remote dependencies"
+    }
+  ],
+  "screenshots": [
+    "audits/v24-three-step-plan.png",
+    "audits/v24-material-desk-1440.png",
+    "audits/v24-material-desk-1280.png",
+    "audits/v24-material-desk-1989.png",
+    "audits/v24-mural-desk-1440.png",
+    "audits/v24-mural-desk-1280.png",
+    "audits/v24-mural-desk-1989.png",
+    "audits/v24-owned-gear-comparison.png",
+    "audits/v24-chapter-list.png",
+    "audits/v24-chapter-restore-confirmation.png",
+    "audits/v24-concrete-stage-result.png",
+    "audits/v24-offline-planning.png"
+  ],
+  "errors": [],
+  "timing": [
+    {
+      "coldNewContextReadyMs": 736,
+      "browser": "156.0.8078.47",
+      "viewport": "1440x900",
+      "method": "fresh isolated browser context, local HTTP; single observation, not human hardware survey"
+    },
+    {
+      "safeRouteSteps": 8,
+      "travel": [
+        {
+          "fast": false,
+          "ms": 910
+        },
+        {
+          "fast": true,
+          "ms": 303
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

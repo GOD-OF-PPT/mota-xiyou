@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "passed": true,
+  "fix": "Use authored empty first-floor spawn (10,19), instead of lantern (10,18).",
+  "source": {
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "index.html": "e6a7b53360fa5e063480de0364fb1df2aa9dbdc2f044edb276235625607a7258",
+    "scripts/build_v23_study.cjs": "92b005a7f4db47155a530d3332d4fda2d4e9a6ee7dfaca06cd1951581355187a",
+    "js/study-setup.js": "ac24547e0e73bbe8cf09f6c55e1a90565894142c782506edbda481f4dca71784",
+    "research/study-v23/fixtures.js": "f4462095494a2f5201b9b2ea3d3f406fba07c4814c9d5cc00e1f277709643142",
+    "playtest-v23-new.html": "3897d1a227814c139f5ac2bfd5d9c2c6ab7b58ade8df70177feea5295fc4d79a",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "reports": [
+    "audits/v28-spawn-browser.json",
+    "audits/v28-spawn-rules.json",
+    "audits/v28-regression-campaign-regression.json",
+    "audits/v28-study-browser.json"
+  ],
+  "legalActionSettlementsCompared": 4176,
+  "pcViewports": [
+    "629x678",
+    "1280x720",
+    "1440x900",
+    "1989x1113"
+  ],
+  "artStyles": [
+    "material",
+    "mural"
+  ],
+  "inspectedScreenshots": [
+    "audits/v28-material-spawn-629.png",
+    "audits/v28-mural-spawn-629.png"
+  ],
+  "oldSavedCoordinatesPreserved": true,
+  "frozenBaselineUnchanged": true,
+  "preview": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI28&round=1&task=first-three&objective=explore&art=material",
+  "nativeBrowserNormalStartVerified": true,
+  "humanParticipants": 0,
+  "backup": ".backups/spawn-v28-20261024/"
+}

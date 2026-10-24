@@ -1,0 +1,35 @@
+{
+  "desktopStory": {
+    "x": 24,
+    "y": 768.515625,
+    "width": 525,
+    "height": 151.484375
+  },
+  "mobileStory": {
+    "x": 12,
+    "y": 518.25,
+    "width": 366,
+    "height": 167.75
+  },
+  "mobileCharacter": {
+    "x": 12,
+    "y": 112,
+    "width": 282,
+    "height": 718
+  },
+  "characterStateUnchanged": true,
+  "storyTemporarilyHiddenOnly": true,
+  "notification": {
+    "text": "回因果回溯 · 已撤回上次行动。",
+    "animation": "notice-unroll",
+    "hasSigil": true
+  },
+  "reducedMotionStableCanvas": true,
+  "errors": [],
+  "shots": [
+    "E:\\githome\\mota\\audits\\v6-story-desktop.png",
+    "E:\\githome\\mota\\audits\\v6-story-mobile.png",
+    "E:\\githome\\mota\\audits\\v6-character-mobile.png",
+    "E:\\githome\\mota\\audits\\v6-notice-mobile.png"
+  ]
+}
