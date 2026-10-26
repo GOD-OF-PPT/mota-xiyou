@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/chapter-pages.css?v=24">
   <link rel="stylesheet" href="css/game-surfaces.css?v=25">
   <link rel="stylesheet" href="css/image-ui.css?v=26">
-  <link rel="stylesheet" href="css/ui-layout.css?v=31">
+  <link rel="stylesheet" href="css/ui-layout.css?v=32">
   <script defer src="js/world.js?v=23"></script>
   <script defer src="js/encounters.js?v=23"></script>
   <script defer src="js/chronicle.js?v=23"></script>
@@ -45,7 +45,7 @@
   <script defer src="js/mechanisms.js?v=23"></script>
   <script defer src="js/choice-feedback.js?v=31"></script>
   <script defer src="js/ui-skins.js?v=26"></script>
-  <script defer src="js/ui.js?v=31"></script>
+  <script defer src="js/ui.js?v=32"></script>
 </head>
 <body>
   <section id="start-screen" class="start-screen" aria-label="大圣：舍利魔塔 开始界面">
@@ -74,10 +74,13 @@
   </section>
 
   <div id="game-shell" class="game-shell hidden">
-    <div class="hud-vitals" aria-label="当前生命与灵息">
+    <div class="hud-vitals" aria-label="当前生命、灵息、钥匙与功德金">
       <button id="btn-character" class="hud-character" data-action="character" title="行者详情 · C" aria-expanded="false"><canvas id="hud-portrait" width="96" height="96" data-asset="actor_wukong_down" aria-hidden="true"></canvas><span>行者<kbd>C</kbd></span></button>
       <div class="hud-survival"><div><span class="hud-heart" aria-hidden="true">◆</span><strong id="hud-hp">620</strong><small>生命</small></div><div class="hud-breath"><span>灵息</span><b id="hud-mana">6 / 6</b><i id="hud-mana-bar"></i></div></div>
-      <div id="hud-keys" class="hud-keys" aria-label="钥匙数量"></div>
+      <div class="hud-resources">
+        <div id="hud-keys" class="hud-keys" aria-label="钥匙数量"></div>
+        <span class="hud-gold" title="自身功德金"><canvas width="32" height="32" data-asset="item_coin" aria-hidden="true"></canvas><span>功德</span><b id="hud-coins">0</b></span>
+      </div>
     </div>
     <header class="game-header">
       <a class="game-brand" href="./" title="返回开始界面"><span class="brand-staff" aria-hidden="true"></span><span class="brand-name">大圣 <i>·</i> 舍利魔塔<small>RELICS OF THE GREAT SAGE</small></span></a>

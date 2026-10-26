@@ -1,0 +1,251 @@
+{
+  "checks": [
+    {
+      "label": "new game",
+      "coins": 0
+    },
+    {
+      "label": "legal save import",
+      "coins": 18
+    },
+    {
+      "label": "actual offering reward",
+      "coins": 34
+    },
+    {
+      "label": "undo reward",
+      "coins": 18
+    },
+    {
+      "label": "redo reward",
+      "coins": 34
+    },
+    {
+      "label": "shop legal prefix",
+      "coins": 20
+    },
+    {
+      "label": "actual altar purchase",
+      "coins": 0
+    },
+    {
+      "label": "undo purchase",
+      "coins": 20
+    },
+    {
+      "label": "redo purchase",
+      "coins": 0
+    },
+    {
+      "label": "reload saved purchase",
+      "coins": 0
+    },
+    {
+      "label": "mural style retained balance",
+      "coins": 18
+    },
+    {
+      "label": "offline file new game",
+      "coins": 0
+    },
+    {
+      "label": "offline file import",
+      "coins": 18
+    }
+  ],
+  "layouts": [
+    {
+      "name": "material-1440",
+      "hud": {
+        "x": 24,
+        "y": 23,
+        "w": 226,
+        "h": 101.84375,
+        "right": 250,
+        "bottom": 124.84375
+      },
+      "gold": {
+        "x": 176.703125,
+        "y": 95.34375,
+        "w": 61.296875,
+        "h": 19.5,
+        "right": 238,
+        "bottom": 114.84375
+      },
+      "keys": {
+        "x": 34,
+        "y": 97.09375,
+        "w": 95.1875,
+        "h": 16,
+        "right": 129.1875,
+        "bottom": 113.09375
+      },
+      "toolbar": {
+        "x": 24,
+        "y": 128,
+        "w": 257.625,
+        "h": 42,
+        "right": 281.625,
+        "bottom": 170
+      },
+      "goldOverflow": false,
+      "resourcesOverflow": false
+    },
+    {
+      "name": "material-1280",
+      "hud": {
+        "x": 24,
+        "y": 23,
+        "w": 226,
+        "h": 101.84375,
+        "right": 250,
+        "bottom": 124.84375
+      },
+      "gold": {
+        "x": 176.703125,
+        "y": 95.34375,
+        "w": 61.296875,
+        "h": 19.5,
+        "right": 238,
+        "bottom": 114.84375
+      },
+      "keys": {
+        "x": 34,
+        "y": 97.09375,
+        "w": 95.1875,
+        "h": 16,
+        "right": 129.1875,
+        "bottom": 113.09375
+      },
+      "toolbar": {
+        "x": 24,
+        "y": 128,
+        "w": 257.625,
+        "h": 42,
+        "right": 281.625,
+        "bottom": 170
+      },
+      "goldOverflow": false,
+      "resourcesOverflow": false
+    },
+    {
+      "name": "material-629",
+      "hud": {
+        "x": 12,
+        "y": 14,
+        "w": 162,
+        "h": 83.09375,
+        "right": 174,
+        "bottom": 97.09375
+      },
+      "gold": {
+        "x": 115.890625,
+        "y": 73.59375,
+        "w": 49.109375,
+        "h": 16.5,
+        "right": 165,
+        "bottom": 90.09375
+      },
+      "keys": {
+        "x": 19,
+        "y": 73.84375,
+        "w": 79,
+        "h": 16,
+        "right": 98,
+        "bottom": 89.84375
+      },
+      "toolbar": {
+        "x": 12,
+        "y": 116,
+        "w": 605,
+        "h": 42,
+        "right": 617,
+        "bottom": 158
+      },
+      "goldOverflow": false,
+      "resourcesOverflow": false
+    },
+    {
+      "name": "material-1989",
+      "hud": {
+        "x": 24,
+        "y": 23,
+        "w": 226,
+        "h": 101.84375,
+        "right": 250,
+        "bottom": 124.84375
+      },
+      "gold": {
+        "x": 176.703125,
+        "y": 95.34375,
+        "w": 61.296875,
+        "h": 19.5,
+        "right": 238,
+        "bottom": 114.84375
+      },
+      "keys": {
+        "x": 34,
+        "y": 97.09375,
+        "w": 95.1875,
+        "h": 16,
+        "right": 129.1875,
+        "bottom": 113.09375
+      },
+      "toolbar": {
+        "x": 24,
+        "y": 128,
+        "w": 257.625,
+        "h": 42,
+        "right": 281.625,
+        "bottom": 170
+      },
+      "goldOverflow": false,
+      "resourcesOverflow": false
+    },
+    {
+      "name": "mural-629",
+      "hud": {
+        "x": 12,
+        "y": 14,
+        "w": 162,
+        "h": 83.09375,
+        "right": 174,
+        "bottom": 97.09375
+      },
+      "gold": {
+        "x": 115.890625,
+        "y": 73.59375,
+        "w": 49.109375,
+        "h": 16.5,
+        "right": 165,
+        "bottom": 90.09375
+      },
+      "keys": {
+        "x": 19,
+        "y": 73.84375,
+        "w": 79,
+        "h": 16,
+        "right": 98,
+        "bottom": 89.84375
+      },
+      "toolbar": {
+        "x": 12,
+        "y": 116,
+        "w": 605,
+        "h": 42,
+        "right": 617,
+        "bottom": 158
+      },
+      "goldOverflow": false,
+      "resourcesOverflow": false
+    }
+  ],
+  "screenshots": [
+    "audits/v32-material-1440.png",
+    "audits/v32-material-629.png",
+    "audits/v32-mural-629.png"
+  ],
+  "errors": [],
+  "shopPrefixActions": 201,
+  "passed": true
+}

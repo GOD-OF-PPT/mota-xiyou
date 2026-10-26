@@ -456,6 +456,7 @@
     const prefs=settings();document.body.dataset.motion=effectiveMotion();document.body.dataset.chapter=String(Math.floor(s.floor/3));document.body.dataset.mode=engine.mode;audio.configure(prefs,Math.floor(s.floor/3));
     const effective=engine.effectiveStats?.()||s;
     $('hud-hp').textContent=s.hp;$('hud-mana').textContent=s.mana+' / '+s.maxMana;$('hud-mana-bar').style.setProperty('--breath',Math.max(0,Math.min(100,s.mana/s.maxMana*100))+'%');$('hud-keys').innerHTML=['yellow','blue','red'].map(color=>`<span title="${colorNames[color]}钥匙 ${s.keys[color]} 把" aria-label="${colorNames[color]}钥匙 ${s.keys[color]} 把"><canvas width="32" height="32" data-asset="item_key_${color}" aria-hidden="true"></canvas><b>${s.keys[color]}</b></span>`).join('');paintAssetIcons($('hud-keys'));
+    $('hud-coins').textContent=s.coins;
     $('hp-value').textContent=s.hp;$('atk-value').innerHTML=effective.atk===s.atk?s.atk:`${effective.atk}<small>基 ${s.atk}</small>`;$('def-value').innerHTML=effective.def===s.def?s.def:`${effective.def}<small>基 ${s.def}</small>`;$('mana-value').textContent=s.mana+' / '+s.maxMana;$('coins-value').textContent=s.coins;
     for(const c of ['yellow','blue','red'])$('key-'+c).textContent=s.keys[c];
     $('floor-number').textContent=String(s.floor+1).padStart(2,'0');$('floor-name').textContent=f.name;$('floor-subtitle').textContent=f.subtitle;

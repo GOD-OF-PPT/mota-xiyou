@@ -118,3 +118,11 @@ html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] footer>[data-ritual
 @media(max-width:760px){html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .ritual-minor{padding:19px 29px 25px}#altar-ritual .decision-feedback{gap:4px}#altar-ritual .decision-feedback>strong{font-size:15px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-blocker{font-size:13px}#altar-ritual .decision-preview{font-size:16px;gap:2px 12px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-next{font-size:12px}#altar-ritual .decision-confirm-actions{gap:6px 12px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm]{font-size:15px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-petal{gap:6px;min-height:0;padding-top:32px;padding-bottom:30px}html[data-ui-skins=ready] #altar-ritual[data-choice-count="3"] .ritual-offerings{max-height:calc(100vh - 465px)}}
 @media(prefers-reduced-motion:reduce){.decision-attention{animation:none}}
 body[data-motion=reduced] .decision-attention{animation:none}
+/* Keep the purse with the keys, inside the existing upper-left HUD. */
+.hud-vitals .hud-character{grid-row:1;min-height:0}
+.hud-resources{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.hud-resources .hud-keys{gap:10px}
+.hud-gold{display:flex;align-items:center;gap:4px;white-space:nowrap;color:var(--scene-gold);font:11px/1.5 var(--sans)}
+.hud-gold canvas{display:block;width:17px;height:17px;flex-shrink:0}
+.hud-gold b{font:600 13px/1.5 var(--mono);font-variant-numeric:tabular-nums;color:var(--scene-text)}
+@media(max-width:760px){.hud-resources{gap:6px}.hud-resources .hud-keys{gap:5px}.hud-gold{gap:3px;font-size:9px}.hud-gold canvas{width:13px;height:13px}.hud-gold b{font-size:11px}}
