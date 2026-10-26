@@ -19,6 +19,7 @@
 !/audits/v30-locked-style-release.png
 !/audits/v31-material-locked-1236.png
 !/audits/v31-material-settled-offering.png
+!/audits/v34-material-ready-1171.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

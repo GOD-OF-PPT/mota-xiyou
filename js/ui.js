@@ -350,7 +350,7 @@
     return option.opportunityCost||costs[group]?.[option.id]||'';
   }
   function choice(e){
-    if(!engine.isCurrent(e))return;stopPath();clearSurfaces();collapseStory(true);presentation.closeCast();decisionEntity=e;decisionSelection=null;ritualOpen=true;ritualResult='先选一项比较；确认前不会消耗或封存。';document.body.dataset.ritual='true';$('altar-ritual').hidden=false;renderRitual();$('altar-ritual').focus({preventScroll:true});
+    if(!engine.isCurrent(e))return;stopPath();clearSurfaces();collapseStory(true);presentation.closeCast();decisionEntity=e;decisionSelection=engine.state.choices[e.choice]||null;ritualOpen=true;ritualResult='先选一项比较；确认前不会消耗或封存。';document.body.dataset.ritual='true';$('altar-ritual').hidden=false;renderRitual();$('altar-ritual').focus({preventScroll:true});
   }
   function decisionSummary(group,option){
     const found={bellVow:['iron','定海铁',2,'北门'],emberVow:['ember','心炉烬',4,'北径']}[group];
@@ -360,7 +360,8 @@
   }
   function decide(id){
     const e=decisionEntity;if(!ritualOpen||!e||id!==decisionSelection)return;
-    if(!TowerChoiceFeedback.describe(engine,e,id).allowed){renderDecision(true);return;}
+    const feedback=TowerChoiceFeedback.describe(engine,e,id);if(feedback.settled)return;
+    if(!feedback.allowed){renderDecision(true);return;}
     if(e.type==='cache'){const target=currentFloor().entities.find(a=>a.type==='choice'&&a.choice===e.choice&&a.option===id);closeRitual();if(target)focusTarget(engine.state.floor,target.x,target.y);return;}
     const before=engine.snapshot();
     if(engine.choose(e,id)){const result=TowerChoiceFeedback.settled(engine,e,id,before);scenePointerAfter=performance.now()+300;closeRitual();
@@ -372,7 +373,7 @@
   }
   function previewDecision(id){
     if(!ritualOpen||!decisionEntity||!TowerData.choices[decisionEntity.choice]?.options.some(o=>o.id===id))return;
-    decisionSelection=id;renderDecision();const button=$('altar-ritual').querySelector(`[data-choice="${id}"]`);button?.focus({preventScroll:true});if(button){const b=button.getBoundingClientRect(),panel=$('altar-ritual').querySelector('.ritual-offerings').getBoundingClientRect();if(b.top<panel.top||b.bottom>panel.bottom)button.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}
+    decisionSelection=id;renderDecision();$('altar-ritual').querySelector(`[data-choice="${id}"]`)?.focus({preventScroll:true});
   }
   function renderDecision(attempted=false){
     const e=decisionEntity,s=engine.state,node=$('altar-ritual'),spec=TowerData.choices[e.choice];if(!spec)return;
@@ -380,14 +381,16 @@
     node.dataset.purpose='choice';node.dataset.choiceCount=spec.options.length;node.style.width=spec.options.length===3?'840px':'700px';node.setAttribute('aria-label',spec.title);node.querySelector('.ritual-heading>span').textContent=spec.title;node.querySelector('[data-ritual-help]').hidden=true;
     node.querySelector('[data-ritual-coins]').textContent=['bellVow','emberVow'].includes(e.choice)?`当前防御 ${engine.effectiveStats().def}`:e.choice==='locks'?`铜钥 ${s.keys.yellow} · 青钥 ${s.keys.blue}`:e.choice==='ferryVow'?`生命 ${s.hp} · 铜钥 ${s.keys.yellow}`:`生命 ${s.hp} · 功德 ${s.coins}`;
     const options=node.querySelector('.ritual-offerings');options.setAttribute('role','radiogroup');options.setAttribute('aria-label','比较取舍，选择后仍须确认');options.style.gridTemplateColumns=`repeat(${spec.options.length},1fr)`;
-    options.innerHTML=spec.options.map((o,i)=>{const p=engine.choicePreview(e,o.id),selected=decisionSelection===o.id,cost=paymentText(o.cost),reward=p.rewardAlreadyClaimed?'旧档成长已领取':resourceText(p.reward);return `<button class="decision-petal ${selected?'selected':''}" data-choice="${esc(o.id)}" role="radio" aria-checked="${selected}" tabindex="${selected||!decisionSelection&&i===0?0:-1}"><span class="decision-option"><kbd>${i+1}</kbd><b>${esc(o.label.split(' · ')[0])}</b><i aria-hidden="true">${selected?'●':'○'}</i></span><span class="decision-reward"><small>${spec.grant==='cache'?'抵达北匣后领取':'可获得'}</small>${reward.split(/ · |；/).map(fact=>`<span>${esc(fact)}</span>`).join('')}</span>${cost!=='无'?`<span class="decision-cost">支付 ${esc(cost)}</span>`:''}<span class="decision-consequence"><small>取舍</small>${esc(decisionSummary(e.choice,o))}</span><span class="decision-state">${chosen===o.id?'已定此念':selected?'已选中 · 尚未生效':!preview&&p.reason?esc(p.reason):'点击比较'}</span></button>`;}).join('');
+    options.innerHTML=spec.options.map((o,i)=>{const p=engine.choicePreview(e,o.id),selected=decisionSelection===o.id,cost=paymentText(o.cost),reward=p.rewardAlreadyClaimed?'旧档成长已领取':resourceText(p.reward);return `<button class="decision-petal ${selected?'selected':''} ${chosen===o.id?'committed':chosen?'sealed':''}" data-choice="${esc(o.id)}" role="radio" aria-checked="${selected}" tabindex="${selected||!decisionSelection&&i===0?0:-1}"><span class="decision-option"><kbd>${i+1}</kbd><b>${esc(o.label.split(' · ')[0])}</b><i aria-hidden="true">${selected?'●':'○'}</i></span><span class="decision-reward"><small>${chosen&&chosen!==o.id?'未选收益':spec.grant==='cache'?'抵达北匣后领取':'可获得'}</small>${reward.split(/ · |；/).map(fact=>`<span>${esc(fact)}</span>`).join('')}</span>${cost!=='无'?`<span class="decision-cost">${chosen?'原需支付':'支付'} ${esc(cost)}</span>`:''}<span class="decision-consequence"><small>取舍</small>${esc(decisionSummary(e.choice,o))}</span><span class="decision-state">${chosen===o.id?'已定此念 · 无需再次确认':chosen?'此契已封存':selected?'已选中 · 尚未生效':!preview&&p.reason?esc(p.reason):'点击比较'}</span></button>`;}).join('');
     const model=TowerChoiceFeedback.describe(engine,e,decisionSelection),allowed=model.allowed;
     node.dataset.decisionState=model.status;
-    node.querySelector('.ritual-minor').innerHTML=`<div class="decision-feedback ${attempted?'decision-attention':''}" data-feedback-state="${model.status}" aria-label="${esc(model.announcement)}"><strong data-decision-status>${esc(model.headline)}</strong>${model.reason?`<p class="decision-blocker" data-decision-reason>${esc(model.reason)}</p>`:''}${model.rows.length?`<div class="decision-preview"><small>${esc(model.previewTitle)}</small>${model.rows.map(line=>`<span>${esc(line)}</span>`).join('')}</div>`:''}<p class="decision-next" id="decision-next">${esc(model.next)}</p></div><div class="decision-confirm-actions"><button data-choice-confirm aria-describedby="decision-next" ${allowed?'':'disabled'}>${esc(model.buttonLabel)}${allowed?' <kbd>Enter</kbd>':''}</button>${model.guide?`<button data-decision-guide>${esc(model.guide.label)} ↗</button>`:''}</div>`;
-    node.querySelector('[data-ritual-result]').textContent=attempted?'本次未生效；条件满足后才可确认。':model.picked?`已选${model.name} · ${preview?'尚未领取':allowed?'确认才生效':'尚未生效，未扣费'}`:'选择只比较；确认才会生效。';
-    node.querySelector('[data-ritual-close]').innerHTML=(preview?'返回场景':'暂不决定')+' <kbd>Esc</kbd>';node.querySelector('[data-ritual-bag]').innerHTML='查看行囊 <kbd>I</kbd>';
+    node.querySelector('.ritual-minor').innerHTML=`<div class="decision-feedback ${attempted?'decision-attention':''}" data-feedback-state="${model.status}" aria-label="${esc(model.announcement)}"><strong data-decision-status>${esc(model.headline)}</strong>${model.reason?`<p class="decision-blocker" data-decision-reason>${esc(model.reason)}</p>`:''}${model.rows.length?`<div class="decision-preview"><small>${esc(model.previewTitle)}</small>${model.rows.map(line=>`<span>${esc(line)}</span>`).join('')}</div>`:''}<p class="decision-next" id="decision-next">${esc(model.next)}</p></div><div class="decision-confirm-actions"><button data-choice-confirm aria-describedby="decision-next" ${model.settled?'hidden ':''}${allowed?'':'disabled'}>${esc(model.buttonLabel)}${allowed?' <kbd>Enter</kbd>':''}</button>${model.guide?`<button data-decision-guide>${esc(model.guide.label)} ↗</button>`:model.settled?'<button data-decision-return>返回探索 <kbd>Esc</kbd></button>':''}</div>`;
+    node.querySelector('[data-ritual-result]').textContent=model.settled?model.announcement:attempted?'本次未生效；条件满足后才可确认。':model.picked?`已选${model.name} · ${preview?'尚未领取':allowed?'确认才生效':'尚未生效，未扣费'}`:'选择只比较；确认才会生效。';
+    const close=node.querySelector('[data-ritual-close]');close.hidden=!!model.settled&&!model.guide;close.innerHTML=(model.settled?'返回探索':preview?'返回场景':'暂不决定')+' <kbd>Esc</kbd>';node.querySelector('[data-ritual-bag]').innerHTML='查看行囊 <kbd>I</kbd>';
+    const keys=node.querySelector('[data-decision-keys]');keys.hidden=false;keys.textContent=model.settled?'此念已定 · 无需再次确认':`1–${spec.options.length} / 方向键 比较`;
     node.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>previewDecision(b.dataset.choice));node.querySelector('[data-choice-confirm]').onclick=()=>decide(decisionSelection);
     node.querySelector('[data-decision-guide]')?.addEventListener('click',()=>{const target=model.guide?.target;closeRitual();if(target)focusTarget(s.floor,target.x,target.y);else guideAction();});
+    node.querySelector('[data-decision-return]')?.addEventListener('click',()=>closeRitual());
     if(focusChoice)node.querySelector(`[data-choice="${focusChoice}"]`)?.focus({preventScroll:true});else if(focusConfirm&&allowed)node.querySelector('[data-choice-confirm]').focus({preventScroll:true});positionRitual();
   }
   function choiceHTML(e){
@@ -435,7 +438,7 @@
   }
   function renderRitual(){
     if(!ritualOpen)return;if(decisionEntity){renderDecision();return;}const s=engine.state,node=$('altar-ritual'),focused=document.activeElement?.closest('[data-ritual-action]')?.dataset.ritualAction;
-    node.dataset.purpose='lotus';delete node.dataset.choiceCount;node.style.width='600px';node.setAttribute('aria-label','莲灯修心');node.querySelector('.ritual-heading>span').textContent='莲灯 · 修心';node.querySelector('.ritual-offerings').style.gridTemplateColumns='';node.querySelector('.ritual-offerings').removeAttribute('role');node.querySelector('.ritual-offerings').removeAttribute('aria-label');node.querySelector('[data-ritual-bag]').innerHTML='行囊 <kbd>I</kbd>';node.querySelector('[data-ritual-close]').innerHTML='离开莲灯 <kbd>Esc</kbd>';
+    node.dataset.purpose='lotus';delete node.dataset.choiceCount;delete node.dataset.decisionState;node.style.width='600px';node.setAttribute('aria-label','莲灯修心');node.querySelector('.ritual-heading>span').textContent='莲灯 · 修心';node.querySelector('.ritual-offerings').style.gridTemplateColumns='';node.querySelector('.ritual-offerings').removeAttribute('role');node.querySelector('.ritual-offerings').removeAttribute('aria-label');node.querySelector('[data-ritual-bag]').innerHTML='行囊 <kbd>I</kbd>';node.querySelector('[data-ritual-close]').hidden=false;node.querySelector('[data-ritual-close]').innerHTML='离开莲灯 <kbd>Esc</kbd>';node.querySelector('[data-decision-keys]').hidden=true;
     node.querySelector('[data-ritual-coins]').innerHTML=`<span>功德 <strong>${s.coins}</strong> 金</span><span>凝息珠 <strong>${s.orbs}</strong></span>`;
     node.querySelector('.ritual-offerings').innerHTML=[['atk','item_atk','磨砺金箍','攻击 +3'],['heal','item_peach','灯前疗伤','生命 +120'],['def','item_def','淬炼护身','防御 +3']].map(([id,asset,title,benefit],i)=>{const cost=engine.shopCost(id),lack=Math.max(0,cost-s.coins);return `<button class="ritual-petal" data-ritual-action="${id}" ${lack?'disabled':''}><kbd>${i+1}</kbd><canvas width="160" height="160" data-asset="${asset}" aria-hidden="true"></canvas><span>${title}</span><small>${benefit}</small><span class="ritual-price">${cost} 金</span><em>${lack?'还差 '+lack+' 金':'点击供奉'}</em></button>`;}).join('');
     node.querySelector('.ritual-minor').innerHTML=`<button data-ritual-action="mana" ${s.mana===s.maxMana?'disabled':''}><kbd>4</kbd><span>调息</span><small>${s.mana===s.maxMana?'灵息已满':'免费 · 补满灵息'}</small></button><button data-ritual-action="orb-coins" ${!s.orbs?'disabled':''}><kbd>5</kbd><span>奉珠换金</span><small>1 珠 → 8 金</small></button><button data-ritual-action="orb-heal" ${!s.orbs?'disabled':''}><kbd>6</kbd><span>奉珠疗伤</span><small>1 珠 → 50 命</small></button>`;
@@ -448,6 +451,7 @@
     const positions=[{x:a.foot.x-w/2,y:Math.min(a.bounds.y,player.bounds.y)-h-22},{x:a.foot.x-w/2,y:Math.max(a.foot.y,player.foot.y)+22},{x:Math.min(a.bounds.x,player.bounds.x)-w-24,y:a.foot.y-h/2},{x:Math.max(a.bounds.x+a.bounds.w,player.bounds.x+player.bounds.w)+24,y:a.foot.y-h/2}];
     const best=positions.map(p=>({x:clampX(p.x),y:clampY(p.y)})).map(p=>({...p,score:subjects.reduce((n,r)=>n+rectOverlap({...p,w,h},r)*40,0)+visibleObstacles().reduce((n,r)=>n+rectOverlap({...p,w,h},r)*4,0)+Math.hypot(p.x+w/2-a.foot.x,p.y+h/2-a.foot.y)})).sort((a,b)=>a.score-b.score)[0];
     node.style.left=best.x+'px';node.style.top=best.y+'px';
+    if(decisionEntity&&decisionSelection){const panel=node.querySelector('.ritual-offerings'),card=panel.querySelector(`[data-choice="${decisionSelection}"]`),p=panel.getBoundingClientRect(),b=card?.getBoundingClientRect();if(b&&(b.top<p.top||b.bottom>p.bottom))panel.scrollTop+=b.height>p.height||b.top<p.top?b.top-p.top:b.bottom-p.bottom;}
   }
 
   function renderHUD(){
@@ -922,7 +926,7 @@
       if(ev.repeat){ev.preventDefault();return;}
       if(['escape','f'].includes(k)){ev.preventDefault();closeRitual();return;}
       if(k==='i'){ev.preventDefault();inventory();return;}
-      if(k==='tab'){const buttons=[...$('altar-ritual').querySelectorAll('button:not(:disabled):not([tabindex="-1"])')],index=buttons.indexOf(document.activeElement);ev.preventDefault();buttons[index<0?(ev.shiftKey?buttons.length-1:0):(index+(ev.shiftKey?-1:1)+buttons.length)%buttons.length]?.focus({preventScroll:true});return;}
+      if(k==='tab'){const buttons=[...$('altar-ritual').querySelectorAll('button:not(:disabled):not([tabindex="-1"])')].filter(b=>b.getClientRects().length),index=buttons.indexOf(document.activeElement);ev.preventDefault();buttons[index<0?(ev.shiftKey?buttons.length-1:0):(index+(ev.shiftKey?-1:1)+buttons.length)%buttons.length]?.focus({preventScroll:true});return;}
       if(decisionEntity){
         const spec=TowerData.choices[decisionEntity.choice],dirs=['arrowup','arrowdown','arrowleft','arrowright','w','a','s','d'];
         if(dirs.includes(k)){ev.preventDefault();const i=spec.options.findIndex(o=>o.id===decisionSelection),back=['arrowleft','arrowup','a','w'].includes(k);previewDecision(spec.options[i<0?(back?spec.options.length-1:0):(i+(back?-1:1)+spec.options.length)%spec.options.length].id);return;}

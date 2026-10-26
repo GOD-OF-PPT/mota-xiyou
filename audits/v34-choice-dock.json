@@ -1,0 +1,1401 @@
+{
+  "checks": [
+    "material single main confirmation preserves comparison and inventory return, settles exactly once, and defers cache reward",
+    "material already committed route stays settled while comparing sealed choices; no misleading confirm; cache marking is read only",
+    "material legally claimed cache shows already received and a single return action; Tab never reaches hidden controls",
+    "material comparing another altar clearly offers marking and cannot pay or choose at the wrong altar",
+    "material blocked heart condition and real immediate reward retain exact resource semantics and undo",
+    "mural single main confirmation preserves comparison and inventory return, settles exactly once, and defers cache reward",
+    "mural already committed route stays settled while comparing sealed choices; no misleading confirm; cache marking is read only",
+    "mural legally claimed cache shows already received and a single return action; Tab never reaches hidden controls",
+    "mural comparing another altar clearly offers marking and cannot pay or choose at the wrong altar",
+    "mural blocked heart condition and real immediate reward retain exact resource semantics and undo",
+    "offline file index retains explicit single settlement"
+  ],
+  "layouts": [
+    {
+      "name": "material-ready-1171",
+      "viewport": {
+        "width": 1171,
+        "height": 933
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ready-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 597,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 8,
+          "width": 591,
+          "height": 235.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 591,
+          "height": 235.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ready-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ready-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-settled-1171",
+      "viewport": {
+        "width": 1171,
+        "height": 933
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 8,
+          "width": 828,
+          "height": 174.484375
+        },
+        {
+          "frame": "decision-petal selected sealed",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  committed",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○未选收益防御 +4生命 +80原需支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。此契已封存",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契○抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已定此念 · 无需再次确认",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "标记北匣位置 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-settled-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 8,
+          "width": 597,
+          "height": 156
+        },
+        {
+          "frame": "decision-petal selected sealed",
+          "glyphs": 9,
+          "width": 591,
+          "height": 267.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  committed",
+          "glyphs": 8,
+          "width": 591,
+          "height": 236.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 591,
+          "height": 267.375,
+          "disabled": false
+        },
+        {
+          "text": "标记北匣位置 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-claimed",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 7,
+          "width": 828,
+          "height": 174.484375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal selected committed",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○未选收益防御 +4生命 +80原需支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。此契已封存",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已定此念 · 无需再次确认",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-other-contract",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 828,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。已选中 · 尚未生效",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契○抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。点击比较",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "须到对应契台",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记对应契台 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-locked-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 554,
+          "height": 235
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 175,
+          "height": 70,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-1171",
+      "viewport": {
+        "width": 1171,
+        "height": 933
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 597,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 8,
+          "width": 591,
+          "height": 235.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 591,
+          "height": 235.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 828,
+          "height": 214.484375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-settled-1171",
+      "viewport": {
+        "width": 1171,
+        "height": 933
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 8,
+          "width": 828,
+          "height": 174.484375
+        },
+        {
+          "frame": "decision-petal selected sealed",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal  committed",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○未选收益防御 +4生命 +80原需支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。此契已封存",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契○抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已定此念 · 无需再次确认",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "标记北匣位置 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-settled-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 8,
+          "width": 597,
+          "height": 156
+        },
+        {
+          "frame": "decision-petal selected sealed",
+          "glyphs": 9,
+          "width": 591,
+          "height": 267.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  committed",
+          "glyphs": 8,
+          "width": 591,
+          "height": 236.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 591,
+          "height": 267.375,
+          "disabled": false
+        },
+        {
+          "text": "标记北匣位置 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-claimed",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 7,
+          "width": 828,
+          "height": 174.484375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  sealed",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal selected committed",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○未选收益攻击 +5原需支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。此契已封存",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○未选收益防御 +4生命 +80原需支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。此契已封存",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已定此念 · 无需再次确认",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "返回探索 Esc",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-other-contract",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 828,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 323.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 323.375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契●抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。已选中 · 尚未生效",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契○抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。点击比较",
+          "width": 266,
+          "height": 323.375,
+          "disabled": false
+        },
+        {
+          "text": "须到对应契台",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记对应契台 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 554,
+          "height": 235
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 175,
+          "height": 70,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v34-material-ready-1171.png",
+    "audits/v34-material-ready-629.png",
+    "audits/v34-material-ready-1280.png",
+    "audits/v34-material-ready-1440.png",
+    "audits/v34-material-settled-1171.png",
+    "audits/v34-material-settled-629.png",
+    "audits/v34-material-claimed.png",
+    "audits/v34-material-other-contract.png",
+    "audits/v34-material-locked-629.png",
+    "audits/v34-mural-ready-1171.png",
+    "audits/v34-mural-ready-629.png",
+    "audits/v34-mural-ready-1280.png",
+    "audits/v34-mural-ready-1440.png",
+    "audits/v34-mural-settled-1171.png",
+    "audits/v34-mural-settled-629.png",
+    "audits/v34-mural-claimed.png",
+    "audits/v34-mural-other-contract.png",
+    "audits/v34-mural-locked-629.png"
+  ],
+  "errors": [],
+  "claimedFixture": {
+    "source": "tests/playthrough-v28-free-mixed-direct.json",
+    "prefixActions": 799,
+    "extraSafeWalk": [
+      "down",
+      "left",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down",
+      "down"
+    ]
+  },
+  "passed": true
+}

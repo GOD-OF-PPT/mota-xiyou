@@ -1,0 +1,1737 @@
+{
+  "checks": [
+    "material locked option explicitly explains preview, 0/1 requirement, third-floor return and read-only guidance across five PC sizes",
+    "material real free rewards preview exact balances, preserve selection through inventory, settle once, show actual receipt and undo exactly",
+    "material missing-key payment has exact shortage and an available alternative without accidental charge",
+    "material paid life and deferred cache rewards remain distinct; locating never pays or grants",
+    "mural locked option explicitly explains preview, 0/1 requirement, third-floor return and read-only guidance across five PC sizes",
+    "mural real free rewards preview exact balances, preserve selection through inventory, settle once, show actual receipt and undo exactly",
+    "mural missing-key payment has exact shortage and an available alternative without accidental charge",
+    "mural paid life and deferred cache rewards remain distinct; locating never pays or grants",
+    "Offline file index explains the same locked selection and cannot spend or grant on Enter"
+  ],
+  "screenshots": [
+    "audits/v34-regression-material-locked-629.png",
+    "audits/v34-regression-material-locked-1280.png",
+    "audits/v34-regression-material-locked-1440.png",
+    "audits/v34-regression-material-locked-1989.png",
+    "audits/v34-regression-material-locked-1236.png",
+    "audits/v34-regression-material-ready-heal.png",
+    "audits/v34-regression-material-settled-heal.png",
+    "audits/v34-regression-material-ready-offering.png",
+    "audits/v34-regression-material-settled-offering.png",
+    "audits/v34-regression-material-missing-key.png",
+    "audits/v34-regression-material-paid-preview.png",
+    "audits/v34-regression-material-paid-preview-629.png",
+    "audits/v34-regression-material-three-options-629.png",
+    "audits/v34-regression-mural-locked-629.png",
+    "audits/v34-regression-mural-locked-1280.png",
+    "audits/v34-regression-mural-locked-1440.png",
+    "audits/v34-regression-mural-locked-1989.png",
+    "audits/v34-regression-mural-locked-1236.png",
+    "audits/v34-regression-mural-ready-heal.png",
+    "audits/v34-regression-mural-settled-heal.png",
+    "audits/v34-regression-mural-ready-offering.png",
+    "audits/v34-regression-mural-settled-offering.png",
+    "audits/v34-regression-mural-missing-key.png",
+    "audits/v34-regression-mural-paid-preview.png",
+    "audits/v34-regression-mural-paid-preview-629.png",
+    "audits/v34-regression-mural-three-options-629.png",
+    "audits/v34-regression-offline-blocked-choice.png"
+  ],
+  "layouts": [
+    {
+      "name": "material-locked-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 554,
+          "height": 235
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 175,
+          "height": 70,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-locked-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-locked-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 688,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 688,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-locked-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 688,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 688,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-locked-1236",
+      "viewport": {
+        "width": 1236,
+        "height": 904
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 548,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 548,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 265,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 265,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 265,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 265,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ready-heal",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤●可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉○可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。点击比较",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：残香疗伤 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-settled-heal",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 278.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-ready-offering",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。点击比较",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：余香供奉 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-settled-offering",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 278.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-missing-key",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 9,
+          "width": 588,
+          "height": 205.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 351.171875
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 11,
+          "width": 285,
+          "height": 351.171875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1留桃养身○可获得生命 +90取舍保留黄钥，西缘栈道仍闭；可切换高低水位渡路。点击比较",
+          "width": 285,
+          "height": 351.171875,
+          "disabled": false
+        },
+        {
+          "text": "2供灯开栈●可获得永久开启西缘渡灯栈道支付 铜钥匙 × 1取舍舍弃生命 +90，避西渡灯魂与傀儡；不获其功德。 去向：渡灯栈道。已选中 · 尚未生效",
+          "width": 285,
+          "height": 351.171875,
+          "disabled": false
+        },
+        {
+          "text": "钥匙不足，暂不能确认",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-paid-preview",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 13,
+          "width": 285,
+          "height": 414.359375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 285,
+          "height": 414.359375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1亲自护送●可获得救回 唐僧映身、哪吒映身、乔灵儿映身开启十五层援手侧门支付 生命 70取舍打开十五层援手侧门，可绕藏经无相；经门机关仍需完成。 去向：十五层援手侧门。已选中 · 尚未生效",
+          "width": 285,
+          "height": 414.359375,
+          "disabled": false
+        },
+        {
+          "text": "2白衣守关○可获得防御 +4完成七伤抉择支付 功德金 20取舍三名映身暂留灯下；援手侧门关闭，仍可正面通行。点击比较",
+          "width": 285,
+          "height": 414.359375,
+          "disabled": false
+        },
+        {
+          "text": "确认：亲自护送 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-paid-preview-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 554,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 13,
+          "width": 270,
+          "height": 377.75
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 270,
+          "height": 377.75
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1亲自护送●可获得救回 唐僧映身、哪吒映身、乔灵儿映身开启十五层援手侧门支付 生命 70取舍打开十五层援手侧门，可绕藏经无相；经门机关仍需完成。 去向：十五层援手侧门。已选中 · 尚未生效",
+          "width": 270,
+          "height": 377.75,
+          "disabled": false
+        },
+        {
+          "text": "2白衣守关○可获得防御 +4完成七伤抉择支付 功德金 20取舍三名映身暂留灯下；援手侧门关闭，仍可正面通行。点击比较",
+          "width": 270,
+          "height": 377.75,
+          "disabled": false
+        },
+        {
+          "text": "确认：亲自护送 Enter",
+          "width": 175,
+          "height": 72,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-three-options-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 597,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 8,
+          "width": 591,
+          "height": 235.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 591,
+          "height": 235.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 13,
+          "width": 554,
+          "height": 235
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 270,
+          "height": 263.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 270,
+          "height": 263.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 175,
+          "height": 70,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 688,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 688,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 688,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 688,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 335,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 335,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-locked-1236",
+      "viewport": {
+        "width": 1236,
+        "height": 904
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 548,
+          "height": 81.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 548,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 265,
+          "height": 299.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 265,
+          "height": 299.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 265,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 265,
+          "height": 299.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-heal",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤●可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉○可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。点击比较",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：残香疗伤 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-settled-heal",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 278.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-ready-offering",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。点击比较",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：余香供奉 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-settled-offering",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 278.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-missing-key",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 9,
+          "width": 588,
+          "height": 205.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 351.171875
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 11,
+          "width": 285,
+          "height": 351.171875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1留桃养身○可获得生命 +90取舍保留黄钥，西缘栈道仍闭；可切换高低水位渡路。点击比较",
+          "width": 285,
+          "height": 351.171875,
+          "disabled": false
+        },
+        {
+          "text": "2供灯开栈●可获得永久开启西缘渡灯栈道支付 铜钥匙 × 1取舍舍弃生命 +90，避西渡灯魂与傀儡；不获其功德。 去向：渡灯栈道。已选中 · 尚未生效",
+          "width": 285,
+          "height": 351.171875,
+          "disabled": false
+        },
+        {
+          "text": "钥匙不足，暂不能确认",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-paid-preview",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 236.578125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 13,
+          "width": 285,
+          "height": 414.359375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 285,
+          "height": 414.359375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1亲自护送●可获得救回 唐僧映身、哪吒映身、乔灵儿映身开启十五层援手侧门支付 生命 70取舍打开十五层援手侧门，可绕藏经无相；经门机关仍需完成。 去向：十五层援手侧门。已选中 · 尚未生效",
+          "width": 285,
+          "height": 414.359375,
+          "disabled": false
+        },
+        {
+          "text": "2白衣守关○可获得防御 +4完成七伤抉择支付 功德金 20取舍三名映身暂留灯下；援手侧门关闭，仍可正面通行。点击比较",
+          "width": 285,
+          "height": 414.359375,
+          "disabled": false
+        },
+        {
+          "text": "确认：亲自护送 Enter",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-paid-preview-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 554,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 554,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 13,
+          "width": 270,
+          "height": 377.75
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 11,
+          "width": 270,
+          "height": 377.75
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1亲自护送●可获得救回 唐僧映身、哪吒映身、乔灵儿映身开启十五层援手侧门支付 生命 70取舍打开十五层援手侧门，可绕藏经无相；经门机关仍需完成。 去向：十五层援手侧门。已选中 · 尚未生效",
+          "width": 270,
+          "height": 377.75,
+          "disabled": false
+        },
+        {
+          "text": "2白衣守关○可获得防御 +4完成七伤抉择支付 功德金 20取舍三名映身暂留灯下；援手侧门关闭，仍可正面通行。点击比较",
+          "width": 270,
+          "height": 377.75,
+          "disabled": false
+        },
+        {
+          "text": "确认：亲自护送 Enter",
+          "width": 175,
+          "height": 72,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-three-options-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 597,
+          "height": 72.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 11,
+          "width": 597,
+          "height": 188.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 10,
+          "width": 591,
+          "height": 268.375
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 8,
+          "width": 591,
+          "height": 235.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "3无钥契●抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。已选中 · 尚未生效",
+          "width": 591,
+          "height": 235.78125,
+          "disabled": false
+        },
+        {
+          "text": "确认：无钥契 Enter",
+          "width": 175,
+          "height": 52,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "offline-blocked-choice",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "ritual-base",
+          "glyphs": 12,
+          "width": 588,
+          "height": 245.984375
+        },
+        {
+          "frame": "decision-petal  ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        },
+        {
+          "frame": "decision-petal selected ",
+          "glyphs": 9,
+          "width": 285,
+          "height": 290.78125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1残香疗伤○可获得生命 +80取舍立即恢复生命，不增加可重复使用的补给。需要 1 重心印",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "2余香供奉●可获得功德金 +16取舍留下这次治疗，换取可自由分配的功德金。已选中 · 尚未生效",
+          "width": 285,
+          "height": 290.78125,
+          "disabled": false
+        },
+        {
+          "text": "心印未齐，暂不能领取",
+          "width": 220,
+          "height": 54,
+          "disabled": true
+        },
+        {
+          "text": "标记当前要事 ↗",
+          "width": 220,
+          "height": 55,
+          "disabled": false
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 86.765625,
+          "height": 36,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 74.671875,
+          "height": 36,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "source": {
+    "index.html": "97d69ec3fc76fedcb1c8c399caff463d4045bf86659ccaf05e6b432d8d72f1ac",
+    "js/ui.js": "3e403c44351d08bc40a1298dd6f8b5d87c39899dc25ed8ba99328ef924b6517b",
+    "js/choice-feedback.js": "eaf3b104dee3aff3e64387579dd3261e8b4a1140ddbbd687e4a1dce9b8a46823",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "css/ui-layout.css": "0deaa3adff87eb001791f9f09635806fe2ab06cf37fa4ea4c86e71cddac45e7e",
+    "scripts/build_v23_study.cjs": "92f795c0e006fa186a2eff8206345de6d4b6c51fdb7090dadfb938a8dd02eae0",
+    "playtest-v23-new.html": "60ab1a70143e298eafcc4a756fbfbc95832952f0b2fb810925a6f363288726a0",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab"
+  },
+  "passed": true
+}

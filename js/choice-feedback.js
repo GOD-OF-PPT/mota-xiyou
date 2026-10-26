@@ -33,6 +33,12 @@
  }
  function describe(engine,e,id){
   const spec=engine.data.choices[e.choice],picked=spec.options.find(o=>o.id===id),sample=picked||spec.options.find(o=>o.id===e.option)||spec.options[0],p=engine.choicePreview(e,sample.id),cache=e.type==='cache',b=cache?null:barrier(engine,e,p),name=picked?.label.split(' · ')[0],rows=picked?previewChanges(engine.state,p.cost,p.reward):[];
+  const committed=spec.options.find(o=>o.id===engine.state.choices[e.choice]);
+  if(committed&&!cache){
+   const title=committed.label.split(' · ')[0],target=engine.data.floors[engine.state.floor].entities.find(a=>a.type==='cache'&&a.choice===e.choice),pending=spec.grant==='cache'&&!p.rewardAlreadyClaimed&&target&&!engine.state.removed[target.id];
+   const next=pending?'沿已开启的路线抵达北侧共鸣匣，亲自领取奖励。':'奖励已领取；返回地图继续探索，Z 可回溯到定契前。';
+   return {status:'settled',settled:true,allowed:false,picked:picked?.id||null,name,headline:`已定契：${title}`,reason:'',next,guide:pending?{label:'标记北匣位置',target}:null,rows:[],buttonLabel:'此契已定',announcement:`已定契：${title}。无需再次确认，其余选项已封存。${next}`};
+  }
   const allowed=!!picked&&(cache||!b),status=!picked?(b?'locked':'choose'):cache?'preview':b?'blocked':'ready';
   return {status,allowed,picked:picked?.id||null,name,headline:picked?`已选：${name} · ${cache?'尚未领取':allowed?'等待确认':'尚未生效'}`:b?(p.chosen?'此念已经确定':'此处尚未解锁 · 还不能领取'):'先选一个方案，再明确确认',reason:b?.reason||'',next:b?.next||(cache?'先定位契台，在契台确认；奖励仍须亲自抵达领取。':spec.grant==='cache'?'这里只定路线，奖励须到北侧共鸣匣领取。':'确认后立即生效，另一项封存；探索中 Z 可回溯。'),guide:b?.guide||null,rows,previewTitle:spec.grant==='cache'?'北匣领取后预计':b?'解锁并确认后预计':'确认后预计',buttonLabel:!picked?'请先选择一项':cache?'定位契台：'+name:b?b.label:'确认：'+name,announcement:picked?`已选${name}，${allowed?(cache?'仍未领取，定位不结算。':'尚未生效，按 Enter 确认。'):'尚未生效。'+b.reason+' '+b.next}`:b?.reason||'选择只比较，确认才生效。'};
  }
