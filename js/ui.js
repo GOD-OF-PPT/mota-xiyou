@@ -129,7 +129,8 @@
     if(receipt.id===shownReceipt||presentation.entryOpen||presentation.castOpen||surfaceOpen||ritualOpen)return;
     shownReceipt=receipt.id;clearTimeout(receiptTimer);row.hidden=false;row.dataset.kind=receipt.kind;
     clearTimeout(whisperTimer);document.querySelector('[data-journey-note]').hidden=true;
-    row.querySelector('b').textContent=receipt.title;row.querySelector('span').textContent=receipt.detail||receipt.deltas.map(d=>d.label+' '+d.before+' → '+d.after).join(' · ')||'已结算，场景状态已更新';
+    const numbers=receipt.deltas.map(d=>d.label+' '+d.before+' → '+d.after).join(' · ');
+    row.querySelector('b').textContent=receipt.title;row.querySelector('span').textContent=(receipt.kind==='choice'?[numbers,receipt.detail].filter(Boolean).join('；'):receipt.detail||numbers)||'已结算，场景状态已更新';
     receiptTimer=setTimeout(()=>{row.hidden=true;scheduleContext();},5200);
   }
   function journeyNote(text){const node=document.querySelector('[data-journey-note]');if(!node)return;clearTimeout(whisperTimer);node.textContent=text;node.hidden=false;whisperTimer=setTimeout(()=>{node.hidden=true;scheduleContext();},4500);scheduleContext();}
@@ -359,25 +360,34 @@
   }
   function decide(id){
     const e=decisionEntity;if(!ritualOpen||!e||id!==decisionSelection)return;
+    if(!TowerChoiceFeedback.describe(engine,e,id).allowed){renderDecision(true);return;}
     if(e.type==='cache'){const target=currentFloor().entities.find(a=>a.type==='choice'&&a.choice===e.choice&&a.option===id);closeRitual();if(target)focusTarget(engine.state.floor,target.x,target.y);return;}
-    if(engine.choose(e,id)){const spec=TowerData.choices[e.choice],label=spec.options.find(o=>o.id===id).label;scenePointerAfter=performance.now()+300;closeRitual();toast('已定：'+label+(spec.grant==='cache'?'；须抵达北侧共鸣匣领奖。':'。')+' 探索中按 Z 可回溯。');}else renderRitual();
+    const before=engine.snapshot();
+    if(engine.choose(e,id)){const result=TowerChoiceFeedback.settled(engine,e,id,before);scenePointerAfter=performance.now()+300;closeRitual();
+      // One visible receipt with actual settled balances, not a second copy in a note.
+      clearTimeout(whisperTimer);document.querySelector('[data-journey-note]').hidden=true;
+      const row=document.querySelector('[data-journey-result]');row.hidden=false;row.dataset.kind='choice';row.querySelector('b').textContent=result.title;row.querySelector('span').textContent=result.text;
+      $('status-message').textContent=result.title+' · '+result.text;clearTimeout(receiptTimer);receiptTimer=setTimeout(()=>{row.hidden=true;scheduleContext();},6500);scheduleContext();
+    }else renderDecision(true);
   }
   function previewDecision(id){
     if(!ritualOpen||!decisionEntity||!TowerData.choices[decisionEntity.choice]?.options.some(o=>o.id===id))return;
     decisionSelection=id;renderDecision();const button=$('altar-ritual').querySelector(`[data-choice="${id}"]`);button?.focus({preventScroll:true});if(button){const b=button.getBoundingClientRect(),panel=$('altar-ritual').querySelector('.ritual-offerings').getBoundingClientRect();if(b.top<panel.top||b.bottom>panel.bottom)button.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}
   }
-  function renderDecision(){
+  function renderDecision(attempted=false){
     const e=decisionEntity,s=engine.state,node=$('altar-ritual'),spec=TowerData.choices[e.choice];if(!spec)return;
     const active=document.activeElement,focusChoice=active?.dataset.choice,focusConfirm=active?.hasAttribute('data-choice-confirm'),preview=e.type==='cache',chosen=s.choices[e.choice];
     node.dataset.purpose='choice';node.dataset.choiceCount=spec.options.length;node.style.width=spec.options.length===3?'840px':'700px';node.setAttribute('aria-label',spec.title);node.querySelector('.ritual-heading>span').textContent=spec.title;node.querySelector('[data-ritual-help]').hidden=true;
     node.querySelector('[data-ritual-coins]').textContent=['bellVow','emberVow'].includes(e.choice)?`当前防御 ${engine.effectiveStats().def}`:e.choice==='locks'?`铜钥 ${s.keys.yellow} · 青钥 ${s.keys.blue}`:e.choice==='ferryVow'?`生命 ${s.hp} · 铜钥 ${s.keys.yellow}`:`生命 ${s.hp} · 功德 ${s.coins}`;
     const options=node.querySelector('.ritual-offerings');options.setAttribute('role','radiogroup');options.setAttribute('aria-label','比较取舍，选择后仍须确认');options.style.gridTemplateColumns=`repeat(${spec.options.length},1fr)`;
-    options.innerHTML=spec.options.map((o,i)=>{const p=engine.choicePreview(e,o.id),selected=decisionSelection===o.id,cost=paymentText(o.cost),reward=p.rewardAlreadyClaimed?'旧档成长已领取':resourceText(p.reward);return `<button class="decision-petal ${selected?'selected':''}" data-choice="${esc(o.id)}" role="radio" aria-checked="${selected}" tabindex="${selected||!decisionSelection&&i===0?0:-1}"><span class="decision-option"><kbd>${i+1}</kbd><b>${esc(o.label.split(' · ')[0])}</b><i aria-hidden="true">${selected?'●':'○'}</i></span><span class="decision-reward"><small>${spec.grant==='cache'?'抵达北匣后领取':'获得'}</small>${reward.split(/ · |；/).map(fact=>`<span>${esc(fact)}</span>`).join('')}</span>${cost!=='无'?`<span class="decision-cost">支付 ${esc(cost)}</span>`:''}<span class="decision-consequence"><small>取舍</small>${esc(decisionSummary(e.choice,o))}</span><span class="decision-state">${chosen===o.id?'已定此念':!preview&&p.reason?esc(p.reason):selected?'正在比较 · 尚未确认':'点击比较'}</span></button>`;}).join('');
-    const picked=spec.options.find(o=>o.id===decisionSelection),p=picked&&engine.choicePreview(e,picked.id),allowed=picked&&(preview||p.possible&&engine.isCurrent(e)&&engine.distance(e)<=1);
-    node.querySelector('.ritual-minor').innerHTML=`<p>${esc(preview?'此处只查看奖励；请到契台作出选择。':spec.grant==='cache'?'确认只定路线；奖励须抵达北侧共鸣匣领取。':'只取一项；确认后另一项封存，可离开后再来。')}</p><button data-choice-confirm ${allowed?'':'disabled'}>${picked?`${preview?'定位契台':'确认'}：${esc(picked.label.split(' · ')[0])}`:'请先选择一项'} <kbd>Enter</kbd></button>`;
-    node.querySelector('[data-ritual-result]').textContent=picked?(!allowed?(p.reason||'先走近契台，再确认。'):preview?'定位不会移动行者，也不会支付费用。':paymentText(p.cost)==='无'?'尚未结算；请核对取舍后确认。':`确认后：${paymentBalance(p.cost)}。`):ritualResult;
+    options.innerHTML=spec.options.map((o,i)=>{const p=engine.choicePreview(e,o.id),selected=decisionSelection===o.id,cost=paymentText(o.cost),reward=p.rewardAlreadyClaimed?'旧档成长已领取':resourceText(p.reward);return `<button class="decision-petal ${selected?'selected':''}" data-choice="${esc(o.id)}" role="radio" aria-checked="${selected}" tabindex="${selected||!decisionSelection&&i===0?0:-1}"><span class="decision-option"><kbd>${i+1}</kbd><b>${esc(o.label.split(' · ')[0])}</b><i aria-hidden="true">${selected?'●':'○'}</i></span><span class="decision-reward"><small>${spec.grant==='cache'?'抵达北匣后领取':'可获得'}</small>${reward.split(/ · |；/).map(fact=>`<span>${esc(fact)}</span>`).join('')}</span>${cost!=='无'?`<span class="decision-cost">支付 ${esc(cost)}</span>`:''}<span class="decision-consequence"><small>取舍</small>${esc(decisionSummary(e.choice,o))}</span><span class="decision-state">${chosen===o.id?'已定此念':selected?'已选中 · 尚未生效':!preview&&p.reason?esc(p.reason):'点击比较'}</span></button>`;}).join('');
+    const model=TowerChoiceFeedback.describe(engine,e,decisionSelection),allowed=model.allowed;
+    node.dataset.decisionState=model.status;
+    node.querySelector('.ritual-minor').innerHTML=`<div class="decision-feedback ${attempted?'decision-attention':''}" data-feedback-state="${model.status}" aria-label="${esc(model.announcement)}"><strong data-decision-status>${esc(model.headline)}</strong>${model.reason?`<p class="decision-blocker" data-decision-reason>${esc(model.reason)}</p>`:''}${model.rows.length?`<div class="decision-preview"><small>${esc(model.previewTitle)}</small>${model.rows.map(line=>`<span>${esc(line)}</span>`).join('')}</div>`:''}<p class="decision-next" id="decision-next">${esc(model.next)}</p></div><div class="decision-confirm-actions"><button data-choice-confirm aria-describedby="decision-next" ${allowed?'':'disabled'}>${esc(model.buttonLabel)}${allowed?' <kbd>Enter</kbd>':''}</button>${model.guide?`<button data-decision-guide>${esc(model.guide.label)} ↗</button>`:''}</div>`;
+    node.querySelector('[data-ritual-result]').textContent=attempted?'本次未生效；条件满足后才可确认。':model.picked?`已选${model.name} · ${preview?'尚未领取':allowed?'确认才生效':'尚未生效，未扣费'}`:'选择只比较；确认才会生效。';
     node.querySelector('[data-ritual-close]').innerHTML=(preview?'返回场景':'暂不决定')+' <kbd>Esc</kbd>';node.querySelector('[data-ritual-bag]').innerHTML='查看行囊 <kbd>I</kbd>';
     node.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>previewDecision(b.dataset.choice));node.querySelector('[data-choice-confirm]').onclick=()=>decide(decisionSelection);
+    node.querySelector('[data-decision-guide]')?.addEventListener('click',()=>{const target=model.guide?.target;closeRitual();if(target)focusTarget(s.floor,target.x,target.y);else guideAction();});
     if(focusChoice)node.querySelector(`[data-choice="${focusChoice}"]`)?.focus({preventScroll:true});else if(focusConfirm&&allowed)node.querySelector('[data-choice-confirm]').focus({preventScroll:true});positionRitual();
   }
   function choiceHTML(e){

@@ -1,5 +1,7 @@
 # 沉浸式 PC 交互重做与验收
 
+取舍状态后续：见 [v31 选择与生效反馈](v31-choice-feedback-review.md)，明确区分选中、条件不足、确认和真实领取。
+
 画风与角色后续：见 [v30 画境解锁及主角重设计](v30-theme-hero-review.md)；另提供独立的新项目 [肉鸽开发提示词](xiyou-roguelite-development-prompt.md)。
 
 人物交互后续：见 [v29 交谈入口简化](v29-conversation-review.md)，去除人物重复详察、误推演与目标牌叠压。

@@ -1,0 +1,9 @@
+/* Real action prefixes and safe walks; no state or resource injection. */
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+global.window=global;for(const f of ['world','encounters','chronicle','outcomes','engine'])require('../js/'+f);
+const out='audits/v31-fixtures';fs.mkdirSync(out,{recursive:true});const records={};
+function save(name,g,meta){const file=out+'/'+name+'.json',raw=g.exportSave();fs.writeFileSync(file,raw);records[name]={file,sha256:crypto.createHash('sha256').update(raw).digest('hex'),...meta};}
+const trace=require('../tests/playthrough-v28-free-mixed-direct.json').actions,g=new TowerEngine(TowerData,{persist:false});g.newGame();g.chronicle=new TowerChronicle(g);
+const locked=new TowerEngine(TowerData,{persist:false});locked.newGame();const e=locked.data.floors[0].entities.find(e=>e.choice==='residual'),paths=Object.values(TowerRules.directions).map(([dx,dy])=>locked.findPath(e.x+dx,e.y+dy)).filter(Boolean).sort((a,b)=>a.length-b.length),walk=paths[0];assert.ok(walk);for(const d of walk)assert.ok(locked.step(d));assert.equal(locked.state.relics.length,0);assert.equal(locked.distance(e),1);save('locked-residual',locked,{entity:e,actions:walk.map(d=>({type:'step',args:[d]})),source:'TowerEngine.newGame and public safe steps'});
+for(let i=0;i<trace.length;i++){const a=trace[i];if(a.type==='choose'&&!records[a.args[0].choice]){const entity=g.data.floors[g.state.floor].entities.find(e=>e.id===a.args[0].id);save(entity.choice,g,{entity,option:a.args[1],prefixActions:i,source:'tests/playthrough-v28-free-mixed-direct.json'});}assert.notEqual(g[a.type](...a.args),false,'route '+i);}
+assert.ok(g.state.won);fs.writeFileSync(out+'/manifest.json',JSON.stringify({records,legalCampaignActions:trace.length,completed:true},null,2));console.log('Prepared locked safe-walk and '+(Object.keys(records).length-1)+' legal choice-prefix fixtures');

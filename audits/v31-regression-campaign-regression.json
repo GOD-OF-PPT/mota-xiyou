@@ -1,0 +1,1188 @@
+{
+  "startedAt": "2026-10-26T02:27:12.410Z",
+  "checks": [
+    {
+      "name": "Arrival is acknowledged; its concrete objective survives in exploration without a lore wall"
+    },
+    {
+      "name": "Lotus ritual exposes all three offerings and shortage reasons without a sidebar or scrolling",
+      "height": 600.5625,
+      "scroll": 601,
+      "client": 601,
+      "overflow": "visible",
+      "buttons": [
+        {
+          "x": 429,
+          "y": 121.4375,
+          "w": 186,
+          "h": 240.390625
+        },
+        {
+          "x": 627,
+          "y": 121.4375,
+          "w": 186,
+          "h": 240.390625
+        },
+        {
+          "x": 825,
+          "y": 121.4375,
+          "w": 186,
+          "h": 240.390625
+        },
+        {
+          "x": 452,
+          "y": 391.828125,
+          "w": 170.65625,
+          "h": 61.796875
+        },
+        {
+          "x": 634.65625,
+          "y": 391.828125,
+          "w": 170.671875,
+          "h": 61.796875
+        },
+        {
+          "x": 817.328125,
+          "y": 391.828125,
+          "w": 170.671875,
+          "h": 61.796875
+        },
+        {
+          "x": 460,
+          "y": 529.8125,
+          "w": 120.15625,
+          "h": 42.5
+        },
+        {
+          "x": 903.125,
+          "y": 529.8125,
+          "w": 76.875,
+          "h": 42.5
+        }
+      ],
+      "text": "莲灯 · 修心\n功德 0 金\n凝息珠 1\n1\n磨砺金箍\n攻击 +3\n20 金\n还差 20 金\n2\n灯前疗伤\n生命 +120\n12 金\n还差 12 金\n3\n淬炼护身\n防御 +3\n20 金\n还差 20 金\n4\n调息\n灵息已满\n5\n奉珠换金\n1 珠 → 8 金\n6\n奉珠疗伤\n1 珠 → 50 命\n修行消耗功德；调息只恢复灵息。\n离开莲灯 Esc\n行囊 I\n\n数字键使用 · 方向键切换 · Enter 执行"
+    },
+    {
+      "name": "The cloth inventory has six real slots, no scrolling, exact potion use and safe input/focus",
+      "client": 707,
+      "scroll": 707,
+      "rect": {
+        "x": 80,
+        "w": 1280
+      }
+    },
+    {
+      "name": "A real lotus purchase spends the exact rising price once and shows its result"
+    },
+    {
+      "name": "Key doors retain scene-bound cost confirmation and spend exactly one matching key"
+    },
+    {
+      "name": "Contracts compare costs, rewards and consequences together in the scene; only a legal option commits"
+    },
+    {
+      "name": "Equipment in the cloth slots obeys the real lantern and two-slot rules"
+    },
+    {
+      "name": "A single short dialogue highlights the current task; Space completes then advances"
+    },
+    {
+      "name": "Movement closes the target conversation and removes stale object prompts"
+    },
+    {
+      "name": "The root chest has a complete title, progress and one usable primary action",
+      "h": 45.59375,
+      "w": 178,
+      "line": "25.6px"
+    },
+    {
+      "name": "Movement battle preview and deliberate second movement still work without held-key attacks"
+    },
+    {
+      "name": "staff has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "morph has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "clone has actual changing animation frames; skipping cannot repeat its transaction"
+    },
+    {
+      "name": "A rejected skill never plays a success cut-in or spends resources"
+    },
+    {
+      "name": "All menu entry points share the same game-wide pause mode and return rule"
+    },
+    {
+      "name": "Both art styles and the user screenshot viewport preserve resources and keep the ritual on screen"
+    },
+    {
+      "name": "Reduced motion presents a static equivalent and preserves the exact action result"
+    },
+    {
+      "name": "Loading an ongoing journey shows the actual current-floor objective before resuming"
+    },
+    {
+      "name": "The current 18-floor UI campaign completes all arrivals, relics, seals, awakening and both endings",
+      "stairs": 17,
+      "fragments": 16,
+      "seals": 5
+    },
+    {
+      "name": "Manual save/load preserves the exact completed campaign"
+    }
+  ],
+  "screenshots": [
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-arrival.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-lotus-ritual-poor.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-inventory-material.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-lotus-ritual-result.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-door-confirmation.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-route-rite.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-short-speech.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-locked-chest-readable.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-battle-capsule.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-cinematic-staff.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-cinematic-morph.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-cinematic-clone.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-character.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-inventory-mural.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-inventory-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-ritual-user-viewport.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-reduced-motion.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-floor-02-arrival.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-floor-11-arrival.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-ending-release.png",
+    "E:\\githome\\mota\\audits\\v31-regression-campaign-regression-ending-keep.png"
+  ],
+  "errors": [],
+  "reflections": [],
+  "source": {
+    "index.html": "c9057dd252870c2937e87bc3d458efd57c38b5663f721f44ce00eab908bf88c3",
+    "js/ui.js": "168743645eb9782b92acc7d32101954bbe87f18296294f55e745db204b67050e",
+    "js/journey.js": "e85b5e24ee5bc0f954c2932500dd5d8ec10d84228e996925606f63146296de83",
+    "js/renderer.js": "3918e5c29ea87e9d590240c49c2a84afe7b44fd1054a0779c3bbb76b0f2029bc",
+    "js/presentation.js": "da66c697a417edc02dfde28ded7d0bf36f7650ac48e308a13bfc174188698fc9",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "css/experience.css": "6c42cbca4045684e63753414f5c3823b4471698416b67d62901ce88dd79f58fd",
+    "css/game-surfaces.css": "be046deb7ef44c2efddcefa0274c1f76606fb8dcc06e2226b5be7d10e77e12a5",
+    "css/image-ui.css": "0e03c601610d2e6cc2d14fc804d34493496f2e45965219384884fe7de8523415",
+    "css/ui-layout.css": "c8769fe193b9dbc55aeae2f5c4166cc672a91dee49c1303dd648fcf732fa9c24",
+    "js/ui-skins.js": "1a088fd2c7c93c5c12911007e27607ffc17cd4abd27e9a15fa1e06ccc764141a",
+    "js/choice-feedback.js": "53d67c5b618fe28483b2c90e6b9461cf5c492b1e8771d92e4960d11e1deaa2d9",
+    "js/style-progress.js": "3c4deb6537c613c29eb65e969ec825f387aaf88318e21c55566081093d2efd20",
+    "js/art-style.js": "9d0d98ecc25e178987e0cef7c5cff76d8453b1938e27c190b941aa3d189dfa75",
+    "js/material-assets.js": "2aee4f8aeed8d3bbd7550bf99dea2e43346d440f8a5dec9a64a0fa6d30439105",
+    "assets/material/manifest.json": "7d498b09078519fc37a87765776b4f241480cb5c8fcb6c4d484cd1ab4d4cfe1c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179"
+  },
+  "layouts": [
+    {
+      "name": "arrival",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "entry-goal",
+          "glyphs": 6,
+          "width": 339.0625,
+          "height": 125.984375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "踏入此境 Enter",
+          "width": 150.5625,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "lotus-ritual-poor",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 588,
+          "height": 81.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 588,
+          "height": 124.6875
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 588,
+          "height": 101.796875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +320 金还差 20 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12012 金还差 12 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "3淬炼护身防御 +320 金还差 20 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 170.65625,
+          "height": 61.796875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 76.875,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "inventory-material",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "kit-description",
+          "glyphs": 4,
+          "width": 934,
+          "height": 154.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回莲灯",
+          "width": 84.96875,
+          "height": 41.999996185302734,
+          "disabled": false
+        },
+        {
+          "text": "定海铁尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "莲灯芯尚待寻回",
+          "width": 292.671875,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "照骨齿尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "听潮贝尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "心炉烬尚待寻回",
+          "width": 292.671875,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "双影镜尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "凝息珠 × 1补息、供奉或留待终战",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "服用蟠桃",
+          "width": 88,
+          "height": 45.59375,
+          "disabled": false
+        },
+        {
+          "text": "导出前缘",
+          "width": 64,
+          "height": 21.5,
+          "disabled": false
+        },
+        {
+          "text": "系好布囊 · 返回莲灯",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "lotus-ritual-result",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 588,
+          "height": 81.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 588,
+          "height": 124.6875
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 588,
+          "height": 101.796875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +332 金还差 32 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12012 金还差 12 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "3淬炼护身防御 +320 金还差 20 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 170.65625,
+          "height": 61.796875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 76.875,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "door-confirmation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter has-selection expanded",
+          "glyphs": 9,
+          "width": 420,
+          "height": 421.671875
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "route-rite",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 2,
+          "width": 828,
+          "height": 81.5
+        },
+        {
+          "frame": "",
+          "glyphs": 4,
+          "width": 828,
+          "height": 107.09375
+        },
+        {
+          "frame": "decision-petal ",
+          "glyphs": 10,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal ",
+          "glyphs": 11,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "decision-petal ",
+          "glyphs": 9,
+          "width": 266,
+          "height": 335.375
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 3,
+          "width": 828,
+          "height": 175.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1青契○抵达北匣后领取攻击 +5支付 青钥匙 × 1取舍需战灰烬沙弥；北匣领取攻击成长。其余两契封存。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "2黄契○抵达北匣后领取防御 +4生命 +80支付 铜钥匙 × 1取舍需战余毒蛇使；北匣领取防御与治疗，余毒无视防御。请到对应的契台选择此路。",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "3无钥契○抵达北匣后领取功德金 +24取舍保留钥匙，需战铜铃怨灵与小妖；北匣领取功德。点击比较",
+          "width": 266,
+          "height": 335.375,
+          "disabled": false
+        },
+        {
+          "text": "请先选择一项",
+          "width": 136.328125,
+          "height": 49.796875,
+          "disabled": true
+        },
+        {
+          "text": "暂不决定 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "查看行囊 I",
+          "width": 108.0625,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "short-speech",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "story-dock",
+          "glyphs": 16,
+          "width": 800,
+          "height": 227.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "点灯僧1 / 3⌃",
+          "width": 712,
+          "height": 24,
+          "disabled": false
+        },
+        {
+          "text": "结束交谈 Esc",
+          "width": 114.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "继续 Space",
+          "width": 103.171875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "locked-chest-readable",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 342,
+          "height": 232.421875
+        },
+        {
+          "frame": "context-card sigil-enter is-chest has-selection",
+          "glyphs": 5,
+          "width": 350,
+          "height": 257.984375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "battle-capsule",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 342,
+          "height": 232.421875
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 350,
+          "height": 395.359375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "cinematic-staff",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "cinematic-morph",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "cinematic-clone",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "character",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "返回塔中 · C",
+          "width": 146.765625,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "inventory-mural",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "kit-description",
+          "glyphs": 4,
+          "width": 934,
+          "height": 154.5
+        },
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 331,
+          "height": 83.99998474121094
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42.000003814697266,
+          "disabled": false
+        },
+        {
+          "text": "定海铁尚待寻回",
+          "width": 292.65625,
+          "height": 148.98435974121094,
+          "disabled": false
+        },
+        {
+          "text": "莲灯芯尚待寻回",
+          "width": 292.671875,
+          "height": 148.98435974121094,
+          "disabled": false
+        },
+        {
+          "text": "照骨齿尚待寻回",
+          "width": 292.65625,
+          "height": 148.98435974121094,
+          "disabled": false
+        },
+        {
+          "text": "听潮贝尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "心炉烬尚待寻回",
+          "width": 292.671875,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "双影镜尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "凝息珠 × 1补息、供奉或留待终战",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "佩戴法器",
+          "width": 88,
+          "height": 45.59375,
+          "disabled": true
+        },
+        {
+          "text": "导出前缘",
+          "width": 64,
+          "height": 21.5,
+          "disabled": false
+        },
+        {
+          "text": "系好布囊 · 返回塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "inventory-user-viewport",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "kit-description",
+          "glyphs": 4,
+          "width": 934,
+          "height": 154.5
+        },
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 331,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "定海铁尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "莲灯芯尚待寻回",
+          "width": 292.671875,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "照骨齿尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "听潮贝尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "心炉烬尚待寻回",
+          "width": 292.671875,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "双影镜尚待寻回",
+          "width": 292.65625,
+          "height": 148.984375,
+          "disabled": false
+        },
+        {
+          "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "凝息珠 × 1补息、供奉或留待终战",
+          "width": 459,
+          "height": 70,
+          "disabled": false
+        },
+        {
+          "text": "佩戴法器",
+          "width": 88,
+          "height": 45.59375,
+          "disabled": true
+        },
+        {
+          "text": "导出前缘",
+          "width": 64,
+          "height": 21.5,
+          "disabled": false
+        },
+        {
+          "text": "系好布囊 · 返回塔中",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "ritual-user-viewport",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 588,
+          "height": 81.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 588,
+          "height": 124.6875
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 240.390625
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 588,
+          "height": 101.796875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +320 金还差 20 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12012 金还差 12 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "3淬炼护身防御 +320 金还差 20 金",
+          "width": 186,
+          "height": 240.390625,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 170.65625,
+          "height": 61.796875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 76.875,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "reduced-motion",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "floor-02-arrival",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "entry-goal",
+          "glyphs": 4,
+          "width": 379.828125,
+          "height": 125.984375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "踏入此境 Enter",
+          "width": 150.5625,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "floor-11-arrival",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "entry-goal",
+          "glyphs": 4,
+          "width": 338.640625,
+          "height": 125.984375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "踏入此境 Enter",
+          "width": 150.5625,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "ending-release",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "留步观塔",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "ending-keep",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "略过演出 Space",
+          "width": 125.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "留步观塔",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "completed": true,
+  "finishedAt": "2026-10-26T02:28:24.423Z"
+}

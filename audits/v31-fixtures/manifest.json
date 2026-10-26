@@ -1,0 +1,226 @@
+{
+  "records": {
+    "locked-residual": {
+      "file": "audits/v31-fixtures/locked-residual.json",
+      "sha256": "df432a327a3196182f04f3bd79cefce5cc8b030c2d876fe552c50ff6ee3ec84d",
+      "entity": {
+        "x": 3,
+        "y": 11,
+        "type": "choice",
+        "choice": "residual",
+        "requires": 1,
+        "blocking": false,
+        "label": "余香古炉 · 石生共鸣",
+        "id": "f0-15"
+      },
+      "actions": [
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "left"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        },
+        {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        }
+      ],
+      "source": "TowerEngine.newGame and public safe steps"
+    },
+    "bellVow": {
+      "file": "audits/v31-fixtures/bellVow.json",
+      "sha256": "9b6eb3eddfd96ca6aa992f235fe3581f0329f506962b04265f439c40acb546e9",
+      "entity": {
+        "x": 9,
+        "y": 17,
+        "type": "choice",
+        "id": "f1-12",
+        "originalSupply": "jade",
+        "choice": "bellVow",
+        "blocking": false,
+        "label": "残钟偏转台 · 防御 +2 / 异宝北门",
+        "name": "残钟偏转台 · 防御 +2 / 异宝北门"
+      },
+      "option": "offering",
+      "prefixActions": 172,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "locks": {
+      "file": "audits/v31-fixtures/locks.json",
+      "sha256": "3229ee4d240ca550102bbe75e5196d11a8022f08b9e7e23d3eff8c098f679457",
+      "entity": {
+        "x": 17,
+        "y": 15,
+        "type": "choice",
+        "choice": "locks",
+        "option": "free",
+        "label": "无钥契台 · 两名守卫，保留钥匙",
+        "id": "f4-15"
+      },
+      "option": "free",
+      "prefixActions": 782,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "ferryVow": {
+      "file": "audits/v31-fixtures/ferryVow.json",
+      "sha256": "ba6bfbe8c511f12a31896495cdb4b80888cd1b43e56aa3d906bf8ecd0ddbd440",
+      "entity": {
+        "x": 9,
+        "y": 17,
+        "type": "choice",
+        "id": "f7-7",
+        "originalSupply": "bigPeach",
+        "choice": "ferryVow",
+        "blocking": false,
+        "label": "渡灯台 · 留90生命 / 黄钥供灯开栈",
+        "name": "渡灯台 · 留90生命 / 黄钥供灯开栈"
+      },
+      "option": "offering",
+      "prefixActions": 1350,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "silk": {
+      "file": "audits/v31-fixtures/silk.json",
+      "sha256": "fc4cd7cb6a6a600b593e2e3f6ca9beee5dfdcbed06b893e42cb79b158924d0ce",
+      "entity": {
+        "x": 3,
+        "y": 2,
+        "type": "choice",
+        "choice": "silk",
+        "option": "atk",
+        "label": "破执经卷 · 双愿择一",
+        "id": "f10-18"
+      },
+      "option": "atk",
+      "prefixActions": 2097,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "sevenWounds": {
+      "file": "audits/v31-fixtures/sevenWounds.json",
+      "sha256": "6e5f1475abcc2081fda017fe2741db36177887b14361e2111ebdc467fe098f64",
+      "entity": {
+        "x": 3,
+        "y": 11,
+        "type": "choice",
+        "choice": "sevenWounds",
+        "blocking": false,
+        "label": "七伤护送台 · 70生命救人 / 20功德修身",
+        "id": "f13-14"
+      },
+      "option": "rescue",
+      "prefixActions": 2844,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "residual": {
+      "file": "audits/v31-fixtures/residual.json",
+      "sha256": "96d7454a26fae28646b7933c1295a4951810d05ec5a0a412f062fac68b19f97f",
+      "entity": {
+        "x": 3,
+        "y": 11,
+        "type": "choice",
+        "choice": "residual",
+        "requires": 1,
+        "blocking": false,
+        "label": "余香古炉 · 石生共鸣",
+        "id": "f0-15"
+      },
+      "option": "offering",
+      "prefixActions": 3488,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    },
+    "emberVow": {
+      "file": "audits/v31-fixtures/emberVow.json",
+      "sha256": "65f29df7f24c4250fba934a38bb123580edfa51a743596bd35190052fdbb8da7",
+      "entity": {
+        "x": 9,
+        "y": 17,
+        "type": "choice",
+        "id": "f16-12",
+        "originalSupply": "emerald",
+        "choice": "emberVow",
+        "blocking": false,
+        "label": "无生髓台 · 防御 +4 / 心炉烬北径",
+        "name": "无生髓台 · 防御 +4 / 心炉烬北径"
+      },
+      "option": "offering",
+      "prefixActions": 3738,
+      "source": "tests/playthrough-v28-free-mixed-direct.json"
+    }
+  },
+  "legalCampaignActions": 4177,
+  "completed": true
+}

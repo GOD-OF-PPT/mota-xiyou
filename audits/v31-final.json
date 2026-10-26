@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "passed": true,
+  "problem": "A locked residual-incense choice looked settled and gave no actionable feedback.",
+  "review": "docs/v31-choice-feedback-review.md",
+  "source": {
+    "index.html": "c9057dd252870c2937e87bc3d458efd57c38b5663f721f44ce00eab908bf88c3",
+    "js/ui.js": "168743645eb9782b92acc7d32101954bbe87f18296294f55e745db204b67050e",
+    "js/choice-feedback.js": "53d67c5b618fe28483b2c90e6b9461cf5c492b1e8771d92e4960d11e1deaa2d9",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "css/ui-layout.css": "c8769fe193b9dbc55aeae2f5c4166cc672a91dee49c1303dd648fcf732fa9c24",
+    "scripts/build_v23_study.cjs": "2be6b7df0da6b56f0ca2d07c838d837c0ef1251bc4cbb0e0e29bb6a3041d9223",
+    "playtest-v23-new.html": "9cfafab450cee8d0dd711015501545e93c97814d6b31577734fb8a9e66e36e96",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "docs/v31-choice-feedback-review.md": "1e6ed9a31a82a4b7c8580593deead9a72f00c80f272e7312259aa0c2721ce1c5"
+  },
+  "reports": [
+    "audits/v31-choice-feedback-browser.json",
+    "audits/v31-regression-campaign-regression.json",
+    "audits/v31-study-browser.json"
+  ],
+  "checks": {
+    "choice-feedback-browser": 9,
+    "regression-campaign-regression": 21,
+    "study-browser": 6
+  },
+  "renderRecords": 27,
+  "writingAndPaintDefects": 0,
+  "pcViewports": [
+    "629x678",
+    "1280x720",
+    "1440x900",
+    "1989x1113",
+    "1236x904"
+  ],
+  "artStyles": [
+    "material",
+    "mural"
+  ],
+  "noSimulationChanges": [
+    "js/engine.js",
+    "js/world.js",
+    "js/encounters.js",
+    "js/journey.js",
+    "js/outcomes.js",
+    "js/style-progress.js",
+    "js/art-style.js"
+  ],
+  "frozenBaselineUnchanged": true,
+  "inspectedAtOriginalSize": [
+    "audits/v31-material-locked-1236.png",
+    "audits/v31-material-locked-629.png",
+    "audits/v31-material-ready-heal.png",
+    "audits/v31-material-settled-offering.png",
+    "audits/v31-material-three-options-629.png"
+  ],
+  "nativePreview": {
+    "normalNewGame": true,
+    "publicMovementSteps": 14,
+    "resourceInjection": false,
+    "stage": "Selected offering while locked, showing 0/1 heart, predicted coins and current-objective action.",
+    "url": "http://127.0.0.1:8765/playtest-v23-new.html?participant=UI31&round=1&task=first-three&objective=explore&art=material"
+  },
+  "humanParticipants": 0,
+  "backup": ".backups/choice-feedback-v31-20261026/"
+}

@@ -97,3 +97,24 @@ body[data-motion=reduced] :is(#journey-guide,#story-dock,#altar-ritual,#modal-ro
 .style-tableau[data-style-count="1"]{height:auto;min-height:65%;max-width:760px;margin:auto}
 .style-tableau[data-style-count="1"] button{width:min(620px,90%)}
 .style-unlock-note{font:15px/1.8 var(--serif);color:var(--s25-gold);text-align:center;max-width:44ch;margin:20px auto}
+/* A selected offering is a comparison, not a hidden transaction. */
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .ritual-minor{padding:22px 32px 28px;text-align:left}
+#altar-ritual .decision-feedback{display:grid;gap:6px;min-width:0}
+#altar-ritual .decision-feedback>strong{font:17px/1.6 var(--serif);color:#f3dfa9;font-weight:400;overflow-wrap:anywhere}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-blocker{font:15px/1.7 var(--sans);color:#f3c886;margin:0;text-align:left}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-next{font:13px/1.7 var(--sans);color:#d3d0bd;margin:0;text-align:left}
+#altar-ritual .decision-preview{display:flex;flex-wrap:wrap;gap:3px 18px;align-items:baseline;border-top:1px solid #c7a55b55;padding-top:6px;color:#f0deb4;font:18px/1.5 var(--serif)}
+#altar-ritual .decision-preview small{font:12px/1.7 var(--sans);color:#cdc7ae}
+#altar-ritual .decision-confirm-actions{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 24px;margin-top:10px}
+html[data-ui-skins=ready] #altar-ritual [data-decision-guide]{min-height:42px;padding:8px 9px;color:#e8cf92;background:none;border:0;border-bottom:1px solid #bda26588;font:14px/1.5 var(--serif)}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm]:disabled{opacity:1;color:#c7bfa5;cursor:not-allowed}
+#altar-ritual .decision-petal.selected .decision-state{font-weight:600;color:#7c3e27;border-top:1px solid #9c6a4144;padding-top:7px}
+html[data-ui-skins=ready] #altar-ritual .decision-petal.selected:after{content:"览"}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice]:is([data-decision-state=locked],[data-decision-state=blocked]) footer:after{content:"当前只可比较 · 条件满足后才能确认"}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] footer{padding-top:14px;padding-bottom:25px}
+html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] footer>[data-ritual-result]{position:absolute;width:1px;height:1px;min-height:0;padding:0;margin:0;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap}
+.decision-attention{animation:decision-not-settled .35s ease-out}
+@keyframes decision-not-settled{from{opacity:.65;transform:translateY(2px)}to{opacity:1;transform:none}}
+@media(max-width:760px){html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .ritual-minor{padding:19px 29px 25px}#altar-ritual .decision-feedback{gap:4px}#altar-ritual .decision-feedback>strong{font-size:15px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-blocker{font-size:13px}#altar-ritual .decision-preview{font-size:16px;gap:2px 12px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-feedback .decision-next{font-size:12px}#altar-ritual .decision-confirm-actions{gap:6px 12px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] [data-choice-confirm]{font-size:15px}html[data-ui-skins=ready] #altar-ritual[data-purpose=choice] .decision-petal{gap:6px;min-height:0;padding-top:32px;padding-bottom:30px}html[data-ui-skins=ready] #altar-ritual[data-choice-count="3"] .ritual-offerings{max-height:calc(100vh - 465px)}}
+@media(prefers-reduced-motion:reduce){.decision-attention{animation:none}}
+body[data-motion=reduced] .decision-attention{animation:none}

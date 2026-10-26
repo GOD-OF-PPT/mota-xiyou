@@ -1,0 +1,2160 @@
+{
+  "state": {
+    "version": 4,
+    "levelRevision": 7,
+    "floor": 4,
+    "x": 17,
+    "y": 16,
+    "facing": "right",
+    "hp": 584,
+    "atk": 36,
+    "def": 18,
+    "mana": 6,
+    "maxMana": 6,
+    "coins": 15,
+    "keys": {
+      "yellow": 1,
+      "blue": 1,
+      "red": 0
+    },
+    "relics": [
+      0
+    ],
+    "externalRelics": 4,
+    "fragments": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "treasures": [
+      "iron"
+    ],
+    "equipped": [
+      "iron"
+    ],
+    "selfAwakened": false,
+    "revealed": {
+      "f0-16": true,
+      "f1-15": true,
+      "f2-21": true
+    },
+    "quests": {},
+    "tides": {},
+    "rescued": [],
+    "removed": {
+      "f0-13": true,
+      "f0-8": true,
+      "f0-9": true,
+      "f0-6": true,
+      "f0-4": true,
+      "f0-wing-guard-0": true,
+      "f0-7": true,
+      "f0-5": true,
+      "f0-fragment-0": true,
+      "f0-11": true,
+      "f0-10": true,
+      "f1-9": true,
+      "f1-8": true,
+      "f1-12": true,
+      "f1-4": true,
+      "f1-wing-guard-1": true,
+      "f1-5": true,
+      "f1-wing-guard-0": true,
+      "f1-7": true,
+      "f1-6": true,
+      "f1-fragment-1": true,
+      "f1-reliquary": true,
+      "f1-treasure-iron": true,
+      "f1-11": true,
+      "f1-10": true,
+      "f2-14": true,
+      "f2-13": true,
+      "f2-7": true,
+      "f2-9": true,
+      "f2-1": true,
+      "f2-2": true,
+      "f2-3": true,
+      "f2-6": true,
+      "f2-4": true,
+      "f2-5": true,
+      "f2-fragment-2": true,
+      "f2-17": true,
+      "f2-wing-guard-0": true,
+      "f2-8": true,
+      "f2-wing-guard-1": true,
+      "f2-15": true,
+      "f2-10": true,
+      "f3-5": true,
+      "f3-6": true,
+      "f3-1": true,
+      "f3-7": true,
+      "f3-wing-guard-0": true,
+      "f3-4": true,
+      "f3-wing-guard-1": true,
+      "f3-9": true,
+      "f3-2": true,
+      "f3-3": true,
+      "f3-fragment-3": true,
+      "f4-1": true,
+      "f4-12": true,
+      "f4-11": true
+    },
+    "switches": {
+      "f1-1": true,
+      "f3-12": true
+    },
+    "terrain": {
+      "3:14:16": "."
+    },
+    "choices": {
+      "bellVow": "offering"
+    },
+    "visited": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seenIntros": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "event:f0-2": true,
+      "event:f2-18": true
+    },
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+        "floor": 0,
+        "kind": "intro",
+        "source": "tower:arrival",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "wukong",
+        "speaker": "孙悟空",
+        "chapter": 0
+      },
+      {
+        "title": "归根之匣",
+        "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+        "floor": 0,
+        "kind": "lore",
+        "source": "f0-2",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "stone",
+        "speaker": "归根石刻"
+      },
+      {
+        "title": "残钟回廊",
+        "text": "伪佛像的脸朝着西钟，影子却落在东廊。火眼看见墙缝中的黑莲纹；钟门仍须真正的扳杆来开。",
+        "floor": 1,
+        "kind": "chapter",
+        "source": "floor:1",
+        "objective": "寻回本层外舍利 · 本印 1/3",
+        "speaker": "塔中回响",
+        "portrait": "wukong",
+        "chapter": 0
+      },
+      {
+        "title": "定海铁 · 法器入囊",
+        "text": "攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。\n\n法器收入行囊。站在莲灯上打开行囊或修心，可免费装卸。最多同时装配两件；战损会按当前组合重新计算。",
+        "floor": 1,
+        "kind": "treasure",
+        "source": "floor:1",
+        "objective": "沿塔路寻舍利 · 本印 2/3",
+        "portrait": "wukong"
+      },
+      {
+        "title": "石胎古殿",
+        "text": "古殿石胎的胸中，三枚外舍利围着一个空洞缓缓转动。石狮的眼睛终于映出你的脸。",
+        "floor": 2,
+        "kind": "chapter",
+        "source": "floor:2",
+        "objective": "寻回本层外舍利 · 本印 2/3",
+        "speaker": "塔中回响",
+        "portrait": "wukong",
+        "chapter": 0
+      },
+      {
+        "title": "力能架桥，不能平定弱水",
+        "text": "石生心印唤醒金箍棒。对相邻浅断口施术，消耗 1 灵息，永久留下桥。黑色深弱水另有水脉，不能用棒架桥。\n\n古殿西南朱砂灵晶可以花黄钥走近路，也可以先取得心印再从北侧架桥。不是每道门都必须立即打开。",
+        "floor": 2,
+        "kind": "lore",
+        "source": "f2-18",
+        "objective": "寻回本层外舍利 · 本印 2/3",
+        "portrait": "stone",
+        "speaker": "断桥古碑"
+      },
+      {
+        "title": "石生心印 · 心印觉醒",
+        "text": "三枚外舍利从伪佛石胎中浮起，结成第一重心印。你不是来替佛像收拾供品，而是来救被黑莲封住的众生。金箍棒应声伸长，云垂山门的古炉也重新透出微光。\n\n金箍架桥：金箍棒：对相邻断桥施术，消耗 1 灵息，永久架桥。\n\n本组外舍利归位：3/16。生命 +100，灵息回复至 6。因果簿已标记旧层的新道路。",
+        "floor": 2,
+        "kind": "relic",
+        "source": "f2-17",
+        "objective": "沿塔路寻舍利 · 本印 0/3",
+        "portrait": "wukong",
+        "speaker": "孙悟空",
+        "awakening": true
+      },
+      {
+        "title": "断云栈道",
+        "text": "断云间浮着两座不相触的铜塔。一根金色檐线在高处断开；第四层的东轴只照亮半片塔影。",
+        "floor": 3,
+        "kind": "chapter",
+        "source": "floor:3",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "speaker": "塔中回响",
+        "portrait": "wukong",
+        "chapter": 1
+      },
+      {
+        "title": "百锁偏殿",
+        "text": "三座锁廊夹在铜塔的两道投影之间。你可借一枚钥匙换一条成长方向，也能亲自承担无钥路的两场战斗。",
+        "floor": 4,
+        "kind": "chapter",
+        "source": "floor:4",
+        "objective": "寻回本层外舍利 · 本印 1/3",
+        "speaker": "塔中回响",
+        "portrait": "wukong",
+        "chapter": 1
+      }
+    ],
+    "log": [
+      {
+        "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+        "kind": "item",
+        "turn": 775
+      },
+      {
+        "text": "获得小蟠桃 · 立即恢复 45 生命。",
+        "kind": "item",
+        "turn": 770
+      },
+      {
+        "text": "获得青玉钥匙 · 开启一扇青门；门永久消失。",
+        "kind": "item",
+        "turn": 769
+      },
+      {
+        "text": "抵达 百锁偏殿",
+        "kind": "story",
+        "turn": 767
+      },
+      {
+        "text": "寻回外舍利 · 第 4 枚，4/16。",
+        "kind": "relic",
+        "turn": 737
+      },
+      {
+        "text": "击败铜面罗汉 · 损失 80 生命，获得 6 金。",
+        "kind": "combat",
+        "turn": 734
+      },
+      {
+        "text": "供奉 32 金 · 防御 +3。",
+        "kind": "item",
+        "turn": 727
+      },
+      {
+        "text": "莲灯照心，灵息尽复。按 F 可供奉修行。",
+        "kind": "magic",
+        "turn": 726
+      },
+      {
+        "text": "击败铜铃怨灵 · 损失 24 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 694
+      },
+      {
+        "text": "获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。",
+        "kind": "item",
+        "turn": 667
+      },
+      {
+        "text": "击败铜铃怨灵 · 损失 48 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 665
+      },
+      {
+        "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+        "kind": "item",
+        "turn": 649
+      },
+      {
+        "text": "击败铜铃怨灵 · 损失 48 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 647
+      },
+      {
+        "text": "获得凝息珠 · 收入行囊。可补满灵息；灯前可换 8 金或 50 生命，也可保留给十八层的临战准备。",
+        "kind": "item",
+        "turn": 637
+      },
+      {
+        "text": "东塔照骨轴 · 校准后永久接通已校正，两塔隔层共鸣。",
+        "kind": "magic",
+        "turn": 636
+      },
+      {
+        "text": "击败灰烬沙弥 · 损失 38 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 630
+      },
+      {
+        "text": "金箍棒化作金桥，此路永久连通 · 灵息 −1。",
+        "kind": "magic",
+        "turn": 612
+      },
+      {
+        "text": "获得小蟠桃 · 立即恢复 45 生命。",
+        "kind": "item",
+        "turn": 599
+      },
+      {
+        "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+        "kind": "item",
+        "turn": 584
+      },
+      {
+        "text": "抵达 断云栈道",
+        "kind": "story",
+        "turn": 581
+      },
+      {
+        "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+        "kind": "item",
+        "turn": 569
+      },
+      {
+        "text": "消耗 1 把铜钥匙，门已开启。",
+        "kind": "item",
+        "turn": 567
+      },
+      {
+        "text": "击败灰烬沙弥 · 损失 38 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 558
+      },
+      {
+        "text": "供奉 32 金 · 攻击 +3。",
+        "kind": "item",
+        "turn": 540
+      },
+      {
+        "text": "获得小蟠桃 · 立即恢复 45 生命。",
+        "kind": "item",
+        "turn": 510
+      },
+      {
+        "text": "击败灰烬沙弥 · 损失 57 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 508
+      },
+      {
+        "text": "心印觉醒 · 石生心印。外舍利 3/16；生命 +100，灵息尽复。",
+        "kind": "relic",
+        "turn": 497
+      },
+      {
+        "text": "寻回外舍利 · 第 3 枚，3/16。",
+        "kind": "relic",
+        "turn": 490
+      },
+      {
+        "text": "击败石胎守卫 · 损失 51 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 487
+      },
+      {
+        "text": "击败荆棘山魈 · 损失 40 生命，获得 3 金。",
+        "kind": "combat",
+        "turn": 479
+      },
+      {
+        "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+        "kind": "combat",
+        "turn": 475
+      },
+      {
+        "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+        "kind": "combat",
+        "turn": 466
+      },
+      {
+        "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+        "kind": "combat",
+        "turn": 457
+      },
+      {
+        "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+        "kind": "combat",
+        "turn": 424
+      },
+      {
+        "text": "供奉 20 金 · 防御 +3。",
+        "kind": "item",
+        "turn": 408
+      },
+      {
+        "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+        "kind": "item",
+        "turn": 382
+      },
+      {
+        "text": "获得黄铜钥匙 · 可开启一扇黄门，也可留到第八层，配合舍弃一枚仙桃供渡灯、开舍利栈道。每次用途都会永久消耗一把。",
+        "kind": "item",
+        "turn": 343
+      },
+      {
+        "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+        "kind": "item",
+        "turn": 326
+      },
+      {
+        "text": "获得小蟠桃 · 立即恢复 45 生命。",
+        "kind": "item",
+        "turn": 321
+      },
+      {
+        "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+        "kind": "magic",
+        "turn": 318
+      },
+      {
+        "text": "抵达 石胎古殿",
+        "kind": "story",
+        "turn": 317
+      },
+      {
+        "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+        "kind": "item",
+        "turn": 297
+      },
+      {
+        "text": "消耗 1 把青钥匙，门已开启。",
+        "kind": "item",
+        "turn": 295
+      },
+      {
+        "text": "装配定海铁；战损与神通代价已更新。",
+        "kind": "magic",
+        "turn": 277
+      },
+      {
+        "text": "取得法器 · 定海铁。到莲灯装配，最多同时两件。",
+        "kind": "item",
+        "turn": 267
+      },
+      {
+        "text": "击败镇海猿卫 · 损失 85 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 264
+      },
+      {
+        "text": "寻回外舍利 · 第 2 枚，2/16。",
+        "kind": "relic",
+        "turn": 252
+      },
+      {
+        "text": "击败石胎守卫 · 损失 68 生命，获得 4 金。",
+        "kind": "combat",
+        "turn": 249
+      },
+      {
+        "text": "获得小蟠桃 · 立即恢复 45 生命。",
+        "kind": "item",
+        "turn": 237
+      },
+      {
+        "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+        "kind": "combat",
+        "turn": 235
+      }
+    ],
+    "elixirs": 2,
+    "orbs": 2,
+    "turn": 782,
+    "defeated": false,
+    "won": false,
+    "ending": null,
+    "bossPlan": "direct",
+    "settings": {
+      "quickZero": false,
+      "showDamage": true,
+      "motion": "standard",
+      "screenShake": false,
+      "music": false,
+      "sfx": false
+    },
+    "purchases": {
+      "atk": 2,
+      "def": 2,
+      "heal": 0
+    },
+    "startedAt": 1792979828929,
+    "kills": 23,
+    "walked": {
+      "0:10:19": true,
+      "0:10:18": true,
+      "0:9:18": true,
+      "0:8:18": true,
+      "0:8:17": true,
+      "0:7:17": true,
+      "0:6:17": true,
+      "0:5:17": true,
+      "0:4:17": true,
+      "0:4:16": true,
+      "0:4:15": true,
+      "0:4:14": true,
+      "0:4:13": true,
+      "0:4:12": true,
+      "0:4:11": true,
+      "0:4:10": true,
+      "0:4:9": true,
+      "0:5:9": true,
+      "0:5:8": true,
+      "0:6:8": true,
+      "0:7:8": true,
+      "0:7:7": true,
+      "0:7:6": true,
+      "0:7:5": true,
+      "0:7:4": true,
+      "0:7:3": true,
+      "0:8:3": true,
+      "0:9:3": true,
+      "0:9:2": true,
+      "0:10:2": true,
+      "0:11:2": true,
+      "0:12:2": true,
+      "0:13:2": true,
+      "0:14:2": true,
+      "0:15:2": true,
+      "0:16:2": true,
+      "0:17:2": true,
+      "0:17:3": true,
+      "0:17:4": true,
+      "0:17:5": true,
+      "0:17:6": true,
+      "0:17:7": true,
+      "0:11:3": true,
+      "0:10:3": true,
+      "0:10:4": true,
+      "0:10:5": true,
+      "0:10:6": true,
+      "0:10:7": true,
+      "0:10:8": true,
+      "0:9:8": true,
+      "0:8:8": true,
+      "0:6:9": true,
+      "0:6:10": true,
+      "0:6:11": true,
+      "0:6:12": true,
+      "0:6:13": true,
+      "0:6:14": true,
+      "0:6:3": true,
+      "0:5:3": true,
+      "0:4:3": true,
+      "0:3:3": true,
+      "0:11:6": true,
+      "0:12:6": true,
+      "0:12:5": true,
+      "0:12:4": true,
+      "0:14:1": true,
+      "0:15:1": true,
+      "0:16:1": true,
+      "0:17:1": true,
+      "1:10:19": true,
+      "1:10:18": true,
+      "1:10:17": true,
+      "1:10:16": true,
+      "1:10:15": true,
+      "1:10:14": true,
+      "1:10:13": true,
+      "1:10:12": true,
+      "1:10:11": true,
+      "1:10:10": true,
+      "1:10:9": true,
+      "1:10:8": true,
+      "1:11:8": true,
+      "1:12:8": true,
+      "1:12:9": true,
+      "1:12:10": true,
+      "1:12:11": true,
+      "1:13:11": true,
+      "1:14:11": true,
+      "1:15:11": true,
+      "1:16:11": true,
+      "1:17:11": true,
+      "1:11:10": true,
+      "1:9:10": true,
+      "1:8:10": true,
+      "1:7:10": true,
+      "1:6:10": true,
+      "1:5:10": true,
+      "1:4:10": true,
+      "1:7:11": true,
+      "1:7:12": true,
+      "1:7:13": true,
+      "1:7:14": true,
+      "1:7:15": true,
+      "1:7:16": true,
+      "1:8:16": true,
+      "1:9:16": true,
+      "1:5:9": true,
+      "1:5:8": true,
+      "1:11:11": true,
+      "1:15:10": true,
+      "1:15:9": true,
+      "1:16:9": true,
+      "1:17:9": true,
+      "1:17:10": true,
+      "1:9:11": true,
+      "1:8:11": true,
+      "1:6:11": true,
+      "1:5:11": true,
+      "1:5:12": true,
+      "1:5:13": true,
+      "1:5:14": true,
+      "1:6:16": true,
+      "1:5:16": true,
+      "1:4:16": true,
+      "1:3:16": true,
+      "1:11:16": true,
+      "1:12:16": true,
+      "1:13:16": true,
+      "1:14:16": true,
+      "1:15:16": true,
+      "1:16:16": true,
+      "1:17:16": true,
+      "1:13:17": true,
+      "1:13:18": true,
+      "1:12:18": true,
+      "1:11:18": true,
+      "1:5:7": true,
+      "1:5:6": true,
+      "1:5:5": true,
+      "1:5:4": true,
+      "1:6:6": true,
+      "1:7:6": true,
+      "1:8:6": true,
+      "1:8:5": true,
+      "1:8:4": true,
+      "1:8:3": true,
+      "1:9:3": true,
+      "1:10:3": true,
+      "1:11:3": true,
+      "1:12:3": true,
+      "1:13:3": true,
+      "1:14:3": true,
+      "1:15:3": true,
+      "1:15:2": true,
+      "1:15:1": true,
+      "1:16:1": true,
+      "1:17:1": true,
+      "2:10:19": true,
+      "2:10:18": true,
+      "2:9:18": true,
+      "2:8:18": true,
+      "2:8:17": true,
+      "2:9:17": true,
+      "2:10:17": true,
+      "2:11:17": true,
+      "2:12:17": true,
+      "2:12:18": true,
+      "2:11:18": true,
+      "2:7:18": true,
+      "2:6:18": true,
+      "2:5:18": true,
+      "2:4:18": true,
+      "2:4:17": true,
+      "2:4:16": true,
+      "2:4:15": true,
+      "2:4:14": true,
+      "2:4:13": true,
+      "2:4:12": true,
+      "2:4:11": true,
+      "2:3:11": true,
+      "2:13:18": true,
+      "2:14:18": true,
+      "2:15:18": true,
+      "2:16:18": true,
+      "2:17:18": true,
+      "2:17:17": true,
+      "2:17:16": true,
+      "2:17:15": true,
+      "2:17:14": true,
+      "2:17:13": true,
+      "2:17:12": true,
+      "2:17:11": true,
+      "2:17:10": true,
+      "2:17:9": true,
+      "2:16:9": true,
+      "2:15:9": true,
+      "2:14:9": true,
+      "2:13:9": true,
+      "2:12:9": true,
+      "2:12:8": true,
+      "2:12:7": true,
+      "2:11:7": true,
+      "2:10:7": true,
+      "2:4:10": true,
+      "2:4:9": true,
+      "2:17:8": true,
+      "2:12:10": true,
+      "2:11:10": true,
+      "2:11:9": true,
+      "2:11:8": true,
+      "2:10:6": true,
+      "2:10:5": true,
+      "2:10:4": true,
+      "2:11:4": true,
+      "2:9:4": true,
+      "2:9:3": true,
+      "2:9:2": true,
+      "2:10:2": true,
+      "2:11:2": true,
+      "2:12:2": true,
+      "2:12:3": true,
+      "2:13:3": true,
+      "2:14:3": true,
+      "2:15:3": true,
+      "2:16:3": true,
+      "2:17:3": true,
+      "2:11:3": true,
+      "2:10:3": true,
+      "2:10:8": true,
+      "2:10:9": true,
+      "2:10:10": true,
+      "2:10:11": true,
+      "2:9:11": true,
+      "2:8:11": true,
+      "2:8:12": true,
+      "2:8:13": true,
+      "2:8:10": true,
+      "2:8:9": true,
+      "2:9:9": true,
+      "2:16:10": true,
+      "2:15:10": true,
+      "2:12:11": true,
+      "2:11:11": true,
+      "2:10:12": true,
+      "2:10:13": true,
+      "3:10:19": true,
+      "3:10:18": true,
+      "3:11:18": true,
+      "3:12:18": true,
+      "3:12:17": true,
+      "3:12:16": true,
+      "3:13:16": true,
+      "3:13:15": true,
+      "3:13:14": true,
+      "3:13:13": true,
+      "3:13:12": true,
+      "3:13:11": true,
+      "3:12:11": true,
+      "3:12:10": true,
+      "3:12:9": true,
+      "3:12:8": true,
+      "3:12:7": true,
+      "3:11:7": true,
+      "3:10:7": true,
+      "3:11:11": true,
+      "3:10:11": true,
+      "3:9:11": true,
+      "3:8:11": true,
+      "3:7:11": true,
+      "3:6:11": true,
+      "3:6:10": true,
+      "3:6:9": true,
+      "3:5:9": true,
+      "3:4:9": true,
+      "3:3:9": true,
+      "3:3:8": true,
+      "3:3:7": true,
+      "3:3:6": true,
+      "3:3:5": true,
+      "3:3:4": true,
+      "3:4:4": true,
+      "3:4:5": true,
+      "3:6:8": true,
+      "3:6:7": true,
+      "3:14:11": true,
+      "3:14:10": true,
+      "3:15:10": true,
+      "3:16:10": true,
+      "3:17:10": true,
+      "3:18:10": true,
+      "3:16:9": true,
+      "3:15:9": true,
+      "3:14:9": true,
+      "3:13:9": true,
+      "3:10:6": true,
+      "3:10:5": true,
+      "3:10:4": true,
+      "3:10:3": true,
+      "3:11:3": true,
+      "3:12:3": true,
+      "3:13:3": true,
+      "3:14:3": true,
+      "3:15:3": true,
+      "3:16:3": true,
+      "3:17:3": true,
+      "3:17:4": true,
+      "3:17:5": true,
+      "3:17:6": true,
+      "3:17:7": true,
+      "3:13:17": true,
+      "3:13:18": true,
+      "3:10:17": true,
+      "3:10:16": true,
+      "3:11:16": true,
+      "3:14:16": true,
+      "3:15:16": true,
+      "3:16:16": true,
+      "3:17:16": true,
+      "3:14:2": true,
+      "3:14:1": true,
+      "3:15:1": true,
+      "3:16:1": true,
+      "3:17:1": true,
+      "4:10:19": true,
+      "4:10:18": true,
+      "4:9:18": true,
+      "4:8:18": true,
+      "4:8:17": true,
+      "4:9:17": true,
+      "4:10:17": true,
+      "4:11:17": true,
+      "4:12:17": true,
+      "4:12:16": true,
+      "4:13:16": true,
+      "4:14:16": true,
+      "4:15:16": true,
+      "4:16:16": true,
+      "4:17:16": true
+    },
+    "outcomes": [
+      {
+        "kind": "choice",
+        "title": "已定：留玉护身 · 防御 +2",
+        "detail": "立即获得原青玉的防御 +2。宝龛北门保持关闭，想取定海铁仍须挑战镇海猿卫；也可以先上楼，以后再来。",
+        "targets": [],
+        "deltas": [
+          {
+            "key": "def",
+            "label": "防御",
+            "before": 10,
+            "after": 12,
+            "amount": 2
+          }
+        ],
+        "floor": 1,
+        "turn": 173
+      },
+      {
+        "kind": "seal",
+        "title": "石生心印已觉醒",
+        "detail": "架桥已醒，旧断口可以重新利用。",
+        "targets": [],
+        "deltas": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "before": 502,
+            "after": 602,
+            "amount": 100
+          }
+        ],
+        "floor": 2,
+        "turn": 498
+      },
+      {
+        "kind": "chapter",
+        "title": "第 1 回已完成",
+        "detail": "架桥已醒，下一回可接断路，也可回看山门。",
+        "targets": [],
+        "deltas": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "before": 620,
+            "after": 642,
+            "amount": 22
+          },
+          {
+            "key": "atk",
+            "label": "攻击",
+            "before": 24,
+            "after": 33,
+            "amount": 9
+          },
+          {
+            "key": "def",
+            "label": "防御",
+            "before": 10,
+            "after": 15,
+            "amount": 5
+          },
+          {
+            "key": "coins",
+            "label": "功德",
+            "before": 0,
+            "after": 7,
+            "amount": 7
+          },
+          {
+            "key": "elixirs",
+            "label": "蟠桃",
+            "before": 1,
+            "after": 2,
+            "amount": 1
+          }
+        ],
+        "floor": 3,
+        "turn": 582,
+        "chapterSpan": {
+          "fromFloor": 0,
+          "fromTurn": 0,
+          "complete": false
+        }
+      }
+    ]
+  },
+  "savedAt": 1792979828958,
+  "chronicle": {
+    "version": 1,
+    "campaign": 1792979828929,
+    "seq": 3,
+    "seen": [
+      0,
+      1
+    ],
+    "records": [
+      {
+        "id": 1,
+        "type": "chapter",
+        "key": "chapter:0",
+        "title": "续档起点 · 第 1 层",
+        "state": {
+          "version": 4,
+          "levelRevision": 7,
+          "floor": 0,
+          "x": 10,
+          "y": 19,
+          "facing": "up",
+          "hp": 620,
+          "atk": 24,
+          "def": 10,
+          "mana": 6,
+          "maxMana": 6,
+          "coins": 0,
+          "keys": {
+            "yellow": 1,
+            "blue": 0,
+            "red": 0
+          },
+          "relics": [],
+          "externalRelics": 0,
+          "fragments": [],
+          "treasures": [],
+          "equipped": [],
+          "selfAwakened": false,
+          "revealed": {},
+          "quests": {},
+          "tides": {},
+          "rescued": [],
+          "removed": {},
+          "switches": {},
+          "terrain": {},
+          "choices": {},
+          "visited": [
+            0
+          ],
+          "seenIntros": {
+            "0": true
+          },
+          "journal": [
+            {
+              "title": "黑莲劫 · 入塔",
+              "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+              "floor": 0,
+              "kind": "intro",
+              "source": "tower:arrival",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "chapter": 0
+            }
+          ],
+          "log": [
+            {
+              "text": "残钟响起。你踏入了自己的因果。",
+              "kind": "story",
+              "turn": 0
+            }
+          ],
+          "elixirs": 1,
+          "orbs": 1,
+          "turn": 0,
+          "defeated": false,
+          "won": false,
+          "ending": null,
+          "bossPlan": "direct",
+          "settings": {
+            "quickZero": false,
+            "showDamage": true,
+            "motion": "standard",
+            "screenShake": false,
+            "music": false,
+            "sfx": false
+          },
+          "purchases": {
+            "atk": 0,
+            "def": 0,
+            "heal": 0
+          },
+          "startedAt": 1792979828929,
+          "kills": 0
+        }
+      },
+      {
+        "id": 2,
+        "type": "choice",
+        "key": "bellVow",
+        "title": "残钟偏转台 · 防御 +2 / 异宝北门 · 选择前",
+        "state": {
+          "version": 4,
+          "levelRevision": 7,
+          "floor": 1,
+          "x": 9,
+          "y": 16,
+          "facing": "right",
+          "hp": 776,
+          "atk": 27,
+          "def": 10,
+          "mana": 6,
+          "maxMana": 6,
+          "coins": 18,
+          "keys": {
+            "yellow": 1,
+            "blue": 1,
+            "red": 0
+          },
+          "relics": [],
+          "externalRelics": 1,
+          "fragments": [
+            0
+          ],
+          "treasures": [],
+          "equipped": [],
+          "selfAwakened": false,
+          "revealed": {
+            "f0-16": true,
+            "f1-15": true
+          },
+          "quests": {},
+          "tides": {},
+          "rescued": [],
+          "removed": {
+            "f0-13": true,
+            "f0-8": true,
+            "f0-9": true,
+            "f0-6": true,
+            "f0-4": true,
+            "f0-wing-guard-0": true,
+            "f0-7": true,
+            "f0-5": true,
+            "f0-fragment-0": true,
+            "f0-11": true,
+            "f0-10": true,
+            "f1-9": true,
+            "f1-8": true
+          },
+          "switches": {
+            "f1-1": true
+          },
+          "terrain": {},
+          "choices": {},
+          "visited": [
+            0,
+            1
+          ],
+          "seenIntros": {
+            "0": true,
+            "1": true,
+            "event:f0-2": true
+          },
+          "journal": [
+            {
+              "title": "黑莲劫 · 入塔",
+              "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+              "floor": 0,
+              "kind": "intro",
+              "source": "tower:arrival",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "chapter": 0
+            },
+            {
+              "title": "归根之匣",
+              "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+              "floor": 0,
+              "kind": "lore",
+              "source": "f0-2",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "stone",
+              "speaker": "归根石刻"
+            },
+            {
+              "title": "残钟回廊",
+              "text": "伪佛像的脸朝着西钟，影子却落在东廊。火眼看见墙缝中的黑莲纹；钟门仍须真正的扳杆来开。",
+              "floor": 1,
+              "kind": "chapter",
+              "source": "floor:1",
+              "objective": "寻回本层外舍利 · 本印 1/3",
+              "speaker": "塔中回响",
+              "portrait": "wukong",
+              "chapter": 0
+            }
+          ],
+          "log": [
+            {
+              "text": "启钟扳杆已接通。",
+              "kind": "magic",
+              "turn": 160
+            },
+            {
+              "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+              "kind": "item",
+              "turn": 145
+            },
+            {
+              "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+              "kind": "item",
+              "turn": 135
+            },
+            {
+              "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+              "kind": "magic",
+              "turn": 124
+            },
+            {
+              "text": "抵达 残钟回廊",
+              "kind": "story",
+              "turn": 123
+            },
+            {
+              "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+              "kind": "item",
+              "turn": 106
+            },
+            {
+              "text": "消耗 1 把铜钥匙，门已开启。",
+              "kind": "item",
+              "turn": 104
+            },
+            {
+              "text": "寻回外舍利 · 第 1 枚，1/16。",
+              "kind": "relic",
+              "turn": 91
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 39 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 88
+            },
+            {
+              "text": "获得小蟠桃 · 立即恢复 45 生命。",
+              "kind": "item",
+              "turn": 74
+            },
+            {
+              "text": "击败巡山小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 72
+            },
+            {
+              "text": "击败守阶小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 66
+            },
+            {
+              "text": "击败守阶小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 42
+            },
+            {
+              "text": "获得青玉钥匙 · 开启一扇青门；门永久消失。",
+              "kind": "item",
+              "turn": 38
+            },
+            {
+              "text": "获得黄铜钥匙 · 可开启一扇黄门，也可留到第八层，配合舍弃一枚仙桃供渡灯、开舍利栈道。每次用途都会永久消耗一把。",
+              "kind": "item",
+              "turn": 23
+            },
+            {
+              "text": "获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。",
+              "kind": "item",
+              "turn": 3
+            },
+            {
+              "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+              "kind": "magic",
+              "turn": 1
+            },
+            {
+              "text": "残钟响起。你踏入了自己的因果。",
+              "kind": "story",
+              "turn": 0
+            }
+          ],
+          "elixirs": 1,
+          "orbs": 1,
+          "turn": 172,
+          "defeated": false,
+          "won": false,
+          "ending": null,
+          "bossPlan": "direct",
+          "settings": {
+            "quickZero": false,
+            "showDamage": true,
+            "motion": "standard",
+            "screenShake": false,
+            "music": false,
+            "sfx": false
+          },
+          "purchases": {
+            "atk": 0,
+            "def": 0,
+            "heal": 0
+          },
+          "startedAt": 1792979828929,
+          "kills": 4,
+          "walked": {
+            "0:10:19": true,
+            "0:10:18": true,
+            "0:9:18": true,
+            "0:8:18": true,
+            "0:8:17": true,
+            "0:7:17": true,
+            "0:6:17": true,
+            "0:5:17": true,
+            "0:4:17": true,
+            "0:4:16": true,
+            "0:4:15": true,
+            "0:4:14": true,
+            "0:4:13": true,
+            "0:4:12": true,
+            "0:4:11": true,
+            "0:4:10": true,
+            "0:4:9": true,
+            "0:5:9": true,
+            "0:5:8": true,
+            "0:6:8": true,
+            "0:7:8": true,
+            "0:7:7": true,
+            "0:7:6": true,
+            "0:7:5": true,
+            "0:7:4": true,
+            "0:7:3": true,
+            "0:8:3": true,
+            "0:9:3": true,
+            "0:9:2": true,
+            "0:10:2": true,
+            "0:11:2": true,
+            "0:12:2": true,
+            "0:13:2": true,
+            "0:14:2": true,
+            "0:15:2": true,
+            "0:16:2": true,
+            "0:17:2": true,
+            "0:17:3": true,
+            "0:17:4": true,
+            "0:17:5": true,
+            "0:17:6": true,
+            "0:17:7": true,
+            "0:11:3": true,
+            "0:10:3": true,
+            "0:10:4": true,
+            "0:10:5": true,
+            "0:10:6": true,
+            "0:10:7": true,
+            "0:10:8": true,
+            "0:9:8": true,
+            "0:8:8": true,
+            "0:6:9": true,
+            "0:6:10": true,
+            "0:6:11": true,
+            "0:6:12": true,
+            "0:6:13": true,
+            "0:6:14": true,
+            "0:6:3": true,
+            "0:5:3": true,
+            "0:4:3": true,
+            "0:3:3": true,
+            "0:11:6": true,
+            "0:12:6": true,
+            "0:12:5": true,
+            "0:12:4": true,
+            "0:14:1": true,
+            "0:15:1": true,
+            "0:16:1": true,
+            "0:17:1": true,
+            "1:10:19": true,
+            "1:10:18": true,
+            "1:10:17": true,
+            "1:10:16": true,
+            "1:10:15": true,
+            "1:10:14": true,
+            "1:10:13": true,
+            "1:10:12": true,
+            "1:10:11": true,
+            "1:10:10": true,
+            "1:10:9": true,
+            "1:10:8": true,
+            "1:11:8": true,
+            "1:12:8": true,
+            "1:12:9": true,
+            "1:12:10": true,
+            "1:12:11": true,
+            "1:13:11": true,
+            "1:14:11": true,
+            "1:15:11": true,
+            "1:16:11": true,
+            "1:17:11": true,
+            "1:11:10": true,
+            "1:9:10": true,
+            "1:8:10": true,
+            "1:7:10": true,
+            "1:6:10": true,
+            "1:5:10": true,
+            "1:4:10": true,
+            "1:7:11": true,
+            "1:7:12": true,
+            "1:7:13": true,
+            "1:7:14": true,
+            "1:7:15": true,
+            "1:7:16": true,
+            "1:8:16": true,
+            "1:9:16": true
+          },
+          "outcomes": []
+        }
+      },
+      {
+        "id": 3,
+        "type": "chapter",
+        "key": "chapter:1",
+        "title": "第 2 回 · 首次踏入",
+        "state": {
+          "version": 4,
+          "levelRevision": 7,
+          "floor": 3,
+          "x": 10,
+          "y": 19,
+          "facing": "up",
+          "hp": 642,
+          "atk": 33,
+          "def": 15,
+          "mana": 6,
+          "maxMana": 6,
+          "coins": 7,
+          "keys": {
+            "yellow": 1,
+            "blue": 0,
+            "red": 0
+          },
+          "relics": [
+            0
+          ],
+          "externalRelics": 3,
+          "fragments": [
+            0,
+            1,
+            2
+          ],
+          "treasures": [
+            "iron"
+          ],
+          "equipped": [
+            "iron"
+          ],
+          "selfAwakened": false,
+          "revealed": {
+            "f0-16": true,
+            "f1-15": true,
+            "f2-21": true
+          },
+          "quests": {},
+          "tides": {},
+          "rescued": [],
+          "removed": {
+            "f0-13": true,
+            "f0-8": true,
+            "f0-9": true,
+            "f0-6": true,
+            "f0-4": true,
+            "f0-wing-guard-0": true,
+            "f0-7": true,
+            "f0-5": true,
+            "f0-fragment-0": true,
+            "f0-11": true,
+            "f0-10": true,
+            "f1-9": true,
+            "f1-8": true,
+            "f1-12": true,
+            "f1-4": true,
+            "f1-wing-guard-1": true,
+            "f1-5": true,
+            "f1-wing-guard-0": true,
+            "f1-7": true,
+            "f1-6": true,
+            "f1-fragment-1": true,
+            "f1-reliquary": true,
+            "f1-treasure-iron": true,
+            "f1-11": true,
+            "f1-10": true,
+            "f2-14": true,
+            "f2-13": true,
+            "f2-7": true,
+            "f2-9": true,
+            "f2-1": true,
+            "f2-2": true,
+            "f2-3": true,
+            "f2-6": true,
+            "f2-4": true,
+            "f2-5": true,
+            "f2-fragment-2": true,
+            "f2-17": true,
+            "f2-wing-guard-0": true,
+            "f2-8": true,
+            "f2-wing-guard-1": true,
+            "f2-15": true,
+            "f2-10": true
+          },
+          "switches": {
+            "f1-1": true
+          },
+          "terrain": {},
+          "choices": {
+            "bellVow": "offering"
+          },
+          "visited": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "seenIntros": {
+            "0": true,
+            "1": true,
+            "2": true,
+            "3": true,
+            "event:f0-2": true,
+            "event:f2-18": true
+          },
+          "journal": [
+            {
+              "title": "黑莲劫 · 入塔",
+              "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+              "floor": 0,
+              "kind": "intro",
+              "source": "tower:arrival",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "chapter": 0
+            },
+            {
+              "title": "归根之匣",
+              "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+              "floor": 0,
+              "kind": "lore",
+              "source": "f0-2",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "portrait": "stone",
+              "speaker": "归根石刻"
+            },
+            {
+              "title": "残钟回廊",
+              "text": "伪佛像的脸朝着西钟，影子却落在东廊。火眼看见墙缝中的黑莲纹；钟门仍须真正的扳杆来开。",
+              "floor": 1,
+              "kind": "chapter",
+              "source": "floor:1",
+              "objective": "寻回本层外舍利 · 本印 1/3",
+              "speaker": "塔中回响",
+              "portrait": "wukong",
+              "chapter": 0
+            },
+            {
+              "title": "定海铁 · 法器入囊",
+              "text": "攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。\n\n法器收入行囊。站在莲灯上打开行囊或修心，可免费装卸。最多同时装配两件；战损会按当前组合重新计算。",
+              "floor": 1,
+              "kind": "treasure",
+              "source": "floor:1",
+              "objective": "沿塔路寻舍利 · 本印 2/3",
+              "portrait": "wukong"
+            },
+            {
+              "title": "石胎古殿",
+              "text": "古殿石胎的胸中，三枚外舍利围着一个空洞缓缓转动。石狮的眼睛终于映出你的脸。",
+              "floor": 2,
+              "kind": "chapter",
+              "source": "floor:2",
+              "objective": "寻回本层外舍利 · 本印 2/3",
+              "speaker": "塔中回响",
+              "portrait": "wukong",
+              "chapter": 0
+            },
+            {
+              "title": "力能架桥，不能平定弱水",
+              "text": "石生心印唤醒金箍棒。对相邻浅断口施术，消耗 1 灵息，永久留下桥。黑色深弱水另有水脉，不能用棒架桥。\n\n古殿西南朱砂灵晶可以花黄钥走近路，也可以先取得心印再从北侧架桥。不是每道门都必须立即打开。",
+              "floor": 2,
+              "kind": "lore",
+              "source": "f2-18",
+              "objective": "寻回本层外舍利 · 本印 2/3",
+              "portrait": "stone",
+              "speaker": "断桥古碑"
+            },
+            {
+              "title": "石生心印 · 心印觉醒",
+              "text": "三枚外舍利从伪佛石胎中浮起，结成第一重心印。你不是来替佛像收拾供品，而是来救被黑莲封住的众生。金箍棒应声伸长，云垂山门的古炉也重新透出微光。\n\n金箍架桥：金箍棒：对相邻断桥施术，消耗 1 灵息，永久架桥。\n\n本组外舍利归位：3/16。生命 +100，灵息回复至 6。因果簿已标记旧层的新道路。",
+              "floor": 2,
+              "kind": "relic",
+              "source": "f2-17",
+              "objective": "沿塔路寻舍利 · 本印 0/3",
+              "portrait": "wukong",
+              "speaker": "孙悟空",
+              "awakening": true
+            },
+            {
+              "title": "断云栈道",
+              "text": "断云间浮着两座不相触的铜塔。一根金色檐线在高处断开；第四层的东轴只照亮半片塔影。",
+              "floor": 3,
+              "kind": "chapter",
+              "source": "floor:3",
+              "objective": "寻回本层外舍利 · 本印 0/3",
+              "speaker": "塔中回响",
+              "portrait": "wukong",
+              "chapter": 1
+            }
+          ],
+          "log": [
+            {
+              "text": "抵达 断云栈道",
+              "kind": "story",
+              "turn": 581
+            },
+            {
+              "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+              "kind": "item",
+              "turn": 569
+            },
+            {
+              "text": "消耗 1 把铜钥匙，门已开启。",
+              "kind": "item",
+              "turn": 567
+            },
+            {
+              "text": "击败灰烬沙弥 · 损失 38 生命，获得 4 金。",
+              "kind": "combat",
+              "turn": 558
+            },
+            {
+              "text": "供奉 32 金 · 攻击 +3。",
+              "kind": "item",
+              "turn": 540
+            },
+            {
+              "text": "获得小蟠桃 · 立即恢复 45 生命。",
+              "kind": "item",
+              "turn": 510
+            },
+            {
+              "text": "击败灰烬沙弥 · 损失 57 生命，获得 4 金。",
+              "kind": "combat",
+              "turn": 508
+            },
+            {
+              "text": "心印觉醒 · 石生心印。外舍利 3/16；生命 +100，灵息尽复。",
+              "kind": "relic",
+              "turn": 497
+            },
+            {
+              "text": "寻回外舍利 · 第 3 枚，3/16。",
+              "kind": "relic",
+              "turn": 490
+            },
+            {
+              "text": "击败石胎守卫 · 损失 51 生命，获得 4 金。",
+              "kind": "combat",
+              "turn": 487
+            },
+            {
+              "text": "击败荆棘山魈 · 损失 40 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 479
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 475
+            },
+            {
+              "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 466
+            },
+            {
+              "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 457
+            },
+            {
+              "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 424
+            },
+            {
+              "text": "供奉 20 金 · 防御 +3。",
+              "kind": "item",
+              "turn": 408
+            },
+            {
+              "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+              "kind": "item",
+              "turn": 382
+            },
+            {
+              "text": "获得黄铜钥匙 · 可开启一扇黄门，也可留到第八层，配合舍弃一枚仙桃供渡灯、开舍利栈道。每次用途都会永久消耗一把。",
+              "kind": "item",
+              "turn": 343
+            },
+            {
+              "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+              "kind": "item",
+              "turn": 326
+            },
+            {
+              "text": "获得小蟠桃 · 立即恢复 45 生命。",
+              "kind": "item",
+              "turn": 321
+            },
+            {
+              "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+              "kind": "magic",
+              "turn": 318
+            },
+            {
+              "text": "抵达 石胎古殿",
+              "kind": "story",
+              "turn": 317
+            },
+            {
+              "text": "获得随身蟠桃 · 收入行囊；随时使用，恢复 200 生命。",
+              "kind": "item",
+              "turn": 297
+            },
+            {
+              "text": "消耗 1 把青钥匙，门已开启。",
+              "kind": "item",
+              "turn": 295
+            },
+            {
+              "text": "装配定海铁；战损与神通代价已更新。",
+              "kind": "magic",
+              "turn": 277
+            },
+            {
+              "text": "取得法器 · 定海铁。到莲灯装配，最多同时两件。",
+              "kind": "item",
+              "turn": 267
+            },
+            {
+              "text": "击败镇海猿卫 · 损失 85 生命，获得 4 金。",
+              "kind": "combat",
+              "turn": 264
+            },
+            {
+              "text": "寻回外舍利 · 第 2 枚，2/16。",
+              "kind": "relic",
+              "turn": 252
+            },
+            {
+              "text": "击败石胎守卫 · 损失 68 生命，获得 4 金。",
+              "kind": "combat",
+              "turn": 249
+            },
+            {
+              "text": "获得小蟠桃 · 立即恢复 45 生命。",
+              "kind": "item",
+              "turn": 237
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 235
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 219
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 22 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 214
+            },
+            {
+              "text": "供奉 20 金 · 攻击 +3。",
+              "kind": "item",
+              "turn": 201
+            },
+            {
+              "text": "击败巡山小妖 · 损失 8 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 185
+            },
+            {
+              "text": "因果已定 · 留玉护身 · 防御 +2。奖励已收入行囊。",
+              "kind": "relic",
+              "turn": 172
+            },
+            {
+              "text": "启钟扳杆已接通。",
+              "kind": "magic",
+              "turn": 160
+            },
+            {
+              "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+              "kind": "item",
+              "turn": 145
+            },
+            {
+              "text": "获得功德金 · 获得 9 功德金，可在灵息坛换取成长或治疗。",
+              "kind": "item",
+              "turn": 135
+            },
+            {
+              "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+              "kind": "magic",
+              "turn": 124
+            },
+            {
+              "text": "抵达 残钟回廊",
+              "kind": "story",
+              "turn": 123
+            },
+            {
+              "text": "获得仙酿蟠桃 · 立即恢复 90 生命。",
+              "kind": "item",
+              "turn": 106
+            },
+            {
+              "text": "消耗 1 把铜钥匙，门已开启。",
+              "kind": "item",
+              "turn": 104
+            },
+            {
+              "text": "寻回外舍利 · 第 1 枚，1/16。",
+              "kind": "relic",
+              "turn": 91
+            },
+            {
+              "text": "击败赤眼夜蝠 · 损失 39 生命，获得 3 金。",
+              "kind": "combat",
+              "turn": 88
+            },
+            {
+              "text": "获得小蟠桃 · 立即恢复 45 生命。",
+              "kind": "item",
+              "turn": 74
+            },
+            {
+              "text": "击败巡山小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 72
+            },
+            {
+              "text": "击败守阶小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 66
+            },
+            {
+              "text": "击败守阶小妖 · 损失 10 生命，获得 2 金。",
+              "kind": "combat",
+              "turn": 42
+            },
+            {
+              "text": "获得青玉钥匙 · 开启一扇青门；门永久消失。",
+              "kind": "item",
+              "turn": 38
+            }
+          ],
+          "elixirs": 2,
+          "orbs": 1,
+          "turn": 582,
+          "defeated": false,
+          "won": false,
+          "ending": null,
+          "bossPlan": "direct",
+          "settings": {
+            "quickZero": false,
+            "showDamage": true,
+            "motion": "standard",
+            "screenShake": false,
+            "music": false,
+            "sfx": false
+          },
+          "purchases": {
+            "atk": 2,
+            "def": 1,
+            "heal": 0
+          },
+          "startedAt": 1792979828929,
+          "kills": 18,
+          "walked": {
+            "0:10:19": true,
+            "0:10:18": true,
+            "0:9:18": true,
+            "0:8:18": true,
+            "0:8:17": true,
+            "0:7:17": true,
+            "0:6:17": true,
+            "0:5:17": true,
+            "0:4:17": true,
+            "0:4:16": true,
+            "0:4:15": true,
+            "0:4:14": true,
+            "0:4:13": true,
+            "0:4:12": true,
+            "0:4:11": true,
+            "0:4:10": true,
+            "0:4:9": true,
+            "0:5:9": true,
+            "0:5:8": true,
+            "0:6:8": true,
+            "0:7:8": true,
+            "0:7:7": true,
+            "0:7:6": true,
+            "0:7:5": true,
+            "0:7:4": true,
+            "0:7:3": true,
+            "0:8:3": true,
+            "0:9:3": true,
+            "0:9:2": true,
+            "0:10:2": true,
+            "0:11:2": true,
+            "0:12:2": true,
+            "0:13:2": true,
+            "0:14:2": true,
+            "0:15:2": true,
+            "0:16:2": true,
+            "0:17:2": true,
+            "0:17:3": true,
+            "0:17:4": true,
+            "0:17:5": true,
+            "0:17:6": true,
+            "0:17:7": true,
+            "0:11:3": true,
+            "0:10:3": true,
+            "0:10:4": true,
+            "0:10:5": true,
+            "0:10:6": true,
+            "0:10:7": true,
+            "0:10:8": true,
+            "0:9:8": true,
+            "0:8:8": true,
+            "0:6:9": true,
+            "0:6:10": true,
+            "0:6:11": true,
+            "0:6:12": true,
+            "0:6:13": true,
+            "0:6:14": true,
+            "0:6:3": true,
+            "0:5:3": true,
+            "0:4:3": true,
+            "0:3:3": true,
+            "0:11:6": true,
+            "0:12:6": true,
+            "0:12:5": true,
+            "0:12:4": true,
+            "0:14:1": true,
+            "0:15:1": true,
+            "0:16:1": true,
+            "0:17:1": true,
+            "1:10:19": true,
+            "1:10:18": true,
+            "1:10:17": true,
+            "1:10:16": true,
+            "1:10:15": true,
+            "1:10:14": true,
+            "1:10:13": true,
+            "1:10:12": true,
+            "1:10:11": true,
+            "1:10:10": true,
+            "1:10:9": true,
+            "1:10:8": true,
+            "1:11:8": true,
+            "1:12:8": true,
+            "1:12:9": true,
+            "1:12:10": true,
+            "1:12:11": true,
+            "1:13:11": true,
+            "1:14:11": true,
+            "1:15:11": true,
+            "1:16:11": true,
+            "1:17:11": true,
+            "1:11:10": true,
+            "1:9:10": true,
+            "1:8:10": true,
+            "1:7:10": true,
+            "1:6:10": true,
+            "1:5:10": true,
+            "1:4:10": true,
+            "1:7:11": true,
+            "1:7:12": true,
+            "1:7:13": true,
+            "1:7:14": true,
+            "1:7:15": true,
+            "1:7:16": true,
+            "1:8:16": true,
+            "1:9:16": true,
+            "1:5:9": true,
+            "1:5:8": true,
+            "1:11:11": true,
+            "1:15:10": true,
+            "1:15:9": true,
+            "1:16:9": true,
+            "1:17:9": true,
+            "1:17:10": true,
+            "1:9:11": true,
+            "1:8:11": true,
+            "1:6:11": true,
+            "1:5:11": true,
+            "1:5:12": true,
+            "1:5:13": true,
+            "1:5:14": true,
+            "1:6:16": true,
+            "1:5:16": true,
+            "1:4:16": true,
+            "1:3:16": true,
+            "1:11:16": true,
+            "1:12:16": true,
+            "1:13:16": true,
+            "1:14:16": true,
+            "1:15:16": true,
+            "1:16:16": true,
+            "1:17:16": true,
+            "1:13:17": true,
+            "1:13:18": true,
+            "1:12:18": true,
+            "1:11:18": true,
+            "1:5:7": true,
+            "1:5:6": true,
+            "1:5:5": true,
+            "1:5:4": true,
+            "1:6:6": true,
+            "1:7:6": true,
+            "1:8:6": true,
+            "1:8:5": true,
+            "1:8:4": true,
+            "1:8:3": true,
+            "1:9:3": true,
+            "1:10:3": true,
+            "1:11:3": true,
+            "1:12:3": true,
+            "1:13:3": true,
+            "1:14:3": true,
+            "1:15:3": true,
+            "1:15:2": true,
+            "1:15:1": true,
+            "1:16:1": true,
+            "1:17:1": true,
+            "2:10:19": true,
+            "2:10:18": true,
+            "2:9:18": true,
+            "2:8:18": true,
+            "2:8:17": true,
+            "2:9:17": true,
+            "2:10:17": true,
+            "2:11:17": true,
+            "2:12:17": true,
+            "2:12:18": true,
+            "2:11:18": true,
+            "2:7:18": true,
+            "2:6:18": true,
+            "2:5:18": true,
+            "2:4:18": true,
+            "2:4:17": true,
+            "2:4:16": true,
+            "2:4:15": true,
+            "2:4:14": true,
+            "2:4:13": true,
+            "2:4:12": true,
+            "2:4:11": true,
+            "2:3:11": true,
+            "2:13:18": true,
+            "2:14:18": true,
+            "2:15:18": true,
+            "2:16:18": true,
+            "2:17:18": true,
+            "2:17:17": true,
+            "2:17:16": true,
+            "2:17:15": true,
+            "2:17:14": true,
+            "2:17:13": true,
+            "2:17:12": true,
+            "2:17:11": true,
+            "2:17:10": true,
+            "2:17:9": true,
+            "2:16:9": true,
+            "2:15:9": true,
+            "2:14:9": true,
+            "2:13:9": true,
+            "2:12:9": true,
+            "2:12:8": true,
+            "2:12:7": true,
+            "2:11:7": true,
+            "2:10:7": true,
+            "2:4:10": true,
+            "2:4:9": true,
+            "2:17:8": true,
+            "2:12:10": true,
+            "2:11:10": true,
+            "2:11:9": true,
+            "2:11:8": true,
+            "2:10:6": true,
+            "2:10:5": true,
+            "2:10:4": true,
+            "2:11:4": true,
+            "2:9:4": true,
+            "2:9:3": true,
+            "2:9:2": true,
+            "2:10:2": true,
+            "2:11:2": true,
+            "2:12:2": true,
+            "2:12:3": true,
+            "2:13:3": true,
+            "2:14:3": true,
+            "2:15:3": true,
+            "2:16:3": true,
+            "2:17:3": true,
+            "2:11:3": true,
+            "2:10:3": true,
+            "2:10:8": true,
+            "2:10:9": true,
+            "2:10:10": true,
+            "2:10:11": true,
+            "2:9:11": true,
+            "2:8:11": true,
+            "2:8:12": true,
+            "2:8:13": true,
+            "2:8:10": true,
+            "2:8:9": true,
+            "2:9:9": true,
+            "2:16:10": true,
+            "2:15:10": true,
+            "2:12:11": true,
+            "2:11:11": true,
+            "2:10:12": true,
+            "2:10:13": true
+          },
+          "outcomes": [
+            {
+              "kind": "choice",
+              "title": "已定：留玉护身 · 防御 +2",
+              "detail": "立即获得原青玉的防御 +2。宝龛北门保持关闭，想取定海铁仍须挑战镇海猿卫；也可以先上楼，以后再来。",
+              "targets": [],
+              "deltas": [
+                {
+                  "key": "def",
+                  "label": "防御",
+                  "before": 10,
+                  "after": 12,
+                  "amount": 2
+                }
+              ],
+              "floor": 1,
+              "turn": 173
+            },
+            {
+              "kind": "seal",
+              "title": "石生心印已觉醒",
+              "detail": "架桥已醒，旧断口可以重新利用。",
+              "targets": [],
+              "deltas": [
+                {
+                  "key": "hp",
+                  "label": "生命",
+                  "before": 502,
+                  "after": 602,
+                  "amount": 100
+                }
+              ],
+              "floor": 2,
+              "turn": 498
+            },
+            {
+              "kind": "chapter",
+              "title": "第 1 回已完成",
+              "detail": "架桥已醒，下一回可接断路，也可回看山门。",
+              "targets": [],
+              "deltas": [
+                {
+                  "key": "hp",
+                  "label": "生命",
+                  "before": 620,
+                  "after": 642,
+                  "amount": 22
+                },
+                {
+                  "key": "atk",
+                  "label": "攻击",
+                  "before": 24,
+                  "after": 33,
+                  "amount": 9
+                },
+                {
+                  "key": "def",
+                  "label": "防御",
+                  "before": 10,
+                  "after": 15,
+                  "amount": 5
+                },
+                {
+                  "key": "coins",
+                  "label": "功德",
+                  "before": 0,
+                  "after": 7,
+                  "amount": 7
+                },
+                {
+                  "key": "elixirs",
+                  "label": "蟠桃",
+                  "before": 1,
+                  "after": 2,
+                  "amount": 1
+                }
+              ],
+              "floor": 3,
+              "turn": 582,
+              "chapterSpan": {
+                "fromFloor": 0,
+                "fromTurn": 0,
+                "complete": false
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "returnPoint": null
+  }
+}

@@ -17,6 +17,8 @@
 !/audits/v30-new-hero-629.png
 !/audits/v30-new-hero-character.png
 !/audits/v30-locked-style-release.png
+!/audits/v31-material-locked-1236.png
+!/audits/v31-material-settled-offering.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

@@ -41,7 +41,7 @@ for(const variant of ['baseline','new']) {
  html=html.replace('<head>','<head>\n  <script src="js/study-storage.js?v=24" data-variant="'+variant+'"></script>');
  if(variant==='new')html=html.replace('js/study-storage.js?v=24','js/study-storage.js?v=30');
  const ui=variant==='baseline'?backup+'/js/ui.js':'js/ui.js';
- html=html.replace(new RegExp('  <script defer src="'+ui.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\?v=\\d+"></script>'),`  <script defer src="${out}/fixtures.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="js/study-setup.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="${ui}?v=${variant==='baseline'?22:30}"></script>\n  <script defer src="js/study-entry.js?v=24"></script>`);
+ html=html.replace(new RegExp('  <script defer src="'+ui.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\?v=\\d+"></script>'),`  <script defer src="${out}/fixtures.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="js/study-setup.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="${ui}?v=${variant==='baseline'?22:31}"></script>\n  <script defer src="js/study-entry.js?v=24"></script>`);
  assert.ok(html.includes('js/study-entry.js')&&html.indexOf('js/study-setup.js')<html.indexOf(ui+'?'),'setup precedes runtime UI');
  write('playtest-v23-'+variant+'.html',html);
 }
