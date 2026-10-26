@@ -1,0 +1,901 @@
+{
+  "checks": [
+    "material one scene forecast replaces the full-screen planner and duplicate prelude at four PC viewports",
+    "material assign, exchange, remove, reset and unaffordable preparation are previews only; Esc closes optional tactics",
+    "direct f performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources",
+    "mural one scene forecast replaces the full-screen planner and duplicate prelude at four PC viewports",
+    "mural assign, exchange, remove, reset and unaffordable preparation are previews only; Esc closes optional tactics",
+    "direct f performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources",
+    "anchor button performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources",
+    "echoes button performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources",
+    "reduced motion uses a static final beat with the same settled battle",
+    "direct button performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources",
+    "direct button performs one real settlement, three-phase film is read-only, skip/repeat and undo preserve resources"
+  ],
+  "layouts": [
+    {
+      "label": "material default 1645",
+      "main": {
+        "x": 942.03125,
+        "y": 516.234375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 912.03125,
+        "y": 258.375,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1645,
+        "height": 1149
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material default 1280",
+      "main": {
+        "x": 744.328125,
+        "y": 415.96875,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 714.328125,
+        "y": 158.109375,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material default 716",
+      "main": {
+        "x": 223,
+        "y": 614.484375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 193,
+        "y": 342.625,
+        "width": 330,
+        "height": 407.859375
+      },
+      "viewport": {
+        "width": 716,
+        "height": 902
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 407.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material default 629",
+      "main": {
+        "x": 319,
+        "y": 436.859375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 289,
+        "y": 165,
+        "width": 330,
+        "height": 407.859375
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 407.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material arranged",
+      "main": {
+        "x": 880,
+        "y": 337.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 850,
+        "y": 141,
+        "width": 420,
+        "height": 520
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 28,
+          "width": 420,
+          "height": 520
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material arranged 629",
+      "main": {
+        "x": 40,
+        "y": 383.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 10,
+        "y": 173,
+        "width": 420,
+        "height": 448
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 19,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "material scrolled 629",
+      "main": {
+        "x": 40,
+        "y": 383.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 10,
+        "y": 173,
+        "width": 420,
+        "height": 448
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 15,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural default 1645",
+      "main": {
+        "x": 946.828125,
+        "y": 534.359375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 916.828125,
+        "y": 276.5,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1645,
+        "height": 1149
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural default 1280",
+      "main": {
+        "x": 740.0625,
+        "y": 430.0625,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 710.0625,
+        "y": 172.203125,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural default 716",
+      "main": {
+        "x": 223,
+        "y": 631.859375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 193,
+        "y": 360,
+        "width": 330,
+        "height": 407.859375
+      },
+      "viewport": {
+        "width": 716,
+        "height": 902
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 407.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural default 629",
+      "main": {
+        "x": 319,
+        "y": 436.859375,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 289,
+        "y": 165,
+        "width": 330,
+        "height": 407.859375
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 407.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural arranged",
+      "main": {
+        "x": 880,
+        "y": 337.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 850,
+        "y": 141,
+        "width": 420,
+        "height": 520
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 28,
+          "width": 420,
+          "height": 520
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural arranged 629",
+      "main": {
+        "x": 40,
+        "y": 383.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 10,
+        "y": 173,
+        "width": 420,
+        "height": 448
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 19,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "mural scrolled 629",
+      "main": {
+        "x": 40,
+        "y": 383.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 10,
+        "y": 173,
+        "width": 420,
+        "height": 448
+      },
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 15,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "paid anchor",
+      "main": {
+        "x": 880,
+        "y": 337.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 850,
+        "y": 141,
+        "width": 420,
+        "height": 520
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 28,
+          "width": 420,
+          "height": 520
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "paid echoes",
+      "main": {
+        "x": 880,
+        "y": 337.96875,
+        "width": 346,
+        "height": 49
+      },
+      "frame": {
+        "x": 850,
+        "y": 141,
+        "width": 420,
+        "height": 520
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection expanded",
+          "glyphs": 28,
+          "width": 420,
+          "height": 520
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "study",
+      "main": {
+        "x": 744.328125,
+        "y": 415.96875,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 714.328125,
+        "y": 158.109375,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "label": "offline",
+      "main": {
+        "x": 744.328125,
+        "y": 415.96875,
+        "width": 256,
+        "height": 49
+      },
+      "frame": {
+        "x": 714.328125,
+        "y": 158.109375,
+        "width": 330,
+        "height": 386.859375
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy is-final has-selection",
+          "glyphs": 12,
+          "width": 330,
+          "height": 386.859375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v39-material-forecast-1645.png",
+    "audits/v39-material-forecast-1280.png",
+    "audits/v39-material-forecast-716.png",
+    "audits/v39-material-forecast-629.png",
+    "audits/v39-material-arranged.png",
+    "audits/v39-material-arranged-629.png",
+    "audits/v39-duel-1.png",
+    "audits/v39-duel-2.png",
+    "audits/v39-duel-3.png",
+    "audits/v39-mural-forecast-1645.png",
+    "audits/v39-mural-forecast-1280.png",
+    "audits/v39-mural-forecast-716.png",
+    "audits/v39-mural-forecast-629.png",
+    "audits/v39-mural-arranged.png",
+    "audits/v39-mural-arranged-629.png",
+    "audits/v39-duel-629.png",
+    "audits/v39-reduced-duel.png"
+  ],
+  "errors": [],
+  "paidSource": {
+    "trace": "tests/playthrough-v23-gold-def-anchor.json",
+    "prependedAction": {
+      "type": "step",
+      "args": [
+        "up"
+      ]
+    },
+    "prefixActions": 3843,
+    "hp": 1152,
+    "orbs": 4
+  },
+  "zeroSource": {
+    "save": "audits/v35-fixtures/boss.json",
+    "legalDetour": [
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "down"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "offerOrb",
+        "args": [
+          "coins"
+        ]
+      },
+      {
+        "type": "offerOrb",
+        "args": [
+          "coins"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "right"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "left"
+        ]
+      },
+      {
+        "type": "step",
+        "args": [
+          "up"
+        ]
+      }
+    ]
+  },
+  "passed": true
+}

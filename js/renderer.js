@@ -300,7 +300,7 @@
       ctx.textAlign='center';ctx.textBaseline='middle';ctx.font=`bold ${fontSize}px ui-monospace, monospace`;
       const overlap=(a,b)=>Math.max(0,Math.min(a.x+a.w,b.x+b.w)-Math.max(a.x,b.x))*Math.max(0,Math.min(a.y+a.h,b.y+b.h)-Math.max(a.y,b.y));
       const occupied=entities.map(e=>this.anchorFor(e.x,e.y)).filter(a=>a.ready&&a.visible),placed=[];
-      for(const e of entities){if(e.type!=='enemy'||e.x<v.x||e.x>=v.x+v.w||e.y<v.y||e.y>=v.y+v.h)continue;let p;try{p=this.engine.preview(e.enemy);}catch(_){continue;}if(!p)continue;
+      for(const e of entities){if(e.type!=='enemy'||e.x<v.x||e.x>=v.x+v.w||e.y<v.y||e.y>=v.y+v.h)continue;let p;try{const draft=this.finalDraft;p=this.engine.preview(e.enemy,draft?.floor===this.s.floor&&draft.turn===this.s.turn&&draft.entityId===e.id?draft.options:undefined);}catch(_){continue;}if(!p)continue;
         const text=p.possible===false?(this.overview?'×':'破防不足'):`−${p.damage??'?'}`,width=Math.max(this.overview?18:27,ctx.measureText(text).width+7),height=fontSize+3,anchor=this.anchorFor(e.x,e.y),body=anchor.bounds;
         const centers=this.smoothing()&&anchor.ready?[[body.x+body.w/2,body.y-height/2-3],[body.x+body.w+width/2+4,body.y+height/2],[body.x-width/2-4,body.y+height/2]]:[[v.offsetX+(e.x-v.x+.5)*scale,v.offsetY+(e.y-v.y+.91)*scale]];
         const candidates=centers.map(([cx,cy],index)=>{const box={x:clamp(cx-width/2,3,v.cssWidth-width-3),y:clamp(cy-height/2,3,v.cssHeight-height-3),w:width,h:height};const score=occupied.reduce((sum,a)=>sum+overlap(box,a.bounds)+overlap(box,a.footprint||{x:a.foot.x-scale*.3,y:a.foot.y-scale*.12,w:scale*.6,h:scale*.24})*8,0)+placed.reduce((sum,b)=>sum+overlap(box,b)*4,0);return {...box,score,index};});

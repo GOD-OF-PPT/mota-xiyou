@@ -1,14 +1,31 @@
-/* A dedicated encounter scene. The map and simulation remain behind it. */
-.final-battle{position:fixed;inset:0;z-index:48;background:radial-gradient(ellipse at 50% 34%,#211b28,#070d12 76%);color:#eadcc0;display:flex;flex-direction:column;padding:20px max(24px,calc((100vw - 1240px)/2));font-family:var(--sans)}
-.final-battle[hidden]{display:none}.final-battle button{font:inherit;color:inherit;cursor:pointer}.final-battle button:focus-visible{outline:2px solid #ead08a;outline-offset:3px}.final-battle button:disabled{cursor:default;color:#b5a99b}
-.final-battle header{display:flex;align-items:center;justify-content:space-between;gap:20px;z-index:1;flex:none}.final-battle h2{margin:2px 0;font:30px/1.3 var(--serif);letter-spacing:4px}.final-battle header small{font-size:11px;letter-spacing:3px;color:#cfad75}.final-battle header span{font:14px var(--mono);color:#d6bc8b}.final-battle header button{background:none;border:1px solid #9b825744;padding:9px 14px;min-height:40px}
-.final-stage{position:relative;flex:1 1 0;min-height:0;pointer-events:none;width:100%;height:0}
-.final-planner{position:relative;margin-top:0;flex:none;display:grid;gap:10px;z-index:1;max-height:calc(100vh - 90px)}
-.final-intro{margin:0;font:13px/1.5 var(--sans);color:#d9c9ad;text-align:center}.final-phase-note{margin:0;color:#dbc8ac;font:13px/1.5 var(--sans);text-align:center;min-height:20px}
-.final-phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:780px;width:100%;margin:0 auto}.final-phase{display:grid;gap:3px;text-align:left;padding:10px 14px;background:linear-gradient(140deg,#142024eb,#100d1be8);border:1px solid #98744b55;border-top:2px solid #8f7557;min-width:0}.final-phase.selected{border-color:#d4b679;background:linear-gradient(140deg,#47372bdf,#1b1824ef)}.final-phase small{font:11px/1.4 var(--sans);color:#c2b396}.final-phase b{font:18px/1.5 var(--serif)}.final-phase span{font-size:12px;color:#c5c4b1}.final-phase strong{font:14px/1.5 var(--mono);color:#edc686}
-.final-seals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.final-seals button{position:relative;border:1px solid #80928344;background:#11211fea;padding:8px 10px 8px 44px;display:grid;gap:3px;text-align:left;min-width:0;min-height:78px}.final-seals button[aria-pressed=true]{background:#344130ef;border-color:#dac687}.final-seals i{position:absolute;left:12px;top:20px;font:25px var(--serif);color:#d9b66d;font-style:normal}.final-seals kbd{position:absolute;left:8px;top:5px;font:10px var(--mono);color:#c6b681}.final-seals b{font:16px var(--serif)}.final-seals span{font:12px/1.4 var(--sans)}.final-seals small{font:11px/1.4 var(--sans);color:#bcc5ac}
-.final-preparation{display:grid;grid-template-columns:minmax(270px,1fr) minmax(0,1fr);gap:16px;align-items:center}.final-preparation>p{margin:0;font:12px/1.5 var(--sans);color:#c3bda9}.final-plans{display:flex;gap:8px}.final-plans button{display:flex;flex-direction:column;align-items:center;gap:4px;border:1px solid #a68d5544;background:#0a1719e8;padding:8px 12px;flex:1;min-width:0}.final-plans button[aria-pressed=true]{border-color:#d2ad6b;background:#47371ce6}.final-plans b{font:14px var(--serif)}.final-plans span{font:11px var(--sans);color:#d2bd91}
-.final-battle footer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 16px;align-items:center;border-top:1px solid #997d5444;padding-top:10px}.final-battle footer strong{font:17px/1.5 var(--serif);color:#f3d59a}.final-battle footer small{font:11px/1.5 var(--sans);color:#bbb9a8}.final-battle footer>div{display:flex;flex-direction:column;gap:3px}.final-battle footer button{min-height:42px;border:1px solid #ae8a4844;background:none;padding:8px 13px}.final-battle [data-final-commit]{background:linear-gradient(120deg,#84602c,#4e3a27);border:1px solid #d9b46d;padding:10px 25px;font:17px var(--serif)}.final-battle [data-final-commit]:disabled{background:#242421;border-color:#77765f55}.final-keys{grid-column:1/-1;margin:3px 0 0;text-align:center;font:11px/1.4 var(--sans);color:#b5b4a1}.final-accessible{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-body[data-final-battle=true] #journey-guide,body[data-final-battle=true] #game-shell .context-card,body[data-final-battle=true] #story-dock,body[data-final-battle=true] #toast{display:none!important}
-html[data-art-style=mural] .final-battle{background:radial-gradient(ellipse at 50% 34%,#234738,#0a262a 76%)}
-@media(max-height:800px){.final-battle{padding-top:10px;padding-bottom:8px}.final-battle h2{font-size:24px}.final-planner{gap:6px}.final-phase{padding:7px 12px;gap:1px}.final-phase b{font-size:16px}.final-seals button{padding-top:5px;padding-bottom:5px;min-height:68px}.final-preparation>p{font-size:11px}.final-plans button{padding:6px 8px}.final-battle footer{padding-top:6px}.final-battle footer strong{font-size:15px}}
+/* Final tactics are annotations on the existing scene folio, not a second screen. */
+body:has(.context-card.is-final.has-selection:not(.offscreen)) #journey-guide{visibility:hidden;pointer-events:none}
+#game-shell .final-tactics .final-rule{font:12px/1.7 var(--sans);color:#67583f;margin:0 0 9px;overflow-wrap:anywhere}
+#game-shell .final-phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-bottom:9px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-phases button{display:grid;gap:3px;padding:7px 3px;min-width:0;min-height:70px;text-align:center;font:14px/1.5 var(--serif);border:0!important;border-block:1px solid #9c775244!important;background:none!important;color:#75432a!important;box-shadow:none}
+#game-shell .final-phases :is(small,span){font:11px/1.6 var(--sans);color:#67583f}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-phases button[aria-pressed=true]{border-color:#953e28!important;background:#9b55291a!important}
+#game-shell .final-seals{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-seals button{flex:1 1 85px;min-width:0;padding:7px 3px;min-height:38px;font:13px/1.5 var(--serif);color:#75432a!important;background:none!important;box-shadow:none;border:0!important;border-bottom:1px solid #95613977!important}
+#game-shell .final-seals kbd{padding:0;border:0;background:none;font:10px var(--mono)}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-seals button[aria-pressed=true]{color:#9e3528!important;background:#a35c2520!important}
+#game-shell .final-plan-reading>summary{font:13px/1.7 var(--serif);color:#794328;cursor:pointer;min-height:36px;padding:6px 0}
+#game-shell .final-plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:7px 0}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-plans button{min-width:0;min-height:42px;padding:5px 2px;font:13px/1.7 var(--serif);color:#75432a!important;background:none!important;box-shadow:none;border:0!important;border-bottom:1px solid #95613977!important}
+#game-shell .final-plans small{display:block;font:11px/1.5 var(--sans)}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-plans button[aria-pressed=true]{color:#9e3528!important;border-bottom:2px solid #9e3528!important}
+#game-shell .final-minor{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 10px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-minor button{min-height:32px;padding:3px 0;font:12px/1.7 var(--serif);color:#75432a!important;background:none!important;border:0!important;box-shadow:none}
+#game-shell .final-minor small{font:10px/1.6 var(--sans);color:#67583f}
+/* Only the resolved duel takes the full stage. One phase and one impact at a time. */
+#ability-cinematic[data-ability=boss] .cast-heading{top:5vh;left:7vw;right:7vw;display:flex;align-items:baseline;gap:20px}
+#ability-cinematic[data-ability=boss] .cast-heading small{font:12px/1.6 var(--serif);letter-spacing:4px}
+html #ability-cinematic[data-ability=boss] .cast-heading h2{font:clamp(25px,3vw,42px)/1.5 var(--serif);margin:0;letter-spacing:.16em}
+#ability-cinematic[data-ability=boss] .cast-heading>p{display:none}
+#ability-cinematic[data-ability=boss] .film-dialogue{left:7vw;bottom:16vh;width:86vw;text-align:center}
+#ability-cinematic[data-ability=boss] .film-dialogue p{font:clamp(16px,1.6vw,22px)/1.8 var(--serif);max-width:none;margin:5px 0}
+#ability-cinematic[data-ability=boss] .film-dialogue [data-film-speaker]{font-size:12px}
+#ability-cinematic[data-ability=boss] .film-shots{justify-content:center}
+#ability-cinematic[data-ability=boss] .cast-ending{left:7vw;right:7vw;bottom:4vh}
+html #ability-cinematic[data-ability=boss] .cast-ending strong{font:14px/1.7 var(--serif);max-width:40ch}
+@media(max-width:760px){#ability-cinematic[data-ability=boss] .cast-heading{flex-direction:column;gap:2px}#ability-cinematic[data-ability=boss] .cast-ending strong{max-width:26ch;font-size:12px}#ability-cinematic[data-ability=boss] .cast-ending button{min-width:92px}}

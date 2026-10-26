@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="css/immersive.css?v=23">
   <link rel="stylesheet" href="css/repair.css?v=23">
   <link rel="stylesheet" href="css/experience.css?v=23">
-  <link rel="stylesheet" href="css/finale.css?v=23">
+  <link rel="stylesheet" href="css/finale.css?v=39">
   <link rel="stylesheet" href="css/planning.css?v=23">
   <link rel="stylesheet" href="css/trials.css?v=23">
   <link rel="stylesheet" href="css/chapter-pages.css?v=24">
-  <link rel="stylesheet" href="css/game-surfaces.css?v=25">
+  <link rel="stylesheet" href="css/game-surfaces.css?v=39">
   <link rel="stylesheet" href="css/image-ui.css?v=38">
   <link rel="stylesheet" href="css/ui-layout.css?v=38">
   <script defer src="js/world.js?v=23"></script>
@@ -31,12 +31,12 @@
   <script defer src="js/material-assets.js?v=30"></script>
   <script defer src="js/style-progress.js?v=30"></script>
   <script defer src="js/art-style.js?v=30"></script>
-  <script defer src="js/renderer.js?v=37"></script>
+  <script defer src="js/renderer.js?v=39"></script>
   <script defer src="js/audio.js?v=23"></script>
-  <script defer src="js/film-art.js?v=23"></script>
+  <script defer src="js/film-art.js?v=39"></script>
   <script defer src="js/story-director.js?v=23"></script>
-  <script defer src="js/presentation.js?v=23"></script>
-  <script defer src="js/finale.js?v=23"></script>
+  <script defer src="js/presentation.js?v=39"></script>
+  <script defer src="js/finale.js?v=39"></script>
   <script defer src="js/planning.js?v=23"></script>
   <script defer src="js/planning-ui.js?v=24"></script>
   <script defer src="js/trial-seeds.js?v=23"></script>
@@ -48,7 +48,7 @@
   <script defer src="js/ui-skins.js?v=26"></script>
   <script defer src="research/study-v23/fixtures.js?v=28"></script>
   <script defer src="js/study-setup.js?v=28"></script>
-  <script defer src="js/ui.js?v=38"></script>
+  <script defer src="js/ui.js?v=39"></script>
   <script defer src="js/study-entry.js?v=24"></script>
 </head>
 <body>
@@ -155,11 +155,6 @@
   <section id="trial-ribbon" class="trial-ribbon" hidden aria-label="当前独立试炼"><strong></strong><small></small><button>试炼与主线</button></section>
   <section id="journey-guide" class="journey-guide" aria-label="当前探索指引"><div class="journey-heading"><span>此行要事</span><small data-journey-phase></small></div><div class="journey-result" data-journey-result hidden role="status" aria-live="polite"><b></b><span></span></div><strong></strong><p data-journey-why></p><p class="journey-note" data-journey-note hidden></p><div class="journey-tools"><button data-journey-focus>标记目标 <kbd>G</kbd></button><small data-journey-help></small></div></section>
   <section id="altar-ritual" class="altar-ritual" hidden tabindex="-1" aria-label="莲灯修心"><div class="ritual-aura" aria-hidden="true"></div><div class="ritual-heading"><span>莲灯 · 修心</span><b data-ritual-coins></b></div><div class="ritual-offerings"></div><div class="ritual-base"><div class="ritual-minor"></div><footer><span data-ritual-result aria-live="polite"></span><small data-decision-keys hidden></small><button data-ritual-close>离开莲灯 <kbd>Esc</kbd></button><button data-ritual-bag>行囊 <kbd>I</kbd></button></footer><p class="ritual-shortcuts" data-ritual-help hidden>数字键使用 · 方向键切换 · Enter 执行</p></div></section>
-  <section id="final-battle" class="final-battle" hidden tabindex="-1" aria-label="心猿三相 · 布阵决战">
-    <header><div><small>十八重因果 · 最终决战</small><h2>心猿三相</h2></div><span data-final-resources></span><button data-final-close>退回莲阵 <kbd>Esc</kbd></button></header>
-    <canvas class="final-stage" aria-hidden="true"></canvas>
-    <div class="final-planner"><p class="final-intro">把一路找回的本心，化成破阵的三印。先看三相，再定落印。</p><div class="final-phases" data-final-phases></div><p class="final-phase-note" data-final-phase-note></p><div class="final-seals" data-final-seals></div><div class="final-preparation"><div class="final-plans" data-final-plans></div><p data-final-plan-note></p></div><footer><div><strong data-final-cost></strong><small data-final-extra></small></div><div><button data-final-commit>确认破阵</button><button data-final-reset>收回三印 · 免费</button></div><p class="final-keys">← → 选相 · 1 / 2 / 3 布印 · Enter 确认迎战 · Esc 返回 · 预览和取消不结算</p></footer></div><p class="final-accessible" data-final-live aria-live="polite"></p>
-  </section>
   <section id="ability-cinematic" class="ability-cinematic" hidden aria-label="神通演出"><div class="cast-heading"><small data-cast-category>大圣神通</small><h2 data-cast-title></h2><p data-cast-verse></p></div><canvas aria-hidden="true"></canvas><div class="film-dialogue" hidden><span data-film-speaker></span><p data-film-line></p><div class="film-shots" aria-label="剧情分镜进度"><i></i><i></i><i></i></div></div><div class="cast-ending"><div><span data-cast-beat></span><strong data-cast-result></strong></div><button>略过演出 <kbd>Space</kbd></button></div></section>
   <section id="story-dock" class="story-dock hidden" aria-label="塔中对白" aria-live="polite">
     <button id="story-unfold" class="story-unfold" aria-expanded="true"><span id="story-speaker">塔中回响</span><span id="story-counter"></span><span aria-hidden="true">⌃</span></button>

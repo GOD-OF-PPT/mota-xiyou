@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-26",
+  "scope": "Final boss scene forecast and resolved three-phase presentation; PC only",
+  "source": {
+    "index.html": "a430b662772b8dc8a10dc26cda054040147ea0dcd7f8db3d3a188939b0c2685f",
+    "css/finale.css": "49e453524114574beaa13989faa62d8ccaf2da039dd7882dfe91142f53eef310",
+    "css/game-surfaces.css": "5d0f97557d510fec2894576410e1f17500f538c80cae64505c86621566dc6c25",
+    "js/finale.js": "dd37f41167c2130778553f0c132f8580a055a409faa7b0353c554f22cd2ec3da",
+    "js/film-art.js": "b5280287667136188d26b83b0c4e87f3912666fab2c69bfc98da2ef9dce0e460",
+    "js/presentation.js": "3d535e46869932caaeed61de64dfcc176d0fc0c68e1f9ebb24f22b790e450ca3",
+    "js/renderer.js": "28447c13a11067e003f25f56dd125ccd4a60bcfd93f86bc6c2c4514973e815a0",
+    "js/ui.js": "9ec88edc231b7ad9559a0ae7db48fd9badac1cab6fd4461f8bf1362f12c041e3",
+    "tests/v39-final-experience-browser.cjs": "7b326efd7cdf4daca854fb61580b6c21a46317ea1b0e31a6d451c26f6fe12778"
+  },
+  "evidence": [
+    "audits/v39-final-experience.json",
+    "audits/v35-battle-focus.json"
+  ],
+  "fixtures": {
+    "audits/v39-fixtures/paid.json": "d3c0fba18d1eca42e109ed613e817600deb78e3726527a23f4802eb29a1ca935",
+    "audits/v39-fixtures/zero.json": "a064d0a6c229ecc821937270ab3af99b8f8cb07199950c98ac8c1c83376dddb8"
+  },
+  "visualReviewedIndividually": [
+    "audits/v39-material-forecast-1280.png",
+    "audits/v39-material-arranged.png",
+    "audits/v39-material-arranged-629.png",
+    "audits/v39-duel-1.png",
+    "audits/v39-duel-2.png",
+    "audits/v39-duel-629.png",
+    "audits/v39-mural-duel.png"
+  ],
+  "baselineSha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "boundaries": [
+    "No new full eighteen-floor playthrough",
+    "No human comprehension study",
+    "No new audio listening validation",
+    "Mobile and broad browser coverage deferred"
+  ],
+  "status": "pc_verified_with_documented_boundaries"
+}

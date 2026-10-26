@@ -25,6 +25,8 @@
 !/audits/v36-material-door-card.png
 !/audits/v37-material-entry-1280.png
 !/audits/v38-material-long-716.png
+!/audits/v39-material-forecast-1280.png
+!/audits/v39-duel-2.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

@@ -21,9 +21,9 @@
   const systemMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
   const settings=()=>Object.assign(engine.state.settings||(engine.state.settings={quickZero:false,showDamage:true}),localPreferences);
   const effectiveMotion=()=>systemMotion.matches?'reduced':(settings().motion||'standard');
-  const presentation=new TowerPresentation({motion:effectiveMotion,frequency:()=>castFrequency,onShot:({kind,index})=>{if(kind==='boss')audio.cue('final-phase',{phase:index});},onEntryEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();$('game-canvas').focus({preventScroll:true});if(pendingChapterSummary){journeyNote(pendingChapterSummary);pendingChapterSummary='';}},onCastEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();scheduleContext();if(finalBattle.isOpen)finalBattle.focus('[data-final-phase="0"]');else (surfaceOpen?$('modal-panel'):$('game-canvas')).focus({preventScroll:true});}});
-  let finalPreludeSeen=false,pendingChapterSummary='';
-  const finalBattle=new TowerFinale({engine,motion:effectiveMotion,onEnter:()=>{stopPath();clearSurfaces();closeCharacter();collapseStory(true);audio.setScene('finale');if(!finalPreludeSeen){finalPreludeSeen=true;presentation.showScene('confrontation',{floor:engine.state.floor,rescued:[...engine.state.rescued],choices:{...engine.state.choices},orbs:engine.state.orbs});}},onClose:()=>{lastInput=0;renderHUD();audio.setScene('planning');$('game-canvas').focus({preventScroll:true});},onCommit:ok=>{lastInput=0;if(!ok&&!engine.state.defeated)toast('局面已变化，请重新查看决战准备。');}});
+  const presentation=new TowerPresentation({motion:effectiveMotion,frequency:()=>castFrequency,onShot:({kind,index})=>{if(kind==='boss')audio.cue('final-phase',{phase:index});},onEntryEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();$('game-canvas').focus({preventScroll:true});if(pendingChapterSummary){journeyNote(pendingChapterSummary);pendingChapterSummary='';}},onCastEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();scheduleContext();(surfaceOpen?$('modal-panel'):$('game-canvas')).focus({preventScroll:true});}});
+  let pendingChapterSummary='';
+  const finalBattle=new TowerFinale({engine,onChange:selector=>{updateContext();finalBattle.focus(selector);},onLayout:scheduleContext,beforeCommit:()=>{stopPath();clearSurfaces();closeCharacter();collapseStory();renderer.skipEffects?.();},onCommit:ok=>{lastInput=0;scenePointerAfter=performance.now()+260;if(!ok&&!engine.state.defeated)toast('局面已变化，请重新查看决战准备。');}});
   const planningDesk=new TowerPlanningUI({engine,show:showSurface,close:closeSurface,notice:toast,fast:()=>settings().fastTravel!==false,setFast:value=>setPreference('fastTravel',value),history:()=>runSession.isTrial?TowerOutcomes.history(engine).filter(r=>r.turn>runSession.trial.seed.turn&&r.floor===runSession.trial.floor):(TowerOutcomes.history(engine).length?TowerOutcomes.history(engine):journey.receipts||[]),resume:()=>{resetStorySession();showGame();viewChosen=false;explorationView();renderer.focusPlayer?.();if(engine.state.won)ending(engine.state.ending);else if(engine.state.defeated)defeat();else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}});
   const trialPanel=new TowerTrialsUI({session:runSession,show:showSurface,close:closeSurface,resume:()=>{resetStorySession();planningDesk.steps=[];planningDesk.compare=[];showGame();viewChosen=false;explorationView();renderer.focusPlayer?.();viewStatus();trialPanel.updateRibbon();if(engine.state.won)ending(engine.state.ending);else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}});
   function syncRunLabels(){const active=runSession.isTrial,stale=active&&runSession.meta.rulesHash!==runSession.trial.rulesHash;$('leave-trial-start').hidden=!active;$('trial-resume-note').hidden=!stale;$('trial-resume-note').textContent=stale?'这道题已更新，可以重走新版或返回主线；旧记录会单独保留。':'';if(stale)$('continue-game').disabled=true;$('new-game').innerHTML=active?'重走本次试炼 <span>→</span>':'执棒入塔 <span>→</span>';$('continue-game').innerHTML=active?'继续独立试炼 <span>↗</span>':'继续前缘 <span>↗</span>';trialPanel.updateRibbon();}
@@ -262,7 +262,7 @@
     if(++activeStory.index>=activeStory.pages.length){skipStory();return;}renderStory();
   }
   function skipStory(){const wasTalk=!!activeStory?.isTalk;clearInterval(speechTimer);activeStory=null;renderStory();if(wasTalk)clearSceneTarget();$('game-canvas').focus({preventScroll:true});}
-  function resetStorySession(){pendingChapterSummary='';finalBattle.close(false);finalPreludeSeen=false;armedCombat=null;clearInterval(dialogueTimer);clearInterval(speechTimer);clearTimeout(whisperTimer);clearTimeout(receiptTimer);guidedRoute=null;presentation.closeCast();activeStory=null;storyCollapsed=false;sceneDetail=null;pendingStoryTarget=null;lastSpeechKey='';renderStory();document.querySelector('[data-journey-note]').hidden=true;}
+  function resetStorySession(){pendingChapterSummary='';finalBattle.close(false);armedCombat=null;clearInterval(dialogueTimer);clearInterval(speechTimer);clearTimeout(whisperTimer);clearTimeout(receiptTimer);guidedRoute=null;presentation.closeCast();activeStory=null;storyCollapsed=false;sceneDetail=null;pendingStoryTarget=null;lastSpeechKey='';renderStory();document.querySelector('[data-journey-note]').hidden=true;}
 
   function showGame(){started=true;$('start-screen').classList.add('hidden');$('game-shell').classList.remove('hidden');document.body.dataset.sceneStarted='true';renderer.resize?.();syncSceneGuard();renderHUD();trialPanel.updateRibbon();}
   function begin(){if(assetsLoading)return;clearSurfaces();resetStorySession();presentation.resetJourney();showGame();engine.newGame();viewChosen=false;explorationView();renderer.focusPlayer?.();viewStatus();}
@@ -285,13 +285,13 @@
   }
   function enemyContextHTML(e){
     const s=engine.state,enemy=TowerData.enemies[e.enemy],p=engine.preview(e.enemy),near=engine.distance(e)===1,boss=enemy.trait==='boss',locked=boss&&s.relics.length<5;
+    if(boss&&near&&!locked)return finalBattle.markup(e);
     const route=!near&&engine.findPath(e.x,e.y),steps=route?Math.max(0,route.length-1):null,unsafe=!p.possible||!p.survive||p.canAfford===false||locked;
     const previous=$('context-body').querySelector('[data-battle-details]'),open=!!sceneDetail||previous?.dataset.battleTarget===e.id&&previous.open;
     const role={optional:'可绕行',guardian:'守关',treasure:'守宝'}[e.role]||'',status=!p.possible?'尚未破防':locked?'心印未齐':p.canAfford===false?'凝息珠不足':p.survive?(p.damage===0?'本战无损':'可以取胜'):'本战会力竭';
     const health=p.possible?`生命 ${s.hp} → ${Math.max(0,s.hp-p.damage)}${!p.survive?' · 力竭':''}`:'先提升攻击，再考虑迎战';
     let primary;
-    if(boss&&near&&!locked)primary='<button class="context-button" data-context="final-battle">进入决战布阵 <kbd>F</kbd></button>';
-    else if(unsafe)primary='<button class="context-button" data-context="avoid-battle">暂避此战 <kbd>Esc</kbd></button>';
+    if(unsafe)primary='<button class="context-button" data-context="avoid-battle">暂避此战 <kbd>Esc</kbd></button>';
     else primary=`<button class="context-button" data-context="${near?'engage':'approach-enemy'}" ${!near&&steps===null?'disabled':''}>${near?'迎战 <kbd>F</kbd>':steps===null?'先打通接近路线':`走近守卫 · ${steps} 步`}</button>`;
     const plan=boss?engine.bossOptions().find(o=>o.id===s.bossPlan):null;
     const direct=near&&p.possible&&p.canAfford!==false&&!locked&&(unsafe||boss)?`<button class="scene-rule-button danger-engage" data-context="engage">${p.survive?'按当前准备直接迎战':'仍要迎战 · 会力竭'}</button>`:'';
@@ -310,7 +310,7 @@
   function confirmCombat(e,source='button'){
     if(!e||!engine.isCurrent(e))return;if(engine.distance(e)!==1){toast('先走近守卫，再确认迎战。');return;}
     const enemy=TowerData.enemies[e.enemy],p=engine.preview(e.enemy);
-    if(enemy.trait==='boss'&&source==='keyboard'&&engine.state.relics.length>=5){finalBattle.open(e);return;}
+    if(enemy.trait==='boss'&&engine.state.relics.length>=5){finalBattle.prepare(e);finalBattle.commit(source==='button');return;}
     if(!p.possible){toast('尚不能破防。先调整成长或路线。');return;}
     if(enemy.trait==='boss'&&engine.state.relics.length<5){toast('五重心印尚未齐聚。');return;}
     if(p.canAfford===false){toast('当前凝息珠不足，换一种临战准备。');return;}
@@ -563,7 +563,7 @@
     ];
     for(const candidate of candidates.slice()){for(const obstacle of [...obstacles,playerBounds,bounds]){if(!rectOverlap({...candidate,w,h},obstacle))continue;candidates.push({...candidate,x:obstacle.x+obstacle.w+8,bias:candidate.bias+5},{...candidate,x:obstacle.x-w-8,bias:candidate.bias+5},{...candidate,y:obstacle.y-h-8,bias:candidate.bias+5},{...candidate,y:obstacle.y+obstacle.h+8,bias:candidate.bias+5});}}
     // Expanded reading in a narrow PC pane must begin below the survival HUD.
-    const readingTop=card.classList.contains('expanded')&&innerWidth<=760?Math.max(10,...[...document.querySelectorAll('.hud-vitals,.header-tools,.floor-header')].filter(n=>n.checkVisibility({checkVisibilityCSS:true})).map(n=>n.getBoundingClientRect().bottom+10)):10;
+    const readingTop=card.classList.contains('expanded')&&(innerWidth<=760||card.classList.contains('is-final'))?Math.max(10,...[...document.querySelectorAll('.hud-vitals,.header-tools,.floor-header')].filter(n=>n.checkVisibility({checkVisibilityCSS:true})).map(n=>n.getBoundingClientRect().bottom+10)):10;
     const scored=candidates.map(candidate=>{
       const x=Math.max(10,Math.min(innerWidth-w-10,candidate.x)),y=Math.max(readingTop,Math.min(innerHeight-h-10,candidate.y)),rect={x,y,w,h};
       const targetPenalty=rectOverlap(rect,bounds)*55,playerPenalty=rectOverlap(rect,playerBounds)*50,hudPenalty=obstacles.reduce((total,obstacle)=>total+rectOverlap(rect,obstacle)*28,0);
@@ -693,9 +693,12 @@
     if(battleDetails&&sceneDetail){battleReadingObserver=new ResizeObserver(revealBattleReading);battleReadingObserver.observe(battleDetails.querySelector('.combat-details-body'));}
     const sigil=document.querySelector('.context-card'),targetKey=sel?`${s.floor}:${selectedEntity?.id||sel.x+','+sel.y}`:'';document.body.dataset.target=targetKey?'true':'false';if(sigil){sigil.dataset.sigil=selectedEntity?.type==='enemy'?'观':['npc','rescue','monument'].includes(selectedEntity?.type)?'问':['fragment','treasure','item','chest'].includes(selectedEntity?.type)?'得':'启';if(targetKey&&targetKey!==lastSigilTarget){lastSigilTarget=targetKey;sigil.classList.remove('sigil-enter');void sigil.offsetWidth;sigil.classList.add('sigil-enter');}if(!targetKey)lastSigilTarget='';}
     document.querySelector('.context-card')?.classList.toggle('is-enemy',selectedEntity?.type==='enemy');
+    document.querySelector('.context-card')?.classList.toggle('is-final',!!$('context-body').querySelector('[data-final-toggle]'));
     document.querySelector('.context-card')?.classList.toggle('is-door',selectedEntity?.type==='door');
     document.querySelector('.context-card')?.classList.toggle('is-chest',['chest','cache'].includes(selectedEntity?.type));
     document.querySelector('.context-card')?.classList.toggle('has-selection',!!sel&&(!!selectedEntity||['~','=','w'].includes(selectedTile)));
+    finalBattle.bind($('context-body'));
+    renderer.finalDraft=$('context-body').querySelector('[data-final-toggle]')?{floor:s.floor,turn:s.turn,entityId:selectedEntity.id,options:{bossPlan:finalBattle.plan,bossSeals:[...finalBattle.seals]}}:null;
     bindFocus($('context-body'));
     if(engine.selection&&TowerPlanning.targets(engine).some(t=>t.x===engine.selection.x&&t.y===engine.selection.y&&(selectedEntity?t.id===selectedEntity.id:!t.id)))($('context-body').querySelector('.combat-details-body,.door-details')||$('context-body')).insertAdjacentHTML('beforeend',`<button class="scene-rule-button" data-plan-mark>${enemyTarget||selectedEntity?.type==='door'?'加入推演':'推演此处 · T'}</button>`);
     $('context-body').querySelector('[data-plan-mark]')?.addEventListener('click',()=>planningDesk.mark(engine.selection.x,engine.selection.y));
@@ -724,7 +727,6 @@
       else if(a==='collect'&&e)approach(e,()=>{},true);
       else if(a==='rules'&&e)showBattleRules(e);
       else if(a==='plans'&&e)showBossPreparation(e);
-      else if(a==='final-battle'&&e){if(!finalBattle.open(e))toast('先走近心猿，并集齐五重心印。');}
       else if(a==='formula'&&e){calculationOpen=true;updateContext();}
       else if(a==='engage'&&e)confirmCombat(e);
       else if(a==='avoid-battle'){clearSceneTarget();$('game-canvas').focus({preventScroll:true});}
@@ -834,7 +836,7 @@
     const [dx,dy]=TowerRules.directions[s.facing],here=engine.getEntity(s.x,s.y),front=engine.getEntity(s.x+dx,s.y+dy);
     const selected=sel&&engine.getEntity(sel.x,sel.y);
     const e=selected&&engine.distance(selected)<=1?selected:here||front;
-    if(e){if(e.type==='enemy'){if(TowerData.enemies[e.enemy]?.trait==='boss'&&s.relics.length>=5){engine.select(e.x,e.y);finalBattle.open(e);}else if(selected?.id===e.id)confirmCombat(e,'keyboard');else combat(e);}else if(e.type==='door'&&selected?.id===e.id)door(e);else if(e.type==='altar'&&atAltar(e))altar();else if(e.type==='npc'||e.type==='monument'){engine.select(e.x,e.y);talk(e);}else engine.interact(e);return;}
+    if(e){if(e.type==='enemy'){if(selected?.id===e.id)confirmCombat(e,'keyboard');else combat(e);}else if(e.type==='door'&&selected?.id===e.id)door(e);else if(e.type==='altar'&&atAltar(e))altar();else if(e.type==='npc'||e.type==='monument'){engine.select(e.x,e.y);talk(e);}else engine.interact(e);return;}
     const x=s.x+dx,y=s.y+dy,tile=engine.getTile(x,y);
     if(tile==='~')cast('staff',x,y);else if(tile==='=')cast('morph',x,y);else toast('此处没有可交互的目标。先点选机关、阶梯或莲灯。');
   }
@@ -1001,7 +1003,6 @@
   document.querySelector('.game-brand')?.addEventListener('click',ev=>{ev.preventDefault();returnTitle();});$('btn-title').onclick=returnTitle;
   document.addEventListener('pointerdown',ev=>{const menu=$('game-toolbox');if(menu?.open&&!menu.contains(ev.target))menu.open=false;const picker=$('style-picker');if(!ev.target.closest('.style-control')){picker.classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');}});
   document.addEventListener('click',ev=>{
-    if(finalBattle.isOpen&&!presentation.castOpen&&!ev.target.closest('#final-battle')){ev.preventDefault();ev.stopImmediatePropagation();return;}
     if(performance.now()<scenePointerAfter&&ev.target.closest('#game-canvas')||presentation.castOpen&&!ev.target.closest('#ability-cinematic')){ev.preventDefault();ev.stopImmediatePropagation();return;}
     if(ritualOpen&&!ev.target.closest('#altar-ritual')){ev.preventDefault();ev.stopImmediatePropagation();closeRitual();}
   },true);

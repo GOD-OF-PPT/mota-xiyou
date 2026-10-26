@@ -58,7 +58,7 @@
     asset(ctx,id,x,y,w,h,frame=0){const a=window.TowerAssets,meta=a?.get?.(id);if(!meta)return false;return a.draw(ctx,id,x,y,w,h,Math.min(frame,(meta.frames||1)-1));}
     actor(ctx,x,y,size,frame=0,alpha=1){const e=window.TowerAssets?.get?.('actor_wukong_right');if(!e?.image)return;const b=artBounds(e,'actor_wukong_right',frame),w=b[2]-b[0],h=b[3]-b[1],width=size*w/h;ctx.save();ctx.globalAlpha=alpha;ctx.drawImage(e.image,(e.sx||0)+frame*e.sourceW+b[0],(e.sy||0)+b[1],w,h,x-width/2,y-size,width,size);ctx.restore();}
     draw(p){
-      if(window.TowerFilmArt){window.TowerFilmArt[this.filmKind==='scene'?'scene':'skill'](this.canvas,this.ability,p,{...this.detail,shotIndex:this.activeShot,shotProgress:this.shotProgress,shot:this.shots?.[this.activeShot]});return;}
+      if(window.TowerFilmArt){window.TowerFilmArt[this.filmKind==='scene'?'scene':'skill'](this.canvas,this.ability,p,{...this.detail,shotIndex:this.activeShot,shotProgress:this.shotProgress,shot:this.shots?.[this.activeShot],motion:this.motion()});return;}
       const rect=this.canvas.getBoundingClientRect(),ratio=Math.min(2,devicePixelRatio||1),w=Math.max(1,rect.width),h=Math.max(1,rect.height);if(this.canvas.width!==Math.round(w*ratio)||this.canvas.height!==Math.round(h*ratio)){this.canvas.width=Math.round(w*ratio);this.canvas.height=Math.round(h*ratio);}
       const c=this.canvas.getContext('2d');c.setTransform(ratio,0,0,ratio,0,0);c.clearRect(0,0,w,h);c.imageSmoothingEnabled=window.TowerAssets?.style==='material';
       const sx=w*.25,tx=w*.75,ground=h*.83,scale=Math.min(h*.9,190),gold='#eac378',jade='#99d3bd',red='#a74935';

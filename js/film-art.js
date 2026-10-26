@@ -58,9 +58,9 @@
     const shade=c.createLinearGradient(0,0,w,0);shade.addColorStop(0,'#071319fa');shade.addColorStop(.43,'#071319e8');shade.addColorStop(.7,'#07131922');shade.addColorStop(1,'transparent');c.fillStyle=shade;c.fillRect(0,0,w,h);
     if(p<1){c.fillStyle=`rgba(5,12,19,${(1-q)*.82})`;c.fillRect(0,0,w,h);}
   }
-  function scene(canvas,kind,p,detail){const {c,w,h,mural}=surface(canvas),chapter=clamp(Math.floor((detail.floor??17)/3),0,5);stage(c,w,h,chapter,p,mural);const x=w*.64,ground=h*.84,size=Math.min(h*.56,300),gold='#f2cf88',jade='#a4dbbd',opening=ease(p/.28),gather=ease((p-.25)/.42),finish=ease((p-.65)/.35);
+  function scene(canvas,kind,p,detail){const {c,w,h,mural}=surface(canvas),chapter=clamp(Math.floor((detail.floor??17)/3),0,5);if(kind==='boss'){bossDuel(c,w,h,detail,mural);return;}stage(c,w,h,chapter,p,mural);const x=w*.64,ground=h*.84,size=Math.min(h*.56,300),gold='#f2cf88',jade='#a4dbbd',opening=ease(p/.28),gather=ease((p-.25)/.42),finish=ease((p-.65)/.35);
     const shot=detail.shotIndex??1,local=detail.shotProgress??.5,friend=(detail.rescued||[]).includes('bajie')&&kind==='release'?'bajie':'lantern';
-    if(kind==='boss'){bossDuel(c,w,h,detail,mural);return;}
+
     if(kind==='confrontation'){
       const q=ease(local),phase=shot%3,size=Math.min(h*.75,340),foot=h*.88;art(c,'landmark_blacklotus',w*.46,foot-size*1.2,size*1.1,size*1.2,0,.42);art(c,'enemy_boss_'+phase,w*.77-size*.3-q*12,foot-size,size*.78,size,0,.88);cinematicActor(c,w*.52+q*12,foot,size*.72,shot===2?3:0);companion(c,(detail.rescued||[]).includes('bajie')?'bajie':'lantern',w*.42,foot,size*.48,.55);ring(c,w*.82,foot,size*.35,['#d87a50','#dcc187','#a49bce'][phase],.65);cutFade(c,w,h,local);return;
     }
@@ -88,29 +88,32 @@
     const v=c.createRadialGradient(x,h*.5,h*.25,x,h*.5,w*.65);v.addColorStop(0,'transparent');v.addColorStop(1,'#061018cc');c.fillStyle=v;c.fillRect(0,0,w,h);cutFade(c,w,h,local);
   }
   function bossDuel(c,w,h,detail,mural){
-    const i=Math.max(0,detail.shotIndex||0),local=detail.shotProgress??.5,phase=detail.phases?.[i],color=['#eaa371','#dfc486','#b2a2df'][i],foot=h*.86,size=Math.min(h*.64,300),impact=clamp((local-.25)/.38),dash=Math.sin(impact*Math.PI)*w*.08,sx=w*.52+dash,tx=w*.80,recoil=local>.45?Math.sin(clamp((local-.45)/.35)*Math.PI)*18:0;
-    art(c,'landmark_blacklotus',w*.43,foot-size*1.12,size*1.18,size*1.12,0,.22);ring(c,tx,foot,size*.5,color,.5);
-    const fade=local>.73?1-ease((local-.73)/.27)*.86:1;art(c,'enemy_boss_'+i,tx-size*.47+recoil,foot-size*1.08,size*.94,size*1.08,0,fade);
-    if(phase?.seal==='clone'&&local>.15&&local<.75){cinematicActor(c,sx+w*.13,foot,size*.72,3,(1-impact)*.6);ring(c,sx+w*.13,foot,size*.25,'#a4dbbd',.6);}
-    if(phase?.seal==='morph'&&local>.2&&local<.65){moth(c,sx,foot-size*.4,local,1.1);cinematicActor(c,sx,foot,size*.72,0,.14);}else cinematicActor(c,sx,foot,size*.76,local>.22&&local<.67?3:0);
-    if(local>.2&&local<.75){
-      const q=clamp((local-.2)/.55);if(i===0){stroke(c,[[tx-20,foot-size*.55],[tx-70-q*70,foot-size*.68],[sx+35,foot-size*.48]],'#d16d5266',4);}
-      else if(i===1){for(let k=0;k<4;k++)stroke(c,[[tx+(k-2)*13,foot-size*.77],[tx+(k-1)*9,foot-size*.49],[tx+(k-2)*18,foot-size*.23]],'#f5d18a',1+q);}
-      else{ring(c,tx,foot-size*.55,size*.37+q*50,'#a89ad3',1-q,1);stroke(c,[[tx,foot-size*.5],[sx+20,foot-size*.48]],'#aa95df66',4);}
-      if(phase?.seal==='staff')staff(c,(sx+tx)/2,foot-size*.54,w*.3,-.12,q<.6?.9:1-q);sparks(c,tx,foot-size*.5,q,color,24,120,mural);
+    const i=clamp(detail.shotIndex||0,0,2),local=detail.shotProgress??.5,phase=detail.phases?.[i],still=detail.motion==='reduced',q=still?.82:local;
+    const gold='#eac17c',colors=['#cf7952','#e2bd70','#ac9bd8'],color=colors[i],foot=h*.71,size=Math.min(h*.52,w*.47,460),sx=w*.29,tx=w*.71;
+    // One temple silhouette and one shared ground plane anchor the duel.
+    const bg=c.createLinearGradient(0,0,w,h);bg.addColorStop(0,mural?'#0d302e':'#151817');bg.addColorStop(.6,'#15121a');bg.addColorStop(1,'#080f14');c.fillStyle=bg;c.fillRect(0,0,w,h);
+    halo(c,tx,foot-size*.5,size*1.45,color,.15);art(c,'landmark_blacklotus',w*.5-size*.62,foot-size*1.1,size*1.24,size*1.1,0,.11);
+    const ground=c.createLinearGradient(0,foot-20,0,h);ground.addColorStop(0,'#84704d18');ground.addColorStop(1,'transparent');c.fillStyle=ground;c.fillRect(w*.08,foot-20,w*.84,h-foot+20);stroke(c,[[w*.08,foot+9],[w*.92,foot+9]],'#b99b5724',1);
+    for(const x of [sx,tx]){c.save();c.globalAlpha=.5;c.fillStyle='#020607';c.beginPath();c.ellipse(x,foot+3,size*.24,size*.025,0,0,TAU);c.fill();c.restore();}
+    const attack=still?0:Math.sin(clamp((q-.22)/.36)*Math.PI),recoil=still?0:Math.sin(clamp((q-.43)/.2)*Math.PI)*size*.035;
+    const bossFade=q>.78?1-ease((q-.78)/.22)*.8:1;
+    art(c,'enemy_boss_'+i,tx-size*.43+recoil,foot-size,size*.86,size,0,bossFade);
+    cinematicActor(c,sx+attack*w*.13,foot,size*.86,q>.2&&q<.62?3:0);
+    if(phase?.seal==='clone'&&q>.25&&q<.6)cinematicActor(c,sx+size*.36,foot,size*.81,3,.28*(1-attack));
+    if(phase?.seal==='morph'&&q>.3&&q<.6){ring(c,sx,foot-size*.45,size*.34,'#9edac0',.5,1);moth(c,sx+size*.16,foot-size*.55,q,.7);}
+    if(q>.22&&q<.76){
+      const impact=clamp((q-.22)/.54),alpha=Math.sin(impact*Math.PI);
+      const swing=power=>{c.save();c.globalAlpha=alpha;c.strokeStyle=gold;c.lineWidth=power;c.shadowColor=gold;c.shadowBlur=mural?0:12;c.beginPath();c.moveTo(sx+attack*w*.13-size*.17,foot-size*.76);c.quadraticCurveTo(w*.5,foot-size*1.06,tx-size*.1,foot-size*.48);c.stroke();c.shadowBlur=0;c.globalAlpha*=.3;c.lineWidth=1;c.beginPath();c.moveTo(sx+attack*w*.13,foot-size*.67);c.quadraticCurveTo(w*.53,foot-size*.94,tx+size*.06,foot-size*.39);c.stroke();c.restore();};
+      if(i===0){stroke(c,[[tx,foot-size*.6],[sx+size*.2,foot-size*.46]],'#b0543c88',3);swing(3);}
+      else if(i===1){c.save();c.globalAlpha=alpha;for(let k=0;k<3;k++)stroke(c,[[tx+(k-1)*size*.12,foot-size*.78],[tx+(k-1)*size*.06,foot-size*.5],[tx+(k-1)*size*.16,foot-size*.22]],gold,2);c.restore();swing(5);}
+      else{ring(c,tx,foot-size*.5,size*(.24+impact*.25),color,alpha*.8,1);ring(c,sx+size*.12,foot-size*.43,size*.25,'#eac17c',alpha*.6,1);}
+      if(phase?.seal==='staff'){halo(c,tx-size*.08,foot-size*.5,size*.27,gold,alpha*.28);swing(6);}
+      sparks(c,tx-size*.08,foot-size*.52,impact,color,12,size*.32,mural);
     }
-    if(phase){c.save();c.font=`${Math.max(13,Math.min(19,h*.042))}px serif`;c.textAlign='center';c.fillStyle=color;c.fillText(`${phase.sealName||'按原准备'} · 本相损失 ${phase.damage}`,w*.5,h*.13);c.restore();}
-    if(i===2&&local>.72){const q=ease((local-.72)/.28);pillar(c,tx,h*.12,foot,size*.55,'#e9cf88',q*.32);art(c,'prop_relic',tx-22,foot-size*.75,44,60,0,q);}
-    cutFade(c,w,h,local);
+    c.save();c.textAlign='center';c.fillStyle=gold;c.font=`${Math.max(16,Math.min(25,w*.024))}px serif`;c.fillText(['壹 · 破妄金甲','贰 · 击碎执念','叁 · 心火归寂'][i],w*.5,h*.20);
+    if(phase){c.fillStyle='#d6c9ac';c.font=`${Math.max(12,Math.min(16,w*.014))}px serif`;c.fillText(`${phase.sealName==='未用印'?'执棒应战':phase.sealName} · 本相生命 −${phase.damage}`,w*.5,h*.25);}c.restore();
+    if(i===2&&q>.78){const end=ease((q-.78)/.22);halo(c,tx,foot-size*.5,size*.7,gold,end*.2);art(c,'prop_relic',tx-20,foot-size*.54,40,50,0,end);}
+    if(!still)cutFade(c,w,h,local);
   }
-  function finale(canvas,detail){
-    const {c,w,h,mural}=surface(canvas),i=detail.phase||0,time=detail.motion==='reduced'?0:detail.progress||0,color=['#d48b62','#d8c08a','#9f8dbb'][i];stage(c,w,h,5,1,mural);
-    const foot=h*.90,size=Math.min(h*.85,330),pulse=detail.motion==='reduced'?.18:.18+Math.sin(time*.8)*.025;
-    art(c,'landmark_blacklotus',w*.43,foot-size*.93,size*1.13,size*.93,0,.45);halo(c,w*.61,foot-size*.5,size*.8,color,pulse);
-    art(c,'enemy_boss_'+i,w*.61-size*.43,foot-size,size*.86,size,0,1);cinematicActor(c,w*.34,foot,size*.72,0);ring(c,w*.61,foot,size*.42,color,.6);
-    const seal=detail.seals?.[i];if(seal){ring(c,w*.34,foot,size*.3,'#cfca8e',.65);stroke(c,[[w*.34,foot-2],[w*.48,foot-11],[w*.61,foot-2]],'#c7c18b66',1.2);}
-    if((detail.rescued||[]).includes('bajie'))companion(c,'bajie',w*.24,foot,size*.43,.38);
-    const edge=c.createLinearGradient(0,0,0,h);edge.addColorStop(0,'#080f1400');edge.addColorStop(.78,'#080f1400');edge.addColorStop(1,'#080f14cc');c.fillStyle=edge;c.fillRect(0,0,w,h);
-  }
-  window.TowerFilmArt={skill,arrival,scene,finale};
+  window.TowerFilmArt={skill,arrival,scene};
 })();
