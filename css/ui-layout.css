@@ -56,8 +56,13 @@ html[data-ui-skins=ready] #modal-root .kit-description{flex-shrink:0}
 html[data-ui-skins=ready] #modal-root .pilgrim-kit{height:auto;min-height:100%;align-items:start}
 html[data-ui-skins=ready] #modal-root .kit-belongings{height:auto;justify-content:flex-start}
 html[data-ui-skins=ready] #modal-root .kit-pilgrim{align-self:center}
-html[data-ui-skins=ready] #game-shell .quest-scroll>div{padding:30px 30px 34px;overflow:visible}
-html[data-ui-skins=ready] #game-shell .quest-reading{max-height:calc(100vh - 284px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-gutter:stable;padding:0 4px 3px 0}
+/* The scroll hangs from its seal; its contents must never stretch the map tools. */
+#game-shell .quest-scroll{position:relative;flex:0 0 auto}
+#game-shell .quest-scroll>div{position:absolute;inset:calc(100% + 8px) auto auto 0;display:flex;flex-direction:column;width:min(420px,calc(100vw - 48px));max-height:calc(100dvh - 200px);overflow:visible}
+#game-shell .quest-reading{min-height:0;flex:1 1 auto;max-height:none;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-gutter:stable;padding:0 4px 3px 0}
+#game-shell .quest-reading button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#game-shell .quest-scroll[open]>summary>span{transform:rotate(180deg)}
+html[data-ui-skins=ready] #game-shell .quest-scroll>div{padding:30px 30px 34px}
 html[data-ui-skins=ready] #story-dock.story-dock:not(.collapsed){padding:29px 44px 37px}
 html[data-ui-skins=ready] #story-dock .story-scene{padding:7px 0 0;min-width:0}
 html[data-ui-skins=ready] #story-dock .story-scene>div{min-width:0}
@@ -79,6 +84,7 @@ html :is(#journey-guide,#story-dock,#altar-ritual,#floor-entry,#modal-root,#fina
 html :is(#journey-guide,#story-dock,#altar-ritual,#modal-root,#final-battle) button:disabled{cursor:default;opacity:.65}
 html :is(#journey-guide,#story-dock,#altar-ritual footer,#modal-actions) button:enabled:active{box-shadow:inset 0 2px 3px #0006}
 @media(max-width:760px){
+ #game-shell .quest-scroll>div{left:auto;right:0;width:min(420px,calc(100vw - 24px))}
  html[data-ui-skins=ready] #game-shell .context-card.has-selection.expanded,
  html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy.expanded{max-height:calc(100vh - 320px)}
  html[data-ui-skins=ready] #journey-guide{padding:27px 30px 30px}

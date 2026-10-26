@@ -979,6 +979,7 @@
     if(ev.key==='Escape'){
       ev.preventDefault();stopPath();if(!$('style-picker').classList.contains('hidden')){$('style-picker').classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');return;}
       if($('game-toolbox')?.open){$('game-toolbox').open=false;return;}if($('character-drawer').classList.contains('open')){closeCharacter();return;}
+      const scroll=document.querySelector('.quest-scroll');if(scroll?.open){scroll.open=false;scroll.querySelector('summary').focus({preventScroll:true});return;}
       if(!activeStory&&engine.selection&&['enemy','door'].includes(engine.getEntity(engine.selection.x,engine.selection.y)?.type)){clearSceneTarget();$('game-canvas').focus({preventScroll:true});return;}
       if(surfaceOpen&&!$('modal-close').disabled){closeSurface();return;}if(activeStory&&!storyCollapsed){skipStory();return;}if(sceneDetail){sceneDetail=null;clearInterval(dialogueTimer);updateContext();return;}if(engine.selection){clearSceneTarget();return;}if(activeStory&&!storyCollapsed){collapseStory(true);return;}engine.setMode('walk');return;
     }
