@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "source": {
+    "index.html": "99eb7f0535b4196ca7fdf154e6cb31bda48c7590df990d805bf22c1080d1a4ae",
+    "js/finale.js": "ce687332c0853592a4d25efba5dc2d80795d3eb841a5d418f661d6abe1773e47",
+    "tests/v41-final-replay-browser.cjs": "439f89cdc4003716ec06e8251e75966dc2f1ebeed16a46dea632a946961f3c79"
+  },
+  "beforeFix": "audits/v41-before-fix.json",
+  "acceptance": "audits/v41-final-replay.json",
+  "liveDocument": {
+    "participant": "UI31",
+    "before": {
+      "ui": 31,
+      "finale": 23,
+      "filmArt": 23,
+      "legacyPlanner": true,
+      "goldHud": false
+    },
+    "after": {
+      "ui": 40,
+      "finale": 41,
+      "filmArt": 39,
+      "legacyPlanner": false
+    },
+    "restoredVisibleResources": {
+      "floor": 1,
+      "hp": 620,
+      "mana": "6/6",
+      "keys": {
+        "yellow": 1,
+        "blue": 0,
+        "red": 0
+      },
+      "coins": 0
+    }
+  },
+  "preview": {
+    "participant": "FinalPreview41",
+    "sourceSave": "audits/v39-fixtures/zero.json",
+    "sourceSha256": "a064d0a6c229ecc821937270ab3af99b8f8cb07199950c98ac8c1c83376dddb8",
+    "status": "ready_before_combat",
+    "humanObservation": false
+  },
+  "visualReviewedIndividually": [
+    "audits/v41-live-final-forecast.png",
+    "audits/v41-live-final-duel.png"
+  ],
+  "baselineSha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "status": "pc_verified_with_documented_boundaries",
+  "boundaries": [
+    "Reuse v39 visual design; no new generated art",
+    "Legal terminal fixture plus real mouse and keyboard; no new full eighteen-floor playthrough",
+    "No audio listening or mobile matrix"
+  ]
+}

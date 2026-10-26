@@ -28,6 +28,7 @@
 !/audits/v39-material-forecast-1280.png
 !/audits/v39-duel-2.png
 !/audits/v40-material-release-completed-scene.png
+!/audits/v41-live-final-duel.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

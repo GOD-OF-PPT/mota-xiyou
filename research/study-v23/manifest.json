@@ -30,7 +30,7 @@
     "js/film-art.js": "b5280287667136188d26b83b0c4e87f3912666fab2c69bfc98da2ef9dce0e460",
     "js/story-director.js": "493e7f928113ea354bf9d68d74cdd0d78f816ee8c7414212a94cde1b8b5d6064",
     "js/presentation.js": "3d535e46869932caaeed61de64dfcc176d0fc0c68e1f9ebb24f22b790e450ca3",
-    "js/finale.js": "dd37f41167c2130778553f0c132f8580a055a409faa7b0353c554f22cd2ec3da",
+    "js/finale.js": "ce687332c0853592a4d25efba5dc2d80795d3eb841a5d418f661d6abe1773e47",
     "js/planning.js": "77424ff1489bff9e2a95b4399d8994a994ecdde08cbf75e170a63fe2e492a8cc",
     "js/planning-ui.js": "50573232967c7eb2d97bb43d79c57fb5bb9fc4b60fb762a4dee02a0c80fd1d55",
     "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179",
@@ -68,7 +68,7 @@
     ".backups/implementation-v23-20261024/js/ui.js": "2472a3215be8604eb476ee62e627194ddb7a122e2434eefd1a6ec604f452782b",
     "css/study-foyer.css": "5135697bcd3942b35770ea1590783ecfacd4b4b16453e8586beea9d90dc9d308",
     "js/study-foyer.js": "4116a3d978244ac0b782bba4451ca2791c2fcdd16336063a8cb81613b2460ad2",
-    "index.html": "515b35d87bf44d4b4fc3cecc0cc43fe1a4f670418016faabb1e0d871ca50d85e",
+    "index.html": "99eb7f0535b4196ca7fdf154e6cb31bda48c7590df990d805bf22c1080d1a4ae",
     ".backups/implementation-v23-20261024/index.html": "0aa35a815679d8f4b7a8f296c8d2e80dd754d422cd81a97f95a08eeb74efc652",
     "research/trials-v23-routes.json": "43984b53c143e1e9aa2499d16ac06e547226812a13e62e1bff0f37529fff1cc0",
     "scripts/build_v23_study.cjs": "3db40d19d66b00ad6ea83990388130f6cbe4f1b570182bd3d352020d966e5c7a",
@@ -153,7 +153,7 @@
   },
   "outputs": {
     "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
-    "playtest-v23-new.html": "690fb711efd3162076b9b98b719b7922572f3bac2caaf73b293a500b301d11f3",
+    "playtest-v23-new.html": "43457fae6fb009db2ec4213d62d5964949d2de2dde72b67ad2d70575dcdcf319",
     "research/study-v23/fixtures.js": "f4462095494a2f5201b9b2ea3d3f406fba07c4814c9d5cc00e1f277709643142"
   },
   "sharedAssets": "Root assets reused; v22 runtime JS/CSS comes from frozen backup. Both entries run campaign tasks, with the same predeclared goal and budget.",

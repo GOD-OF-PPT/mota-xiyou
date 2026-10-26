@@ -1,0 +1,159 @@
+{
+  "checks": [
+    "material direct mouse and F each replay after undo, with one settlement and exact resource restoration",
+    "material paid mouse and F each replay after undo, with one settlement and exact resource restoration",
+    "mural direct mouse and F each replay after undo, with one settlement and exact resource restoration",
+    "mural paid mouse and F each replay after undo, with one settlement and exact resource restoration",
+    "study mouse and F each replay after undo, with one settlement and exact resource restoration",
+    "offline mouse and F each replay after undo, with one settlement and exact resource restoration"
+  ],
+  "errors": [],
+  "cases": [
+    {
+      "label": "material direct",
+      "pass": 0,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "material direct",
+      "pass": 1,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "material direct",
+      "pass": 2,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "material paid",
+      "pass": 0,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "material paid",
+      "pass": 1,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "material paid",
+      "pass": 2,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "mural direct",
+      "pass": 0,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "mural direct",
+      "pass": 1,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "mural direct",
+      "pass": 2,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "mural paid",
+      "pass": 0,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "mural paid",
+      "pass": 1,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "mural paid",
+      "pass": 2,
+      "hp": 268,
+      "orbs": 3,
+      "turn": 3845,
+      "expectedDamage": 884
+    },
+    {
+      "label": "study",
+      "pass": 0,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "study",
+      "pass": 1,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "study",
+      "pass": 2,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "offline",
+      "pass": 0,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "offline",
+      "pass": 1,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "offline",
+      "pass": 2,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    }
+  ],
+  "screenshots": [],
+  "passed": true
+}

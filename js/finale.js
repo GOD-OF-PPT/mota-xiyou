@@ -39,7 +39,9 @@
     commit(allowLethal=false){
       if(this.busy||!this.entity||!this.engine.isCurrent(this.entity)||this.engine.distance(this.entity)!==1||this.engine.state.relics.length<5)return false;
       const p=this.preview();if(!p.possible||!p.canAfford||(!p.survive&&!allowLethal))return false;
-      this.busy=true;this.editing=false;const options={bossPlan:this.plan,bossSeals:[...this.seals]};this.beforeCommit?.();const ok=this.engine.fight(this.entity,options);this.onCommit?.(ok);return ok;
+      this.busy=true;this.editing=false;const entity=this.entity,options={bossPlan:this.plan,bossSeals:[...this.seals]};
+      // Lock only the synchronous settlement. Undo can legally restore this exact draft.
+      try{this.beforeCommit?.();const ok=this.engine.fight(entity,options);this.onCommit?.(ok);return ok;}finally{this.busy=false;}
     }
     handleKey(ev){
       if(ev.ctrlKey||ev.metaKey||ev.altKey)return;const k=ev.key.toLowerCase();

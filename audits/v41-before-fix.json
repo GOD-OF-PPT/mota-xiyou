@@ -1,0 +1,24 @@
+{
+  "checks": [],
+  "errors": [],
+  "cases": [
+    {
+      "label": "material direct",
+      "pass": 0,
+      "hp": 43,
+      "orbs": 0,
+      "turn": 4224,
+      "expectedDamage": 930
+    },
+    {
+      "label": "material direct",
+      "pass": 1,
+      "hp": 973,
+      "orbs": 0,
+      "turn": 4223,
+      "expectedDamage": 930
+    }
+  ],
+  "screenshots": [],
+  "failure": "AssertionError [ERR_ASSERTION]: Enabled final combat must work again after undo\n\n973 !== 43\n\n    at fightAndReenter (E:\\githome\\mota\\tests\\v41-final-replay-browser.cjs:14:258)\n    at async E:\\githome\\mota\\tests\\v41-final-replay-browser.cjs:19:321"
+}
