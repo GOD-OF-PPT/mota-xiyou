@@ -21,7 +21,7 @@
   const systemMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
   const settings=()=>Object.assign(engine.state.settings||(engine.state.settings={quickZero:false,showDamage:true}),localPreferences);
   const effectiveMotion=()=>systemMotion.matches?'reduced':(settings().motion||'standard');
-  const presentation=new TowerPresentation({motion:effectiveMotion,frequency:()=>castFrequency,onShot:({kind,index})=>{if(kind==='boss')audio.cue('final-phase',{phase:index});},onEntryEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();$('game-canvas').focus({preventScroll:true});if(pendingChapterSummary){journeyNote(pendingChapterSummary);pendingChapterSummary='';}},onCastEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();scheduleContext();(surfaceOpen?$('modal-panel'):$('game-canvas')).focus({preventScroll:true});}});
+  const presentation=new TowerPresentation({motion:effectiveMotion,frequency:()=>castFrequency,onEntryEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();$('game-canvas').focus({preventScroll:true});if(pendingChapterSummary){journeyNote(pendingChapterSummary);pendingChapterSummary='';}},onCastEnd:()=>{lastInput=0;lastSpeechKey='';renderStory();renderHUD();scheduleContext();(surfaceOpen?$('modal-panel'):$('game-canvas')).focus({preventScroll:true});}});
   let pendingChapterSummary='';
   const finalBattle=new TowerFinale({engine,onChange:selector=>{updateContext();finalBattle.focus(selector);},onLayout:scheduleContext,beforeCommit:()=>{stopPath();clearSurfaces();closeCharacter();collapseStory();renderer.skipEffects?.();},onCommit:ok=>{lastInput=0;scenePointerAfter=performance.now()+260;if(!ok&&!engine.state.defeated)toast('局面已变化，请重新查看决战准备。');}});
   const planningDesk=new TowerPlanningUI({engine,show:showSurface,close:closeSurface,notice:toast,fast:()=>settings().fastTravel!==false,setFast:value=>setPreference('fastTravel',value),history:()=>runSession.isTrial?TowerOutcomes.history(engine).filter(r=>r.turn>runSession.trial.seed.turn&&r.floor===runSession.trial.floor):(TowerOutcomes.history(engine).length?TowerOutcomes.history(engine):journey.receipts||[]),resume:()=>{resetStorySession();showGame();viewChosen=false;explorationView();renderer.focusPlayer?.();if(engine.state.won)ending(engine.state.ending);else if(engine.state.defeated)defeat();else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}});
@@ -64,6 +64,7 @@
     ritualReturn=null;stopPath();closeRitual(false);collapseStory(true);presentation.closeEntry(false);presentation.closeCast();closeCharacter();if($('game-toolbox'))$('game-toolbox').open=false;
     if(surfaceOpen&&!same)closeSurface(false);
     surfaceOpen=true;hideTargetLink();const kind=['awakening','ending','ending-choice','defeat'].includes(view)?'ending':/莲灯|契约|钥匙|神通调度|最终挑战/.test(title+' '+eyebrow)?'station':'drawer';
+    if(view!=='ending')delete $('modal-root').dataset.ending;
     $('modal-root').dataset.kind=kind;$('modal-root').dataset.view=view;document.body.dataset.surface=kind;
     audio.setScene(/觉醒|归真/.test(title)?'awakening':'planning');$('modal-title').textContent=title;$('modal-eyebrow').textContent=eyebrow;$('modal-content').innerHTML=content;$('modal-actions').innerHTML='';
     $('modal-content').querySelectorAll('[data-phase]').forEach(c=>TowerRenderer.icon(c,'boss',Number(c.dataset.phase)));paintPortraits($('modal-content'));paintAssetIcons($('modal-content'));
@@ -230,6 +231,7 @@
   function sceneTargetKey(e=engine.selection){return e?`${engine.state.floor}:${e.x},${e.y}`:'';}
   function story(d){
     if(d.kind==='chapter')return;
+    if(d.kind==='boss'){activeStory=null;storyCollapsed=true;renderStory();journeyNote('三相已破。走向莲阵，照见无骨舍利。');return;}
     if(!pendingStoryTarget&&['lore','treasure'].includes(d.kind)){sceneWhisper(d);return;}
     if(!pendingStoryTarget&&presentation.castOpen&&(['relic','boss','awakening'].includes(d.kind)||d.awakening))return;
     let pages=storyPages(dialogueText(d));if(!pages.length)return;
@@ -832,7 +834,13 @@
   }
   function selfAwakening(){audio.setScene('awakening');renderer.focusPlayer?.();renderHUD();}
   function journeyRecall(){const entries=Object.entries(engine.state.choices||{}).map(([group,id])=>{const def=TowerData.choices?.[group],option=def?.options.find(o=>o.id===id);if(group==='silk'&&engine.state.quests?.silkLegacy)return '<p><b>旧日朱砂</b> · 攻击修为承续，双经卷未重复领取。</p>';if(group==='locks'&&engine.state.quests?.locksLegacy)return '<p><b>旧日锁廊</b> · 灵晶修为承续，路线沿用所选契约。</p>';if(group==='sevenWounds'&&engine.state.quests?.sevenLegacy)return '<p><b>旧日碧髓</b> · 防御修为承续；七伤侧门仍未开启。</p>';return option?`<p><b>${esc(def.title)}</b> · ${esc(option.label)}</p>`:'';}).filter(Boolean);return entries.length?`<div class="journey-recall"><h3>此行因果</h3>${entries.join('')}${engine.state.choices.compassion?`<p>${engine.state.choices.compassion==='release'?'你还给灯魂的那盏灯，正照着众生离塔。':'那枚取走的灯芯，提醒你记住力量的来处。'}</p>`:''}</div>`:'';}
-  function ending(choice){const s=engine.state;TowerStyleProgress.recordCampaignClear(s,{isTrial:runSession.isTrial});syncStyleUI();const rescued=s.rescued||[],names={bajie:'八戒',tangseng:'唐僧',nezha:'哪吒',gods:'诸神',souls:'灯魂',waterSoul:'灯魂',qiao:'乔灵儿的映身',seven:'七伤路中的众生'},voices=rescued.map(id=>names[id]||id).join('、');showSurface(choice==='release'?'不负众生，不负此心':'留一盏灯，照众生归途',`${relicRing(true)}<div class="story-quote">${paragraphs(choice==='release'?`你化作无骨舍利，十七道光穿过黑莲塔心。\n\n${voices?voices+'的呼唤，从你亲手打开的归路传来。':'众生的呼唤，从每一条重新点亮的归路传来。'}一根毫毛飘回掌心，你又听见八戒的笑。\n\n塔外，乔灵儿迎着晨光。点灯僧化作胸口的一点暖意——那是你从未失去的慈悲。你扛起金箍棒，走回众人身边。`:'你把十七道光留在塔心，以金箍压住黑莲余烬。\n\n被困众生循灯而去，乔灵儿与八戒守望塔外。你坐在门前，接过那个一直等你的灯盏。\n\n风过时，金箍棒轻轻一响。塔里仍有需要你点亮的路。')}</div>${journeyRecall()}<div class="completion-stats"><span>踏遍塔层<b>${s.visited.length} / 18</b></span><span>外舍利 + 无骨<b>${externalCount()} + ${s.selfAwakened?1:0}</b></span><span>降伏守卫<b>${s.kills}</b></span><span>剩余生命<b>${s.hp}</b></span></div><p class="adaptation-caption">${choice==='release'?'破劫归尘 · 众念归来':'原创分歧 · 留灯守塔'}</p>${TowerStyle.isUnlocked('mural')?'<p class="style-unlock-note">通关画境 · 青绿壁画已解锁，可在行旅画境中展开。</p>':''}<p class="ending-credit">大圣：舍利魔塔 · 全篇终</p>`,[{label:'回看塔景'},{label:'返回标题',action:returnTitle},{label:'再走一段因果',className:'primary-button',action:()=>confirmRestart()}],'十八重因果 · 已通关',true,'ending');}
+  function ending(choice){
+    const s=engine.state,release=choice==='release';TowerStyleProgress.recordCampaignClear(s,{isTrial:runSession.isTrial});syncStyleUI();
+    const rescued=s.rescued||[],names={bajie:'八戒',tangseng:'唐僧',nezha:'哪吒',gods:'诸神',souls:'灯魂',waterSoul:'灯魂',qiao:'乔灵儿的映身',seven:'七伤路中的众生'},voices=rescued.map(id=>names[id]||id).join('、');
+    const storyText=release?`你化作无骨舍利，十七道光穿过黑莲塔心。\n\n${voices?voices+'的呼唤，从你亲手打开的归路传来。':'众生的呼唤，从每一条重新点亮的归路传来。'}一根毫毛飘回掌心，你又听见八戒的笑。\n\n塔外，乔灵儿迎着晨光。点灯僧化作胸口的一点暖意——那是你从未失去的慈悲。你扛起金箍棒，走回众人身边。`:'你把十七道光留在塔心，以金箍压住黑莲余烬。\n\n被困众生循灯而去，乔灵儿与八戒守望塔外。你坐在门前，接过那个一直等你的灯盏。\n\n风过时，金箍棒轻轻一响。塔里仍有需要你点亮的路。';
+    showSurface(release?'破劫归尘':'留灯守塔',`<div class="victory-summary"><p class="victory-verse">${release?'不负众生，不负此心。':'留一盏灯，照众生归途。'}</p><p class="victory-lead">${release?'<span>十七道光散入晨雾。</span><span>你与众生，一同走回人间。</span>':'<span>众生已循灯而去。</span><span>你守着一盏灯，照亮后来人的路。</span>'}</p><div class="victory-stats" aria-label="此行纪要"><span>踏遍塔层<b>${s.visited.length}<small> / 18</small></b></span><span>舍利归位<b>${externalCount()+(s.selfAwakened?1:0)}<small> / 17</small></b></span><span>步履因果<b>${s.turn}<small> 步</small></b></span></div>${TowerStyle.isUnlocked('mural')?'<p class="victory-unlock">✦ 通关画境 · 青绿壁画已解锁</p>':''}</div><details class="victory-recall"><summary>回望此行 · 剧情与因果 <span aria-hidden="true">＋</span></summary><div class="victory-recall-body">${paragraphs(storyText)}${journeyRecall()}<p class="victory-record">降伏守卫 ${s.kills} · 剩余生命 ${s.hp}</p></div></details>`,[{label:'返回标题',className:'primary-button',action:returnTitle},{label:'回看塔景'},{label:'再走一段因果',action:()=>confirmRestart()}],'十八重因果 · 此行圆满',true,'ending');
+    $('modal-root').dataset.ending=choice;
+  }
   function confirmRestart(){showSurface(runSession.isTrial?'重走本次试炼？':'重新开始这段因果？',runSession.isTrial?'<p>重置本题的独立自动进度，主线和主线手动前缘保留。</p>':'<p>当前自动存档会被新冒险替换，独立手动存档保留。若想保留当前行动，可先手动存档或到背包导出。</p>',[{label:'留在此处'},{label:'开启新冒险',className:'danger-button',action:begin}],'重新开始',true,'restart');}
   function interact(){
     if(surfaceOpen||!started)return;
@@ -873,11 +881,12 @@
     else if(type==='finale')finale();
     else if(type==='awakening')selfAwakening();
     else if(type==='defeat')defeat();
-    else if(type==='ending'){ending(d);presentation.showScene(d,{floor:engine.state.floor,rescued:[...engine.state.rescued],choices:{...engine.state.choices}});}
+    else if(type==='ending')ending(d);
     else if(type==='effect'){
       const meta={...d,...(d.meta||{}),floor:engine.state.floor,rescued:[...engine.state.rescued],choices:{...engine.state.choices}},skill=d.type==='magic'&&['staff','morph','clone','eye'].includes(meta.ability),cost=skill?(meta.ability==='eye'?0:abilityCost(meta.ability)):0;
-      renderer.effect(d.type,d.x,d.y,skill?`${d.text||'神通已成'} · ${cost?'灵息 −'+cost:'免费'}`:d.text,meta);
-      if(skill)presentation.showCast(meta.ability,{...meta,cost});else if(d.type==='relic'&&meta.fragment===undefined)presentation.showScene(meta.self?'awakening':'seal',meta);else if(d.type==='attack'&&meta.phases?.length&&meta.victory)presentation.showScene('boss',meta);
+      const finalAttack=d.type==='attack'&&meta.phases?.length;
+      if(!finalAttack)renderer.effect(d.type,d.x,d.y,skill?`${d.text||'神通已成'} · ${cost?'灵息 −'+cost:'免费'}`:d.text,meta);
+      if(skill)presentation.showCast(meta.ability,{...meta,cost});else if(d.type==='relic'&&meta.fragment===undefined)presentation.showScene(meta.self?'awakening':'seal',meta);
       const motion=effectiveMotion();audio.cue(meta.fragment!==undefined?'pickup':meta.self?'selfAwaken':d.type,{...meta,impactDelay:motion==='reduced'?0:(meta.phases?.length?600:760)*.38/1000*(motion==='simple'?.65:1)});
     }
     if(['change','reset','mode','selection','log'].includes(type))renderHUD();

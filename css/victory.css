@@ -1,0 +1,47 @@
+/* A completed ending is a quiet illustrated tableau with live, readable controls. */
+html[data-art-style] #modal-root[data-view=ending]{--victory-gold:#ddbd79;--victory-paper:#f4e8cb;--victory-muted:#c6c1b2;background:#0c1116;color:var(--victory-paper)}
+#modal-root[data-view=ending][data-ending=release]{--victory-art:url('../assets/ending-v42/release.png')}
+#modal-root[data-view=ending][data-ending=keep]{--victory-art:url('../assets/ending-v42/keep.png')}
+html[data-art-style] #modal-root[data-view=ending]:before{background:linear-gradient(90deg,#08101680 0%,#08101644 37%,transparent 66%),var(--victory-art) center/cover no-repeat;opacity:1}
+html[data-art-style] #modal-root[data-view=ending] #modal-panel{display:grid;grid-template-columns:minmax(0,min(520px,44vw)) minmax(0,1fr);grid-template-rows:auto auto minmax(0,1fr) auto auto;gap:0;padding:7vh 7vw 4vh;isolation:isolate;animation:none;background:none;overflow:hidden;height:100dvh}
+html[data-art-style] #modal-root[data-view=ending] #modal-close{left:auto;right:26px;top:15px;padding:6px 0;min-height:32px;width:auto;height:auto;max-width:calc(100vw - 52px);color:#e9d5a5;font:13px/1.5 var(--serif);background:#0a101355;border:0;border-bottom:1px solid #d2b17355}
+html[data-art-style] #modal-root[data-view=ending] #modal-eyebrow{grid-column:1;grid-row:1;text-align:left;color:var(--victory-gold);font:12px/1.8 var(--serif);letter-spacing:.3em;margin:0 0 12px}
+html[data-art-style] #modal-root[data-view=ending] #modal-title{grid-column:1;grid-row:2;text-align:left;color:var(--victory-paper);font:clamp(44px,4.4vw,72px)/1.35 var(--serif);letter-spacing:.16em;margin:0 0 22px;padding:0;text-shadow:0 3px 20px #0007;overflow-wrap:anywhere}
+html[data-art-style] #modal-root[data-view=ending] #modal-content{grid-column:1;grid-row:3;display:block;width:100%;max-width:none;min-height:0;margin:0;padding:0 10px 5px 0;text-align:left;overflow:auto;scrollbar-width:thin;scrollbar-color:#d6b37466 transparent;font:16px/1.8 var(--serif)}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-summary{margin:0;padding:0;background:none;border:0}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-verse{color:var(--victory-paper);font:22px/1.8 var(--serif);max-width:26ch;margin:0 0 9px}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-lead{color:var(--victory-muted);font:16px/1.9 var(--serif);max-width:26em;margin:0 0 22px}
+#modal-root[data-view=ending] .victory-lead>span{display:block}
+#modal-root[data-view=ending] .victory-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;max-width:430px;border-top:1px solid #d5b47c44;padding-top:16px;margin:0 0 14px}
+#modal-root[data-view=ending] .victory-stats>span{min-width:0;color:var(--victory-muted);font:12px/1.7 var(--sans)}
+#modal-root[data-view=ending] .victory-stats b{display:block;color:var(--victory-gold);font:30px/1.5 var(--serif);font-weight:400;white-space:nowrap}
+#modal-root[data-view=ending] .victory-stats small{color:var(--victory-muted);font:12px/1.5 var(--serif)}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-unlock{font:12px/1.8 var(--serif);color:var(--victory-gold);margin:0 0 16px}
+#modal-root[data-view=ending] .victory-recall{max-width:440px;border-top:1px solid #d5b47c33;margin:0;padding:5px 0 12px}
+#modal-root[data-view=ending] .victory-recall>summary{display:flex;align-items:center;justify-content:space-between;min-height:36px;color:var(--victory-muted);font:14px/1.7 var(--serif);cursor:pointer;list-style:none;padding:5px 0}
+#modal-root[data-view=ending] .victory-recall>summary::-webkit-details-marker{display:none}
+#modal-root[data-view=ending] .victory-recall[open]>summary>span{transform:rotate(45deg)}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-recall-body p{color:var(--victory-muted);font:14px/1.9 var(--serif);margin:8px 0 14px;max-width:none;overflow-wrap:anywhere}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .journey-recall{margin:18px 0 0;text-align:left}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .journey-recall h3{font:16px/1.8 var(--serif);margin:0 0 9px;color:var(--victory-gold);text-align:left}
+html[data-art-style] #modal-root[data-view=ending] #modal-content .journey-recall b{color:var(--victory-gold);font-weight:400}
+html[data-art-style] #modal-root[data-view=ending] #modal-actions{grid-column:1;grid-row:4;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px;width:100%;max-width:400px;margin:18px 0 0;padding:0;border:0;background:none;align-self:end}
+html[data-art-style] #modal-root[data-view=ending] #modal-actions button{min-width:0;width:100%;min-height:38px;height:auto;padding:7px 3px;letter-spacing:.05em;border:0;border-bottom:1px solid #d5b47c55;border-radius:0;clip-path:none;background:none;box-shadow:none;color:var(--victory-muted);font:15px/1.7 var(--serif);white-space:normal;overflow-wrap:anywhere}
+html[data-art-style] #modal-root[data-view=ending] #modal-actions button.primary-button{grid-column:1/-1;min-height:54px;font-size:19px;letter-spacing:.2em;color:#211b12;background:linear-gradient(110deg,#d9ba7a,#b18a4d);border:1px solid #f1d59a;box-shadow:inset 0 0 0 3px #392b1c44,inset 0 0 0 4px #e6cd9144}
+html[data-art-style] #modal-root[data-view=ending] #modal-actions button:enabled:hover{color:#fff0cc;background-color:#b6904920}
+html[data-art-style] #modal-root[data-view=ending] #modal-actions button.primary-button:enabled:hover{background:linear-gradient(110deg,#eed49b,#c7a160);color:#17130d}
+html[data-art-style] #modal-root[data-view=ending] .modal-footnote{display:block;grid-column:1;grid-row:5;text-align:left;font:10px/1.5 var(--serif);color:#c3b18a99;margin-top:14px;letter-spacing:.14em}
+html[data-art-style] #modal-root[data-view=ending] .modal-footnote>span{display:none}
+@media(max-width:900px){
+ html[data-art-style] #modal-root[data-view=ending]:before{background:linear-gradient(90deg,#081016e8 0%,#081016a8 46%,#08101644 100%),var(--victory-art) 72% center/cover no-repeat}
+ html[data-art-style] #modal-root[data-view=ending] #modal-panel{padding:52px 28px 22px;grid-template-columns:minmax(0,min(380px,100%)) minmax(0,1fr)}
+ html[data-art-style] #modal-root[data-view=ending] #modal-title{font-size:44px;margin-bottom:14px}
+ html[data-art-style] #modal-root[data-view=ending] #modal-eyebrow{margin-bottom:8px;font-size:11px}
+ html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-verse{font-size:20px}
+ html[data-art-style] #modal-root[data-view=ending] #modal-content .victory-lead{font-size:15px;margin-bottom:15px}
+ #modal-root[data-view=ending] .victory-stats{padding-top:12px;gap:10px}
+ #modal-root[data-view=ending] .victory-stats b{font-size:26px}
+ html[data-art-style] #modal-root[data-view=ending] #modal-actions{margin-top:12px}
+ html[data-art-style] #modal-root[data-view=ending] .modal-footnote{margin-top:10px}
+}
+@media(max-height:740px) and (min-width:901px){html[data-art-style] #modal-root[data-view=ending] #modal-panel{padding-top:36px;padding-bottom:22px}html[data-art-style] #modal-root[data-view=ending] #modal-title{font-size:54px;margin-bottom:12px}html[data-art-style] #modal-root[data-view=ending] .modal-footnote{margin-top:10px}}

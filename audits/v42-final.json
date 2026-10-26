@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-26",
+  "scope": "Delete final battle film and ship static generated victory pages",
+  "source": {
+    "index.html": "d37bb55570498b4ec476d8837ef980cf65c0242eeb0f7ddb8fbbaa6ea58e6b70",
+    "js/ui.js": "968c6c681db8a16c76c330b3f539a2e519d2fbb2e1b1865dba87eba3881e8295",
+    "js/film-art.js": "e45d8829e8c1704836120baf504f95a8d96db1f3a9af2950a3b62da3340d79b1",
+    "js/presentation.js": "c612675ef9aa5aa68c8a0c1c8b04179c996ad0c4755928567393a150f27714c5",
+    "js/story-director.js": "85688f1d626a419cf180bf0300df4527efe2feb960998e4a58f30d5ea9b78e13",
+    "css/finale.css": "f3e2fbac78fac60d83b0fc819caa6a483caa1e6b66402a99a5bc527725ed1d9f",
+    "css/victory.css": "38806f7e15642fba59a938dda9c28bf880f36d8c3544f21ae06254377a1fac46",
+    "tests/v42-victory-browser.cjs": "af5de602649bfe01a3e2b2ea6afc1bb06d50f45efbad1d88ec80f412d01861bf",
+    "tests/v40-ending-flow-browser.cjs": "e6e372e47e34d5a39d554703f2b9ffe775fd7ca295f2965f25bcdb4e4a4a87a4",
+    "tests/v41-final-replay-browser.cjs": "13068b4c9396af42a0e84580519d7ea8038b15c98160a7c3ca1ee3cb26f5b051"
+  },
+  "assets": {
+    "assets/ending-v42/release.png": "63e53e04b8dbff2c65b63d7c6d1c3c3418ef0e61c3adac2ddeeebfa6f7b531ba",
+    "assets/ending-v42/keep.png": "11803a6a640e73f484d19bd4e53920390728d192ba6547149b59a5076cb6eb30",
+    "assets/ending-v42/prompts.json": "7ea677a60f9fe6410312070b8eecbe1d814a4f90a6d9137273516be9b5d2a3e9"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompts": "assets/ending-v42/prompts.json",
+    "workspaceBound": true,
+    "sharedNarrativeArtForBothMapStyles": true
+  },
+  "evidence": [
+    "audits/v42-victory.json",
+    "audits/v42-ending-regression.json",
+    "audits/v42-final-replay.json"
+  ],
+  "visualReviewedIndividually": [
+    "assets/ending-v42/release.png",
+    "assets/ending-v42/keep.png",
+    "audits/v42-material-release-1440.png",
+    "audits/v42-material-release-629.png",
+    "audits/v42-material-keep-1440.png",
+    "audits/v42-live-victory.png"
+  ],
+  "live": {
+    "originalParticipant": "UI31",
+    "originalVisibleResources": {
+      "floor": 1,
+      "hp": 620,
+      "mana": "6/6",
+      "keys": "1/0/0",
+      "coins": 0
+    },
+    "battlePreview": {
+      "participant": "FinalPreview41",
+      "beforeHp": 973,
+      "afterHp": 43,
+      "filmVisible": false,
+      "forcedDialogue": false,
+      "restoredBeforeBattle": true
+    },
+    "victoryPreview": {
+      "participant": "VictoryPreview42",
+      "legalSave": "audits/v30-fixtures/release.json",
+      "ready": true
+    }
+  },
+  "baselineSha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "status": "pc_verified_with_documented_boundaries",
+  "boundaries": [
+    "No new full eighteen-floor playthrough",
+    "No new mobile/broad browser matrix or audio listening acceptance"
+  ]
+}

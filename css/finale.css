@@ -17,15 +17,3 @@ html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-plans b
 #game-shell .final-minor{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 10px}
 html[data-ui-skins=ready] #game-shell .context-card.has-selection .final-minor button{min-height:32px;padding:3px 0;font:12px/1.7 var(--serif);color:#75432a!important;background:none!important;border:0!important;box-shadow:none}
 #game-shell .final-minor small{font:10px/1.6 var(--sans);color:#67583f}
-/* Only the resolved duel takes the full stage. One phase and one impact at a time. */
-#ability-cinematic[data-ability=boss] .cast-heading{top:5vh;left:7vw;right:7vw;display:flex;align-items:baseline;gap:20px}
-#ability-cinematic[data-ability=boss] .cast-heading small{font:12px/1.6 var(--serif);letter-spacing:4px}
-html #ability-cinematic[data-ability=boss] .cast-heading h2{font:clamp(25px,3vw,42px)/1.5 var(--serif);margin:0;letter-spacing:.16em}
-#ability-cinematic[data-ability=boss] .cast-heading>p{display:none}
-#ability-cinematic[data-ability=boss] .film-dialogue{left:7vw;bottom:16vh;width:86vw;text-align:center}
-#ability-cinematic[data-ability=boss] .film-dialogue p{font:clamp(16px,1.6vw,22px)/1.8 var(--serif);max-width:none;margin:5px 0}
-#ability-cinematic[data-ability=boss] .film-dialogue [data-film-speaker]{font-size:12px}
-#ability-cinematic[data-ability=boss] .film-shots{justify-content:center}
-#ability-cinematic[data-ability=boss] .cast-ending{left:7vw;right:7vw;bottom:4vh}
-html #ability-cinematic[data-ability=boss] .cast-ending strong{font:14px/1.7 var(--serif);max-width:40ch}
-@media(max-width:760px){#ability-cinematic[data-ability=boss] .cast-heading{flex-direction:column;gap:2px}#ability-cinematic[data-ability=boss] .cast-ending strong{max-width:26ch;font-size:12px}#ability-cinematic[data-ability=boss] .cast-ending button{min-width:92px}}

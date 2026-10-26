@@ -41,6 +41,7 @@
       const played=this.startFilm(ability,definition,{...detail},'skill',ability==='eye'?1550:2100,`${definition[2]}${detail.cost?' · 灵息 −'+detail.cost:' · 不耗灵息'}`);if(played)this.seenCasts.add(ability);return played;
     }
     showScene(kind,detail={}){
+      if(['boss','confrontation','release','keep'].includes(kind))return false;
       const relic=window.TowerData?.relics?.[detail.relic],skills={staff:'金箍架桥',morph:'青蝉化形',clone:'毫毛分身',ward:'定心护身',truth:'归真共鸣'};
       const definitions={seal:[relic?.name||'心印觉醒','身后旧路，也将有新的解法',`生命 +100 · 灵息已复 · ${skills[relic?.ability]||'心印已归位'}`],awakening:['无骨归真','最后一颗，原来一直在你心中','无骨舍利已觉醒 · 走向莲台选择归路'],boss:['三相破执','金甲、执念、心火 · 一路本心皆成破阵之印',`三相已破 · 生命 −${detail.damage??0} · 走向最后的莲阵`],confrontation:['照见心猿','最后一战，先看清自己留下的影子','三相各有破绽 · 比较免费，确认才结算'],release:['破劫归尘','十七道光，为众生重开归路','众生已有归途 · 此行圆满'],keep:['留灯守塔','以我一盏灯，照亮后来人','长明灯已点燃 · 此行圆满']},definition=definitions[kind];if(!definition)return;
       this.startFilm(kind,definition,{...detail},'scene',window.TowerStoryDirector?.duration(kind)||(kind==='seal'?4800:6400),definition[2]);
