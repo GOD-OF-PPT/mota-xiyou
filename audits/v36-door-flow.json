@@ -1,0 +1,205 @@
+{
+  "checks": [
+    "material one visible key action really opens on first click; double click cannot pay twice or move through; rules are read only; undo restores exactly",
+    "material F uses the same direct key action instead of toggling an expanded page",
+    "material missing key and unawakened spell explain their conditions without a fake action or any charge",
+    "material distant action only walks legally; arrival still needs explicit key confirmation",
+    "material awakened spell is a distinct real alternative: one mana, zero keys; skipping its presentation never pays again",
+    "material choosing a key with spell available preserves mana; yellow, blue and red doors share the same single-step flow",
+    "mural one visible key action really opens on first click; double click cannot pay twice or move through; rules are read only; undo restores exactly",
+    "mural F uses the same direct key action instead of toggling an expanded page",
+    "mural missing key and unawakened spell explain their conditions without a fake action or any charge",
+    "mural distant action only walks legally; arrival still needs explicit key confirmation",
+    "mural awakened spell is a distinct real alternative: one mana, zero keys; skipping its presentation never pays again",
+    "mural choosing a key with spell available preserves mana; yellow, blue and red doors share the same single-step flow",
+    "study uses the same actual single key action",
+    "offline uses the same actual single key action"
+  ],
+  "layouts": [
+    {
+      "name": "material-key-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-key-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-key-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-missing-key",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 16,
+          "width": 360,
+          "height": 534.71875
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-two-methods",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 384.28125
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-key-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-key-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-key-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 355.375
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-missing-key",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 16,
+          "width": 360,
+          "height": 534.71875
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-two-methods",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-door has-selection",
+          "glyphs": 10,
+          "width": 360,
+          "height": 384.28125
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v36-material-key-1280.png",
+    "audits/v36-material-door-card.png",
+    "audits/v36-material-key-629.png",
+    "audits/v36-material-key-1440.png",
+    "audits/v36-material-missing-key.png",
+    "audits/v36-material-two-methods.png",
+    "audits/v36-mural-key-1280.png",
+    "audits/v36-mural-key-629.png",
+    "audits/v36-mural-key-1440.png",
+    "audits/v36-mural-missing-key.png",
+    "audits/v36-mural-two-methods.png"
+  ],
+  "errors": [],
+  "passed": true
+}

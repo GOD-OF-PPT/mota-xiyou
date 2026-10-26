@@ -338,7 +338,12 @@
     dialogueTimer=setInterval(()=>{if(!el.isConnected){clearInterval(dialogueTimer);return;}count+=2;el.textContent=text.slice(0,count);if(count>=text.length){clearInterval(dialogueTimer);delete el.dataset.fullText;}},24);
   }
   function advanceSceneDialogue(){if(sceneDetail?.kind!=='dialogue')return;const el=$('context-body').querySelector('[data-full-text]');if(el){el.textContent=el.dataset.fullText;delete el.dataset.fullText;clearInterval(dialogueTimer);return;}sceneDetail.index++;if(sceneDetail.index>=sceneDetail.pages.length)sceneDetail=null;updateContext();animateDialogue();}
-  function door(e){if(engine.isCurrent(e)){engine.select(e.x,e.y);toggleSceneDetail('door');}}
+  function door(e){
+    if(!engine.isCurrent(e)||e.type!=='door')return;
+    if(engine.distance(e)>1){approach(e,()=>engine.select(e.x,e.y));return;}
+    stopPath();const before=engine.state.keys[e.color];
+    if(engine.openDoor(e)){scenePointerAfter=performance.now()+300;clearSceneTarget();$('game-canvas').focus({preventScroll:true});toast(`封门已开 · ${colorNames[e.color]}钥 ${before} → ${engine.state.keys[e.color]}；Z 可回溯。`);}
+  }
 
   function resourceText(values){
     if(!values)return '无';
@@ -575,12 +580,23 @@
   function skillHint(button){const mode=button.dataset.mode;$('mode-label').textContent=button.classList.contains('locked')?modeNames[mode]+' · '+button.dataset.description:modeHint(mode);}
   function modeHelp(mode){return {walk:'方向键 / WASD 移动，视野跟随。M 展开全图规划；机关与楼梯按 F 交互',inspect:'点选任何目标，免费查看真实规则和损失',staff:`相邻断口，耗 ${abilityCost('staff')} 灵息，永久架桥；成功后回到行走`,morph:`相邻铁栅或青锁门，耗 ${abilityCost('morph')} 灵息，从内侧永久解锁；成功后回到行走`,clone:`点选四格内青色阵眼，耗 ${abilityCost('clone')} 灵息，可隔墙；满员时可免费回收`}[mode];}
   function requirementsHTML(e){const r=engine.requirements?.(e),names={sevenRescue:'七伤同行：亲自护送三名映身',sevenWounds:'完成七伤抉择',weakwater:'转动弱水水轮',bajie:'解救八戒',bellPassage:'残钟台舍弃防御 +2，补钟开门',ferryPassage:'渡灯台舍弃90生命并供一黄钥，开西缘栈道',emberPassage:'无生髓台舍弃防御 +4，燃髓开径'};return r&&!r.met?`<div class="requirement-note">尚需：${r.missing.map(v=>esc(names[v]||v)).join(' · ')}</div>`:'';}
+  function doorContextHTML(e){
+    const s=engine.state,near=engine.distance(e)<=1,held=s.keys[e.color],name=colorNames[e.color]+'钥',morph=e.morphable&&s.relics.includes(1),ability=e.morphable?engine.abilityPreview('morph',e.x,e.y):null;
+    const primary=near?`<button class="context-button" data-context="open-door" ${held?'':'disabled'}>${held?'用'+name+'开门 <kbd>F</kbd>':'缺少'+name+'匙'}</button>`:'<button class="context-button" data-context="approach-door">走近封门 · 暂不开门</button>';
+    let alternative='';
+    if(e.morphable){
+      if(!morph)alternative='<p class="door-alternative-note">第 6 层觉醒照骨心印后，可用青蝉卸锁，保留钥匙。</p>';
+      else if(!near)alternative=`<p class="door-alternative-note">走近后可用青蝉卸锁 · ${ability.cost} 灵息，不耗钥匙。</p>`;
+      else alternative=`<div class="door-alternative"><button class="context-button" data-context="morph" ${ability.possible?'':'disabled'}>青蝉卸锁 · ${ability.cost} 灵息</button><small>${ability.possible?`灵息 ${s.mana} → ${s.mana-ability.cost} · 保留${name}`:esc(ability.reason)}</small></div>`;
+    }
+    return `<p class="door-balance">${name}匙 <strong>${held?`${held} → ${held-1}`:'持有 0 把 · 尚缺 1 把'}</strong></p><div class="door-actions">${primary}${alternative}</div><details class="door-details"><summary>开门说明 <span aria-hidden="true">⌄</span></summary><p>${esc(e.purpose||e.label||'开启后永久通行。')}</p><p>开门后仍站在原处，不会自动跨门；Z 可回溯。</p></details>`;
+  }
   function compactTarget(e,tile,fullHTML){
+    if(e?.type==='door'){targetDetails=null;return doorContextHTML(e);}
     const s=engine.state,near=e?engine.distance(e)<=1:false,req=e&&engine.requirements?.(e),blocked=!!(req&&!req.met);
     const button=(action,label,disabled=false,key='')=>`<button class="context-button" data-context="${action}" ${disabled?'disabled':''}>${esc(label)}${key?' <kbd>'+esc(key)+'</kbd>':''}</button>`;
     let summary='',actions='';
-    if(e?.type==='door'){summary=`${colorNames[e.color]}钥 ×1 · 持有 ${s.keys[e.color]}`;actions=button('door',near?'开启封门':'接近封门');}
-    else if(e?.type==='npc'||e?.type==='monument'){const d=npcDialogue(e),read=e.type==='monument';summary=d?.objective||dialogueText(d).split('\n')[0]||(read?'碑上留有一段往事':'听一段塔中回响');actions=button('story',read?(near?'读碑':'走近读碑'):(near?'交谈':'走近交谈'),false,near?'F':'');}
+    if(e?.type==='npc'||e?.type==='monument'){const d=npcDialogue(e),read=e.type==='monument';summary=d?.objective||dialogueText(d).split('\n')[0]||(read?'碑上留有一段往事':'听一段塔中回响');actions=button('story',read?(near?'读碑':'走近读碑'):(near?'交谈':'走近交谈'),false,near?'F':'');}
     else if(e?.type==='switch'){const on=!!s.switches[e.id];summary=e.kind==='plate'?(on?'分身驻守 · 回收免费':`分身 ${abilityCost('clone')} 灵息 · 四格内`):(on?'灵脉已通':'灵脉未通');actions=e.kind==='plate'?button(on?'recall':'clone',on?'收回毫毛':'分身落阵',!on&&(engine.distance(e)>4||!s.relics.includes(2))):button('switch',near?(on?'复位扳杆':'扳动机关'):(on?'前往并复位':'前往并扳动'));}
     else if(e?.type==='gate'||e?.type==='seal'){summary=engine.isGateOpen(e)?'灵脉已开 · 可以通行':e.type==='seal'?`须 ${e.requires} 重心印 · 已有 ${s.relics.length}`:'灵脉未齐 · 察看关联机关';}
     else if(e?.type==='relic'){summary=`外舍利 ${externalCount()} / 16 · 五印 ${s.relics.length} / 5`;actions=button('relic',near?'尝试解印':'接近心印');}
@@ -619,7 +635,6 @@
   function sceneDetailHTML(e){
     if(!sceneDetail)return '';
     if(sceneDetail.kind==='tactics'&&e?.type==='enemy')return tacticsHTML(e);
-    if(sceneDetail.kind==='door'&&e?.type==='door')return `<div class="scene-inline scene-door"><p>${esc(e.purpose||e.label||'开启后永久通行。')}</p><p>消耗一把${colorNames[e.color]}钥匙，现有 ${engine.state.keys[e.color]} 把。可按 Z 回溯。</p><button class="context-button" data-context="open-door" ${engine.distance(e)>1||!engine.state.keys[e.color]?'disabled':''}>用钥匙开启</button></div>`;
     if(sceneDetail.kind==='choice'&&e?.type==='choice')return `<div class="scene-inline scene-choice">${choiceHTML(e)}</div>`;
     if(sceneDetail.kind==='recall')return `<div class="scene-inline"><p>驻守位已满。先召回一影，再部署此处。回收免费，关联通路会同步变化。</p>${engine.cloneStatus().active.map(a=>`<button class="context-button" data-recall="${esc(a.id)}">召回 ${esc(a.label||'分身')}</button>`).join('')}</div>`;
     if(sceneDetail.kind==='dialogue'){const d=sceneDetail;return `<div class="scene-inline scene-dialogue"><div class="scene-dialogue-text">${paragraphs(d.pages[d.index])}</div><div class="scene-dialogue-controls"><span>${d.index+1} / ${d.pages.length}</span><button class="scene-rule-button" data-context="dialogue-next">${d.index+1<d.pages.length?'下一句':'听完了'} <kbd>Space</kbd></button></div></div>`;}
@@ -637,7 +652,7 @@
       if(e?.type==='enemy'){
         title=TowerData.enemies[e.enemy].name;html=enemyContextHTML(e);
       }
-      else if(e?.type==='door'){title=colorNames[e.color]+'色封门';html=`<p class="context-summary">消耗 1 把${colorNames[e.color]}钥匙 · 现有 ${s.keys[e.color]} 把</p><div class="context-callout">${esc(e.label||'开启后永久消失。')}</div><button class="context-button" data-context="door">${engine.distance(e)>1?'走近 · 再确认开门':'开门决策'}</button>`;}
+      else if(e?.type==='door'){title=colorNames[e.color]+'色封门';html='';}
       else if(tile==='~'||tile==='='){const m=tile==='~'?'staff':'morph';title=tile==='~'?'断口 · 金箍为桥':'铁栅 · 青蝉可渡';html=`<p>${esc(modeHelp(m))}</p><p class="muted">道路贯通后无需再次消耗灵息。</p><button class="context-button" data-context="${m}" ${engine.distance(sel)!==1?'disabled':''}>${modeNames[m]} · ${abilityCost(m)} 灵息</button>`;}
       else if(e?.type==='switch'){title=e.label||(e.kind==='plate'?'分身阵眼':'两仪扳杆');html=`<p class="context-summary">${s.switches[e.id]?'◆ 灵脉已接通':'◇ 灵脉尚未接通'} · 坐标 ${e.x+1}, ${e.y+1}</p><div class="context-callout">${e.kind==='plate'?'四格内可隔墙施法，费用以技能栏为准；分身可以免费回收，机关同步复位。':'经过不会自动切换。主动交互才能扳动；同组机关全部接通才会开门。'}</div>${e.kind==='plate'?`<button class="context-button" data-context="${s.switches[e.id]?'recall':'clone'}" ${!s.switches[e.id]&&engine.distance(e)>4?'disabled':''}>${s.switches[e.id]?'回收分身 · 免费':`分身落阵 · ${abilityCost('clone')} 灵息`}</button>`:`<button class="context-button" data-context="switch">${engine.distance(e)>1?'走近扳杆':s.switches[e.id]?'复位扳杆':'接通扳杆'}</button>`}`;}
       else if(e?.type==='gate'||e?.type==='seal'){title=e.label||'灵脉机关';const switches=TowerData.floors[s.floor].entities.filter(a=>a.type==='switch'&&(e.controls?e.controls.includes(a.controlId||a.id):a.group===e.group));html=`<div class="context-callout">${engine.isGateOpen(e)?'已开启，可以通行。':e.type==='seal'?`需要 ${e.requires} 重心印，现有 ${s.relics.length} 重。`:'关联阵眼接通后开启；取卷后的经门会保留退路。'}</div>${requirementsHTML(e)}${e.type==='gate'?switches.map(a=>`<p>${s.switches[a.id]?'◆':'◇'} ${esc(a.label||'阵眼')} <small>坐标 ${a.x+1},${a.y+1}</small></p>`).join(''):''}`;}
@@ -666,20 +681,22 @@
     $('context-cost').hidden=true;$('context-cost').textContent='';
     const portrait=$('context-portrait');if(portrait){const type=selectedEntity?.type;portrait.hidden=!['enemy','npc','rescue','treasure','chest','cache'].includes(type);if(!portrait.hidden){if(type==='enemy')TowerRenderer.icon(portrait,'enemy',selectedEntity.enemy);else if(['chest','cache'].includes(type))TowerRenderer.icon(portrait,'chest');else if(type==='treasure')TowerRenderer.icon(portrait,'treasure',selectedEntity.treasure);else TowerRenderer.icon(portrait,'npc',selectedEntity.archetype||selectedEntity.sprite||selectedEntity.portrait||(type==='rescue'?'bajie':'lantern'));}}
     $('context-title').textContent=title;$('context-body').innerHTML=html+(selectedEntity?.type==='enemy'?'':sceneDetailHTML(selectedEntity));renderer.mechanismPreview=TowerMechanisms.preview(engine,selectedEntity);if(renderer.mechanismPreview.length)$('context-body').insertAdjacentHTML('beforeend','<details class="mechanism-links"><summary>查看联动 · '+renderer.mechanismPreview.filter(q=>q.before!==q.after).length+' 处开合变化</summary>'+renderer.mechanismPreview.map(q=>'<p>'+esc(q.status)+' · '+esc(q.label)+'</p>').join('')+'</details>');
+    $('context-body').querySelector('.door-details')?.addEventListener('toggle',scheduleContext);
     const narrativeTarget=['npc','monument'].includes(selectedEntity?.type);
     document.querySelector('.context-card')?.classList.toggle('is-narrative',narrativeTarget);
     const enemyTarget=selectedEntity?.type==='enemy',battleDetails=$('context-body').querySelector('[data-battle-details]');
-    const contextGoal=$('context-objective'),showGoal=!!sceneDetail||narrativeTarget||!!battleDetails?.open;contextGoal.hidden=!showGoal;
+    const contextGoal=$('context-objective'),showGoal=!!sceneDetail||narrativeTarget||selectedEntity?.type==='door'||!!battleDetails?.open;contextGoal.hidden=!showGoal;
     contextGoal.innerHTML=showGoal?'此行 · '+TowerText.highlighted(guidance().text):'';
     document.querySelector('.context-card')?.classList.toggle('expanded',!!sceneDetail||!!battleDetails?.open);
     battleDetails?.addEventListener('toggle',()=>{if(!battleDetails.isConnected)return;if(!battleDetails.open&&sceneDetail){sceneDetail=null;updateContext();$('context-body').querySelector('.combat-details>summary')?.focus({preventScroll:true});return;}contextGoal.hidden=!battleDetails.open;contextGoal.innerHTML=battleDetails.open?'此行 · '+TowerText.highlighted(guidance().text):'';document.querySelector('.context-card')?.classList.toggle('expanded',battleDetails.open);scheduleContext();});
     if(battleDetails&&sceneDetail){battleReadingObserver=new ResizeObserver(revealBattleReading);battleReadingObserver.observe(battleDetails.querySelector('.combat-details-body'));}
     const sigil=document.querySelector('.context-card'),targetKey=sel?`${s.floor}:${selectedEntity?.id||sel.x+','+sel.y}`:'';document.body.dataset.target=targetKey?'true':'false';if(sigil){sigil.dataset.sigil=selectedEntity?.type==='enemy'?'观':['npc','rescue','monument'].includes(selectedEntity?.type)?'问':['fragment','treasure','item','chest'].includes(selectedEntity?.type)?'得':'启';if(targetKey&&targetKey!==lastSigilTarget){lastSigilTarget=targetKey;sigil.classList.remove('sigil-enter');void sigil.offsetWidth;sigil.classList.add('sigil-enter');}if(!targetKey)lastSigilTarget='';}
     document.querySelector('.context-card')?.classList.toggle('is-enemy',selectedEntity?.type==='enemy');
+    document.querySelector('.context-card')?.classList.toggle('is-door',selectedEntity?.type==='door');
     document.querySelector('.context-card')?.classList.toggle('is-chest',['chest','cache'].includes(selectedEntity?.type));
     document.querySelector('.context-card')?.classList.toggle('has-selection',!!sel&&(!!selectedEntity||['~','=','w'].includes(selectedTile)));
     bindFocus($('context-body'));
-    if(engine.selection&&TowerPlanning.targets(engine).some(t=>t.x===engine.selection.x&&t.y===engine.selection.y&&(selectedEntity?t.id===selectedEntity.id:!t.id)))($('context-body').querySelector('.combat-details-body')||$('context-body')).insertAdjacentHTML('beforeend',`<button class="scene-rule-button" data-plan-mark>${enemyTarget?'加入推演':'推演此处 · T'}</button>`);
+    if(engine.selection&&TowerPlanning.targets(engine).some(t=>t.x===engine.selection.x&&t.y===engine.selection.y&&(selectedEntity?t.id===selectedEntity.id:!t.id)))($('context-body').querySelector('.combat-details-body,.door-details')||$('context-body')).insertAdjacentHTML('beforeend',`<button class="scene-rule-button" data-plan-mark>${enemyTarget||selectedEntity?.type==='door'?'加入推演':'推演此处 · T'}</button>`);
     $('context-body').querySelector('[data-plan-mark]')?.addEventListener('click',()=>planningDesk.mark(engine.selection.x,engine.selection.y));
     paintAssetIcons($('context-body'));$('context-body').querySelectorAll('[data-phase]').forEach(c=>TowerRenderer.icon(c,'boss',Number(c.dataset.phase)));
     $('context-body').querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>{const p=engine.selection,e=p&&engine.getEntity(p.x,p.y);if(e){const id=b.dataset.choice;choice(e);previewDecision(id);}});
@@ -701,7 +718,7 @@
       else if(a==='tactics'&&e){renderer.planningHint=null;toggleSceneDetail('tactics');}
       else if(a==='aid'&&e)engine.receiveAid(e);
       else if(a==='prerequisite'&&e)locateObjective(e);
-      else if(a==='open-door'&&e){if(engine.openDoor(e))clearSceneTarget();}
+      else if(a==='open-door'&&e)door(e);
       else if(a==='dialogue-next')advanceSceneDialogue();
       else if(a==='collect'&&e)approach(e,()=>{},true);
       else if(a==='rules'&&e)showBattleRules(e);
@@ -711,7 +728,8 @@
       else if(a==='engage'&&e)confirmCombat(e);
       else if(a==='avoid-battle'){clearSceneTarget();$('game-canvas').focus({preventScroll:true});}
       else if(a==='approach-enemy'&&e)approach(e,()=>{engine.select(e.x,e.y);$('status-message').textContent='已走近守卫。查看战损后按 F 或点迎战。';});
-      else if(a==='door'&&e)approach(e,()=>door(e));
+      else if(a==='door'&&e)door(e);
+      else if(a==='approach-door'&&e)approach(e,()=>engine.select(e.x,e.y));
       else if(a==='switch'&&e)approach(e,()=>engine.toggleSwitch(e));
       else if(a==='stairs'&&e)approach(e,()=>engine.traverse(e));
       else if(a==='altar'&&e)approach(e,altar,true);
@@ -902,7 +920,7 @@
   }
   $('game-canvas').addEventListener('pointerdown',ev=>{
     armedCombat=null;
-    if(ev.button===2||!started||engine.state.won||engine.state.defeated||surfaceOpen||presentation.entryOpen||presentation.castOpen)return;
+    if(ev.button===2||!started||engine.state.won||engine.state.defeated||surfaceOpen||presentation.entryOpen||presentation.castOpen||performance.now()<scenePointerAfter)return;
     if(ritualOpen){closeRitual();return;}presentation.closeCast();
     clearSurfaces();closeCharacter();collapseStory();stopPath();const now=performance.now();if(engine.mode==='walk'&&now-lastInput<105)return;lastInput=now;
     const p=['staff','morph','clone'].includes(engine.mode)?renderer.cellAt(ev.clientX,ev.clientY):(renderer.pickCell?.(ev.clientX,ev.clientY)||renderer.cellAt(ev.clientX,ev.clientY)),floor=currentFloor();if(!p||p.x<0||p.x>=floor.map[0].length||p.y<0||p.y>=floor.map.length)return;
@@ -960,7 +978,7 @@
     if(ev.key==='Escape'){
       ev.preventDefault();stopPath();if(!$('style-picker').classList.contains('hidden')){$('style-picker').classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');return;}
       if($('game-toolbox')?.open){$('game-toolbox').open=false;return;}if($('character-drawer').classList.contains('open')){closeCharacter();return;}
-      if(!activeStory&&engine.selection&&engine.getEntity(engine.selection.x,engine.selection.y)?.type==='enemy'){clearSceneTarget();$('game-canvas').focus({preventScroll:true});return;}
+      if(!activeStory&&engine.selection&&['enemy','door'].includes(engine.getEntity(engine.selection.x,engine.selection.y)?.type)){clearSceneTarget();$('game-canvas').focus({preventScroll:true});return;}
       if(surfaceOpen&&!$('modal-close').disabled){closeSurface();return;}if(activeStory&&!storyCollapsed){skipStory();return;}if(sceneDetail){sceneDetail=null;clearInterval(dialogueTimer);updateContext();return;}if(engine.selection){clearSceneTarget();return;}if(activeStory&&!storyCollapsed){collapseStory(true);return;}engine.setMode('walk');return;
     }
     if(!started)return;

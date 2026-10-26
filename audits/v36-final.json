@@ -1,0 +1,23 @@
+{
+  "scope": "PC door preview and actual single-step actions",
+  "passed": true,
+  "evidence": "audits/v36-door-flow.json",
+  "source": {
+    "index.html": "3e55f0804b1c76d84ca3374559690314ea2b0b038ff0e16007057e67bb5e3b97",
+    "playtest-v23-new.html": "bdf9e517cd2ec0bf41fc10ed24a96cbc527754c3e3302bcbf57d74ce85505f0b",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "js/ui.js": "6894e1d43bda569c121bba2c82c08bb441023632da07aa4e608effac05c5352c",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "css/ui-layout.css": "3b36f48a9a23514a7c555a01605466c59db0ba9b190d61b13cb63f920b984f35",
+    "scripts/build_v23_study.cjs": "31085c82693e9008f317b5fed44b7008b58eb21eb3c240fba7882e2c8b928e64",
+    "scripts/prepare_v36_fixtures.cjs": "b3c3bd8729f2f07948807c1cb933194026fcd8d7b7a75b8c55e7d5665ed0f03e",
+    "tests/v36-door-flow-browser.cjs": "288345a93cb3f7fcd917883c4d843d6a41398ff230a12cb86b600866b8387560",
+    "audits/v36-fixtures/manifest.json": "3d5182222f8f2b301667b99f714121f58f4d90f0936c6aacd692a21292d07a11"
+  },
+  "boundaries": [
+    "Legal campaign prefixes verify the UI; this is not a new full campaign browser playthrough.",
+    "Mobile and broad browser compatibility remain deferred."
+  ]
+}

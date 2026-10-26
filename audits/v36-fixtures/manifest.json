@@ -1,0 +1,165 @@
+{
+  "records": {
+    "key-yellow": {
+      "file": "audits/v36-fixtures/key-yellow.json",
+      "target": {
+        "x": 12,
+        "y": 5,
+        "type": "door",
+        "color": "yellow",
+        "label": "仙酿蟠桃宝龛 · 铜钥换取",
+        "id": "f0-11",
+        "guards": [
+          "f0-10"
+        ],
+        "role": "treasure",
+        "purpose": "守护仙酿蟠桃；可放弃奖励，保留资源。"
+      },
+      "prefixActions": 104,
+      "keys": {
+        "yellow": 2,
+        "blue": 1,
+        "red": 0
+      },
+      "mana": 6,
+      "relics": [],
+      "sha256": "924b1e27a4b2517873066195445f5e97d65028cb7761a8939efaba5975fa6b52"
+    },
+    "distant-blue": {
+      "file": "audits/v36-fixtures/distant-blue.json",
+      "target": {
+        "x": 5,
+        "y": 5,
+        "type": "door",
+        "color": "blue",
+        "label": "随身蟠桃宝龛 · 青钥换取",
+        "id": "f1-11",
+        "guards": [
+          "f1-10"
+        ],
+        "role": "treasure",
+        "purpose": "守护随身蟠桃；可放弃奖励，保留资源。 青蝉觉醒后可花灵息卸锁，保留钥匙。",
+        "morphable": true
+      },
+      "prefixActions": 124,
+      "keys": {
+        "yellow": 1,
+        "blue": 1,
+        "red": 0
+      },
+      "mana": 6,
+      "relics": [],
+      "sha256": "a286600b0fd3e6400f2e58412ff2120c986bb889bdf78599d7129026b7ec4077"
+    },
+    "key-blue": {
+      "file": "audits/v36-fixtures/key-blue.json",
+      "target": {
+        "x": 5,
+        "y": 5,
+        "type": "door",
+        "color": "blue",
+        "label": "随身蟠桃宝龛 · 青钥换取",
+        "id": "f1-11",
+        "guards": [
+          "f1-10"
+        ],
+        "role": "treasure",
+        "purpose": "守护随身蟠桃；可放弃奖励，保留资源。 青蝉觉醒后可花灵息卸锁，保留钥匙。",
+        "morphable": true
+      },
+      "prefixActions": 295,
+      "keys": {
+        "yellow": 1,
+        "blue": 1,
+        "red": 0
+      },
+      "mana": 6,
+      "relics": [],
+      "sha256": "eba1b66febfc035f76980faa4f5e0eac58f0b146a4443b5129fd850383baf75d"
+    },
+    "missing-key": {
+      "file": "audits/v36-fixtures/missing-key.json",
+      "target": {
+        "x": 17,
+        "y": 7,
+        "type": "door",
+        "color": "blue",
+        "label": "朱砂灵晶宝龛 · 青钥换取",
+        "id": "f2-16",
+        "guards": [
+          "f2-11"
+        ],
+        "role": "treasure",
+        "purpose": "守护朱砂灵晶；可放弃奖励，保留资源。 青蝉觉醒后可花灵息卸锁，保留钥匙。",
+        "morphable": true
+      },
+      "prefixActions": 457,
+      "keys": {
+        "yellow": 2,
+        "blue": 0,
+        "red": 0
+      },
+      "mana": 6,
+      "relics": [],
+      "sha256": "28f34476d3f77f1b5f1ec5d96e4cebeb7a7a472dc3585173adf3d102c2679333"
+    },
+    "morph-blue": {
+      "file": "audits/v36-fixtures/morph-blue.json",
+      "target": {
+        "x": 17,
+        "y": 7,
+        "type": "door",
+        "color": "blue",
+        "label": "随身蟠桃宝龛 · 青钥换取",
+        "id": "f8-20",
+        "guards": [
+          "f8-15"
+        ],
+        "role": "treasure",
+        "purpose": "守护随身蟠桃；可放弃奖励，保留资源。 青蝉觉醒后可花灵息卸锁，保留钥匙。",
+        "morphable": true
+      },
+      "prefixActions": 1687,
+      "keys": {
+        "yellow": 0,
+        "blue": 2,
+        "red": 0
+      },
+      "mana": 4,
+      "relics": [
+        0,
+        1,
+        2
+      ],
+      "sha256": "6a260a3b3fd92dbf5d086a469eba1ad82e28777c9a9ad8880ec0505ad356d14f"
+    },
+    "key-red": {
+      "file": "audits/v36-fixtures/key-red.json",
+      "target": {
+        "x": 10,
+        "y": 6,
+        "type": "door",
+        "color": "red",
+        "label": "归根朱门 · 需第一层归根心钥",
+        "id": "f17-10"
+      },
+      "prefixActions": 4114,
+      "keys": {
+        "yellow": 0,
+        "blue": 2,
+        "red": 1
+      },
+      "mana": 6,
+      "relics": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sha256": "7985a25f99fb7f6fa8d1e7ba07a4bd78fae485f8ca631b240b5e6546fe5301c5"
+    }
+  },
+  "source": "tests/playthrough-v28-free-mixed-direct.json",
+  "legalCampaignActions": 4177
+}

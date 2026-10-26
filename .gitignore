@@ -22,6 +22,7 @@
 !/audits/v34-material-ready-1171.png
 !/audits/v35-material-fatal-1280-card.png
 !/audits/v35-material-safe-1280-card.png
+!/audits/v36-material-door-card.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/
