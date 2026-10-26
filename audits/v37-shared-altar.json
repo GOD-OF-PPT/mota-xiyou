@@ -1,0 +1,818 @@
+{
+  "checks": [
+    "material entry draws one shared lamp; both old cells pick the same visible rest point and name; inspection never changes state",
+    "material both legal approaches restore 4 to 6 mana and offer identical real healing prices; no keys spent; player anchor preserved",
+    "material save standing on the former second lamp reloads without movement or lost progress and still opens the same ritual",
+    "mural entry draws one shared lamp; both old cells pick the same visible rest point and name; inspection never changes state",
+    "mural both legal approaches restore 4 to 6 mana and offer identical real healing prices; no keys spent; player anchor preserved",
+    "mural save standing on the former second lamp reloads without movement or lost progress and still opens the same ritual",
+    "study renders one rest installation and opens the original altar function",
+    "offline renders one rest installation and opens the original altar function"
+  ],
+  "screenshots": [
+    "audits/v37-material-entry-1280.png",
+    "audits/v37-material-entry-629.png",
+    "audits/v37-material-entry-1440.png",
+    "audits/v37-mural-entry-1280.png",
+    "audits/v37-mural-entry-629.png",
+    "audits/v37-mural-entry-1440.png"
+  ],
+  "layouts": [
+    {
+      "art": "material",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 588,
+          "height": 120.6875
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 588,
+          "height": 93.796875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +380 金还差 59 金",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12018 金点击供奉",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": false
+        },
+        {
+          "text": "3淬炼护身防御 +380 金还差 59 金",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 170.65625,
+          "height": 61.796875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 76.875,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "art": "mural",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "ritual-heading",
+          "glyphs": 6,
+          "width": 588,
+          "height": 75.5
+        },
+        {
+          "frame": "",
+          "glyphs": 5,
+          "width": 588,
+          "height": 120.6875
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-petal has-asset",
+          "glyphs": 5,
+          "width": 186,
+          "height": 225.390625
+        },
+        {
+          "frame": "ritual-minor",
+          "glyphs": 9,
+          "width": 588,
+          "height": 93.796875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "1磨砺金箍攻击 +380 金还差 59 金",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": true
+        },
+        {
+          "text": "2灯前疗伤生命 +12018 金点击供奉",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": false
+        },
+        {
+          "text": "3淬炼护身防御 +380 金还差 59 金",
+          "width": 186,
+          "height": 225.390625,
+          "disabled": true
+        },
+        {
+          "text": "4调息灵息已满",
+          "width": 170.65625,
+          "height": 61.796875,
+          "disabled": true
+        },
+        {
+          "text": "5奉珠换金1 珠 → 8 金",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "6奉珠疗伤1 珠 → 50 命",
+          "width": 170.671875,
+          "height": 61.796875,
+          "disabled": false
+        },
+        {
+          "text": "离开莲灯 Esc",
+          "width": 120.15625,
+          "height": 42.5,
+          "disabled": false
+        },
+        {
+          "text": "行囊 I",
+          "width": 76.875,
+          "height": 42.5,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "models": [
+    {
+      "label": "material entry",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "west occupied",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 640,
+          "y": 585.9047619047619
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 577.1428571428571
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "east occupied",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 577.1428571428571
+        },
+        "b": {
+          "x": 700.952380952381,
+          "y": 585.9047619047619
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "material reloaded east",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 577.1428571428571
+        },
+        "b": {
+          "x": 700.952380952381,
+          "y": 585.9047619047619
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "mural entry",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 304
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 549.047619047619
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 549.047619047619
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "west occupied",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 304
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 640,
+          "y": 598.0952380952381
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 598.0952380952381
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "east occupied",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 304
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 598.0952380952381
+        },
+        "b": {
+          "x": 700.952380952381,
+          "y": 598.0952380952381
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "mural reloaded east",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 304
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 598.0952380952381
+        },
+        "b": {
+          "x": 700.952380952381,
+          "y": 598.0952380952381
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "study",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    },
+    {
+      "label": "offline",
+      "logical": [
+        {
+          "id": "f11-0",
+          "x": 10,
+          "y": 18
+        },
+        {
+          "id": "f11-1",
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "drawn": [
+        {
+          "kind": "entity",
+          "id": "f11-0",
+          "x": 10,
+          "y": 18,
+          "depth": 298.5
+        }
+      ],
+      "installations": [
+        {
+          "id": "f11-0",
+          "members": [
+            "f11-0",
+            "f11-1"
+          ],
+          "cells": [
+            {
+              "x": 10,
+              "y": 18
+            },
+            {
+              "x": 11,
+              "y": 18
+            }
+          ],
+          "name": "丹庭灵息坛",
+          "visuals": 1
+        }
+      ],
+      "anchors": {
+        "a": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        },
+        "b": {
+          "x": 670.4761904761905,
+          "y": 540.2857142857142
+        }
+      },
+      "names": [
+        "丹庭灵息坛",
+        "丹庭灵息坛"
+      ],
+      "player": "actor_wukong_up"
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "PC shared twelfth-floor altar presentation and interaction",
+  "passed": true,
+  "evidence": "audits/v37-shared-altar.json",
+  "source": {
+    "index.html": "50ae4427d4eef0324527dabd3d20ba8cdf778c2cc0bebe5a12a0ba1874c6b140",
+    "playtest-v23-new.html": "9d7313a8a44f069a014bd80794208308705b6342f13f8cfb017f7339a0b06739",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "js/renderer.js": "851bc11416d7d1a0563b55fed7ed7b113f3ac1e35e266955254f1f64ddfbf019",
+    "js/ui.js": "8c876984e81510aa99b59395f5a330158d832814cb20bfc9e6b20d60c5a0f610",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "scripts/build_v23_study.cjs": "f8d347cfee13ea0d2067c8f2172b996387dd57478f185b9543e5f3bf7c088c28",
+    "scripts/prepare_v37_fixtures.cjs": "622897c0af9478ffacfd402a14415c8b66ac4ae1f836babeda0af2a0324d8e5f",
+    "tests/v37-shared-altar-browser.cjs": "6242d279b8efc6a766d046b72b548346d1fc7be9aee2cab5491e1c2ca046a986",
+    "audits/v37-fixtures/manifest.json": "723ec1f54fc056d082157016f2a06468be5643a3c09c6d60f133eec2db4823c8"
+  },
+  "boundaries": [
+    "Legal prefixes and real approach/shop actions validate this change; no new full campaign browser playthrough.",
+    "Mobile and broad browser compatibility remain deferred."
+  ]
+}

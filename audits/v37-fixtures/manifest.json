@@ -1,0 +1,48 @@
+{
+  "records": {
+    "entry": {
+      "file": "audits/v37-fixtures/entry.json",
+      "source": {
+        "prefixActions": 2280
+      },
+      "sha256": "cd2bd774ad4c8c8f2deab714d24984d9b18b93fafd970cce81ef4173dbf5c47f",
+      "mana": 6,
+      "coins": 24
+    },
+    "low-mana": {
+      "file": "audits/v37-fixtures/low-mana.json",
+      "source": {
+        "prefixActions": 2366,
+        "extraLegalSteps": [
+          "down",
+          "down",
+          "down",
+          "right",
+          "down",
+          "down",
+          "down",
+          "left",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "down",
+          "right",
+          "right",
+          "right",
+          "right",
+          "right",
+          "right",
+          "down",
+          "right"
+        ]
+      },
+      "sha256": "b954f1c93e5b05640b01f79ed58dff422d3223a094f54f3dced90609147446c9",
+      "mana": 4,
+      "coins": 33
+    }
+  },
+  "source": "tests/playthrough-v28-free-mixed-direct.json",
+  "campaignActions": 4177
+}

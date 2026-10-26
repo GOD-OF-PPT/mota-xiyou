@@ -184,5 +184,6 @@
   "story_f_followup": "audits/v33-story-f.json",
   "choice_focus_followup": "docs/v34-choice-focus-review.md",
   "battle_focus_followup": "docs/v35-battle-focus-review.md",
-  "door_flow_followup": "docs/v36-door-flow-review.md"
+  "door_flow_followup": "docs/v36-door-flow-review.md",
+  "shared_altar_followup": "docs/v37-shared-altar-review.md"
 }

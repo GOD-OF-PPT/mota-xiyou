@@ -83,14 +83,15 @@
     cellAt(clientX,clientY){const b=this.canvas.getBoundingClientRect(),v=this.projection();const x=Math.floor((clientX-b.left-v.offsetX)/v.cellSize+v.x),y=Math.floor((clientY-b.top-v.offsetY)/v.cellSize+v.y);return {x,y};}
     pickCell(clientX,clientY){
       const grid=this.cellAt(clientX,clientY),s=this.engine.state,floor=this.data().floors[s.floor];if(!floor)return grid;
-      if(this.engine.getEntity?.(grid.x,grid.y)||['~','=','w'].includes(this.tile(grid.x,grid.y))||grid.x===s.x&&grid.y===s.y)return grid;
+      const hit=this.engine.getEntity?.(grid.x,grid.y);if(hit)return this.interactionCell(hit);
+      if(['~','=','w'].includes(this.tile(grid.x,grid.y))||grid.x===s.x&&grid.y===s.y)return grid;
       const b=this.canvas.getBoundingClientRect(),v=this.projection(),wx=((clientX-b.left-v.offsetX)/v.cellSize+v.x)*CELL,wy=((clientY-b.top-v.offsetY)/v.cellSize+v.y)*CELL;
       const entries=(floor.entities||[]).filter(e=>!s.removed?.[e.id]&&!(e.type==='illusion'&&s.revealed?.[e.id])&&!(e.type==='seal'&&(s.relics?.length||0)>=(e.requires||0))).map(e=>({...e}));entries.push({x:s.x,y:s.y,type:'player'});const depth=e=>this.actorAnchors?.get(`${s.floor}:${e.x}:${e.y}`)?.depth??this.entityDepth(e);entries.sort((a,b)=>depth(b)-depth(a)||(b.type==='player'?1:-1));
       for(const e of entries){
         const clone=e.type==='switch'&&e.kind==='plate'&&s.switches?.[e.id];let id;if(e.type==='player')id=`actor_wukong_${s.facing||'up'}`;else if(clone)id=`actor_wukong_${e.facing||'down'}`;else if(e.type==='enemy')id=`enemy_${e.enemy}`;else if(e.type==='item')id=`item_${e.item}`;else if(e.type==='treasure')id=`treasure_${e.treasure}`;else if(e.type==='npc'||e.type==='rescue'){const raw=String(e.sprite||e.archetype||e.quest||'lantern').toLowerCase(),kind=/bajie|pig/.test(raw)?'bajie':/white|wutian/.test(raw)?'whitewutian':/tang/.test(raw)?'tangseng':/nezha/.test(raw)?'nezha':/qiao/.test(raw)?'qiao':'lantern';id=`npc_${kind}`;}else if(e.type==='door')id=`prop_door_${e.color}`;else if(e.type==='stairs')id=`prop_stairs_${e.to>s.floor?'up':'down'}`;else if(e.type==='cache')id='prop_chest';else if(e.type==='gate'&&this.gateOpen(e))id='prop_gate_open';else id=`prop_${e.type}`;
-        const rendered=this.actorAnchors?.get(`${s.floor}:${e.x}:${e.y}`);if(rendered){if(wx>=rendered.left&&wx<=rendered.left+rendered.width&&wy>=rendered.top&&wy<=rendered.top+rendered.height&&!this.wallOccludes(wx,wy,rendered.depth))return {x:e.x,y:e.y};continue;}
+        const rendered=this.actorAnchors?.get(`${s.floor}:${e.x}:${e.y}`);if(rendered){if(wx>=rendered.left&&wx<=rendered.left+rendered.width&&wy>=rendered.top&&wy<=rendered.top+rendered.height&&!this.wallOccludes(wx,wy,rendered.depth))return this.interactionCell(e);continue;}
         const meta=window.TowerAssets?.get?.(id);if(!meta?.anchor)continue;const profile=this.renderProfile(e,id),anchor=profile.sourceContact||meta.anchor,bounds=meta.frameBounds?.[0]||meta.contentBounds||[0,0,meta.sourceW,meta.sourceH],scale=(meta.logicalScale??1)*this.spriteScale(id)*profile.scale*(e.type==='enemy'&&this.data().enemies[e.enemy]?.trait==='boss'?1.12:1),left=e.x*CELL+profile.groundX-anchor.x/NATIVE*scale+bounds[0]/NATIVE*scale,top=e.y*CELL+profile.groundY-profile.elevation-(clone?1:0)-anchor.y/NATIVE*scale+bounds[1]/NATIVE*scale,right=left+(bounds[2]-bounds[0])/NATIVE*scale,bottom=top+(bounds[3]-bounds[1])/NATIVE*scale;
-        if(wx>=left&&wx<=right&&wy>=top&&wy<=bottom&&!this.wallOccludes(wx,wy,this.entityDepth(e)))return {x:e.x,y:e.y};
+        if(wx>=left&&wx<=right&&wy>=top&&wy<=bottom&&!this.wallOccludes(wx,wy,this.entityDepth(e)))return this.interactionCell(e);
       }return grid;
     }
     setOverview(value){const prior=this.overview;this.overview=!!value;if(prior&&!this.overview)this.focusPlayer();else this.updateCamera();return this.overview;}
@@ -99,6 +100,19 @@
     focusCell(x,y){if(!Number.isFinite(x)||!Number.isFinite(y))return;this.updateCamera();this.cameraFocus={x,y};this.updateCamera();}
     focusPlayer(){const s=this.engine.state||{},e=this.engine.selection;this.cameraFocus=null;this.lastSelection=e?`${s.floor}:${e.x}:${e.y}`:'';this.updateCamera();}
     screenPoint(x,y,options={}){if(options.moving){const a=this.anchorFor(x,y,options);if(!a?.visible)return null;return options.anchor==='feet'?a.foot:a.body;}const v=this.projection();if(x+.5<v.x||y+.5<v.y||x+.5>=v.x+v.w||y+.5>=v.y+v.h)return null;return {x:v.offsetX+(x-v.x+.5)*v.cellSize,y:v.offsetY+(y-v.y+.5)*v.cellSize};}
+    altarGroup(e){
+      if(this.card||e?.type!=='altar')return null;
+      const floor=this.data().floors[this.engine.state.floor];
+      if(this.altarGroupFloor!==floor){
+        this.altarGroupFloor=floor;this.altarGroups=new Map();
+        const lamps=floor.entities.filter(a=>a.type==='altar').sort((a,b)=>a.y-b.y||a.x-b.x);
+        for(let i=0;i<lamps.length;){const members=[lamps[i++]];while(i<lamps.length&&lamps[i].y===members[0].y&&lamps[i].x===members.at(-1).x+1)members.push(lamps[i++]);if(members.length<2)continue;const group={primary:members[0],members,left:members[0].x,right:members.at(-1).x,centerX:(members[0].x+members.at(-1).x)/2,y:members[0].y};for(const a of members)this.altarGroups.set(a.id,group);}
+      }
+      return this.altarGroups.get(e.id)||null;
+    }
+    sceneEntityVisible(e){const group=this.altarGroup(e);return !group||group.primary.id===e.id;}
+    altarName(e){return this.altarGroup(e)?.primary.name||e.name||'莲灯';}
+    interactionCell(e){const group=this.altarGroup(e),s=this.engine.state,target=group?[...group.members].sort((a,b)=>Math.abs(a.x-s.x)+Math.abs(a.y-s.y)-Math.abs(b.x-s.x)-Math.abs(b.y-s.y))[0]:e;return {x:target.x,y:target.y};}
     anchorFor(x,y){
       const v=this.projection(),stored=this.actorAnchors?.get(`${this.engine.state?.floor}:${x}:${y}`),profile=this.renderProfile(this.engine.getEntity?.(x,y)||{x,y,type:'player'}),a=stored||{footX:x*CELL+profile.groundX,footY:y*CELL+profile.groundY,left:x*CELL,top:y*CELL-8,width:16,height:24},scale=v.cellSize/CELL;
       const foot={x:v.offsetX+(a.footX-v.x*CELL)*scale,y:v.offsetY+(a.footY-v.y*CELL)*scale},bounds={x:v.offsetX+(a.left-v.x*CELL)*scale,y:v.offsetY+(a.top-v.y*CELL)*scale,w:a.width*scale,h:a.height*scale};
@@ -346,7 +360,7 @@
       const e=entity||{},kind=id||(e.type==='player'?'actor_wukong_'+(this.engine.state?.facing||'up'):e.type==='enemy'?'enemy_'+e.enemy:e.type==='chest'||e.type==='cache'?'prop_chest':e.type==='stairs'?'prop_stairs_'+(e.to>(this.engine.state?.floor||0)?'up':'down'):e.type==='item'?'item_'+e.item:e.type==='treasure'?'treasure_'+e.treasure:'prop_'+(e.type||''));
       const p={groundX:8,groundY:16,contactWidth:10,contactDepth:3.6,elevation:0,depthOffset:0,scale:1,shadowWidth:7,shadowDepth:2.1,sourceContact:null};
       if(kind==='prop_chest'&&!this.card)Object.assign(p,{sourceContact:window.TowerAssets?.get?.(kind)?.anchor||null,groundY:this.smoothing()?12.5:14.5,contactWidth:13.6,contactDepth:5.5,shadowWidth:7.1,shadowDepth:2.3});
-      if(this.card||!this.smoothing())return p;
+      if(this.card||!this.smoothing()){const group=this.altarGroup(e);if(group){p.groundX+=(group.centerX-e.x)*CELL;p.contactWidth+=(group.right-group.left)*CELL;}return p;}
       // A source's lowest painted pixel is not its ground plane. Register the
       // projected base separately, preserving complete lids, wings and weapons.
       p.groundY=12.5;
@@ -367,6 +381,7 @@
       if(Number.isFinite(meta?.sceneGroundX))p.groundX=meta.sceneGroundX;
       if(meta?.groundContact)p.sourceContact=meta.groundContact;
       else if(p.sourceContact&&registration)p.sourceContact={x:(p.sourceContact.x-registration.offset[0])/registration.scale,y:(p.sourceContact.y-registration.offset[1])/registration.scale};
+      const altarGroup=this.altarGroup(e);if(altarGroup){p.groundX+=(altarGroup.centerX-e.x)*CELL;p.contactWidth+=(altarGroup.right-altarGroup.left)*CELL;}
       return p;
     },
     entityDepth(entity){const p=this.renderProfile(entity);return (entity.y||0)*CELL+p.groundY+p.depthOffset;},
@@ -515,18 +530,21 @@
       this.installationAudit=[];this.groundingAudit=[];
       this.currentEntity=null;if(!this.material)this.decor(ctx);this.landmark(ctx);this.floorSigils(ctx);
       if(this.material)this.groundInstallations(ctx);
+      this.altarInstallationAudit=[];this.sharedAltarAnchors=new Map();
+      for(const e of entities){const group=this.altarGroup(e);if(!group||group.primary.id!==e.id)continue;const left=group.left*CELL+1,top=group.y*CELL+7,w=(group.right-group.left+1)*CELL-2;ctx.save();ctx.fillStyle=this.material?'rgba(32,38,32,.26)':'#34554d';ctx.fillRect(left,top,w,7);ctx.strokeStyle=this.material?'rgba(168,145,83,.4)':'#9c9b65';ctx.lineWidth=.3;ctx.strokeRect(left+.2,top+.2,w-.4,6.6);ctx.restore();this.altarInstallationAudit.push({id:e.id,members:group.members.map(a=>a.id),cells:group.members.map(a=>({x:a.x,y:a.y})),name:this.altarName(e),visuals:1});}
       this.journeyMarks(ctx);
       for(let y=0;y<height;y++)for(let x=0;x<width;x++)if(this.tile(x,y)==='=')this.bars(ctx,x*CELL,y*CELL);
       for(const e of this.effects)if(!this.calm&&e.kind==='event'&&e.type==='magic'&&e.ability==='morph'&&time-e.start<e.life*.58)this.bars(ctx,e.x,e.y);
       this.lightSources(ctx,entities);
-      const actors=entities.map(e=>({foot:this.entityDepth(e),entity:e}));if(s.x!==undefined)actors.push({foot:this.playerMotion(time).footY,player:true});
+      const actors=entities.filter(e=>this.sceneEntityVisible(e)).map(e=>({foot:this.entityDepth(e),entity:e}));if(s.x!==undefined)actors.push({foot:this.playerMotion(time).footY,player:true});
       if(this.material)for(const wall of this.wallCommands||[])actors.push({foot:wall.depth,wall});actors.sort((a,b)=>a.foot-b.foot||(a.player?1:b.player?-1:0));
       this.depthQueueAudit=[];
       for(const actor of actors){
         this.depthQueueAudit.push({kind:actor.wall?'wall':actor.player?'player':'entity',id:actor.entity?.id||null,x:actor.wall?.x??actor.entity?.x??s.x,y:actor.wall?.y??actor.entity?.y??s.y,depth:actor.foot});
         if(actor.wall){this.currentEntity=null;this.wallForeground(ctx,actor.wall);continue;}
-        this.currentEntity=actor.player?{x:s.x,y:s.y,type:'player'}:actor.entity;if(actor.player)this.player(ctx,s.x,s.y);else this.entity(ctx,actor.entity);
+        this.currentEntity=actor.player?{x:s.x,y:s.y,type:'player'}:actor.entity;if(actor.player)this.player(ctx,s.x,s.y);else{this.entity(ctx,actor.entity);if(this.altarGroup(actor.entity))this.sharedAltarAnchors.set(actor.entity.id,this.actorAnchors.get(`${s.floor}:${actor.entity.x}:${actor.entity.y}`));}
       }this.currentEntity=null;
+      for(const installation of this.altarInstallationAudit){const anchor=this.sharedAltarAnchors.get(installation.id);if(anchor)for(const cell of installation.cells){const key=`${s.floor}:${cell.x}:${cell.y}`;if(!(this.actorAnchors.get(key)?.priority>1))this.actorAnchors.set(key,{...anchor,sharedAltar:installation.id});}}
       this.tacticalHints(ctx,entities);
       for(const g of this.mechanismPreview||[]){if(g.before===g.after)continue;ctx.save();ctx.strokeStyle=g.after?'#a9d7af':'#df9b72';ctx.lineWidth=1.5;ctx.setLineDash([3,2]);ctx.strokeRect(g.x*CELL+1,g.y*CELL+1,CELL-2,CELL-2);ctx.restore();}
 
@@ -546,12 +564,13 @@
       // These are paved parts of real floor cells, never extra collision tiles.
       for(const e of this.floor.entities){
         if(!['altar','choice','resonator','chest','cache','monument','switch','tide','relic','stairs'].includes(e.type))continue;
+        if(!this.sceneEntityVisible(e))continue;
         if(e.type==='stairs'&&e.to<this.s.floor)continue;
         if(['chest','cache','relic'].includes(e.type)&&this.s.removed?.[e.id])continue;
         const p=this.renderProfile(e),cx=e.x*CELL+p.groundX,cy=e.y*CELL+p.groundY,large=['altar','choice','resonator'].includes(e.type),hw=large?7.9:7.1,hd=Math.min(large?3.9:3.2,15.7-p.groundY,p.groundY-.3);
         const v=this.renderViewport;if(cx+hw<v.x*CELL||cx-hw>(v.x+v.w)*CELL||cy+hd<v.y*CELL||cy-hd>(v.y+v.h)*CELL)continue;
         if(['#','v','~','w',undefined].includes(this.tile(e.x,e.y)))continue;
-        ctx.save();ctx.beginPath();ctx.rect(e.x*CELL,e.y*CELL,CELL,CELL);ctx.clip();
+        const altarGroup=this.altarGroup(e);ctx.save();ctx.beginPath();ctx.rect((altarGroup?.left??e.x)*CELL,e.y*CELL,altarGroup?(altarGroup.right-altarGroup.left+1)*CELL:CELL,CELL);ctx.clip();
         // Only weather/contact marks around the object's own base. A full
         // polygonal slab reads as another loose prop on top of the courtyard.
         const meta=window.TowerAssets?.get?.('prop_'+e.type),nativeWidth=meta?.contentBounds?(meta.contentBounds[2]-meta.contentBounds[0])*(meta.logicalScale??1)/NATIVE:hw*2;
@@ -744,9 +763,9 @@
       for(let y=1;y<map.length-1;y++)for(let x=1;x<map[y].length-1;x++)if(map[y][x]==='#'&&map[y+1]?.[x]!=='#'&&hash(x,y,this.s.floor+4)>.76){this.torch(ctx,x*16+8,y*16+7,x+y);}
     },
     lightSources(ctx,entities){
-      const lights=entities.filter(e=>e.type==='altar'||e.type==='relic'||e.type==='finale'||e.type==='resonator');
+      const lights=entities.filter(e=>(e.type==='altar'||e.type==='relic'||e.type==='finale'||e.type==='resonator')&&this.sceneEntityVisible(e));
       if(this.material){ctx.save();ctx.globalCompositeOperation='screen';for(const e of lights){const hot=e.type==='relic'||e.type==='finale',r=hot?17:13,p=this.renderProfile(e);ctx.save();ctx.translate(e.x*CELL+p.groundX,e.y*CELL+p.groundY);ctx.scale(1,.4);const g=ctx.createRadialGradient(0,0,1,0,0,r);g.addColorStop(0,hot?'rgba(227,177,91,.16)':'rgba(97,192,167,.16)');g.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=g;ctx.fillRect(-r,-r,r*2,r*2);ctx.restore();}ctx.restore();return;}
-      for(const e of lights){const color=e.type==='altar'?C.jade:e.type==='resonator'?C.blue:C.goldLight;ctx.globalAlpha=.035;rect(ctx,e.x*16-8,e.y*16-8,32,32,color);ctx.globalAlpha=.055;rect(ctx,e.x*16-2,e.y*16-2,20,20,color);ctx.globalAlpha=1;}
+      for(const e of lights){const color=e.type==='altar'?C.jade:e.type==='resonator'?C.blue:C.goldLight,dx=this.renderProfile(e).groundX-8;ctx.globalAlpha=.035;rect(ctx,e.x*16-8+dx,e.y*16-8,32,32,color);ctx.globalAlpha=.055;rect(ctx,e.x*16-2+dx,e.y*16-2,20,20,color);ctx.globalAlpha=1;}
     },
     landmark(ctx){
       const map=this.floor.map,w=map[0].length,h=map.length,types=['buddha','pagoda','dragon','furnace','scripture','blacklotus'];
@@ -1288,7 +1307,7 @@
       for(let i=0;i<4;i++){const xx=x+2+i*4;rect(ctx,xx,y+2,1.2,11,'#b2c3b3');rect(ctx,xx+1.2,y+2,.7,11,'#334d50');}
       rect(ctx,x+6,y+6,4,4,'#32665e');rect(ctx,x+7,y+7,2,2,C.jade);ctx.restore();
     },
-    altar(ctx,x,y){if(!this.propArt(ctx,'prop_altar',x,y))legacyArt.altar.call(this,ctx,x,y);},
+    altar(ctx,x,y){if(!this.propArt(ctx,'prop_altar',x,y)){const group=this.altarGroup(this.currentEntity);legacyArt.altar.call(this,ctx,x+(group?(group.centerX-this.currentEntity.x)*CELL:0),y);}},
     relic(ctx,x,y,id){if(!this.propArt(ctx,`prop_relic_${id}`,x,y)&&!this.propArt(ctx,'prop_relic',x,y))legacyArt.relic.call(this,ctx,x,y,id);},
     monument(ctx,x,y){if(!this.propArt(ctx,'prop_monument',x,y))legacyArt.monument.call(this,ctx,x,y);},
     gate(ctx,x,y,open){if(open){if(this.propArt(ctx,'prop_gate_open',x,y,1)){this.stateMark(ctx,x,y,true);return;}rect(ctx,x,y+1,1,15,C.goldDark);rect(ctx,x+15,y+1,1,15,C.goldDark);line(ctx,x,y+1,16,C.goldLight);return;}if(!this.propArt(ctx,'prop_gate',x,y))legacyArt.gate.call(this,ctx,x,y,open);},

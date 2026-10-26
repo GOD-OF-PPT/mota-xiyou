@@ -424,6 +424,7 @@
     $('setting-cast-frequency')?.addEventListener('change',ev=>{castFrequency=ev.target.value;try{localStorage.setItem('dasheng-cast-frequency-v13',castFrequency);}catch{}});
   }
   function atLantern(){return currentFloor().entities.some(e=>e.type==='altar'&&e.x===engine.state.x&&e.y===engine.state.y);}
+  function atAltar(e){const group=renderer.altarGroup(e);return group?group.members.some(a=>a.x===engine.state.x&&a.y===engine.state.y):engine.distance(e)===0;}
   function treasureHTML(){
     const s=engine.state,owned=s.treasures||[],equipped=s.equipped||[],near=atLantern();
     return `<section class="treasure-section"><div class="treasure-heading"><h3>六器行装</h3><span>佩戴 ${equipped.length} / 2</span></div><p class="muted">法器各有代价，最多佩戴两件；必须站在莲灯上才能装卸。${near?'此刻可调整行装。':'查看敌情后，再决定以何种行装出发。'}</p><div class="treasure-grid">${treasureList().map((t,i)=>{const has=owned.includes(t.id),on=equipped.includes(t.id),f=TowerData.floors.findIndex(f=>f.entities.some(e=>e.type==='treasure'&&e.treasure===t.id));return `<article class="treasure-card ${has?'owned':''} ${on?'equipped':''}"><canvas class="treasure-stamp" data-treasure-icon="${esc(t.id)}" aria-hidden="true"></canvas><div><h4>${esc(t.name||t.id)}${on?'<small>已佩戴</small>':''}</h4><small>${has?'已寻回':`第 ${f>=0?f+1:'?'} 层 · 支翼精英守藏`}</small><p>${esc(treasureEffects[t.id]||t.description||'')}</p>${has?`<button class="secondary-button" data-equip="${esc(t.id)}" ${!near||(!on&&equipped.length>=2)?'disabled':''}>${on?'卸下法器':'佩戴法器'}</button>`:'<span class="unfound-treasure">尚未寻回</span>'}</div></article>`;}).join('')}</div>${!near&&owned.length?'<button class="secondary-button" data-find-lantern>在地图定位莲灯 ↗</button>':''}</section>`;
@@ -530,7 +531,7 @@
   }
   function hideTargetLink(){ $('target-link').classList.add('hidden');$('target-direction').classList.add('hidden'); }
   function showTargetDirection(anchor,obstacles){
-    const button=$('target-direction'),sel=engine.selection,e=sel&&engine.getEntity(sel.x,sel.y),name=e?.type==='enemy'?TowerData.enemies[e.enemy].name:e?.label||e?.name||$('context-title').textContent;
+    const button=$('target-direction'),sel=engine.selection,e=sel&&engine.getEntity(sel.x,sel.y),name=e?.type==='enemy'?TowerData.enemies[e.enemy].name:e?.type==='altar'?renderer.altarName(e):e?.label||e?.name||$('context-title').textContent;
     const dx=anchor.foot.x-innerWidth/2,dy=anchor.foot.y-innerHeight/2,angle=Math.atan2(dy,dx),halfW=Math.max(20,innerWidth/2-80),halfH=Math.max(20,innerHeight/2-30),factor=Math.min(halfW/Math.max(.01,Math.abs(dx)),halfH/Math.max(.01,Math.abs(dy)));
     const point={x:innerWidth/2+dx*factor,y:innerHeight/2+dy*factor};
     button.classList.toggle('compact',innerWidth<500);button.classList.remove('hidden');$('target-direction-name').textContent=name;$('target-direction-arrow').textContent='➤';$('target-direction-arrow').style.transform=`rotate(${angle}rad)`;
@@ -604,7 +605,7 @@
     else if(e?.type==='treasure'){summary=(treasureEffects[e.treasure]||treasureById(e.treasure)?.description||'取得后须在莲灯佩戴').replace(/[。；].*$/,'');actions=button('treasure','寻回法器');}
     else if(e?.type==='item'||e?.type==='chest'){const it=TowerData.items[e.item];summary=e.type==='chest'&&e.requires>s.relics.length?`须 ${e.requires} 重心印 · 已有 ${s.relics.length}`:engine.itemEffect(it);actions=button('collect','前往拾取',blocked||e.type==='chest'&&e.requires>s.relics.length);}
     else if(e?.type==='stairs'){const need=engine.stairRequirement(e);summary=runSession.isTrial?'条件齐备后，在上行处确认本题':`前往第 ${e.to+1} 层 · 主动通行`;actions=button('stairs',runSession.isTrial?(near?'确认完成试炼':'走近上行处'):(near?'踏上塔阶':'前往并登阶'),need>s.relics.length||blocked||runSession.isTrial&&e.to!==runSession.trial.exitTo);}
-    else if(e?.type==='altar'){summary='灵息可补满 · 生命不自复';actions=button('altar',engine.distance(e)===0?'灯前修心':'前往莲灯修心');}
+    else if(e?.type==='altar'){summary='灵息可补满 · 生命不自复';actions=button('altar',atAltar(e)?'灯前修心':'前往莲灯修心');}
     else if(e?.type==='choice'){const selected=s.choices?.[e.choice],def=TowerData.choices?.[e.choice],option=def?.options.find(o=>o.id===selected);summary=option?'已定：'+option.label:'代价与收益，定念前可比较';actions=button('choice',near?'比较取舍':'前往比较');}
     else if(e?.type==='cache'){summary=s.choices?.[e.choice]?'契约已定 · 领奖须亲自抵达':'先选契，再取共鸣之物';actions=button('cache',s.choices?.[e.choice]?'领取契物':'察看契物');}
     else if(e?.type==='illusion'){const open=!!s.revealed?.[e.id];summary=open?'幻象已破 · 真路显现':'火眼辨真 · 不耗灵息';if(!open)actions=button('reveal','照破幻壁');}
@@ -661,7 +662,7 @@
       else if(e?.type==='treasure'){const t=treasureById(e.treasure);title=e.label||t?.name||'失落法器';html=`<div class="context-kicker">六器之一 · ${coord(e)}</div><p>${esc(treasureEffects[e.treasure]||t?.description||'')}</p><div class="context-callout">亲自抵达此格寻回。须在莲灯上佩戴，最多两件；取得法器不会自动改变当前行装。</div>${requirementsHTML(e)}<button class="context-button" data-context="treasure">${engine.distance(e)>0?'前往寻回法器':'寻回法器'}</button>`;}
       else if(e?.type==='item'||e?.type==='chest'){const it=TowerData.items[e.item];title=e.label||it.name;html=`<p>${esc(it.description||it.desc||engine.itemEffect(it))}</p>${e.type==='chest'?`<div class="context-callout">${e.requires>s.relics.length?`需要 ${e.requires} 重心印共鸣。记住这里，稍后回来。`:'宝匣已回应心印，走上此格领取。'}</div>${requirementsHTML(e)}`:''}`;}
       else if(e?.type==='stairs'){title='塔阶 · '+TowerData.floors[e.to].name;const need=engine.stairRequirement(e),req=engine.requirements?.(e);html=`<p class="context-summary">前往第 ${e.to+1} 层 · 经过阶梯不会自动换层。</p><p class="muted">旧层的守卫、宝物与机关保持现状。</p>${need>s.relics.length?`<div class="context-callout">需要 ${need} 重心印，现有 ${s.relics.length} 重。</div>`:''}${requirementsHTML(e)}<button class="context-button" data-context="stairs" ${need>s.relics.length||req&&!req.met?'disabled':''}>${engine.distance(e)>1?'走近阶梯':`确认前往第 ${e.to+1} 层`}</button>`;}
-      else if(e?.type==='altar'){title=e.name||'莲灯';html='<p class="context-summary">走上补满灵息；主动交互修心，生命不会自动恢复。</p><button class="context-button" data-context="altar">'+(engine.distance(e)===0?'灯前修心':'走到莲灯 · 修心')+'</button>';}
+      else if(e?.type==='altar'){title=renderer.altarName(e);html='<p class="context-summary">走上补满灵息；主动交互修心，生命不会自动恢复。</p><button class="context-button" data-context="altar">'+(atAltar(e)?'灯前修心':'走到莲灯 · 修心')+'</button>';}
       else if(e?.type==='choice'){const spec=TowerData.choices?.[e.choice];title=e.label||spec?.title||'路线契约';html=`<p class="context-summary">${esc(spec?.description||'代价与奖励均会在确认前展示。')}</p><button class="context-button" data-context="choice">${engine.distance(e)>1?'走近 · 比较选择':'比较代价与奖励'}</button>`;}
       else if(e?.type==='cache'){const spec=TowerData.choices?.[e.choice];title=e.label||'契约藏室';html=`<p class="context-summary">${esc(spec?.description||'奖励由已选契约决定；每份契约只可领取一次。')}</p><button class="context-button" data-context="cache">${s.choices?.[e.choice]?'前往领取所选奖励':'查看契约奖励'}</button>`;}
       else if(e?.type==='npc'||e?.type==='monument'){title=e.name||'塔中残卷';const d=npcDialogue(e);html=`<p class="context-summary">${esc(dialogueText(d).split('\n')[0])}</p><button class="context-button" data-context="story">${engine.distance(e)>1?'走近 · 阅读全文':'阅读全文'}</button>`;}
@@ -732,7 +733,7 @@
       else if(a==='approach-door'&&e)approach(e,()=>engine.select(e.x,e.y));
       else if(a==='switch'&&e)approach(e,()=>engine.toggleSwitch(e));
       else if(a==='stairs'&&e)approach(e,()=>engine.traverse(e));
-      else if(a==='altar'&&e)approach(e,altar,true);
+      else if(a==='altar'&&e){if(atAltar(e))altar();else approach(e,altar,true);}
       else if(a==='choice'&&e)approach(e,()=>choice(e));
       else if(a==='cache'&&e){if(engine.state.choices?.[e.choice])approach(e,()=>{},true);else choice(e);}
       else if(a==='fragment'&&e)approach(e,()=>engine.takeFragment?.(e),true);
@@ -833,7 +834,7 @@
     const [dx,dy]=TowerRules.directions[s.facing],here=engine.getEntity(s.x,s.y),front=engine.getEntity(s.x+dx,s.y+dy);
     const selected=sel&&engine.getEntity(sel.x,sel.y);
     const e=selected&&engine.distance(selected)<=1?selected:here||front;
-    if(e){if(e.type==='enemy'){if(TowerData.enemies[e.enemy]?.trait==='boss'&&s.relics.length>=5){engine.select(e.x,e.y);finalBattle.open(e);}else if(selected?.id===e.id)confirmCombat(e,'keyboard');else combat(e);}else if(e.type==='door'&&selected?.id===e.id)door(e);else if(e.type==='npc'||e.type==='monument'){engine.select(e.x,e.y);talk(e);}else engine.interact(e);return;}
+    if(e){if(e.type==='enemy'){if(TowerData.enemies[e.enemy]?.trait==='boss'&&s.relics.length>=5){engine.select(e.x,e.y);finalBattle.open(e);}else if(selected?.id===e.id)confirmCombat(e,'keyboard');else combat(e);}else if(e.type==='door'&&selected?.id===e.id)door(e);else if(e.type==='altar'&&atAltar(e))altar();else if(e.type==='npc'||e.type==='monument'){engine.select(e.x,e.y);talk(e);}else engine.interact(e);return;}
     const x=s.x+dx,y=s.y+dy,tile=engine.getTile(x,y);
     if(tile==='~')cast('staff',x,y);else if(tile==='=')cast('morph',x,y);else toast('此处没有可交互的目标。先点选机关、阶梯或莲灯。');
   }
