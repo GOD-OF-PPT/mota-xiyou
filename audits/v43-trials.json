@@ -1,0 +1,1066 @@
+{
+  "checks": [
+    {
+      "name": "Locked challenges reveal unlock conditions without later puzzle solutions or resource changes"
+    },
+    {
+      "name": "A legitimate completed campaign unlocks public trial goals; entry uses a canonical isolated start"
+    },
+    {
+      "name": "Real arrows, scene choice preview and explicit confirmation charge once; legal remaining actions finish with a replay-verified result"
+    },
+    {
+      "name": "Refresh restores the completed trial and its own records while campaign save bytes stay unchanged"
+    },
+    {
+      "name": "Two same-condition water plans retain attack/health tradeoffs; exit restores the exact original campaign and archive"
+    },
+    {
+      "name": "The paid ferry walks both new return gates and reaches the common exit without guardian fights or campaign mutation"
+    },
+    {
+      "name": "material trial selection fits three PC widths with bounded controls"
+    },
+    {
+      "name": "mural trial selection fits three PC widths with bounded controls"
+    },
+    {
+      "name": "Gate previews are scene-bound; chapter restore and return stay inside the trial and retain standard replay evidence"
+    },
+    {
+      "name": "An obsolete trial version exposes a direct start-screen return to the untouched original campaign"
+    },
+    {
+      "name": "Original and new trial modules and canonical assets work offline through direct index.html"
+    }
+  ],
+  "screenshots": [
+    "audits/v43-trials-trials-locked.png",
+    "audits/v43-trials-trials-unlocked.png",
+    "audits/v43-trials-trial-ferry-entry.png",
+    "audits/v43-trials-trial-result.png",
+    "audits/v43-trials-trial-records.png",
+    "audits/v43-trials-paid-ferry-return-map.png",
+    "audits/v43-trials-material-trials-1280.png",
+    "audits/v43-trials-material-trials-1440.png",
+    "audits/v43-trials-material-trials-1989.png",
+    "audits/v43-trials-mural-trials-1280.png",
+    "audits/v43-trials-mural-trials-1440.png",
+    "audits/v43-trials-mural-trials-1989.png",
+    "audits/v43-trials-silk-gate-preview.png",
+    "audits/v43-trials-silk-result.png",
+    "audits/v43-trials-stale-trial-recovery.png",
+    "audits/v43-trials-offline-trial.png"
+  ],
+  "errors": [],
+  "source": {
+    "index.html": "ba9c8a50e7bce9c0df741552426603f388dbc186b4b6537e864332bf89c44e15",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/run-session.js": "74ac0007f9cf2fcaef89fd2bf1254f7a995c2e6327be13b813069c8a0fa3041b",
+    "js/trials.js": "0efb734c9cca733881e992d86729c6cf8b49acce8279da4c52ae4cc7ca146b0b",
+    "js/trials-ui.js": "499bf4185f2a5d1ba5e869f98e048616e8b9b8ee2da140d8eff7df0189630b6b",
+    "js/ui.js": "b53b8c31f2443910c60354f56dc69f38db2d0694c4bcd93712e270a7ef4194b0",
+    "css/trials.css": "bb7fe38df85d79f6ba87bded3e2417a8eb75f78711486ae2679922162959a316",
+    "css/chapter-pages.css": "dbe51413504940ff48d0fcadfe33b23ba3c8b5542bf9eaae4e3898c90433a96e",
+    "css/game-surfaces.css": "5d0f97557d510fec2894576410e1f17500f538c80cae64505c86621566dc6c25",
+    "js/outcomes.js": "35854dc57cce6724ffe2622fc35eeb8b5d59600f06c52e2c29c31f46fe76713d",
+    "js/planning-ui.js": "50573232967c7eb2d97bb43d79c57fb5bb9fc4b60fb762a4dee02a0c80fd1d55",
+    "js/chronicle.js": "4285d774bc0a13495a701bf9c166b386e0b49aabd511d2fd0bc56774c38c1a95",
+    "js/trial-seeds.js": "3b7cd188b0a51131586147c5ed4c3ed6a599d60e1e70f0e906c2d62528224179"
+  },
+  "layouts": [
+    {
+      "name": "trials-locked",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "trials-unlocked",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "trial-ferry-entry",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 15,
+          "width": 342,
+          "height": 369.609375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "试炼与主线",
+          "width": 77,
+          "height": 30,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "trial-result",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "重走同题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "查看同条件记录",
+          "width": 155.046875,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回原主线",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "trial-records",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        },
+        {
+          "frame": "trial-active",
+          "glyphs": 5,
+          "width": 1150,
+          "height": 88
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "重走同题",
+          "width": 88,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "返回原主线",
+          "width": 102,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "抄录此卷 · 导出",
+          "width": 128,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 继续本次试炼",
+          "width": 211.921875,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "paid-ferry-return-map",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 17,
+          "width": 342,
+          "height": 432.5
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 4,
+          "width": 350,
+          "height": 215.390625
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "试炼与主线",
+          "width": 77,
+          "height": 30,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-trials-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 522.5,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 522.5,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-trials-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-trials-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-trials-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 522.5,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 256.25,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 522.5,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-trials-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-trials-1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "卷展开章回",
+          "width": 109,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "迹同条件记录",
+          "width": 123,
+          "height": 48,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲留钥渡水",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙供灯开栈",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "组合新篇",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "原版复盘",
+          "width": 48,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "甲破执经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "乙护心经之路",
+          "width": 246.5,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "执棒入境 ↗",
+          "width": 503,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "收卷 · 返回主线",
+          "width": 174.484375,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "silk-gate-preview",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 17,
+          "width": 342,
+          "height": 430.796875
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 9,
+          "width": 350,
+          "height": 343.859375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "试炼与主线",
+          "width": 77,
+          "height": 30,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "silk-result",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "重走同题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "查看同条件记录",
+          "width": 155.046875,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回原主线",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "stale-trial-recovery",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "offline-trial",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 284.4375
+        },
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "试炼与主线",
+          "width": 77,
+          "height": 30,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "passed": true
+}

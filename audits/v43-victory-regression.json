@@ -1,0 +1,1816 @@
+{
+  "checks": [
+    "final battle settles exactly once and remains in the scene; no final film or input lock; undo remains exact",
+    "release returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "material release generated art, live typography, collapsed history, four PC sizes and independent long-text scrolling",
+    "keep returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "material keep generated art, live typography, collapsed history, four PC sizes and independent long-text scrolling",
+    "final battle settles exactly once and remains in the scene; no final film or input lock; undo remains exact",
+    "release returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "mural release generated art, live typography, collapsed history, four PC sizes and independent long-text scrolling",
+    "keep returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "mural keep generated art, live typography, collapsed history, four PC sizes and independent long-text scrolling",
+    "final battle settles exactly once and remains in the scene; no final film or input lock; undo remains exact",
+    "release returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "study ships the generated victory art and has no final movie",
+    "final battle settles exactly once and remains in the scene; no final film or input lock; undo remains exact",
+    "release returns, continues, refreshes and keeps completion and the earned art unlock without repeating an ending",
+    "offline ships the generated victory art and has no final movie"
+  ],
+  "layouts": [
+    {
+      "label": "material release 1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "material release 1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1188,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1254,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 89.59375,
+          "y": 556.5,
+          "w": 400,
+          "h": 54,
+          "right": 489.59375,
+          "bottom": 610.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 89.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 280.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 298.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 489.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 89.59375,
+        "y": 69.59375,
+        "w": 520,
+        "h": 72.890625,
+        "right": 609.59375,
+        "bottom": 142.484375
+      },
+      "content": {
+        "x": 89.59375,
+        "y": 154.484375,
+        "w": 520,
+        "h": 384.015625,
+        "right": 609.59375,
+        "bottom": 538.5
+      },
+      "actions": {
+        "x": 89.59375,
+        "y": 556.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 489.59375,
+        "bottom": 660
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "material release 629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "material release 1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1897,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1963,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 139.21875,
+          "y": 922.984375,
+          "w": 400,
+          "h": 54,
+          "right": 539.21875,
+          "bottom": 976.984375,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 139.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 330.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 348.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 539.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 139.21875,
+        "y": 111.5,
+        "w": 520,
+        "h": 97.1875,
+        "right": 659.21875,
+        "bottom": 208.6875
+      },
+      "content": {
+        "x": 139.21875,
+        "y": 230.6875,
+        "w": 520,
+        "h": 674.296875,
+        "right": 659.21875,
+        "bottom": 904.984375
+      },
+      "actions": {
+        "x": 139.21875,
+        "y": 922.984375,
+        "w": 400,
+        "h": 103.5,
+        "right": 539.21875,
+        "bottom": 1026.484375
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "material release expanded recall",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "material keep 1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "material keep 1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1188,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1254,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 89.59375,
+          "y": 556.5,
+          "w": 400,
+          "h": 54,
+          "right": 489.59375,
+          "bottom": 610.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 89.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 280.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 298.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 489.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 89.59375,
+        "y": 69.59375,
+        "w": 520,
+        "h": 72.890625,
+        "right": 609.59375,
+        "bottom": 142.484375
+      },
+      "content": {
+        "x": 89.59375,
+        "y": 154.484375,
+        "w": 520,
+        "h": 384.015625,
+        "right": 609.59375,
+        "bottom": 538.5
+      },
+      "actions": {
+        "x": 89.59375,
+        "y": 556.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 489.59375,
+        "bottom": 660
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "material keep 629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "material keep 1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1897,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1963,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 139.21875,
+          "y": 922.984375,
+          "w": 400,
+          "h": 54,
+          "right": 539.21875,
+          "bottom": 976.984375,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 139.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 330.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 348.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 539.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 139.21875,
+        "y": 111.5,
+        "w": 520,
+        "h": 97.1875,
+        "right": 659.21875,
+        "bottom": 208.6875
+      },
+      "content": {
+        "x": 139.21875,
+        "y": 230.6875,
+        "w": 520,
+        "h": 674.296875,
+        "right": 659.21875,
+        "bottom": 904.984375
+      },
+      "actions": {
+        "x": 139.21875,
+        "y": 922.984375,
+        "w": 400,
+        "h": 103.5,
+        "right": 539.21875,
+        "bottom": 1026.484375
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "material keep expanded recall",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural release 1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural release 1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1188,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1254,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 89.59375,
+          "y": 556.5,
+          "w": 400,
+          "h": 54,
+          "right": 489.59375,
+          "bottom": 610.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 89.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 280.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 298.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 489.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 89.59375,
+        "y": 69.59375,
+        "w": 520,
+        "h": 72.890625,
+        "right": 609.59375,
+        "bottom": 142.484375
+      },
+      "content": {
+        "x": 89.59375,
+        "y": 154.484375,
+        "w": 520,
+        "h": 384.015625,
+        "right": 609.59375,
+        "bottom": 538.5
+      },
+      "actions": {
+        "x": 89.59375,
+        "y": 556.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 489.59375,
+        "bottom": 660
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural release 629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural release 1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1897,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1963,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 139.21875,
+          "y": 922.984375,
+          "w": 400,
+          "h": 54,
+          "right": 539.21875,
+          "bottom": 976.984375,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 139.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 330.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 348.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 539.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 139.21875,
+        "y": 111.5,
+        "w": 520,
+        "h": 97.1875,
+        "right": 659.21875,
+        "bottom": 208.6875
+      },
+      "content": {
+        "x": 139.21875,
+        "y": 230.6875,
+        "w": 520,
+        "h": 674.296875,
+        "right": 659.21875,
+        "bottom": 904.984375
+      },
+      "actions": {
+        "x": 139.21875,
+        "y": 922.984375,
+        "w": 400,
+        "h": 103.5,
+        "right": 539.21875,
+        "bottom": 1026.484375
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural release expanded recall",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural keep 1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural keep 1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1188,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1254,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 89.59375,
+          "y": 556.5,
+          "w": 400,
+          "h": 54,
+          "right": 489.59375,
+          "bottom": 610.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 89.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 280.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 298.59375,
+          "y": 619.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 489.59375,
+          "bottom": 660,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 89.59375,
+        "y": 69.59375,
+        "w": 520,
+        "h": 72.890625,
+        "right": 609.59375,
+        "bottom": 142.484375
+      },
+      "content": {
+        "x": 89.59375,
+        "y": 154.484375,
+        "w": 520,
+        "h": 384.015625,
+        "right": 609.59375,
+        "bottom": 538.5
+      },
+      "actions": {
+        "x": 89.59375,
+        "y": 556.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 489.59375,
+        "bottom": 660
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural keep 629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural keep 1989",
+      "viewport": {
+        "width": 1989,
+        "height": 1113
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1897,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1963,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 139.21875,
+          "y": 922.984375,
+          "w": 400,
+          "h": 54,
+          "right": 539.21875,
+          "bottom": 976.984375,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 139.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 330.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 348.21875,
+          "y": 985.984375,
+          "w": 191,
+          "h": 40.5,
+          "right": 539.21875,
+          "bottom": 1026.484375,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 139.21875,
+        "y": 111.5,
+        "w": 520,
+        "h": 97.1875,
+        "right": 659.21875,
+        "bottom": 208.6875
+      },
+      "content": {
+        "x": 139.21875,
+        "y": 230.6875,
+        "w": 520,
+        "h": 674.296875,
+        "right": 659.21875,
+        "bottom": 904.984375
+      },
+      "actions": {
+        "x": 139.21875,
+        "y": 922.984375,
+        "w": 400,
+        "h": 103.5,
+        "right": 539.21875,
+        "bottom": 1026.484375
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "mural keep expanded recall",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 537,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 603,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 28,
+          "y": 514.5,
+          "w": 380,
+          "h": 54,
+          "right": 408,
+          "bottom": 568.5,
+          "scrollWidth": 378,
+          "clientWidth": 378
+        },
+        {
+          "text": "回看塔景",
+          "x": 28,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 209,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        },
+        {
+          "text": "再走一段因果",
+          "x": 227,
+          "y": 577.5,
+          "w": 181,
+          "h": 40.5,
+          "right": 408,
+          "bottom": 618,
+          "scrollWidth": 181,
+          "clientWidth": 181
+        }
+      ],
+      "title": {
+        "x": 28,
+        "y": 79.796875,
+        "w": 380,
+        "h": 59.390625,
+        "right": 408,
+        "bottom": 139.1875
+      },
+      "content": {
+        "x": 28,
+        "y": 153.1875,
+        "w": 380,
+        "h": 349.3125,
+        "right": 408,
+        "bottom": 502.5
+      },
+      "actions": {
+        "x": 28,
+        "y": 514.5,
+        "w": 380,
+        "h": 103.5,
+        "right": 408,
+        "bottom": 618
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.91) 0%, rgba(8, 16, 22, 0.66) 46%, rgba(8, 16, 22, 0.267) 100%), url(\"http://127.0.0.1:8765/assets/ending-v42/keep.png\")",
+      "bad": []
+    },
+    {
+      "label": "study",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"http://127.0.0.1:8765/assets/ending-v42/release.png\")",
+      "bad": []
+    },
+    {
+      "label": "offline",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "controls": [
+        {
+          "text": "‹ 回看塔景",
+          "x": 1348,
+          "y": 15,
+          "w": 66,
+          "h": 32.5,
+          "right": 1414,
+          "bottom": 47.5,
+          "scrollWidth": 66,
+          "clientWidth": 66
+        },
+        {
+          "text": "返回标题",
+          "x": 100.796875,
+          "y": 718.5,
+          "w": 400,
+          "h": 54,
+          "right": 500.796875,
+          "bottom": 772.5,
+          "scrollWidth": 398,
+          "clientWidth": 398
+        },
+        {
+          "text": "回看塔景",
+          "x": 100.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 291.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        },
+        {
+          "text": "再走一段因果",
+          "x": 309.796875,
+          "y": 781.5,
+          "w": 191,
+          "h": 40.5,
+          "right": 500.796875,
+          "bottom": 822,
+          "scrollWidth": 191,
+          "clientWidth": 191
+        }
+      ],
+      "title": {
+        "x": 100.796875,
+        "y": 96.59375,
+        "w": 520,
+        "h": 85.53125,
+        "right": 620.796875,
+        "bottom": 182.125
+      },
+      "content": {
+        "x": 100.796875,
+        "y": 204.125,
+        "w": 520,
+        "h": 496.375,
+        "right": 620.796875,
+        "bottom": 700.5
+      },
+      "actions": {
+        "x": 100.796875,
+        "y": 718.5,
+        "w": 400,
+        "h": 103.5,
+        "right": 500.796875,
+        "bottom": 822
+      },
+      "background": "linear-gradient(90deg, rgba(8, 16, 22, 0.5) 0%, rgba(8, 16, 22, 0.267) 37%, rgba(0, 0, 0, 0) 66%), url(\"file:///E:/githome/mota/assets/ending-v42/release.png\")",
+      "bad": []
+    }
+  ],
+  "art": [
+    {
+      "choice": "release",
+      "width": 1672,
+      "height": 941,
+      "url": "http://127.0.0.1:8765/assets/ending-v42/release.png"
+    },
+    {
+      "choice": "keep",
+      "width": 1672,
+      "height": 941,
+      "url": "http://127.0.0.1:8765/assets/ending-v42/keep.png"
+    },
+    {
+      "choice": "release",
+      "width": 1672,
+      "height": 941,
+      "url": "http://127.0.0.1:8765/assets/ending-v42/release.png"
+    },
+    {
+      "choice": "keep",
+      "width": 1672,
+      "height": 941,
+      "url": "http://127.0.0.1:8765/assets/ending-v42/keep.png"
+    },
+    {
+      "choice": "release",
+      "width": 1672,
+      "height": 941,
+      "url": "http://127.0.0.1:8765/assets/ending-v42/release.png"
+    },
+    {
+      "choice": "release",
+      "width": 1672,
+      "height": 941,
+      "url": "file:///E:/githome/mota/assets/ending-v42/release.png"
+    }
+  ],
+  "screenshots": [
+    "audits/v42-material-release-1440.png",
+    "audits/v42-material-release-1280.png",
+    "audits/v42-material-release-629.png",
+    "audits/v42-material-release-1989.png",
+    "audits/v42-material-release-recall-629.png",
+    "audits/v42-material-keep-1440.png",
+    "audits/v42-material-keep-1280.png",
+    "audits/v42-material-keep-629.png",
+    "audits/v42-material-keep-1989.png",
+    "audits/v42-material-keep-recall-629.png",
+    "audits/v42-mural-release-629.png",
+    "audits/v42-mural-release-recall-629.png",
+    "audits/v42-mural-keep-629.png",
+    "audits/v42-mural-keep-recall-629.png"
+  ],
+  "errors": [],
+  "passed": true
+}

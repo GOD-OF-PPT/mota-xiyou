@@ -1,0 +1,26 @@
+{
+  "findings": [
+    {
+      "id": "blocked-recall-affordance",
+      "copy": "收回毫毛",
+      "enabled": true,
+      "unchanged": true,
+      "card": "分身驻守 · 回收免费\n\n收回毫毛\n机关规则\n查看联动 · 1 处开合变化\n推演此处 · T",
+      "notice": "先走出藏室或领取经卷，再召回分身，保留一条安全退路。"
+    },
+    {
+      "id": "full-clone-action-label",
+      "copy": "分身落阵",
+      "preview": "驻守位已满，先免费召回一影\n\n分身落阵\n机关规则\n查看联动 · 0 处开合变化\n推演此处 · T"
+    },
+    {
+      "id": "completed-supply-affordance",
+      "won": true,
+      "elixirs": 1,
+      "enabled": true,
+      "copy": "随身蟠桃\n\n服下一枚，恢复 200 生命。\n尚余 1 枚\n\n服用蟠桃",
+      "unchanged": true
+    }
+  ],
+  "errors": []
+}

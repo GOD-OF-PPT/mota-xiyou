@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-27",
+  "baseCommit": "dd07a03",
+  "scope": "PC UI, input ownership, finite-resource feedback and eighteen-floor progression",
+  "issues": [
+    {
+      "id": "I01",
+      "severity": "P1",
+      "problem": "Hidden final tactics could settle a battle underneath planning",
+      "fix": "Visible pause/ritual receives input first",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I02",
+      "severity": "P1",
+      "problem": "Reading the quest scroll moved the actor",
+      "fix": "Reading owns keys; first scene click closes without moving",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I03",
+      "severity": "P2",
+      "problem": "Enter on dialogue exit advanced text",
+      "fix": "Keep the native focused control action",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I04",
+      "severity": "P2",
+      "problem": "Unsafe clone recall looked available",
+      "fix": "Explain retreat restriction before action",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I05",
+      "severity": "P2",
+      "problem": "Full clone slots advertised deployment instead of management",
+      "fix": "Explicit free management and selected-plate F behavior",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I06",
+      "severity": "P2",
+      "problem": "Completed save offered unusable supplies",
+      "fix": "Clear read-only supply/loadout state",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I07",
+      "severity": "P1",
+      "problem": "Ctrl+F could execute F combat",
+      "fix": "Preserve browser modifier shortcuts",
+      "status": "implemented_and_pc_verified"
+    },
+    {
+      "id": "I08",
+      "severity": "P2",
+      "problem": "Mechanism-link text was pale on paper",
+      "fix": "Readable dark ink and adequate summary height",
+      "status": "implemented_and_pc_verified"
+    }
+  ],
+  "source": {
+    "index.html": "ba9c8a50e7bce9c0df741552426603f388dbc186b4b6537e864332bf89c44e15",
+    "js/ui.js": "b53b8c31f2443910c60354f56dc69f38db2d0694c4bcd93712e270a7ef4194b0",
+    "css/ui-layout.css": "a1b9dac83947beccffd56ec5bf9687fb5725a9e63d21cac19d0c483718280e8b",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "js/finale.js": "ce687332c0853592a4d25efba5dc2d80795d3eb841a5d418f661d6abe1773e47",
+    "js/presentation.js": "c612675ef9aa5aa68c8a0c1c8b04179c996ad0c4755928567393a150f27714c5",
+    "js/film-art.js": "e45d8829e8c1704836120baf504f95a8d96db1f3a9af2950a3b62da3340d79b1",
+    "css/victory.css": "38806f7e15642fba59a938dda9c28bf880f36d8c3544f21ae06254377a1fac46",
+    "scripts/build_v23_study.cjs": "2506c027731f21e40f35a2a16957f191f1e8cbdcf8039c19368483b303937442",
+    "scripts/prepare_v43_review_fixtures.cjs": "21d2a12bff7c46b8a492091a9249c2fd0fc851d0c489423dd2755a30f8f1247a",
+    "tests/v43-input-ownership-browser.cjs": "193e0cdb79dec7821e40a9234cc3fc050b0fa5b774201960e51e648b36b5aa54",
+    "tests/v43-resource-guidance-browser.cjs": "4041db479c746593f47fee721a732e96792e5db5f45ca462d94bf605511ead4d",
+    "tests/v43-surfaces-browser.cjs": "8f41e3a4d6f1c9db4542f58e3192873ff152b03e5cb4a45e691eefbec06e49ad",
+    "tests/v43-campaign-browser.cjs": "09b92269c225be13832a7688e5bcedc0dc6a92eac41e1fdb51081cee51ecb162",
+    "tests/v43-trials-browser.cjs": "f59a1c5caf4b185a39af671e3312f1dde0e939e52bb57df0b2c033680df02765"
+  },
+  "evidence": [
+    "audits/v43-input-ownership.json",
+    "audits/v43-resource-guidance.json",
+    "audits/v43-surfaces.json",
+    "audits/v43-campaign.json",
+    "audits/v43-trials.json",
+    "audits/v43-quest-regression.json",
+    "audits/v43-victory-regression.json"
+  ],
+  "legalCampaigns": [
+    {
+      "trace": "tests/playthrough-v28-free-mixed-direct.json",
+      "actions": 4177,
+      "ending": "release",
+      "hp": 43
+    },
+    {
+      "trace": "tests/playthrough-v23-gold-def-anchor.json",
+      "actions": 3851,
+      "ending": "release",
+      "hp": 160
+    }
+  ],
+  "coverage": {
+    "pauseScreens": 48,
+    "inputGroups": 8,
+    "resourceGroups": 6,
+    "campaignGroups": 21,
+    "trialGroups": 11,
+    "physicalCampaignInteractions": {
+      "arrivals": 17,
+      "externalRelics": 16,
+      "seals": 5
+    },
+    "engineRules": {
+      "command": "node tests/engine-check.cjs",
+      "passed": 39,
+      "total": 39
+    }
+  },
+  "visualReviewedIndividually": [
+    "audits/v43-material-guarded-clone.png",
+    "audits/v43-material-completed-kit-629.png",
+    "audits/v43-survey-inventory-1280.png",
+    "audits/v43-survey-planning-route-1280.png",
+    "audits/v43-live-quest.png",
+    "audits/v43-live-safe-planning.png"
+  ],
+  "live": {
+    "originalParticipant": "UI31",
+    "restored": {
+      "floor": 1,
+      "hp": 620,
+      "mana": "6/6",
+      "keys": "1/0/0",
+      "coins": 0
+    },
+    "previewParticipant": "Review43",
+    "planningOpenAfterF": true,
+    "hpAfterF": 973
+  },
+  "baselineSha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "status": "pc_verified_with_documented_boundaries",
+  "boundaries": [
+    "Main route uses real UI at key relic/seal/stair interactions and legal public actions for connecting segments",
+    "No proof of all possible routes or optimal subjective playability",
+    "No new human blind playtest or audio listening acceptance",
+    "Mobile and broad browser matrices deferred"
+  ]
+}

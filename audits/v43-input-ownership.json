@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "quest reader owns movement and game shortcuts; Esc or a scene click closes it safely and restores real movement",
+    "browser Find and Copy chords cannot activate the unmodified game shortcuts",
+    "planning owns keyboard and focus over an open final draft",
+    "inventory owns keyboard and focus over an open final draft",
+    "character owns keyboard and focus over an open final draft",
+    "guide owns keyboard and focus over an open final draft",
+    "style owns keyboard and focus over an open final draft",
+    "Enter respects the focused dialogue exit, with no state transaction"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v43-quest-reading.png"
+  ],
+  "passed": true
+}

@@ -1,0 +1,181 @@
+{
+  "method": "Current engine, unchanged legal public actions; no stat edits or teleporting.",
+  "records": {
+    "blocked-recall": {
+      "file": "audits/v43-fixtures/blocked-recall.json",
+      "sha256": "aa38a0fc6fd431735485702e381bb9c1e6497fb59fd077090c0685a01a5fbb4e",
+      "source": {
+        "trace": "tests/playthrough-v28-free-mixed-direct.json",
+        "prefixActions": 2094,
+        "target": {
+          "x": 3,
+          "y": 10,
+          "type": "switch",
+          "group": "silk",
+          "kind": "plate",
+          "label": "甲镜台 · 西影",
+          "controlId": "silk-a",
+          "id": "f10-1"
+        }
+      }
+    },
+    "clone-limit": {
+      "file": "audits/v43-fixtures/clone-limit.json",
+      "sha256": "7662e7157250442f20bb0c735b2aea436027feff13dcdce4fb94f54227091769",
+      "source": {
+        "trace": "tests/playthrough-v28-free-mixed-direct.json",
+        "prefixActions": 2118,
+        "target": {
+          "x": 10,
+          "y": 8,
+          "type": "switch",
+          "controlId": "silk-c",
+          "group": "silk",
+          "kind": "plate",
+          "label": "丙镜台 · 归影",
+          "id": "f10-16"
+        }
+      }
+    },
+    "paid-complete": {
+      "file": "audits/v43-fixtures/paid-complete.json",
+      "sha256": "a76973ec05ce4296f69ceac919293b2475c8aef1a6060ff05a985868c19c46e7",
+      "source": {
+        "trace": "tests/playthrough-v23-gold-def-anchor.json",
+        "prefixActions": 3850,
+        "prependedAction": {
+          "type": "step",
+          "args": [
+            "up"
+          ]
+        }
+      }
+    }
+  },
+  "sourceHashes": {
+    "tests/playthrough-v28-free-mixed-direct.json": "232cf36cce78715928d6019ac05122363111c5101b13a7fd4547cc8bf4e27b74",
+    "tests/playthrough-v23-gold-def-anchor.json": "83dcd61e24be90e6f59c0273635a83edbd536ea0d1ba354122bb1e35bed4bf58",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4"
+  },
+  "campaigns": [
+    {
+      "trace": "tests/playthrough-v28-free-mixed-direct.json",
+      "actions": 4177,
+      "ending": "release",
+      "hp": 43,
+      "floors": [
+        {
+          "floor": 2,
+          "hp": 686,
+          "mana": 6,
+          "coins": 9
+        },
+        {
+          "floor": 3,
+          "hp": 594,
+          "mana": 6,
+          "coins": 17
+        },
+        {
+          "floor": 4,
+          "hp": 642,
+          "mana": 6,
+          "coins": 7
+        },
+        {
+          "floor": 5,
+          "hp": 539,
+          "mana": 6,
+          "coins": 6
+        },
+        {
+          "floor": 6,
+          "hp": 454,
+          "mana": 6,
+          "coins": 24
+        },
+        {
+          "floor": 7,
+          "hp": 392,
+          "mana": 6,
+          "coins": 31
+        },
+        {
+          "floor": 8,
+          "hp": 312,
+          "mana": 6,
+          "coins": 18
+        },
+        {
+          "floor": 9,
+          "hp": 168,
+          "mana": 6,
+          "coins": 5
+        },
+        {
+          "floor": 10,
+          "hp": 112,
+          "mana": 6,
+          "coins": 55
+        },
+        {
+          "floor": 11,
+          "hp": 56,
+          "mana": 6,
+          "coins": 32
+        },
+        {
+          "floor": 12,
+          "hp": 58,
+          "mana": 6,
+          "coins": 24
+        },
+        {
+          "floor": 13,
+          "hp": 239,
+          "mana": 5,
+          "coins": 21
+        },
+        {
+          "floor": 14,
+          "hp": 189,
+          "mana": 5,
+          "coins": 66
+        },
+        {
+          "floor": 15,
+          "hp": 53,
+          "mana": 6,
+          "coins": 35
+        },
+        {
+          "floor": 16,
+          "hp": 278,
+          "mana": 4,
+          "coins": 34
+        },
+        {
+          "floor": 17,
+          "hp": 233,
+          "mana": 4,
+          "coins": 89
+        },
+        {
+          "floor": 18,
+          "hp": 221,
+          "mana": 6,
+          "coins": 58
+        }
+      ]
+    },
+    {
+      "trace": "tests/playthrough-v23-gold-def-anchor.json",
+      "actions": 3851,
+      "ending": "release",
+      "hp": 160,
+      "remainingElixirs": 1
+    }
+  ]
+}

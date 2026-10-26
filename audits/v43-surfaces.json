@@ -1,0 +1,3202 @@
+{
+  "screens": [
+    {
+      "style": "material",
+      "label": "menu",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "试章回试炼固定起点 · 不同目标↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "思灯前推演T · 三步比较与章回恢复↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "囊行者行囊I · 物品与六器↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "身照见行者C · 修为与状态↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "因因果手记J · 目标与乘云↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "观观敌知损B · 战损与临界↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "印舍利莲阵十六外环 · 一位未归↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "缘读取前缘L · 手动与自动↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "存留存此行Ctrl S · 独立存档↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "问入塔指引H · 操作与演出↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "声声音与演出声景 · 动作 · 画面↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "境更换画境两套画境 · 同一前缘↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "新重启冒险先核对留存，再开新局↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "归回到塔外保留当前自动前缘↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "继续塔中之行",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-menu-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "inventory",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "kit-description",
+            "glyphs": 4,
+            "width": 946,
+            "height": 154.5
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "定海铁已佩戴",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "莲灯芯已佩戴",
+            "width": 296.671875,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "照骨齿已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "听潮贝已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "心炉烬已寻回",
+            "width": 296.671875,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "双影镜已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+            "width": 465,
+            "height": 60.09375,
+            "disabled": false
+          },
+          {
+            "text": "凝息珠 × 4补息、供奉或留待终战",
+            "width": 465,
+            "height": 60.09375,
+            "disabled": false
+          },
+          {
+            "text": "服用蟠桃",
+            "width": 88,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "导出前缘",
+            "width": 64,
+            "height": 21.5,
+            "disabled": false
+          },
+          {
+            "text": "系好布囊 · 返回塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-inventory-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "character",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中 · C",
+            "width": 146.765625,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-character-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "journal",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "journal-current",
+            "glyphs": 4,
+            "width": 1056,
+            "height": 234.921875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "塔层与线索",
+            "width": 136,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "塔中记事 (44)",
+            "width": 149,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "回到场景标记",
+            "width": 132,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上因果簿",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-journal-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "bestiary",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "bestiary-leaf",
+            "glyphs": 19,
+            "width": 928,
+            "height": 551.25
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "黑莲化影 · 心猿无相 · 11,6",
+            "width": 240,
+            "height": 88.390625,
+            "disabled": false
+          },
+          {
+            "text": "回到场景 · 查看战前计算",
+            "width": 526.875,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上敌情簿",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-bestiary-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "guide",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记下了 · 继续",
+            "width": 155.765625,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-guide-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "settings",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "回到塔中",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-settings-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "style",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "玄金古寺三维材质预渲染 · 石木铜金此刻画境",
+            "width": 464.390625,
+            "height": 360.390625,
+            "disabled": false
+          },
+          {
+            "text": "青绿壁画矿彩像素 · 清晰格点展开此画境",
+            "width": 464.390625,
+            "height": 360.390625,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-style-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-route",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "落子",
+            "width": 68,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记为方案甲",
+            "width": 96.8125,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "清空",
+            "width": 53.125,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-planning-route-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-gear",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          },
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "确认换装 · 不执行路线",
+            "width": 184.734375,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "调整推演目标",
+            "width": 111.375,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-planning-gear-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-recovery",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "recovery-detail",
+            "glyphs": 2,
+            "width": 617.109375,
+            "height": 146.4375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "续档起点 · 第 18 层第 18 层 · 第 3844 步 · 生命 1152 · 功德 10",
+            "width": 475.890625,
+            "height": 78,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-planning-recovery-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "trials",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "卷展开章回",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "迹同条件记录",
+            "width": 123,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲留钥渡水",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙供灯开栈",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "执棒入境 ↗",
+            "width": 522.5,
+            "height": 45,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲破执经之路",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙护心经之路",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "执棒入境 ↗",
+            "width": 522.5,
+            "height": 45,
+            "disabled": false
+          },
+          {
+            "text": "收卷 · 返回主线",
+            "width": 174.484375,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-material-trials-1280.png"
+    },
+    {
+      "style": "material",
+      "label": "menu",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "试章回试炼固定起点 · 不同目标↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "思灯前推演T · 三步比较与章回恢复↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "囊行者行囊I · 物品与六器↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "身照见行者C · 修为与状态↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "因因果手记J · 目标与乘云↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "观观敌知损B · 战损与临界↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "印舍利莲阵十六外环 · 一位未归↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "继续塔中之行",
+            "width": 123.84375,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-menu-629.png"
+    },
+    {
+      "style": "material",
+      "label": "inventory",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "kit-description",
+            "glyphs": 4,
+            "width": 557,
+            "height": 154.5
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "定海铁已佩戴",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "莲灯芯已佩戴",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "照骨齿已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "听潮贝已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "心炉烬已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "双影镜已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+            "width": 275.5,
+            "height": 59,
+            "disabled": false
+          },
+          {
+            "text": "凝息珠 × 4补息、供奉或留待终战",
+            "width": 275.5,
+            "height": 59,
+            "disabled": false
+          },
+          {
+            "text": "服用蟠桃",
+            "width": 140,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "导出前缘",
+            "width": 64,
+            "height": 21.5,
+            "disabled": false
+          },
+          {
+            "text": "系好布囊 · 返回塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-inventory-629.png"
+    },
+    {
+      "style": "material",
+      "label": "character",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中 · C",
+            "width": 133.125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-character-629.png"
+    },
+    {
+      "style": "material",
+      "label": "journal",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "journal-current",
+            "glyphs": 4,
+            "width": 593,
+            "height": 231.515625
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "塔层与线索",
+            "width": 136,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "塔中记事 (44)",
+            "width": 149,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "回到场景标记",
+            "width": 132,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上因果簿",
+            "width": 107.203125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-journal-629.png"
+    },
+    {
+      "style": "material",
+      "label": "bestiary",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "bestiary-leaf",
+            "glyphs": 19,
+            "width": 593,
+            "height": 613.796875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "黑莲化影 · 心猿无相 · 11,6",
+            "width": 167,
+            "height": 74.390625,
+            "disabled": false
+          },
+          {
+            "text": "合上敌情簿",
+            "width": 107.203125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-bestiary-629.png"
+    },
+    {
+      "style": "material",
+      "label": "guide",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "记下了 · 继续",
+            "width": 141.125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-guide-629.png"
+    },
+    {
+      "style": "material",
+      "label": "settings",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "回到塔中",
+            "width": 100,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-settings-629.png"
+    },
+    {
+      "style": "material",
+      "label": "style",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "玄金古寺三维材质预渲染 · 石木铜金此刻画境",
+            "width": 254.984375,
+            "height": 350,
+            "disabled": false
+          },
+          {
+            "text": "青绿壁画矿彩像素 · 清晰格点展开此画境",
+            "width": 254.984375,
+            "height": 350,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中",
+            "width": 100,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-style-629.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-route",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "落子",
+            "width": 68,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记为方案甲",
+            "width": 96.8125,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "清空",
+            "width": 53.125,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-planning-route-629.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-gear",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          },
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-planning-gear-629.png"
+    },
+    {
+      "style": "material",
+      "label": "planning-recovery",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "recovery-detail",
+            "glyphs": 2,
+            "width": 593,
+            "height": 146.4375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "续档起点 · 第 18 层第 18 层 · 第 3844 步 · 生命 1152 · 功德 10",
+            "width": 564,
+            "height": 78,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-planning-recovery-629.png"
+    },
+    {
+      "style": "material",
+      "label": "trials",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "卷展开章回",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "迹同条件记录",
+            "width": 123,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲留钥渡水",
+            "width": 273.5,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙供灯开栈",
+            "width": 273.5,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收卷 · 返回主线",
+            "width": 157.765625,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-material-trials-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "menu",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "试章回试炼固定起点 · 不同目标↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "思灯前推演T · 三步比较与章回恢复↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "囊行者行囊I · 物品与六器↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "身照见行者C · 修为与状态↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "因因果手记J · 目标与乘云↗",
+            "width": 324.453125,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "观观敌知损B · 战损与临界↗",
+            "width": 324.46875,
+            "height": 79.890625,
+            "disabled": false
+          },
+          {
+            "text": "印舍利莲阵十六外环 · 一位未归↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "缘读取前缘L · 手动与自动↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "存留存此行Ctrl S · 独立存档↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "问入塔指引H · 操作与演出↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "声声音与演出声景 · 动作 · 画面↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "境更换画境两套画境 · 同一前缘↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "新重启冒险先核对留存，再开新局↗",
+            "width": 324.453125,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "归回到塔外保留当前自动前缘↗",
+            "width": 324.46875,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "继续塔中之行",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-menu-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "inventory",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "kit-description",
+            "glyphs": 4,
+            "width": 946,
+            "height": 154.5
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "定海铁已佩戴",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "莲灯芯已佩戴",
+            "width": 296.671875,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "照骨齿已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "听潮贝已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "心炉烬已寻回",
+            "width": 296.671875,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "双影镜已寻回",
+            "width": 296.65625,
+            "height": 120.984375,
+            "disabled": false
+          },
+          {
+            "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+            "width": 465,
+            "height": 60.09375,
+            "disabled": false
+          },
+          {
+            "text": "凝息珠 × 4补息、供奉或留待终战",
+            "width": 465,
+            "height": 60.09375,
+            "disabled": false
+          },
+          {
+            "text": "服用蟠桃",
+            "width": 88,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "导出前缘",
+            "width": 64,
+            "height": 21.5,
+            "disabled": false
+          },
+          {
+            "text": "系好布囊 · 返回塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-inventory-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "character",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中 · C",
+            "width": 146.765625,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-character-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "journal",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "journal-current",
+            "glyphs": 4,
+            "width": 1056,
+            "height": 234.921875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "塔层与线索",
+            "width": 136,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "塔中记事 (44)",
+            "width": 149,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "回到场景标记",
+            "width": 132,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上因果簿",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-journal-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "bestiary",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "bestiary-leaf",
+            "glyphs": 19,
+            "width": 928,
+            "height": 551.25
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "黑莲化影 · 心猿无相 · 11,6",
+            "width": 240,
+            "height": 88.390625,
+            "disabled": false
+          },
+          {
+            "text": "回到场景 · 查看战前计算",
+            "width": 526.875,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上敌情簿",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-bestiary-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "guide",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 302,
+            "height": 215.359375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记下了 · 继续",
+            "width": 155.765625,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-guide-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "settings",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "回到塔中",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-settings-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "style",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "玄金古寺三维材质预渲染 · 石木铜金展开此画境",
+            "width": 464.390625,
+            "height": 360.390625,
+            "disabled": false
+          },
+          {
+            "text": "青绿壁画矿彩像素 · 清晰格点此刻画境",
+            "width": 464.390625,
+            "height": 360.390625,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中",
+            "width": 140,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-style-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-route",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "落子",
+            "width": 68,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记为方案甲",
+            "width": 96.8125,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "清空",
+            "width": 53.125,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-planning-route-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-gear",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          },
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 561,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "确认换装 · 不执行路线",
+            "width": 184.734375,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "调整推演目标",
+            "width": 111.375,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-planning-gear-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-recovery",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [
+          {
+            "frame": "recovery-detail",
+            "glyphs": 2,
+            "width": 617.109375,
+            "height": 146.4375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "续档起点 · 第 18 层第 18 层 · 第 3844 步 · 生命 1152 · 功德 10",
+            "width": 475.890625,
+            "height": 78,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 211.921875,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-planning-recovery-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "trials",
+      "width": 1280,
+      "layout": {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 84.96875,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "卷展开章回",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "迹同条件记录",
+            "width": 123,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲留钥渡水",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙供灯开栈",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "执棒入境 ↗",
+            "width": 522.5,
+            "height": 45,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲破执经之路",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙护心经之路",
+            "width": 256.25,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "执棒入境 ↗",
+            "width": 522.5,
+            "height": 45,
+            "disabled": false
+          },
+          {
+            "text": "收卷 · 返回主线",
+            "width": 174.484375,
+            "height": 45.1875,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 569.421875
+      },
+      "file": "audits/v43-survey-mural-trials-1280.png"
+    },
+    {
+      "style": "mural",
+      "label": "menu",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "试章回试炼固定起点 · 不同目标↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "思灯前推演T · 三步比较与章回恢复↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "囊行者行囊I · 物品与六器↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "身照见行者C · 修为与状态↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "因因果手记J · 目标与乘云↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "观观敌知损B · 战损与临界↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "印舍利莲阵十六外环 · 一位未归↗",
+            "width": 455,
+            "height": 78.1875,
+            "disabled": false
+          },
+          {
+            "text": "继续塔中之行",
+            "width": 123.84375,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-menu-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "inventory",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "kit-description",
+            "glyphs": 4,
+            "width": 557,
+            "height": 154.5
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "定海铁已佩戴",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "莲灯芯已佩戴",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "照骨齿已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "听潮贝已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "心炉烬已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "双影镜已寻回",
+            "width": 188.328125,
+            "height": 97.1875,
+            "disabled": false
+          },
+          {
+            "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+            "width": 275.5,
+            "height": 59,
+            "disabled": false
+          },
+          {
+            "text": "凝息珠 × 4补息、供奉或留待终战",
+            "width": 275.5,
+            "height": 59,
+            "disabled": false
+          },
+          {
+            "text": "服用蟠桃",
+            "width": 140,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "导出前缘",
+            "width": 64,
+            "height": 21.5,
+            "disabled": false
+          },
+          {
+            "text": "系好布囊 · 返回塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-inventory-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "character",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中 · C",
+            "width": 133.125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-character-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "journal",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "journal-current",
+            "glyphs": 4,
+            "width": 593,
+            "height": 231.515625
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "塔层与线索",
+            "width": 136,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "塔中记事 (44)",
+            "width": 149,
+            "height": 46,
+            "disabled": false
+          },
+          {
+            "text": "回到场景标记",
+            "width": 132,
+            "height": 45.59375,
+            "disabled": false
+          },
+          {
+            "text": "合上因果簿",
+            "width": 107.203125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-journal-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "bestiary",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "bestiary-leaf",
+            "glyphs": 19,
+            "width": 593,
+            "height": 613.796875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "黑莲化影 · 心猿无相 · 11,6",
+            "width": 167,
+            "height": 74.390625,
+            "disabled": false
+          },
+          {
+            "text": "合上敌情簿",
+            "width": 107.203125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-bestiary-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "guide",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          },
+          {
+            "frame": "has-asset",
+            "glyphs": 4,
+            "width": 290.5,
+            "height": 210.953125
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "记下了 · 继续",
+            "width": 141.125,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-guide-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "settings",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "回到塔中",
+            "width": 100,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-settings-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "style",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "玄金古寺三维材质预渲染 · 石木铜金展开此画境",
+            "width": 254.984375,
+            "height": 350,
+            "disabled": false
+          },
+          {
+            "text": "青绿壁画矿彩像素 · 清晰格点此刻画境",
+            "width": 254.984375,
+            "height": 350,
+            "disabled": false
+          },
+          {
+            "text": "返回塔中",
+            "width": 100,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-style-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-route",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "落子",
+            "width": 68,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "记为方案甲",
+            "width": 96.8125,
+            "height": 42,
+            "disabled": true
+          },
+          {
+            "text": "清空",
+            "width": 53.125,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-planning-route-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-gear",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          },
+          {
+            "frame": "plan-result blocked",
+            "glyphs": 2,
+            "width": 593,
+            "height": 129.1875
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-planning-gear-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "planning-recovery",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [
+          {
+            "frame": "recovery-detail",
+            "glyphs": 2,
+            "width": 593,
+            "height": 146.4375
+          }
+        ],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "一短程推演",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "二法器比较",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "三章回前缘",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "四此行所得",
+            "width": 90,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "续档起点 · 第 18 层第 18 层 · 第 3844 步 · 生命 1152 · 功德 10",
+            "width": 564,
+            "height": 78,
+            "disabled": false
+          },
+          {
+            "text": "收起推演 · 回到塔中",
+            "width": 191.046875,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-planning-recovery-629.png"
+    },
+    {
+      "style": "mural",
+      "label": "trials",
+      "width": 629,
+      "layout": {
+        "viewport": {
+          "width": 629,
+          "height": 678
+        },
+        "frames": [],
+        "buttons": [
+          {
+            "text": "‹ 返回塔中",
+            "width": 76.328125,
+            "height": 38,
+            "disabled": false
+          },
+          {
+            "text": "卷展开章回",
+            "width": 109,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "迹同条件记录",
+            "width": 123,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "组合新篇",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "原版复盘",
+            "width": 48,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "甲留钥渡水",
+            "width": 273.5,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "乙供灯开栈",
+            "width": 273.5,
+            "height": 42,
+            "disabled": false
+          },
+          {
+            "text": "收卷 · 返回主线",
+            "width": 157.765625,
+            "height": 45,
+            "disabled": false
+          }
+        ],
+        "failures": []
+      },
+      "geometry": {
+        "horizontal": [],
+        "actionsVisible": true,
+        "contentHeight": 500.3125
+      },
+      "file": "audits/v43-survey-mural-trials-629.png"
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

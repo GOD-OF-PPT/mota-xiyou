@@ -1,0 +1,13 @@
+/* Legal campaign prefixes for the cross-surface input and finite-resource review. */
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+global.window=global;for(const f of ['world','encounters','chronicle','outcomes','engine'])require('../js/'+f);
+const out='audits/v43-fixtures',records={},sha=b=>crypto.createHash('sha256').update(b).digest('hex');fs.mkdirSync(out,{recursive:true});
+function save(name,g,source){const file=out+'/'+name+'.json',raw=g.exportSave();fs.writeFileSync(file,raw);records[name]={file,sha256:sha(raw),source};}
+const freeFile='tests/playthrough-v28-free-mixed-direct.json',free=JSON.parse(fs.readFileSync(freeFile)).actions,g=new TowerEngine(TowerData,{persist:false}),floors=[];g.newGame();
+for(let i=0;i<free.length;i++){
+ if(!records['blocked-recall'])for(const e of g.cloneStatus().active)if(!g.hasSafeRetreat({...g.state.switches,[e.id]:false})){save('blocked-recall',g,{trace:freeFile,prefixActions:i,target:e});break;}
+ if(!records['clone-limit']&&g.cloneStatus().free===0)for(const e of g.data.floors[g.state.floor].entities.filter(e=>e.type==='switch'&&e.kind==='plate'&&!g.state.switches[e.id]&&g.distance(e)<=4)){save('clone-limit',g,{trace:freeFile,prefixActions:i,target:e});break;}
+ const a=free[i];assert.notEqual(g[a.type](...a.args),false,'free legal action '+i);assert.ok(g.state.hp>=0&&g.state.mana>=0&&g.state.coins>=0);if(a.type==='traverse')floors.push({floor:g.state.floor+1,hp:g.state.hp,mana:g.state.mana,coins:g.state.coins});
+}assert.ok(g.state.won);const paidFile='tests/playthrough-v23-gold-def-anchor.json',paid=JSON.parse(fs.readFileSync(paidFile)).actions,p=new TowerEngine(TowerData,{persist:false});p.newGame();assert.ok(p.step('up'));
+for(let i=0;i<paid.length;i++){const a=paid[i];assert.notEqual(p[a.type](...a.args),false,'paid legal action '+i);}assert.ok(p.state.won);assert.ok(p.state.elixirs>0);save('paid-complete',p,{trace:paidFile,prefixActions:paid.length,prependedAction:{type:'step',args:['up']}});
+assert.ok(records['blocked-recall']&&records['clone-limit']);const report={method:'Current engine, unchanged legal public actions; no stat edits or teleporting.',records,sourceHashes:Object.fromEntries([freeFile,paidFile,'js/engine.js','js/world.js','js/encounters.js'].map(f=>[f,sha(fs.readFileSync(f))])),campaigns:[{trace:freeFile,actions:free.length,ending:g.state.ending,hp:g.state.hp,floors},{trace:paidFile,actions:paid.length+1,ending:p.state.ending,hp:p.state.hp,remainingElixirs:p.state.elixirs}]};fs.writeFileSync(out+'/manifest.json',JSON.stringify(report,null,2));console.log('Prepared blocked-recall, full-clone and completed-supply states from two complete legal routes.');

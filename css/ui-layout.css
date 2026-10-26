@@ -218,3 +218,14 @@ html #game-shell .context-card.is-door .door-alternative-note,#game-shell .conte
 #game-shell .context-card.is-door .door-details>summary{display:flex;align-items:center;justify-content:space-between;min-height:36px;padding:5px 0;list-style:none;cursor:pointer;font:14px/1.6 var(--serif);color:#794328}
 #game-shell .context-card.is-door .door-details>summary::-webkit-details-marker{display:none}
 html #game-shell .context-card.is-door .door-details>p{font:14px/1.8 var(--sans);margin:7px 0;color:#67583e}
+
+/* Reading a floor scroll owns the input and temporarily replaces target props. */
+body:has(.quest-scroll[open]) #game-shell .context-card.has-selection,body:has(.quest-scroll[open]) :is(#target-link,#target-direction){visibility:hidden;pointer-events:none}
+html[data-ui-skins=ready] #game-shell .quest-reading .quest-keys{font:11px/1.7 var(--sans);color:#755b3d!important;margin:8px 0 0}
+
+#game-shell .clone-recall-note{display:block;font:12px/1.7 var(--sans);color:#67583e}
+
+/* Mechanism links are ink on the folio, not pale HUD gold. */
+#game-shell .context-card .mechanism-links>summary{color:#794328;font:13px/1.7 var(--serif);min-height:36px;padding:6px 0}
+#game-shell .context-card .mechanism-links p{color:#67583e}
+html[data-ui-skins=ready] #game-shell .context-card [data-context=recall]:disabled{color:#80634a!important;opacity:1}

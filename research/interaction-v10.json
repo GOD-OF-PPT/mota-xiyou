@@ -190,5 +190,6 @@
   "final_experience_followup": "docs/v39-final-experience-review.md",
   "ending_flow_followup": "docs/v40-ending-flow-review.md",
   "final_delivery_followup": "docs/v41-final-delivery-review.md",
-  "static_victory_followup": "docs/v42-static-victory-review.md"
+  "static_victory_followup": "docs/v42-static-victory-review.md",
+  "comprehensive_review_followup": "docs/v43-comprehensive-review.md"
 }

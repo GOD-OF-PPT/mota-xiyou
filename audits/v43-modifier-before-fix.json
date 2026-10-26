@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "quest reader owns movement and game shortcuts; Esc or a scene click closes it safely and restores real movement"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v43-quest-reading.png"
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Browser Find must not commit the selected battle\n+ actual - expected\n... Skipped lines\n\n  {\n    atk: 27,\n    bossPlan: 'direct',\n    choices: {},\n+   coins: 2,\n-   coins: 0,\n    def: 10,\n    defeated: false,\n    elixirs: 1,\n    ending: null,\n    equipped: [],\n...\n    fragments: [],\n+   hp: 610,\n-   hp: 620,\n    journal: [\n      {\n        chapter: 0,\n        floor: 0,\n        kind: 'intro',\n...\n    },\n+   kills: 1,\n-   kills: 0,\n    levelRevision: 7,\n    log: [\n      {\n+       kind: 'combat',\n+       text: '击败守阶小妖 · 损失 10 生命，获得 2 金。',\n+       turn: 17\n+     },\n+     {\n        kind: 'item',\n        text: '获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。',\n        turn: 3\n      },\n      {\n...\n      'f0-13': true,\n+     'f0-4': true\n    },\n    rescued: [],\n    revealed: {\n      'f0-16': true\n    },\n...\n    treasures: [],\n+   turn: 18,\n-   turn: 17,\n    version: 4,\n    visited: [\n      0\n    ],\n    walked: {\n\n    at E:\\githome\\mota\\tests\\v43-input-ownership-browser.cjs:13:221"
+}

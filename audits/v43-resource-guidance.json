@@ -1,0 +1,248 @@
+{
+  "checks": [
+    "material a clone holding the only retreat explains the condition before an unavailable recall",
+    "material F opens explicit free management, safely recalls once and then deploys within four cells with the real one-time mana cost",
+    "material completed supplies are visibly read-only, while an ongoing legal save can still consume one potion normally",
+    "mural a clone holding the only retreat explains the condition before an unavailable recall",
+    "mural F opens explicit free management, safely recalls once and then deploys within four cells with the real one-time mana cost",
+    "mural completed supplies are visibly read-only, while an ongoing legal save can still consume one potion normally"
+  ],
+  "screenshots": [
+    "audits/v43-material-guarded-clone.png",
+    "audits/v43-material-completed-kit-629.png",
+    "audits/v43-mural-guarded-clone.png",
+    "audits/v43-mural-completed-kit-629.png"
+  ],
+  "layouts": [
+    {
+      "name": "material-guarded-clone",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 6,
+          "width": 350,
+          "height": 290.484375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-completed-kit-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "kit-description",
+          "glyphs": 6,
+          "width": 557,
+          "height": 181.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "定海铁已佩戴",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "莲灯芯已佩戴",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "照骨齿已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "听潮贝已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "心炉烬已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "双影镜已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+          "width": 275.5,
+          "height": 59,
+          "disabled": false
+        },
+        {
+          "text": "凝息珠 × 3补息、供奉或留待终战",
+          "width": 275.5,
+          "height": 59,
+          "disabled": false
+        },
+        {
+          "text": "已通关 · 仅供回望",
+          "width": 140,
+          "height": 71.1875,
+          "disabled": true
+        },
+        {
+          "text": "系好布囊 · 返回塔中",
+          "width": 191.046875,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-guarded-clone",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 6,
+          "width": 350,
+          "height": 290.484375
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-completed-kit-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "kit-description",
+          "glyphs": 6,
+          "width": 557,
+          "height": 181.5
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 返回塔中",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "定海铁已佩戴",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "莲灯芯已佩戴",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "照骨齿已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "听潮贝已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "心炉烬已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "双影镜已寻回",
+          "width": 188.328125,
+          "height": 97.1875,
+          "disabled": false
+        },
+        {
+          "text": "随身蟠桃 × 1恢复生命 · 一次消耗",
+          "width": 275.5,
+          "height": 59,
+          "disabled": false
+        },
+        {
+          "text": "凝息珠 × 3补息、供奉或留待终战",
+          "width": 275.5,
+          "height": 59,
+          "disabled": false
+        },
+        {
+          "text": "已通关 · 仅供回望",
+          "width": 140,
+          "height": 71.1875,
+          "disabled": true
+        },
+        {
+          "text": "系好布囊 · 返回塔中",
+          "width": 191.046875,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,50 @@
+{
+  "findings": [
+    {
+      "id": "quest-world-input",
+      "reproduced": true,
+      "before": {
+        "x": 10,
+        "y": 19,
+        "turn": 0
+      },
+      "after": {
+        "x": 10,
+        "y": 18,
+        "turn": 1
+      }
+    },
+    {
+      "id": "hidden-final-tactics",
+      "reproduced": true,
+      "before": {
+        "hp": 973,
+        "turn": 4223
+      },
+      "after": {
+        "hp": 43,
+        "turn": 4224
+      },
+      "planningVisible": false
+    },
+    {
+      "id": "dialogue-focused-exit",
+      "reproduced": true,
+      "text": "先拾灵晶，看看守卫的战损怎样变化。"
+    }
+  ],
+  "notes": [
+    {
+      "npc": {
+        "x": 11,
+        "y": 18,
+        "type": "npc",
+        "dialogue": "lantern",
+        "name": "点灯僧",
+        "archetype": "lantern",
+        "id": "f0-0"
+      }
+    }
+  ],
+  "errors": []
+}
