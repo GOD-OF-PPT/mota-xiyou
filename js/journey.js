@@ -100,7 +100,7 @@
       if(this.cache)return this.cache;const s=this.engine.state,raw=this.engine.nextObjective();let target=this.resolve(raw),text='',why='',lesson='',phase='探索';
       // The first lesson uses the existing nearby crystal; leaving it is allowed.
       if(s.floor===0&&!s.fragments.includes(0)&&s.turn<20){const crystal=this.floor.entities.find(e=>e.type==='item'&&this.engine.data.items[e.item]?.kind==='atk'&&!s.removed[e.id]&&distance(s,e)<=4&&this.engine.findPath(e.x,e.y));if(crystal)target=this.withFloor(crystal);}
-      if(s.won){text='众生已有归途，这段因果已圆满。';target=null;phase='归途';why='可在手记回望此行取舍。';}
+      if(s.won){text='众生已有归途，这段因果已圆满。';target=null;phase='归途';why='归途已定，可重温结局或返回标题。';lesson='F 重温结局 · J 因果手记';}
       else if(!target){text='观察此层道路，准备下一步。';why='点选场景中的目标查看用途。';}
       else if(target.journal){text=`回第 ${target.floor+1} 层，${target.type==='chest'?'开启归根之匣。':'寻回遗落的舍利。'}`;why='乘云消耗 1 灵息；也可循原路回访。';phase='回访';lesson='J 查看回访';}
       else if(target.type==='enemy'){const p=this.engine.preview(target.enemy);text=`${this.engine.data.enemies[target.enemy].name}挡在前方，先比较战损。`;why=p.possible?(p.survive?`本战损失 ${p.damage} 生命；战后剩 ${s.hp-p.damage}。`:'当前生命不足，先成长、用药或改走其他路。'):'当前无法破防，先寻找成长或调整行装。';lesson='点守卫查看 · 松开再前进迎战';phase='比较';}

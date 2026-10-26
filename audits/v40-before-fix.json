@@ -1,0 +1,62 @@
+{
+  "revision": "9beeaa6",
+  "command": "node tests/v40-ending-flow-browser.cjs",
+  "scenario": "Load legal before-ending save; select lotus; commit release; skip film; dismiss ending; click the retained lotus route action.",
+  "stages": [
+    {
+      "stage": "after choose route",
+      "view": "ending-choice",
+      "visible": true,
+      "cast": false,
+      "state": {
+        "won": false,
+        "ending": null,
+        "selfAwakened": true,
+        "floor": 17,
+        "turn": 4175,
+        "hp": 43
+      }
+    },
+    {
+      "stage": "after committing release",
+      "view": "ending",
+      "visible": true,
+      "cast": true,
+      "state": {
+        "won": true,
+        "ending": "release",
+        "selfAwakened": true,
+        "floor": 17,
+        "turn": 4176,
+        "hp": 43
+      }
+    }
+  ],
+  "probe": {
+    "calls": [
+      {
+        "args": [
+          10,
+          1
+        ],
+        "won": false,
+        "result": false
+      },
+      {
+        "args": [
+          10,
+          1
+        ],
+        "won": true,
+        "result": false
+      }
+    ],
+    "buttons": [
+      "×",
+      "选择归途",
+      "归真条件"
+    ]
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: After choosing a route, the lotus action must reopen the completed ending, not leave an inert game scene\n\nfalse !== true\n\n    at E:\\githome\\mota\\tests\\v40-ending-flow-browser.cjs:8:2578",
+  "status": "reproduced_before_fix"
+}

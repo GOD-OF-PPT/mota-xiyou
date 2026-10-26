@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26",
+  "scope": "Completed campaign ending return path, PC Chrome",
+  "source": {
+    "index.html": "515b35d87bf44d4b4fc3cecc0cc43fe1a4f670418016faabb1e0d871ca50d85e",
+    "js/ui.js": "03d27dd76966e9bcc2606c52e9c36d502ff8c02a625f1bea475565d0ef1808d4",
+    "js/journey.js": "f0b308692a6264ac854296ca7bac3aa90ed2fce429f9cfd4a3d053c8c0a08727",
+    "tests/v40-ending-flow-browser.cjs": "39582c8f04525ddb30e813956c4a90be2fa0f4e54ead72fac8473b918ddccac8",
+    "scripts/build_v23_study.cjs": "3db40d19d66b00ad6ea83990388130f6cbe4f1b570182bd3d352020d966e5c7a"
+  },
+  "beforeFix": "audits/v40-before-fix.json",
+  "acceptance": "audits/v40-ending-flow.json",
+  "fixtures": {
+    "audits/v30-fixtures/before-ending.json": "6619926e5496dbe91851e2f3326bd74fd3a3f8a6d3c300afd3ba394e924d9f11",
+    "audits/v25-fixtures/awakening.json": "8a26a217192ca470052ac99f1e85f0404de67f127cef3db2a8d7da6d67f5253e",
+    "audits/v30-fixtures/release.json": "eebd5bfc6deb896b853dac35d846f8dbec2d5b04b78691ff17f7978a80178945"
+  },
+  "visualReviewedIndividually": [
+    "audits/v40-material-release-completed-scene.png",
+    "audits/v40-material-release-result-629.png",
+    "audits/v40-mural-keep-result-629.png"
+  ],
+  "baselineSha256": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+  "status": "pc_verified_with_documented_boundaries",
+  "boundaries": [
+    "Targeted ending return flow; no new complete eighteen-floor playthrough",
+    "No mobile or broad browser matrix"
+  ]
+}

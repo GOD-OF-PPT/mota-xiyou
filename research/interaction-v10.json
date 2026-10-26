@@ -187,5 +187,6 @@
   "door_flow_followup": "docs/v36-door-flow-review.md",
   "shared_altar_followup": "docs/v37-shared-altar-review.md",
   "quest_scroll_followup": "docs/v38-quest-scroll-review.md",
-  "final_experience_followup": "docs/v39-final-experience-review.md"
+  "final_experience_followup": "docs/v39-final-experience-review.md",
+  "ending_flow_followup": "docs/v40-ending-flow-review.md"
 }

@@ -1,0 +1,553 @@
+{
+  "checks": [
+    "material-release completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "material release completes once, survives reload, and retains the earned art unlock",
+    "material-keep completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "material keep completes once, survives reload, and retains the earned art unlock",
+    "mural-release completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "mural release completes once, survives reload, and retains the earned art unlock",
+    "mural-keep completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "mural keep completes once, survives reload, and retains the earned art unlock",
+    "unawakened lotus still requires explicit awakening before an actual ending choice",
+    "study completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "study restart cancellation preserves completion; explicit new adventure restores normal controls",
+    "offline completed lotus, F, target-free guide, return to title and continue all work without a second settlement",
+    "offline restart cancellation preserves completion; explicit new adventure restores normal controls"
+  ],
+  "errors": [],
+  "layouts": [
+    {
+      "name": "material-release-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-release-result-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-release-result-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 168.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 123.84375,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-keep-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-keep-result-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-keep-result-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 168.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 123.84375,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-release-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-release-result-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-release-result-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 168.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 123.84375,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-keep-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-keep-result-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 174.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 84.96875,
+          "height": 42,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 140,
+          "height": 45.1875,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-keep-result-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "toast",
+          "glyphs": 2,
+          "width": 168.203125,
+          "height": 84
+        }
+      ],
+      "buttons": [
+        {
+          "text": "‹ 回看塔景",
+          "width": 76.328125,
+          "height": 38,
+          "disabled": false
+        },
+        {
+          "text": "回看塔景",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "返回标题",
+          "width": 100,
+          "height": 45,
+          "disabled": false
+        },
+        {
+          "text": "再走一段因果",
+          "width": 123.84375,
+          "height": 45,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "study-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "offline-completed-scene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 9,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter has-selection",
+          "glyphs": 7,
+          "width": 350,
+          "height": 294.078125
+        }
+      ],
+      "buttons": [
+        {
+          "text": "重温结局 F",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v40-material-release-completed-scene.png",
+    "audits/v40-material-release-result-1280.png",
+    "audits/v40-material-release-result-629.png",
+    "audits/v40-material-keep-completed-scene.png",
+    "audits/v40-material-keep-result-1280.png",
+    "audits/v40-material-keep-result-629.png",
+    "audits/v40-mural-release-completed-scene.png",
+    "audits/v40-mural-release-result-1280.png",
+    "audits/v40-mural-release-result-629.png",
+    "audits/v40-mural-keep-completed-scene.png",
+    "audits/v40-mural-keep-result-1280.png",
+    "audits/v40-mural-keep-result-629.png",
+    "audits/v40-study-completed-scene.png",
+    "audits/v40-offline-completed-scene.png"
+  ],
+  "passed": true
+}
