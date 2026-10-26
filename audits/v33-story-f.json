@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "production F reveals, advances all pages, finishes without changing state; repeat does not skip; Escape retained",
+    "Space and Enter retained; F / Space hint fits 1280 and 629 PC screenshots",
+    "study F reveals, advances all pages, finishes without changing state; repeat does not skip; Escape retained",
+    "offline F reveals, advances all pages, finishes without changing state; repeat does not skip; Escape retained"
+  ],
+  "screenshots": [
+    "audits/v33-story-f-1280.png",
+    "audits/v33-story-f-629.png"
+  ],
+  "errors": [],
+  "fixture": {
+    "source": "tests/playthrough-v28-free-mixed-direct.json",
+    "legalPrefixActions": 768,
+    "extraSafeSteps": 1
+  },
+  "passed": true
+}

@@ -250,7 +250,7 @@
     const hint=guidance(),same=activeStory.pages[activeStory.index]===hint.text,last=activeStory.index+1>=activeStory.pages.length;
     const finish=activeStory.isTalk?(activeStory.targetType==='monument'?'读毕收卷':'结束交谈'):'回到塔中';
     $('story-objective').hidden=false;$('story-objective').innerHTML=(same?'操作 · ':'要事 · ')+TowerText.highlighted(same?(hint.lesson||'G 定位当前目标'):hint.text);
-    $('story-next').innerHTML=(last?finish:'继续')+' <kbd>Space</kbd>';
+    $('story-next').innerHTML=(last?finish:'继续')+' <kbd>F / Space</kbd>';
     $('story-skip').hidden=last;$('story-skip').innerHTML=(activeStory.isTalk?(activeStory.targetType==='monument'?'停止读碑':'结束交谈'):'收起对白')+' <kbd>Esc</kbd>';
     const key=(activeStory.source||activeStory.title)+':'+activeStory.index+':'+activeStory.pages[activeStory.index];
     if(key!==lastSpeechKey){clearInterval(speechTimer);lastSpeechKey=key;activeStory.revealed=effectiveMotion()==='standard'?0:activeStory.pages[activeStory.index].length;paintSpeech();if(effectiveMotion()==='standard'&&!storyCollapsed&&!presentation.entryOpen&&!presentation.castOpen){speechTimer=setInterval(()=>{if(!activeStory){clearInterval(speechTimer);return;}activeStory.revealed=Math.min(activeStory.pages[activeStory.index].length,activeStory.revealed+1);paintSpeech();if(activeStory.revealed>=activeStory.pages[activeStory.index].length)clearInterval(speechTimer);},27);}}
@@ -935,7 +935,7 @@
       const actions={'1':'atk','2':'heal','3':'def','4':'mana','5':'orb-coins','6':'orb-heal'};if(actions[k]){ev.preventDefault();ritualAction(actions[k]);return;}
       if(!['enter',' '].includes(k)&&!ev.ctrlKey&&!ev.metaKey&&!ev.altKey)ev.preventDefault();return;
     }
-    if(activeStory&&!storyCollapsed&&(ev.code==='Space'||k==='enter')){ev.preventDefault();if(!ev.repeat)advanceStory();return;}
+    if(activeStory&&!storyCollapsed&&(k==='f'||ev.code==='Space'||k==='enter')){ev.preventDefault();if(!ev.repeat)advanceStory();return;}
     if(ev.key==='Escape'){
       ev.preventDefault();stopPath();if(!$('style-picker').classList.contains('hidden')){$('style-picker').classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');return;}
       if($('game-toolbox')?.open){$('game-toolbox').open=false;return;}if($('character-drawer').classList.contains('open')){closeCharacter();return;}

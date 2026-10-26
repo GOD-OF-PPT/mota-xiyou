@@ -45,7 +45,7 @@
   <script defer src="js/mechanisms.js?v=23"></script>
   <script defer src="js/choice-feedback.js?v=31"></script>
   <script defer src="js/ui-skins.js?v=26"></script>
-  <script defer src="js/ui.js?v=32"></script>
+  <script defer src="js/ui.js?v=33"></script>
 </head>
 <body>
   <section id="start-screen" class="start-screen" aria-label="大圣：舍利魔塔 开始界面">
@@ -159,7 +159,7 @@
   <section id="ability-cinematic" class="ability-cinematic" hidden aria-label="神通演出"><div class="cast-heading"><small data-cast-category>大圣神通</small><h2 data-cast-title></h2><p data-cast-verse></p></div><canvas aria-hidden="true"></canvas><div class="film-dialogue" hidden><span data-film-speaker></span><p data-film-line></p><div class="film-shots" aria-label="剧情分镜进度"><i></i><i></i><i></i></div></div><div class="cast-ending"><div><span data-cast-beat></span><strong data-cast-result></strong></div><button>略过演出 <kbd>Space</kbd></button></div></section>
   <section id="story-dock" class="story-dock hidden" aria-label="塔中对白" aria-live="polite">
     <button id="story-unfold" class="story-unfold" aria-expanded="true"><span id="story-speaker">塔中回响</span><span id="story-counter"></span><span aria-hidden="true">⌃</span></button>
-    <div class="story-scene"><div id="story-portrait" class="dialogue-portrait"></div><div><h2 id="story-title"></h2><p id="story-text"></p><p id="story-objective" class="story-objective" hidden></p><div class="story-controls"><button id="story-collapse">收起</button><button id="story-skip">略过本段</button><button id="story-next">继续 <kbd>Space</kbd></button></div></div></div>
+    <div class="story-scene"><div id="story-portrait" class="dialogue-portrait"></div><div><h2 id="story-title"></h2><p id="story-text"></p><p id="story-objective" class="story-objective" hidden></p><div class="story-controls"><button id="story-collapse">收起</button><button id="story-skip">略过本段</button><button id="story-next" aria-keyshortcuts="F Space Enter">继续 <kbd>F / Space</kbd></button></div></div></div>
   </section>
   <div id="style-progress" class="style-progress hidden" role="status" aria-live="polite"><span id="style-progress-text">正在载入画卷</span><progress id="style-progress-bar" max="1" value="0" aria-label="风格资源载入"></progress></div>
   <div id="modal-root" class="surface-root hidden"><section id="modal-panel" class="surface-panel" role="region" aria-labelledby="modal-title" tabindex="-1"><button id="modal-close" class="modal-close" aria-label="收起当前卷册">×</button><div id="modal-eyebrow" class="modal-eyebrow">因果之间</div><h2 id="modal-title">灵山一梦</h2><div id="modal-content" class="modal-content"></div><div id="modal-actions" class="modal-actions"></div><div class="modal-footnote">大圣 · 舍利魔塔 <span>◇</span></div></section></div>

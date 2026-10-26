@@ -180,5 +180,6 @@
   "conversation_followup": "docs/v29-conversation-review.md",
   "theme_hero_followup": "docs/v30-theme-hero-review.md",
   "choice_feedback_followup": "docs/v31-choice-feedback-review.md",
-  "gold_hud_followup": "audits/v32-hud-gold.json"
+  "gold_hud_followup": "audits/v32-hud-gold.json",
+  "story_f_followup": "audits/v33-story-f.json"
 }
