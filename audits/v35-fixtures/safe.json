@@ -1,0 +1,129 @@
+{
+  "state": {
+    "version": 4,
+    "levelRevision": 7,
+    "floor": 0,
+    "x": 4,
+    "y": 9,
+    "facing": "up",
+    "hp": 620,
+    "atk": 27,
+    "def": 10,
+    "mana": 6,
+    "maxMana": 6,
+    "coins": 0,
+    "keys": {
+      "yellow": 1,
+      "blue": 0,
+      "red": 0
+    },
+    "relics": [],
+    "externalRelics": 0,
+    "fragments": [],
+    "treasures": [],
+    "equipped": [],
+    "selfAwakened": false,
+    "revealed": {
+      "f0-16": true
+    },
+    "quests": {},
+    "tides": {},
+    "rescued": [],
+    "removed": {
+      "f0-13": true
+    },
+    "switches": {},
+    "terrain": {},
+    "choices": {},
+    "visited": [
+      0
+    ],
+    "seenIntros": {
+      "0": true,
+      "event:f0-2": true
+    },
+    "journal": [
+      {
+        "title": "黑莲劫 · 入塔",
+        "text": "无天劫中，黑莲化出十八层无相塔，将十六枚外舍利与被困众生一同镇在五重心印之下。乔灵儿留在塔外，等候你重开归路。\n\n点灯僧提着一盏熟悉的灯：“先辨真伪，再去救人。三枚归位，第三层的石心才肯开口。最后那个空位，不在任何宝匣里。”\n\n悟空握紧金箍棒：“先带人回家，再和这座塔算账。”",
+        "floor": 0,
+        "kind": "intro",
+        "source": "tower:arrival",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "wukong",
+        "speaker": "孙悟空",
+        "chapter": 0
+      },
+      {
+        "title": "归根之匣",
+        "text": "“五印归一，初心为钥。”集齐五重心印、十六枚外舍利后，这里会给出唯一的归根心钥。它只开第十八层的朱门。\n\n“外环十六，中央留空。匣中有钥，无骨无藏。”最末一行已经磨损，只剩一道与你身形相似的刻痕。",
+        "floor": 0,
+        "kind": "lore",
+        "source": "f0-2",
+        "objective": "寻回本层外舍利 · 本印 0/3",
+        "portrait": "stone",
+        "speaker": "归根石刻"
+      }
+    ],
+    "log": [
+      {
+        "text": "获得赤铜灵晶 · 永久攻击 +3。每次出手都生效。",
+        "kind": "item",
+        "turn": 3
+      },
+      {
+        "text": "火眼映出黑莲纹：这是一层幻壁。免费辨真后，此格永久成为可行通路。",
+        "kind": "magic",
+        "turn": 1
+      },
+      {
+        "text": "残钟响起。你踏入了自己的因果。",
+        "kind": "story",
+        "turn": 0
+      }
+    ],
+    "elixirs": 1,
+    "orbs": 1,
+    "turn": 17,
+    "defeated": false,
+    "won": false,
+    "ending": null,
+    "bossPlan": "direct",
+    "settings": {
+      "quickZero": false,
+      "showDamage": true,
+      "motion": "standard",
+      "screenShake": false,
+      "music": false,
+      "sfx": false
+    },
+    "purchases": {
+      "atk": 0,
+      "def": 0,
+      "heal": 0
+    },
+    "startedAt": 1792987438495,
+    "kills": 0,
+    "walked": {
+      "0:10:19": true,
+      "0:10:18": true,
+      "0:9:18": true,
+      "0:8:18": true,
+      "0:8:17": true,
+      "0:7:17": true,
+      "0:6:17": true,
+      "0:5:17": true,
+      "0:4:17": true,
+      "0:4:16": true,
+      "0:4:15": true,
+      "0:4:14": true,
+      "0:4:13": true,
+      "0:4:12": true,
+      "0:4:11": true,
+      "0:4:10": true,
+      "0:4:9": true
+    },
+    "outcomes": []
+  },
+  "savedAt": 1792987438498
+}

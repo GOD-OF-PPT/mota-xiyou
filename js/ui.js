@@ -283,15 +283,24 @@
       return `<article class="growth-comparison"><div><b>${esc(p.name)}</b><span>${p.kind==='atk'?'攻':'防'} +${p.value} · ${p.steps} 步</span></div><p>战损 <strong>${damage(p.before)} → ${damage(p.after)}</strong><em>${gain}</em></p><button class="scene-rule-button" data-growth-route="${esc(p.id)}" aria-pressed="${active}">${active?'青线已标出':'标出这条路'} ↗</button></article>`;
     }).join('')||'<p class="tactics-empty">眼下没有可直接安全拾取的灵晶。可回访莲灯调整成长与法器。</p>'}<small>青线到灵晶，金圈为守卫。只比较单枚成长；途中不经战斗、开门或其他奖励。</small></div>`;
   }
-  function nearbyGrowthHTML(e){
-    if(engine.state.floor>2||sceneDetail)return '';
-    const p=TowerTactics.growthPlans(engine,TowerData.enemies[e.enemy]).find(p=>p.saved>0);if(!p)return '';
-    return `<div class="encounter-opportunity"><span>先取${esc(p.name)}：本战损失 ${p.before.damage} → ${p.after.damage}</span><button data-growth-route="${esc(p.id)}">标出路线 ↗</button></div>`;
+  function enemyContextHTML(e){
+    const s=engine.state,enemy=TowerData.enemies[e.enemy],p=engine.preview(e.enemy),near=engine.distance(e)===1,boss=enemy.trait==='boss',locked=boss&&s.relics.length<5;
+    const route=!near&&engine.findPath(e.x,e.y),steps=route?Math.max(0,route.length-1):null,unsafe=!p.possible||!p.survive||p.canAfford===false||locked;
+    const previous=$('context-body').querySelector('[data-battle-details]'),open=!!sceneDetail||previous?.dataset.battleTarget===e.id&&previous.open;
+    const role={optional:'可绕行',guardian:'守关',treasure:'守宝'}[e.role]||'',status=!p.possible?'尚未破防':locked?'心印未齐':p.canAfford===false?'凝息珠不足':p.survive?(p.damage===0?'本战无损':'可以取胜'):'本战会力竭';
+    const health=p.possible?`生命 ${s.hp} → ${Math.max(0,s.hp-p.damage)}${!p.survive?' · 力竭':''}`:'先提升攻击，再考虑迎战';
+    let primary;
+    if(boss&&near&&!locked)primary='<button class="context-button" data-context="final-battle">进入决战布阵 <kbd>F</kbd></button>';
+    else if(unsafe)primary='<button class="context-button" data-context="avoid-battle">暂避此战 <kbd>Esc</kbd></button>';
+    else primary=`<button class="context-button" data-context="${near?'engage':'approach-enemy'}" ${!near&&steps===null?'disabled':''}>${near?'迎战 <kbd>F</kbd>':steps===null?'先打通接近路线':`走近守卫 · ${steps} 步`}</button>`;
+    const plan=boss?engine.bossOptions().find(o=>o.id===s.bossPlan):null;
+    const direct=near&&p.possible&&p.canAfford!==false&&!locked&&(unsafe||boss)?`<button class="scene-rule-button danger-engage" data-context="engage">${p.survive?'按当前准备直接迎战':'仍要迎战 · 会力竭'}</button>`:'';
+    return `<p class="combat-meta">${esc(traitNames[enemy.trait]||'普通')}${role?' · '+esc(role):''}<span>胜利功德 +${p.goldReward}</span></p><section class="combat-result ${unsafe?'danger':'safe'}" aria-label="本战结果预览"><strong class="combat-verdict">${status}</strong><div class="combat-loss"><span>预计损失</span><b class="damage-number">${p.possible?p.damage:'未破防'}</b></div><p class="combat-health" ${settings().quickZero&&p.possible&&p.damage===0?'hidden':''}>${health}</p>${boss?`<small>${esc(plan?.label||'执棒破阵')} · ${p.resourceCost?.orbs?p.resourceCost.orbs+' 凝息珠':'保留凝息珠'}</small>`:''}</section><div class="combat-primary" data-caution="${unsafe&&!boss}">${primary}</div><details class="combat-details" data-battle-details data-battle-target="${esc(e.id)}" ${open?'open':''}><summary>战前详情${sceneDetail?' · '+({rules:'敌情规则',tactics:'成长对策',plans:'临战准备'}[sceneDetail.kind]||''):''} <span aria-hidden="true">⌄</span></summary><div class="combat-details-body"><p class="combat-purpose">${esc(journey.purpose(e))}</p><div class="combat-detail-tabs"><button class="scene-rule-button" data-context="tactics" aria-pressed="${sceneDetail?.kind==='tactics'}">成长对策</button><button class="scene-rule-button" data-context="rules" aria-pressed="${sceneDetail?.kind==='rules'}">敌情规则</button>${boss?`<button class="scene-rule-button" data-context="plans" aria-pressed="${sceneDetail?.kind==='plans'}">临战准备</button>`:''}</div>${sceneDetailHTML(e)}${!sceneDetail?`<p class="combat-reading">${p.possible?`${p.rounds} 棒击败 · 预计受击 ${p.enemyHits} 次`:'有效攻击须高于敌人防御'}${p.nextAttack?`；再加 ${p.nextAttack.delta} 攻，可少损 ${p.nextAttack.saved} 生命`:''}。</p>`:''}${direct}${unsafe&&!near&&steps!==null?`<button class="scene-rule-button" data-context="approach-enemy">走近查看 · 不会自动迎战</button>`:''}</div></details>`;
   }
   function battleHTML(enemy,p,expanded=false){
     if(!expanded&&settings().quickZero&&p.possible&&p.damage===0)return `<div class="forecast safe"><span>本战可无损</span><strong class="damage-number">0</strong><small>再次前进或点击迎战才结算</small></div>`;
     const next=attackBreakpoint(enemy,p),phase=p.phases?.length?`<div class="phase-table">${p.phases.map((q,i)=>`<div class="phase-row"><b><canvas class="phase-icon" data-phase="${i}" aria-hidden="true"></canvas>${i+1} · ${esc(q.name)}</b><span>生命 ${q.hp} / 攻 ${q.atk} / 防 ${q.def}</span><small>${q.possible===false?'无法破防':`${finite(q.rounds)} 棒 · 敌出手 ${finite(q.enemyHits)} 次 · 损失 ${finite(q.damage)}`}</small></div>`).join('')}</div>`:'';
-    return `${statsHTML(enemy,p)}<div class="forecast ${p.possible&&p.survive?'safe':'danger'}"><span>预计生命损失${p.phases?.length?' · 三相合计':''}</span><strong class="damage-number">${p.possible?p.damage:'无法破防'}</strong><small>${p.possible?(p.survive?`战后剩余 ${engine.state.hp-p.damage} 生命`:'本次战斗将会力竭'):'提升攻击，或寻找其他路线'}</small></div><div class="trait-note context-summary ${enemy.trait==='normal'?'normal-rule':'special-rule'}"><b>${traitNames[enemy.trait]||'普通'} · </b>${esc(enemy.desc||'行者先攻，击杀一击不会受到还击。')}</div>${p.gearLines?.length?`<div class="gear-forecast"><b>法器实效 · 攻 ${p.effectiveAtk} / 防 ${p.effectiveDef}</b>${p.gearLines.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}${next?`<div class="breakpoint-note">下一基础攻击临界：<b>${next.atk}</b>（再加 ${next.delta}）可少损 <b>${next.saved}</b> 生命。</div>`:''}${expanded?`${phase}<details class="formula" ${!p.phases?'open':''}><summary>展开真实计算过程</summary>${(p.lines||[]).map(t=>`<div>${esc(t)}</div>`).join('')}<div><b>总损失 = ${p.possible?p.damage:'无法破防'}</b></div></details>`:''}`;
+    return `${statsHTML(enemy,p)}<div class="trait-note context-summary ${enemy.trait==='normal'?'normal-rule':'special-rule'}"><b>${traitNames[enemy.trait]||'普通'} · </b>${esc(enemy.desc||'行者先攻，击杀一击不会受到还击。')}</div>${p.gearLines?.length?`<div class="gear-forecast"><b>法器实效 · 攻 ${p.effectiveAtk} / 防 ${p.effectiveDef}</b>${p.gearLines.map(t=>`<span>${esc(t)}</span>`).join('')}</div>`:''}${next?`<div class="breakpoint-note">下一基础攻击临界：<b>${next.atk}</b>（再加 ${next.delta}）可少损 <b>${next.saved}</b> 生命。</div>`:''}${expanded?`${phase}<details class="formula" ${!p.phases?'open':''}><summary>真实计算过程</summary>${(p.lines||[]).map(t=>`<div>${esc(t)}</div>`).join('')}<div><b>总损失 = ${p.possible?p.damage:'无法破防'}</b></div></details>`:''}`;
   }
   function combat(e){
     if(!engine.isCurrent(e))return;clearSurfaces();calculationOpen=false;engine.select(e.x,e.y);updateContext();positionContext();
@@ -602,6 +611,11 @@
     return `<p class="target-brief">${esc(summary)}</p><div class="context-actions scene-actions">${actions}${detailLabel?`<button class="scene-rule-button" data-context="target-details" aria-expanded="${sceneDetail?.kind==='details'}">${sceneDetail?.kind==='details'?'收起说明':detailLabel}</button>`:''}</div>`;
   }
   function showTargetDetails(){if(targetDetails&&!['npc','monument'].includes(targetDetails.e?.type))toggleSceneDetail('details');}
+  let battleReadingObserver=null;
+  function revealBattleReading(){
+    const reading=$('context-body').querySelector('.combat-details-body'),content=reading?.querySelector('.scene-inline');if(!reading||!content)return;
+    const r=reading.getBoundingClientRect(),c=content.getBoundingClientRect();if(r.height>0&&c.top+Math.min(120,r.height)>r.bottom)reading.scrollTop+=c.top-r.top-8;
+  }
   function sceneDetailHTML(e){
     if(!sceneDetail)return '';
     if(sceneDetail.kind==='tactics'&&e?.type==='enemy')return tacticsHTML(e);
@@ -615,14 +629,13 @@
     return `<div class="scene-inline" data-inline-kind="${esc(sceneDetail.kind)}">${body}</div>`;
   }
   function updateContext(){
+    battleReadingObserver?.disconnect();battleReadingObserver=null;
     const s=engine.state,sel=engine.selection;
     if(sceneDetail&&sceneDetail.key!==sceneTargetKey())sceneDetail=null;
     let title='观塔 · 再落子',html=`<div class="context-kicker">${esc(modeNames[engine.mode])}</div><p>${esc(modeHelp(engine.mode))}</p><div class="context-divider"></div><p class="muted">点守卫先看战损；点机关先看规则。没有计时，也没有刷怪。</p><div class="context-callout">${hintHTML(TowerData.floors[s.floor].hints?.[0]||'先看清每一条路，再决定付出什么。')}</div>`;
     if(sel){const e=engine.getEntity(sel.x,sel.y),tile=engine.getTile(sel.x,sel.y);
       if(e?.type==='enemy'){
-        const enemy=TowerData.enemies[e.enemy],p=engine.preview(e.enemy),near=engine.distance(e)===1,boss=enemy.trait==='boss',locked=boss&&s.relics.length<5,route=!near&&engine.findPath(e.x,e.y),steps=route?Math.max(0,route.length-1):null;
-        title=enemy.name;const plan=boss?engine.bossOptions().find(o=>o.id===s.bossPlan):null;
-        html=`<p class="encounter-purpose">${esc(journey.purpose(e))} · 胜利 +${p.goldReward} 金</p><div class="forecast scene-loss ${p.survive?'safe':'danger'}"><span>${settings().quickZero&&p.possible&&p.damage===0?'无损':'损失'}</span><b class="damage-number">${p.possible?p.damage:'无法破防'}</b><small>${settings().quickZero&&p.possible&&p.damage===0?'':p.possible?(p.survive?'战后 '+(s.hp-p.damage):'将会力竭'):''}</small></div><p class="encounter-read">${esc(traitNames[enemy.trait]||'普通')} · ${p.possible?`${p.rounds} 棒 / 受击 ${p.enemyHits} 次`:'有效攻击须高于敌防'}${p.nextAttack?`<span>再加 ${p.nextAttack.delta} 攻，可少损 ${p.nextAttack.saved}</span>`:''}</p>${nearbyGrowthHTML(e)}${boss?`<p class="scene-plan-caption">${esc(plan?.label||'执棒破阵')} · ${p.resourceCost?.orbs?p.resourceCost.orbs+' 凝息珠':'保留凝息珠'}</p>`:''}<div class="context-actions scene-actions">${boss&&near?`<button class="context-button" data-context="final-battle" ${locked?'disabled':''}>三印布阵 · 步入决战 <kbd>F</kbd></button>`:''}<button class="${boss&&near?'scene-rule-button':'context-button'} ${!p.survive?'danger-engage':''}" data-context="${near?'engage':'approach-enemy'}" title="${near?'明确迎战后才结算生命与凝息珠':steps===null?'当前没有安全接近路线':'安全接近 '+steps+' 步；不会自动迎战'}" ${near&&(!p.possible||p.canAfford===false||locked)?'disabled':''}>${near?(boss?'按当前准备直接迎战':p.survive?'再前进 · 迎战':'仍战 · 力竭'):'接近'+(steps!==null?' · '+steps+' 步':'')}</button><button class="scene-rule-button" data-context="tactics" aria-expanded="${sceneDetail?.kind==='tactics'}">${sceneDetail?.kind==='tactics'?'收起':'筹算 ⌄'}</button><button class="scene-rule-button" data-context="rules" aria-expanded="${sceneDetail?.kind==='rules'}">${sceneDetail?.kind==='rules'?'收起':'规则 ⌄'}</button>${boss?`<button class="scene-rule-button" data-context="plans" aria-expanded="${sceneDetail?.kind==='plans'}">${sceneDetail?.kind==='plans'?'收起':'准备 ⌄'}</button>`:''}</div>`;
+        title=TowerData.enemies[e.enemy].name;html=enemyContextHTML(e);
       }
       else if(e?.type==='door'){title=colorNames[e.color]+'色封门';html=`<p class="context-summary">消耗 1 把${colorNames[e.color]}钥匙 · 现有 ${s.keys[e.color]} 把</p><div class="context-callout">${esc(e.label||'开启后永久消失。')}</div><button class="context-button" data-context="door">${engine.distance(e)>1?'走近 · 再确认开门':'开门决策'}</button>`;}
       else if(tile==='~'||tile==='='){const m=tile==='~'?'staff':'morph';title=tile==='~'?'断口 · 金箍为桥':'铁栅 · 青蝉可渡';html=`<p>${esc(modeHelp(m))}</p><p class="muted">道路贯通后无需再次消耗灵息。</p><button class="context-button" data-context="${m}" ${engine.distance(sel)!==1?'disabled':''}>${modeNames[m]} · ${abilityCost(m)} 灵息</button>`;}
@@ -650,20 +663,23 @@
     const selectedEntity=sel&&engine.getEntity(sel.x,sel.y),selectedTile=sel&&engine.getTile(sel.x,sel.y);
     if(selectedEntity?.type==='chest'&&selectedEntity.item==='redKey')title='归根之匣';
     $('context-title').textContent=title;if(selectedEntity?.type!=='enemy'&&(selectedEntity||['~','=','w'].includes(selectedTile))){html=compactTarget(selectedEntity,selectedTile,html);if(targetDetails)targetDetails.title=title;}
-    const bossCost=selectedEntity?.type==='enemy'&&TowerData.enemies[selectedEntity.enemy].trait==='boss'?engine.preview(selectedEntity.enemy).resourceCost?.orbs||0:0;$('context-cost').hidden=!bossCost;$('context-cost').textContent=bossCost?bossCost+' 珠':'';
+    $('context-cost').hidden=true;$('context-cost').textContent='';
     const portrait=$('context-portrait');if(portrait){const type=selectedEntity?.type;portrait.hidden=!['enemy','npc','rescue','treasure','chest','cache'].includes(type);if(!portrait.hidden){if(type==='enemy')TowerRenderer.icon(portrait,'enemy',selectedEntity.enemy);else if(['chest','cache'].includes(type))TowerRenderer.icon(portrait,'chest');else if(type==='treasure')TowerRenderer.icon(portrait,'treasure',selectedEntity.treasure);else TowerRenderer.icon(portrait,'npc',selectedEntity.archetype||selectedEntity.sprite||selectedEntity.portrait||(type==='rescue'?'bajie':'lantern'));}}
-    $('context-title').textContent=title;$('context-body').innerHTML=html+sceneDetailHTML(selectedEntity);renderer.mechanismPreview=TowerMechanisms.preview(engine,selectedEntity);if(renderer.mechanismPreview.length)$('context-body').insertAdjacentHTML('beforeend','<details class="mechanism-links"><summary>查看联动 · '+renderer.mechanismPreview.filter(q=>q.before!==q.after).length+' 处开合变化</summary>'+renderer.mechanismPreview.map(q=>'<p>'+esc(q.status)+' · '+esc(q.label)+'</p>').join('')+'</details>');
+    $('context-title').textContent=title;$('context-body').innerHTML=html+(selectedEntity?.type==='enemy'?'':sceneDetailHTML(selectedEntity));renderer.mechanismPreview=TowerMechanisms.preview(engine,selectedEntity);if(renderer.mechanismPreview.length)$('context-body').insertAdjacentHTML('beforeend','<details class="mechanism-links"><summary>查看联动 · '+renderer.mechanismPreview.filter(q=>q.before!==q.after).length+' 处开合变化</summary>'+renderer.mechanismPreview.map(q=>'<p>'+esc(q.status)+' · '+esc(q.label)+'</p>').join('')+'</details>');
     const narrativeTarget=['npc','monument'].includes(selectedEntity?.type);
     document.querySelector('.context-card')?.classList.toggle('is-narrative',narrativeTarget);
-    const contextGoal=$('context-objective');contextGoal.hidden=!sceneDetail&&!narrativeTarget;
-    contextGoal.innerHTML=sceneDetail||narrativeTarget?'此行 · '+TowerText.highlighted(guidance().text):'';
-    document.querySelector('.context-card')?.classList.toggle('expanded',!!sceneDetail);
+    const enemyTarget=selectedEntity?.type==='enemy',battleDetails=$('context-body').querySelector('[data-battle-details]');
+    const contextGoal=$('context-objective'),showGoal=!!sceneDetail||narrativeTarget||!!battleDetails?.open;contextGoal.hidden=!showGoal;
+    contextGoal.innerHTML=showGoal?'此行 · '+TowerText.highlighted(guidance().text):'';
+    document.querySelector('.context-card')?.classList.toggle('expanded',!!sceneDetail||!!battleDetails?.open);
+    battleDetails?.addEventListener('toggle',()=>{if(!battleDetails.isConnected)return;if(!battleDetails.open&&sceneDetail){sceneDetail=null;updateContext();$('context-body').querySelector('.combat-details>summary')?.focus({preventScroll:true});return;}contextGoal.hidden=!battleDetails.open;contextGoal.innerHTML=battleDetails.open?'此行 · '+TowerText.highlighted(guidance().text):'';document.querySelector('.context-card')?.classList.toggle('expanded',battleDetails.open);scheduleContext();});
+    if(battleDetails&&sceneDetail){battleReadingObserver=new ResizeObserver(revealBattleReading);battleReadingObserver.observe(battleDetails.querySelector('.combat-details-body'));}
     const sigil=document.querySelector('.context-card'),targetKey=sel?`${s.floor}:${selectedEntity?.id||sel.x+','+sel.y}`:'';document.body.dataset.target=targetKey?'true':'false';if(sigil){sigil.dataset.sigil=selectedEntity?.type==='enemy'?'观':['npc','rescue','monument'].includes(selectedEntity?.type)?'问':['fragment','treasure','item','chest'].includes(selectedEntity?.type)?'得':'启';if(targetKey&&targetKey!==lastSigilTarget){lastSigilTarget=targetKey;sigil.classList.remove('sigil-enter');void sigil.offsetWidth;sigil.classList.add('sigil-enter');}if(!targetKey)lastSigilTarget='';}
     document.querySelector('.context-card')?.classList.toggle('is-enemy',selectedEntity?.type==='enemy');
     document.querySelector('.context-card')?.classList.toggle('is-chest',['chest','cache'].includes(selectedEntity?.type));
     document.querySelector('.context-card')?.classList.toggle('has-selection',!!sel&&(!!selectedEntity||['~','=','w'].includes(selectedTile)));
     bindFocus($('context-body'));
-    if(engine.selection&&TowerPlanning.targets(engine).some(t=>t.x===engine.selection.x&&t.y===engine.selection.y&&(selectedEntity?t.id===selectedEntity.id:!t.id)))$('context-body').insertAdjacentHTML('beforeend','<button class="scene-rule-button" data-plan-mark>推演此处 · T</button>');
+    if(engine.selection&&TowerPlanning.targets(engine).some(t=>t.x===engine.selection.x&&t.y===engine.selection.y&&(selectedEntity?t.id===selectedEntity.id:!t.id)))($('context-body').querySelector('.combat-details-body')||$('context-body')).insertAdjacentHTML('beforeend',`<button class="scene-rule-button" data-plan-mark>${enemyTarget?'加入推演':'推演此处 · T'}</button>`);
     $('context-body').querySelector('[data-plan-mark]')?.addEventListener('click',()=>planningDesk.mark(engine.selection.x,engine.selection.y));
     paintAssetIcons($('context-body'));$('context-body').querySelectorAll('[data-phase]').forEach(c=>TowerRenderer.icon(c,'boss',Number(c.dataset.phase)));
     $('context-body').querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>{const p=engine.selection,e=p&&engine.getEntity(p.x,p.y);if(e){const id=b.dataset.choice;choice(e);previewDecision(id);}});
@@ -693,7 +709,8 @@
       else if(a==='final-battle'&&e){if(!finalBattle.open(e))toast('先走近心猿，并集齐五重心印。');}
       else if(a==='formula'&&e){calculationOpen=true;updateContext();}
       else if(a==='engage'&&e)confirmCombat(e);
-      else if(a==='approach-enemy'&&e)approach(e,()=>{engine.select(e.x,e.y);$('status-message').textContent='已走近守卫。再按一次朝守卫的方向，或点迎战。';});
+      else if(a==='avoid-battle'){clearSceneTarget();$('game-canvas').focus({preventScroll:true});}
+      else if(a==='approach-enemy'&&e)approach(e,()=>{engine.select(e.x,e.y);$('status-message').textContent='已走近守卫。查看战损后按 F 或点迎战。';});
       else if(a==='door'&&e)approach(e,()=>door(e));
       else if(a==='switch'&&e)approach(e,()=>engine.toggleSwitch(e));
       else if(a==='stairs'&&e)approach(e,()=>engine.traverse(e));
@@ -943,6 +960,7 @@
     if(ev.key==='Escape'){
       ev.preventDefault();stopPath();if(!$('style-picker').classList.contains('hidden')){$('style-picker').classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');return;}
       if($('game-toolbox')?.open){$('game-toolbox').open=false;return;}if($('character-drawer').classList.contains('open')){closeCharacter();return;}
+      if(!activeStory&&engine.selection&&engine.getEntity(engine.selection.x,engine.selection.y)?.type==='enemy'){clearSceneTarget();$('game-canvas').focus({preventScroll:true});return;}
       if(surfaceOpen&&!$('modal-close').disabled){closeSurface();return;}if(activeStory&&!storyCollapsed){skipStory();return;}if(sceneDetail){sceneDetail=null;clearInterval(dialogueTimer);updateContext();return;}if(engine.selection){clearSceneTarget();return;}if(activeStory&&!storyCollapsed){collapseStory(true);return;}engine.setMode('walk');return;
     }
     if(!started)return;

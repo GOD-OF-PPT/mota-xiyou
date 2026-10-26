@@ -1,0 +1,625 @@
+{
+  "records": {
+    "distant": {
+      "file": "audits/v35-fixtures/distant.json",
+      "target": {
+        "x": 4,
+        "y": 8,
+        "type": "enemy",
+        "enemy": "thresholdImp",
+        "id": "f0-4",
+        "role": "optional",
+        "purpose": "可绕行的功德挑战；胜利功德可在莲灯换取成长。"
+      },
+      "source": {
+        "newGame": true
+      },
+      "hp": 620,
+      "preview": {
+        "possible": true,
+        "survive": true,
+        "damage": 20,
+        "normalDamage": 20,
+        "traitDamage": 0,
+        "hit": 20,
+        "rounds": 3,
+        "enemyHits": 2,
+        "foeHit": 10,
+        "firstStrike": false,
+        "ward": 0,
+        "lines": [
+          "每棒 24 − 4 = 20 点伤害",
+          "42 生命，首棒额外 0；共 3 棒",
+          "行者先手；敌人还击 2 次",
+          "每次还击 max(0, 20 − 10)：10 点",
+          "总损失 20；胜利功德 2"
+        ],
+        "gearLines": [],
+        "effectiveAtk": 24,
+        "effectiveDef": 10,
+        "openingBonus": 0,
+        "goldReward": 2,
+        "canAfford": true,
+        "reason": "",
+        "nextAttack": {
+          "atk": 25,
+          "delta": 1,
+          "saved": 10
+        }
+      },
+      "sha256": "21a2b4c39352188e00337c5c428606e81609efdcecd6c027417697ba38b9f0d7"
+    },
+    "safe": {
+      "file": "audits/v35-fixtures/safe.json",
+      "target": {
+        "x": 4,
+        "y": 8,
+        "type": "enemy",
+        "enemy": "thresholdImp",
+        "id": "f0-4",
+        "role": "optional",
+        "purpose": "可绕行的功德挑战；胜利功德可在莲灯换取成长。"
+      },
+      "source": {
+        "prefixActions": 17
+      },
+      "hp": 620,
+      "preview": {
+        "possible": true,
+        "survive": true,
+        "damage": 10,
+        "normalDamage": 10,
+        "traitDamage": 0,
+        "hit": 23,
+        "rounds": 2,
+        "enemyHits": 1,
+        "foeHit": 10,
+        "firstStrike": false,
+        "ward": 0,
+        "lines": [
+          "每棒 27 − 4 = 23 点伤害",
+          "42 生命，首棒额外 0；共 2 棒",
+          "行者先手；敌人还击 1 次",
+          "每次还击 max(0, 20 − 10)：10 点",
+          "总损失 10；胜利功德 2"
+        ],
+        "gearLines": [],
+        "effectiveAtk": 27,
+        "effectiveDef": 10,
+        "openingBonus": 0,
+        "goldReward": 2,
+        "canAfford": true,
+        "reason": "",
+        "nextAttack": {
+          "atk": 46,
+          "delta": 19,
+          "saved": 10
+        }
+      },
+      "sha256": "eb3e9c70cf8397bd1ab25d98ca7602f706eba5eb881997cc3cfe06271a0d79ec"
+    },
+    "zero": {
+      "file": "audits/v35-fixtures/zero.json",
+      "target": {
+        "x": 17,
+        "y": 8,
+        "type": "enemy",
+        "enemy": "imp",
+        "id": "f4-17",
+        "role": "optional",
+        "purpose": "可绕行的功德挑战；胜利功德可在莲灯换取成长。"
+      },
+      "source": {
+        "prefixActions": 791
+      },
+      "hp": 560,
+      "preview": {
+        "possible": true,
+        "survive": true,
+        "damage": 0,
+        "normalDamage": 0,
+        "traitDamage": 0,
+        "hit": 38,
+        "rounds": 1,
+        "enemyHits": 0,
+        "foeHit": 5,
+        "firstStrike": false,
+        "ward": 0,
+        "lines": [
+          "每棒 42 − 4 = 38 点伤害",
+          "36 生命，首棒额外 0；共 1 棒",
+          "行者先手；敌人还击 0 次",
+          "每次还击 max(0, 20 − 15)：5 点",
+          "总损失 0；胜利功德 2"
+        ],
+        "gearLines": [
+          "定海铁：攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。"
+        ],
+        "effectiveAtk": 42,
+        "effectiveDef": 15,
+        "openingBonus": 0,
+        "goldReward": 2,
+        "canAfford": true,
+        "reason": ""
+      },
+      "sha256": "056784f91ddab3c0d3db7da2d9d793b46b154f367f3694aa07c91c16641563bf"
+    },
+    "boss": {
+      "file": "audits/v35-fixtures/boss.json",
+      "target": {
+        "x": 10,
+        "y": 5,
+        "type": "enemy",
+        "enemy": "heart",
+        "id": "f17-7",
+        "role": "boss",
+        "purpose": "守护最后莲阵，战胜三相后才能完成归真。"
+      },
+      "source": {
+        "prefixActions": 4169
+      },
+      "hp": 973,
+      "preview": {
+        "possible": true,
+        "survive": true,
+        "damage": 930,
+        "normalDamage": 858,
+        "traitDamage": 72,
+        "hit": 53,
+        "rounds": 24,
+        "enemyHits": 22,
+        "foeHit": 38,
+        "firstStrike": true,
+        "ward": 8,
+        "lines": [
+          "破妄 · 伪佛金甲：每棒 53，首棒另加 0，7 棒 / 受击 7 次，损失 266",
+          "执念 · 黑莲重壳：每棒 47，首棒另加 0，9 棒 / 受击 8 次，损失 256",
+          "归心 · 无骨心火：每棒 53，首棒另加 0，8 棒 / 受击 7 次，损失 336",
+          "余毒 / 反震 / 心火 / 炉烬：额外 72 点",
+          "总损失 930；胜利功德 0"
+        ],
+        "gearLines": [
+          "定海铁：攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。",
+          "莲灯芯：每次法术反击减 6，攻击 −2。不能减免余毒、反震或最终心火。"
+        ],
+        "effectiveAtk": 101,
+        "effectiveDef": 52,
+        "openingBonus": 0,
+        "goldReward": 0,
+        "canAfford": true,
+        "reason": "",
+        "phases": [
+          {
+            "name": "破妄 · 伪佛金甲",
+            "hp": 360,
+            "atk": 90,
+            "def": 48,
+            "trait": "first",
+            "playerAtk": 101,
+            "hit": 53,
+            "rounds": 7,
+            "enemyHits": 7,
+            "foeHit": 38,
+            "damage": 266,
+            "rawDamage": 266,
+            "bonus": 0,
+            "possible": true,
+            "seal": null,
+            "sealBonus": 0,
+            "sealName": "未用印",
+            "sealRule": "按原准备迎战"
+          },
+          {
+            "name": "执念 · 黑莲重壳",
+            "hp": 420,
+            "atk": 84,
+            "def": 54,
+            "trait": "normal",
+            "playerAtk": 101,
+            "hit": 47,
+            "rounds": 9,
+            "enemyHits": 8,
+            "foeHit": 32,
+            "damage": 256,
+            "rawDamage": 256,
+            "bonus": 0,
+            "possible": true,
+            "seal": null,
+            "sealBonus": 0,
+            "sealName": "未用印",
+            "sealRule": "按原准备迎战"
+          },
+          {
+            "name": "归心 · 无骨心火",
+            "hp": 420,
+            "atk": 62,
+            "def": 48,
+            "trait": "magic",
+            "playerAtk": 101,
+            "hit": 53,
+            "rounds": 8,
+            "enemyHits": 7,
+            "foeHit": 48,
+            "damage": 336,
+            "rawDamage": 336,
+            "bonus": 0,
+            "possible": true,
+            "seal": null,
+            "sealBonus": 0,
+            "sealName": "未用印",
+            "sealRule": "按原准备迎战"
+          }
+        ],
+        "plan": {
+          "id": "direct",
+          "label": "执棒破阵",
+          "description": "保留攻击，直接迎战三相。无需凝息珠。",
+          "cost": {
+            "orbs": 0
+          }
+        },
+        "seals": [
+          null,
+          null,
+          null
+        ],
+        "resourceCost": {
+          "orbs": 0
+        },
+        "nextAttack": {
+          "atk": 103,
+          "delta": 6,
+          "saved": 32
+        }
+      },
+      "sha256": "ed6f3df573f61be2b0858ff9aef761aed2724f3555d6964187eeabaf119b1610"
+    },
+    "fatal": {
+      "file": "audits/v35-fixtures/fatal.json",
+      "target": {
+        "x": 15,
+        "y": 16,
+        "type": "enemy",
+        "enemy": "brass",
+        "id": "f3-3",
+        "role": "guardian",
+        "purpose": "守护支院宝物；可先成长再挑战。"
+      },
+      "source": {
+        "sourceTrace": "tests/playthrough-v28-free-mixed-direct.json",
+        "stopBeforeAction": 734,
+        "healingDetours": [
+          {
+            "originalIndex": 74,
+            "omittedHealing": "f0-7",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 106,
+            "omittedHealing": "f0-10",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 145,
+            "omittedHealing": "f1-8",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 221,
+            "omittedHealing": "f1-8",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "left",
+              "down"
+            ]
+          },
+          {
+            "originalIndex": 237,
+            "omittedHealing": "f1-7",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 321,
+            "omittedHealing": "f2-14",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "up",
+              "left"
+            ]
+          },
+          {
+            "originalIndex": 331,
+            "omittedHealing": "f2-14",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "up",
+              "left",
+              "left",
+              "down"
+            ]
+          },
+          {
+            "originalIndex": 355,
+            "omittedHealing": "f2-14",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "up",
+              "right",
+              "right",
+              "down"
+            ]
+          },
+          {
+            "originalIndex": 410,
+            "omittedHealing": "f2-14",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "up",
+              "left",
+              "left",
+              "down"
+            ]
+          },
+          {
+            "originalIndex": 437,
+            "omittedHealing": "f2-14",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              }
+            ],
+            "legalSteps": [
+              "up",
+              "right",
+              "right",
+              "down"
+            ]
+          },
+          {
+            "originalIndex": 510,
+            "omittedHealing": "f2-8",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 569,
+            "omittedHealing": "f2-10",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 599,
+            "omittedHealing": "f3-6",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "left"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "right"
+                ]
+              }
+            ],
+            "legalSteps": []
+          },
+          {
+            "originalIndex": 649,
+            "omittedHealing": "f3-4",
+            "originalSteps": [
+              {
+                "type": "step",
+                "args": [
+                  "up"
+                ]
+              },
+              {
+                "type": "step",
+                "args": [
+                  "down"
+                ]
+              }
+            ],
+            "legalSteps": []
+          }
+        ]
+      },
+      "hp": 79,
+      "preview": {
+        "possible": true,
+        "survive": false,
+        "damage": 80,
+        "normalDamage": 80,
+        "traitDamage": 0,
+        "hit": 24,
+        "rounds": 5,
+        "enemyHits": 4,
+        "foeHit": 20,
+        "firstStrike": false,
+        "ward": 0,
+        "lines": [
+          "每棒 42 − 18 = 24 点伤害",
+          "100 生命，首棒额外 0；共 5 棒",
+          "行者先手；敌人还击 4 次",
+          "每次还击 max(0, 35 − 15)：20 点",
+          "总损失 80；胜利功德 6"
+        ],
+        "gearLines": [
+          "定海铁：攻击 +6，防御 −3。高甲守卫的破防筹码，也会增加物理还击代价。"
+        ],
+        "effectiveAtk": 42,
+        "effectiveDef": 15,
+        "openingBonus": 0,
+        "goldReward": 6,
+        "canAfford": true,
+        "reason": "",
+        "nextAttack": {
+          "atk": 37,
+          "delta": 1,
+          "saved": 20
+        }
+      },
+      "sha256": "c5785977cba5ac01f449210da88aff7b5bce80f33110910316fd39bb3026eb7b"
+    }
+  },
+  "originalCampaignActions": 4177
+}

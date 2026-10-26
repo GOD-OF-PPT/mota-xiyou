@@ -1,0 +1,23 @@
+{
+  "scope": "PC battle preview and explicit confirmation",
+  "passed": true,
+  "evidence": "audits/v35-battle-focus.json",
+  "source": {
+    "index.html": "1b3da4029e02d7aaa1bc5ca8679fb9cd03f7acc78821e565f1a3bec791ca2c9d",
+    "playtest-v23-new.html": "1d7a818cb386d91915038dadbae450ad5f090197bb914cbad526d27e2abd21b5",
+    "playtest-v23-baseline.html": "4c08d985a64ea4a511bc8d0a515de0723c2bf9d01863df537859119dbbc609ab",
+    "js/ui.js": "36a31520e9737b60e4a8a96c469c7afe413a648e0a514a8bc9dd882900b7ee3c",
+    "js/engine.js": "797a3dd0fcad3233ba88d9fde93ce6bb456e620ef05bb36c38d10b771dc39218",
+    "js/world.js": "b6e05880139316e3adc89e408feab83eb8407a5ca78b29b3eeb398cf3a7fd78c",
+    "js/encounters.js": "bfc0d224a097ac4936af7a526d3e3f694b4140670cc5ed40466d3cfc525acbe4",
+    "css/ui-layout.css": "c0b3a51d91d77e5c0cd679ea738a2ef157bc6370692781315d1d5f0d0c794f08",
+    "scripts/build_v23_study.cjs": "2f88af1867e8c6354943fd79ca2b5f5e76a2ec044e61951d6e642ccb7f730297",
+    "scripts/prepare_v35_fixtures.cjs": "0c00740aa2ea2da09f7dd9f9fe07885a0248d8da25e8563981443036a80ae461",
+    "tests/v35-battle-focus-browser.cjs": "8ab204c12d0b8081ed2a3bc5bd3008d914bd15a911c1b7bbb7a2036576314884",
+    "audits/v35-fixtures/manifest.json": "224d165155fde9d74a1fa3976c453ecc9144cbfc4d2099290a0cfe98e0f23904"
+  },
+  "boundaries": [
+    "Campaign action sequence generated legal checkpoints; this is not a new full eighteen-floor browser playthrough.",
+    "Mobile and broad browser compatibility remain deferred."
+  ]
+}

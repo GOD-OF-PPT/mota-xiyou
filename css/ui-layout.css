@@ -154,3 +154,44 @@ html[data-ui-skins=ready] #altar-ritual .decision-petal.committed:after{content:
  html #altar-ritual[data-purpose=choice] .ritual-base footer{gap:3px 14px;margin-top:10px;padding-top:7px}
  #altar-ritual [data-decision-keys]{font-size:11px}
 }
+/* Battle reading: one outcome, one action, optional preparation underneath. */
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy{width:330px;max-width:calc(100vw - 40px);max-height:calc(100dvh - 180px);padding:28px 30px 32px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy.expanded{width:420px;max-height:calc(100dvh - 200px)}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy #context-body{display:flex;flex-direction:column;align-items:stretch;flex:1 1 auto;overflow:hidden;min-height:0}
+html #game-shell .context-card.is-enemy .combat-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:3px 12px;margin:4px 0 10px;font:12px/1.6 var(--sans);color:#6c6049}
+#game-shell .context-card.is-enemy .combat-meta>span{color:#785a2b}
+#game-shell .context-card.is-enemy .combat-result{margin:0 0 12px;padding:9px 0 12px;border-block:1px solid #94734a44}
+#game-shell .context-card.is-enemy .combat-verdict{display:block;font:16px/1.5 var(--serif);color:#365a38}
+#game-shell .context-card.is-enemy .combat-result.danger .combat-verdict{color:#9d3827}
+#game-shell .context-card.is-enemy .combat-loss{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:5px;font:14px/1.5 var(--sans);color:#67583e}
+#game-shell .context-card.is-enemy .combat-loss .damage-number{font:36px/1.2 var(--serif);color:#824322;white-space:nowrap}
+html #game-shell .context-card.is-enemy p.combat-health{font:14px/1.7 var(--sans);margin:5px 0 0;color:#4e4936}
+html #game-shell .context-card.is-enemy .combat-result.danger p.combat-health{color:#943b29}
+#game-shell .context-card.is-enemy .combat-result>small{display:block;margin-top:5px;font:12px/1.6 var(--sans)}
+#game-shell .context-card.is-enemy .combat-primary{display:flex;flex:0 0 auto;width:100%;margin:0 0 9px}
+html #game-shell .context-card.is-enemy :is(.combat-meta,.combat-result){flex-shrink:0}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-primary .context-button{flex:1;width:100%;max-width:none;min-width:0;min-height:48px;padding:10px 12px;font:18px/1.5 var(--serif);background:linear-gradient(#9b472d,#74331f)!important;color:#fff0c3!important;border:1px solid #b17e42!important;box-shadow:inset 0 1px #f8db8c77,0 2px 4px #51341d33}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-primary[data-caution=true] .context-button{background:linear-gradient(#485744,#2e3e31)!important;border-color:#67724d!important}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-primary .context-button:disabled{background:#766e57!important;color:#eee2bd!important;box-shadow:none;cursor:default}
+#game-shell .context-card.is-enemy .combat-details>summary{display:flex;align-items:center;justify-content:space-between;min-height:36px;padding:4px 0;cursor:pointer;list-style:none;font:14px/1.6 var(--serif);color:#794328}
+#game-shell .context-card.is-enemy .combat-details>summary::-webkit-details-marker{display:none}
+#game-shell .context-card.is-enemy .combat-details[open]>summary>span{transform:rotate(180deg)}
+#game-shell .context-card.is-enemy .combat-details{min-height:0;flex:1 1 auto}
+#game-shell .context-card.is-enemy .combat-details[open]{display:flex;flex-direction:column}
+#game-shell .context-card.is-enemy .combat-details::details-content{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;overflow:hidden}
+#game-shell .context-card.is-enemy .combat-details>summary{flex-shrink:0}
+#game-shell .context-card.is-enemy .combat-details-body{min-height:0;flex:1 1 auto;max-height:260px;overflow:auto;scrollbar-width:thin;overscroll-behavior:contain;border-top:1px solid #94734a33;padding:10px 1px 3px}
+html #game-shell .context-card.is-enemy :is(.combat-purpose,.combat-reading){margin:0 0 8px;font:13px/1.7 var(--sans);color:#67583e}
+#game-shell .context-card.is-enemy .combat-detail-tabs{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:9px}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-details-body>.scene-rule-button,
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-detail-tabs>.scene-rule-button{width:auto;min-width:0;min-height:36px;padding:4px 0;margin:0;font:14px/1.6 var(--serif);background:none!important;border:0!important;box-shadow:none}
+html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy .combat-detail-tabs>.scene-rule-button[aria-pressed=true]{font-weight:600;border-bottom:1px solid #9e6240!important}
+#game-shell .context-card.is-enemy .combat-details .scene-inline{margin-top:0;padding-top:0;border-top:0}
+#game-shell .context-card.is-enemy .combat-details .enemy-stat-grid{margin:0 0 10px}
+#game-shell .context-card.is-enemy.expanded #context-objective{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;padding-bottom:6px;margin-bottom:7px}
+#game-shell .context-card.is-enemy.expanded .combat-result{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 12px;padding:6px 0 8px;margin-bottom:9px}
+#game-shell .context-card.is-enemy.expanded .combat-loss{grid-column:2;grid-row:1/3;margin:0;gap:9px}
+#game-shell .context-card.is-enemy.expanded .combat-loss .damage-number{font-size:29px}
+html #game-shell .context-card.is-enemy.expanded p.combat-health{margin:0;font-size:13px}
+#game-shell .context-card.is-enemy.expanded .combat-result>small{grid-column:1/-1;margin-top:1px}
+@media(max-width:760px){html[data-ui-skins=ready] #game-shell .context-card.has-selection.is-enemy.expanded{max-height:calc(100dvh - 230px)}#game-shell .context-card.is-enemy .combat-details-body{max-height:180px}}

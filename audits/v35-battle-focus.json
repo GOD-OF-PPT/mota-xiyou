@@ -1,0 +1,443 @@
+{
+  "checks": [
+    "material lethal copper guard uses actual 79 HP / 80 damage, defaults to avoid, preserves F safety, and hides advanced actions",
+    "material safe battle presents one result and one action; growth guidance is read only; F settles victory once",
+    "material zero loss stays explicit; approaching a distant guard moves legally and never fights automatically",
+    "material final battle keeps one arrangement entry and never charges for viewing preparation",
+    "material deliberately choosing lethal combat remains available inside details and gives the real engine defeat without rewards",
+    "mural lethal copper guard uses actual 79 HP / 80 damage, defaults to avoid, preserves F safety, and hides advanced actions",
+    "mural safe battle presents one result and one action; growth guidance is read only; F settles victory once",
+    "mural zero loss stays explicit; approaching a distant guard moves legally and never fights automatically",
+    "mural final battle keeps one arrangement entry and never charges for viewing preparation",
+    "mural deliberately choosing lethal combat remains available inside details and gives the real engine defeat without rewards",
+    "offline file index supports the same explicit battle confirmation"
+  ],
+  "layouts": [
+    {
+      "name": "material-fatal-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 13,
+          "width": 320,
+          "height": 282.5625
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-fatal-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 246.75
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 383.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-fatal-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 254.515625
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-rules-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 30,
+          "width": 420,
+          "height": 598.578125
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-rules-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 22,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-rules-scrolled-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 21,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "material-safe-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "material-zero-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-fatal-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 13,
+          "width": 320,
+          "height": 282.5625
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-fatal-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 320,
+          "height": 246.75
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 383.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-fatal-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 12,
+          "width": 342,
+          "height": 254.515625
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-rules-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 30,
+          "width": 420,
+          "height": 598.578125
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-rules-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 22,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-rules-scrolled-629",
+      "viewport": {
+        "width": 629,
+        "height": 678
+      },
+      "frames": [
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection expanded",
+          "glyphs": 21,
+          "width": 420,
+          "height": 448
+        }
+      ],
+      "buttons": [],
+      "failures": []
+    },
+    {
+      "name": "mural-safe-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    },
+    {
+      "name": "mural-zero-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "frames": [
+        {
+          "frame": "journey-guide",
+          "glyphs": 11,
+          "width": 320,
+          "height": 221.375
+        },
+        {
+          "frame": "context-card sigil-enter is-enemy has-selection",
+          "glyphs": 11,
+          "width": 330,
+          "height": 362.671875
+        }
+      ],
+      "buttons": [
+        {
+          "text": "标记目标 G",
+          "width": 90.875,
+          "height": 42,
+          "disabled": false
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "screenshots": [
+    "audits/v35-material-fatal-1280.png",
+    "audits/v35-material-fatal-1280-card.png",
+    "audits/v35-material-fatal-629.png",
+    "audits/v35-material-fatal-1440.png",
+    "audits/v35-material-rules-1440.png",
+    "audits/v35-material-rules-629.png",
+    "audits/v35-material-rules-scrolled-629.png",
+    "audits/v35-material-safe-1280.png",
+    "audits/v35-material-safe-1280-card.png",
+    "audits/v35-material-zero-1280.png",
+    "audits/v35-mural-fatal-1280.png",
+    "audits/v35-mural-fatal-1280-card.png",
+    "audits/v35-mural-fatal-629.png",
+    "audits/v35-mural-fatal-1440.png",
+    "audits/v35-mural-rules-1440.png",
+    "audits/v35-mural-rules-629.png",
+    "audits/v35-mural-rules-scrolled-629.png",
+    "audits/v35-mural-safe-1280.png",
+    "audits/v35-mural-safe-1280-card.png",
+    "audits/v35-mural-zero-1280.png"
+  ],
+  "errors": [],
+  "passed": true
+}

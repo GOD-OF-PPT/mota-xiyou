@@ -182,5 +182,6 @@
   "choice_feedback_followup": "docs/v31-choice-feedback-review.md",
   "gold_hud_followup": "audits/v32-hud-gold.json",
   "story_f_followup": "audits/v33-story-f.json",
-  "choice_focus_followup": "docs/v34-choice-focus-review.md"
+  "choice_focus_followup": "docs/v34-choice-focus-review.md",
+  "battle_focus_followup": "docs/v35-battle-focus-review.md"
 }
