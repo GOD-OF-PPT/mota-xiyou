@@ -33,6 +33,7 @@
 !/audits/v43-material-guarded-clone.png
 !/audits/v43-live-safe-planning.png
 !/audits/v44-live-title.png
+!/audits/v45-default-map-1280.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

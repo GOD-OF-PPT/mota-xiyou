@@ -55,7 +55,7 @@
       this.p=this.buffer.getContext('2d');this.ctx.imageSmoothingEnabled=false;this.p.imageSmoothingEnabled=false;
       this.terrainBuffer=document.createElement('canvas');this.terrainKey='';
       this.effects=[];this.hover=null;this.t=0;this.lastFloor=-1;this.floorFade=0;this.running=true;
-      this.overview=false;this.camera={x:0,y:0,w:21,h:21,overview:false};this.cameraFocus=null;this.lastPlayer=null;this.lastSelection='';this.safeInsets={top:0,right:0,bottom:0,left:0};this.actorAnchors=new Map();
+      this.overview=true;this.camera={x:0,y:0,w:21,h:21,overview:true};this.cameraFocus=null;this.lastPlayer=null;this.lastSelection='';this.safeInsets={top:0,right:0,bottom:0,left:0};this.actorAnchors=new Map();
       this.reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       this.resizeHandler=()=>this.resize();this.styleHandler=()=>{this.terrainKey='';this.resize();};
       window.addEventListener('resize',this.resizeHandler);window.addEventListener('tower-art-style',this.styleHandler);window.addEventListener('tower-style-changed',this.styleHandler);

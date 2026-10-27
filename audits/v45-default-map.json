@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "new campaign defaults to the complete 21×21 floor at 1280×720",
+    "M toggles and R returns to close-up; resize preserves manually selected views",
+    "dismissing a selected target preserves full-map planning",
+    "legal player actions reach floor two; arrival restores full-map planning",
+    "manual save restore opens in full-map planning",
+    "return to title and continue restores progress in full-map planning",
+    "offline index.html also defaults to full-map planning",
+    "isolated playtest entry uses the new default"
+  ],
+  "errors": [],
+  "screenshots": [
+    "audits/v45-default-map-1280.png",
+    "audits/v45-map-1440.png"
+  ],
+  "progression": {
+    "actions": 124,
+    "floor": 1,
+    "hp": 686
+  },
+  "passed": true
+}

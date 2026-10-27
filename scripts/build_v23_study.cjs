@@ -35,13 +35,15 @@ for(const [variant,c]of [['baseline',baseline],['new',current]]) {
 }
 for(const task of ['first-three','ferry','silk'])for(const key of ['hp','atk','def','mana','maxMana','coins','orbs','elixirs','keys','equipped','treasures','rescued','relics'])assert.deepEqual(fixtures.baseline[task].state[key],fixtures.new[task].state[key],task+' paired budget '+key);
 write(out+'/fixtures.js','/* Generated legal task setup, not participant observations. */\nwindow.TOWER_STUDY_FIXTURES='+JSON.stringify(fixtures)+';\n');
+const currentUiVersion=read('index.html').match(/src="js\/ui\.js\?v=(\d+)"/)?.[1];
+assert.ok(currentUiVersion,'Current game entry must declare a UI cache version');
 for(const variant of ['baseline','new']) {
  let html=read(variant==='baseline'?backup+'/index.html':'index.html');
  if(variant==='baseline')html=html.replace(/((?:src|href)=")(js|css)\//g,`$1${backup}/$2/`);
  html=html.replace('<head>','<head>\n  <script src="js/study-storage.js?v=24" data-variant="'+variant+'"></script>');
  if(variant==='new')html=html.replace('js/study-storage.js?v=24','js/study-storage.js?v=30');
  const ui=variant==='baseline'?backup+'/js/ui.js':'js/ui.js';
- html=html.replace(new RegExp('  <script defer src="'+ui.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\?v=\\d+"></script>'),`  <script defer src="${out}/fixtures.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="js/study-setup.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="${ui}?v=${variant==='baseline'?22:43}"></script>\n  <script defer src="js/study-entry.js?v=24"></script>`);
+ html=html.replace(new RegExp('  <script defer src="'+ui.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\?v=\\d+"></script>'),`  <script defer src="${out}/fixtures.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="js/study-setup.js?v=${variant==='baseline'?24:28}"></script>\n  <script defer src="${ui}?v=${variant==='baseline'?22:currentUiVersion}"></script>\n  <script defer src="js/study-entry.js?v=24"></script>`);
  assert.ok(html.includes('js/study-entry.js')&&html.indexOf('js/study-setup.js')<html.indexOf(ui+'?'),'setup precedes runtime UI');
  write('playtest-v23-'+variant+'.html',html);
 }

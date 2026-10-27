@@ -32,7 +32,7 @@
   <script defer src="js/material-assets.js?v=30"></script>
   <script defer src="js/style-progress.js?v=30"></script>
   <script defer src="js/art-style.js?v=30"></script>
-  <script defer src="js/renderer.js?v=39"></script>
+  <script defer src="js/renderer.js?v=45"></script>
   <script defer src="js/audio.js?v=44"></script>
   <script defer src="js/film-art.js?v=42"></script>
   <script defer src="js/story-director.js?v=42"></script>
@@ -49,7 +49,7 @@
   <script defer src="js/ui-skins.js?v=26"></script>
   <script defer src="research/study-v23/fixtures.js?v=28"></script>
   <script defer src="js/study-setup.js?v=28"></script>
-  <script defer src="js/ui.js?v=44"></script>
+  <script defer src="js/ui.js?v=45"></script>
   <script defer src="js/study-entry.js?v=24"></script>
 </head>
 <body>
@@ -132,8 +132,8 @@
       </aside>
       <section class="tower-panel" aria-label="塔层探索">
         <div class="floor-header"><div class="floor-title"><span id="floor-number" class="floor-number">壹</span><div><div class="floor-overline">THE RELIC TOWER <span id="location-label">第 1 层 / 共 18 层</span></div><h1 id="floor-name">石生山门</h1></div></div><span id="floor-subtitle" class="floor-subtitle">万法起于足下</span></div>
-        <div class="map-toolbar"><button id="btn-overview" class="map-toggle" aria-pressed="false" title="近观 / 全图规划 · M">全图规划 <kbd>M</kbd></button><button id="btn-focus-player" class="focus-player" title="视野回到悟空 · R" aria-label="视野回到悟空">归位 <kbd>R</kbd></button><span id="viewport-label">近观 · 方向跟随</span><details class="quest-scroll"><summary>此层经卷 <span>⌄</span></summary><div><div class="quest-reading" tabindex="0" role="region" aria-label="此层经卷正文"><div class="section-label">此行所求</div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div id="floor-depth"></div><button id="btn-quest-journal">展开因果手记 ↗</button><p class="quest-keys">↑ ↓ 阅读 · Esc 收卷</p></div></div></details></div>
-        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="二十一乘二十一格塔层，近观视野随角色移动。M 展开全图；点击格子查看规则与寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
+        <div class="map-toolbar"><button id="btn-overview" class="map-toggle" aria-pressed="true" title="近观 / 全图规划 · M">近观探索 <kbd>M</kbd></button><button id="btn-focus-player" class="focus-player" title="视野回到悟空 · R" aria-label="视野回到悟空">归位 <kbd>R</kbd></button><span id="viewport-label">规划 21 × 21 · 查看全局</span><details class="quest-scroll"><summary>此层经卷 <span>⌄</span></summary><div><div class="quest-reading" tabindex="0" role="region" aria-label="此层经卷正文"><div class="section-label">此行所求</div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div id="floor-depth"></div><button id="btn-quest-journal">展开因果手记 ↗</button><p class="quest-keys">↑ ↓ 阅读 · Esc 收卷</p></div></div></details></div>
+        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="二十一乘二十一格塔层，默认显示全图规划。M 切换近观，R 回到悟空；点击格子查看规则与寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
         <div id="floor-entry" class="floor-entry" hidden aria-live="polite" aria-atomic="true"><canvas class="entry-panorama" aria-hidden="true"></canvas><small data-entry-number></small><h2></h2><p data-entry-atmosphere></p><div class="entry-goal"><span>此层要事</span><strong data-entry-goal></strong></div><button class="entry-continue">踏入此境 <kbd>Enter</kbd></button></div>
         <div id="ability-bar" class="ability-bar" aria-label="行者神通">
           <button data-mode="walk" id="skill-walk" class="ability active"><span class="ability-symbol">⌁</span><span>行走<small>自在探索</small></span><kbd>1</kbd></button>
@@ -152,7 +152,7 @@
         <div class="map-legend"><span><i class="legend-dot relic-dot"></i> 舍利</span><span><i class="legend-dot altar-dot"></i> 灵息坛</span><span><i class="legend-dot enemy-dot"></i> 守卫</span><span><i class="legend-dot gate-dot"></i> 机关</span></div>
       </aside>
     </main>
-    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> <kbd>M</kbd> 全图规划 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
+    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> <kbd>M</kbd> 切换视野 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
   </div>
   <section id="trial-ribbon" class="trial-ribbon" hidden aria-label="当前独立试炼"><strong></strong><small></small><button>试炼与主线</button></section>
   <section id="journey-guide" class="journey-guide" aria-label="当前探索指引"><div class="journey-heading"><span>此行要事</span><small data-journey-phase></small></div><div class="journey-result" data-journey-result hidden role="status" aria-live="polite"><b></b><span></span></div><strong></strong><p data-journey-why></p><p class="journey-note" data-journey-note hidden></p><div class="journey-tools"><button data-journey-focus>标记目标 <kbd>G</kbd></button><small data-journey-help></small></div></section>
