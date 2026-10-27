@@ -1,0 +1,62 @@
+{
+  "version": 44,
+  "source": {
+    "js/audio.js": "bcc07f5c29638d0fdb74ce4d9edf696cf4ea25a9c6314009f2cf49191d32d383",
+    "js/ui.js": "a64a42ebea782dd6facd7c69e3ea265789586b4f635113f5fcecfd4825721ff6",
+    "index.html": "ff888b6715cca70d90bc60c62e0435f4e34f7ce6e8c2821904ac505f53572258",
+    "playtest-v23-new.html": "6925cabe0df7e94615e6d19ffd78d027cea9a63ca76cc4507e6d57bd9a57f43e",
+    "css/ui-layout.css": "abb0acdafd1d998c0d4dbd9bcffd6925cdca6583c5eb9893f59e49e143e7b7eb"
+  },
+  "assets": [
+    {
+      "file": "assets/audio/bgm/exploration.mp3",
+      "bytes": 4174980,
+      "sha256": "5564325a9e13ff1e0f61b7b7ffbe68f036282421674e332afaa8b218abb470c3"
+    },
+    {
+      "file": "assets/audio/bgm/title-01.mp3",
+      "bytes": 4647274,
+      "sha256": "d4a181ea77484dab5342367a2af0f1875cbe8967c7f5c19febbdcaa10b160716"
+    },
+    {
+      "file": "assets/audio/bgm/title-02.mp3",
+      "bytes": 5328547,
+      "sha256": "50e6bfd413307a493460cdac37e7e950e9dfd75b6d8a45e2e95174a50c100174"
+    },
+    {
+      "file": "assets/audio/bgm/victory.mp3",
+      "bytes": 3728600,
+      "sha256": "4d4990b50d1154b8c2b3e982d687643a830d756ebe2cdaa69c3764374f557758"
+    }
+  ],
+  "date": "2026-10-27",
+  "passed": true,
+  "checks": [
+    "real user gesture unlocks title MP3; natural ended event advances to the other title track",
+    "exploration plays and survives inventory, return and skip without restarting or layering synthesized BGM",
+    "music and synthesized SFX switches operate independently",
+    "exploration MP3 loops at its actual end",
+    "audio pause/resume lifecycle retains the track position",
+    "legal ending confirmation routes to victory music; loop, expanded history, map return, reopen and title return select the correct track",
+    "explicit music-off preference survives reload and can be enabled from the title",
+    "title random selection maps 0 to a different track; keyboard unlock works",
+    "title random selection maps 0.999 to a different track; keyboard unlock works",
+    "offline decodes and plays local MP3s through title, exploration and the other ending",
+    "study decodes and plays local MP3s through title, exploration and the other ending",
+    "1280脳720 title music control stays visible; mouse and Space toggles create no campaign save",
+    "rapid title/continue transitions and interrupted play promises recover with one active track",
+    "a missing title MP3 reports failure without blocking entry; valid exploration music still plays"
+  ],
+  "browserErrors": [],
+  "reports": [
+    "audits/v44-audio.json",
+    "audits/v44-audio-controls.json"
+  ],
+  "screenshots": [
+    "audits/v44-live-title.png",
+    "audits/v44-title-music.png",
+    "audits/v44-title-1280.png",
+    "audits/v44-victory-music.png"
+  ],
+  "scope": "MP3 playback and scene integration; no new full-campaign or human listening acceptance claimed"
+}

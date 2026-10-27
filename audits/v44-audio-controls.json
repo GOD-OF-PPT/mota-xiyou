@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "1280×720 title music control stays visible; mouse and Space toggles create no campaign save",
+    "rapid title/continue transitions and interrupted play promises recover with one active track",
+    "a missing title MP3 reports failure without blocking entry; valid exploration music still plays"
+  ],
+  "errors": [],
+  "passed": true
+}

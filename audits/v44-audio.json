@@ -1,0 +1,51 @@
+{
+  "checks": [
+    "real user gesture unlocks title MP3; natural ended event advances to the other title track",
+    "exploration plays and survives inventory, return and skip without restarting or layering synthesized BGM",
+    "music and synthesized SFX switches operate independently",
+    "exploration MP3 loops at its actual end",
+    "audio pause/resume lifecycle retains the track position",
+    "legal ending confirmation routes to victory music; loop, expanded history, map return, reopen and title return select the correct track",
+    "explicit music-off preference survives reload and can be enabled from the title",
+    "title random selection maps 0 to a different track; keyboard unlock works",
+    "title random selection maps 0.999 to a different track; keyboard unlock works",
+    "offline decodes and plays local MP3s through title, exploration and the other ending",
+    "study decodes and plays local MP3s through title, exploration and the other ending"
+  ],
+  "tracks": {
+    "title-01.mp3": {
+      "time": 0.368766,
+      "duration": 145.136327,
+      "loop": false,
+      "volume": 0.20862000001294276,
+      "error": null
+    },
+    "title-02.mp3": {
+      "time": 0.35965,
+      "duration": 166.426122,
+      "loop": false,
+      "volume": 0.20666571423394337,
+      "error": null
+    },
+    "exploration.mp3": {
+      "time": 0.469547,
+      "duration": 130.377143,
+      "loop": true,
+      "volume": 0.20552,
+      "error": null
+    },
+    "victory.mp3": {
+      "time": 0.611238,
+      "duration": 116.427755,
+      "loop": true,
+      "volume": 0.35177142854554305,
+      "error": null
+    }
+  },
+  "screenshots": [
+    "audits/v44-title-music.png",
+    "audits/v44-victory-music.png"
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -17,6 +17,7 @@
   const audio=new TowerAudio();
   const preferenceKey='dasheng-relic-tower-preferences-v3';
   let localPreferences={};try{localPreferences=JSON.parse(localStorage.getItem(preferenceKey)||'{}');}catch{}
+  if(typeof localPreferences.music!=='boolean')localPreferences.music=true;
   let castFrequency='adaptive';try{const saved=localStorage.getItem('dasheng-cast-frequency-v13');if(['adaptive','always'].includes(saved))castFrequency=saved;}catch{}
   const systemMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
   const settings=()=>Object.assign(engine.state.settings||(engine.state.settings={quickZero:false,showDamage:true}),localPreferences);
@@ -27,7 +28,14 @@
   const planningDesk=new TowerPlanningUI({engine,show:showSurface,close:closeSurface,notice:toast,fast:()=>settings().fastTravel!==false,setFast:value=>setPreference('fastTravel',value),history:()=>runSession.isTrial?TowerOutcomes.history(engine).filter(r=>r.turn>runSession.trial.seed.turn&&r.floor===runSession.trial.floor):(TowerOutcomes.history(engine).length?TowerOutcomes.history(engine):journey.receipts||[]),resume:()=>{resetStorySession();showGame();viewChosen=false;explorationView();renderer.focusPlayer?.();if(engine.state.won)ending(engine.state.ending);else if(engine.state.defeated)defeat();else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}});
   const trialPanel=new TowerTrialsUI({session:runSession,show:showSurface,close:closeSurface,resume:()=>{resetStorySession();planningDesk.steps=[];planningDesk.compare=[];showGame();viewChosen=false;explorationView();renderer.focusPlayer?.();viewStatus();trialPanel.updateRibbon();if(engine.state.won)ending(engine.state.ending);else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}});
   function syncRunLabels(){const active=runSession.isTrial,stale=active&&runSession.meta.rulesHash!==runSession.trial.rulesHash;$('leave-trial-start').hidden=!active;$('trial-resume-note').hidden=!stale;$('trial-resume-note').textContent=stale?'这道题已更新，可以重走新版或返回主线；旧记录会单独保留。':'';if(stale)$('continue-game').disabled=true;$('new-game').innerHTML=active?'重走本次试炼 <span>→</span>':'执棒入塔 <span>→</span>';$('continue-game').innerHTML=active?'继续独立试炼 <span>↗</span>':'继续前缘 <span>↗</span>';trialPanel.updateRibbon();}
-  function setPreference(key,value){localPreferences[key]=value;try{localStorage.setItem(preferenceKey,JSON.stringify(localPreferences));}catch{}if(engine.updateSettings)engine.updateSettings({[key]:value});else{settings()[key]=value;engine.save(true);}renderHUD();}
+  function setPreference(key,value){localPreferences[key]=value;try{localStorage.setItem(preferenceKey,JSON.stringify(localPreferences));}catch{}if(!started){renderHUD();return;}if(engine.updateSettings)engine.updateSettings({[key]:value});else{settings()[key]=value;engine.save(true);}renderHUD();}
+  function syncAudio(){audio.configure(settings(),Math.floor(engine.state.floor/3),!started?'title':surfaceOpen&&$('modal-root').dataset.view==='ending'?'victory':'exploration');updateMusicButton();}
+  function updateMusicButton(){
+    const button=$('start-music');if(!button)return;const s=audio.musicStatus();
+    button.textContent=!s.enabled?'♪ 开启音乐':s.failed?'♪ 音乐载入失败 · 重试':s.waiting?'♪ 点此奏乐':'♪ 音乐已开启';
+    button.setAttribute('aria-pressed',String(s.enabled));button.title=s.failed?'重试载入本地音乐':s.waiting?'点击后开始播放首页音乐':s.enabled?'关闭背景音乐':'开启背景音乐';
+  }
+  audio.onStatus=updateMusicButton;
   const externalCount=()=>Array.isArray(engine.state.fragments)?engine.state.fragments.length:(Number(engine.state.externalRelics)||0);
   const currentFloor=()=>TowerData.floors[engine.state.floor];
   const abilityCost=mode=>engine.abilityCost?.(mode)??(mode==='clone'?2:1);
@@ -52,7 +60,7 @@
     engine.setMode('inspect');engine.select(x,y);renderer.focusCell?.(x,y);viewStatus();$('game-canvas').focus({preventScroll:true});
     renderer.effect('magic',x,y,'此处');toast(`已定位：第 ${floor+1} 层 (${x+1}, ${y+1})。`);
   }
-  function soundSettings(){showSurface('声音与演出',inspectSettings(),[{label:'回到塔中',className:'primary-button'}],'六章声景 · 随心调节',true,'settings');bindSettings();}
+  function soundSettings(){showSurface('声音与演出',inspectSettings(),[{label:'回到塔中',className:'primary-button'}],'乐声随境 · 随心调节',true,'settings');bindSettings();}
   function toast(text){$('status-message').textContent=text;if(started&&!surfaceOpen){journeyNote(text);$('toast').hidden=true;return;}const node=$('toast');node.innerHTML=`<span class="notice-sigil" aria-hidden="true">回</span><span>${esc(text)}</span>`;node.hidden=false;node.classList.remove('visible');void node.offsetWidth;node.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),3300);}
   function stopPath(){clearTimeout(pathTimer);pathTimer=0;engine.path=[];}
   function closeQuestScroll(focus=false){const q=document.querySelector('.quest-scroll');if(!q?.open)return;q.open=false;if(focus)q.querySelector('summary').focus({preventScroll:true});}
@@ -74,9 +82,10 @@
     folds.forEach(key=>{const n=$('modal-content').querySelector('[data-fold="'+CSS.escape(key)+'"]');if(n)n.open=true;});
     scrolls.forEach(([key,top])=>{const n=$('modal-content').querySelector('[data-scroll="'+CSS.escape(key)+'"]');if(n)n.scrollTop=top;});
     requestAnimationFrame(()=>{if(!surfaceOpen)return;$('modal-content').scrollTop=scroll;const panel=$('modal-panel'),focus=focusSelector&&$('modal-content').querySelector(focusSelector);if(!same)panel.scrollTop=0;(focus&&!focus.disabled?focus:panel).focus({preventScroll:true});});
+    syncAudio();
   }
   function nextSurface(){if(!surfaceOpen&&surfaceQueue.length){const m=surfaceQueue.shift();showSurface(m.title,m.content,m.actions,m.eyebrow,m.closeable);}}
-  function closeSurface(next=true){const resume=next&&ritualReturn;ritualReturn=null;surfaceOpen=false;audio.setScene('planning');$('modal-root').classList.add('hidden');delete document.body.dataset.surface;scheduleContext();if(resume){restoreRitual(resume);return;}if(started){lastInput=0;renderGuidance();$('game-canvas').focus({preventScroll:true});}if(next)nextSurface();}
+  function closeSurface(next=true){const resume=next&&ritualReturn;ritualReturn=null;surfaceOpen=false;audio.setScene('planning');$('modal-root').classList.add('hidden');delete document.body.dataset.surface;syncAudio();scheduleContext();if(resume){restoreRitual(resume);return;}if(started){lastInput=0;renderGuidance();$('game-canvas').focus({preventScroll:true});}if(next)nextSurface();}
   function clearSurfaces(){closeQuestScroll();ritualReturn=null;surfaceQueue=[];closeRitual(false);closeSurface(false);}
   function closeCharacter(){delete document.body.dataset.character;const drawer=$('character-drawer');drawer?.classList.remove('open');drawer?.setAttribute('aria-hidden','true');$('btn-character')?.setAttribute('aria-expanded','false');syncSceneGuard();scheduleContext();}
   function character(){
@@ -422,9 +431,9 @@
 
   function cast(mode,x,y){const target=engine.getEntity(x,y);if(mode==='clone'&&target?.type==='switch'&&target.kind==='plate'&&!engine.state.switches[target.id]&&engine.state.relics.includes(2)&&engine.distance(target)<=4&&engine.cloneStatus().free<=0){cloneLimit({target});return false;}renderer.skipEffects?.();const ok=engine.useAbility(mode,x,y);if(ok){engine.setMode('walk');engine.select(x,y);}return ok;}
   function inspectSettings(){
-    const prefs=settings();return `<h3>行者偏好</h3><label class="setting-row"><input type="checkbox" id="setting-zero" ${prefs.quickZero?'checked':''}><span><b>零损敌情精简显示</b><small>只精简零损目标的说明；任何战斗都仍须明确迎战。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-damage" ${prefs.showDamage?'checked':''}><span><b>地图常显战损</b><small>直接在守卫旁显示当前损失，火眼金睛仍可查看公式。</small></span></label><label class="setting-row setting-select"><span><b>动作与演出</b><small>${systemMotion.matches?'系统已要求减弱动态，当前始终使用减弱模式。':'标准保留完整动作；简洁缩短过程；减弱使用静态状态反馈。'}跳过演出不会改变结算。</small></span><select id="setting-motion" aria-label="动作与演出"><option value="standard" ${prefs.motion==='standard'?'selected':''}>标准</option><option value="simple" ${prefs.motion==='simple'?'selected':''}>简洁</option><option value="reduced" ${prefs.motion==='reduced'?'selected':''}>减弱动态</option></select></label><label class="setting-row"><input type="checkbox" id="setting-shake" ${prefs.screenShake?'checked':''} ${effectiveMotion()!=='standard'?'disabled':''}><span><b>受击震动</b><small>默认关闭，仅标准动作模式生效。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-music" ${prefs.music?'checked':''}><span><b>章节音乐</b><small>六章独立旋律，静思时留白，行动后加入节奏。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-sfx" ${prefs.sfx?'checked':''}><span><b>动作与机关音效</b><small>金箍、青蝉、分身、钥匙材质各有声音；与音乐独立。</small></span></label><p class="muted">声音首次开启需浏览器授权播放；设置保存在当前浏览器。</p>`;
+    const prefs=settings();return `<h3>行者偏好</h3><label class="setting-row"><input type="checkbox" id="setting-zero" ${prefs.quickZero?'checked':''}><span><b>零损敌情精简显示</b><small>只精简零损目标的说明；任何战斗都仍须明确迎战。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-damage" ${prefs.showDamage?'checked':''}><span><b>地图常显战损</b><small>直接在守卫旁显示当前损失，火眼金睛仍可查看公式。</small></span></label><label class="setting-row setting-select"><span><b>动作与演出</b><small>${systemMotion.matches?'系统已要求减弱动态，当前始终使用减弱模式。':'标准保留完整动作；简洁缩短过程；减弱使用静态状态反馈。'}跳过演出不会改变结算。</small></span><select id="setting-motion" aria-label="动作与演出"><option value="standard" ${prefs.motion==='standard'?'selected':''}>标准</option><option value="simple" ${prefs.motion==='simple'?'selected':''}>简洁</option><option value="reduced" ${prefs.motion==='reduced'?'selected':''}>减弱动态</option></select></label><label class="setting-row"><input type="checkbox" id="setting-shake" ${prefs.screenShake?'checked':''} ${effectiveMotion()!=='standard'?'disabled':''}><span><b>受击震动</b><small>默认关闭，仅标准动作模式生效。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-music" ${prefs.music?'checked':''}><span><b>背景音乐</b><small>首页双曲随机轮换，塔中与胜利各有一曲；切换时轻缓交接。</small></span></label><label class="setting-row"><input type="checkbox" id="setting-sfx" ${prefs.sfx?'checked':''}><span><b>动作与机关音效</b><small>金箍、青蝉、分身、钥匙材质各有声音；与音乐独立。</small></span></label><p class="muted">声音首次开启需浏览器授权播放；设置保存在当前浏览器。</p>`;
   }
-  function bindSettings(){bindCastFrequency();for(const [id,key]of [['setting-zero','quickZero'],['setting-damage','showDamage'],['setting-shake','screenShake'],['setting-music','music'],['setting-sfx','sfx']])$(id)?.addEventListener('change',ev=>{if(key==='music'||key==='sfx')audio.unlock();setPreference(key,ev.target.checked);});$('setting-motion')?.addEventListener('change',ev=>{setPreference('motion',ev.target.value);if($('setting-shake'))$('setting-shake').disabled=effectiveMotion()!=='standard';if(effectiveMotion()==='reduced')renderer.skipEffects?.();});}
+  function bindSettings(){bindCastFrequency();for(const [id,key]of [['setting-zero','quickZero'],['setting-damage','showDamage'],['setting-shake','screenShake'],['setting-music','music'],['setting-sfx','sfx']])$(id)?.addEventListener('change',ev=>{setPreference(key,ev.target.checked);if(key==='music'||key==='sfx')audio.unlock();});$('setting-motion')?.addEventListener('change',ev=>{setPreference('motion',ev.target.value);if($('setting-shake'))$('setting-shake').disabled=effectiveMotion()!=='standard';if(effectiveMotion()==='reduced')renderer.skipEffects?.();});}
   function bindCastFrequency(){
     if(!$('setting-cast-frequency'))$('setting-motion')?.closest('.setting-row')?.insertAdjacentHTML('afterend',`<label class="setting-row setting-select"><span><b>神通演出频率</b><small>首次看清动作，之后用场景光效与费用提示；关键剧情始终保留。</small></span><select id="setting-cast-frequency" aria-label="神通演出频率"><option value="adaptive" ${castFrequency==='adaptive'?'selected':''}>首次完整，之后场景反馈</option><option value="always" ${castFrequency==='always'?'selected':''}>每次完整演出</option></select></label>`);
     $('setting-cast-frequency')?.addEventListener('change',ev=>{castFrequency=ev.target.value;try{localStorage.setItem('dasheng-cast-frequency-v13',castFrequency);}catch{}});
@@ -478,7 +487,7 @@
   function renderHUD(){
     const s=engine.state,f=TowerData.floors[s.floor];
     viewStatus();
-    const prefs=settings();document.body.dataset.motion=effectiveMotion();document.body.dataset.chapter=String(Math.floor(s.floor/3));document.body.dataset.mode=engine.mode;audio.configure(prefs,Math.floor(s.floor/3));
+    const prefs=settings();document.body.dataset.motion=effectiveMotion();document.body.dataset.chapter=String(Math.floor(s.floor/3));document.body.dataset.mode=engine.mode;syncAudio();
     const effective=engine.effectiveStats?.()||s;
     $('hud-hp').textContent=s.hp;$('hud-mana').textContent=s.mana+' / '+s.maxMana;$('hud-mana-bar').style.setProperty('--breath',Math.max(0,Math.min(100,s.mana/s.maxMana*100))+'%');$('hud-keys').innerHTML=['yellow','blue','red'].map(color=>`<span title="${colorNames[color]}钥匙 ${s.keys[color]} 把" aria-label="${colorNames[color]}钥匙 ${s.keys[color]} 把"><canvas width="32" height="32" data-asset="item_key_${color}" aria-hidden="true"></canvas><b>${s.keys[color]}</b></span>`).join('');paintAssetIcons($('hud-keys'));
     $('hud-coins').textContent=s.coins;
@@ -1042,7 +1051,7 @@
     const keys={t:()=>planningDesk.open(),g:guideAction,c:character,m:toggleOverview,r:()=>focusPlayer(),i:inventory,j:journal,b:bestiary,h:help,l:loadSlots,z:()=>engine.undo(),y:()=>engine.redo(),f:interact};
     if(keys[k]){ev.preventDefault();stopPath();keys[k]();}
   });
-  function returnTitle(){presentation.closeEntry(false);presentation.closeCast();closeRitual(false);stopPath();clearSurfaces();closeCharacter();engine.save(true);started=false;delete document.body.dataset.sceneStarted;$('game-shell').classList.add('hidden');$('story-dock').classList.add('hidden');$('start-screen').classList.remove('hidden');$('continue-game').disabled=!engine.hasSave()||runSession.isTrial&&runSession.meta.rulesHash!==runSession.trial.rulesHash;syncRunLabels();}
+  function returnTitle(){presentation.closeEntry(false);presentation.closeCast();closeRitual(false);stopPath();clearSurfaces();closeCharacter();engine.save(true);started=false;delete document.body.dataset.sceneStarted;$('game-shell').classList.add('hidden');$('story-dock').classList.add('hidden');$('start-screen').classList.remove('hidden');$('continue-game').disabled=!engine.hasSave()||runSession.isTrial&&runSession.meta.rulesHash!==runSession.trial.rulesHash;syncRunLabels();syncAudio();}
   document.querySelector('.game-brand')?.addEventListener('click',ev=>{ev.preventDefault();returnTitle();});$('btn-title').onclick=returnTitle;
   document.addEventListener('pointerdown',ev=>{const menu=$('game-toolbox');if(menu?.open&&!menu.contains(ev.target))menu.open=false;const picker=$('style-picker');if(!ev.target.closest('.style-control')){picker.classList.add('hidden');$('btn-style').setAttribute('aria-expanded','false');}});
   document.addEventListener('click',ev=>{
@@ -1050,7 +1059,10 @@
     if(ritualOpen&&!ev.target.closest('#altar-ritual')){ev.preventDefault();ev.stopImmediatePropagation();closeRitual();}
   },true);
   window.addEventListener('blur',stopPath);
-  document.addEventListener('pointerdown',()=>{if(settings().music||settings().sfx){audio.unlock();audio.configure(settings(),Math.floor(engine.state.floor/3));}},{once:true});
+  $('start-music')?.addEventListener('click',()=>{const s=audio.musicStatus();if(s.enabled&&(s.waiting||s.failed)){audio.unlock(true);syncAudio();}else{setPreference('music',!s.enabled);if(!s.enabled)audio.unlock();}});
+  function unlockAudio(ev){if(ev.isTrusted&&(settings().music||settings().sfx)){audio.unlock();syncAudio();}}
+  document.addEventListener('click',unlockAudio);
+  document.addEventListener('keydown',ev=>{if(ev.target!==$('start-music'))unlockAudio(ev);});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stopPath();audio.pause();}else audio.resume();});
   systemMotion.addEventListener?.('change',()=>{renderHUD();if(systemMotion.matches)skipPresentation();});
   syncStyleUI();

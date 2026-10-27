@@ -32,6 +32,7 @@
 !/audits/v42-live-victory.png
 !/audits/v43-material-guarded-clone.png
 !/audits/v43-live-safe-planning.png
+!/audits/v44-live-title.png
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/

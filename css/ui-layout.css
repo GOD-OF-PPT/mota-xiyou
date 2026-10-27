@@ -1,5 +1,9 @@
 /* v27: live glyphs and actions belong inside the material's writing field. */
 :root{--ui-action-ink:#e7cf92;--ui-action-line:#bda26588;--ui-action-wash:#c6a66416;--ui-action-focus:#f4d99b}
+.start-music{display:block;margin-top:14px;padding:8px 12px;border:1px solid #bda26566;border-radius:0;background:#0b171b66;color:#d9c696;font:14px/1.5 var(--serif);letter-spacing:.08em;cursor:pointer}
+.start-music:hover{border-color:#d9c696;color:#fff0cc;background:#bda26516}
+.start-music:focus-visible{outline:2px solid #f4d99b;outline-offset:4px}
+.start-music[aria-pressed=false]{color:#b6b2a4;border-color:#bda26533}
 html[data-ui-skins=ready] #journey-guide{padding:28px 30px 30px;min-height:0}
 html[data-ui-skins=ready] #journey-guide .journey-tools{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;gap:16px;margin-top:12px}
 html[data-ui-skins=ready] #journey-guide .journey-tools small{grid-column:1;grid-row:1;min-width:0;max-width:none;text-align:left;display:grid;gap:2px;font:11px/1.7 var(--sans);color:#c9c5b1;overflow-wrap:anywhere}
