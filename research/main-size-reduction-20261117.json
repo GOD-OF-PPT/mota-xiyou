@@ -1,0 +1,457 @@
+{
+  "source_head": "8b847851df5fe604f7bb76c9137e38abb39abfae",
+  "backup_branch": "backup/main-before-size-reduction-20261117-222209",
+  "before_tracked_bytes": 308142987,
+  "limit_bytes": 100000000,
+  "counting": "Sum of blob sizes in the current Git tree; excludes Git history and untracked or ignored files.",
+  "archive": {
+    "path": "archives/development-evidence-20261117.tar.xz",
+    "members": 521,
+    "bytes": 658872,
+    "sha256": "dd06205b52621f648ca07077f288eac00c9f57f6bac98bfeafb7dc2225073ff5",
+    "contents_sha256": "8f5a88680b850875238d4a3dbae4bde2da6f575a2c72dbde88daf1d93fc4d96a"
+  },
+  "removed_from_tracking": 660,
+  "local_originals": "retained; assets/marketing remains untracked and unchanged",
+  "png_optimization": {
+    "tool": "oxipng 10.2.1",
+    "mode": "o4 alpha strip-safe; omax fast zopfli-3; original dimensions, alpha and all nontransparent RGBA verified",
+    "files": 42,
+    "saved_bytes": 7148503,
+    "assets": [
+      {
+        "path": "assets/ending-v42/keep.png",
+        "before": 2360712,
+        "after": 2169842,
+        "visible_rgba_sha256": "986e13e376fb410ed62e23e08f60f61ab74a9c9172b105e1f551db0ca94c1e62",
+        "before_sha256": "11803a6a640e73f484d19bd4e53920390728d192ba6547149b59a5076cb6eb30",
+        "after_sha256": "08e0f004e5b78442427c62a0c5b7f89bad0ded87a54cf5163cf7ea6ca3e2bcc3"
+      },
+      {
+        "path": "assets/ending-v42/release.png",
+        "before": 2487537,
+        "after": 2301750,
+        "visible_rgba_sha256": "2f005d807c0564930c1c51f19b2e45d5e4a3c9eee3a9ab5507b7dfabde0c4310",
+        "before_sha256": "63e53e04b8dbff2c65b63d7c6d1c3c3418ef0e61c3adac2ddeeebfa6f7b531ba",
+        "after_sha256": "9c6187c17b0feda4bdfc50bba9c3cdd89903fee5d16f329f4fe750f202e1a4b2"
+      },
+      {
+        "path": "assets/material/atlases/fx.png",
+        "before": 1830431,
+        "after": 1735210,
+        "visible_rgba_sha256": "3cd280609990832f454415a6b6a756c3d3242e84e390b3653bc7feb750b54ab1",
+        "before_sha256": "4e5d709142579fdaf77c251c5bbd426349a6c8eaaa014801de42c7874d5b36e8",
+        "after_sha256": "2d222da421c4ed1c60cac20e03b52ff655fcde73c54cce89b4589c1187abbdc3"
+      },
+      {
+        "path": "assets/material/atlases/portraits.png",
+        "before": 211912,
+        "after": 207961,
+        "visible_rgba_sha256": "ec7603bdf7b4dd1baa837d13df5530b8be01208ca4aff8dee049d361b882a221",
+        "before_sha256": "12b7792a81c8bcedd8f6e05911cbe656ab7000d90936e9401e3327beeb348ef4",
+        "after_sha256": "03c422efd10dddb8413e5331655e2b76e8993ac4b62e0e11aabb17c9e0e475ac"
+      },
+      {
+        "path": "assets/material/atlases/terrain.png",
+        "before": 4030080,
+        "after": 3449829,
+        "visible_rgba_sha256": "5bbe1d84c70d2e5f9455469f086728cc4a8d05f58bc620036eb5242dbf6f17a7",
+        "before_sha256": "dfd63ee1bcb741d6f882f13f620cca388c854f0eef1dae43d9aaab0100033d6a",
+        "after_sha256": "8a5ccd8c277bd6752e487ee35d3cb0af7bb37a21a5d57afca3f79d5d4e3ab470"
+      },
+      {
+        "path": "assets/material/atlases/wukong.png",
+        "before": 722487,
+        "after": 695499,
+        "visible_rgba_sha256": "b4d48f60c588d5edb5f4f756ea30f562582e1be78853dfdd043f47eb5d710469",
+        "before_sha256": "0bd843bfd802cd180666829adca0b2d284c054791d7ad132cb1046cc6f26caf1",
+        "after_sha256": "e4c1f49152861d3f3b08caf770cd2b8afddd4bf452ec46fd1227e50ce8eb4684"
+      },
+      {
+        "path": "assets/material/finale/heart-three-forms-v21.png",
+        "before": 2829596,
+        "after": 2641997,
+        "visible_rgba_sha256": "00d6b8d079c36395e147a6f6721db61a694eabeaf263b3383fe59d47f104f2d3",
+        "before_sha256": "44d3a357eda419e39928be2ac778279a34e0987f902c101081a659399907dd9f",
+        "after_sha256": "9145744430e66b304585402e8d68a990f5891a3f8214f423168e3051d0b1c9f5"
+      },
+      {
+        "path": "assets/material/finale/wukong-cinematic-v21.png",
+        "before": 1820329,
+        "after": 1718563,
+        "visible_rgba_sha256": "8300babcfc209641c8530579ce7ab46ce070176f6eeda61b80ac17ca4d6bbe1a",
+        "before_sha256": "781e1e7ecee16b13ea1324dd02dc890d4197214644c2c18b99e2f31b85757fd1",
+        "after_sha256": "43fc72cb5f177cea0a012460e8aab39ea1c6bbfc26c86cb58d04e6535b3a2982"
+      },
+      {
+        "path": "assets/material/hero-v30/wukong-atlas.png",
+        "before": 1708828,
+        "after": 1639049,
+        "visible_rgba_sha256": "9031855a62f2907a202c9bbdf38737709b0d20b72d594a5d5625213eab0e54a0",
+        "before_sha256": "d6f7a7cfeed404009f8de4877623a7ed9da9b0058d991e86b3ef505dde9ab2f3",
+        "after_sha256": "2bcc55c164b7b3e87a9cccfb0c0ddb92bad04510cf885a10abfb65eba451563b"
+      },
+      {
+        "path": "assets/material/hero-v30/wukong-portrait.png",
+        "before": 248476,
+        "after": 234475,
+        "visible_rgba_sha256": "84b6b4209fb45962b0815ced98b6b75da3c279f3d243ab4f92c9a12cac77e05d",
+        "before_sha256": "9223121864402f11a982a6e8273e935418ad246d7bc34e4b121bde7a61110675",
+        "after_sha256": "592f6e2fbce29664c122777ff13c2734b56f9bff70258e062dbf504b55d38339"
+      },
+      {
+        "path": "assets/material/hero-v30/wukong-seed.png",
+        "before": 1266077,
+        "after": 1167569,
+        "visible_rgba_sha256": "70a2ca46a9ac7c5eeb7d9a446b59d31d87408b085108b164614d7abd271e8cb4",
+        "before_sha256": "b76b6357a877ac207441c523e6306fcf73622347c5dc5d41e182aa1c62f29ffe",
+        "after_sha256": "b18782c240f2d1c42c53c85698f61be22a819d2ca95097d2d7fdef856ee281e2"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-blacklotus-hd-v18.png",
+        "before": 3136233,
+        "after": 2873248,
+        "visible_rgba_sha256": "9558c3d26517573ba0502a376f763594353256d1bb212660af61de3e602f371c",
+        "before_sha256": "b448d4ae74cda06e6cced1feaba923e9d9bafbfc8d0ef113ed25fd5f708fdee4",
+        "after_sha256": "7575f56f6255c9e1507d5c2fe0af438e9a706a7ae905f629467fbd799131279a"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-buddha-hd-v18.png",
+        "before": 2949844,
+        "after": 2787488,
+        "visible_rgba_sha256": "a8a4f08001e02347439ed700c11180366688eae570f7ef2334467fa1a52d2671",
+        "before_sha256": "1d918e6c6fb17e16b389f6b9ac1fe211727a8d3e496c2004060ca75a79a8e0df",
+        "after_sha256": "37e57344e19934b523446f04724e7a927ed036d1b0b70cd9c46bb11e1c327f88"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-dragon-hd-v18.png",
+        "before": 3008129,
+        "after": 2740189,
+        "visible_rgba_sha256": "0cf0a44e5315af65345ff9a459b485eb8192d314624c97a18012eaee17015a45",
+        "before_sha256": "90360c41ee7e201883bda1532f752faec7aa7792e9ef4dce2e1aba7bc283de6a",
+        "after_sha256": "f952d1e544e33518181be4ee6f6f939e72002763212a3b33cfdcf7b031d9123e"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-furnace-hd-v18.png",
+        "before": 2412192,
+        "after": 2258020,
+        "visible_rgba_sha256": "c5d371186a66b583ee77f38bcb419ae7999ec2cf5958393fb40837d1a7954275",
+        "before_sha256": "6bb83db270c8f04c57e1196b2424fc9b519a071dabffc25bb6fad88f63cfbe22",
+        "after_sha256": "298bbc035c5ad00b842aaa8533d87ec7c088114953e3af1afc03b7053a402cbb"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-pagoda-hd-v18.png",
+        "before": 2583355,
+        "after": 2404519,
+        "visible_rgba_sha256": "6f3bcad32d85e440547576416477c07a8c153013dfa27bdfdce2923fa4875580",
+        "before_sha256": "5b1528736ac9452111ecdd27ec50ca29cda60100cdf26fd21e5d3070e55de6bb",
+        "after_sha256": "27ed8a5668424bf8d8ed9ab7befea8073ca62a2f7d05c6ed0d41662e4f3ccefe"
+      },
+      {
+        "path": "assets/material/landmarks/landmark-scripture-hd-v18.png",
+        "before": 3039236,
+        "after": 2810809,
+        "visible_rgba_sha256": "e485e74f04425ef91aba11aca441459e7987de79d8e60df484c1cfa81890ac5a",
+        "before_sha256": "843d3c7c97db373dafd6952053a732b0732270d5c1b4edf837d12adb77becb42",
+        "after_sha256": "41ee64a6eba70d7cb18b9f66aafcde1a8e65d68ead97b141b158fa73789b2723"
+      },
+      {
+        "path": "assets/material/native-v18/sprites.png",
+        "before": 6726599,
+        "after": 6574364,
+        "visible_rgba_sha256": "f52c841ed61a6d95a75f0f00a38a78b29d3a6b13d6540f24ce248ead50790d73",
+        "before_sha256": "dc9c0f9c7cb1b0c249094550753558384faee433ae0e1d400ed5952b7557d457",
+        "after_sha256": "41e16d0d68f598f9b9a584d4471edba7b20450fdc356ed5e9ac7e178d313a8df"
+      },
+      {
+        "path": "assets/material/props/altar-hd-v14.png",
+        "before": 2333091,
+        "after": 2188902,
+        "visible_rgba_sha256": "3f69c236f9c040f0aa869a94a9cc20b9b32ba80681fa3b4976aa371f0df5f938",
+        "before_sha256": "bcb4f45c6a86bd6922e626ed017c732510bdf16ac534749134fa252d5ab1e62f",
+        "after_sha256": "c175b6750f846d877f8020e8fc6fdb4d674c2e859bc8526c39701cd78f5b98d7"
+      },
+      {
+        "path": "assets/material/props/chest-v13.png",
+        "before": 2212433,
+        "after": 2048604,
+        "visible_rgba_sha256": "101290c6aae13ba170906154fb01429606ae6531097870928b55463a58498b52",
+        "before_sha256": "62ef0cb5663b617dfa9efb19fab4e03a77c53fe496a4895da8aac90b58ba4abf",
+        "after_sha256": "fb5831b94bcfaa0e7a40ebf398c38b7cb38a3b51cc10e4d97ac5677e5df401ab"
+      },
+      {
+        "path": "assets/material/props/imp-hd-v18.png",
+        "before": 1713882,
+        "after": 1610871,
+        "visible_rgba_sha256": "b6c4bef1c163fb34e5cb87e3f80c87d24bfb49c05c78a539c8d62b74f74993e5",
+        "before_sha256": "c29bb31200ada85e2dc5b14c201421b1cc796206e3f5461abebdc9d92b7abcaa",
+        "after_sha256": "536ce01a967d801af8f296e50c4b3c4967ee8e31b5cdd7ce6cb64b27952177bb"
+      },
+      {
+        "path": "assets/material/props/monument-hd-v18.png",
+        "before": 1936568,
+        "after": 1754692,
+        "visible_rgba_sha256": "08b2cfd415117d5e2508fefd7e643f879361102ffddf4ca7aeb183758b613ab6",
+        "before_sha256": "ecdbdd4e0d6bad34cacc01270bc4a1d0310940be80a5c26f4e8e93fe9c86e6e3",
+        "after_sha256": "e5ac29b137f0474b3721fc6a836eee6f43755674513f75b014dec9876feb24c9"
+      },
+      {
+        "path": "assets/material/props/resonator-hd-v14.png",
+        "before": 2342764,
+        "after": 2164172,
+        "visible_rgba_sha256": "226ebdadabce2321c8f6616c0410d67599b2e9f18b0343205ce83504f7dfc3af",
+        "before_sha256": "8e2c7a81fb41322bcf7d5d05ef2fdaccebb52a05b35790c9a0fb30735c9f44b0",
+        "after_sha256": "53f82b9b910ce03003eaa33cd66c80e527c6cae1814e0998285fd0fe4a53c1a5"
+      },
+      {
+        "path": "assets/material/props/stairs-down-hd-v14.png",
+        "before": 2186439,
+        "after": 1981981,
+        "visible_rgba_sha256": "82967038cf8097559bb2bcbf30242fe0d6b7cd7522e7d83245fc912fecf9337f",
+        "before_sha256": "6711ecbcc2bbec0b5e43609db47b3ddfbc944de48ac2f6b12ec2d67e18856896",
+        "after_sha256": "588ae143c22a7e35a84b1437e74db8a4b299dc68472e24c178ca55b9a039b3b2"
+      },
+      {
+        "path": "assets/material/props/stairs-up-hd-v14.png",
+        "before": 1932919,
+        "after": 1742009,
+        "visible_rgba_sha256": "41bc8f71febb737646a9c4abd619530954ae7c282abfc274b1034676cc380c99",
+        "before_sha256": "c431d771aa7c7a17c88e6de7c3c853fc39fed19951863464d237585bee7dc9a1",
+        "after_sha256": "e5c2b1bb0f8d119030884fbac2ddce6f49f58f9ca927a954f229bfb52f112c79"
+      },
+      {
+        "path": "assets/material/ui_backdrop.png",
+        "before": 2798948,
+        "after": 2610595,
+        "visible_rgba_sha256": "4e917b2323d14c41d65b19c2a6d162895668f3368c4b68be1e01a39c0c1efe46",
+        "before_sha256": "3971ac5e0ab4da129f4a5d03a69bcb7e3e2e659872ce9b11df56e7bad06f4449",
+        "after_sha256": "8ea8ae4d972fc4bd228f81132b81075a69bd5b2eff55dbfda8cee7d876f05607"
+      },
+      {
+        "path": "assets/mural/atlases/creatures.png",
+        "before": 118452,
+        "after": 102444,
+        "visible_rgba_sha256": "9ce329490517155b5a185532e7aaafe8912dfd6c273971f86ee4f973d1a20206",
+        "before_sha256": "4781762e8c1336b9fe95b347189b65c50d740534dbdaac7522e6e11c37c40aa4",
+        "after_sha256": "b05bfa822d5f05fa44ee62de6259554420136e8497f402627a1c628939a6aa8a"
+      },
+      {
+        "path": "assets/mural/atlases/enemies.png",
+        "before": 108397,
+        "after": 91434,
+        "visible_rgba_sha256": "5780d024bd0a454a8c1ebbe9419745e564355a3be8b1a639d20336fb687ae360",
+        "before_sha256": "9a526345b3f99baa3f7b8c42f6ea0edb22f3bd288340b53e8abfd350a94d1ccb",
+        "after_sha256": "7e75e277053003af0978adcc47d7109561bb60a785f5f02fd098856a7eb037a5"
+      },
+      {
+        "path": "assets/mural/atlases/fx.png",
+        "before": 173710,
+        "after": 151670,
+        "visible_rgba_sha256": "6bca3a603408ab260fb1dc733e72e122aa41e309a4313e4970fe649841975c39",
+        "before_sha256": "c785be35f261b57527a2e62306dc339ddf45cfae5ab39b77b75616115a407139",
+        "after_sha256": "e5b49f1c59444d2fb80650ab84b696b0b3d717c7a06235aa6ded2d4616293a66"
+      },
+      {
+        "path": "assets/mural/atlases/landmarks.png",
+        "before": 794043,
+        "after": 693812,
+        "visible_rgba_sha256": "f01e0a486b92c05c2fc5294b645fd4a57664995ff0b81e42a42845b9a7596865",
+        "before_sha256": "c588931ba98ba7aa8940e4b714fb88d087a3f93b26b750da78e97b4377a1070c",
+        "after_sha256": "a292d24252dc9a584a1a9a570b6fc6db1b7fa65b313e670eb77ecabcbb25d62a"
+      },
+      {
+        "path": "assets/mural/atlases/objects.png",
+        "before": 201872,
+        "after": 176227,
+        "visible_rgba_sha256": "1ad016a1b2f01a67851321680d2418f4e961255c584fac82409b46a238049296",
+        "before_sha256": "56b125a3b73e43e524311613e6f438c1135bcbcc13c371eff34ad1b4ee48af45",
+        "after_sha256": "bcc81a8476727d5bf5aa255b51853fb6c28bb8c07cdf6ac15a045cb845c2bdb2"
+      },
+      {
+        "path": "assets/mural/atlases/terrain.png",
+        "before": 1232583,
+        "after": 1080376,
+        "visible_rgba_sha256": "18545d1d7bc3046ad609cb3e947e86244204a38ae543a9a4166569343469aa5d",
+        "before_sha256": "fcc3fa28bed908f9602ccbff0bbd17a6e7577618dd2c422d772cd50ed06720a8",
+        "after_sha256": "6a108543834b7636eb200cc29385466d19b7c818324c24a0b626d59894330a29"
+      },
+      {
+        "path": "assets/mural/atlases/wukong.png",
+        "before": 116502,
+        "after": 101027,
+        "visible_rgba_sha256": "97ca04b456dbf38d55f595c80fc3a2d1b4047ff44277573deb0d82a79239ab3f",
+        "before_sha256": "0ae6bd3aa44a357183220f7b6e1818436c2e7c22222aca2a1065705d94a29d1e",
+        "after_sha256": "caa02fee2515b6187c79a2c444d81eafce9ecdc71e05cdab07bab17e90c8af80"
+      },
+      {
+        "path": "assets/mural/finale/heart-three-forms-v21.png",
+        "before": 2267680,
+        "after": 2188886,
+        "visible_rgba_sha256": "79328fff772d509524f3b98436d1010d7100a6dbe8e477ea36c801c8915e21e2",
+        "before_sha256": "a59d79b85c3d77d3bbff54ca1e71d8b19f1bd4e97b84dab7dbd5a33e2f9815e8",
+        "after_sha256": "b5ba0cd86c206f7e21c366f2088c11de6ace0ae87b2c544f90905b337c0fe994"
+      },
+      {
+        "path": "assets/mural/finale/wukong-cinematic-v21.png",
+        "before": 1287334,
+        "after": 1226657,
+        "visible_rgba_sha256": "c1082713006db1aee77d4fbb9ddc0cd7a602b1a7dd371a79929932e4c07d6859",
+        "before_sha256": "7a89161052c95cd5c46aa5ab886511560911380d79e3cdc65857cfe56992913e",
+        "after_sha256": "4b4381346fcd0bc96c1139e634a0442922fcb51420ffb16473f6f29cc8cff3c4"
+      },
+      {
+        "path": "assets/mural/props/chest-v13.png",
+        "before": 1264559,
+        "after": 1157644,
+        "visible_rgba_sha256": "5461f6c6577cadc5761ae135e3a9153c43c9f77d7d9c6234d37176f50f18f293",
+        "before_sha256": "4a94503da9eb292cf4d05427970c89cdd88b450044d0ade6bf67519e7a3274ae",
+        "after_sha256": "cc331fdc8d230b2b1b4aefe109c73db1609b0d47fb7e1433064127dc101f1487"
+      },
+      {
+        "path": "assets/mural/ui_backdrop.png",
+        "before": 3609033,
+        "after": 3365844,
+        "visible_rgba_sha256": "2792a7bb8fed3768402bbc722be1433fc269ca4777b4bbcab4c605b56be7de48",
+        "before_sha256": "3bc6ce69f4042a37d6081340283911b8613307a00b8dadb0b60996d9d74f055e",
+        "after_sha256": "62e7cf177ba087a2038344efe42e863093c30c6c52a5c127e709016d6f25c677"
+      },
+      {
+        "path": "assets/mural/ui_motif.png",
+        "before": 896077,
+        "after": 881464,
+        "visible_rgba_sha256": "7f7bfd108ac48450066702ed2a4335d031859624e6016ed6688770577252e6f2",
+        "before_sha256": "dfeb5dae5d12e7fd9d967ddc713f78e28fac4bdd8bb048559c23b8465b1938fd",
+        "after_sha256": "f4e6e6502fad698cb08f08d6ca48649a16e8aebac78580a66032c758a3b9c448"
+      },
+      {
+        "path": "assets/ui-v26/dialogue-scroll.png",
+        "before": 2069506,
+        "after": 1633161,
+        "visible_rgba_sha256": "f1282b91c76978bdbd94c2a183b25a0e5a69e743708b72463a5fd57a6e74a416",
+        "before_sha256": "26bf9e2f32c87f910f9afb1db81c3ceac9019740f16b410032827b9cb580a785",
+        "after_sha256": "66054bd549ba7a931554a8dceea5e12276b3f7f0d27e7997a5351ea7b4a6684a"
+      },
+      {
+        "path": "assets/ui-v26/offering-tablet.png",
+        "before": 3015241,
+        "after": 2509939,
+        "visible_rgba_sha256": "8d673fa140b23cc5ec8287235fd05b46468f6928bd3dce2f89a8a5071e8ec560",
+        "before_sha256": "867fb3469128b7d9ee7a9238bf83f31267170852dab93c91434dd0c9fc8d79ef",
+        "after_sha256": "6de89be8cb37b4412f02e320b361fcbad05dfa0b6a876ec214fc12988bb5692e"
+      },
+      {
+        "path": "assets/ui-v26/quest-plaque.png",
+        "before": 3036403,
+        "after": 2414845,
+        "visible_rgba_sha256": "25bc585a04d08ad4966d50472ebbac5af2727cd0ee4d5ae0f606f7767289b9d5",
+        "before_sha256": "aa239a3f5c6e6989ffe72daf9330913a9039009660b38ee3019aff1fed5ae018",
+        "after_sha256": "b64e3f036a0c54a2d640659df983ea536fa75bda7a32fe03e2e8a2112d7b5093"
+      },
+      {
+        "path": "assets/ui-v26/reading-folio.png",
+        "before": 2712877,
+        "after": 2297226,
+        "visible_rgba_sha256": "9fb76155a3f9846c1e3dec040712981e308df2480ddee943c944b6fdbba63bfe",
+        "before_sha256": "4595d8637c5f1ba05b58a802c6fa36a95552a4ce07217c8eb318c25091269169",
+        "after_sha256": "bbc71f4c8f80a75ca490f21103ef9154e76836e46d5c53897b8e937f3d061fa7"
+      }
+    ]
+  },
+  "unchanged_contracts": [
+    "all gameplay source and current stylesheet bytes",
+    "frozen v22 comparison source bytes",
+    "four original MP3 bytes"
+  ],
+  "validation": {
+    "status": "passed",
+    "clean_export_tree": "aaeaeacc28cfc043032d51f1f3237cb17059d68b",
+    "archive_original_git_blob_checks": 521,
+    "archive_restore": "521 restored; second run skipped all 521; conflicting local file rejected without overwrite",
+    "deterministic_engine_checks": "39/39 passed in clean export",
+    "offline_browser_checks": [
+      {
+        "name": "offline file entry loads local images and decodes all four original MP3s"
+      },
+      {
+        "name": "material PC entry acknowledges the floor without changing resources"
+      },
+      {
+        "name": "4177 legal public actions finish the eighteen-floor campaign and unlock mural",
+        "actions": 4177,
+        "arrivals": 18,
+        "final": {
+          "floor": 17,
+          "won": true,
+          "ending": "release",
+          "fragments": 16,
+          "relics": 5,
+          "hp": 43,
+          "mana": 6,
+          "unlocked": true
+        }
+      },
+      {
+        "name": "legally unlocked mural loads every runtime image and starts a fresh PC campaign"
+      },
+      {
+        "name": "playtest-v23-baseline.html starts offline",
+        "state": {
+          "floor": 0,
+          "hp": 620,
+          "style": "material",
+          "failed": []
+        }
+      },
+      {
+        "name": "playtest-v23-new.html starts offline",
+        "state": {
+          "floor": 0,
+          "hp": 620,
+          "style": "material",
+          "failed": []
+        }
+      }
+    ],
+    "original_mp3_metadata": {
+      "title-01.mp3": {
+        "duration": 145.136327,
+        "readyState": 4
+      },
+      "title-02.mp3": {
+        "duration": 166.426122,
+        "readyState": 4
+      },
+      "exploration.mp3": {
+        "duration": 130.377143,
+        "readyState": 4
+      },
+      "victory.mp3": {
+        "duration": 116.427755,
+        "readyState": 4
+      }
+    },
+    "browser_errors": [],
+    "failed_requests": [],
+    "screenshots_reviewed_at_native_size": [
+      {
+        "path": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-main-size-20261117\\clean-main-material-1440.png",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "path": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-main-size-20261117\\clean-main-mural-1440.png",
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "probe_history": [
+      {
+        "result": "failed test setup",
+        "reason": "Comparison pages were opened without required participant/task/round/objective parameters, so they deliberately hid the game. The original timeout and failure evidence remain in the local validation directory.",
+        "resolution": "Read study-storage.js and study-entry.js; supplied valid study parameters; both comparison entries then passed without a game-code change."
+      }
+    ],
+    "local_evidence_directory": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-main-size-20261117"
+  },
+  "after_tracked_bytes": 99886652
+}

@@ -1,39 +1,32 @@
-# Generated browser captures and diagnostic logs stay on the development machine.
-/audits/**/*.png
-/audits/**/*.jpg
-/audits/**/*.jpeg
-/audits/**/*.webp
-/audits/**/*.gif
+# Generated evidence is restored from archives/development-evidence-20261117.tar.xz.
+# Authored audit scripts already tracked by Git remain tracked.
+/audits/
 /tests/**/*.png
 /tests/**/*.jpg
+/tests/**/*.json
+/tests/**/*.txt
+/tests/**/*.md
 *.log
 
-# Representative release evidence, referenced by the current delivery notes.
-!/audits/v27-material-inventory-629.png
-!/audits/v27-material-choice-3-629.png
-!/audits/v28-material-spawn-629.png
-!/audits/v29-material-npc-command-629.png
-!/audits/v29-material-speech-629.png
-!/audits/v30-new-hero-629.png
-!/audits/v30-new-hero-character.png
-!/audits/v30-locked-style-release.png
-!/audits/v31-material-locked-1236.png
-!/audits/v31-material-settled-offering.png
-!/audits/v34-material-ready-1171.png
-!/audits/v35-material-fatal-1280-card.png
-!/audits/v35-material-safe-1280-card.png
-!/audits/v36-material-door-card.png
-!/audits/v37-material-entry-1280.png
-!/audits/v38-material-long-716.png
-!/audits/v39-material-forecast-1280.png
-!/audits/v39-duel-2.png
-!/audits/v40-material-release-completed-scene.png
-!/audits/v41-live-final-duel.png
-!/audits/v42-live-victory.png
-!/audits/v43-material-guarded-clone.png
-!/audits/v43-live-safe-planning.png
-!/audits/v44-live-title.png
-!/audits/v45-default-map-1280.png
+# Production originals and unused intermediate images remain in the backup branch.
+/assets/material/source/
+/assets/mural/source/
+/assets/*/reference-selected.png
+/assets/material/hero-v30/wukong-atlas-raw.png
+/assets/material/native-v18/*.png
+!/assets/material/native-v18/sprites.png
+/assets/material/atlases/creatures.png
+/assets/material/atlases/enemies.png
+/assets/material/atlases/landmarks.png
+/assets/material/atlases/objects.png
+
+# Historical source snapshots and large research traces can be restored locally.
+/.backups/*
+!/.backups/implementation-v23-20261024/
+/research/trials-v23-routes.json
+/research/late-branches-v23.json
+/research/v7-sources/*.txt
+/research/v9-sources/*.html
 
 # Optional local tooling; the shipped game needs none of these directories.
 node_modules/
@@ -63,5 +56,5 @@ Desktop.ini
 *.swp
 *.tmp
 
-# Do not ignore .backups/: frozen v22 and milestone source snapshots are
-# explicit dependencies of the comparison entry, replay tools and checks.
+# The frozen v22 comparison runtime stays unpacked and tracked. Other snapshots
+# retain their exact bytes in the development archive; see docs/repository-size.md.
