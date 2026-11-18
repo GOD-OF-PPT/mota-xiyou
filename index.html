@@ -17,49 +17,53 @@
   <link rel="stylesheet" href="css/trials.css?v=23">
   <link rel="stylesheet" href="css/chapter-pages.css?v=24">
   <link rel="stylesheet" href="css/game-surfaces.css?v=39">
-  <link rel="stylesheet" href="css/image-ui.css?v=38">
+  <link rel="stylesheet" href="css/image-ui.css?v=46">
   <link rel="stylesheet" href="css/ui-layout.css?v=44">
   <link rel="stylesheet" href="css/victory.css?v=42">
+  <link rel="stylesheet" href="css/v46-excellence.css?v=46">
   <script defer src="js/world.js?v=23"></script>
   <script defer src="js/encounters.js?v=23"></script>
   <script defer src="js/chronicle.js?v=23"></script>
   <script defer src="js/outcomes.js?v=23"></script>
-  <script defer src="js/engine.js?v=28"></script>
+  <script defer src="js/engine.js?v=46"></script>
   <script defer src="js/tactics.js?v=23"></script>
   <script defer src="js/journey.js?v=40"></script>
   <script defer src="js/assets.js?v=23"></script>
   <script defer src="js/material-assets.js?v=30"></script>
   <script defer src="js/style-progress.js?v=30"></script>
   <script defer src="js/art-style.js?v=30"></script>
-  <script defer src="js/renderer.js?v=45"></script>
-  <script defer src="js/audio.js?v=44"></script>
-  <script defer src="js/film-art.js?v=42"></script>
+  <script defer src="js/renderer.js?v=46"></script>
+  <script defer src="js/audio.js?v=46"></script>
+  <script defer src="js/film-art.js?v=46"></script>
   <script defer src="js/story-director.js?v=42"></script>
   <script defer src="js/presentation.js?v=42"></script>
   <script defer src="js/finale.js?v=41"></script>
   <script defer src="js/planning.js?v=23"></script>
-  <script defer src="js/planning-ui.js?v=24"></script>
+  <script defer src="js/planning-ui.js?v=46"></script>
   <script defer src="js/trial-seeds.js?v=23"></script>
-  <script defer src="js/trials.js?v=23"></script>
-  <script defer src="js/run-session.js?v=23"></script>
-  <script defer src="js/trials-ui.js?v=24"></script>
+  <script defer src="js/stances-mastery.js?v=46"></script>
+  <script defer src="js/trials.js?v=46"></script>
+  <script defer src="js/run-session.js?v=46"></script>
+  <script defer src="js/trials-ui.js?v=46"></script>
   <script defer src="js/mechanisms.js?v=23"></script>
   <script defer src="js/choice-feedback.js?v=34"></script>
-  <script defer src="js/ui-skins.js?v=26"></script>
-  <script defer src="js/ui.js?v=45"></script>
+  <script defer src="js/ui-skins.js?v=46"></script>
+  <script defer src="js/ui.js?v=46"></script>
 </head>
 <body>
   <section id="start-screen" class="start-screen" aria-label="大圣：舍利魔塔 开始界面">
+    <canvas id="start-particles" class="start-particles" aria-hidden="true"></canvas>
     <div class="start-topline"><span class="tiny-emblem">卍</span><span>十八层西游策略冒险</span><span id="start-art-label" class="start-edition">玄金古寺 · 十八重因果</span></div>
     <main class="start-main">
       <div class="start-copy">
-        <div class="chapter-kicker"><span></span> 十六舍利，一位未归</div>
+        <div class="start-emblem-wrap"><img id="start-emblem" src="assets/ui-v46/emblem-fillet.webp" alt="" aria-hidden="true"><div class="chapter-kicker"><span></span> 十六舍利，一位未归</div></div>
         <h1 class="start-title">大圣<span class="title-seal">悟</span></h1>
         <div class="start-subtitle"><span>舍利魔塔</span><i></i></div>
         <p class="start-english">RELICS OF THE GREAT SAGE</p>
         <p class="start-story">云垂山门，壁上众生。<br>十八重塔路，十六枚舍利，一颗无骨心。</p>
         <p class="adaptation-caption">受《西游记后传》启发的原创平行篇章</p>
         <div class="start-actions"><button id="new-game" class="primary-button">执棒入塔 <span>→</span></button><button id="continue-game" class="secondary-button" disabled>继续前缘 <span>↗</span></button><button id="leave-trial-start" class="secondary-button" hidden>返回原主线</button></div>
+        <div class="start-actions-sub"><button id="start-trials" class="ghost-gold-button" type="button">✦ 章回试炼</button><button id="start-seals" class="ghost-gold-button" type="button">◈ 大圣印谱 <small id="start-seals-count">0/12</small></button></div>
         <p id="trial-resume-note" class="trial-note" hidden></p>
         <div id="asset-loading" class="asset-loading" role="status" aria-live="polite"><div><span id="asset-status">正在展开玄金古寺画卷</span><span id="asset-count"></span></div><progress id="asset-progress" value="0" max="1" aria-label="美术资源载入进度"></progress></div>
         <div class="start-save-note"><span class="small-diamond"></span> 无需联网 · 自动存档 · 随时回溯</div>
@@ -72,11 +76,11 @@
         <div class="art-corner corner-tl"></div><div class="art-corner corner-br"></div>
       </div>
     </main>
-    <footer class="start-bottom"><div><b>壹</b><span>步步为营<small>十八幅异构塔路</small></span></div><div><b>贰</b><span>洞察因果<small>战前可算，不凭运气</small></span></div><div><b>叁</b><span>神通解局<small>六器取舍，旧路新解</small></span></div><span class="start-footer-note">有些门，需要先放下金箍棒。</span></footer>
+    <footer class="start-bottom"><div><b>壹</b><span>步步为营<small>十八幅异构塔路</small></span></div><div><b>贰</b><span>心猿三势<small>定海劈山，战前可算</small></span></div><div><b>叁</b><span>神通解局<small>六器共鸣，旧路新解</small></span></div><span class="start-footer-note">有些门，需要先放下金箍棒。</span></footer>
   </section>
 
   <div id="game-shell" class="game-shell hidden">
-    <div class="hud-vitals" aria-label="当前生命、灵息、钥匙与功德金">
+    <div class="hud-vitals" aria-label="当前生命、灵息、钥匙、功德金与心猿棍势">
       <button id="btn-character" class="hud-character" data-action="character" title="行者详情 · C" aria-expanded="false"><canvas id="hud-portrait" width="96" height="96" data-asset="actor_wukong_down" aria-hidden="true"></canvas><span>行者<kbd>C</kbd></span></button>
       <div class="hud-survival"><div><span class="hud-heart" aria-hidden="true">◆</span><strong id="hud-hp">620</strong><small>生命</small></div><div class="hud-breath"><span>灵息</span><b id="hud-mana">6 / 6</b><i id="hud-mana-bar"></i></div></div>
       <div class="hud-resources">
@@ -89,6 +93,7 @@
       <div class="header-center"><span class="header-symbol">◈</span><span id="narrative-goal" aria-label="当前主线目标">寻找散落的舍利，重开众生归路</span><small id="floor-progress">心印 0/5 · 外舍利 0/16</small></div>
       <nav class="header-tools" aria-label="游戏菜单">
         <div class="style-control"><button id="btn-style" data-action="style" aria-expanded="false" title="切换美术风格"><span aria-hidden="true">◐</span><span id="style-name">玄金古寺</span></button><div id="style-picker" class="style-picker hidden" role="group" aria-label="美术风格"><button data-style="material"><b>玄金古寺</b><small>湿石 · 古金 · 三维材质</small></button><button data-style="mural"><b>青绿壁画</b><small>重彩 · 金线 · 像素绘卷</small></button></div></div>
+        <button id="btn-seals-header" type="button" title="大圣印谱 · K"><span aria-hidden="true">印</span><span class="tool-label">印谱</span><span id="header-seals-count" class="seal-badge">0/12</span></button>
         <button id="btn-undo" data-action="undo" title="回溯上一次决策 · Z" aria-label="回溯上一次决策"><span>↶</span><span class="tool-label">回溯</span></button>
         <button id="btn-redo" data-action="redo" title="重做上一次决策 · Y" aria-label="重做上一次决策"><span>↷</span><span class="tool-label">重做</span></button>
         <details id="game-toolbox" class="game-toolbox">
@@ -100,6 +105,7 @@
             <button id="btn-journal" data-action="journal"><span>☷</span> 因果手记 <kbd>J</kbd></button>
             <button id="btn-planning"><span>策</span> 灯前推演 <kbd>T</kbd></button>
             <button id="btn-bestiary" data-action="bestiary"><span>◉</span> 群妖图鉴 <kbd>B</kbd></button>
+            <button id="btn-seals-menu" type="button"><span>印</span> 大圣印谱 <kbd>K</kbd></button>
             <div class="toolbox-divider"></div>
             <button id="btn-save" data-action="save" title="手动保存 · Ctrl+S"><span>▣</span> 手动存档 <kbd>Ctrl S</kbd></button>
             <button id="btn-load" data-action="load" title="选择手动或自动存档 · L"><span>↥</span> 读取前缘 <kbd>L</kbd></button>
@@ -128,10 +134,12 @@
       </aside>
       <section class="tower-panel" aria-label="塔层探索">
         <div class="floor-header"><div class="floor-title"><span id="floor-number" class="floor-number">壹</span><div><div class="floor-overline">THE RELIC TOWER <span id="location-label">第 1 层 / 共 18 层</span></div><h1 id="floor-name">石生山门</h1></div></div><span id="floor-subtitle" class="floor-subtitle">万法起于足下</span></div>
-        <div class="map-toolbar"><button id="btn-overview" class="map-toggle" aria-pressed="true" title="近观 / 全图规划 · M">近观探索 <kbd>M</kbd></button><button id="btn-focus-player" class="focus-player" title="视野回到悟空 · R" aria-label="视野回到悟空">归位 <kbd>R</kbd></button><span id="viewport-label">规划 21 × 21 · 查看全局</span><details class="quest-scroll"><summary>此层经卷 <span>⌄</span></summary><div><div class="quest-reading" tabindex="0" role="region" aria-label="此层经卷正文"><div class="section-label">此行所求</div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div id="floor-depth"></div><button id="btn-quest-journal">展开因果手记 ↗</button><p class="quest-keys">↑ ↓ 阅读 · Esc 收卷</p></div></div></details></div>
-        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="二十一乘二十一格塔层，默认显示全图规划。M 切换近观，R 回到悟空；点击格子查看规则与寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
+        <div class="map-toolbar"><button id="btn-overview" class="map-toggle" aria-pressed="true" title="近观 / 全图规划 · M">近观探索 <kbd>M</kbd></button><button id="btn-focus-player" class="focus-player" title="视野回到悟空 · R" aria-label="视野回到悟空">归位 <kbd>R</kbd></button><button id="btn-lens" class="focus-player lens-toggle active" type="button" aria-pressed="true" title="开关火眼态势显影光环 · V">态势 <kbd>V</kbd></button><span id="viewport-label">规划 21 × 21 · 查看全局</span><details class="quest-scroll"><summary>此层经卷 <span>⌄</span></summary><div><div class="quest-reading" tabindex="0" role="region" aria-label="此层经卷正文"><div class="section-label">此行所求</div><p id="floor-objective">寻找山门中的第一枚舍利。</p><div id="floor-depth"></div><button id="btn-quest-journal">展开因果手记 ↗</button><p class="quest-keys">↑ ↓ 阅读 · Esc 收卷</p></div></div></details></div>
+        <div class="board-frame"><span class="board-corner top-left"></span><span class="board-corner top-right"></span><span class="board-corner bottom-left"></span><span class="board-corner bottom-right"></span><canvas id="game-canvas" width="624" height="624" tabindex="0" aria-label="二十一乘二十一格塔层，默认显示全图规划。M 切换近观，R 回到悟空；Q 切换棍势，V 切换态势显影；点击格子查看规则与寻路。">浏览器需要支持 Canvas 才能游玩。</canvas><div class="board-bottomline"><span id="mode-label">行走</span><span id="clone-status" class="clone-status"></span><span id="status-turn">第 0 步</span></div></div>
         <div id="floor-entry" class="floor-entry" hidden aria-live="polite" aria-atomic="true"><canvas class="entry-panorama" aria-hidden="true"></canvas><small data-entry-number></small><h2></h2><p data-entry-atmosphere></p><div class="entry-goal"><span>此层要事</span><strong data-entry-goal></strong></div><button class="entry-continue">踏入此境 <kbd>Enter</kbd></button></div>
-        <div id="ability-bar" class="ability-bar" aria-label="行者神通">
+        <div id="ability-bar" class="ability-bar" aria-label="心猿棍势与行者神通">
+          <button id="btn-stance" class="ability hud-stance-slot" type="button" data-stance="balanced" title="切换心猿棍势 · Q"><span class="stance-badge">棍势</span><span class="ability-symbol asset-symbol"><img id="hud-stance-icon" class="v46-skill-img" src="assets/ui-v46/stance-dinghai.webp" alt="" aria-hidden="true"></span><span id="hud-stance-name">定海正棒</span><kbd>Q</kbd></button>
+          <span class="ability-divider" aria-hidden="true"></span>
           <button data-mode="walk" id="skill-walk" class="ability active"><span class="ability-symbol">⌁</span><span>行走<small>自在探索</small></span><kbd>1</kbd></button>
           <button data-mode="inspect" id="skill-inspect" class="ability"><span class="ability-symbol eye-symbol">◉</span><span>火眼金睛<small>洞察 · 无消耗</small></span><kbd>2</kbd></button>
           <button data-mode="staff" id="skill-staff" class="ability locked"><span class="ability-symbol">╱</span><span>金箍架桥<small>石生心印解锁</small></span><kbd>3</kbd></button>
@@ -142,14 +150,15 @@
         <div class="mobile-controls" aria-label="触屏移动"><button data-move="left" aria-label="向左">←</button><div><button data-move="up" aria-label="向上">↑</button><button data-move="down" aria-label="向下">↓</button></div><button data-move="right" aria-label="向右">→</button><button id="btn-interact" data-action="interact" class="interact-button">交互</button></div>
       </section>
       <aside class="world-panel" aria-label="塔内信息">
-
         <svg id="target-link" class="target-link hidden" aria-hidden="true"><path id="target-thread"></path><polygon id="target-nib"></polygon><circle id="target-foot" r="2.2"></circle></svg><button id="target-direction" class="target-direction hidden" aria-label="查看画外所选目标"><span id="target-direction-arrow" aria-hidden="true">↗</span><span id="target-direction-name"></span></button><section class="context-card" aria-label="目标附近的行动提示" aria-live="polite"><button id="context-dismiss" class="context-dismiss" hidden tabindex="-1" aria-hidden="true" aria-label="收起当前目标">×</button><div class="section-label">火眼所见 <span>INSIGHT</span></div><div class="context-heading"><canvas id="context-portrait" width="96" height="96" hidden aria-hidden="true"></canvas><h2 id="context-title">观照，方能破局</h2><span id="context-cost" class="bubble-cost" hidden></span></div><p id="context-objective" hidden></p><div id="context-body"><div class="insight-emblem">◉</div><p class="muted">点击塔内的守卫、机关或宝物，查看规则与战斗损失。</p><p class="context-note">无随机伤害 · 无怪物刷新<br>每一步，都有你的解法。</p></div></section>
         <details class="event-card"><summary class="section-label">塔中回响 <span>⌄</span></summary><div id="event-log" class="event-log" aria-live="polite"><div class="log-entry"><span>·</span> 你踏入了破碎的浮屠。</div></div></details>
         <div class="map-legend"><span><i class="legend-dot relic-dot"></i> 舍利</span><span><i class="legend-dot altar-dot"></i> 灵息坛</span><span><i class="legend-dot enemy-dot"></i> 守卫</span><span><i class="legend-dot gate-dot"></i> 机关</span></div>
       </aside>
     </main>
-    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> <kbd>M</kbd> 切换视野 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
+    <footer class="game-footer"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> 移动 <i>·</i> <kbd>Q</kbd> 切换棍势 <i>·</i> <kbd>V</kbd> 态势 <i>·</i> <kbd>M</kbd> 视野 <i>·</i> <kbd>Z</kbd> 回溯</span><span>循因果而行 <span class="footer-diamond">◇</span> 不问快慢</span></footer>
   </div>
+  <div id="clash-banner" class="clash-banner" hidden aria-live="polite"><span id="clash-stance-tag" class="clash-stance-tag">定海正棒</span><span id="clash-versus" class="clash-versus">孙悟空 破 守阶小妖</span><span id="clash-metrics" class="clash-metrics"></span></div>
+  <div id="seal-toast" class="seal-toast" hidden role="status" aria-live="polite"><span id="seal-toast-mark" class="seal-toast-mark">净</span><div><small>大圣印谱 · 新印落成</small><strong id="seal-toast-title">毫发无伤</strong></div></div>
   <section id="trial-ribbon" class="trial-ribbon" hidden aria-label="当前独立试炼"><strong></strong><small></small><button>试炼与主线</button></section>
   <section id="journey-guide" class="journey-guide" aria-label="当前探索指引"><div class="journey-heading"><span>此行要事</span><small data-journey-phase></small></div><div class="journey-result" data-journey-result hidden role="status" aria-live="polite"><b></b><span></span></div><strong></strong><p data-journey-why></p><p class="journey-note" data-journey-note hidden></p><div class="journey-tools"><button data-journey-focus>标记目标 <kbd>G</kbd></button><small data-journey-help></small></div></section>
   <section id="altar-ritual" class="altar-ritual" hidden tabindex="-1" aria-label="莲灯修心"><div class="ritual-aura" aria-hidden="true"></div><div class="ritual-heading"><span>莲灯 · 修心</span><b data-ritual-coins></b></div><div class="ritual-offerings"></div><div class="ritual-base"><div class="ritual-minor"></div><footer><span data-ritual-result aria-live="polite"></span><small data-decision-keys hidden></small><button data-ritual-close>离开莲灯 <kbd>Esc</kbd></button><button data-ritual-bag>行囊 <kbd>I</kbd></button></footer><p class="ritual-shortcuts" data-ritual-help hidden>数字键使用 · 方向键切换 · Enter 执行</p></div></section>

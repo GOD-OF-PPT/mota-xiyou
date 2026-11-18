@@ -8,6 +8,7 @@
   const journey = new TowerJourney(engine);
   let armedCombat=null,floorEntryTimer=0,dialogueTimer=0,ritualOpen=false,decisionEntity=null,decisionSelection=null,ritualReturn=null,scenePointerAfter=0,ritualResult='',kitSelection='elixir',kitNotice='',speechTimer=0,lastSpeechKey='',guideTarget=null;
   const renderer = new TowerRenderer($('game-canvas'),engine);
+  let clashTimer=0,sealToastTimer=0;
   window.game = engine;
   const traitNames={normal:'普通',first:'先手',magic:'法术',armor:'重甲',venom:'余毒',counter:'反震',boss:'无相'};
   const abilityNames={staff:'金箍架桥',morph:'青蝉化形',clone:'毫毛分身',ward:'慈悲护持',truth:'归真共鸣'};
@@ -18,6 +19,8 @@
   const preferenceKey='dasheng-relic-tower-preferences-v3';
   let localPreferences={};try{localPreferences=JSON.parse(localStorage.getItem(preferenceKey)||'{}');}catch{}
   if(typeof localPreferences.music!=='boolean')localPreferences.music=true;
+  if(typeof localPreferences.sfx!=='boolean')localPreferences.sfx=true;
+  if(typeof localPreferences.tacticalLens!=='boolean')localPreferences.tacticalLens=true;
   let castFrequency='adaptive';try{const saved=localStorage.getItem('dasheng-cast-frequency-v13');if(['adaptive','always'].includes(saved))castFrequency=saved;}catch{}
   const systemMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
   const settings=()=>Object.assign(engine.state.settings||(engine.state.settings={quickZero:false,showDamage:true}),localPreferences);
@@ -202,7 +205,9 @@
     if(motif?.src){document.documentElement.style.setProperty('--mural-motif',`url("${motif.src}")`);if(!document.querySelector('.mural-motif')){const el=document.createElement('div');el.className='mural-motif';el.setAttribute('aria-hidden','true');document.body.prepend(el);}}
     const portrait=$('portrait');if(portrait&&!portrait.querySelector('[data-portrait]'))portrait.innerHTML=portraitSVG('wukong');paintPortraits();document.querySelectorAll('[data-treasure-icon]').forEach(c=>TowerRenderer.icon(c,'treasure',c.dataset.treasureIcon));document.querySelectorAll('canvas[data-phase]').forEach(c=>TowerRenderer.icon(c,'boss',Number(c.dataset.phase)));
     const ids={walk:'actor_wukong_down',inspect:'prop_eye',staff:'prop_staff',morph:'prop_cicada',clone:'prop_clone'};
-    document.querySelectorAll('.ability[data-mode] .ability-symbol').forEach(el=>{const mode=el.closest('[data-mode]').dataset.mode,canvas=document.createElement('canvas');canvas.width=48;canvas.height=48;canvas.setAttribute('aria-hidden','true');const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=currentStyle()==='material';if(assets.draw(ctx,ids[mode],0,0,48,48,0)){el.replaceChildren(canvas);el.classList.add('asset-symbol');}});
+    const walkSkin=window.TowerUISkins?.get?.('icon-walk-cloud');
+    if($('start-emblem')&&window.TowerUISkins?.get?.('emblem-fillet')?.src)$('start-emblem').src=window.TowerUISkins.get('emblem-fillet').src;
+    document.querySelectorAll('.ability[data-mode] .ability-symbol').forEach(el=>{const mode=el.closest('[data-mode]').dataset.mode;if(mode==='walk'&&walkSkin?.src){const img=document.createElement('img');img.src=walkSkin.src;img.alt='';img.className='v46-skill-img';img.setAttribute('aria-hidden','true');el.replaceChildren(img);el.classList.add('asset-symbol');return;}const canvas=document.createElement('canvas');canvas.width=48;canvas.height=48;canvas.setAttribute('aria-hidden','true');const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=currentStyle()==='material';if(assets.draw(ctx,ids[mode],0,0,48,48,0)){el.replaceChildren(canvas);el.classList.add('asset-symbol');}});
     for(const [selector,id]of [['.stat-icon.sword','item_atk'],['.stat-icon.shield','item_def'],['.stat-icon.spirit','item_mana'],['.stat-icon.coin','item_coin']]){
       const el=document.querySelector(selector);if(!el)continue;const canvas=document.createElement('canvas');canvas.width=48;canvas.height=48;canvas.setAttribute('aria-hidden','true');const ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=currentStyle()==='material';if(assets.draw(ctx,id,0,0,48,48,0)){el.replaceChildren(canvas);el.classList.add('asset-stat');}
     }
@@ -310,7 +315,8 @@
     else primary=`<button class="context-button" data-context="${near?'engage':'approach-enemy'}" ${!near&&steps===null?'disabled':''}>${near?'迎战 <kbd>F</kbd>':steps===null?'先打通接近路线':`走近守卫 · ${steps} 步`}</button>`;
     const plan=boss?engine.bossOptions().find(o=>o.id===s.bossPlan):null;
     const direct=near&&p.possible&&p.canAfford!==false&&!locked&&(unsafe||boss)?`<button class="scene-rule-button danger-engage" data-context="engage">${p.survive?'按当前准备直接迎战':'仍要迎战 · 会力竭'}</button>`:'';
-    return `<p class="combat-meta">${esc(traitNames[enemy.trait]||'普通')}${role?' · '+esc(role):''}<span>胜利功德 +${p.goldReward}</span></p><section class="combat-result ${unsafe?'danger':'safe'}" aria-label="本战结果预览"><strong class="combat-verdict">${status}</strong><div class="combat-loss"><span>预计损失</span><b class="damage-number">${p.possible?p.damage:'未破防'}</b></div><p class="combat-health" ${settings().quickZero&&p.possible&&p.damage===0?'hidden':''}>${health}</p>${boss?`<small>${esc(plan?.label||'执棒破阵')} · ${p.resourceCost?.orbs?p.resourceCost.orbs+' 凝息珠':'保留凝息珠'}</small>`:''}</section><div class="combat-primary" data-caution="${unsafe&&!boss}">${primary}</div><details class="combat-details" data-battle-details data-battle-target="${esc(e.id)}" ${open?'open':''}><summary>战前详情${sceneDetail?' · '+({rules:'敌情规则',tactics:'成长对策',plans:'临战准备'}[sceneDetail.kind]||''):''} <span aria-hidden="true">⌄</span></summary><div class="combat-details-body"><p class="combat-purpose">${esc(journey.purpose(e))}</p><div class="combat-detail-tabs"><button class="scene-rule-button" data-context="tactics" aria-pressed="${sceneDetail?.kind==='tactics'}">成长对策</button><button class="scene-rule-button" data-context="rules" aria-pressed="${sceneDetail?.kind==='rules'}">敌情规则</button>${boss?`<button class="scene-rule-button" data-context="plans" aria-pressed="${sceneDetail?.kind==='plans'}">临战准备</button>`:''}</div>${sceneDetailHTML(e)}${!sceneDetail?`<p class="combat-reading">${p.possible?`${p.rounds} 棒击败 · 预计受击 ${p.enemyHits} 次`:'有效攻击须高于敌人防御'}${p.nextAttack?`；再加 ${p.nextAttack.delta} 攻，可少损 ${p.nextAttack.saved} 生命`:''}。</p>`:''}${direct}${unsafe&&!near&&steps!==null?`<button class="scene-rule-button" data-context="approach-enemy">走近查看 · 不会自动迎战</button>`:''}</div></details>`;
+    const cmp=window.TowerMastery?.compareStances(engine,enemy,boss?{bossPlan:s.bossPlan}:{}),stanceBar=cmp?`<div class="stance-forecast-bar" role="group" aria-label="心猿棍势实时对比"><div class="stance-forecast-head"><span>心猿三势 · 点选即切换 <kbd>Q</kbd></span>${cmp.best.id!==cmp.current.id&&(cmp.savedVsCurrent>0||(!cmp.current.possible&&cmp.best.possible))?`<em>火眼荐：${esc(cmp.best.info.name)}${Number.isFinite(cmp.savedVsCurrent)?'（省 '+cmp.savedVsCurrent+' 血）':'（可破防）'}</em>`:'<span>当前已是最优棍势</span>'}</div><div class="stance-pills">${cmp.entries.map(item=>{const skinImg=window.TowerUISkins?.get?.(item.icon)?.src||item.icon;const isBest=cmp.best.id===item.id&&(cmp.savedVsCurrent>0||(!cmp.current.possible&&cmp.best.possible));return `<button type="button" class="stance-pill ${item.id===cmp.current.id?'active':''} ${item.possible&&item.damage===0?'zero':''} ${!item.possible||!item.survive?'lethal':''}" data-set-stance="${esc(item.id)}" aria-pressed="${item.id===cmp.current.id}">${isBest?'<span class="stance-best-tag">荐</span>':''}<span class="stance-pill-top"><img src="${esc(skinImg)}" alt="" aria-hidden="true">${esc(item.info.short)}</span><b>${item.possible?'−'+item.damage:'未破'}</b></button>`;}).join('')}</div></div>`:'';
+    return `<p class="combat-meta">${esc(traitNames[enemy.trait]||'普通')}${role?' · '+esc(role):''}<span>胜利功德 +${p.goldReward}</span></p><section class="combat-result ${unsafe?'danger':'safe'}" aria-label="本战结果预览"><strong class="combat-verdict">${status}</strong><div class="combat-loss"><span>预计损失</span><b class="damage-number">${p.possible?p.damage:'未破防'}</b></div><p class="combat-health" ${settings().quickZero&&p.possible&&p.damage===0?'hidden':''}>${health}</p>${boss?`<small>${esc(plan?.label||'执棒破阵')} · ${p.resourceCost?.orbs?p.resourceCost.orbs+' 凝息珠':'保留凝息珠'}</small>`:''}</section>${stanceBar}<div class="combat-primary" data-caution="${unsafe&&!boss}">${primary}</div><details class="combat-details" data-battle-details data-battle-target="${esc(e.id)}" ${open?'open':''}><summary>战前详情${sceneDetail?' · '+({rules:'敌情规则',tactics:'成长对策',plans:'临战准备'}[sceneDetail.kind]||''):''} <span aria-hidden="true">⌄</span></summary><div class="combat-details-body"><p class="combat-purpose">${esc(journey.purpose(e))}</p><div class="combat-detail-tabs"><button class="scene-rule-button" data-context="tactics" aria-pressed="${sceneDetail?.kind==='tactics'}">成长对策</button><button class="scene-rule-button" data-context="rules" aria-pressed="${sceneDetail?.kind==='rules'}">敌情规则</button>${boss?`<button class="scene-rule-button" data-context="plans" aria-pressed="${sceneDetail?.kind==='plans'}">临战准备</button>`:''}</div>${sceneDetailHTML(e)}${!sceneDetail?`<p class="combat-reading">${p.possible?`${p.rounds} 棒击败 · 预计受击 ${p.enemyHits} 次`:'有效攻击须高于敌人防御'}${p.nextAttack?`；再加 ${p.nextAttack.delta} 攻，可少损 ${p.nextAttack.saved} 生命`:''}。</p>`:''}${direct}${unsafe&&!near&&steps!==null?`<button class="scene-rule-button" data-context="approach-enemy">走近查看 · 不会自动迎战</button>`:''}</div></details>`;
   }
   function battleHTML(enemy,p,expanded=false){
     if(!expanded&&settings().quickZero&&p.possible&&p.damage===0)return `<div class="forecast safe"><span>本战可无损</span><strong class="damage-number">0</strong><small>再次前进或点击迎战才结算</small></div>`;
@@ -478,7 +484,7 @@
   }
   function positionRitual(){
     if(!ritualOpen)return;const origin=decisionEntity||engine.state,a=sceneAnchor(origin.x,origin.y),node=$('altar-ritual');if(decisionEntity)node.style.width=TowerData.choices[decisionEntity.choice].options.length===3?'840px':Math.min(700,Math.max(560,innerWidth-680))+'px';const h=node.offsetHeight,w=node.offsetWidth;
-    const player=sceneAnchor(engine.state.x,engine.state.y),clampX=x=>Math.max(20,Math.min(innerWidth-w-20,x)),clampY=y=>{const top=decisionEntity&&h<innerHeight-250?112:16,bottom=h<innerHeight-250?100:16;return Math.max(top,Math.min(innerHeight-h-bottom,y));},subjects=[a.bounds,player.bounds].map(r=>expandRect(r,12));
+    const player=sceneAnchor(engine.state.x,engine.state.y),clampX=x=>Math.max(20,Math.min(innerWidth-w-20,x)),clampY=y=>{const top=decisionEntity&&h<innerHeight-220?96:18,bottom=h<innerHeight-180?64:24;return Math.max(top,Math.min(innerHeight-h-bottom,y));},subjects=[a.bounds,player.bounds].map(r=>expandRect(r,12));
     const positions=[{x:a.foot.x-w/2,y:Math.min(a.bounds.y,player.bounds.y)-h-22},{x:a.foot.x-w/2,y:Math.max(a.foot.y,player.foot.y)+22},{x:Math.min(a.bounds.x,player.bounds.x)-w-24,y:a.foot.y-h/2},{x:Math.max(a.bounds.x+a.bounds.w,player.bounds.x+player.bounds.w)+24,y:a.foot.y-h/2}];
     const best=positions.map(p=>({x:clampX(p.x),y:clampY(p.y)})).map(p=>({...p,score:subjects.reduce((n,r)=>n+rectOverlap({...p,w,h},r)*40,0)+visibleObstacles().reduce((n,r)=>n+rectOverlap({...p,w,h},r)*4,0)+Math.hypot(p.x+w/2-a.foot.x,p.y+h/2-a.foot.y)})).sort((a,b)=>a.score-b.score)[0];
     node.style.left=best.x+'px';node.style.top=best.y+'px';
@@ -492,6 +498,9 @@
     const effective=engine.effectiveStats?.()||s;
     $('hud-hp').textContent=s.hp;$('hud-mana').textContent=s.mana+' / '+s.maxMana;$('hud-mana-bar').style.setProperty('--breath',Math.max(0,Math.min(100,s.mana/s.maxMana*100))+'%');$('hud-keys').innerHTML=['yellow','blue','red'].map(color=>`<span title="${colorNames[color]}钥匙 ${s.keys[color]} 把" aria-label="${colorNames[color]}钥匙 ${s.keys[color]} 把"><canvas width="32" height="32" data-asset="item_key_${color}" aria-hidden="true"></canvas><b>${s.keys[color]}</b></span>`).join('');paintAssetIcons($('hud-keys'));
     $('hud-coins').textContent=s.coins;
+    if($('btn-stance')){const st=engine.getStance?.()||'balanced',stInfo=TowerRules.stances?.[st]||{name:'定海正棒'},iconPath=window.TowerMastery?.STANCE_ICONS?.[st]||'assets/ui-v46/stance-dinghai.webp',loadedSkin=window.TowerUISkins?.get?.(iconPath);$('btn-stance').dataset.stance=st;$('hud-stance-name').textContent=stInfo.name;if($('hud-stance-icon'))$('hud-stance-icon').src=loadedSkin?.src||iconPath;}
+    if($('btn-lens')){$('btn-lens').classList.toggle('active',renderer.tacticalLens!==false);$('btn-lens').setAttribute('aria-pressed',String(renderer.tacticalLens!==false));}
+    syncSealCounts();
     $('hp-value').textContent=s.hp;$('atk-value').innerHTML=effective.atk===s.atk?s.atk:`${effective.atk}<small>基 ${s.atk}</small>`;$('def-value').innerHTML=effective.def===s.def?s.def:`${effective.def}<small>基 ${s.def}</small>`;$('mana-value').textContent=s.mana+' / '+s.maxMana;$('coins-value').textContent=s.coins;
     for(const c of ['yellow','blue','red'])$('key-'+c).textContent=s.keys[c];
     $('floor-number').textContent=String(s.floor+1).padStart(2,'0');$('floor-name').textContent=f.name;$('floor-subtitle').textContent=f.subtitle;
@@ -506,7 +515,7 @@
     $('mode-label').textContent=modeHint(engine.mode);
     let controlsChanged=false;for(const node of [$('ability-bar'),document.querySelector('.mobile-controls')])if(node&&node.classList.contains('hidden')!==s.won){node.classList.toggle('hidden',s.won);controlsChanged=true;}if(controlsChanged)requestAnimationFrame(syncSceneGuard);
     $('relic-slots').innerHTML=TowerData.relics.map((r,i)=>`<span class="relic-slot ${s.relics.includes(i)?'awakened':''}" title="${esc(r.name+' · '+(abilityNames[r.ability]||r.ability))}"><span>${s.relics.includes(i)?'✦':'◇'}</span><small>${esc(r.name.replace('舍利','').replace('心印',''))}</small></span>`).join('');
-    document.querySelectorAll('[data-mode]').forEach(b=>{const required={staff:0,morph:1,clone:2}[b.dataset.mode],locked=required!==undefined&&!s.relics.includes(required);b.classList.toggle('active',engine.mode===b.dataset.mode);b.classList.toggle('locked',locked);b.dataset.cost=locked?'未觉':required===undefined?(b.dataset.mode==='walk'?'行走':'免费'):abilityCost(b.dataset.mode)+'息';b.setAttribute('aria-pressed',engine.mode===b.dataset.mode);if(b.querySelector('small'))b.querySelector('small').textContent=locked?'第 '+[3,6,9][required]+' 层觉醒':({walk:'自在探索',inspect:'洞察 · 无消耗',staff:`${abilityCost('staff')} 灵息 · 相邻断口`,morph:`${abilityCost('morph')} 灵息 · 相邻铁栅`,clone:`${abilityCost('clone')} 灵息 · 四格阵眼`})[b.dataset.mode];b.removeAttribute('title');b.dataset.description=locked?'第 '+[3,6,9][required]+' 层解开心印后觉醒':modeHelp(b.dataset.mode);b.setAttribute('aria-label',modeNames[b.dataset.mode]+'，'+b.dataset.description);});
+    document.querySelectorAll('#ability-bar [data-mode]').forEach(b=>{const required={staff:0,morph:1,clone:2}[b.dataset.mode],locked=required!==undefined&&!s.relics.includes(required);b.classList.toggle('active',engine.mode===b.dataset.mode);b.classList.toggle('locked',locked);b.dataset.cost=locked?'未觉':required===undefined?(b.dataset.mode==='walk'?'行走':'免费'):abilityCost(b.dataset.mode)+'息';b.setAttribute('aria-pressed',engine.mode===b.dataset.mode);if(b.querySelector('small'))b.querySelector('small').textContent=locked?'第 '+[3,6,9][required]+' 层觉醒':({walk:'自在探索',inspect:'洞察 · 无消耗',staff:`${abilityCost('staff')} 灵息 · 相邻断口`,morph:`${abilityCost('morph')} 灵息 · 相邻铁栅`,clone:`${abilityCost('clone')} 灵息 · 四格阵眼`})[b.dataset.mode];b.removeAttribute('title');b.dataset.description=locked?'第 '+[3,6,9][required]+' 层解开心印后觉醒':modeHelp(b.dataset.mode);b.setAttribute('aria-label',modeNames[b.dataset.mode]+'，'+b.dataset.description);});
     $('btn-undo').disabled=!engine.history.length;
     if($('btn-redo'))$('btn-redo').disabled=!engine.redoHistory?.length;
     const cs=engine.cloneStatus?.();if($('clone-status'))$('clone-status').textContent=s.relics.includes(2)?`分身 ${cs?.active?.length||0}${Number.isFinite(cs?.limit)?' / '+cs.limit:' 驻守'}${Number.isFinite(cs?.limit)?' · 可回收':''}`:'五印渐解 · 神通觉醒';
@@ -731,6 +740,7 @@
     $('context-body').querySelectorAll('[data-recall]').forEach(b=>b.onclick=()=>{if(engine.recallClone(b.dataset.recall)){sceneDetail=null;updateContext();}});
     document.querySelector('.context-card')?.classList.toggle('is-dialogue',sceneDetail?.kind==='dialogue');
     $('context-body').querySelectorAll('[data-context-plan]').forEach(b=>b.onclick=()=>{engine.setBossPlan(b.dataset.contextPlan);updateContext();});
+    $('context-body').querySelectorAll('[data-set-stance]').forEach(b=>b.onclick=()=>{if(engine.setStance(b.dataset.setStance)){audio.cue('stance',{stance:b.dataset.setStance});updateContext();}});
     $('context-body').querySelectorAll('[data-growth-route]').forEach(b=>b.onclick=()=>{
       const sel=engine.selection,e=sel&&engine.getEntity(sel.x,sel.y);if(e?.type!=='enemy')return;
       const plan=TowerTactics.growthPlans(engine,TowerData.enemies[e.enemy]).find(p=>p.id===b.dataset.growthRoute);if(!plan)return;
@@ -785,7 +795,7 @@
   }
   function renderKit(){
     const s=engine.state,holder=$('pilgrim-kit');if(!holder)return;
-    holder.innerHTML=`<div class="kit-pilgrim"><canvas width="384" height="384" data-asset="${heroAsset()}" aria-hidden="true"></canvas><h3>齐天大圣</h3><p>六器最多同佩两件<br>在莲灯旁调整行装</p><div class="kit-equipped" aria-label="已佩戴的两件法器">${[0,1].map(i=>s.equipped[i]?`<span title="${esc(treasureById(s.equipped[i])?.name)}"><canvas width="160" height="160" data-asset="treasure_${s.equipped[i]}" aria-hidden="true"></canvas></span>`:'<span>虚位</span>').join('')}</div><div class="kit-seals" aria-label="五重心印">${['石','骨','渡','慈','明'].map((name,i)=>`<i class="${s.relics.includes(i)?'lit':''}">${name}</i>`).join('')}</div></div><div class="kit-belongings"><div class="kit-resources"><span>功德 ${s.coins}</span><span>铜钥 ${s.keys.yellow} · 青钥 ${s.keys.blue} · 心钥 ${s.keys.red}</span><span>灵息 ${s.mana}/${s.maxMana}</span></div><div class="kit-cloth"><div class="kit-gear">${treasureList().map(t=>{const owned=s.treasures.includes(t.id),on=s.equipped.includes(t.id);return `<button class="kit-token ${owned?'':'unfound'} ${on?'equipped':''} ${kitSelection===t.id?'selected':''}" data-kit-select="${t.id}" aria-pressed="${kitSelection===t.id}"><canvas width="192" height="192" data-asset="treasure_${t.id}" aria-hidden="true"></canvas><span>${esc(t.name)}</span><small class="token-status">${on?'已佩戴':owned?'已寻回':'尚待寻回'}</small></button>`;}).join('')}</div></div><div class="kit-supplies"><button class="kit-supply ${kitSelection==='elixir'?'selected':''}" data-kit-select="elixir"><canvas width="160" height="160" data-asset="item_peach" aria-hidden="true"></canvas><span>随身蟠桃 × ${s.elixirs}<small>恢复生命 · 一次消耗</small></span></button><button class="kit-supply ${kitSelection==='orb'?'selected':''}" data-kit-select="orb"><canvas width="160" height="160" data-asset="item_orb" aria-hidden="true"></canvas><span>凝息珠 × ${s.orbs}<small>补息、供奉或留待终战</small></span></button></div><div class="kit-description" aria-live="polite"></div><div class="kit-tools"><button id="export-save">导出前缘</button><label>导入前缘<input type="file" id="import-save" accept=".json,application/json" hidden></label></div></div>`;
+    holder.innerHTML=`<div class="kit-pilgrim"><canvas width="384" height="384" data-asset="${heroAsset()}" aria-hidden="true"></canvas><h3>齐天大圣</h3><p>六器最多同佩两件<br>在莲灯旁调整行装</p><div class="kit-equipped" aria-label="已佩戴的两件法器">${[0,1].map(i=>s.equipped[i]?`<span title="${esc(treasureById(s.equipped[i])?.name)}"><canvas width="160" height="160" data-asset="treasure_${s.equipped[i]}" aria-hidden="true"></canvas></span>`:'<span>虚位</span>').join('')}</div><div class="kit-seals" aria-label="五重心印">${['石','骨','渡','慈','明'].map((name,i)=>`<i class="${s.relics.includes(i)?'lit':''}">${name}</i>`).join('')}</div></div><div class="kit-belongings"><div class="kit-resources"><span>功德 ${s.coins}</span><span>铜钥 ${s.keys.yellow} · 青钥 ${s.keys.blue} · 心钥 ${s.keys.red}</span><span>灵息 ${s.mana}/${s.maxMana}</span></div>${(()=>{const eff=engine.effectiveStats(),syn=window.TowerMastery?.activeSynergy(s.equipped);return `<div class="kit-effective-strip"><span>实效攻击 <b>${eff.atk}</b></span><span>实效防御 <b>${eff.def}</b></span><span>法术护持 <b>${eff.magicWard}</b></span><span>当前棍势 <b>${esc(eff.stanceInfo?.name||'定海正棒')}</b></span></div>`+(syn?`<div class="kit-synergy-banner"><strong>✦ 六器共鸣 · ${esc(syn.name)}</strong><span>${esc(syn.summary)}</span></div>`:'');})()}<div class="kit-cloth"><div class="kit-gear">${treasureList().map(t=>{const owned=s.treasures.includes(t.id),on=s.equipped.includes(t.id);return `<button class="kit-token ${owned?'':'unfound'} ${on?'equipped':''} ${kitSelection===t.id?'selected':''}" data-kit-select="${t.id}" aria-pressed="${kitSelection===t.id}"><canvas width="192" height="192" data-asset="treasure_${t.id}" aria-hidden="true"></canvas><span>${esc(t.name)}</span><small class="token-status">${on?'已佩戴':owned?'已寻回':'尚待寻回'}</small></button>`;}).join('')}</div></div><div class="kit-supplies"><button class="kit-supply ${kitSelection==='elixir'?'selected':''}" data-kit-select="elixir"><canvas width="160" height="160" data-asset="item_peach" aria-hidden="true"></canvas><span>随身蟠桃 × ${s.elixirs}<small>恢复生命 · 一次消耗</small></span></button><button class="kit-supply ${kitSelection==='orb'?'selected':''}" data-kit-select="orb"><canvas width="160" height="160" data-asset="item_orb" aria-hidden="true"></canvas><span>凝息珠 × ${s.orbs}<small>补息、供奉或留待终战</small></span></button></div><div class="kit-description" aria-live="polite"></div><div class="kit-tools"><button id="export-save">导出前缘</button><label>导入前缘<input type="file" id="import-save" accept=".json,application/json" hidden></label></div></div>`;
     paintAssetIcons(holder);holder.querySelectorAll('[data-kit-select]').forEach(b=>b.onclick=()=>{kitSelection=b.dataset.kitSelect;kitNotice='';renderKit();holder.querySelector(`[data-kit-select="${kitSelection}"]`)?.focus({preventScroll:true});});renderKitDetail();
     $('export-save').onclick=()=>{const a=document.createElement('a'),url=URL.createObjectURL(new Blob([engine.exportSave()],{type:'application/json'}));a.href=url;a.download='大圣-舍利魔塔-第'+(s.floor+1)+'层.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
     $('import-save').onchange=async ev=>{const file=ev.target.files[0];if(!file)return;if(file.size>2000000){toast('存档文件过大。');return;}const raw=await file.text();clearSurfaces();if(engine.load(raw)){resetStorySession();engine.save(true);showGame();if(engine.state.won)ending(engine.state.ending);else if(engine.state.defeated)defeat();else floorEntry({floor:engine.state.floor,title:currentFloor().name,text:currentFloor().intro,resume:true});}};
@@ -804,12 +814,12 @@
     node.innerHTML=`<h3>${esc(title)}</h3><p>${TowerText.highlighted(description)}<br><span data-kit-reason>${esc(s.won||s.defeated?reason:kitNotice||reason)}</span></p><button id="kit-use" ${disabled?'disabled':''}>${label}</button>`;$('kit-use').onclick=action;
   }
   function gameMenu(){
-    const items=[['trials','章回试炼',runSession.isTrial?'继续本题、记录或返回主线':'固定起点 · 不同目标',()=>trialPanel.open()],['t','灯前推演','T · 三步比较与章回恢复',()=>planningDesk.open()],['i','行者行囊','I · 物品与六器',inventory],['c','照见行者','C · 修为与状态',character],['j','因果手记','J · 目标与乘云',journal],['b','观敌知损','B · 战损与临界',bestiary],['relics','舍利莲阵','十六外环 · 一位未归',relicCollection],['l','读取前缘','L · 手动与自动',loadSlots],['save','留存此行','Ctrl S · 独立存档',()=>{engine.save();closeSurface();}],['h','入塔指引','H · 操作与演出',help],['settings','声音与演出','声景 · 动作 · 画面',soundSettings],['style','更换画境','两套画境 · 同一前缘',styles],['restart','重启冒险','先核对留存，再开新局',confirmRestart],['title','回到塔外','保留当前自动前缘',returnTitle]];
-    showSurface('行旅',`<div class="journey-rest"><div class="journey-pilgrim" aria-hidden="true"><canvas width="500" height="600" data-asset="${heroAsset()}"></canvas><span>歇一息，再走。</span></div><div class="journey-menu">${items.map(([id,title,tip])=>`<button class="${['i','c','j','t','trials','b'].includes(id)?'major':'minor'}" data-menu="${id}"><span class="journey-nav-mark" aria-hidden="true">${{trials:'试',t:'思',i:'囊',c:'身',j:'因',b:'观',l:'缘',save:'存',h:'问',relics:'印',restart:'新',settings:'声',style:'境',title:'归'}[id]}</span><span><b>${title}</b><small>${tip}</small></span><span aria-hidden="true">↗</span></button>`).join('')}</div></div>`,[{label:'继续塔中之行'}],'歇一息 · 再问前路',true,'menu');$('modal-content').querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>items.find(row=>row[0]===b.dataset.menu)[3]());
+    const items=[['trials','章回试炼',runSession.isTrial?'继续本题、记录或返回主线':'入门实战 · 章节挑战',()=>trialPanel.open()],['seals','大圣印谱','K · 十二功果金石印鉴',sealsCompendium],['t','灯前推演','T · 三步比较与章回恢复',()=>planningDesk.open()],['i','行者行囊','I · 物品与六器',inventory],['c','照见行者','C · 修为与状态',character],['j','因果手记','J · 目标与乘云',journal],['b','观敌知损','B · 战损与临界',bestiary],['relics','舍利莲阵','十六外环 · 一位未归',relicCollection],['l','读取前缘','L · 手动与自动',loadSlots],['save','留存此行','Ctrl S · 独立存档',()=>{engine.save();closeSurface();}],['h','入塔指引','H · 操作与演出',help],['settings','声音与演出','声景 · 动作 · 画面',soundSettings],['style','更换画境','两套画境 · 同一前缘',styles],['restart','重启冒险','先核对留存，再开新局',confirmRestart],['title','回到塔外','保留当前自动前缘',returnTitle]];
+    showSurface('行旅',`<div class="journey-rest"><div class="journey-pilgrim" aria-hidden="true"><canvas width="500" height="600" data-asset="${heroAsset()}"></canvas><span>歇一息，再走。</span></div><div class="journey-menu">${items.map(([id,title,tip])=>`<button class="${['i','c','j','t','trials','seals','b'].includes(id)?'major':'minor'}" data-menu="${id}"><span class="journey-nav-mark" aria-hidden="true">${{trials:'试',seals:'印',t:'思',i:'囊',c:'身',j:'因',b:'观',l:'缘',save:'存',h:'问',relics:'印',restart:'新',settings:'声',style:'境',title:'归'}[id]}</span><span><b>${title}</b><small>${tip}</small></span><span aria-hidden="true">↗</span></button>`).join('')}</div></div>`,[{label:'继续塔中之行'}],'歇一息 · 再问前路',true,'menu');$('modal-content').querySelectorAll('[data-menu]').forEach(b=>b.onclick=()=>items.find(row=>row[0]===b.dataset.menu)[3]());
   }
   function styles(){
     const unlocked=TowerStyle.isUnlocked('mural');
-    showSurface('行旅画境',`<div class="style-tableau" data-style-count="${TowerStyle.available.length}">${TowerStyle.available.map(({id,name,description})=>`<button data-choose-style="${id}" class="${currentStyle()===id?'chosen':''}"><img src="assets/${id==='material'?'material':'mural'}/ui_backdrop.png" alt="${name}"><strong>${name}</strong><span>${description}</span><small>${currentStyle()===id?'此刻画境':'展开此画境'}</small></button>`).join('')}</div>${!unlocked?'<p class="style-unlock-note">完成任一主线结局，便可展开新的画境。</p>':''}`, [{label:'返回塔中'}],unlocked?'归途已成 · 两境可游':'玄金古寺 · 初入塔途',true,'style');$('modal-content').querySelectorAll('[data-choose-style]').forEach(b=>b.onclick=async()=>{await switchStyle(b.dataset.chooseStyle);if(surfaceOpen&&$('modal-root').dataset.view==='style')styles();});
+    showSurface('行旅画境',`<div class="style-tableau" data-style-count="${TowerStyle.available.length}">${TowerStyle.available.map(({id,name,description})=>`<button data-choose-style="${id}" class="${currentStyle()===id?'chosen':''}"><img data-backdrop-style="${id}" src="${window.__MOTA_RESOLVE_ASSET__?window.__MOTA_RESOLVE_ASSET__('assets/'+(id==='material'?'material':'mural')+'/ui_backdrop.png'):('assets/'+(id==='material'?'material':'mural')+'/ui_backdrop.png')}" alt="${name}"><strong>${name}</strong><span>${description}</span><small>${currentStyle()===id?'此刻画境':'展开此画境'}</small></button>`).join('')}</div>${!unlocked?'<p class="style-unlock-note">完成任一主线结局，便可展开新的画境。</p>':''}`, [{label:'返回塔中'}],unlocked?'归途已成 · 两境可游':'玄金古寺 · 初入塔途',true,'style');$('modal-content').querySelectorAll('[data-choose-style]').forEach(b=>b.onclick=async()=>{await switchStyle(b.dataset.chooseStyle);if(surfaceOpen&&$('modal-root').dataset.view==='style')styles();});
   }
 
   function chapterProgressHTML(){return (engine.chapterProgress?.()||[]).map((p,i)=>`<article class="chapter-progress ${p.done?'completed':''}"><span>${String(i+1).padStart(2,'0')}</span><div><b>${esc(p.title)} ${p.done?'◆':''}</b><p>${p.steps.map(s=>`${s.done?'◆':'◇'} ${esc(s.label)}`).join(' · ')||'循阶解印'}</p></div></article>`).join('');}
@@ -908,11 +918,12 @@
     else if(type==='effect'){
       const meta={...d,...(d.meta||{}),floor:engine.state.floor,rescued:[...engine.state.rescued],choices:{...engine.state.choices}},skill=d.type==='magic'&&['staff','morph','clone','eye'].includes(meta.ability),cost=skill?(meta.ability==='eye'?0:abilityCost(meta.ability)):0;
       const finalAttack=d.type==='attack'&&meta.phases?.length;
+      if(d.type==='attack'&&meta.victory)showClashBanner(meta);
       if(!finalAttack)renderer.effect(d.type,d.x,d.y,skill?`${d.text||'神通已成'} · ${cost?'灵息 −'+cost:'免费'}`:d.text,meta);
       if(skill)presentation.showCast(meta.ability,{...meta,cost});else if(d.type==='relic'&&meta.fragment===undefined)presentation.showScene(meta.self?'awakening':'seal',meta);
       const motion=effectiveMotion();audio.cue(meta.fragment!==undefined?'pickup':meta.self?'selfAwaken':d.type,{...meta,impactDelay:motion==='reduced'?0:(meta.phases?.length?600:760)*.38/1000*(motion==='simple'?.65:1)});
     }
-    if(['change','reset','mode','selection','log'].includes(type))renderHUD();
+    if(['change','reset','mode','selection','log','stance'].includes(type))renderHUD();
   });
   $('leave-trial-start').onclick=()=>trialPanel.exit();
   syncRunLabels();
@@ -935,7 +946,7 @@
   $('story-next').onclick=advanceStory;$('story-collapse').onclick=()=>collapseStory(true);$('story-skip').onclick=skipStory;$('story-unfold').onclick=()=>{storyCollapsed=!storyCollapsed;renderStory();};
   if($('btn-redo'))$('btn-redo').onclick=()=>{stopPath();clearSurfaces();engine.redo();};
   if($('context-dismiss'))$('context-dismiss').onclick=()=>{engine.selection=null;focusPlayer(false);engine.emit('selection',null);};
-  document.querySelectorAll('[data-mode]').forEach(b=>{b.onclick=()=>{closeQuestScroll();collapseStory();stopPath();engine.setMode(b.dataset.mode);skillHint(b);};b.addEventListener('pointerenter',()=>skillHint(b));b.addEventListener('pointerleave',()=>{$('mode-label').textContent=modeHint(engine.mode);});b.addEventListener('focus',()=>skillHint(b));b.addEventListener('blur',()=>{$('mode-label').textContent=modeHint(engine.mode);});});
+  document.querySelectorAll('#ability-bar [data-mode]').forEach(b=>{b.onclick=()=>{closeQuestScroll();collapseStory();stopPath();engine.setMode(b.dataset.mode);skillHint(b);};b.addEventListener('pointerenter',()=>skillHint(b));b.addEventListener('pointerleave',()=>{$('mode-label').textContent=modeHint(engine.mode);});b.addEventListener('focus',()=>skillHint(b));b.addEventListener('blur',()=>{$('mode-label').textContent=modeHint(engine.mode);});});
   document.querySelectorAll('[data-move]').forEach(b=>b.addEventListener('pointerdown',ev=>{ev.preventDefault();const now=performance.now();if(started&&now-lastInput>=105){lastInput=now;worldMove(b.dataset.move);}}));
   if($('btn-interact'))$('btn-interact').onclick=interact;
   $('game-toolbox').querySelector('summary').addEventListener('click',ev=>{ev.preventDefault();gameMenu();});
@@ -965,13 +976,25 @@
     if(document.querySelector('.quest-scroll')?.open){closeQuestScroll();$('game-canvas').focus({preventScroll:true});return;}
     if(ritualOpen){closeRitual();return;}presentation.closeCast();
     clearSurfaces();closeCharacter();collapseStory();stopPath();const now=performance.now();if(engine.mode==='walk'&&now-lastInput<105)return;lastInput=now;
+    const prevSel=engine.selection?{x:engine.selection.x,y:engine.selection.y}:null;
     const p=['staff','morph','clone'].includes(engine.mode)?renderer.cellAt(ev.clientX,ev.clientY):(renderer.pickCell?.(ev.clientX,ev.clientY)||renderer.cellAt(ev.clientX,ev.clientY)),floor=currentFloor();if(!p||p.x<0||p.x>=floor.map[0].length||p.y<0||p.y>=floor.map.length)return;
+    const wasSelected=!!(prevSel&&prevSel.x===p.x&&prevSel.y===p.y);
     engine.select(p.x,p.y);
     if(engine.mode==='inspect')return;
     if(engine.mode!=='walk'){cast(engine.mode,p.x,p.y);return;}
-    if(p.x===engine.state.x&&p.y===engine.state.y){character();return;}
+    if(p.x===engine.state.x&&p.y===engine.state.y){if(atLantern())altar();else character();return;}
     const e=engine.getEntity(p.x,p.y),tile=engine.getTile(p.x,p.y);
-    if(e&&['enemy','door','stairs','switch','choice','cache','altar','npc','monument','gate','seal','finale','illusion','resonator','rescue','tide','portal','fragment','treasure'].includes(e.type))return;
+    if(e&&['enemy','door','stairs','switch','choice','cache','altar','npc','monument','gate','seal','finale','illusion','resonator','rescue','tide','portal','fragment','treasure'].includes(e.type)){
+      if(wasSelected){
+        if(['fragment','treasure'].includes(e.type))approach(e,()=>{},true);
+        else if(e.type==='altar'){if(atAltar(e))altar();else approach(e,altar,true);}
+        else if(e.type==='illusion')engine.reveal(e);
+        else if(e.type==='switch'&&e.kind!=='plate')approach(e,()=>engine.toggleSwitch(e));
+        else if(['npc','monument'].includes(e.type))approach(e,()=>talk(e));
+        else if(['enemy','door','stairs','choice','resonator','rescue','tide','portal','finale'].includes(e.type)&&engine.distance(e)>1)approach(e,()=>engine.select(e.x,e.y));
+      }
+      return;
+    }
     if(['#','~','=','w'].includes(tile))return;
     const path=engine.findPath(p.x,p.y);if(path)walkPath(path);else toast('此处暂无连通道路。查看目标信息，先解决沿途阻挡。');
   });
@@ -996,7 +1019,7 @@
       if(ev.key==='Tab'){const focusable=[...$('modal-panel').querySelectorAll('button:not(:disabled),input:not([hidden]),select,summary,a[href]')].filter(e=>e.getClientRects().length),first=focusable[0],last=focusable.at(-1);if(!focusable.includes(document.activeElement)){ev.preventDefault();(ev.shiftKey?last:first)?.focus();return;}if(ev.shiftKey&&document.activeElement===first){ev.preventDefault();last?.focus();}else if(!ev.shiftKey&&document.activeElement===last){ev.preventDefault();first?.focus();}return;}
       const view=$('modal-root').dataset.view;
       if(target.closest('select,input,textarea')&&k!=='escape')return;
-      if(k==='escape'||k==='t'&&view==='planning'||k==='i'&&view==='inventory'||k==='c'&&view==='character'||k==='j'&&['book','journal','collection'].includes(view)||k==='b'&&view==='bestiary'||k==='h'&&['guide','settings'].includes(view)){ev.preventDefault();if(!ev.repeat&&!$('modal-close').disabled)closeSurface();return;}
+      if(k==='escape'||k==='k'&&view==='seals'||k==='t'&&view==='planning'||k==='i'&&view==='inventory'||k==='c'&&view==='character'||k==='j'&&['book','journal','collection'].includes(view)||k==='b'&&view==='bestiary'||k==='h'&&['guide','settings'].includes(view)){ev.preventDefault();if(!ev.repeat&&!$('modal-close').disabled)closeSurface();return;}
       if(['arrowup','arrowdown','arrowleft','arrowright','w','a','s','d','1','2','3','4','5','6','f','m','r','g'].includes(k))ev.preventDefault();return;
     }
     if(ritualOpen){
@@ -1049,7 +1072,7 @@
     if(ev.repeat)return;
     if((ev.ctrlKey||ev.metaKey)&&k==='y'){ev.preventDefault();stopPath();engine.redo();return;}
     if(['1','2','3','4','5'].includes(k)){ev.preventDefault();stopPath();engine.setMode(['walk','inspect','staff','morph','clone'][Number(k)-1]);return;}
-    const keys={t:()=>planningDesk.open(),g:guideAction,c:character,m:toggleOverview,r:()=>focusPlayer(),i:inventory,j:journal,b:bestiary,h:help,l:loadSlots,z:()=>engine.undo(),y:()=>engine.redo(),f:interact};
+    const keys={q:cycleStanceUI,v:toggleLensUI,k:sealsCompendium,t:()=>planningDesk.open(),g:guideAction,c:character,m:toggleOverview,r:()=>focusPlayer(),i:inventory,j:journal,b:bestiary,h:help,l:loadSlots,z:()=>engine.undo(),y:()=>engine.redo(),f:interact};
     if(keys[k]){ev.preventDefault();stopPath();keys[k]();}
   });
   function returnTitle(){presentation.closeEntry(false);presentation.closeCast();closeRitual(false);stopPath();clearSurfaces();closeCharacter();engine.save(true);started=false;delete document.body.dataset.sceneStarted;$('game-shell').classList.add('hidden');$('story-dock').classList.add('hidden');$('start-screen').classList.remove('hidden');$('continue-game').disabled=!engine.hasSave()||runSession.isTrial&&runSession.meta.rulesHash!==runSession.trial.rulesHash;syncRunLabels();syncAudio();}
@@ -1066,6 +1089,83 @@
   document.addEventListener('keydown',ev=>{if(ev.target!==$('start-music'))unlockAudio(ev);});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stopPath();audio.pause();}else audio.resume();});
   systemMotion.addEventListener?.('change',()=>{renderHUD();if(systemMotion.matches)skipPresentation();});
+  function syncSealCounts(){
+    if(!window.TowerMastery)return;
+    const st=TowerMastery.sealStats(),txt=`${st.unlockedCount}/${st.total}`;
+    if($('start-seals-count'))$('start-seals-count').textContent=txt;
+    if($('header-seals-count'))$('header-seals-count').textContent=txt;
+  }
+  function showSealUnlock(spec){
+    syncSealCounts();audio.cue('seal');
+    const node=$('seal-toast');if(!node)return;
+    $('seal-toast-mark').textContent=spec.glyph||'印';
+    $('seal-toast-title').textContent=`${spec.name} · ${spec.desc}`;
+    node.hidden=false;node.classList.remove('visible');void node.offsetWidth;node.classList.add('visible');
+    clearTimeout(sealToastTimer);sealToastTimer=setTimeout(()=>{node.classList.remove('visible');setTimeout(()=>{node.hidden=true;},240);},3600);
+  }
+  function showClashBanner(meta){
+    const node=$('clash-banner');if(!node||effectiveMotion()==='reduced')return;
+    const stInfo=TowerRules.stances?.[meta.stance||'balanced']||{name:'定海正棒'};
+    node.dataset.stance=meta.stance||'balanced';
+    $('clash-stance-tag').textContent=stInfo.name;
+    $('clash-versus').textContent=`孙悟空 破 ${meta.enemyName||'守卫'}`;
+    const dmgTxt=meta.damage===0?'<b class="zero">毫发无伤</b>':`损 ${meta.damage} 血`;
+    const saveTxt=(meta.stanceSaved||0)>0?`<b class="saved">荐势省 ${meta.stanceSaved} 血</b>`:'';
+    $('clash-metrics').innerHTML=`${meta.rounds||1} 棒 · ${dmgTxt}${saveTxt} · +${meta.goldReward||0} 金`;
+    node.hidden=false;node.classList.remove('visible');void node.offsetWidth;node.classList.add('visible');
+    clearTimeout(clashTimer);clashTimer=setTimeout(()=>{node.classList.remove('visible');setTimeout(()=>{node.hidden=true;},200);},1450);
+  }
+  function cycleStanceUI(){
+    if(!started||engine.state.won||engine.state.defeated)return;
+    engine.cycleStance();
+    const st=engine.getStance(),info=TowerRules.stances[st];
+    audio.cue('stance',{stance:st});
+    toast(`棍势已转 · ${info.name}：${info.subtitle}`);
+  }
+  function toggleLensUI(){
+    const next=!(renderer.tacticalLens!==false);
+    renderer.setTacticalLens(next);
+    setPreference('tacticalLens',next);
+    toast(next?'火眼态势显影已开启：绿环无损，金菱可借棍势省血，红环凶险。':'火眼态势显影已收起。');
+  }
+  function sealsCompendium(){
+    if(!window.TowerMastery)return;
+    if(surfaceOpen&&$('modal-root').dataset.view==='seals'){closeSurface();return;}
+    const {list,unlockedCount,total}=TowerMastery.sealStats();
+    const html=`<div class="seals-compendium"><header class="seals-hero"><div><h3>十二功果 · 金石印谱</h3><p>记录行者在十八重塔路中的破阵巧思、神通造诣与慈悲抉择。印鉴跨局永久留存。</p></div><div class="seals-counter"><strong>${unlockedCount} / ${total}</strong><small>已落金印</small></div></header><div class="seals-grid">${list.map(item=>`<article class="seal-card ${item.unlocked?'unlocked':''}"><div class="seal-stamp" aria-hidden="true">${esc(item.glyph)}</div><div class="seal-info"><b><span>${esc(item.code)} · ${esc(item.name)}</span><small>${item.unlocked?'已落印':'待照见'}</small></b><p>${esc(item.desc)}</p></div></article>`).join('')}</div></div>`;
+    showSurface('大圣印谱',html,[{label:started?'合上印谱 · 返回塔中':'合上印谱',className:'primary-button'}],'金石留痕 · 一棒一因果',true,'seals');
+  }
+  function initStartParticles(){
+    const canvas=$('start-particles');if(!canvas)return;
+    const ctx=canvas.getContext('2d');
+    const motes=Array.from({length:34},(_,i)=>({x:Math.random(),y:Math.random(),r:0.9+Math.random()*2.1,vx:(Math.random()-0.5)*0.00018,vy:-0.00022-Math.random()*0.00038,a:0.2+Math.random()*0.55,gold:i%4!==0}));
+    const tick=t=>{
+      if(!started&&effectiveMotion()!=='reduced'&&!document.hidden){
+        const w=canvas.clientWidth||innerWidth,h=canvas.clientHeight||innerHeight;
+        if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}
+        ctx.clearRect(0,0,w,h);
+        for(const m of motes){
+          m.x=(m.x+m.vx+Math.sin(t/2600+m.y*6)*0.00012+1)%1;
+          m.y=(m.y+m.vy+1)%1;
+          const pulse=0.55+0.45*Math.sin(t/780+m.x*12);
+          ctx.globalAlpha=m.a*pulse;
+          ctx.fillStyle=m.gold?'#f2ce82':'#8fd6bc';
+          ctx.beginPath();ctx.arc(m.x*w,m.y*h,m.r,0,Math.PI*2);ctx.fill();
+        }
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  renderer.setTacticalLens(settings().tacticalLens!==false);
+  if(window.TowerMastery)TowerMastery.bindEngine(engine,showSealUnlock);
+  $('btn-stance')?.addEventListener('click',cycleStanceUI);
+  $('btn-lens')?.addEventListener('click',toggleLensUI);
+  $('btn-seals-header')?.addEventListener('click',sealsCompendium);
+  $('btn-seals-menu')?.addEventListener('click',sealsCompendium);
+  $('start-seals')?.addEventListener('click',sealsCompendium);
+  $('start-trials')?.addEventListener('click',()=>trialPanel.open());
+  initStartParticles();
   syncStyleUI();
   renderHUD();
   preloadArt();

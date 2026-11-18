@@ -1384,5 +1384,210 @@
     const width=Number(canvas.getAttribute('width'))>=400?Number(canvas.getAttribute('width')):520,height=Number(canvas.getAttribute('height'))>=300?Number(canvas.getAttribute('height')):540;
     canvas.width=width;canvas.height=height;canvas.style.imageRendering='pixelated';const out=canvas.getContext('2d');out.imageSmoothingEnabled=false;const scale=Math.max(width/260,height/270),dw=260*scale,dh=270*scale;out.fillStyle='#141c20';out.fillRect(0,0,width,height);out.drawImage(art,(width-dw)/2,(height-dh)/2,dw,dh);
   };
+  // v46 Tactical Lens, Golden-Jade Hover Stepping Trail, and Stance-Specific Impact VFX
+  const baseWorldLayers = TowerRenderer.prototype.worldLayers;
+  const baseLabels = TowerRenderer.prototype.labels;
+  const baseCombatStrike = TowerRenderer.prototype.combatStrike;
+  Object.assign(TowerRenderer.prototype, {
+    setTacticalLens(enabled) {
+      this.tacticalLens = !!enabled;
+      return this.tacticalLens;
+    },
+    resolveHoverRoute() {
+      const s = this.s || this.engine?.state;
+      const h = this.hover;
+      if (!s || !h || this.engine.mode !== 'walk' || (this.engine.path && this.engine.path.length)) return null;
+      const w = this.floor?.map?.[0]?.length || 21, ht = this.floor?.map?.length || 21;
+      if (h.x < 0 || h.y < 0 || h.x >= w || h.y >= ht || (h.x === s.x && h.y === s.y)) return null;
+      const tile = this.tile(h.x, h.y);
+      const ent = this.engine.getEntity?.(h.x, h.y);
+      if ((tile === '#' || tile === 'v') && !ent) return null;
+      const key = `${s.floor}:${s.turn}:${s.x},${s.y}->${h.x},${h.y}`;
+      if (this._hoverCacheKey !== key) {
+        this._hoverCacheKey = key;
+        let path = null;
+        try { path = this.engine.findPath?.(h.x, h.y) || null; } catch (_) { path = null; }
+        this._hoverCacheVal = { path, ent, tile, x: h.x, y: h.y };
+      }
+      return this._hoverCacheVal;
+    },
+    drawTacticalLens(ctx, entities, time) {
+      if (this.tacticalLens === false) return;
+      const pulse = this.calm ? 0.5 : (Math.sin(time / 520) + 1) * 0.5;
+      for (const e of entities) {
+        const cx = e.x * CELL + 8, cy = e.y * CELL + 13.4;
+        if (e.type === 'enemy') {
+          let p = null, cmp = null;
+          try {
+            p = this.engine.preview(e.enemy);
+            if (window.TowerMastery && this.data().enemies[e.enemy]?.trait !== 'boss') {
+              cmp = window.TowerMastery.compareStances(this.engine, e.enemy);
+            }
+          } catch (_) {}
+          if (!p) continue;
+          const zero = p.possible && p.damage === 0;
+          const canImprove = cmp && ((cmp.savedVsCurrent > 0 && cmp.best.survive) || (!p.possible && cmp.best.possible));
+          const danger = !p.possible || !p.survive;
+          const col = zero ? '#7adbb6' : canImprove ? '#f7cd74' : danger ? '#e26a5a' : null;
+          if (!col) continue;
+          ctx.save();
+          ctx.globalAlpha = (zero ? 0.42 : canImprove ? 0.56 : 0.36) + pulse * 0.14;
+          ctx.strokeStyle = col;
+          ctx.lineWidth = this.material ? 0.48 : 0.65;
+          ctx.beginPath();
+          ctx.ellipse(cx, cy, 6.2, 2.2, 0, 0, Math.PI * 2);
+          ctx.stroke();
+          if (canImprove) {
+            ctx.strokeStyle = '#fff0be';
+            ctx.lineWidth = this.material ? 0.38 : 0.5;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 3.0);
+            ctx.lineTo(cx + 2.4, cy - 1.7);
+            ctx.lineTo(cx, cy - 0.4);
+            ctx.lineTo(cx - 2.4, cy - 1.7);
+            ctx.closePath();
+            ctx.stroke();
+          }
+          ctx.restore();
+        } else if (['fragment', 'relic', 'treasure'].includes(e.type) && !this.calm) {
+          ctx.save();
+          const gold = e.type === 'treasure' ? '#ffd984' : '#ffeab3';
+          for (let i = 0; i < 2; i++) {
+            const ph = ((time / 1100) + i * 0.5 + (e.x * 0.13 + e.y * 0.07)) % 1;
+            const mx = cx + Math.sin(ph * Math.PI * 2 + i) * 3.2;
+            const my = e.y * CELL + 11 - ph * 9.5;
+            ctx.globalAlpha = Math.sin(ph * Math.PI) * 0.72;
+            ctx.fillStyle = gold;
+            ctx.beginPath();
+            ctx.arc(mx, my, 0.58, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+    },
+    drawHoverTrail(ctx, time) {
+      const info = this.resolveHoverRoute();
+      if (!info || !info.path || !info.path.length) return;
+      const s = this.s;
+      let x = s.x, y = s.y;
+      const pts = [[x * CELL + 8, y * CELL + 12.2]];
+      const dirs = { up: [0, -1], right: [1, 0], down: [0, 1], left: [-1, 0] };
+      for (const step of info.path) {
+        const d = dirs[step];
+        if (!d) continue;
+        x += d[0]; y += d[1];
+        pts.push([x * CELL + 8, y * CELL + 12.2]);
+      }
+      ctx.save();
+      ctx.strokeStyle = '#ebc978';
+      ctx.lineWidth = this.material ? 0.62 : 0.75;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.setLineDash([1.6, 1.2]);
+      if (!this.calm) ctx.lineDashOffset = -(time / 90) % 5.6;
+      ctx.globalAlpha = 0.82;
+      ctx.beginPath();
+      pts.forEach(([px, py], idx) => idx ? ctx.lineTo(px, py) : ctx.moveTo(px, py));
+      ctx.stroke();
+      ctx.setLineDash([]);
+      for (let i = 1; i < pts.length; i++) {
+        const [px, py] = pts[i];
+        const last = i === pts.length - 1;
+        ctx.fillStyle = last ? '#fff1c2' : '#85dab9';
+        ctx.globalAlpha = last ? 0.95 : 0.72;
+        ctx.beginPath();
+        ctx.arc(px, py, last ? 1.15 : 0.68, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    },
+    worldLayers(ctx, entities, time) {
+      baseWorldLayers.call(this, ctx, entities, time);
+      this.drawTacticalLens(ctx, entities, time);
+      this.drawHoverTrail(ctx, time);
+    },
+    labels(ctx, entities) {
+      baseLabels.call(this, ctx, entities);
+      const info = this.resolveHoverRoute();
+      if (!info) return;
+      const v = this.projection();
+      if (info.x < v.x || info.x >= v.x + v.w || info.y < v.y || info.y >= v.y + v.h) return;
+      let badge = info.path ? `${info.path.length} 步` : null;
+      let fg = '#f6df9e';
+      if (info.ent?.type === 'enemy' && window.TowerMastery) {
+        const cmp = window.TowerMastery.compareStances(this.engine, info.ent.enemy);
+        if (cmp && cmp.best.id !== cmp.current.id && (cmp.savedVsCurrent > 0 || (!cmp.current.possible && cmp.best.possible))) {
+          badge = `荐·${cmp.best.info.short}${Number.isFinite(cmp.savedVsCurrent) ? ' 省' + cmp.savedVsCurrent : ' 破防'}`;
+          fg = '#ffd985';
+        }
+      }
+      if (!badge) return;
+      const sx = v.offsetX + (info.x - v.x + 0.5) * v.cellSize;
+      const sy = v.offsetY + (info.y - v.y) * v.cellSize - 6;
+      ctx.save();
+      ctx.font = '600 11px "Microsoft YaHei", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      const w = Math.ceil(ctx.measureText(badge).width + 12), h = 17;
+      const bx = clamp(sx - w / 2, 4, v.cssWidth - w - 4), by = clamp(sy - h / 2, 4, v.cssHeight - h - 4);
+      ctx.fillStyle = 'rgba(13, 20, 24, 0.9)';
+      ctx.fillRect(bx, by, w, h);
+      ctx.strokeStyle = 'rgba(226, 189, 110, 0.65)';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(bx + 0.5, by + 0.5, w - 1, h - 1);
+      ctx.fillStyle = fg;
+      ctx.fillText(badge, bx + w / 2, by + h / 2 + 0.5);
+      ctx.restore();
+    },
+    combatStrike(ctx, e, f) {
+      baseCombatStrike.call(this, ctx, e, f);
+      if (f < 0.22 || f > 0.85 || this.calm) return;
+      const stance = e.meta?.stance || 'balanced';
+      const x = e.x + 8, y = e.y + 6;
+      const age = clamp((f - 0.34) / 0.48, 0, 1);
+      ctx.save();
+      if (stance === 'cleave') {
+        ctx.translate(x, y);
+        ctx.globalAlpha = (1 - age) * 0.92;
+        ctx.strokeStyle = '#ff9868';
+        ctx.lineWidth = this.material ? 1.05 : 1.2;
+        ctx.beginPath();
+        ctx.arc(0, 0, 4 + age * 6.5, -Math.PI * 0.78, Math.PI * 0.42);
+        ctx.stroke();
+        ctx.strokeStyle = '#fff0b8';
+        ctx.lineWidth = 0.55;
+        ctx.beginPath();
+        ctx.ellipse(0, 2, 3 + age * 8.5, 1.4 + age * 3.2, 0, 0, Math.PI * 2);
+        ctx.stroke();
+        for (let i = 0; i < 8; i++) {
+          const a = (i / 8) * Math.PI * 2 + 0.2;
+          const r = 2.5 + age * 9.5;
+          ctx.fillStyle = i % 2 ? '#ffb07a' : '#fff3c4';
+          ctx.fillRect(Math.cos(a) * r - 0.6, Math.sin(a) * r * 0.7 - 0.6, 1.3, 1.3);
+        }
+      } else if (stance === 'whirl') {
+        ctx.translate(x, y);
+        ctx.globalAlpha = (1 - age) * 0.88;
+        for (let k = 0; k < 2; k++) {
+          ctx.strokeStyle = k ? '#8ce4c3' : '#ffe39a';
+          ctx.lineWidth = 0.65;
+          const spin = f * Math.PI * 5 + k * Math.PI;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, 5.2 + k * 2.2, 2.8 + k * 1.2, spin * 0.25, spin, spin + Math.PI * 1.35);
+          ctx.stroke();
+        }
+      } else if (f >= 0.36) {
+        ctx.translate(x, y + 2);
+        ctx.globalAlpha = (1 - age) * 0.65;
+        ctx.strokeStyle = '#ffe5a3';
+        ctx.lineWidth = 0.5;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, 3.2 + age * 6.5, 1.2 + age * 2.4, 0, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+  });
   window.TowerRenderer=TowerRenderer;
 })();

@@ -6,6 +6,30 @@
   const clone = value => JSON.parse(JSON.stringify(value));
   const directions = { up: [0,-1], right: [1,0], down: [0,1], left: [-1,0] };
 
+  const STANCES = {
+    balanced: {
+      id: 'balanced',
+      name: '定海正棒',
+      short: '定海',
+      subtitle: '攻守中正 · 原式稳扎',
+      rule: '按当前有效攻击、防御与所佩法器正常结算。'
+    },
+    cleave: {
+      id: 'cleave',
+      name: '劈山破甲',
+      short: '劈山',
+      subtitle: '穿甲重击 · 破防克坚',
+      rule: '无视守卫 25% 防御（至少 2 点），首棒伤害 +4；每次受物理还击额外 +3 伤害。'
+    },
+    whirl: {
+      id: 'whirl',
+      name: '舞花卸力',
+      short: '舞花',
+      subtitle: '棍影化劲 · 减免受击',
+      rule: '每次受物理或法术伤害 −3，每棒反震 −1；有效攻击 −2。'
+    }
+  };
+
   const bossPlans = [
     {id:'direct',label:'执棒破阵',description:'保留攻击，直接迎战三相。无需凝息珠。',cost:{orbs:0}},
     {id:'anchor',label:'定海镇心',description:'消耗 1 凝息珠；攻击 −6，第二相防御 −20，第三相每击伤害减半，最后心火 −40。',cost:{orbs:1}},
@@ -30,21 +54,31 @@
     return {atk:Math.max(0,state.atk+(has('iron')?6:0)-(has('lotus')?2:0)-(has('mirror')?2:0)),def:Math.max(0,state.def-(has('iron')?3:0)-(has('thorn')?2:0)),magicWard:(state.relics.includes(3)?8:0)+(has('lotus')?6:0),firstWard:has('thorn')?1:0,counterWard:has('mirror')?2:0,openingBonus:has('ember')?18:0,tax:has('ember')?8:0,tide:has('tide'),gearLines:[...gear].map(id=>TREASURES[id]?.name+'：'+TREASURES[id]?.description)};
   }
   function battle(state, enemy, options={}, withNext=true) {
-    const stats=loadout(state),ward=state.relics.includes(3)?8:0;
+    const baseStats=loadout(state),ward=state.relics.includes(3)?8:0;
+    const stanceId=STANCES[options.stance]?.id||STANCES[state.stance]?.id||'balanced',stance=STANCES[stanceId];
+    const stats={
+      ...baseStats,
+      atk:stanceId==='whirl'?Math.max(0,baseStats.atk-2):baseStats.atk,
+      openingBonus:baseStats.openingBonus+(stanceId==='cleave'?4:0),
+      counterWard:baseStats.counterWard+(stanceId==='whirl'?1:0)
+    };
     const goldReward=Math.floor((enemy.gold||0)*(stats.tide?0.75:1));
     const stages=enemy.phases?.length?enemy.phases:[enemy];
     const boss=!!enemy.phases?.length,plan=boss?(bossPlans.find(p=>p.id===(options.bossPlan||state.bossPlan))||bossPlans[0]):null,seals=boss?sealLayout(options.bossSeals):[null,null,null];
     const phases=stages.map((phase,i)=>{
-      const atk=stats.atk-(plan?.id==='anchor'?6:0),def=Math.max(0,phase.def-(plan?.id==='anchor'&&i===1?20:0));
+      const pierce=stanceId==='cleave'&&phase.def>0?Math.max(2,Math.ceil(phase.def*0.25)):0;
+      const atk=stats.atk-(plan?.id==='anchor'?6:0),def=Math.max(0,phase.def-(plan?.id==='anchor'&&i===1?20:0)-pierce);
       const seal=seals?.[i]||null,sealBonus=seal==='staff'?8:0,bonus=plan?.id==='echoes'?(i===1?18:i===2?8:0):0,hit=atk-def+bonus+sealBonus;
       const rounds=hit>0?Math.max(1,Math.ceil(Math.max(0,phase.hp-stats.openingBonus)/hit)):Infinity;
       const first=phase.trait==='first'||phase.trait==='boss';
       const enemyHits=Math.max(0,rounds-1+(first?Math.max(0,1-stats.firstWard):0)-(plan?.id==='echoes'&&i===0?2:0)-(seal==='clone'?1:0));
       let foeHit=phase.trait==='magic'?Math.max(0,phase.atk-stats.magicWard):Math.max(0,phase.atk-stats.def);
+      if(stanceId==='cleave'&&phase.trait!=='magic')foeHit+=3;
+      if(stanceId==='whirl')foeHit=Math.max(0,foeHit-3);
       if(seal==='morph')foeHit=Math.max(0,foeHit-(phase.trait==='magic'?6:2));
       if(plan?.id==='anchor'&&i===2)foeHit=Math.floor(foeHit/2);
       const rawDamage=hit>0?enemyHits*foeHit:Infinity;
-      return {...phase,def,playerAtk:atk,hit,rounds,enemyHits,foeHit,damage:rawDamage,rawDamage,bonus,possible:hit>0,seal,sealBonus,sealName:BOSS_SEALS[seal]?.name||'未用印',sealRule:BOSS_SEALS[seal]?.rule||'按原准备迎战'};
+      return {...phase,def,pierce,playerAtk:atk,hit,rounds,enemyHits,foeHit,damage:rawDamage,rawDamage,bonus,possible:hit>0,seal,sealBonus,sealName:BOSS_SEALS[seal]?.name||'未用印',sealRule:BOSS_SEALS[seal]?.rule||'按原准备迎战'};
     });
     const possible=!!seals&&phases.every(p=>p.possible),rawNormal=possible?phases.reduce((n,p)=>n+p.rawDamage,0):Infinity;
     let rawTrait=0;
@@ -57,12 +91,13 @@
     for(const phase of phases){cumulative+=phase.rawDamage;const n=discount(cumulative);phase.damage=possible?n-prior:Infinity;prior=n;}
     const normalDamage=discount(rawNormal),damage=discount(rawNormal+rawTrait),traitDamage=possible?damage-normalDamage:Infinity;
     const first=phases[0];
-    const lines=boss?phases.map(p=>`${p.name}：每棒 ${p.hit>0?p.hit:'未破防'}，首棒另加 ${stats.openingBonus}，${p.rounds} 棒 / 受击 ${p.enemyHits} 次，损失 ${p.damage}`):[`每棒 ${stats.atk} − ${enemy.def} = ${first.hit} 点伤害`,`${enemy.hp} 生命，首棒额外 ${stats.openingBonus}；共 ${first.rounds} 棒`,`${enemy.trait==='first'||enemy.trait==='boss'?'敌人先手；':'行者先手；'}敌人还击 ${first.enemyHits} 次`,`${enemy.trait==='magic'?'法术无视防御，法术护持 '+stats.magicWard:'每次还击 max(0, '+enemy.atk+' − '+stats.def+')'}：${first.foeHit} 点`];
+    const lines=boss?phases.map(p=>`${p.name}：每棒 ${p.hit>0?p.hit:'未破防'}，首棒另加 ${stats.openingBonus}，${p.rounds} 棒 / 受击 ${p.enemyHits} 次，损失 ${p.damage}`):[`每棒 ${stats.atk} − ${first.def} = ${first.hit} 点伤害`,`${enemy.hp} 生命，首棒额外 ${stats.openingBonus}；共 ${first.rounds} 棒`,`${enemy.trait==='first'||enemy.trait==='boss'?'敌人先手；':'行者先手；'}敌人还击 ${first.enemyHits} 次`,`${enemy.trait==='magic'?'法术无视防御，法术护持 '+stats.magicWard:'每次还击 max(0, '+enemy.atk+' − '+stats.def+')'}${stanceId==='cleave'&&enemy.trait!=='magic'?' + 3':stanceId==='whirl'?' − 3':''}：${first.foeHit} 点`];
+    if(stanceId!=='balanced')lines.unshift(`棍势 · ${stance.name}：${stance.rule}`);
     if(rawTrait)lines.push(`余毒 / 反震 / 心火 / 炉烬：额外 ${rawTrait} 点`);
     if(boss&&seals?.some(Boolean))phases.forEach(p=>lines.push(`${p.name} · ${p.sealName}：${p.sealRule}`));
     if(stats.tide)lines.push(`听潮贝：整场原损失 ${rawNormal+rawTrait} × 90%，向下取整`);
     lines.push(`总损失 ${damage}；胜利功德 ${goldReward}`);
-    const result={possible,survive:possible&&state.hp>damage,damage,normalDamage,traitDamage,hit:first.hit,rounds:phases.reduce((n,p)=>n+p.rounds,0),enemyHits:phases.reduce((n,p)=>n+p.enemyHits,0),foeHit:first.foeHit,firstStrike:enemy.trait==='first'||enemy.trait==='boss',ward,lines,gearLines:stats.gearLines,effectiveAtk:stats.atk,effectiveDef:stats.def,openingBonus:stats.openingBonus,goldReward,canAfford:!plan||(state.orbs||0)>=plan.cost.orbs,reason:possible?'':'攻击未破防，须使有效攻击高于守卫防御。'};
+    const result={possible,survive:possible&&state.hp>damage,damage,normalDamage,traitDamage,hit:first.hit,rounds:phases.reduce((n,p)=>n+p.rounds,0),enemyHits:phases.reduce((n,p)=>n+p.enemyHits,0),foeHit:first.foeHit,firstStrike:enemy.trait==='first'||enemy.trait==='boss',ward,lines,gearLines:stats.gearLines,effectiveAtk:stats.atk,effectiveDef:stats.def,openingBonus:stats.openingBonus,goldReward,stance:stanceId,stanceInfo:stance,canAfford:!plan||(state.orbs||0)>=plan.cost.orbs,reason:possible?'':'攻击未破防，须使有效攻击高于守卫防御。'};
     if(boss)Object.assign(result,{phases,plan,seals:seals||[],resourceCost:{orbs:plan.cost.orbs}});
     if(!seals)result.reason='每相一印，每种心印一战只能使用一次。';
     if(withNext&&possible&&damage>0){
@@ -89,8 +124,6 @@
     }
     initialState() {
       const floor=this.data.floors[0],altar=floor.entities.find(e=>e.type==='altar'),authored=floor.spawn;
-      // New journeys begin on the authored empty apron, not inside the lantern.
-      // Revision-6 starts and loaded saves retain their original action history.
       const spawn=(this.data.levelDepth?.revision||4)>=7&&authored&&floor.map[authored.y]?.[authored.x]==='.'&&!floor.entities.some(e=>e.x===authored.x&&e.y===authored.y)?authored:altar||{x:6,y:11};
       return { version:4, levelRevision:this.data.levelDepth?.revision||4, floor:0,x:spawn.x,y:spawn.y,facing:'up',hp:620,atk:24,def:10,mana:6,maxMana:6,coins:0,keys:{yellow:1,blue:0,red:0},relics:[],externalRelics:0,fragments:[],treasures:[],equipped:[],selfAwakened:false,revealed:{},quests:{},tides:{},rescued:[],removed:{},switches:{},terrain:{},choices:{},visited:[0],seenIntros:{},journal:[],log:[],elixirs:1,orbs:1,turn:0,defeated:false,won:false,ending:null,bossPlan:'direct',settings:{quickZero:false,showDamage:true,motion:'standard',screenShake:false,music:false,sfx:false},purchases:{atk:0,def:0,heal:0},startedAt:Date.now(),kills:0 };
     }
@@ -152,7 +185,7 @@
         if(missingId!==undefined)return target(find(a=>a.type==='fragment'&&a.fragment===missingId));
         const relic=find(a=>a.type==='relic'&&a.relic===seal);return target(relic&&(missing(relic)||relic));
       }
-      const root=find(a=>a.type==='chest'&&a.item==='redKey');if(root)return target(root);
+      const rootChest=find(a=>a.type==='chest'&&a.item==='redKey');if(rootChest)return target(rootChest);
       const boss=find(a=>a.enemy==='heart');if(boss){const f=this.data.floors[17],lever=f.entities.find(a=>a.type==='switch'&&!s.switches[a.id]);return target(lever?{...lever,floor:17}:boss);}
       return target(find(a=>a.type==='finale'));
     }
@@ -174,7 +207,23 @@
       return this.data.floors[floor].entities.find(e=>e.x===x && e.y===y && !this.state.removed[e.id]) || null;
     }
     dimensions(floor=this.state.floor){const f=this.data.floors[floor];return {width:f.map[0].length,height:f.map.length};}
-    effectiveStats(){return loadout(this.state);}
+    effectiveStats(){
+      const base=loadout(this.state),stance=this.getStance();
+      return {...base,atk:stance==='whirl'?Math.max(0,base.atk-2):base.atk,stance,stanceInfo:STANCES[stance]};
+    }
+    getStance(){return this.state.stance&&STANCES[this.state.stance]?this.state.stance:'balanced';}
+    setStance(id){
+      if(!STANCES[id]||this.state.won||this.state.defeated)return false;
+      const cur=this.getStance();if(cur===id)return true;
+      this.checkpoint('stance');
+      if(id==='balanced')delete this.state.stance;else this.state.stance=id;
+      this.addLog(`棍势切换 · ${STANCES[id].name}（${STANCES[id].subtitle}）`,'magic');
+      this.emit('stance',id);this.changed();return true;
+    }
+    cycleStance(){
+      const order=['balanced','cleave','whirl'];
+      return this.setStance(order[(order.indexOf(this.getStance())+1)%order.length]);
+    }
     abilityCost(mode){return this.state.equipped.includes('mirror')?(mode==='clone'?1:2):(mode==='clone'?2:1);}
     abilityPreview(mode,x,y){
       const s=this.state,cost=this.abilityCost(mode),tile=this.getTile(x,y),entity=this.getEntity(x,y),distance=Math.abs(s.x-x)+Math.abs(s.y-y),required={staff:0,morph:1,clone:2}[mode];
@@ -458,12 +507,15 @@
       if(!p.possible){this.notify(p.reason);return false;}
       if(!p.canAfford){this.notify('当前凝息珠不足以完成这套临战准备，请改用另一方案。');return false;}
       if(enemy.trait==='boss'&&this.state.relics.length<5){this.notify('没有完整的五重心印，无法撼动无相之心。');return false;}
+      const balancedPreview=p.stance!=='balanced'?this.preview(enemy,{...options,stance:'balanced'}):p;
+      const stanceSaved=balancedPreview?.possible&&Number.isFinite(balancedPreview.damage)?Math.max(0,balancedPreview.damage-p.damage):0;
       this.checkpoint();this.state.orbs-=p.resourceCost?.orbs||0;this.state.hp-=p.damage;
       if(p.plan){this.state.bossPlan=p.plan.id;this.state.finalBattle={seals:p.seals,plan:p.plan.id,damage:p.damage};}
-      this.emit('effect',{type:'attack',x:e.x,y:e.y,text:'−'+p.damage,meta:{enemy:e.enemy,damage:p.damage,goldReward:p.goldReward,victory:this.state.hp>0,rounds:p.rounds,enemyHits:p.enemyHits,traitDamage:p.traitDamage,phases:p.phases,plan:p.plan?.id,seals:p.seals,fromX:this.state.x,fromY:this.state.y,facing:this.state.facing}});
+      this.emit('effect',{type:'attack',x:e.x,y:e.y,text:'−'+p.damage,meta:{enemy:e.enemy,enemyName:enemy.name,enemyTrait:enemy.trait,damage:p.damage,goldReward:p.goldReward,victory:this.state.hp>0,rounds:p.rounds,enemyHits:p.enemyHits,traitDamage:p.traitDamage,phases:p.phases,plan:p.plan?.id,seals:p.seals,stance:p.stance,stanceName:p.stanceInfo?.name,stanceSaved,hpAfter:Math.max(0,this.state.hp),fromX:this.state.x,fromY:this.state.y,facing:this.state.facing}});
       if(this.state.hp<=0){this.state.hp=0;this.state.defeated=true;this.addLog('行者力竭。因果仍可回溯。','danger');this.changed();this.emit('defeat',{enemy,p});return false;}
       this.state.coins+=p.goldReward;this.state.kills++;this.state.removed[e.id]=true;
-      this.addLog(`击败${enemy.name} · 损失 ${p.damage} 生命，获得 ${p.goldReward} 金。`,'combat');
+      const stanceTag=p.stance!=='balanced'?`（${p.stanceInfo.short}${stanceSaved>0?'省 '+stanceSaved+' 血':''}）`:'';
+      this.addLog(`击败${enemy.name}${stanceTag} · 损失 ${p.damage} 生命，获得 ${p.goldReward} 金。`,'combat');
       if(enemy.trait==='boss')this.story('黑莲化影 · 消散', '三相金甲崩落，黑莲借你嗔怒造出的心猿终于平静。点灯僧将灯递来，灯中护着你一路解救的生命。\n\n“你曾在黑莲前停步，听见一声求救，那时我才有了这盏灯。如今十六枚已齐，中央却仍空着——最后一颗，一直在你心中。”\n\n走向塔心莲阵，觉醒无骨舍利。',{portrait:'lantern',speaker:'点灯僧',kind:'boss',source:e.id});
       this.changed();return true;
     }
@@ -519,10 +571,10 @@
     travel(floor) {
       const s=this.state;if(!s.relics.includes(2)||!s.visited.includes(floor)||s.floor===floor||s.mana<1||s.won||s.defeated)return false;
       const a=this.data.floors[floor].entities.find(e=>e.type==='altar');if(!a)return false;
-      this.checkpoint();s.mana--;s.floor=floor;s.x=a.x;s.y=a.y;this.selection=null;this.motion=null;this.path=[];this.addLog(`乘云回到 ${this.data.floors[floor].name} · 灵息 −1。`,'magic');this.changed();this.emit('floorEntry',{floor:s.floor,title:this.data.floors[s.floor].name,text:this.data.floors[s.floor].intro});this.emit('effect',{type:'floor',x:s.x,y:s.y});return true;
+      this.checkpoint();s.mana--;s.floor=floor;s.x=a.x;s.y=a.y;this.selection=null;this.motion=null;this.path=[];this.addLog(`乘云回到 ${this.data.floors[floor].name} · 灵息 −1。`,'magic');this.changed();this.emit('floorEntry',{floor:s.floor,title:this.data.floors[floor].name,text:this.data.floors[floor].intro});this.emit('effect',{type:'floor',x:s.x,y:s.y});return true;
     }
     awakenSelf(e=this.data.floors[this.state.floor].entities.find(a=>a.type==='finale')){
-      if(this.state.won||this.state.defeated||this.state.selfAwakened||!this.isCurrent(e)||e.type!=='finale'||this.distance(e)>1||this.state.externalRelics!==16||this.state.relics.length!==5)return false;
+      if(this.state.won||this.state.defeated||this.state.selfAwakened||!this.isCurrent(e)||e?.type!=='finale'||this.distance(e)>1||this.state.externalRelics!==16||this.state.relics.length!==5)return false;
       const boss=this.data.floors[17].entities.find(a=>a.type==='enemy'&&this.data.enemies[a.enemy].trait==='boss');
       if(boss&&!this.state.removed[boss.id]){this.notify('先破除守在莲阵前的黑莲三相。');return false;}
       this.checkpoint();this.state.selfAwakened=true;this.addLog('无骨归真 · 第十七颗不是宝物，是悟空愿意承担众生的本心。','relic');this.emit('effect',{type:'relic',x:e.x,y:e.y,text:'无骨舍利 · 归真',meta:{relic:17,index:16,externalRelics:16,self:true}});
@@ -553,6 +605,7 @@
       if(!s||![1,2,3,4].includes(s.version)||!Number.isInteger(s.floor)||s.floor<0||s.floor>=this.data.floors.length)throw new Error('存档版本或塔层不正确');
       if(!Number.isInteger(s.x)||!Number.isInteger(s.y)||s.x<0||s.x>=this.data.floors[s.floor].map[0].length||s.y<0||s.y>=this.data.floors[s.floor].map.length)throw new Error('存档坐标不正确');
       if(s.levelRevision!==undefined&&(!Number.isInteger(s.levelRevision)||s.levelRevision<1||s.levelRevision>(this.data.levelDepth?.revision||4)))throw new Error('存档殿院修订号不正确');
+      if(s.stance!==undefined&&!STANCES[s.stance])throw new Error('存档棍势状态不正确');
       for(const k of ['hp','atk','def','mana','maxMana','coins','turn','elixirs','orbs','kills'])if(!Number.isFinite(s[k])||s[k]<0)throw new Error('存档属性不正确');
       if(!Array.isArray(s.relics)||!Array.isArray(s.visited)||!s.keys||!s.removed||!s.switches||!s.terrain||!s.purchases||!s.seenIntros||!Array.isArray(s.log)||!Array.isArray(s.journal))throw new Error('存档结构不完整');
       if(new Set(s.relics).size!==s.relics.length||new Set(s.visited).size!==s.visited.length)throw new Error('存档进度重复');
@@ -577,6 +630,7 @@
     }
     migrate(raw){
       const s=clone(this.validate(raw));s.version=4;s.choices=s.choices||{};s.bossPlan=s.bossPlan||'direct';s.settings={quickZero:false,showDamage:true,motion:'standard',screenShake:false,music:false,sfx:false,...s.settings};
+      if(s.stance==='balanced')delete s.stance;
       s.fragments=s.fragments||[];s.treasures=s.treasures||[];s.equipped=s.equipped||[];if(raw.version<4&&this.data.fragmentGroups){for(const group of this.data.fragmentGroups)for(const id of group){const f=this.data.floors.find(f=>f.entities.some(e=>e.type==='fragment'&&e.fragment===id));if((f&&f.id<s.floor)||s.relics.includes(this.data.fragmentGroups.indexOf(group))){if(!s.fragments.includes(id))s.fragments.push(id);}}}s.externalRelics=this.data.fragmentGroups?s.fragments.length:s.relics.reduce((n,id)=>n+(this.data.relicGroups||[3,3,3,3,4])[id],0);s.selfAwakened=!!s.selfAwakened||!!s.won;s.revealed=s.revealed||{};s.quests=s.quests||{};s.tides=s.tides||{};s.rescued=s.rescued||[];
       if(raw.version<3){
         if(s.visited.some(n=>n>=7)||s.relics.includes(2)){s.quests.bajie=true;if(!s.rescued.includes('bajie'))s.rescued.push('bajie');}
@@ -592,7 +646,6 @@
       }
       if(this.data.fragmentGroups)for(const floor of this.data.floors)for(const e of floor.entities)if(e.type==='fragment'&&s.fragments.includes(e.fragment))s.removed[e.id]=true;
       if(raw.version<4){s.terrain={};s.mana=s.maxMana;s.log.unshift({text:'殿堂已重构：旧进度回到本层莲灯，原资源与机关保留，桥栅需按新地形施法。',kind:'story',turn:s.turn});}
-      // A legacy save can land on a wall after an authored room redesign.
       const revision=this.data.levelDepth?.revision||4,layoutChanged=(raw.levelRevision||4)<revision;
       if(layoutChanged)s.terrain=Object.fromEntries(Object.entries(s.terrain).filter(([key])=>{const [floor,x,y]=key.split(':').map(Number);return ['~','='].includes(this.data.floors[floor]?.map[y]?.[x]);}));
       const f=this.data.floors[s.floor],water=f.waterTiles?.find(t=>t.x===s.x&&t.y===s.y),tile=water?((s.tides[f.tideGroup||'weakwater']||'low')===water.openWhen?'.':'w'):(s.terrain[`${s.floor}:${s.x}:${s.y}`]||f.map[s.y][s.x]);if(raw.version<4||layoutChanged||['#','w','v'].includes(tile)){
@@ -627,6 +680,6 @@
       }}return null;
     }
   }
-  root.TowerRules={battle,directions,loadout,treasures:TREASURES,bossSeals:BOSS_SEALS,sealLayout};root.TowerEngine=TowerEngine;
+  root.TowerRules={battle,directions,loadout,treasures:TREASURES,bossSeals:BOSS_SEALS,sealLayout,stances:STANCES};root.TowerEngine=TowerEngine;
   if(typeof module!=='undefined')module.exports={TowerRules:root.TowerRules,TowerEngine};
 })(typeof window!=='undefined'?window:globalThis);

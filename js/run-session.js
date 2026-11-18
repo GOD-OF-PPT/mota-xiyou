@@ -1,7 +1,7 @@
 /* One active run with independent storage, replay validation and exact main return. */
 (function(root){
  'use strict';const cp=x=>JSON.parse(JSON.stringify(x)),ACTIVE='dasheng-trial-active-v23',SUSPEND='dasheng-campaign-suspended-v23',RECORDS='dasheng-trial-records-v23',UNLOCKS='dasheng-trial-unlocks-v23';
- const actions=['step','moveTo','reveal','activateResonator','rescue','receiveAid','toggleTide','usePortal','choose','setBossPlan','toggleSwitch','recallClone','traverse','openDoor','fight','useAbility','useConsumable','shop','offerOrb','meditate','travel','awakenSelf','finish','equipTreasure','equipLoadout','undo','redo'];
+ const actions=['step','moveTo','reveal','activateResonator','rescue','receiveAid','toggleTide','usePortal','choose','setBossPlan','setStance','cycleStance','toggleSwitch','recallClone','traverse','openDoor','fight','useAbility','useConsumable','shop','offerOrb','meditate','travel','awakenSelf','finish','equipTreasure','equipLoadout','undo','redo'];
  const read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key))||fallback;}catch{return fallback;}},write=(key,value)=>{localStorage.setItem(key,JSON.stringify(value));};
  class TowerRunSession{
   constructor(engine){this.engine=engine;engine.runSession=this;this.meta=null;this.depth=0;this.transition=false;this.unlocked=read(UNLOCKS,[]);if(!Array.isArray(this.unlocked))this.unlocked=[];
@@ -13,7 +13,7 @@
   storageKey(kind){return this.isTrial?`dasheng-trial-v23:${this.meta.trialId}:${this.meta.objective}:${this.meta.rulesHash.slice(0,12)}:${kind}`:(kind==='manual'?'dasheng-relic-tower-manual-v2':'dasheng-relic-tower-v1');}
   exportMeta(){return this.meta?cp(this.meta):null;}
   learn(state){if(!state)return;const unlocked=[];if(state.fragments?.includes(7)&&state.switches?.['f7-1']&&state.visited?.some(f=>f>=8))unlocked.push('ferry');if(state.choices?.silk&&state.fragments?.includes(10)&&state.visited?.some(f=>f>=11))unlocked.push('silk');const next=[...new Set([...this.unlocked,...unlocked])];if(next.length!==this.unlocked.length){this.unlocked=next;try{write(UNLOCKS,next);}catch{}}}
-  available(t){return this.unlocked.includes(t.id.split('-')[0]);}
+  available(t){return Boolean(t?.starter||this.unlocked.includes(t?.id.split('-')[0]));}
   newMeta(t,objective){return {version:1,trialId:t.id,objective,attemptId:Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8),startHash:t.startHash,rulesHash:t.rulesHash,actions:[],usedRewind:false,custom:false,completed:false};}
   enter(id,objective){const t=root.TowerTrials.spec(id);if(this.isTrial||!t||!this.available(t)||!t.objectives.some(o=>o.id===objective)){this.engine.notify('先在主线完成对应章节，再进入该试炼。');return false;}
    const main=this.engine.exportSave();this.suspendedHistory={history:this.engine.history,redo:this.engine.redoHistory,last:this.engine.lastCheckpointKind,trail:this.engine.chronicle?.trail};try{write(SUSPEND,{version:1,raw:main});this.meta=this.newMeta(t,objective);write(ACTIVE,this.meta);if(!this.loadSeed())throw Error('试炼起点载入失败');return true;}catch(e){this.meta=null;try{localStorage.removeItem(ACTIVE);}catch{}this.engine.load(main);this.restoreHistory();try{localStorage.removeItem(SUSPEND);}catch{}this.engine.notify('无法保存独立试炼，主线仍保留：'+e.message);return false;}
@@ -27,7 +27,7 @@
    const points=[...(obj.chronicle?.records||[]).map(r=>r.state),...(obj.chronicle?.returnPoint?[obj.chronicle.returnPoint.state,...(obj.chronicle.returnPoint.records||[]).map(r=>r.state)]:[])];if(points.some(s=>s?.floor!==t.floor||s?.levelRevision!==t.revision))throw Error('试炼章回不能包含其他楼层。');const state=obj.state;if(state?.floor!==t.floor||state.levelRevision!==t.revision)throw Error('试炼不能载入其他塔层或修订。');
   }
   didLoad(obj){if(this.isTrial){const old=this.meta;this.meta=cp(obj.trialSession);if(!this.transition&&old.attemptId===this.meta.attemptId&&old.actions.length>this.meta.actions.length)this.meta.usedRewind=true;if(!this.meta.completed&&this.records().some(r=>r.id===this.meta.attemptId)){this.meta.attemptId+='-branch-'+Date.now().toString(36);this.meta.usedRewind=true;}const replay=this.replay();if(replay&&JSON.stringify(root.TowerTrials.projection(replay.state))===JSON.stringify(root.TowerTrials.projection(this.engine.state))){this.engine.history=replay.history;this.engine.redoHistory=replay.redoHistory;this.engine.lastCheckpointKind=replay.lastCheckpointKind;if(this.engine.chronicle&&replay.chronicle)this.engine.chronicle.trail=replay.chronicle.trail;}else this.meta.custom=true;try{write(ACTIVE,this.meta);}catch{}}else this.learn(obj.state||obj);}
-  wrap(){const e=this.engine;for(const type of actions){const original=e[type];e[type]=(...args)=>{
+  wrap(){const e=this.engine;for(const type of actions){const original=e[type];if(typeof original!=='function')continue;e[type]=(...args)=>{
     if(this.depth||!this.isTrial||this.transition)return original.apply(e,args);
     if(this.meta.completed){e.notify('本次试炼已结算；可以重走同题或返回主线。');return false;}
     if(['travel','usePortal','awakenSelf','finish'].includes(type)){e.notify('这段试炼限定在本层；上行处确认目标后即可完成。');return false;}

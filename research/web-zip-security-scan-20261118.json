@@ -1,0 +1,37 @@
+{
+  "target": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\final-delivery",
+  "files": 434,
+  "paths": 469,
+  "html_files": 5,
+  "vite_configs": 0,
+  "excluded_directories": [
+    ".cache",
+    ".git",
+    ".hg",
+    ".next",
+    ".svn",
+    ".turbo",
+    "build",
+    "coverage",
+    "dist",
+    "library",
+    "logs",
+    "node_modules",
+    "temp"
+  ],
+  "scope": "All delivered paths, HTML/HTM, supported Vite configs; local resource existence and exact-case paths also checked. No network or browser execution.",
+  "html_paths": [
+    "index.html",
+    "playtest-v23-baseline.html",
+    "playtest-v23-new.html",
+    "playtest-v23.html",
+    ".backups/implementation-v23-20261024/index.html"
+  ],
+  "findings": [],
+  "counts": {
+    "High": 0,
+    "Medium": 0,
+    "需人工复核": 0
+  },
+  "passed": true
+}

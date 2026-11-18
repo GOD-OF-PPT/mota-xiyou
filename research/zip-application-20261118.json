@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-18",
+  "source_zip_sha256": "ef57123203a513b78f3ff567a68c68a76f3ef20c1a0b2f4d1089624d8779389d",
+  "base_head": "7010af6318cae5f41c092c65f6a8327134980e76",
+  "tested_tree": "58faece5eb68f6967f28dd506c4404b82196ac9c",
+  "application": {
+    "changed_existing_files": [
+      "README.md",
+      "assets/ending-v42/keep.png",
+      "assets/ending-v42/release.png",
+      "assets/ui-v26/dialogue-scroll.png",
+      "assets/ui-v26/offering-tablet.png",
+      "assets/ui-v26/quest-plaque.png",
+      "assets/ui-v26/reading-folio.png",
+      "css/image-ui.css",
+      "index.html",
+      "js/audio.js",
+      "js/engine.js",
+      "js/film-art.js",
+      "js/planning-ui.js",
+      "js/renderer.js",
+      "js/run-session.js",
+      "js/trials-ui.js",
+      "js/trials.js",
+      "js/ui-skins.js",
+      "js/ui.js"
+    ],
+    "new_project_files": [
+      "assets/ui-v46/brocade-mat.webp",
+      "assets/ui-v46/emblem-fillet.webp",
+      "assets/ui-v46/icon-walk-cloud.webp",
+      "assets/ui-v46/seals-banner.webp",
+      "assets/ui-v46/stance-dinghai.webp",
+      "assets/ui-v46/stance-pishan.webp",
+      "assets/ui-v46/stance-wuhua.webp",
+      "css/v46-excellence.css",
+      "js/stances-mastery.js",
+      "tests/v46-excellence-check.cjs"
+    ],
+    "ignored_local_diagnostics": [
+      "tests/upgrade-failed.json"
+    ],
+    "preserved_existing_files_absent_from_zip": [
+      ".backups/implementation-v23-20261024/README.md",
+      ".backups/implementation-v23-20261024/css/cinnabar.css",
+      ".backups/implementation-v23-20261024/css/experience.css",
+      ".backups/implementation-v23-20261024/css/finale.css",
+      ".backups/implementation-v23-20261024/css/immersive.css",
+      ".backups/implementation-v23-20261024/css/mural.css",
+      ".backups/implementation-v23-20261024/css/planning.css",
+      ".backups/implementation-v23-20261024/css/repair.css",
+      ".backups/implementation-v23-20261024/css/style.css",
+      ".backups/implementation-v23-20261024/index.html",
+      ".backups/implementation-v23-20261024/js/art-style.js",
+      ".backups/implementation-v23-20261024/js/assets.js",
+      ".backups/implementation-v23-20261024/js/audio.js",
+      ".backups/implementation-v23-20261024/js/chronicle.js",
+      ".backups/implementation-v23-20261024/js/engine.js",
+      ".backups/implementation-v23-20261024/js/film-art.js",
+      ".backups/implementation-v23-20261024/js/finale.js",
+      ".backups/implementation-v23-20261024/js/journey.js",
+      ".backups/implementation-v23-20261024/js/material-assets.js",
+      ".backups/implementation-v23-20261024/js/planning-ui.js",
+      ".backups/implementation-v23-20261024/js/planning.js",
+      ".backups/implementation-v23-20261024/js/presentation.js",
+      ".backups/implementation-v23-20261024/js/renderer.js",
+      ".backups/implementation-v23-20261024/js/story-director.js",
+      ".backups/implementation-v23-20261024/js/tactics.js",
+      ".backups/implementation-v23-20261024/js/ui.js",
+      ".backups/implementation-v23-20261024/js/world.js",
+      "audits/interaction-audit.cjs",
+      "audits/level-audit.cjs",
+      "audits/navigation-audit.cjs",
+      "audits/public-replay-audit.cjs",
+      "audits/quantitative.cjs",
+      "audits/v3-renderer-check.cjs",
+      "audits/v4-independent-probe.cjs",
+      "audits/v4-softlock-check.cjs",
+      "audits/v7-b1-ui-replay.cjs",
+      "audits/v7-b2-save-replay.cjs",
+      "audits/v7-b2-ui-replay.cjs",
+      "audits/v7-b5-legacy-replay.cjs",
+      "audits/v7-b5-ui-replay.cjs",
+      "research/v18-detail-image-prompts.json",
+      "research/v18-image-prompts.json",
+      "research/v23-human-study-summary.json",
+      "research/v23-human-study-template.json",
+      "research/v23-implementation-progress.json",
+      "research/v23-research-plan.json"
+    ],
+    "zip_payload_bytes_match": true,
+    "marketing_unchanged": true
+  },
+  "security": {
+    "skill": "web-zip-security-scanner",
+    "report": "docs/web-zip-security-scan-20261118.md",
+    "raw_report": "research/web-zip-security-scan-20261118.json",
+    "high": 0,
+    "medium": 0,
+    "review": 0,
+    "code_fixes_required": false
+  },
+  "validation": {
+    "engine_checks": "39/39 passed in clean export",
+    "v46_checks": "6/6 passed in clean export",
+    "javascript_syntax_modules": 32,
+    "browser": {
+      "checks": [
+        {
+          "name": "offline title loads both runtime images and all eleven UI textures"
+        },
+        {
+          "name": "title opens twelve-seal compendium and returns with Escape"
+        },
+        {
+          "name": "two starter trials are available directly from the title"
+        },
+        {
+          "name": "four local MP3s decode offline and a user click starts title playback"
+        },
+        {
+          "name": "explicit floor acknowledgement, Q stance cycle and V lens preserve finite resources"
+        },
+        {
+          "name": "seals and inventory own keyboard input and return to the scene"
+        },
+        {
+          "name": "starter trial entry and exit restore the exact main-campaign resources"
+        },
+        {
+          "name": "4177 legal public actions complete all eighteen floors without injected resources",
+          "actions": 4177,
+          "arrivals": 18,
+          "final": {
+            "floor": 17,
+            "won": true,
+            "ending": "release",
+            "hp": 43,
+            "fragments": 16,
+            "relics": 5,
+            "muralUnlocked": true
+          }
+        },
+        {
+          "name": "legally unlocked mural loads every image and starts a new campaign"
+        },
+        {
+          "name": "playtest-v23-baseline.html starts offline with valid study parameters"
+        },
+        {
+          "name": "playtest-v23-new.html starts offline with valid study parameters"
+        }
+      ],
+      "errors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-title-1440.png",
+        "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-seals-1440.png",
+        "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-inventory-1440.png",
+        "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-material-1440.png",
+        "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-mural-1440.png"
+      ],
+      "tracks": {
+        "title-01.mp3": 145.136327,
+        "title-02.mp3": 166.426122,
+        "exploration.mp3": 130.377143,
+        "victory.mp3": 116.427755
+      },
+      "passed": true
+    },
+    "screenshots_reviewed_at_native_1440x900": [
+      "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-title-1440.png",
+      "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-seals-1440.png",
+      "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-inventory-1440.png",
+      "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-material-1440.png",
+      "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\v46-mural-1440.png"
+    ],
+    "test_probe_history": [
+      {
+        "file": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\browser-validation-first-probe.json",
+        "cause": "Harness clicked the music toggle after earlier trusted title clicks had already unlocked playback. The toggle correctly disabled playback.",
+        "resolution": "Wait for existing playback; click only if playback is inactive. No source change."
+      },
+      {
+        "file": "C:\\Users\\KSG\\AppData\\Local\\Temp\\mota-zip-20261118-ef571232\\browser-validation-stance-probe.json",
+        "cause": "Harness initially included turn count in a no-resource-cost assertion; stance changes are actual deterministic engine actions.",
+        "resolution": "Check finite resources separately from the turn counter. No source change."
+      }
+    ]
+  },
+  "tracked_bytes": 89126444,
+  "tracked_limit_bytes": 100000000
+}
